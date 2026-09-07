@@ -1,0 +1,27 @@
+{% macro icon(name, class="h-6 w-6") %}
+{% if name == "users" %}
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1"/><circle cx="9" cy="7" r="3.5"/><path d="M22 20v-1a3.5 3.5 0 0 0-2.5-3.36"/><path d="M15.5 3.6a3.5 3.5 0 0 1 0 6.8"/></svg>
+{% elif name == "book" %}
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5"/><path d="M4 5.5v15A2.5 2.5 0 0 0 6.5 23H20"/></svg>
+{% elif name == "eye" %}
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+{% elif name == "shield" %}
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+{% elif name == "id-card" %}
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><circle cx="8.5" cy="12" r="2"/><path d="M6.5 16.5c.4-1.4 1.6-2.2 2-2.2s1.6.8 2 2.2"/><path d="M14 10h5M14 13.5h5"/></svg>
+{% elif name == "clipboard" %}
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 3.5h6a1 1 0 0 1 1 1V6H8V4.5a1 1 0 0 1 1-1Z"/><path d="M8.5 11h7M8.5 14.5h7M8.5 18h4"/></svg>
+{% elif name == "rocket" %}
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c3 1 6 4 6 9-1 0-3.5.3-6 2.5C9.5 11.3 7 11 6 11c0-5 3-8 6-9Z"/><path d="M9 15c-2 .5-3 2-3.5 5 3-.5 4.5-1.5 5-3.5"/><circle cx="13" cy="9" r="1.5"/></svg>
+{% elif name == "chart" %}
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M12 20V4M20 20v-7"/></svg>
+{% elif name == "building" %}
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="10" height="18"/><path d="M14 8h6v13h-6"/><path d="M7 7h1M7 11h1M7 15h1M10 7h1M10 11h1M10 15h1"/></svg>
+{% elif name == "globe" %}
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 4 5.7 4 9s-1.5 6.5-4 9c-2.5-2.5-4-5.7-4-9s1.5-6.5 4-9Z"/></svg>
+{% elif name == "linkedin" %}
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ class }}" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92ZM20.44 20h-3.37v-5.94c0-1.42-.03-3.24-1.98-3.24-1.98 0-2.29 1.55-2.29 3.14V20H9.44V8.5h3.24v1.57h.05c.45-.86 1.56-1.77 3.21-1.77 3.44 0 4.5 2.26 4.5 5.2V20Z"/></svg>
+{% elif name == "arrow" %}
+<svg xmlns="http://www.w3.org/2000/svg" class="{{ class }}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+{% endif %}
+{% endmacro %}

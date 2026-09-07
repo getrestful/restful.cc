@@ -1,0 +1,32 @@
+{
+  "name": "restful.cc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/css/input.css -o ./src/public/css/output.css --minify",
+    "build:eleventy": "eleventy",
+    "build": "npm run build:css && npm run build:eleventy",
+    "watch:css": "tailwindcss -i ./src/css/input.css -o ./src/public/css/output.css --watch",
+    "watch:eleventy": "eleventy --serve",
+    "dev": "npm run build:css && npm-run-all --parallel watch:css watch:eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getrestful/restful.cc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/getrestful/restful.cc/issues"
+  },
+  "homepage": "https://github.com/getrestful/restful.cc#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@tailwindcss/cli": "^4.3.3",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^4.3.3"
+  }
+}

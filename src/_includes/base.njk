@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description or 'Wir unterstützen Organisationen im Aufbau von Peer-Angeboten – von der Idee bis zur wirkungsvollen Peer-Community.' }}">
+  <link rel="stylesheet" href="/css/output.css">
+</head>
+<body class="text-ink antialiased">
+  <header class="sticky top-0 z-40 border-b border-black/5 bg-white/90 backdrop-blur">
+    <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4">
+      <a href="/" class="flex items-center gap-2 shrink-0">
+        <span class="flex h-8 w-8 items-center justify-center rounded-full bg-brand text-white">
+          <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M12 20s-7-4.35-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.65 12 20 12 20Z"/>
+          </svg>
+        </span>
+        <span class="text-lg font-semibold">restful</span>
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-medium text-ink/80 md:flex">
+        <a href="/#angebot" class="hover:text-ink">Services</a>
+        <a href="/#communities" class="hover:text-ink">Communities</a>
+        <a href="/#team" class="hover:text-ink">Team</a>
+        <a href="/wissenschaft/" class="hover:text-ink">Wissenschaft</a>
+      </nav>
+      <a href="/#contact" class="hidden shrink-0 rounded-lg bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-dark md:inline-block">Kontakt aufnehmen</a>
+      <button type="button" onclick="document.getElementById('mobile-nav').classList.toggle('hidden')" class="shrink-0 rounded-lg border border-black/10 p-2 md:hidden" aria-label="Menü öffnen">
+        <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+    <nav id="mobile-nav" class="hidden flex-col gap-1 border-t border-black/5 px-6 py-4 text-sm font-medium text-ink/80 md:hidden">
+      <a href="/#angebot" class="py-2">Services</a>
+      <a href="/#communities" class="py-2">Communities</a>
+      <a href="/#team" class="py-2">Team</a>
+      <a href="/wissenschaft/" class="py-2">Wissenschaft</a>
+      <a href="/#contact" class="mt-2 rounded-lg bg-brand px-5 py-2.5 text-center font-semibold text-white">Kontakt aufnehmen</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="border-t border-black/5 bg-white">
+    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
+      <div>
+        <p class="text-sm text-ink/60">&copy; 2026 restful gmbh</p>
+        <a href="/" class="mt-2 flex items-center gap-2">
+          <span class="flex h-6 w-6 items-center justify-center rounded-full bg-brand text-white">
+            <svg viewBox="0 0 24 24" class="h-3 w-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M12 20s-7-4.35-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5C19 15.65 12 20 12 20Z"/>
+            </svg>
+          </span>
+          <span class="font-semibold">restful</span>
+        </a>
+      </div>
+      <div class="flex flex-col gap-2 text-sm text-ink/70 md:items-end">
+        <a href="/" class="hover:text-ink">restful.cc</a>
+        <a href="/datenschutzerklaerung/" class="hover:text-ink">Datenschutzerklärung</a>
+        <a href="https://join.com/companies/getrestfulch" class="hover:text-ink">Offene Stellen</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
