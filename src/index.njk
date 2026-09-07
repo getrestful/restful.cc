@@ -142,18 +142,6 @@ title: restful – Schweizer Expert*innen für sichere Peer-Communities
   <h2 class="font-display text-3xl font-bold sm:text-4xl">Initiativen</h2>
   <p class="mt-2 text-ink/70">Diese Organisationen stärken bereits ihre Community mit restful</p>
   <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-    {% set initiatives = [
-      { name: "MucoConnect von CF Schweiz", desc: "Für Menschen mit Cystischer Fibrose sowie deren Angehörige.", href: "https://cystischefibroseschweiz.ch/unterstuetzung-und-angebote/mucoconnect/", logo: "logo-mucoconnect.png" },
-      { name: "demenz:miteinander von Demenzworld", desc: "Für Angehörige von Personen mit Demenz", href: "https://demenzworld.com/demenzmiteinander/", logo: "logo-demenzworld.png" },
-      { name: "Peer Angebot der Krebsliga Schweiz", desc: "Wirkungsmessung der Peer-Plattform für Betroffene von Krebs und Angehörige", href: "https://peerplattform.krebsliga.ch/", logo: "logo-krebsliga.webp" },
-      { name: "Peer-Austausch von restful families", desc: "Für alle Eltern", href: "#", logo: "logo-restful-families.png" },
-      { name: "Peer-Pool von Frühchen & Neokinder Schweiz", desc: "Für Eltern und Angehörige von kranken Neugeborenen und Frühgeborenen", href: "#", logo: "logo-fruehchen-neokinder.png" },
-      { name: "SPO – Schweizer PPIE Plattform", desc: "Plattform zur Förderung des Einbezugs von Betroffenen, Angehörigen und der Bevölkerung", href: "#", logo: "logo-spo.webp" },
-      { name: "Swiss Sleep Circle", desc: "Digitale Prävention, Früherkennung und Blended-stepped-Care Behandlung von Menschen mit Schlaf-Wach-Erkrankungen", href: "https://gesundheitsfoerderung.ch/praevention-in-der-gesundheitsversorgung-pgv/projektfoerderung/gefoerderte-projekte/swiss-sleep", logo: "logo-inselspital.webp" },
-      { name: "CerebralConnect von der Stiftung Cerebral", desc: "Für Angehörige von Menschen mit einer cerebralen Bewegungsbeeinträchtigung", href: "#", logo: "logo-cerebral.webp" },
-      { name: "SVAMV Peer vom Schweizerischen Verband alleinerziehender Mütter und Väter", desc: "Für alleinerziehende Eltern", href: "https://svamv.ch/thema/svamvpeer/", logo: "logo-svamv.svg" },
-      { name: "CoPEER im Care@Home-Setting", desc: "Für Klient:innen und Angehörige der psychiatrischen häuslichen Pflege", href: "#", logo: "logo-spitex.png" }
-    ] %}
     {% for i in initiatives %}
     <a href="{{ i.href }}" class="rounded-2xl border border-black/10 p-6 hover:shadow-md">
       <img src="/images/{{ i.logo }}" alt="{{ i.name }}" class="h-10 w-auto max-w-[140px] object-contain object-left">
@@ -201,14 +189,6 @@ title: restful – Schweizer Expert*innen für sichere Peer-Communities
   <h2 class="font-display text-3xl font-bold sm:text-4xl">Unser Team</h2>
   <p class="mt-4 max-w-3xl text-ink/70">Bei restful vereinen wir Expertise aus Sozialpädagogik, Wissenschaft, Public Health, Business und Technologie. Diese interdisziplinäre Kombination ermöglicht es uns, Peer-Angebote ganzheitlich zu denken – von der Konzeption über die technische Umsetzung bis zur wissenschaftlichen Evaluation. So stellen wir sicher, dass jedes Projekt fachlich fundiert, wirkungsorientiert und praxisnah umgesetzt wird.</p>
   <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-    {% set team = [
-      { name: "Raphael Reber", role: "Strategie & Partnerschaften", bio: "forbes 30under30 alumni und CoFounder Impact Hub Bern und Zeilenwerk", img: "team-raphael-reber.png" },
-      { name: "Sulamith Scheurer", role: "Produktmanagement", bio: "Ex. Lead Innovation Consultant INNOArchitects AG", img: "team-sulamith-scheurer.png" },
-      { name: "Stefan Niederhauser", role: "Technologie", bio: "Ex. VP of Product Management for Data, Analytics & AI, Swisscom", img: "team-stefan-niederhauser.png" },
-      { name: "Chantal Kuske", role: "Scientific Advisory", bio: "Consulting & Research in Health Science", img: "team-chantal-kuske.png" },
-      { name: "Melanie Spescha", role: "Projekte & Fundraising", bio: "BA Soziale Arbeit, Inklusions- und Fundraising-Expertin", img: "team-melanie-spescha.png" },
-      { name: "Lona Gaugler", role: "Industry Lead", bio: "MSc Oncology and molecular Medecine, MScAdvanced Oncology", img: "team-lona-gaugler.jpg" }
-    ] %}
     {% for m in team %}
     <div>
       <img src="/images/{{ m.img }}" alt="{{ m.name }}" class="aspect-square w-full rounded-xl object-cover">
@@ -225,15 +205,6 @@ title: restful – Schweizer Expert*innen für sichere Peer-Communities
   <h2 class="font-display text-3xl font-bold sm:text-4xl">Advisory Community</h2>
   <p class="mt-2 text-ink/70">Diese Menschen unterstützen restful</p>
   <div class="mt-10 grid gap-x-8 gap-y-10 sm:grid-cols-2">
-    {% set advisory = [
-      { name: "Felix Muff", role: "VRP Concordia Versicherungen", img: "advisory-felix-muff.png" },
-      { name: "Dr. med. Christoph Hamann", role: "Leiter Kinder- und Jugendpsychosomatik INSEL", img: "advisory-christoph-hamann.png" },
-      { name: "Flavia Wasserfallen", role: "Ständerätin SP (Bern), Präsidentin Allianz Gesunde Schweiz, Präsidentin geliko", img: "advisory-flavia-wasserfallen.png" },
-      { name: "Melanie Mettler", role: "Finanzdirektorin Stadt Bern, Matronatsskomitee Selbsthilfe CH", img: "advisory-melanie-mettler.png" },
-      { name: "Felix Wettstein", role: "Nationalrat Grüne (Solothurn), Präsident pro-salute, Fachrat Public Health Schweiz", img: "advisory-felix-wettstein.jpg" },
-      { name: "Andrea Jansen", role: "Investorin, Board Member Aepsy, mal ehrlich", img: "advisory-andrea-jansen.jpg" },
-      { name: "Christian Hirsig", role: "Unternehmer, Gründer PowerCoders & high-five.ai", img: "advisory-christian-hirsig.png" }
-    ] %}
     {% for a in advisory %}
     <div class="flex items-center gap-4">
       <img src="/images/{{ a.img }}" alt="{{ a.name }}" class="h-16 w-16 shrink-0 rounded-full object-cover">
