@@ -4,5 +4,6 @@
   { "name": "Stefan Niederhauser", "role": "Technologie", "bio": "Ex. VP of Product Management for Data, Analytics & AI, Swisscom", "img": "team-stefan-niederhauser.png" },
   { "name": "Chantal Kuske", "role": "Scientific Advisory", "bio": "Consulting & Research in Health Science", "img": "team-chantal-kuske.png" },
   { "name": "Melanie Spescha", "role": "Projekte & Fundraising", "bio": "BA Soziale Arbeit, Inklusions- und Fundraising-Expertin", "img": "team-melanie-spescha.png" },
-  { "name": "Lona Gaugler", "role": "Industry Lead", "bio": "MSc Oncology and molecular Medecine, MScAdvanced Oncology", "img": "team-lona-gaugler.jpg" }
+  { "name": "Lona Gaugler", "role": "Industry Lead", "bio": "MSc Oncology and molecular Medecine, MScAdvanced Oncology", "img": "team-lona-gaugler.jpg" },
+  { "name": "Silvan Jost", "role": "Technologie", "bio": "", "img": "team-silvan-jost.jpg" }
 ]
