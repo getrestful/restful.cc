@@ -3,5 +3,11 @@
   { "name": "demenz:miteinander von Demenzworld", "desc": "Für Angehörige von Personen mit Demenz", "href": "https://demenzworld.com/demenzmiteinander/", "logo": "logo-demenzworld.png" },
   { "name": "Peer Angebot der Krebsliga Schweiz", "desc": "Wirkungsmessung der Peer-Plattform für Betroffene von Krebs und Angehörige", "href": "https://peerplattform.krebsliga.ch/", "logo": "logo-krebsliga.webp" },
   { "name": "Swiss Sleep Circle", "desc": "Digitale Prävention, Früherkennung und Blended-stepped-Care Behandlung von Menschen mit Schlaf-Wach-Erkrankungen", "href": "https://gesundheitsfoerderung.ch/praevention-in-der-gesundheitsversorgung-pgv/projektfoerderung/gefoerderte-projekte/swiss-sleep", "logo": "logo-inselspital.webp" },
-  { "name": "CerebralConnect von der Stiftung Cerebral", "desc": "Für Angehörige von Menschen mit einer cerebralen Bewegungsbeeinträchtigung", "href": "#", "logo": "logo-cerebral.webp" }
+  { "name": "CerebralConnect von der Stiftung Cerebral", "desc": "Für Angehörige von Menschen mit einer cerebralen Bewegungsbeeinträchtigung", "href": "#", "logo": "logo-cerebral.webp" },
+  { "name": "SPO – Schweizer PPIE Plattform", "desc": "Plattform zur Förderung des Einbezugs von Betroffenen, Angehörigen und der Bevölkerung", "href": "#", "logo": "logo-spo.webp" },
+  { "name": "SVAMV Peer vom Schweizerischen Verband alleinerziehender Mütter und Väter", "desc": "Für alleinerziehende Eltern", "href": "https://svamv.ch/thema/svamvpeer/", "logo": "logo-svamv.svg" },
+  { "name": "Procap", "desc": "Für Menschen mit Behinderung und ihre Angehörigen", "href": "#", "logo": "logo-procap.png" },
+  { "name": "SGVE – Schweizerische Gemeinschaft verwaister Eltern", "desc": "Für Eltern nach dem Verlust eines Kindes", "href": "#", "logo": "logo-sgve.jpg" },
+  { "name": "Peer-Pool von Frühchen & Neokinder Schweiz", "desc": "Für Eltern und Angehörige von kranken Neugeborenen und Frühgeborenen", "href": "#", "logo": "logo-fruehchen-neokinder.png" },
+  { "name": "CoPEER von Spitex Kriens", "desc": "Für Klient:innen und Angehörige der Spitex Kriens", "href": "#", "logo": "logo-spitex-kriens.png" }
 ]
