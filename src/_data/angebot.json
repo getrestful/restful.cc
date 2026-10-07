@@ -1,0 +1,22 @@
+{
+  "intro": "restful arbeitet für Organisationen im Gesundheits- und Sozialwesen in zwei Feldern. Wähle das, was zu deinem Vorhaben passt.",
+  "intro_entwurf": true,
+  "felder": [
+    {
+      "titel": "Peer-Angebote",
+      "text": "Wir bauen mit dir ein Angebot auf, in dem Betroffene voneinander lernen, und betreiben es unter dem Namen deiner Organisation. Von der Idee bis zur Übergabe an deine Koordination.",
+      "stichworte": ["Erprobte Peer-Formate", "Plattform unter deiner Marke", "Begleitung bis zum Betrieb"],
+      "linktext": "Peer-Angebote ansehen",
+      "href": "/peer-angebote/",
+      "entwurf": true
+    },
+    {
+      "titel": "Individuelle Projekte",
+      "text": "Manche Vorhaben brauchen eine eigene Lösung. Wir entwickeln digitale und hybride Angebote entlang des Patientenpfads, von der Konzeption bis zum Betrieb.",
+      "stichworte": ["Patientenpfade", "Blended Care", "Konzeption bis Realisierung"],
+      "linktext": "Individuelle Projekte ansehen",
+      "href": "/projekte/",
+      "entwurf": true
+    }
+  ]
+}

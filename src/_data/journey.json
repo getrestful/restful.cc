@@ -1,44 +1,44 @@
 {
-  "titel": "Wo steht ihr?",
-  "intro": "Jede Organisation startet an einem anderen Punkt. Wählt die Situation, die eurer am nächsten kommt.",
+  "titel": "Wo stehst du?",
+  "intro": "Jede Organisation startet an einem anderen Punkt. Wähle die Situation, die deiner am nächsten kommt.",
   "cta": "Erstgespräch vereinbaren",
   "entwurf": true,
   "stationen": [
     {
       "id": "station-ueberlegen",
       "nummer": 1,
-      "titel": "Ihr überlegt euch ein Peer-Angebot",
+      "titel": "Du überlegst dir ein Peer-Angebot",
       "kurz": "Die Idee ist da, das Angebot noch nicht.",
-      "intro": "Ihr spürt, dass eure Mitglieder voneinander lernen könnten, wisst aber noch nicht, wie ein Angebot aussehen soll. Wir klären mit euch, ob und in welcher Form ein Peer-Angebot zu eurer Organisation passt.",
+      "intro": "Du spürst, dass deine Mitglieder voneinander lernen könnten, weisst aber noch nicht, wie ein Angebot aussehen soll. Wir klären mit dir, ob und in welcher Form ein Peer-Angebot zu deiner Organisation passt.",
       "angebot": [
-        "Wir klären mit euch Zielgruppe, Ziele und Ressourcen",
-        "Wir wählen mit euch ein erprobtes Peer-Format aus unserem Playbook",
-        "Wir stellen die Plattform unter eurem Namen bereit",
-        "Wir schulen eure Koordination und begleiten den Pilot"
+        "Wir klären mit dir Zielgruppe, Ziele und Ressourcen",
+        "Wir wählen mit dir ein erprobtes Peer-Format aus unserem Playbook",
+        "Wir stellen die Plattform unter deinem Namen bereit",
+        "Wir schulen deine Koordination und begleiten den Pilot"
       ],
       "ablauf": [
-        { "schritt": "Bedürfnisanalyse", "text": "Gespräche mit euch und mit Betroffenen, Klärung von Zielen und Rahmen." },
-        { "schritt": "Konzeption", "text": "Format, Rollen und Ablauf des Angebots, abgestimmt auf eure Organisation." },
+        { "schritt": "Bedürfnisanalyse", "text": "Gespräche mit dir und mit Betroffenen, Klärung von Zielen und Rahmen." },
+        { "schritt": "Konzeption", "text": "Format, Rollen und Ablauf des Angebots, abgestimmt auf deine Organisation." },
         { "schritt": "Aufbau", "text": "Plattform einrichten, Koordination schulen, Pilot starten." },
-        { "schritt": "Betrieb", "text": "Übergabe an eure Koordination, laufender Support und Auswertung." }
+        { "schritt": "Betrieb", "text": "Übergabe an deine Koordination, laufender Support und Auswertung." }
       ],
       "entwurf": true
     },
     {
       "id": "station-analog",
       "nummer": 2,
-      "titel": "Eure Community läuft analog",
+      "titel": "Deine Community läuft analog",
       "kurz": "Es gibt Treffen, Gruppen oder Telefonkontakte.",
-      "intro": "Bei euch tauschen sich Betroffene bereits aus, in Gruppen, an Treffen oder per Telefon. Wir ergänzen dieses Angebot digital, damit auch Menschen dazukommen, die heute nicht teilnehmen können.",
+      "intro": "Bei dir tauschen sich Betroffene bereits aus, in Gruppen, an Treffen oder per Telefon. Wir ergänzen dieses Angebot digital, damit auch Menschen dazukommen, die heute nicht teilnehmen können.",
       "angebot": [
-        "Wir analysieren mit euch, wer heute teilnimmt und wer fehlt",
-        "Wir ergänzen euer Angebot um ein digitales Peer-Format",
-        "Wir binden eure bestehenden Peers und Freiwilligen ein",
+        "Wir analysieren mit dir, wer heute teilnimmt und wer fehlt",
+        "Wir ergänzen dein Angebot um ein digitales Peer-Format",
+        "Wir binden deine bestehenden Peers und Freiwilligen ein",
         "Wir sorgen dafür, dass analog und digital zusammenspielen"
       ],
       "ablauf": [
-        { "schritt": "Bedürfnisanalyse", "text": "Bestandsaufnahme eures heutigen Angebots und der Lücken." },
-        { "schritt": "Konzeption", "text": "Digitale Ergänzung, die zu euren Treffen und Gruppen passt." },
+        { "schritt": "Bedürfnisanalyse", "text": "Bestandsaufnahme deines heutigen Angebots und der Lücken." },
+        { "schritt": "Konzeption", "text": "Digitale Ergänzung, die zu deinen Treffen und Gruppen passt." },
         { "schritt": "Aufbau", "text": "Plattform einrichten, bestehende Peers einbinden, Pilot starten." },
         { "schritt": "Betrieb", "text": "Gemeinsame Koordination von analog und digital, laufender Support." }
       ],
@@ -47,14 +47,14 @@
     {
       "id": "station-harzt",
       "nummer": 3,
-      "titel": "Eure Community harzt",
+      "titel": "Deine Community harzt",
       "kurz": "Das Angebot besteht, kommt aber nicht recht in Gang.",
-      "intro": "Ihr habt bereits ein Peer-Angebot, aber die Beteiligung ist tiefer als erhofft, Matches tragen nicht oder die Koordination ist überlastet. Wir schauen mit euch genau hin und richten das Angebot neu aus.",
+      "intro": "Du hast bereits ein Peer-Angebot, aber die Beteiligung ist tiefer als erhofft, Matches tragen nicht oder die Koordination ist überlastet. Wir schauen mit dir genau hin und richten das Angebot neu aus.",
       "angebot": [
         "Wir analysieren Beteiligung, Matching und Abläufe",
-        "Wir benennen mit euch, wo es hängt, und priorisieren",
+        "Wir benennen mit dir, wo es hängt, und priorisieren",
         "Wir passen Format und Plattform gezielt an",
-        "Wir entlasten eure Koordination mit klaren Prozessen"
+        "Wir entlasten deine Koordination mit klaren Prozessen"
       ],
       "ablauf": [
         { "schritt": "Bedürfnisanalyse", "text": "Auswertung des bestehenden Angebots und Gespräche mit Beteiligten." },
