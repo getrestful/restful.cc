@@ -1,0 +1,71 @@
+---
+layout: base.njk
+title: Individuelle Projekte | restful
+description: restful entwickelt digitale und hybride Angebote entlang des Patientenpfads, von der Konzeption bis zum Betrieb. Einblick in unseren Zugang und ein Fallbeispiel.
+permalink: /projekte/
+---
+{% from "icon.njk" import icon %}
+
+<section aria-labelledby="projekte-hero-titel" class="border-b border-line">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h1 id="projekte-hero-titel" class="max-w-3xl break-words text-h1 font-semibold tracking-tight text-balance md:text-display">Patientenpfade digital denken</h1>
+    <p class="mt-6 max-w-prose text-lead text-ink-soft">Manche Vorhaben brauchen eine eigene Lösung. Wir entwickeln digitale und hybride Angebote für Organisationen im Gesundheitswesen, die dort ansetzen, wo Menschen im Versorgungsverlauf stehen, von der Konzeption bis zum Betrieb.</p>
+    <a href="#kontakt" class="mt-10 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-medium text-paper hover:bg-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Projekt besprechen {{ icon("arrow", "size-5") }}</a>
+  </div>
+</section>
+
+<section aria-labelledby="zugang-titel">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="zugang-titel" class="max-w-2xl text-h2 font-semibold tracking-tight">Unser Zugang</h2>
+    <ul class="mt-12 grid gap-10 md:grid-cols-3 md:gap-8">
+      <li>
+        <span class="inline-flex size-12 items-center justify-center rounded-full bg-accent-soft text-accent">{{ icon("chart") }}</span>
+        <h3 class="mt-5 text-h3 font-semibold">Patientenpfad als Ausgangspunkt</h3>
+        <p class="mt-3 max-w-prose text-ink-soft">Wir starten bei der Frage, wo Menschen im Versorgungsverlauf stehen, nicht bei einer vorgefertigten Lösung.</p>
+      </li>
+      <li>
+        <span class="inline-flex size-12 items-center justify-center rounded-full bg-accent-soft text-accent">{{ icon("layers") }}</span>
+        <h3 class="mt-5 text-h3 font-semibold">Hybride Angebote</h3>
+        <p class="mt-3 max-w-prose text-ink-soft">Wir verbinden digitale und persönliche Elemente so, wie es für die jeweilige Situation sinnvoll ist.</p>
+      </li>
+      <li>
+        <span class="inline-flex size-12 items-center justify-center rounded-full bg-accent-soft text-accent">{{ icon("shield") }}</span>
+        <h3 class="mt-5 text-h3 font-semibold">Erfahrung aus dem Gesundheitswesen</h3>
+        <p class="mt-3 max-w-prose text-ink-soft">Mehrsprachigkeit, sensible Daten und komplexe Stakeholder-Settings sind uns vertraut, unter anderem aus unserer Arbeit mit Peer-Angeboten.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="fallbeispiele-titel" class="border-t border-line bg-surface">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="fallbeispiele-titel" class="text-h2 font-semibold tracking-tight">Fallbeispiel</h2>
+
+    <div class="mt-10 rounded-2xl border border-line bg-paper p-8 sm:p-10">
+      <h3 class="text-h3 font-semibold">Swiss Sleep Circle</h3>
+      <div class="mt-6 grid gap-10 md:grid-cols-2">
+        <div>
+          <h4 class="font-semibold">Ausgangslage und Auftrag</h4>
+          <p class="mt-3 text-ink-soft">Die Swiss Sleep House Bern, Universitätsklinik für Neurologie am Inselspital, wollte Menschen mit Schlaf-Wach-Erkrankungen digital erreichen, von der Früherkennung bis zur Behandlung. Finanziert wird das Projekt von Gesundheitsförderung Schweiz im Programm Prävention in der Gesundheitsversorgung. Der Ansatz folgt dem Prinzip Blended Stepped Care: von Screening bis Behandlung.</p>
+        </div>
+        <div>
+          <h4 class="font-semibold">Rolle von restful</h4>
+          <p class="mt-3 text-ink-soft">restful übernahm Konzeption, Design und die komplette technische Realisierung der digitalen Plattform.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 rounded-2xl border border-dashed border-line p-8 sm:p-10">
+      <h3 class="text-h3 font-semibold text-ink-soft">Fallbeispiel in Vorbereitung</h3>
+      <p class="mt-3 max-w-prose text-ink-soft">Ein weiteres Fallbeispiel befindet sich in Abstimmung mit der Partnerorganisation. Wir ergänzen es, sobald eine Freigabe für die öffentliche Formulierung vorliegt.</p>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="projekte-cta-titel" class="border-t border-line">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="projekte-cta-titel" class="text-h2 font-semibold tracking-tight">Ein eigenes Projekt im Kopf?</h2>
+    <p class="mt-4 max-w-prose text-ink-soft">Erzählt uns, wo ihr steht. Wir schauen gemeinsam, ob und wie wir euch unterstützen können.</p>
+    <a href="#kontakt" class="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-medium text-paper hover:bg-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Projekt besprechen {{ icon("arrow", "size-5") }}</a>
+  </div>
+</section>

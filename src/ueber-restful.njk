@@ -1,0 +1,67 @@
+---
+layout: base.njk
+title: Über restful | Kompetenzzentrum für Peer-Angebote
+description: restful ist Kompetenzzentrum und Umsetzungspartnerin für Peer-Interventionen im Schweizer Gesundheits- und Sozialwesen. Erfahrt mehr über unsere Vision, unsere Arbeitsweise und unser Team.
+permalink: /ueber-restful/
+---
+{% from "icon.njk" import icon %}
+
+<section aria-labelledby="vision-titel" class="border-b border-line">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h1 id="vision-titel" class="max-w-3xl break-words text-h1 font-semibold tracking-tight text-balance md:text-display">Erfahrungswissen von Gleichbetroffenen im Schweizer Gesundheits- und Sozialwesen verfügbar machen.</h1>
+    <p class="mt-6 max-w-prose text-lead text-ink-soft">Wir gehen von der Hypothese aus, dass Peer-to-Peer-Austausch zu einer vierten Säule des Schweizer Gesundheitssystems werden kann, neben medizinischer, therapeutischer und pflegerischer Versorgung.</p>
+    <p class="mt-4 max-w-prose text-ink-soft">Als Kompetenzzentrum für Peer-Interventionen unterstützen wir Gesundheits- und Sozialorganisationen dabei, sichere und wirksame Peer-Austausche anzubieten, und übernehmen als Umsetzungspartnerin die technische und methodische Arbeit dahinter.</p>
+  </div>
+</section>
+
+<section aria-labelledby="arbeitsweise-titel">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="arbeitsweise-titel" class="max-w-2xl text-h2 font-semibold tracking-tight">Wie wir arbeiten</h2>
+    <ul class="mt-12 grid gap-10 md:grid-cols-2 md:gap-8">
+      <li>
+        <span class="inline-flex size-12 items-center justify-center rounded-full bg-accent-soft text-accent">{{ icon("layers") }}</span>
+        <h3 class="mt-5 text-h3 font-semibold">Im Hintergrund</h3>
+        <p class="mt-3 max-w-prose text-ink-soft">Das Peer-Angebot läuft unter der Marke der Partnerorganisation. Sie bleibt für ihre Mitglieder und Betroffenen die Ansprechpartnerin, restful bleibt im Hintergrund.</p>
+      </li>
+      <li>
+        <span class="inline-flex size-12 items-center justify-center rounded-full bg-accent-soft text-accent">{{ icon("users") }}</span>
+        <h3 class="mt-5 text-h3 font-semibold">Interdisziplinär</h3>
+        <p class="mt-3 max-w-prose text-ink-soft">Unser Team vereint Sozialpädagogik, Public Health, Forschung und Technologie. So lässt sich ein Peer-Angebot von der Konzeption bis zum Betrieb fachlich fundiert begleiten.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="team-titel" class="border-t border-line bg-surface">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="team-titel" class="text-h2 font-semibold tracking-tight">Team</h2>
+    <ul class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {% for m in team %}
+      <li>
+        <img src="/images/{{ m.img }}" alt="{{ m.name }}" class="aspect-square w-full rounded-xl object-cover">
+        <h3 class="mt-4 font-semibold">{{ m.name }}</h3>
+        <p class="text-ink-soft">{{ m.role }}</p>
+        {% if m.bio %}<p class="mt-1 text-sm text-ink-soft">{{ m.bio }}</p>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="advisory-titel" class="border-t border-line">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="advisory-titel" class="text-h2 font-semibold tracking-tight">Advisory Community</h2>
+    <p class="mt-4 max-w-prose text-ink-soft">Diese Menschen unterstützen restful mit ihrer Erfahrung und ihrem Netzwerk.</p>
+    <ul class="mt-10 grid gap-x-8 gap-y-6 sm:grid-cols-2">
+      {% for a in advisory %}
+      <li class="flex items-center gap-4">
+        <img src="/images/{{ a.img }}" alt="{{ a.name }}" class="size-14 shrink-0 rounded-full object-cover">
+        <div>
+          <h3 class="font-semibold">{{ a.name }}</h3>
+          <p class="text-sm text-ink-soft">{{ a.role }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

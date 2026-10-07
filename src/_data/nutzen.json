@@ -1,0 +1,20 @@
+[
+  {
+    "titel": "Ihr erreicht Menschen, die sonst niemand erreicht",
+    "text": "Betroffene vertrauen Betroffenen. Ein Peer-Angebot öffnet einen Zugang zu Menschen, die Beratungsstellen und Fachpersonen nur selten aufsuchen.",
+    "icon": "users",
+    "entwurf": true
+  },
+  {
+    "titel": "Ihr ergänzt und entlastet, was schon da ist",
+    "text": "Peer-Austausch ersetzt keine Beratung und keine Behandlung. Er fängt Fragen auf, die zwischen den Terminen entstehen, und entlastet so eure Fachpersonen.",
+    "icon": "layers",
+    "entwurf": true
+  },
+  {
+    "titel": "Ihr macht Erfahrungswissen sichtbar",
+    "text": "Jede Begegnung zwischen Gleichbetroffenen erzeugt Wissen über Alltag, Hürden und Lösungen. Mit einem strukturierten Angebot wird dieses Wissen auswertbar, für eure Arbeit und gegenüber Geldgebern.",
+    "icon": "chart",
+    "entwurf": true
+  }
+]
