@@ -1,15 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --font-serif: "Playfair Display", serif;
-  --font-sans: "Raleway", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 
   --color-brand: #1a00ff;
   --color-brand-dark: #1400d6;
   --color-brand-text: #3b5bdb;
   --color-ink: #16161a;
   --color-dark: #252525;
+
+  --color-paper: #fbfaf7;
+  --color-surface: #f2f0ea;
+  --color-line: #dcd8ce;
+  --color-ink-soft: #4a5558;
+  --color-accent: #1e6b66;
+  --color-accent-strong: #154f4b;
+  --color-accent-soft: #e3efed;
+
+  --text-base: 1.0625rem;
+  --text-base--line-height: 1.65;
+  --text-lead: 1.25rem;
+  --text-lead--line-height: 1.55;
+  --text-h3: 1.25rem;
+  --text-h3--line-height: 1.35;
+  --text-h2: 1.75rem;
+  --text-h2--line-height: 1.25;
+  --text-h1: 2.375rem;
+  --text-h1--line-height: 1.15;
+  --text-display: 3.25rem;
+  --text-display--line-height: 1.1;
+
+  --spacing-section: 6rem;
+  --spacing-section-sm: 4rem;
+  --container-content: 72rem;
 }
 
 body {
@@ -17,6 +40,13 @@ body {
   color: var(--color-ink);
 }
 
-h1, h2, h3, h4, .font-display {
-  font-family: var(--font-serif);
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
 }

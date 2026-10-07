@@ -1,244 +1,152 @@
 ---
 layout: base.njk
-title: restful – Schweizer Expert*innen für sichere Peer-Communities
+title: restful | Peer-Angebote für Organisationen im Gesundheits- und Sozialwesen
+description: restful baut mit Patientenorganisationen, Ligen und Fachverbänden Peer-Angebote auf und betreibt sie unter deren Namen. Kompetenzzentrum und Umsetzungspartnerin für Peer-Arbeit in der Schweiz.
+scripts:
+  - /js/journey.js
 ---
 {% from "icon.njk" import icon %}
 
-<section id="home" class="mx-auto max-w-4xl px-6 pb-16 pt-20 text-center">
-  <h1 class="font-display text-4xl font-bold leading-tight sm:text-5xl">
-    <span class="text-brand-text">Peer-Expertinnen</span> für starke Communities.
-  </h1>
-  <p class="mx-auto mt-6 max-w-2xl text-lg text-ink/70">
-    Wir unterstützen Organisationen im Aufbau von Peer-Angeboten. Von der Idee über die Realisierung bis zur lebendigen und wirkungsvollen Peer-Community.
-  </p>
-  <a href="#angebot" class="mt-8 inline-flex items-center gap-2 rounded-lg bg-brand px-6 py-3 font-semibold text-white hover:bg-brand-dark">
-    unser Angebot {{ icon("arrow", "h-4 w-4") }}
-  </a>
+<section aria-labelledby="hero-titel" class="border-b border-line">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h1 id="hero-titel" class="max-w-3xl break-words text-h1 font-semibold tracking-tight text-balance md:text-display">Erfahrungswissen wirksam machen. Unter eurem Namen.</h1>
+    <p class="mt-6 max-w-prose text-lead text-ink-soft">restful ist Kompetenzzentrum und Umsetzungspartnerin für Peer-Angebote im Schweizer Gesundheits- und Sozialwesen. Wir bauen mit euch Angebote auf, in denen Betroffene voneinander lernen, und betreiben sie mit euch weiter.</p>
+    <p class="mt-4 max-w-prose text-ink-soft">Weil Gleichbetroffene etwas wissen, das in keiner Sprechstunde Platz hat.</p>
+    <a href="#kontakt" class="mt-10 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-medium text-paper hover:bg-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">{{ journey.cta }} {{ icon("arrow", "size-5") }}</a>
+  </div>
 </section>
 
-<section class="mx-auto max-w-6xl px-6">
-  <img src="/images/hero-illustration.svg" alt="Illustration: Austausch und Vernetzung" class="w-full rounded-2xl bg-neutral-100 p-10">
+<section aria-labelledby="nutzen-titel">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="nutzen-titel" class="max-w-2xl text-h2 font-semibold tracking-tight">Warum sich ein Peer-Angebot für eure Organisation lohnt</h2>
+    <ul class="mt-12 grid gap-10 md:grid-cols-3 md:gap-8">
+      {% for item in nutzen %}
+      <li>
+        <span class="inline-flex size-12 items-center justify-center rounded-full bg-accent-soft text-accent">{{ icon(item.icon) }}</span>
+        <h3 class="mt-5 text-h3 font-semibold">{{ item.titel }}</h3>
+        <p class="mt-3 max-w-prose text-ink-soft">{{ item.text }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 
-<section id="warumpeer" class="mx-auto max-w-6xl px-6 py-20">
-  <h2 class="font-display text-3xl font-bold sm:text-4xl">Warum ein Peer-Angebot für deine Organisation?</h2>
-  <div class="mt-10 grid gap-10 md:grid-cols-3">
-    <div>
-      {{ icon("users", "h-6 w-6 text-ink") }}
-      <h3 class="mt-3 font-semibold">Nähe und Zugang zur Zielgruppe</h3>
-      <p class="mt-2 text-sm text-ink/70">Gewinne authentische Einblicke in die Lebensrealität deiner Zielgruppe und ermögliche niederschwelligen Zugang zu Austausch und Unterstützung.</p>
-    </div>
-    <div>
-      {{ icon("book", "h-6 w-6 text-ink") }}
-      <h3 class="mt-3 font-semibold">Ergänzung und Entlastung bestehender Strukturen</h3>
-      <p class="mt-2 text-sm text-ink/70">Peer-Angebote stärken Selbstwirksamkeit, fördern nachhaltige Wirkung und entlasten Fachpersonen, indem sie professionelle Angebote sinnvoll ergänzen.</p>
-    </div>
-    <div>
-      {{ icon("eye", "h-6 w-6 text-ink") }}
-      <h3 class="mt-3 font-semibold">Reichweite und Wirkung</h3>
-      <p class="mt-2 text-sm text-ink/70">Erreiche neue Zielgruppen digital, nutze datenbasierte Wirkungsmessung und gewinne wertvolle Insights für Qualitätsentwicklung und Förderberichte.</p>
+<section aria-labelledby="unsicher-titel">
+  <div class="mx-auto max-w-content px-5 sm:px-8">
+    <div class="rounded-2xl border border-line bg-surface px-6 py-8 sm:px-10">
+      <h2 id="unsicher-titel" class="text-h3 font-semibold">Noch unsicher, ob das zu euch passt?</h2>
+      <p class="mt-3 max-w-prose text-ink-soft">Ein Gespräch klärt oft mehr als jede Broschüre. Oder ihr verschafft euch zuerst in unserer Webinar-Reihe einen Überblick.</p>
+      <ul class="mt-6 flex flex-wrap gap-x-8 gap-y-3">
+        <li><a href="#kontakt" class="inline-flex items-center gap-2 font-medium text-accent underline underline-offset-4 hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Unverbindlich sprechen {{ icon("arrow", "size-4") }}</a></li>
+        <li><a href="#webinar" class="inline-flex items-center gap-2 font-medium text-accent underline underline-offset-4 hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Zur Webinar-Reihe {{ icon("arrow", "size-4") }}</a></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section class="mx-auto max-w-6xl px-6 pb-20">
-  <blockquote class="rounded-2xl bg-dark px-8 py-10 text-white md:flex md:gap-10 md:px-12">
-    <img src="/images/testimonial-christina-eberle.jpg" alt="Christina Eberle" class="mb-6 h-32 w-24 shrink-0 rounded-xl object-cover md:mb-0">
-    <div>
-      <p class="font-display text-lg italic leading-relaxed">„Mit restful haben wir einen Partner gefunden, der unsere Vision versteht – Betroffene und Angehörige auf Augenhöhe zu vernetzen. Die Zusammenarbeit bei der Entwicklung der Austauschplattform für Menschen mit Cystischer Fibrose war durchweg professionell und partnerschaftlich. Das Ergebnis überzeugt: ein sicheres und wirkungsvolles Peer-Angebot, das echten Austausch und gegenseitige Unterstützung schafft. Ich kann restful als Entwicklungspartner uneingeschränkt empfehlen.“</p>
-      <footer class="mt-4 text-sm text-white/70">
-        <span class="font-semibold text-white">Christina Eberle</span> – Geschäftsführerin von Cystische Fibrose Schweiz (CFS)
-      </footer>
-    </div>
-  </blockquote>
-</section>
+<section aria-labelledby="journey-titel" id="journey">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="journey-titel" class="text-h2 font-semibold tracking-tight">{{ journey.titel }}</h2>
+    <p class="mt-4 max-w-prose text-ink-soft">{{ journey.intro }}</p>
 
-<section id="vision" class="mx-auto max-w-6xl px-6 pb-20">
-  <div class="grid items-center gap-12 md:grid-cols-2">
-    <div>
-      <p class="text-sm font-semibold uppercase tracking-wide text-brand-text">Unsere Vision</p>
-      <h2 class="font-display mt-3 text-3xl font-bold sm:text-4xl">Wir machen Erfahrungswissen von Gleichbetroffenen verfügbar und tragen damit messbar zur Stärkung der mentalen Gesundheit bei</h2>
-      <p class="mt-5 text-ink/70">Wir machen Peer-Angebote für Organisationen skalierbar, messbar und wirksam – als verbindendes Element zwischen Fachwissen und Lebenserfahrung.</p>
-      <a href="#angebot" class="mt-6 inline-flex items-center gap-2 rounded-lg bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-dark">
-        zum Angebot {{ icon("arrow", "h-4 w-4") }}
-      </a>
-    </div>
-    <div class="flex justify-center gap-3">
-      <img src="/images/vision-screen-1.png" alt="Peer-Plattform Beispiel" class="w-1/3 rounded-2xl border border-black/10 shadow-sm">
-      <img src="/images/vision-screen-2.png" alt="Peer-Plattform Beispiel" class="w-1/3 -translate-y-4 rounded-2xl border border-black/10 shadow-sm">
-      <img src="/images/vision-screen-3.png" alt="Peer-Plattform Beispiel" class="w-1/3 rounded-2xl border border-black/10 shadow-sm">
-    </div>
-  </div>
-</section>
-
-<section id="angebot" class="bg-dark py-20 text-white">
-  <div class="mx-auto max-w-6xl px-6">
-    <h2 class="font-display text-3xl font-bold sm:text-4xl">Unser Angebot</h2>
-    <p class="mt-3 max-w-xl text-white/70">Von der Idee bis zum wirkungsvollen Peer-Angebot – Schritt für Schritt gemeinsam.</p>
-    <div class="mt-10 grid gap-8 md:grid-cols-2">
-      <div class="flex gap-4">
-        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-dark">{{ icon("book", "h-5 w-5") }}</span>
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">1. Bedürfnisanalyse</h3>
-          <p class="mt-1 text-sm text-white/70">Workshops mit eurer Organisation und Betroffenen. Gemeinsam definieren wir Use Case, Wirkung und welche Matching-Kriterien wirklich zählen.</p>
+    <ol class="mt-10 grid gap-4" data-journey>
+      {% for station in journey.stationen %}
+      <li class="rounded-2xl border border-line bg-paper">
+        <h3 class="text-h3">
+          <button type="button" id="{{ station.id }}-knopf" aria-expanded="true" aria-controls="{{ station.id }}" data-journey-button class="group flex w-full items-center gap-5 rounded-2xl px-5 py-5 text-left hover:bg-surface focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:px-8 sm:py-6">
+            <span class="inline-flex size-10 shrink-0 items-center justify-center rounded-full border border-accent text-base font-semibold text-accent group-aria-expanded:bg-accent group-aria-expanded:text-paper">{{ station.nummer }}</span>
+            <span class="grid flex-1 gap-1">
+              <span class="font-semibold">{{ station.titel }}</span>
+              <span class="text-base font-normal text-ink-soft">{{ station.kurz }}</span>
+            </span>
+            {{ icon("chevron-down", "size-6 shrink-0 text-ink-soft transition-transform duration-300 motion-reduce:transition-none group-aria-expanded:rotate-180") }}
+          </button>
+        </h3>
+        <div id="{{ station.id }}" role="region" aria-labelledby="{{ station.id }}-knopf" data-journey-panel data-open="true" class="grid grid-rows-[1fr] transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none data-[open=false]:grid-rows-[0fr]">
+          <div class="overflow-hidden">
+            <div class="border-t border-line px-5 pb-8 pt-6 sm:px-8">
+              <p class="max-w-prose">{{ station.intro }}</p>
+              <div class="mt-8 grid gap-10 md:grid-cols-2">
+                <div>
+                  <h4 class="font-semibold">Was wir konkret tun</h4>
+                  <ul class="mt-4 grid gap-3">
+                    {% for punkt in station.angebot %}
+                    <li class="flex gap-3"><span class="mt-1 text-accent">{{ icon("check", "size-5") }}</span><span>{{ punkt }}</span></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Wie ein Projekt abläuft</h4>
+                  <ol class="mt-4 grid gap-4">
+                    {% for schritt in station.ablauf %}
+                    <li class="grid grid-cols-[auto_1fr] gap-x-3">
+                      <span class="text-sm font-semibold leading-7 text-accent">{{ loop.index }}</span>
+                      <span><span class="font-medium">{{ schritt.schritt }}</span><br><span class="text-ink-soft">{{ schritt.text }}</span></span>
+                    </li>
+                    {% endfor %}
+                  </ol>
+                </div>
+              </div>
+              <a href="#kontakt" class="mt-10 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-medium text-paper hover:bg-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">{{ journey.cta }} {{ icon("arrow", "size-5") }}</a>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="flex gap-4">
-        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-dark">{{ icon("clipboard", "h-5 w-5") }}</span>
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">2. Prototyping &amp; Testing</h3>
-          <p class="mt-1 text-sm text-white/70">Entwicklung eines Prototyps inklusive Fragebogen. Pilotierung in Fokusgruppen, anschliessend Feinschliff anhand des Feedbacks.</p>
-        </div>
-      </div>
-      <div class="flex gap-4">
-        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-dark">{{ icon("rocket", "h-5 w-5") }}</span>
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">3. Implementierung &amp; Launch</h3>
-          <p class="mt-1 text-sm text-white/70">Live-Schaltung der Peer-Plattform mit begleitendem Onboarding. Algorithmus und Fachpersonen sorgen gemeinsam für ein qualitatives Matching.</p>
-        </div>
-      </div>
-      <div class="flex gap-4">
-        <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-dark">{{ icon("users", "h-5 w-5") }}</span>
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-wide">4. Betrieb &amp; Evaluation</h3>
-          <p class="mt-1 text-sm text-white/70">Restful übernimmt Plattform-Betrieb, Datenpflege und Optimierung. Wir messen, was wirkt – und helfen, die Wirkung sichtbar zu machen.</p>
-        </div>
-      </div>
-    </div>
+      </li>
+      {% endfor %}
+    </ol>
   </div>
 </section>
 
-<section class="mx-auto max-w-6xl px-6 py-20">
-  <h2 class="font-display text-3xl font-bold sm:text-4xl">Sicher. Wissenschaftlich. Wirksam.</h2>
-  <p class="mt-2 text-ink/70">Warum restful der ideale Partner ist</p>
-  <a href="#communities" class="mt-6 inline-flex items-center gap-2 rounded-lg bg-brand px-5 py-2.5 text-sm font-semibold text-white hover:bg-brand-dark">
-    Diese Kunden sind überzeugt {{ icon("arrow", "h-4 w-4") }}
-  </a>
-  <div class="mt-10 grid gap-10 sm:grid-cols-2">
-    <div>
-      {{ icon("users", "h-6 w-6 text-ink") }}
-      <h3 class="mt-3 font-semibold">interdisziplinär &amp; praxisnah</h3>
-      <p class="mt-2 text-sm text-ink/70">Unsere Expertise vereint Sozialpädagogik, Public Health, Forschung und digitale Entwicklung – für Peer-Angebote, die nachhaltig wirken.</p>
-    </div>
-    <div>
-      {{ icon("clipboard", "h-6 w-6 text-ink") }}
-      <h3 class="mt-3 font-semibold">Wissenschaftlich begleitet</h3>
-      <p class="mt-2 text-sm text-ink/70">Wir messen, was wirkt – durch fundierte Evaluation und kontinuierliche Optimierung.</p>
-    </div>
-    <div>
-      {{ icon("shield", "h-6 w-6 text-ink") }}
-      <h3 class="mt-3 font-semibold">Datenschutz &amp; Anonymität</h3>
-      <p class="mt-2 text-sm text-ink/70">Höchste Sicherheitsstandards garantieren den Schutz sensibler Daten und ermöglichen einen geschützten Raum für Austausch.</p>
-    </div>
-    <div>
-      {{ icon("id-card", "h-6 w-6 text-ink") }}
-      <h3 class="mt-3 font-semibold">Qualität durch Fachpersonen</h3>
-      <p class="mt-2 text-sm text-ink/70">Das Matching wird nicht automatisiert, sondern von erfahrenen Fachpersonen vorgenommen – für sinnvolle, tragfähige Verbindungen.</p>
-    </div>
+<section aria-labelledby="settings-titel" class="border-y border-line bg-surface">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="settings-titel" class="text-h2 font-semibold tracking-tight">Wo Peer-Arbeit wirkt</h2>
+    <p class="mt-4 max-w-prose text-ink-soft">{{ settings.intro }}</p>
+    <ul class="mt-10 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+      {% for feld in settings.felder %}
+      <li class="border-t border-line pt-5">
+        <h3 class="font-semibold">{{ feld.titel }}</h3>
+        <p class="mt-2 text-ink-soft">{{ feld.text }}</p>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 
-<section id="communities" class="mx-auto max-w-6xl px-6 py-20">
-  <h2 class="font-display text-3xl font-bold sm:text-4xl">Initiativen</h2>
-  <p class="mt-2 text-ink/70">Diese Organisationen stärken bereits ihre Community mit restful</p>
-  <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-    {% for i in initiatives %}
-    <a href="{{ i.href }}" class="rounded-2xl border border-black/10 p-6 hover:shadow-md">
-      <img src="/images/{{ i.logo }}" alt="{{ i.name }}" class="h-10 w-auto max-w-[140px] object-contain object-left">
-      <h3 class="mt-4 font-semibold leading-snug">{{ i.name }}</h3>
-      <p class="mt-2 text-sm text-ink/70">{{ i.desc }}</p>
-    </a>
-    {% endfor %}
+<section aria-labelledby="vertrauen-titel">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="vertrauen-titel" class="max-w-2xl text-h2 font-semibold tracking-tight">Wissenschaftlich fundiert, sicher und vertraulich</h2>
+    <ul class="mt-12 grid gap-10 md:grid-cols-3 md:gap-8">
+      {% for item in vertrauen %}
+      <li>
+        <span class="inline-flex size-12 items-center justify-center rounded-full bg-accent-soft text-accent">{{ icon(item.icon) }}</span>
+        <h3 class="mt-5 text-h3 font-semibold">{{ item.titel }}</h3>
+        <p class="mt-3 max-w-prose text-ink-soft">{{ item.text }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="/wissenschaft/" class="mt-10 inline-flex items-center gap-2 font-medium text-accent underline underline-offset-4 hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Mehr zu Evidenz und Forschung {{ icon("arrow", "size-4") }}</a>
   </div>
 </section>
 
-<section class="mx-auto max-w-6xl px-6 pb-20">
-  <div class="flex flex-col gap-6 rounded-2xl bg-neutral-100 px-8 py-10 md:flex-row md:items-center md:justify-between">
-    <div>
-      <h2 class="font-display text-2xl font-bold text-brand-text sm:text-3xl">Ein Peer-Angebot für deine Organisation?</h2>
-      <p class="mt-2 text-ink/70">Erfahre jetzt mehr.</p>
-    </div>
-    <a href="#contact" class="inline-flex shrink-0 items-center gap-2 rounded-lg bg-brand px-6 py-3 font-semibold text-white hover:bg-brand-dark">
-      Jetzt Kontakt aufnehmen {{ icon("arrow", "h-4 w-4") }}
-    </a>
+<section aria-labelledby="communities-titel" id="communities" class="scroll-mt-8 border-t border-line">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="communities-titel" class="text-h2 font-semibold tracking-tight">Diese Organisationen arbeiten mit uns</h2>
+    <ul class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+      {% for i in initiatives %}
+      <li class="flex h-28 items-center justify-center rounded-xl border border-line bg-paper p-5">
+        <a href="{{ i.href }}" class="flex size-full items-center justify-center rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
+          <img src="/images/{{ i.logo }}" alt="{{ i.name }}" class="max-h-14 w-auto max-w-full object-contain" loading="lazy">
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 
-<section id="wirkung" class="mx-auto max-w-6xl px-6 pb-20">
-  <h2 class="font-display text-center text-3xl font-bold sm:text-4xl">Unsere Wirkung</h2>
-  <div class="mt-10 grid gap-10 text-center sm:grid-cols-3">
-    <div>
-      <div class="flex justify-center">{{ icon("users", "h-6 w-6 text-ink") }}</div>
-      <h3 class="mt-3 font-semibold">Betroffene und Angehörige</h3>
-      <p class="mt-2 text-sm text-ink/70">finden durch restful einfach Zugang zu Gleichbetroffenen, tauschen sich in einem moderierten Safe Space aus und werden in ihrer Selbstwirksamkeit gestärkt und damit resilienter und gesünder. restful bietet damit die ideale Kombination aus niederschwelliger Anonymität und tiefer Verbundenheit.</p>
-    </div>
-    <div>
-      <div class="flex justify-center">{{ icon("building", "h-6 w-6 text-ink") }}</div>
-      <h3 class="mt-3 font-semibold">Organisationen</h3>
-      <p class="mt-2 text-sm text-ink/70">bauen mit restful als Whitelabel-Lösung ihre eigene Peer-Community auf, die effizient und sicher moderiert und verwaltet werden kann. restful erlaubt ein neues, zeitgemässes Mitglieder:innenangebot, sowie dessen Monetarisierung als zusätzlichen Einkommenskanal.</p>
-    </div>
-    <div>
-      <div class="flex justify-center">{{ icon("globe", "h-6 w-6 text-ink") }}</div>
-      <h3 class="mt-3 font-semibold">Gesellschaft</h3>
-      <p class="mt-2 text-sm text-ink/70">Durch restful bieten wir eine neue, skalierbare und kosteneffiziente Ergänzung zum heutigen Angebot im Gesundheitssystem. Peer-Austausche wirken vor, während und nach der klassischen Intervention und helfen trotz Fachkräftemangel ein qualitativ hochwertiges und gleichzeitig zugängliches Gesundheitswesen zu erhalten.</p>
-    </div>
+<section aria-labelledby="projekte-titel" class="border-t border-line">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="projekte-titel" class="text-h2 font-semibold tracking-tight">Patientenpfade digital denken</h2>
+    <p class="mt-4 max-w-prose text-ink-soft">Manche Vorhaben brauchen eine eigene Lösung. Wir entwickeln digitale und hybride Angebote, die dort ansetzen, wo Menschen im Versorgungsverlauf stehen, von der Konzeption bis zum Betrieb.</p>
+    <a href="/projekte/" class="mt-8 inline-flex items-center gap-2 font-medium text-accent underline underline-offset-4 hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Individuelle Projekte ansehen {{ icon("arrow", "size-4") }}</a>
   </div>
-</section>
-
-<section id="team" class="mx-auto max-w-6xl px-6 pb-20">
-  <h2 class="font-display text-3xl font-bold sm:text-4xl">Unser Team</h2>
-  <p class="mt-4 max-w-3xl text-ink/70">Bei restful vereinen wir Expertise aus Sozialpädagogik, Wissenschaft, Public Health, Business und Technologie. Diese interdisziplinäre Kombination ermöglicht es uns, Peer-Angebote ganzheitlich zu denken – von der Konzeption über die technische Umsetzung bis zur wissenschaftlichen Evaluation. So stellen wir sicher, dass jedes Projekt fachlich fundiert, wirkungsorientiert und praxisnah umgesetzt wird.</p>
-  <div class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-    {% for m in team %}
-    <div>
-      <img src="/images/{{ m.img }}" alt="{{ m.name }}" class="aspect-square w-full rounded-xl object-cover">
-      <h3 class="mt-4 font-semibold">{{ m.name }}</h3>
-      <p class="text-sm text-ink/70">{{ m.role }}</p>
-      <a href="#" class="mt-2 inline-block text-ink/50 hover:text-brand">{{ icon("linkedin", "h-4 w-4") }}</a>
-      <p class="mt-1 text-sm text-ink/60">{{ m.bio }}</p>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section id="advisorycommunity" class="mx-auto max-w-6xl px-6 pb-20">
-  <h2 class="font-display text-3xl font-bold sm:text-4xl">Advisory Community</h2>
-  <p class="mt-2 text-ink/70">Diese Menschen unterstützen restful</p>
-  <div class="mt-10 grid gap-x-8 gap-y-10 sm:grid-cols-2">
-    {% for a in advisory %}
-    <div class="flex items-center gap-4">
-      <img src="/images/{{ a.img }}" alt="{{ a.name }}" class="h-16 w-16 shrink-0 rounded-full object-cover">
-      <div>
-        <h3 class="font-semibold">{{ a.name }}</h3>
-        <p class="text-sm text-ink/70">{{ a.role }}</p>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section id="contact" class="mx-auto max-w-2xl px-6 pb-24 text-center">
-  <h2 class="font-display text-3xl font-bold sm:text-4xl">Lass uns gemeinsam Wirkung schaffen!</h2>
-  <p class="mt-3 text-ink/70">Wir freuen uns, von dir zu hören!</p>
-  <form class="mt-8 space-y-5 text-left">
-    <div>
-      <label class="text-sm font-medium" for="name">Name</label>
-      <input id="name" name="name" type="text" placeholder="Stefanie Müller" class="mt-1 w-full rounded-lg border border-black/15 px-4 py-2.5 focus:border-brand focus:outline-none">
-    </div>
-    <div class="grid gap-5 sm:grid-cols-2">
-      <div>
-        <label class="text-sm font-medium" for="email">Email Addresse</label>
-        <input id="email" name="email" type="email" placeholder="stefanie.mueller@mail.ch" class="mt-1 w-full rounded-lg border border-black/15 px-4 py-2.5 focus:border-brand focus:outline-none">
-      </div>
-      <div>
-        <label class="text-sm font-medium" for="phone">Telefon (optional)</label>
-        <input id="phone" name="phone" type="tel" placeholder="(+41) ..." class="mt-1 w-full rounded-lg border border-black/15 px-4 py-2.5 focus:border-brand focus:outline-none">
-      </div>
-    </div>
-    <div>
-      <label class="text-sm font-medium" for="message">Deine Nachricht</label>
-      <textarea id="message" name="message" rows="4" class="mt-1 w-full rounded-lg border border-black/15 px-4 py-2.5 focus:border-brand focus:outline-none"></textarea>
-    </div>
-    <button type="submit" class="w-full rounded-lg bg-brand px-6 py-3 font-semibold text-white hover:bg-brand-dark">Nachricht schicken</button>
-  </form>
 </section>

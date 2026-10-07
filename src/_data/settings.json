@@ -1,0 +1,11 @@
+{
+  "intro": "Peer-Arbeit wirkt überall dort, wo Menschen mit einer Erkrankung, einer Behinderung oder einer belastenden Lebenssituation Orientierung suchen. Wir erkunden diese Felder laufend mit unseren Partnerinnen.",
+  "intro_entwurf": true,
+  "felder": [
+    { "titel": "Patientenorganisationen und Ligen", "text": "Austausch unter Betroffenen und Angehörigen als Teil des eigenen Angebots.", "entwurf": true },
+    { "titel": "Fachverbände und Beratungsstellen", "text": "Digitale Beratung und Peer-Formate, die bestehende Beratung ergänzen.", "entwurf": true },
+    { "titel": "Spitäler", "text": "Begleitung vor, während und nach einer Behandlung.", "entwurf": true },
+    { "titel": "Arztpraxen und Hausarztnetze", "text": "Peer-Kontakt als Empfehlung aus der Sprechstunde heraus.", "entwurf": true },
+    { "titel": "IV-Stellen und weitere", "text": "Unterstützung bei Übergängen im Arbeits- und Sozialversicherungskontext.", "entwurf": true }
+  ]
+}

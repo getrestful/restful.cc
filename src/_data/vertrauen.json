@@ -1,0 +1,20 @@
+[
+  {
+    "titel": "Evidenzbasis",
+    "text": "Peer-Support ist bei chronischen Erkrankungen und in der psychischen Gesundheit gut untersucht. Wir stützen unsere Formate auf Literaturrecherchen und begleiten sie mit eigener Forschung.",
+    "icon": "book",
+    "entwurf": true
+  },
+  {
+    "titel": "Datenschutz und Anonymität",
+    "text": "Wir arbeiten nach dem Schweizer Datenschutzgesetz (revDSG). Nutzende entscheiden selbst, was sie von sich zeigen, und können anonym bleiben.",
+    "icon": "shield",
+    "entwurf": true
+  },
+  {
+    "titel": "Qualität im Matching",
+    "text": "Ob ein Austausch trägt, entscheidet sich beim Matching. Darum begleiten Fachpersonen diesen Schritt, statt ihn einem Algorithmus zu überlassen.",
+    "icon": "check",
+    "entwurf": true
+  }
+]
