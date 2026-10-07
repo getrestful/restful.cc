@@ -31,6 +31,19 @@ scripts:
   </div>
 </section>
 
+<section aria-labelledby="partner-banner-titel" class="border-y border-line bg-surface">
+  <div class="mx-auto max-w-content px-5 py-10 sm:px-8">
+    <p id="partner-banner-titel" class="text-center text-sm font-medium uppercase tracking-wide text-ink-soft">Mit diesen Organisationen arbeiten wir zusammen</p>
+    <ul class="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
+      {% for p in partnerlogos %}
+      <li>
+        <img src="/images/{{ p.logo }}" alt="{{ p.name }}" class="h-10 w-auto max-w-[140px] object-contain" loading="lazy">
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
 <section aria-labelledby="unsicher-titel">
   <div class="mx-auto max-w-content px-5 sm:px-8">
     <div class="rounded-2xl border border-line bg-surface px-6 py-8 sm:px-10">
