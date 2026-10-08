@@ -19,8 +19,9 @@
       </a>
       <nav aria-label="Hauptnavigation">
         <ul class="flex flex-wrap items-center gap-x-6 gap-y-2">
-          <li><a href="/wissenschaft/" class="rounded underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent" {% if page.url == "/wissenschaft/" %}aria-current="page"{% endif %}>Wissenschaft</a></li>
-          <li><a href="/ueber-restful/" class="rounded underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent" {% if page.url == "/ueber-restful/" %}aria-current="page"{% endif %}>Über restful</a></li>
+          <li><a href="/angebot/" class="rounded underline-offset-4 aria-[current=page]:font-semibold aria-[current=page]:underline hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent" {% if page.url == "/angebot/" or page.url == "/peer-angebote/" or page.url == "/projekte/" %}aria-current="page"{% endif %}>Angebot</a></li>
+          <li><a href="/wissenschaft/" class="rounded underline-offset-4 aria-[current=page]:font-semibold aria-[current=page]:underline hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent" {% if page.url == "/wissenschaft/" %}aria-current="page"{% endif %}>Wissenschaft</a></li>
+          <li><a href="/ueber-restful/" class="rounded underline-offset-4 aria-[current=page]:font-semibold aria-[current=page]:underline hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent" {% if page.url == "/ueber-restful/" %}aria-current="page"{% endif %}>Über restful</a></li>
           <li><a href="#kontakt" class="inline-block rounded-full bg-accent px-5 py-2.5 font-medium text-paper hover:bg-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Kontakt aufnehmen</a></li>
         </ul>
       </nav>
@@ -34,8 +35,8 @@
   <footer class="border-t border-line bg-surface">
     <div class="mx-auto grid max-w-content gap-12 px-5 py-section-sm sm:px-8 md:grid-cols-[3fr_2fr] md:py-section">
       <section id="kontakt" aria-labelledby="kontakt-titel" class="scroll-mt-8">
-        <h2 id="kontakt-titel" class="text-h2 font-semibold">Lasst uns sprechen</h2>
-        <p class="mt-3 max-w-prose text-ink-soft">Erzählt uns kurz, wo ihr steht. Wir melden uns innert weniger Arbeitstage für ein unverbindliches Erstgespräch.</p>
+        <h2 id="kontakt-titel" class="text-h2 font-semibold">Lass uns sprechen</h2>
+        <p class="mt-3 max-w-prose text-ink-soft">Erzähl uns kurz, wo du stehst. Wir melden uns innert weniger Arbeitstagen für ein unverbindliches Erstgespräch.</p>
         <form class="mt-8 grid max-w-xl gap-5" action="#" method="post" data-kontaktformular>
           <div class="grid gap-2">
             <label for="kontakt-name" class="font-medium">Name</label>
@@ -53,7 +54,7 @@
             <label for="kontakt-nachricht" class="font-medium">Nachricht</label>
             <textarea id="kontakt-nachricht" name="nachricht" rows="5" required class="rounded-lg border border-line bg-paper px-4 py-3 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"></textarea>
           </div>
-          <p class="text-sm text-ink-soft">Wir verwenden eure Angaben nur, um auf eure Anfrage zu antworten. Mehr dazu in der <a href="/datenschutzerklaerung/" class="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-accent">Datenschutzerklärung</a>.</p>
+          <p class="text-sm text-ink-soft">Wir verwenden deine Angaben nur, um auf deine Anfrage zu antworten. Mehr dazu in der <a href="/datenschutzerklaerung/" class="underline underline-offset-4 focus-visible:outline-2 focus-visible:outline-accent">Datenschutzerklärung</a>.</p>
           <div>
             <button type="submit" class="rounded-full bg-accent px-6 py-3 font-medium text-paper hover:bg-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Nachricht senden</button>
           </div>
@@ -64,11 +65,13 @@
         <nav aria-label="Fusszeile">
           <h2 class="text-h3 font-semibold">Weiterlesen</h2>
           <ul class="mt-4 grid gap-3">
+            <li><a href="/peer-angebote/" class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Peer-Angebote</a></li>
             <li><a href="/projekte/" class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Individuelle Projekte</a></li>
             <li><a href="/wissenschaft/" class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Wissenschaft</a></li>
             <li><a href="/ueber-restful/" class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Über restful</a></li>
             <li><a href="#offene-stellen" class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Offene Stellen</a></li>
             <li><a href="/datenschutzerklaerung/" class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Datenschutz</a></li>
+            <li><a href="#kontakt" class="underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Kontakt</a></li>
           </ul>
         </nav>
         <p class="text-sm text-ink-soft">restful GmbH, Bern</p>

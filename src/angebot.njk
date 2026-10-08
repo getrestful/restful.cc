@@ -1,0 +1,42 @@
+---
+layout: base.njk
+title: Angebot | restful
+description: Peer-Angebote für Organisationen und individuelle Projekte entlang des Patientenpfads. Die zwei Arbeitsfelder von restful im Überblick.
+permalink: /angebot/
+---
+{% from "icon.njk" import icon %}
+
+<section aria-labelledby="angebot-titel" class="border-b border-line">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h1 id="angebot-titel" class="max-w-3xl break-words text-h1 font-semibold tracking-tight text-balance md:text-display">Unser Angebot</h1>
+    <p class="mt-6 max-w-prose text-lead text-ink-soft">{{ angebot.intro }}</p>
+  </div>
+</section>
+
+<section aria-labelledby="felder-titel">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="felder-titel" class="sr-only">Arbeitsfelder</h2>
+    <ul class="grid gap-8 md:grid-cols-2">
+      {% for feld in angebot.felder %}
+      <li class="flex flex-col rounded-2xl border border-line bg-paper p-8 sm:p-10">
+        <h3 class="text-h2 font-semibold tracking-tight">{{ feld.titel }}</h3>
+        <p class="mt-4 max-w-prose text-ink-soft">{{ feld.text }}</p>
+        <ul class="mt-6 grid gap-3">
+          {% for wort in feld.stichworte %}
+          <li class="flex gap-3"><span class="mt-1 text-accent">{{ icon("check", "size-5") }}</span><span>{{ wort }}</span></li>
+          {% endfor %}
+        </ul>
+        <a href="{{ feld.href }}" class="mt-8 inline-flex items-center gap-2 self-start font-medium text-accent underline underline-offset-4 hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">{{ feld.linktext }} {{ icon("arrow", "size-4") }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section aria-labelledby="angebot-cta-titel" class="border-t border-line">
+  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
+    <h2 id="angebot-cta-titel" class="text-h2 font-semibold tracking-tight">Nicht sicher, welches Feld passt?</h2>
+    <p class="mt-4 max-w-prose text-ink-soft">Erzähle uns kurz von deinem Vorhaben. Im Erstgespräch finden wir gemeinsam heraus, wo wir ansetzen.</p>
+    <a href="#kontakt" class="mt-8 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-medium text-paper hover:bg-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">{{ journey.cta }} {{ icon("arrow", "size-5") }}</a>
+  </div>
+</section>
