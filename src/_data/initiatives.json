@@ -9,5 +9,6 @@
   { "name": "Procap", "desc": "Für Menschen mit Behinderung und ihre Angehörigen", "href": "#", "logo": "logo-procap.png" },
   { "name": "SGVE – Schweizerische Gemeinschaft verwaister Eltern", "desc": "Für Eltern nach dem Verlust eines Kindes", "href": "#", "logo": "logo-sgve.jpg" },
   { "name": "Peer-Pool von Frühchen & Neokinder Schweiz", "desc": "Für Eltern und Angehörige von kranken Neugeborenen und Frühgeborenen", "href": "#", "logo": "logo-fruehchen-neokinder.png" },
-  { "name": "CoPEER von Spitex Kriens", "desc": "Für Klient:innen und Angehörige der Spitex Kriens", "href": "#", "logo": "logo-spitex-kriens.png" }
+  { "name": "CoPEER von Spitex Kriens", "desc": "Für Klient:innen und Angehörige der Spitex Kriens", "href": "#", "logo": "logo-spitex-kriens.png" },
+  { "name": "SF BFK – Schweizerischer Fachverband Beratung Frühe Kindheit", "desc": "Nationale Chat-Beratung für Eltern mit Kindern von 0 bis 5 Jahren", "href": "#", "logo": "logo-sf-bfk.png" }
 ]
