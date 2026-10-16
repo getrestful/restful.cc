@@ -68,13 +68,8 @@
   .hero h1{font-size:clamp(42px,5.6vw,74px);margin-bottom:26px}
   .hero p.sub{font-size:20px;color:var(--ink-soft);max-width:540px;margin-bottom:32px}
   .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
-  .proof{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:34px;font-size:15px;color:var(--ink-soft)}
-  .proof span{display:flex;align-items:center;gap:8px}
-  .proof span::before{content:"✓";width:22px;height:22px;border-radius:50%;background:var(--sand);color:var(--terra);display:grid;place-items:center;font-size:12px;font-weight:700}
-  .collage{display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative}
-  .arch{border-radius:200px 200px 24px 24px;overflow:hidden;aspect-ratio:3/4}
-  .arch img{width:100%;height:100%;object-fit:cover}
-  .collage .arch:nth-child(2){margin-top:70px;border-radius:24px 24px 200px 200px}
+  .collage{position:relative}
+  .hero-ph{aspect-ratio:4/5;max-width:440px;margin-left:auto;border-radius:220px 220px 28px 28px;font-size:15px;line-height:1.5;padding:40px}
   .bubble{position:absolute;background:var(--white);padding:16px 20px;border-radius:20px 20px 20px 4px;box-shadow:0 18px 40px -20px var(--shadow);font-size:15px;max-width:290px}
   .bubble.b1{left:-40px;bottom:-10px}
   @media(max-width:920px){.hero-grid{grid-template-columns:1fr}.bubble.b1{left:0}}
@@ -252,17 +247,21 @@
 
   /* Team */
   .team{background:var(--white);border-radius:40px;margin:0 16px}
-  .team-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:18px;margin-top:46px}
-  .m img{aspect-ratio:4/5;object-fit:cover;border-radius:100px 100px 16px 16px;margin-bottom:12px}
-  .m b{font-family:var(--serif);font-weight:var(--hw);font-size:17px;display:block;line-height:1.2}
-  .m span{font-size:13.5px;color:var(--ink-soft)}
-  .adv-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
-  .adv{display:flex;gap:10px;align-items:center;background:var(--cream);padding:8px 16px 8px 8px;border-radius:999px}
-  .adv img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:none}
-  .adv b{display:block;font-size:14px;line-height:1.2}
-  .adv span{font-size:12.5px;color:var(--ink-soft)}
-  @media(max-width:1000px){.team-grid{grid-template-columns:repeat(4,1fr)}}
-  @media(max-width:600px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+  .group{margin:44px 0 0}
+  .group img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:24px}
+  .pp-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:18px;margin-top:30px}
+  .pp img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;margin-bottom:12px;background:var(--cream)}
+  .pp b{display:block;font-family:var(--serif);font-weight:var(--hw);font-size:17px;line-height:1.2}
+  .pp span{display:block;font-size:13.5px;color:var(--ink-soft);margin-top:2px}
+  /* Netzwerk: wie Team, nur kleiner und als eigener Abschnitt */
+  .network{padding:80px 0 90px}
+  .h-sm{font-size:clamp(28px,3.2vw,40px)}
+  .pp-grid.sm{grid-template-columns:repeat(7,1fr);gap:16px;margin-top:34px;max-width:1000px}
+  .pp.sm img{aspect-ratio:1;border-radius:10px;margin-bottom:10px}
+  .pp.sm b{font-size:15px}
+  .pp.sm span{font-size:12.5px;line-height:1.35}
+  @media(max-width:1000px){.pp-grid{grid-template-columns:repeat(4,1fr)}.pp-grid.sm{grid-template-columns:repeat(4,1fr)}}
+  @media(max-width:600px){.pp-grid{grid-template-columns:repeat(2,1fr)}.pp-grid.sm{grid-template-columns:repeat(3,1fr)}}
 
   /* Kontakt */
   .contact-box{background:var(--sand);border-radius:40px;padding:64px;display:grid;grid-template-columns:1fr 1fr;gap:50px}
@@ -305,11 +304,9 @@
         <a class="btn btn-dark" href="#kontakt">Erstgespräch vereinbaren</a>
         <a class="btn btn-line" href="#wissenschaft">Methode &amp; Evidenz</a>
       </div>
-      <div class="proof"><span>Wissenschaftlich fundiert</span><span>Erprobte Methodik</span><span>12 Organisationen</span></div>
     </div>
     <div class="collage">
-      <div class="arch"><img src="../src/public/images/team-sulamith-scheurer.png" alt=""></div>
-      <div class="arch"><img src="../src/public/images/team-raphael-reber.png" alt=""></div>
+      <div class="ph hero-ph">Platzhalter Hero-Bild:<br>Foto aus einem Austausch unter Betroffenen oder von einer Partnerorganisation</div>
       <div class="bubble b1">«Ein sicheres und wirkungsvolles Peer-Angebot, das echten Austausch und gegenseitige Unterstützung schafft.»<br><small style="color:var(--ink-soft)">Christina Eberle, Cystische Fibrose Schweiz</small></div>
     </div>
   </div>
@@ -566,24 +563,33 @@
   <div class="wrap">
     <p class="kicker">Team</p>
     <h2>Soziale Arbeit, Public Health, Forschung <i>und Technologie</i></h2>
-    <div class="team-grid">
-      <div class="m"><img src="../src/public/images/team-raphael-reber.png" alt=""><b>Raphael Reber</b><span>Strategie &amp; Partnerschaften</span></div>
-      <div class="m"><img src="../src/public/images/team-sulamith-scheurer.png" alt=""><b>Sulamith Scheurer</b><span>Produktmanagement</span></div>
-      <div class="m"><img src="../src/public/images/team-stefan-niederhauser.png" alt=""><b>Stefan Niederhauser</b><span>Technologie</span></div>
-      <div class="m"><img src="../src/public/images/team-chantal-kuske.png" alt=""><b>Chantal Kuske</b><span>Scientific Advisory</span></div>
-      <div class="m"><img src="../src/public/images/team-melanie-spescha.png" alt=""><b>Melanie Spescha</b><span>Projekte &amp; Fundraising</span></div>
-      <div class="m"><img src="../src/public/images/team-lona-gaugler.jpg" alt=""><b>Lona Gaugler</b><span>Industry Lead</span></div>
-      <div class="m"><img src="../src/public/images/team-silvan-jost.jpg" alt=""><b>Silvan Jost</b><span>Technologie</span></div>
+    <figure class="group"><img src="../src/public/images/team-gruppe.jpg" alt="Das Team von restful"></figure>
+    <div class="pp-grid">
+      <div class="pp"><img src="../src/public/images/team-raphael-reber.png" alt="Raphael Reber"><b>Raphael Reber</b><span>Strategie & Partnerschaften</span></div>
+      <div class="pp"><img src="../src/public/images/team-sulamith-scheurer.png" alt="Sulamith Scheurer"><b>Sulamith Scheurer</b><span>Produktmanagement</span></div>
+      <div class="pp"><img src="../src/public/images/team-stefan-niederhauser.png" alt="Stefan Niederhauser"><b>Stefan Niederhauser</b><span>Technologie</span></div>
+      <div class="pp"><img src="../src/public/images/team-chantal-kuske.png" alt="Chantal Kuske"><b>Chantal Kuske</b><span>Scientific Advisory</span></div>
+      <div class="pp"><img src="../src/public/images/team-melanie-spescha.png" alt="Melanie Spescha"><b>Melanie Spescha</b><span>Projekte & Fundraising</span></div>
+      <div class="pp"><img src="../src/public/images/team-lona-gaugler.jpg" alt="Lona Gaugler"><b>Lona Gaugler</b><span>Industry Lead</span></div>
+      <div class="pp"><img src="../src/public/images/team-silvan-jost.jpg" alt="Silvan Jost"><b>Silvan Jost</b><span>Technologie</span></div>
     </div>
-    <h3 style="margin-top:56px;font-size:24px">Advisory Community</h3>
-    <div class="adv-row">
-      <div class="adv"><img src="../src/public/images/advisory-flavia-wasserfallen.png" alt=""><div><b>Flavia Wasserfallen</b><span>Ständerätin SP</span></div></div>
-      <div class="adv"><img src="../src/public/images/advisory-christoph-hamann.png" alt=""><div><b>Dr. med. Christoph Hamann</b><span>INSEL</span></div></div>
-      <div class="adv"><img src="../src/public/images/advisory-felix-muff.png" alt=""><div><b>Felix Muff</b><span>VRP Concordia</span></div></div>
-      <div class="adv"><img src="../src/public/images/advisory-melanie-mettler.png" alt=""><div><b>Melanie Mettler</b><span>Stadt Bern</span></div></div>
-      <div class="adv"><img src="../src/public/images/advisory-felix-wettstein.jpg" alt=""><div><b>Felix Wettstein</b><span>Nationalrat Grüne</span></div></div>
-      <div class="adv"><img src="../src/public/images/advisory-andrea-jansen.jpg" alt=""><div><b>Andrea Jansen</b><span>Investorin</span></div></div>
-      <div class="adv"><img src="../src/public/images/advisory-christian-hirsig.png" alt=""><div><b>Christian Hirsig</b><span>PowerCoders</span></div></div>
+  </div>
+</section>
+
+<!-- NETZWERK (ehemals Advisory Community) -->
+<section class="network" id="netzwerk">
+  <div class="wrap">
+    <p class="kicker">Unser Netzwerk</p>
+    <h2 class="h-sm">Menschen, die <i>restful unterstützen</i></h2>
+    <p class="lead">Sie begleiten uns mit ihrer Erfahrung aus Politik, Medizin, Wirtschaft und Zivilgesellschaft.</p>
+    <div class="pp-grid sm">
+      <div class="pp sm"><img src="../src/public/images/advisory-felix-muff.png" alt="Felix Muff"><b>Felix Muff</b><span>VRP Concordia Versicherungen</span></div>
+      <div class="pp sm"><img src="../src/public/images/advisory-christoph-hamann.png" alt="Dr. med. Christoph Hamann"><b>Dr. med. Christoph Hamann</b><span>Leiter Kinder- und Jugendpsychosomatik INSEL</span></div>
+      <div class="pp sm"><img src="../src/public/images/advisory-flavia-wasserfallen.png" alt="Flavia Wasserfallen"><b>Flavia Wasserfallen</b><span>Ständerätin SP (Bern), Präsidentin Allianz Gesunde Schweiz, Präsidentin geliko</span></div>
+      <div class="pp sm"><img src="../src/public/images/advisory-melanie-mettler.png" alt="Melanie Mettler"><b>Melanie Mettler</b><span>Finanzdirektorin Stadt Bern, Matronatsskomitee Selbsthilfe CH</span></div>
+      <div class="pp sm"><img src="../src/public/images/advisory-felix-wettstein.jpg" alt="Felix Wettstein"><b>Felix Wettstein</b><span>Nationalrat Grüne (Solothurn), Präsident pro-salute, Fachrat Public Health Schweiz</span></div>
+      <div class="pp sm"><img src="../src/public/images/advisory-andrea-jansen.jpg" alt="Andrea Jansen"><b>Andrea Jansen</b><span>Investorin, Board Member Aepsy, mal ehrlich</span></div>
+      <div class="pp sm"><img src="../src/public/images/advisory-christian-hirsig.png" alt="Christian Hirsig"><b>Christian Hirsig</b><span>Unternehmer, Gründer PowerCoders & high-five.ai</span></div>
     </div>
   </div>
 </section>
