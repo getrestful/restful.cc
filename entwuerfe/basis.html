@@ -171,6 +171,38 @@
   .d-body b{color:var(--ink)}
   @media(max-width:860px){.journey-grid{grid-template-columns:1fr}.d-body{padding:0 24px 24px}}
 
+
+  /* So starten wir gemeinsam */
+  .start-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end}
+  .start-head .note{font-size:15px;color:var(--ink-soft);background:var(--white);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+  .steps{list-style:none;margin-top:56px;position:relative;display:grid;gap:18px}
+  .steps::before{content:"";position:absolute;left:27px;top:28px;bottom:28px;width:2px;background:linear-gradient(var(--navy),var(--rose))}
+  .step{display:grid;grid-template-columns:56px 1fr;gap:24px;position:relative}
+  .step .num{width:56px;height:56px;border-radius:50%;background:var(--navy);color:var(--cream);display:grid;place-items:center;font-family:var(--serif);font-size:24px;position:relative;z-index:1;box-shadow:0 0 0 6px var(--cream)}
+  .step:last-child .num{background:var(--terra)}
+  .step-card{background:var(--white);border:1px solid var(--line);border-radius:28px;padding:30px 32px;display:grid;grid-template-columns:.9fr 2fr;gap:36px}
+  .step-card h3{font-size:26px;margin-bottom:8px}
+  .step-card .dur{display:inline-block;font-size:13px;font-weight:600;color:var(--terra);background:var(--sand);border-radius:999px;padding:4px 12px;margin-bottom:12px}
+  .step-card .what{color:var(--ink-soft);font-size:15.5px}
+  .step-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .step-cols div{border-radius:18px;padding:16px 18px;background:var(--cream);font-size:15px}
+  .step-cols div.out{background:var(--lav)}
+  .step-cols b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--terra);margin-bottom:6px}
+  .step-cols div.out b{color:var(--navy)}
+  .entry-title{margin-top:80px;font-size:clamp(28px,3vw,38px)}
+  .entries{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+  .entry{border-radius:24px;padding:26px;background:var(--sand)}
+  .entry:nth-child(2){background:var(--white);border:1px solid var(--line)}
+  .entry:nth-child(3){background:var(--lav)}
+  .entry small{display:block;font-size:13px;font-weight:600;color:var(--terra);margin-bottom:8px}
+  .entry h4{font-size:22px;margin-bottom:10px}
+  .entry p{font-size:15.5px;color:var(--ink-soft)}
+  .entry .path{margin-top:14px;font-size:14px;font-weight:600;color:var(--navy)}
+  .start-cta{margin-top:40px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+  .start-cta span{color:var(--ink-soft);font-size:15px}
+  @media(max-width:960px){.start-head{grid-template-columns:1fr;gap:24px}.step-card{grid-template-columns:1fr;gap:20px;padding:24px}.step-cols{grid-template-columns:1fr}.entries{grid-template-columns:1fr}}
+  @media(max-width:600px){.step{grid-template-columns:40px 1fr;gap:14px}.step .num{width:40px;height:40px;font-size:18px}.steps::before{left:19px}}
+
   /* Testimonial */
   .testi{padding:0 0 100px}
   .testi-card{background:var(--sand);border-radius:40px;padding:60px;display:grid;grid-template-columns:260px 1fr;gap:60px;align-items:center}
@@ -257,8 +289,7 @@
     <ul>
       <li><a href="#nutzen">Nutzen</a></li>
       <li><a href="#tool">Das Tool</a></li>
-      <li><a href="#ablauf">Ablauf</a></li>
-      <li><a href="#projekte">Digitalprojekte</a></li>
+      <li><a href="#start">So starten wir</a></li>
       <li><a href="#wissenschaft">Wissenschaft</a></li>
       <li><a href="#team">Team</a></li>
     </ul>
@@ -410,29 +441,106 @@
   </div>
 </section>
 
-<!-- ABLAUF -->
-<section id="ablauf">
-  <div class="wrap journey-grid">
-    <div>
-      <p class="kicker">Ablauf</p>
-      <h2>Von der Idee <i>zum laufenden Angebot</i></h2>
-      <p class="lead">Wähle die Situation, die deiner am nächsten kommt.</p>
-      <p style="margin-top:24px;color:var(--ink-soft);font-size:15px">Dauer bis zum Pilot: <span class="tbd">[z.B. 3 Monate]</span></p>
-      <a class="btn btn-dark" style="margin-top:26px" href="#kontakt">Erstgespräch vereinbaren</a>
+<!-- SO STARTEN WIR GEMEINSAM -->
+<section id="start">
+  <div class="wrap">
+    <div class="start-head">
+      <div>
+        <p class="kicker">So starten wir gemeinsam</p>
+        <h2>In vier Schritten <i>zu deinem Peer-Angebot</i></h2>
+        <p class="lead">Ein Peer-Angebot entsteht nicht im Alleingang. Bei jedem Schritt weisst du, was passiert, was wir übernehmen und was es von dir braucht.</p>
+      </div>
+      <p class="note">Vom Erstgespräch bis zum laufenden Pilot rechnen wir mit <span class="tbd">[z.B. 3 bis 4 Monaten]</span>. Wie schnell es geht, hängt von deinem Ausgangspunkt ab.</p>
     </div>
-    <div>
-      <details open>
-        <summary><span class="no">1</span><div><b>Du startest neu</b><span class="s">Die Idee ist da, das Angebot noch nicht.</span></div><span class="plus">+</span></summary>
-        <div class="d-body"><b>Analyse</b> von Zielgruppe und Ressourcen, <b>Format</b> aus unserem Playbook, <b>Plattform</b> unter deinem Namen, <b>Pilot</b> mit Schulung deiner Koordination.</div>
-      </details>
-      <details>
-        <summary><span class="no">2</span><div><b>Deine Community läuft analog</b><span class="s">Treffen, Gruppen oder Telefonkontakte.</span></div><span class="plus">+</span></summary>
-        <div class="d-body">Wir ergänzen dein Angebot digital. So kommen auch Menschen dazu, die heute nicht teilnehmen können. Bestehende Peers binden wir ein.</div>
-      </details>
-      <details>
-        <summary><span class="no">3</span><div><b>Dein Angebot harzt</b><span class="s">Es besteht, kommt aber nicht in Gang.</span></div><span class="plus">+</span></summary>
-        <div class="d-body">Wir werten Beteiligung, Matching und Abläufe aus und richten das Angebot gezielt neu aus. Deine Koordination wird entlastet.</div>
-      </details>
+
+    <ol class="steps">
+      <li class="step">
+        <span class="num">1</span>
+        <div class="step-card">
+          <div>
+            <span class="dur">Kennenlernen · <span class="tbd">[ca. 1 Stunde]</span></span>
+            <h3>Erstgespräch</h3>
+            <p class="what">Wir hören zu: Wen möchtest du erreichen? Was gibt es in deiner Organisation schon? Welche Ressourcen stehen zur Verfügung?</p>
+          </div>
+          <div class="step-cols">
+            <div><b>Wir übernehmen</b>Eine ehrliche erste Einschätzung, ob und in welcher Form ein Peer-Angebot zu euch passt.</div>
+            <div><b>Von dir</b>Eine Ansprechperson und ein paar Eckdaten zu deiner Organisation und Zielgruppe.</div>
+            <div class="out"><b>Ergebnis</b>Klarheit, ob es passt, und ein Vorschlag für das weitere Vorgehen. Unverbindlich.</div>
+          </div>
+        </div>
+      </li>
+      <li class="step">
+        <span class="num">2</span>
+        <div class="step-card">
+          <div>
+            <span class="dur">Bedürfnisse &amp; Konzept · <span class="tbd">[Dauer]</span></span>
+            <h3>Gemeinsam planen</h3>
+            <p class="what">Wir sprechen mit dir, deinem Team und mit Betroffenen. Daraus wählen wir gemeinsam ein erprobtes Format aus unserem Playbook.</p>
+          </div>
+          <div class="step-cols">
+            <div><b>Wir übernehmen</b>Bedürfnisanalyse, Wahl des Formats, Rollen, Abläufe und Kriterien fürs Matching.</div>
+            <div><b>Von dir</b>Zugang zu Betroffenen für Gespräche und Entscheide zu Zielgruppe und Rahmen.</div>
+            <div class="out"><b>Ergebnis</b>Ein Konzept, das zu deiner Organisation passt, mit Zeitplan und Budget.</div>
+          </div>
+        </div>
+      </li>
+      <li class="step">
+        <span class="num">3</span>
+        <div class="step-card">
+          <div>
+            <span class="dur">Aufbau &amp; Pilot · <span class="tbd">[Dauer]</span></span>
+            <h3>Starten und erproben</h3>
+            <p class="what">Die Plattform läuft in deinem Erscheinungsbild, deine Koordination ist geschult, erste Peers sind vorbereitet. Dann starten wir mit einer ersten Gruppe.</p>
+          </div>
+          <div class="step-cols">
+            <div><b>Wir übernehmen</b>Plattform einrichten, Koordination schulen, Unterlagen für Peers, Begleitung durch den Pilot.</div>
+            <div><b>Von dir</b>Logo und Farben, eine Person für die Koordination und die Ankündigung bei deinen Mitgliedern.</div>
+            <div class="out"><b>Ergebnis</b>Ein laufendes Angebot mit ersten Matches und ersten Rückmeldungen.</div>
+          </div>
+        </div>
+      </li>
+      <li class="step">
+        <span class="num">4</span>
+        <div class="step-card">
+          <div>
+            <span class="dur">Betrieb &amp; Weiterentwicklung · laufend</span>
+            <h3>Wachsen lassen</h3>
+            <p class="what">Deine Koordination führt das Angebot, restful bleibt im Hintergrund. Wir werten regelmässig aus und passen an, wo es nötig ist.</p>
+          </div>
+          <div class="step-cols">
+            <div><b>Wir übernehmen</b>Technik, Support, Weiterentwicklung und Wirkungsmessung.</div>
+            <div><b>Von dir</b>Die Koordination im Alltag, etwa <span class="tbd">[Stunden pro Woche]</span>.</div>
+            <div class="out"><b>Ergebnis</b>Ein Angebot, das wächst, und Zahlen für Vorstand, Berichte und Geldgeber.</div>
+          </div>
+        </div>
+      </li>
+    </ol>
+
+    <h3 class="entry-title">Wo steigst du ein?</h3>
+    <div class="entries">
+      <div class="entry">
+        <small>Ausgangslage 1</small>
+        <h4>Du startest neu</h4>
+        <p>Die Idee ist da, ein Angebot gibt es noch nicht. Wir gehen alle vier Schritte gemeinsam.</p>
+        <p class="path">Einstieg bei Schritt 1 →</p>
+      </div>
+      <div class="entry">
+        <small>Ausgangslage 2</small>
+        <h4>Deine Community läuft analog</h4>
+        <p>Es gibt Treffen, Gruppen oder Telefonkontakte. Wir schauen, wer heute teilnimmt und wer fehlt, und ergänzen digital. Bestehende Peers nehmen wir mit.</p>
+        <p class="path">Einstieg bei Schritt 1, Fokus auf Schritt 2 →</p>
+      </div>
+      <div class="entry">
+        <small>Ausgangslage 3</small>
+        <h4>Dein Angebot harzt</h4>
+        <p>Es besteht, kommt aber nicht in Gang. Wir werten Beteiligung, Matching und Abläufe aus und richten das Angebot gezielt neu aus.</p>
+        <p class="path">Einstieg mit einer Analyse, dann Schritt 3 →</p>
+      </div>
+    </div>
+
+    <div class="start-cta">
+      <a class="btn btn-dark" href="#kontakt">Erstgespräch vereinbaren</a>
+      <span>Unverbindlich. Du entscheidest danach, ob es weitergeht.</span>
     </div>
   </div>
 </section>
