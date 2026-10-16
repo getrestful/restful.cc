@@ -215,6 +215,19 @@
   .platform-hint a{font-weight:600;text-decoration:none;color:var(--navy);border-bottom:1.5px solid var(--rose);white-space:nowrap}
   @media(max-width:760px){.platform-hint{grid-template-columns:1fr;padding:26px}.platform-hint .mini-phone{display:none}}
 
+  /* Partner nach dem Testimonial */
+  .partners{padding-top:0}
+  .partner-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+  .partner{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:24px 22px 20px;display:flex;flex-direction:column;gap:16px;text-decoration:none;transition:border-color .2s,transform .2s}
+  a.partner:hover{border-color:var(--navy);transform:translateY(-2px)}
+  .partner .lg{height:64px;display:flex;align-items:center}
+  .partner .lg img{max-height:56px;max-width:100%;width:auto;object-fit:contain}
+  .partner .lg img[src*="logo-svamv"]{transform:scale(1.7);transform-origin:left center}  /* Grafik hat viel Leerraum in der Datei */
+  .partner b{font-size:15px;font-weight:600;line-height:1.35}
+  .partner span{font-size:13.5px;color:var(--ink-soft);line-height:1.45}
+  @media(max-width:1000px){.partner-grid{grid-template-columns:repeat(3,1fr)}}
+  @media(max-width:700px){.partner-grid{grid-template-columns:repeat(2,1fr);gap:12px}.partner{padding:18px}}
+
   /* Testimonial */
   .testi{padding:0 0 100px}
   .testi-card{background:var(--sand);border-radius:40px;padding:60px;display:grid;grid-template-columns:260px 1fr;gap:60px;align-items:center}
@@ -467,6 +480,28 @@
         <p>Mit restful haben wir einen Partner gefunden, der unsere Vision versteht: Betroffene und Angehörige auf Augenhöhe zu vernetzen. Die Zusammenarbeit bei der Entwicklung der Austauschplattform für Menschen mit Cystischer Fibrose war durchweg professionell und partnerschaftlich. Das Ergebnis überzeugt: ein sicheres und wirkungsvolles Peer-Angebot, das echten Austausch und gegenseitige Unterstützung schafft. Ich kann restful als Entwicklungspartner uneingeschränkt empfehlen.»</p>
         <footer><b>Christina Eberle</b><span>Geschäftsführerin, Cystische Fibrose Schweiz (CFS)</span></footer>
       </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERORGANISATIONEN -->
+<section class="partners" aria-labelledby="partner-titel">
+  <div class="wrap">
+    <p class="kicker">Partnerschaften</p>
+    <h2 id="partner-titel">Mit diesen Organisationen <i>arbeiten wir zusammen</i></h2>
+    <div class="partner-grid">
+      <a class="partner" href="https://cystischefibroseschweiz.ch/unterstuetzung-und-angebote/mucoconnect/" target="_blank" rel="noopener"><div class="lg"><img src="../src/public/images/logo-mucoconnect.png" alt="" loading="lazy"></div><div><b>MucoConnect von CF Schweiz</b><br><span>Für Menschen mit Cystischer Fibrose sowie deren Angehörige.</span></div></a>
+      <a class="partner" href="https://demenzworld.com/demenzmiteinander/" target="_blank" rel="noopener"><div class="lg"><img src="../src/public/images/logo-demenzworld.png" alt="" loading="lazy"></div><div><b>demenz:miteinander von Demenzworld</b><br><span>Für Angehörige von Personen mit Demenz</span></div></a>
+      <a class="partner" href="https://peerplattform.krebsliga.ch/" target="_blank" rel="noopener"><div class="lg"><img src="../src/public/images/logo-krebsliga.webp" alt="" loading="lazy"></div><div><b>Peer Angebot der Krebsliga Schweiz</b><br><span>Wirkungsmessung der Peer-Plattform für Betroffene von Krebs und Angehörige</span></div></a>
+      <a class="partner" href="https://gesundheitsfoerderung.ch/praevention-in-der-gesundheitsversorgung-pgv/projektfoerderung/gefoerderte-projekte/swiss-sleep" target="_blank" rel="noopener"><div class="lg"><img src="../src/public/images/logo-inselspital.webp" alt="" loading="lazy"></div><div><b>Swiss Sleep Circle</b><br><span>Digitale Prävention, Früherkennung und Blended-stepped-Care Behandlung von Menschen mit Schlaf-Wach-Erkrankungen</span></div></a>
+      <div class="partner"><div class="lg"><img src="../src/public/images/logo-cerebral.webp" alt="" loading="lazy"></div><div><b>CerebralConnect von der Stiftung Cerebral</b><br><span>Für Angehörige von Menschen mit einer cerebralen Bewegungsbeeinträchtigung</span></div></div>
+      <div class="partner"><div class="lg"><img src="../src/public/images/logo-spo.webp" alt="" loading="lazy"></div><div><b>SPO – Schweizer PPIE Plattform</b><br><span>Plattform zur Förderung des Einbezugs von Betroffenen, Angehörigen und der Bevölkerung</span></div></div>
+      <a class="partner" href="https://svamv.ch/thema/svamvpeer/" target="_blank" rel="noopener"><div class="lg"><img src="../src/public/images/logo-svamv.svg" alt="" loading="lazy"></div><div><b>SVAMV Peer vom Schweizerischen Verband alleinerziehender Mütter und Väter</b><br><span>Für alleinerziehende Eltern</span></div></a>
+      <div class="partner"><div class="lg"><img src="../src/public/images/logo-procap.png" alt="" loading="lazy"></div><div><b>Procap</b><br><span>Für Menschen mit Behinderung und ihre Angehörigen</span></div></div>
+      <div class="partner"><div class="lg"><img src="../src/public/images/logo-sgve.jpg" alt="" loading="lazy"></div><div><b>SGVE – Schweizerische Gemeinschaft verwaister Eltern</b><br><span>Für Eltern nach dem Verlust eines Kindes</span></div></div>
+      <div class="partner"><div class="lg"><img src="../src/public/images/logo-fruehchen-neokinder.png" alt="" loading="lazy"></div><div><b>Peer-Pool von Frühchen &amp; Neokinder Schweiz</b><br><span>Für Eltern und Angehörige von kranken Neugeborenen und Frühgeborenen</span></div></div>
+      <div class="partner"><div class="lg"><img src="../src/public/images/logo-spitex-kriens.png" alt="" loading="lazy"></div><div><b>CoPEER von Spitex Kriens</b><br><span>Für Klient:innen und Angehörige der Spitex Kriens</span></div></div>
+      <div class="partner"><div class="lg"><img src="../src/public/images/logo-sf-bfk.png" alt="" loading="lazy"></div><div><b>SF BFK – Schweizerischer Fachverband Beratung Frühe Kindheit</b><br><span>Nationale Chat-Beratung für Eltern mit Kindern von 0 bis 5 Jahren</span></div></div>
     </div>
   </div>
 </section>
