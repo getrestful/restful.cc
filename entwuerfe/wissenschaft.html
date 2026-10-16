@@ -334,6 +334,16 @@
   .research p{color:var(--ink-soft)}
   @media(max-width:960px){.eino{grid-template-columns:1fr;gap:30px}.m-grid{grid-template-columns:1fr 1fr}.ev-grid,.research{grid-template-columns:1fr}.filter{position:static}.frow{grid-template-columns:1fr;gap:6px}.frow > b{padding-top:0}}
   @media(max-width:560px){.m-grid{grid-template-columns:1fr}}
+
+  /* Für-wen-Menü */
+  .dd{position:relative}
+  .dd button{all:unset;cursor:pointer;font-size:16px}
+  .dd button:hover{text-decoration:underline;text-underline-offset:5px}
+  .dd-menu{display:none;position:absolute;top:calc(100% + 12px);left:-16px;min-width:290px;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:8px;box-shadow:0 24px 50px -24px var(--shadow);z-index:40}
+  .dd-menu::before{content:"";position:absolute;inset:-14px 0 auto 0;height:14px}
+  .dd:hover .dd-menu,.dd:focus-within .dd-menu{display:grid}
+  .dd-menu a{padding:10px 14px;border-radius:12px;text-decoration:none;font-size:15px}
+  .dd-menu a:hover,.dd-menu a[aria-current]{background:var(--sand);text-decoration:none}
 </style>
 </head>
 <body>
@@ -342,10 +352,10 @@
   <div class="wrap nav">
     <a href="basis.html"><img src="../src/public/images/logo.svg" alt="restful" style="height:38px;width:auto"></a>
     <ul>
+      <li class="dd"><button type="button" aria-haspopup="true">Für wen <span aria-hidden="true">▾</span></button><div class="dd-menu"><a href="basis.html">Patientenorganisationen und Ligen</a><a href="fuer-iv.html">IV-Stellen</a><a href="fuer-spitaeler-praxen.html">Spitäler und Arztpraxen</a><a href="fuer-industrie.html">Industrie und Patient Advocacy</a><a href="fuer-versicherer.html">Versicherer</a></div></li>
       <li><a href="basis.html#nutzen">Nutzen</a></li>
-      <li><a href="wissenschaft.html" aria-current="page" style="text-decoration:underline;text-underline-offset:5px">Methode &amp; Evidenz</a></li>
       <li><a href="basis.html#start">So starten wir</a></li>
-      <li><a href="basis.html#tool">Einblick</a></li>
+      <li><a href="basis.html#tool">Produkt</a></li>
       <li><a href="basis.html#team">Team</a></li>
     </ul>
     <a class="btn btn-dark" href="basis.html#kontakt">Erstgespräch</a>
