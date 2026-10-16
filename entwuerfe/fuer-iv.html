@@ -6,15 +6,15 @@
 <title>IV-Stellen · restful</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   /* restful Palette
      Blau:  #05004A Nachtblau · #1400FF restful-Blau · #7066F6 Violett · #CFCCFB Lavendel
      Erde:  #593530 Kakao · #8E5147 Terrakotta · #BC9C96 Rosenholz · #F1E2DF Blush */
   :root{
-    --serif:Fraunces,Georgia,serif;
-    --sans:Inter,system-ui,sans-serif;
-    --hw:500;
+    --serif:Outfit,system-ui,sans-serif;
+    --sans:"Hanken Grotesk",system-ui,sans-serif;
+    --hw:300;
     --shadow:rgba(5,0,74,.25);
     --cream:#FAF4F2;
     --white:#FFFFFF;
@@ -274,6 +274,7 @@
   footer.site{padding:50px 0;font-size:14px;color:var(--ink-soft)}
   footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
   @media(max-width:860px){.contact-box{grid-template-columns:1fr;padding:32px}}
+
   @media(max-width:860px){body *{min-width:0}h1,h2,h3,p{overflow-wrap:break-word;hyphens:auto}}
 
   /* Für-wen-Menü */
@@ -285,6 +286,7 @@
   .dd:hover .dd-menu,.dd:focus-within .dd-menu{display:grid}
   .dd-menu a{padding:10px 14px;border-radius:12px;text-decoration:none;font-size:15px}
   .dd-menu a:hover,.dd-menu a[aria-current]{background:var(--sand);text-decoration:none}
+
 
   /* Für-wen-Menü */
   .dd{position:relative}
@@ -378,7 +380,44 @@
   @media(max-width:560px){.stats,.trust-row{grid-template-columns:1fr}}
   @media(max-width:960px){.zg-hero .grid,.faq2{grid-template-columns:1fr;gap:30px}.pains,.sol-grid,.evref{grid-template-columns:1fr}.how,.others{grid-template-columns:1fr 1fr}.zg-hero .ph{max-width:300px;margin:0}}
   @media(max-width:560px){.how,.others{grid-template-columns:1fr}}
-</style>
+
+  /* Typografie und Weissraum, inspiriert von kaiko.ai:
+     leichte geometrische Titel, ruhige Grotesk im Text, kleine Versal-Labels, viel Luft */
+  body{line-height:1.65;letter-spacing:.005em}
+  h1,h2,h3,h4{font-weight:300;letter-spacing:-.025em}
+  h1{line-height:.98!important;letter-spacing:-.035em}
+  h2{line-height:1.04;font-size:clamp(34px,4.2vw,56px)}
+  h3{line-height:1.15;font-weight:400}
+  h1 i,h2 i{font-style:normal;color:var(--terra)}
+  .hero h1,.zg-hero h1,.sub-hero h1{font-size:clamp(46px,6.4vw,92px);font-weight:200}
+  .wrap{padding:0 clamp(24px,5vw,72px);max-width:1280px}
+  section{padding:clamp(110px,12vw,180px) 0}
+  .kicker{font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;margin-bottom:26px}
+  .kicker::before{width:22px;height:1px}
+  .lead{font-size:clamp(18px,1.5vw,21px);line-height:1.6;margin-top:28px;max-width:640px}
+  .btn{font-size:12.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:17px 30px}
+  .nav ul{gap:36px;font-size:14px;letter-spacing:.02em}
+  .nav .btn{padding:13px 22px}
+  .dd button{font-size:14px}
+  header{padding:28px 0}
+  .hero{padding:70px 0 120px}
+  .hero p.sub,.zg-hero .sub{font-size:clamp(18px,1.5vw,21px);line-height:1.6;margin-bottom:44px}
+  .zg-hero{padding:60px 0 120px}
+  .logos{padding:48px 0}
+  .value-grid,.papers,.guide,.pains,.sol-grid,.how,.evref,.stats,.trust-row,.pp-grid,.m-grid,.ev-grid,.research,.view,.services{margin-top:72px}
+  .value-grid,.papers,.guide,.sol-grid,.evref,.stats,.research{gap:24px}
+  .value,.paper,.ans,.q,.case-card,.contact-box,.testi-card,.dl,.quote2{padding:clamp(32px,4vw,60px)}
+  .value li{gap:18px}.value ul{gap:28px}
+  .zz{gap:110px;margin-top:80px}
+  .reasons,.faq,.faq2,.journey-grid,.proj-grid,.eino,.sci-grid{gap:clamp(48px,7vw,110px)}
+  .group{margin-top:72px}
+  .pp-grid{gap:28px 22px}
+  .network{padding:clamp(100px,11vw,160px) 0}
+  .ev-more,.filter{margin-top:28px}
+  .testi{padding:0 0 clamp(110px,12vw,180px)}
+  footer.site{padding:70px 0}
+  summary b,.pp b,.m b,.services b,.sol-item b,.how b,.fact b,.pillar b,.m-card h3{font-weight:400}
+  .paper p.find,.evc p.find,.ev-card .find,.quote2 p,.testi blockquote p,.explorer .panel p.big{font-weight:300}</style>
 </head>
 <body>
 
