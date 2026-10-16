@@ -249,19 +249,21 @@
   .team{background:var(--white);border-radius:40px;margin:0 16px}
   .group{margin:44px 0 0}
   .group img{width:100%;aspect-ratio:3/2;object-fit:cover;border-radius:24px}
-  .pp-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:18px;margin-top:30px}
-  .pp img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;margin-bottom:12px;background:var(--cream)}
-  .pp b{display:block;font-family:var(--serif);font-weight:var(--hw);font-size:17px;line-height:1.2}
-  .pp span{display:block;font-size:13.5px;color:var(--ink-soft);margin-top:2px}
+  /* Team und Netzwerk: gleiches Raster, Netzwerk schmaler und kleiner */
+  .pp-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:64px 40px;margin-top:72px}
+  .pp img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:14px;margin-bottom:20px;background:var(--cream)}
+  .pp b{display:block;font-family:var(--serif);font-weight:400;font-size:21px;line-height:1.2}
+  .pp span{display:block;font-size:14.5px;color:var(--terra);margin-top:6px}
+  .pp small{display:block;font-size:14px;line-height:1.5;color:var(--ink-soft);margin-top:8px}
   /* Netzwerk: wie Team, nur kleiner und als eigener Abschnitt */
   .network{padding:80px 0 90px}
   .h-sm{font-size:clamp(28px,3.2vw,40px)}
-  .pp-grid.sm{grid-template-columns:repeat(7,1fr);gap:16px;margin-top:34px;max-width:1000px}
-  .pp.sm img{aspect-ratio:1;border-radius:10px;margin-bottom:10px}
-  .pp.sm b{font-size:15px}
-  .pp.sm span{font-size:12.5px;line-height:1.35}
-  @media(max-width:1000px){.pp-grid{grid-template-columns:repeat(4,1fr)}.pp-grid.sm{grid-template-columns:repeat(4,1fr)}}
-  @media(max-width:600px){.pp-grid{grid-template-columns:repeat(2,1fr)}.pp-grid.sm{grid-template-columns:repeat(3,1fr)}}
+  .pp-grid.sm{grid-template-columns:repeat(4,1fr);gap:48px 32px;margin-top:56px;max-width:880px}
+  .pp.sm img{aspect-ratio:1;border-radius:12px;margin-bottom:16px}
+  .pp.sm b{font-size:18px}
+  .pp.sm span{font-size:13.5px;line-height:1.45;color:var(--ink-soft)}
+  @media(max-width:1000px){.pp-grid,.pp-grid.sm{grid-template-columns:repeat(3,1fr);gap:48px 28px}}
+  @media(max-width:640px){.pp-grid,.pp-grid.sm{grid-template-columns:repeat(2,1fr);gap:40px 20px}.pp b{font-size:18px}}
 
   /* Kontakt */
   .contact-box{background:var(--sand);border-radius:40px;padding:64px;display:grid;grid-template-columns:1fr 1fr;gap:50px}
@@ -310,14 +312,13 @@
   .hero p.sub,.zg-hero .sub{font-size:clamp(18px,1.5vw,21px);line-height:1.6;margin-bottom:44px}
   .zg-hero{padding:60px 0 120px}
   .logos{padding:48px 0}
-  .value-grid,.papers,.guide,.pains,.sol-grid,.how,.evref,.stats,.trust-row,.pp-grid,.m-grid,.ev-grid,.research,.view,.services{margin-top:72px}
+  .value-grid,.papers,.guide,.pains,.sol-grid,.how,.evref,.stats,.trust-row,.m-grid,.ev-grid,.research,.view,.services{margin-top:72px}
   .value-grid,.papers,.guide,.sol-grid,.evref,.stats,.research{gap:24px}
   .value,.paper,.ans,.q,.case-card,.contact-box,.testi-card,.dl,.quote2{padding:clamp(32px,4vw,60px)}
   .value li{gap:18px}.value ul{gap:28px}
   .zz{gap:110px;margin-top:80px}
   .reasons,.faq,.faq2,.journey-grid,.proj-grid,.eino,.sci-grid{gap:clamp(48px,7vw,110px)}
   .group{margin-top:72px}
-  .pp-grid{gap:28px 22px}
   .network{padding:clamp(100px,11vw,160px) 0}
   .ev-more,.filter{margin-top:28px}
   .testi{padding:0 0 clamp(110px,12vw,180px)}
@@ -614,12 +615,12 @@
     <h2>Soziale Arbeit, Public Health, Forschung <i>und Technologie</i></h2>
     <figure class="group"><img src="../src/public/images/team-gruppe.jpg" alt="Das Team von restful"></figure>
     <div class="pp-grid">
-      <div class="pp"><img src="../src/public/images/team-raphael-reber.png" alt="Raphael Reber"><b>Raphael Reber</b><span>Strategie & Partnerschaften</span></div>
-      <div class="pp"><img src="../src/public/images/team-sulamith-scheurer.png" alt="Sulamith Scheurer"><b>Sulamith Scheurer</b><span>Produktmanagement</span></div>
-      <div class="pp"><img src="../src/public/images/team-stefan-niederhauser.png" alt="Stefan Niederhauser"><b>Stefan Niederhauser</b><span>Technologie</span></div>
-      <div class="pp"><img src="../src/public/images/team-chantal-kuske.png" alt="Chantal Kuske"><b>Chantal Kuske</b><span>Scientific Advisory</span></div>
-      <div class="pp"><img src="../src/public/images/team-melanie-spescha.png" alt="Melanie Spescha"><b>Melanie Spescha</b><span>Projekte & Fundraising</span></div>
-      <div class="pp"><img src="../src/public/images/team-lona-gaugler.jpg" alt="Lona Gaugler"><b>Lona Gaugler</b><span>Industry Lead</span></div>
+      <div class="pp"><img src="../src/public/images/team-raphael-reber.png" alt="Raphael Reber"><b>Raphael Reber</b><span>Strategie & Partnerschaften</span><small>forbes 30under30 alumni und CoFounder Impact Hub Bern und Zeilenwerk</small></div>
+      <div class="pp"><img src="../src/public/images/team-sulamith-scheurer.png" alt="Sulamith Scheurer"><b>Sulamith Scheurer</b><span>Produktmanagement</span><small>Ex. Lead Innovation Consultant INNOArchitects AG</small></div>
+      <div class="pp"><img src="../src/public/images/team-stefan-niederhauser.png" alt="Stefan Niederhauser"><b>Stefan Niederhauser</b><span>Technologie</span><small>Ex. VP of Product Management for Data, Analytics & AI, Swisscom</small></div>
+      <div class="pp"><img src="../src/public/images/team-chantal-kuske.png" alt="Chantal Kuske"><b>Chantal Kuske</b><span>Scientific Advisory</span><small>Consulting & Research in Health Science</small></div>
+      <div class="pp"><img src="../src/public/images/team-melanie-spescha.png" alt="Melanie Spescha"><b>Melanie Spescha</b><span>Projekte & Fundraising</span><small>BA Soziale Arbeit, Inklusions- und Fundraising-Expertin</small></div>
+      <div class="pp"><img src="../src/public/images/team-lona-gaugler.jpg" alt="Lona Gaugler"><b>Lona Gaugler</b><span>Industry Lead</span><small>MSc Oncology and molecular Medecine, MScAdvanced Oncology</small></div>
       <div class="pp"><img src="../src/public/images/team-silvan-jost.jpg" alt="Silvan Jost"><b>Silvan Jost</b><span>Technologie</span></div>
     </div>
   </div>
