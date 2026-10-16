@@ -206,6 +206,15 @@
   .ev-more .ev-link{margin-left:auto}
   @media(max-width:860px){.papers{grid-template-columns:1fr}.paper{padding:26px}.ev-more .ev-link{margin-left:0}}
 
+  /* Plattform-Hinweis im Nutzen-Teil */
+  .platform-hint{margin-top:24px;display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:28px;padding:22px 36px 22px 22px;overflow:hidden}
+  .platform-hint .mini-phone{width:120px;height:150px;border-radius:20px 20px 0 0;background:var(--navy);padding:6px 6px 0;margin-bottom:-22px;align-self:end}
+  .platform-hint .mini-phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:15px 15px 0 0}
+  .platform-hint b{display:block;font-family:var(--serif);font-weight:var(--hw);font-size:22px;margin-bottom:4px}
+  .platform-hint p{color:var(--ink-soft);font-size:15.5px}
+  .platform-hint a{font-weight:600;text-decoration:none;color:var(--navy);border-bottom:1.5px solid var(--rose);white-space:nowrap}
+  @media(max-width:760px){.platform-hint{grid-template-columns:1fr;padding:26px}.platform-hint .mini-phone{display:none}}
+
   /* Testimonial */
   .testi{padding:0 0 100px}
   .testi-card{background:var(--sand);border-radius:40px;padding:60px;display:grid;grid-template-columns:260px 1fr;gap:60px;align-items:center}
@@ -403,7 +412,6 @@
       <li class="dd"><button type="button" aria-haspopup="true">Für wen <span aria-hidden="true">▾</span></button><div class="dd-menu"><a href="basis.html">Patientenorganisationen und Ligen</a><a href="fuer-spitaeler-praxen.html" aria-current="page">Spitäler und Arztpraxen</a><a href="fuer-industrie.html">Industrie und Patient Advocacy</a><a href="fuer-versicherer.html">Versicherer</a><a href="fuer-iv.html">IV-Stellen</a></div></li>
       <li><a href="basis.html#nutzen">Nutzen</a></li>
       <li><a href="basis.html#einstieg">Einstieg</a></li>
-      <li><a href="basis.html#tool">Produkt</a></li>
       <li><a href="basis.html#team">Team</a></li>
     </ul>
     <a class="btn btn-dark" href="#kontakt">Erstgespräch</a>
@@ -449,6 +457,7 @@
     <p class="kicker">So funktioniert es</p>
     <h2>So einfach <i>startet die Begleitung</i></h2>
     <div class="zz"><div class="zz-row"><div class="zz-vis"><img src="../src/public/images/vision-screen-1.png" alt="Startseite einer Plattform unter dem Namen einer Partnerorganisation"></div><div class="zz-txt"><span class="n">1</span><h3>Einbettung</h3><p>Wir klären mit dir, an welcher Stelle im Patientenpfad das Angebot ansetzt.</p></div></div><div class="zz-row"><div class="zz-vis"><div class="ph">Platzhalter Screenshot</div></div><div class="zz-txt"><span class="n">2</span><h3>Empfehlung</h3><p>Fachpersonen weisen auf das Angebot hin, etwa mit Flyer, QR-Code oder im Austrittsgespräch.</p></div></div><div class="zz-row"><div class="zz-vis"><div class="ph">Platzhalter Screenshot</div></div><div class="zz-txt"><span class="n">3</span><h3>Matching</h3><p>Eine Fachperson vermittelt einen Peer mit ähnlicher Diagnose oder Behandlung.</p></div></div><div class="zz-row"><div class="zz-vis"><div class="ph">Platzhalter Screenshot Auswertung</div></div><div class="zz-txt"><span class="n">4</span><h3>Begleitung und Auswertung</h3><p>Austausch im eigenen Tempo, dazu regelmässige Auswertung für dein Team.</p></div></div></div>
+    <p style="margin-top:56px"><a class="ev-link" href="plattform.html">So sieht die Plattform aus →</a></p>
   </div>
 </section>
 
@@ -500,6 +509,6 @@
   </div>
 </section>
 
-
+<footer class="site"><div class="wrap"><span>restful GmbH, Bern</span><span><a href="plattform.html">Plattform</a> · Datenschutz · Offene Stellen · LinkedIn</span></div></footer>
 </body>
 </html>

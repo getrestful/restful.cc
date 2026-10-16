@@ -206,6 +206,15 @@
   .ev-more .ev-link{margin-left:auto}
   @media(max-width:860px){.papers{grid-template-columns:1fr}.paper{padding:26px}.ev-more .ev-link{margin-left:0}}
 
+  /* Plattform-Hinweis im Nutzen-Teil */
+  .platform-hint{margin-top:24px;display:grid;grid-template-columns:auto 1fr auto;gap:32px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:28px;padding:22px 36px 22px 22px;overflow:hidden}
+  .platform-hint .mini-phone{width:120px;height:150px;border-radius:20px 20px 0 0;background:var(--navy);padding:6px 6px 0;margin-bottom:-22px;align-self:end}
+  .platform-hint .mini-phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:15px 15px 0 0}
+  .platform-hint b{display:block;font-family:var(--serif);font-weight:var(--hw);font-size:22px;margin-bottom:4px}
+  .platform-hint p{color:var(--ink-soft);font-size:15.5px}
+  .platform-hint a{font-weight:600;text-decoration:none;color:var(--navy);border-bottom:1.5px solid var(--rose);white-space:nowrap}
+  @media(max-width:760px){.platform-hint{grid-template-columns:1fr;padding:26px}.platform-hint .mini-phone{display:none}}
+
   /* Testimonial */
   .testi{padding:0 0 100px}
   .testi-card{background:var(--sand);border-radius:40px;padding:60px;display:grid;grid-template-columns:260px 1fr;gap:60px;align-items:center}
@@ -310,7 +319,6 @@
       <li class="dd"><button type="button" aria-haspopup="true">Für wen <span aria-hidden="true">▾</span></button><div class="dd-menu"><a href="basis.html">Patientenorganisationen und Ligen</a><a href="fuer-spitaeler-praxen.html">Spitäler und Arztpraxen</a><a href="fuer-industrie.html">Industrie und Patient Advocacy</a><a href="fuer-versicherer.html">Versicherer</a><a href="fuer-iv.html">IV-Stellen</a></div></li>
       <li><a href="#nutzen">Nutzen</a></li>
       <li><a href="#einstieg">Einstieg</a></li>
-      <li><a href="#tool">Produkt</a></li>
       <li><a href="#team">Team</a></li>
     </ul>
     <a class="btn btn-dark" href="#kontakt">Erstgespräch</a>
@@ -376,6 +384,11 @@
           <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg></span><div><b>Von einem vertrauten Absender</b><span>Das Angebot kommt von deiner Organisation, nicht von einer fremden App.</span></div></li>
         </ul>
       </div>
+    </div>
+    <div class="platform-hint">
+      <div class="mini-phone"><img src="../src/public/images/vision-screen-1.png" alt="Startseite der Plattform von Demenzworld"></div>
+      <div><b>Läuft unter deinem Namen, restful bleibt im Hintergrund.</b><p>Die Plattform betreiben wir für dich: Hosting, Wartung und Weiterentwicklung inklusive. Deine Mitglieder sehen dein Logo, deine Farben, deine Adresse.</p></div>
+      <a href="plattform.html">So sieht die Plattform aus →</a>
     </div>
   </div>
 </section>
@@ -454,84 +467,6 @@
         <p>Mit restful haben wir einen Partner gefunden, der unsere Vision versteht: Betroffene und Angehörige auf Augenhöhe zu vernetzen. Die Zusammenarbeit bei der Entwicklung der Austauschplattform für Menschen mit Cystischer Fibrose war durchweg professionell und partnerschaftlich. Das Ergebnis überzeugt: ein sicheres und wirkungsvolles Peer-Angebot, das echten Austausch und gegenseitige Unterstützung schafft. Ich kann restful als Entwicklungspartner uneingeschränkt empfehlen.»</p>
         <footer><b>Christina Eberle</b><span>Geschäftsführerin, Cystische Fibrose Schweiz (CFS)</span></footer>
       </blockquote>
-    </div>
-  </div>
-</section>
-
-<!-- EINBLICK: Plattform aus zwei Perspektiven -->
-<section class="tool" id="tool">
-  <div class="wrap">
-    <div class="tool-head">
-      <div>
-        <p class="kicker">Produkt</p>
-        <h2>So sieht es <i>im Alltag</i> aus</h2>
-        <p class="lead">Hinter jedem Angebot steht eine Plattform, die wir für dich betreiben. So erleben sie deine Koordination und deine Mitglieder.</p>
-      </div>
-      <div class="switch" role="tablist" aria-label="Perspektive wählen">
-        <button role="tab" aria-selected="true" data-v="0">Sicht Organisation</button>
-        <button role="tab" aria-selected="false" data-v="1">Sicht Nutzerin</button>
-      </div>
-    </div>
-
-    <!-- Sicht Organisation -->
-    <div class="view on" role="tabpanel">
-      <div class="visual">
-        <div class="browser" aria-label="Platzhalter Admin-Ansicht">
-          <div class="bar"><i></i><i></i><i></i><span>deine-organisation.getrestful.ch/admin</span></div>
-          <div class="dash">
-            <div class="side">
-              <div class="ph logo-slot">Dein Logo</div>
-              <div class="it on">Übersicht</div><div class="it">Matching</div><div class="it">Peers</div><div class="it">Mitglieder</div><div class="it">Auswertung</div><div class="it">Einstellungen</div>
-            </div>
-            <div class="main">
-              <div class="kpis">
-                <div class="kpi"><small>Aktive Mitglieder</small><b>[ ]</b></div>
-                <div class="kpi"><small>Offene Anfragen</small><b>[ ]</b></div>
-                <div class="kpi"><small>Matches diesen Monat</small><b>[ ]</b></div>
-              </div>
-              <div class="rows">
-                <b style="font-size:13px">Neue Anfragen</b>
-                <div class="r"><i></i><div class="bar2"></div><em>Match vorschlagen</em></div>
-                <div class="r"><i></i><div class="bar2" style="width:70%"></div><em class="ok">Gematcht</em></div>
-                <div class="r"><i></i><div class="bar2" style="width:85%"></div><em>Match vorschlagen</em></div>
-                <div class="r"><i></i><div class="bar2" style="width:60%"></div><em class="ok">Gematcht</em></div>
-              </div>
-              <div class="ph" style="min-height:90px">Platzhalter: Screenshot Admin-Dashboard</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="features">
-        <div class="feature"><span class="n">1</span><div><b>Anfragen und Matching steuern</b><span>Neue Anfragen sehen, passende Peers vorschlagen, Matches freigeben.</span></div></div>
-        <div class="feature"><span class="n">2</span><div><b>Peers und Mitglieder verwalten</b><span>Profile, Rollen und Verfügbarkeiten an einem Ort. <span class="tbd">[Funktion bestätigen]</span></span></div></div>
-        <div class="feature"><span class="n">3</span><div><b>Sicherheit im Blick</b><span>Moderation und Meldungen, damit der Austausch geschützt bleibt. <span class="tbd">[Funktion bestätigen]</span></span></div></div>
-        <div class="feature"><span class="n">4</span><div><b>Wirkung auswerten</b><span>Kennzahlen und Befragungen für deine Berichte und Geldgeber.</span></div></div>
-        <div class="feature"><span class="n">5</span><div><b>In deinem Erscheinungsbild</b><span>Eigenes Logo, eigene Farben, eigene Adresse. <span class="tbd">[Mehrsprachigkeit: DE/FR/IT?]</span></span></div></div>
-      </div>
-    </div>
-
-    <!-- Sicht Nutzerin -->
-    <div class="view" role="tabpanel">
-      <div class="visual phones">
-        <div class="phone"><div class="scr"><img src="../src/public/images/vision-screen-1.png" alt="Startseite der Peer-Plattform von Demenzworld"></div></div>
-        <div class="phone two"><div class="scr">
-          <div class="chat">
-            <div class="top"><i></i><div><b>Anna, Peer</b><small>Mutter, Diagnose vor 4 Jahren</small></div></div>
-            <div class="msgs">
-              <div class="m">Hallo! Schön, dass du dich meldest. Wie geht es dir gerade?</div>
-              <div class="m me">Ehrlich gesagt bin ich ziemlich überfordert mit allem.</div>
-              <div class="m">Das kenne ich gut. Mir hat damals geholfen ...</div>
-            </div>
-            <div class="note">Platzhalter: Screenshot Chat</div>
-          </div>
-        </div></div>
-      </div>
-      <div class="features">
-        <div class="feature"><span class="n">1</span><div><b>Einfach starten</b><span>Registrieren, kurz die eigene Situation beschreiben. Anonym, wenn gewünscht.</span></div></div>
-        <div class="feature"><span class="n">2</span><div><b>Passende Peer-Person</b><span>Eine Fachperson schlägt jemanden mit ähnlicher Erfahrung vor.</span></div></div>
-        <div class="feature"><span class="n">3</span><div><b>Im eigenen Tempo austauschen</b><span>Schreiben, wann es passt. <span class="tbd">[Formate bestätigen: Chat, Video, Gruppen?]</span></span></div></div>
-        <div class="feature"><span class="n">4</span><div><b>Hilfe, wenn es mehr braucht</b><span>Direkter Weg zu den Fachpersonen deiner Organisation. <span class="tbd">[Funktion bestätigen]</span></span></div></div>
-      </div>
     </div>
   </div>
 </section>
@@ -636,14 +571,9 @@
   </div>
 </section>
 
-<footer class="site"><div class="wrap"><span>restful GmbH, Bern</span><span>Datenschutz · Offene Stellen · LinkedIn</span></div></footer>
+<footer class="site"><div class="wrap"><span>restful GmbH, Bern</span><span><a href="plattform.html">Plattform</a> · Datenschutz · Offene Stellen · LinkedIn</span></div></footer>
 
 <script>
-  const tabs=[...document.querySelectorAll('.switch button')], views=[...document.querySelectorAll('.view')];
-  tabs.forEach(b=>b.addEventListener('click',()=>{
-    tabs.forEach(x=>x.setAttribute('aria-selected','false')); b.setAttribute('aria-selected','true');
-    views.forEach((v,i)=>v.classList.toggle('on',i==b.dataset.v));
-  }));
   document.querySelectorAll('[data-guide]').forEach(g=>{
     const as=[...g.querySelectorAll('.ans')];
     g.querySelectorAll('input').forEach(r=>r.addEventListener('change',()=>as.forEach((a,i)=>a.classList.toggle('on',i==r.value))));
