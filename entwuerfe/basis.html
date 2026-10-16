@@ -1,0 +1,575 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Basis · Nachtblau &amp; Blush · restful</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* restful Palette
+     Blau:  #05004A Nachtblau · #1400FF restful-Blau · #7066F6 Violett · #CFCCFB Lavendel
+     Erde:  #593530 Kakao · #8E5147 Terrakotta · #BC9C96 Rosenholz · #F1E2DF Blush */
+  :root{
+    --serif:Fraunces,Georgia,serif;
+    --sans:Inter,system-ui,sans-serif;
+    --hw:500;
+    --shadow:rgba(5,0,74,.25);
+    --cream:#FAF4F2;
+    --white:#FFFFFF;
+    --sand:#F1E2DF;
+    --rose:#BC9C96;
+    --lav:#CFCCFB;
+    --violet:#7066F6;
+    --navy:#05004A;
+    --terra:#8E5147;
+    --blue:#1400FF;
+    --ink:#05004A;
+    --ink-soft:#5C5677;
+    --line:#E6D6D2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.6;font-size:17px}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:var(--hw);letter-spacing:-.02em;line-height:1.1}
+  h2{font-size:clamp(34px,4.4vw,54px)}
+  h2 i,h1 i{font-style:italic;color:var(--terra)}
+  section{padding:100px 0}
+  .lead{font-size:19px;color:var(--ink-soft);max-width:620px;margin-top:18px}
+  .kicker{font-size:14px;font-weight:600;color:var(--terra);display:flex;align-items:center;gap:10px;margin-bottom:18px}
+  .kicker::before{content:"";width:28px;height:2px;background:var(--rose)}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:600;transition:.2s;border:0;font-family:inherit;font-size:inherit;cursor:pointer}
+  .btn-dark{background:var(--navy);color:var(--cream)}
+  .btn-dark:hover{background:var(--blue)}
+  .btn-line{border:1.5px solid var(--navy);color:var(--navy)}
+  .btn-line:hover{background:var(--navy);color:var(--cream)}
+  .btn-light{background:var(--sand);color:var(--navy)}
+  .btn-light:hover{background:#fff}
+
+  /* Platzhalter: alles, was noch Inhalt von restful braucht */
+  .tbd{background:#FFF3B0;color:#5A4A00;border-radius:4px;padding:0 4px;font-weight:600;font-size:.92em}
+  .ph{border:2px dashed var(--rose);border-radius:18px;display:grid;place-items:center;text-align:center;color:var(--terra);font-size:14px;font-weight:600;padding:20px;background:repeating-linear-gradient(135deg,transparent 0 12px,rgba(188,156,150,.08) 12px 24px)}
+
+  header{padding:22px 0;position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--cream) 90%,transparent);backdrop-filter:blur(10px)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .nav ul{display:flex;gap:28px;list-style:none;font-size:16px}
+  .nav ul a{text-decoration:none}
+  .nav ul a:hover{text-decoration:underline;text-underline-offset:5px}
+  .nav .btn{white-space:nowrap;padding:12px 22px}
+  @media(max-width:900px){.nav ul{display:none}.nav .btn{padding:10px 16px;font-size:14px}}
+
+  /* Hero */
+  .hero{padding:40px 0 70px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+  .hero h1{font-size:clamp(42px,5.6vw,74px);margin-bottom:26px}
+  .hero p.sub{font-size:20px;color:var(--ink-soft);max-width:540px;margin-bottom:32px}
+  .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .proof{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:34px;font-size:15px;color:var(--ink-soft)}
+  .proof span{display:flex;align-items:center;gap:8px}
+  .proof span::before{content:"✓";width:22px;height:22px;border-radius:50%;background:var(--sand);color:var(--terra);display:grid;place-items:center;font-size:12px;font-weight:700}
+  .collage{display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative}
+  .arch{border-radius:200px 200px 24px 24px;overflow:hidden;aspect-ratio:3/4}
+  .arch img{width:100%;height:100%;object-fit:cover}
+  .collage .arch:nth-child(2){margin-top:70px;border-radius:24px 24px 200px 200px}
+  .bubble{position:absolute;background:var(--white);padding:16px 20px;border-radius:20px 20px 20px 4px;box-shadow:0 18px 40px -20px var(--shadow);font-size:15px;max-width:290px}
+  .bubble.b1{left:-40px;bottom:-10px}
+  @media(max-width:920px){.hero-grid{grid-template-columns:1fr}.bubble.b1{left:0}}
+
+  /* Logo-Leiste */
+  .logos{padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .logos .wrap{display:flex;align-items:center;gap:20px 44px;flex-wrap:wrap;justify-content:center}
+  .logos p{font-size:14px;color:var(--ink-soft);width:100%;text-align:center}
+  .logos img{height:38px;width:auto;filter:grayscale(1);opacity:.75;mix-blend-mode:multiply}
+  .logos img:hover{filter:none;opacity:1}
+
+  /* Wertversprechen */
+  .value-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px}
+  .value{border-radius:32px;padding:44px}
+  .value.org{background:var(--navy);color:var(--cream)}
+  .value.org .tag{background:var(--sand);color:var(--navy)}
+  .value.mem{background:var(--white);border:1px solid var(--line)}
+  .value.mem .tag{background:var(--lav);color:var(--navy)}
+  .value .tag{display:inline-block;font-size:13px;font-weight:600;padding:6px 14px;border-radius:999px;margin-bottom:22px}
+  .value h3{font-size:clamp(26px,2.6vw,34px);margin-bottom:28px}
+  .value ul{list-style:none;display:grid;gap:22px}
+  .value li{display:grid;grid-template-columns:40px 1fr;gap:14px}
+  .value li .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center}
+  .value.org li .ic{background:color-mix(in srgb,var(--cream) 12%,transparent);color:var(--sand)}
+  .value.mem li .ic{background:var(--sand);color:var(--terra)}
+  .value li b{display:block;font-size:17px;margin-bottom:2px}
+  .value li span{font-size:15.5px;opacity:.82}
+  @media(max-width:900px){.value-grid{grid-template-columns:1fr}.value{padding:30px}}
+
+  /* Tool */
+  .tool{background:var(--white);border-radius:40px;margin:0 16px}
+  .tool-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+  .switch{display:inline-flex;background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:5px;gap:4px}
+  .switch button{border:0;background:none;font:inherit;font-weight:600;padding:11px 20px;border-radius:999px;cursor:pointer;color:var(--ink-soft)}
+  .switch button[aria-selected="true"]{background:var(--navy);color:var(--cream)}
+  .view{display:none;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;margin-top:50px}
+  .view.on{display:grid}
+  .features{display:grid;gap:12px}
+  .feature{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 20px;border-radius:20px;background:var(--cream)}
+  .feature .n{width:44px;height:44px;border-radius:14px;background:var(--white);display:grid;place-items:center;font-family:var(--serif);font-size:20px;color:var(--terra)}
+  .feature b{display:block;font-size:17px}
+  .feature span{font-size:15px;color:var(--ink-soft)}
+  /* Browser-Rahmen (Sicht Organisation) */
+  .browser{border-radius:18px;background:var(--navy);padding:10px;box-shadow:0 40px 80px -40px var(--shadow)}
+  .browser .bar{display:flex;gap:6px;align-items:center;padding:4px 6px 10px}
+  .browser .bar i{width:10px;height:10px;border-radius:50%;background:color-mix(in srgb,var(--cream) 30%,transparent)}
+  .browser .bar span{margin-left:10px;font-size:12px;color:var(--lav)}
+  .dash{background:var(--cream);border-radius:10px;display:grid;grid-template-columns:150px 1fr;min-height:400px;overflow:hidden}
+  .dash .side{background:var(--white);padding:16px;display:grid;align-content:start;gap:8px;font-size:13px;border-right:1px solid var(--line)}
+  .dash .side .logo-slot{height:34px;border-radius:8px;margin-bottom:10px;font-size:11px;padding:4px}
+  .dash .side div.it{padding:8px 10px;border-radius:8px;color:var(--ink-soft)}
+  .dash .side div.it.on{background:var(--sand);color:var(--navy);font-weight:600}
+  .dash .main{padding:18px;display:grid;gap:12px;align-content:start}
+  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .kpi{background:var(--white);border-radius:12px;padding:12px}
+  .kpi small{font-size:11px;color:var(--ink-soft);display:block}
+  .kpi b{font-family:var(--serif);font-size:24px;font-weight:var(--hw)}
+  .rows{background:var(--white);border-radius:12px;padding:12px;display:grid;gap:8px}
+  .rows .r{display:grid;grid-template-columns:26px 1fr auto;gap:10px;align-items:center;font-size:12.5px}
+  .rows .r i{width:26px;height:26px;border-radius:50%;background:var(--lav)}
+  .rows .r:nth-child(odd) i{background:var(--sand)}
+  .rows .r em{font-style:normal;font-size:11px;padding:3px 8px;border-radius:999px;background:var(--lav)}
+  .rows .r em.ok{background:var(--sand);color:var(--terra)}
+  .rows .bar2{height:8px;border-radius:4px;background:var(--line)}
+  /* Telefon-Rahmen (Sicht Nutzerin) */
+  .phones{display:flex;gap:18px;justify-content:center;align-items:flex-start}
+  .phone{width:230px;border-radius:34px;background:var(--navy);padding:9px;box-shadow:0 40px 80px -40px var(--shadow);flex:none}
+  .phone .scr{border-radius:26px;overflow:hidden;height:440px;background:var(--white)}
+  .phone .scr img{width:100%;height:100%;object-fit:cover;object-position:top}
+  .phone.two{margin-top:60px}
+  .chat{height:100%;display:flex;flex-direction:column;background:var(--cream);font-size:12.5px}
+  .chat .top{background:var(--white);padding:14px;display:flex;gap:10px;align-items:center;border-bottom:1px solid var(--line)}
+  .chat .top i{width:30px;height:30px;border-radius:50%;background:var(--sand)}
+  .chat .top b{font-size:13px;display:block}
+  .chat .top small{color:var(--ink-soft);font-size:11px}
+  .chat .msgs{padding:14px;display:grid;gap:8px;align-content:start;flex:1}
+  .chat .m{max-width:80%;padding:9px 12px;border-radius:14px;background:var(--white)}
+  .chat .m.me{justify-self:end;background:var(--navy);color:var(--cream)}
+  .chat .note{margin:auto 10px 12px;font-size:10.5px;color:var(--terra)}
+  @media(max-width:960px){.view{grid-template-columns:1fr}.view .visual{order:-1}.dash{grid-template-columns:1fr}.dash .side{display:none}.phone{width:200px}.phone .scr{height:380px}}
+  @media(max-width:520px){.phone.two{display:none}}
+
+  /* Journey */
+  .journey-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+  details{background:var(--white);border-radius:24px;margin-bottom:14px;overflow:hidden}
+  summary{list-style:none;cursor:pointer;padding:24px 28px;display:flex;align-items:center;gap:20px}
+  summary::-webkit-details-marker{display:none}
+  summary .no{font-family:var(--serif);font-size:30px;color:var(--terra);width:36px}
+  summary b{font-family:var(--serif);font-weight:var(--hw);font-size:22px;display:block}
+  summary span.s{color:var(--ink-soft);font-size:15px}
+  summary .plus{margin-left:auto;width:38px;height:38px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;flex:none;transition:.2s}
+  details[open] summary .plus{transform:rotate(45deg);background:var(--navy);color:var(--cream);border-color:var(--navy)}
+  .d-body{padding:0 28px 26px 84px;color:var(--ink-soft)}
+  .d-body b{color:var(--ink)}
+  @media(max-width:860px){.journey-grid{grid-template-columns:1fr}.d-body{padding:0 24px 24px}}
+
+  /* Testimonial */
+  .testi{padding:0 0 100px}
+  .testi-card{background:var(--sand);border-radius:40px;padding:60px;display:grid;grid-template-columns:260px 1fr;gap:60px;align-items:center}
+  .testi-photo{position:relative}
+  .testi-photo img.p{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:160px 160px 24px 24px}
+  .testi-photo .logo{position:absolute;right:-22px;bottom:22px;background:#fff;border-radius:16px;padding:8px 12px;box-shadow:0 18px 40px -20px var(--shadow)}
+  .testi-photo .logo img{height:52px;width:auto}
+  .testi blockquote p{font-family:var(--serif);font-size:clamp(21px,2.2vw,28px);line-height:1.42}
+  .testi blockquote p::before{content:"«";display:block;font-size:90px;line-height:.7;color:var(--rose);margin-bottom:10px}
+  .testi footer{margin-top:26px}
+  .testi footer b{display:block;font-size:18px}
+  .testi footer span{color:var(--ink-soft)}
+  @media(max-width:860px){.testi-card{grid-template-columns:1fr;padding:32px;gap:34px}.testi-photo{max-width:220px}}
+
+  /* Digitalprojekte */
+  .projects{background:var(--navy);color:var(--cream);border-radius:40px;margin:0 16px}
+  .projects h2 i,.projects .kicker{color:var(--sand)}
+  .projects .lead{color:color-mix(in srgb,var(--cream) 80%,transparent)}
+  .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+  .services{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}
+  .services div{border:1px solid color-mix(in srgb,var(--cream) 20%,transparent);border-radius:18px;padding:18px 20px}
+  .services b{display:block;font-family:var(--serif);font-weight:var(--hw);font-size:19px;margin-bottom:4px}
+  .services span{opacity:.75;font-size:14.5px}
+  .case-card{background:var(--cream);color:var(--ink);border-radius:28px;padding:34px}
+  .case-card .head{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+  .case-card .head img{height:46px;width:auto;background:#fff;padding:8px;border-radius:10px}
+  .case-card h3{font-size:28px}
+  .case-card dl{display:grid;grid-template-columns:120px 1fr;gap:10px 16px;font-size:15px}
+  .case-card dt{color:var(--terra);font-weight:600}
+  .case-card dd{color:var(--ink-soft)}
+  @media(max-width:860px){.proj-grid,.services{grid-template-columns:1fr}}
+
+  /* Wissenschaft */
+  .sci-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
+  .facts{display:grid;gap:12px}
+  .fact{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:22px 24px}
+  .fact b{display:block;font-family:var(--serif);font-weight:var(--hw);font-size:20px;margin-bottom:4px}
+  .fact span{color:var(--ink-soft);font-size:15.5px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 30px}
+  .chips a{background:var(--white);border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:14px;text-decoration:none}
+  .chips a:hover{border-color:var(--navy)}
+  @media(max-width:860px){.sci-grid{grid-template-columns:1fr;gap:36px}}
+
+  /* FAQ */
+  .faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+  .faq details{background:var(--white)}
+  .faq summary b{font-size:20px}
+  .faq .d-body{padding:0 28px 24px 28px}
+  @media(max-width:860px){.faq{grid-template-columns:1fr;gap:30px}}
+
+  /* Team */
+  .team{background:var(--white);border-radius:40px;margin:0 16px}
+  .team-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:18px;margin-top:46px}
+  .m img{aspect-ratio:4/5;object-fit:cover;border-radius:100px 100px 16px 16px;margin-bottom:12px}
+  .m b{font-family:var(--serif);font-weight:var(--hw);font-size:17px;display:block;line-height:1.2}
+  .m span{font-size:13.5px;color:var(--ink-soft)}
+  .adv-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  .adv{display:flex;gap:10px;align-items:center;background:var(--cream);padding:8px 16px 8px 8px;border-radius:999px}
+  .adv img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:none}
+  .adv b{display:block;font-size:14px;line-height:1.2}
+  .adv span{font-size:12.5px;color:var(--ink-soft)}
+  @media(max-width:1000px){.team-grid{grid-template-columns:repeat(4,1fr)}}
+  @media(max-width:600px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+
+  /* Kontakt */
+  .contact-box{background:var(--sand);border-radius:40px;padding:64px;display:grid;grid-template-columns:1fr 1fr;gap:50px}
+  .contact-box p{font-size:19px;margin-top:18px;color:var(--ink-soft)}
+  .contact-box ul{list-style:none;margin-top:26px;display:grid;gap:10px}
+  .contact-box li::before{content:"→ ";color:var(--terra)}
+  form{display:grid;gap:12px}
+  input,textarea{font:inherit;padding:16px 20px;border-radius:16px;border:0;background:var(--white);width:100%}
+  form button{justify-self:start}
+  footer.site{padding:50px 0;font-size:14px;color:var(--ink-soft)}
+  footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  @media(max-width:860px){.contact-box{grid-template-columns:1fr;padding:32px}}
+  @media(max-width:860px){body *{min-width:0}h1,h2,h3,p{overflow-wrap:break-word;hyphens:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <img src="../src/public/images/logo.svg" alt="restful" style="height:38px;width:auto">
+    <ul>
+      <li><a href="#nutzen">Nutzen</a></li>
+      <li><a href="#tool">Das Tool</a></li>
+      <li><a href="#ablauf">Ablauf</a></li>
+      <li><a href="#projekte">Digitalprojekte</a></li>
+      <li><a href="#wissenschaft">Wissenschaft</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+    <a class="btn btn-dark" href="#kontakt">Erstgespräch</a>
+  </div>
+</header>
+
+<!-- HERO: Wertversprechen in einem Satz -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">Peer-Angebote für Organisationen im Gesundheits- und Sozialwesen</p>
+      <h1>Dein Peer-Angebot. <i>Unter deinem Namen.</i> Ohne eigenes IT-Projekt.</h1>
+      <p class="sub">restful liefert Plattform, erprobte Formate und Begleitung, damit sich Betroffene und Angehörige in deiner Organisation gegenseitig stärken. Du führst das Angebot, wir kümmern uns um den Rest.</p>
+      <div class="ctas">
+        <a class="btn btn-dark" href="#kontakt">Erstgespräch vereinbaren</a>
+        <a class="btn btn-line" href="#tool">Das Tool ansehen</a>
+      </div>
+      <div class="proof"><span>12 Organisationen</span><span>Schweizer Datenschutz (revDSG)</span><span>Wissenschaftlich begleitet</span></div>
+    </div>
+    <div class="collage">
+      <div class="arch"><img src="../src/public/images/team-sulamith-scheurer.png" alt=""></div>
+      <div class="arch"><img src="../src/public/images/team-raphael-reber.png" alt=""></div>
+      <div class="bubble b1">«Ein sicheres und wirkungsvolles Peer-Angebot, das echten Austausch und gegenseitige Unterstützung schafft.»<br><small style="color:var(--ink-soft)">Christina Eberle, Cystische Fibrose Schweiz</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="logos">
+  <div class="wrap">
+    <p>Organisationen, die mit restful arbeiten</p>
+    <img src="../src/public/images/logo-krebsliga.webp" alt="Krebsliga">
+    <img src="../src/public/images/logo-demenzworld.png" alt="Demenzworld">
+    <img src="../src/public/images/logo-mucoconnect.png" alt="MucoConnect">
+    <img src="../src/public/images/logo-procap.png" alt="Procap">
+    <img src="../src/public/images/logo-inselspital.webp" alt="Inselspital">
+    <img src="../src/public/images/logo-cerebral.webp" alt="Stiftung Cerebral">
+    <img src="../src/public/images/logo-svamv.svg" alt="SVAMV">
+    <img src="../src/public/images/logo-spitex-kriens.png" alt="Spitex Kriens">
+    <img src="../src/public/images/logo-sf-bfk.png" alt="SF BFK">
+  </div>
+</div>
+
+<!-- NUTZEN: Organisation und Mitglieder -->
+<section id="nutzen">
+  <div class="wrap">
+    <p class="kicker">Was du bekommst</p>
+    <h2>Mehrwert für deine Organisation <i>und deine Mitglieder</i></h2>
+    <div class="value-grid">
+      <div class="value org">
+        <span class="tag">Für deine Organisation</span>
+        <h3>Ein neues Angebot, das wirkt und sich belegen lässt</h3>
+        <ul>
+          <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="7" r="3.5"/><path d="M17 20v-1a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v1M22 20v-1a3.5 3.5 0 0 0-2.5-3.4M15.5 3.6a3.5 3.5 0 0 1 0 6.8"/></svg></span><div><b>Mehr Menschen erreichen</b><span>Auch jene, die keine Beratungsstelle aufsuchen. Betroffene vertrauen Betroffenen.</span></div></li>
+          <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 2 10 5-10 5L2 7Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></span><div><b>Fachpersonen entlasten</b><span>Peers fangen Alltagsfragen zwischen den Terminen auf. Deine Beratung bleibt für das, was nur sie leisten kann.</span></div></li>
+          <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span><div><b>Wirkung belegen</b><span>Auswertungen aus dem laufenden Betrieb, für Vorstand, Stiftungen und Förderberichte.</span></div></li>
+          <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8"/></svg></span><div><b>Kein IT-Projekt</b><span>Plattform, Hosting, Wartung und Weiterentwicklung kommen von uns. Dein Logo, deine Farben, deine Adresse.</span></div></li>
+        </ul>
+      </div>
+      <div class="value mem">
+        <span class="tag">Für deine Mitglieder</span>
+        <h3>Jemanden finden, der versteht, wie es ist</h3>
+        <ul>
+          <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Passend vermittelt</b><span>Fachpersonen schlagen eine Peer-Person mit ähnlicher Erfahrung vor. Kein Zufall, kein Algorithmus allein.</span></div></li>
+          <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6l-8-3Z"/></svg></span><div><b>Geschützt und auf Wunsch anonym</b><span>Mitglieder entscheiden selbst, was sie von sich zeigen.</span></div></li>
+          <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Wann und wo es passt</b><span>Digital, ortsunabhängig, auch zwischen Terminen und neben Pflege, Arbeit oder Familie.</span></div></li>
+          <li><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V8l7-5 7 5v13"/></svg></span><div><b>Von einem vertrauten Absender</b><span>Das Angebot kommt von deiner Organisation, nicht von einer fremden App.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOL: zwei Perspektiven -->
+<section class="tool" id="tool">
+  <div class="wrap">
+    <div class="tool-head">
+      <div>
+        <p class="kicker">Das Tool</p>
+        <h2>Eine Plattform, <i>zwei Perspektiven</i></h2>
+        <p class="lead">So sieht das Peer-Angebot für die Menschen aus, die es betreuen, und für die Menschen, die es nutzen.</p>
+      </div>
+      <div class="switch" role="tablist" aria-label="Perspektive wählen">
+        <button role="tab" aria-selected="true" data-v="0">Sicht Organisation</button>
+        <button role="tab" aria-selected="false" data-v="1">Sicht Nutzerin</button>
+      </div>
+    </div>
+
+    <!-- Sicht Organisation -->
+    <div class="view on" role="tabpanel">
+      <div class="visual">
+        <div class="browser" aria-label="Platzhalter Admin-Ansicht">
+          <div class="bar"><i></i><i></i><i></i><span>deine-organisation.getrestful.ch/admin</span></div>
+          <div class="dash">
+            <div class="side">
+              <div class="ph logo-slot">Dein Logo</div>
+              <div class="it on">Übersicht</div><div class="it">Matching</div><div class="it">Peers</div><div class="it">Mitglieder</div><div class="it">Auswertung</div><div class="it">Einstellungen</div>
+            </div>
+            <div class="main">
+              <div class="kpis">
+                <div class="kpi"><small>Aktive Mitglieder</small><b>[ ]</b></div>
+                <div class="kpi"><small>Offene Anfragen</small><b>[ ]</b></div>
+                <div class="kpi"><small>Matches diesen Monat</small><b>[ ]</b></div>
+              </div>
+              <div class="rows">
+                <b style="font-size:13px">Neue Anfragen</b>
+                <div class="r"><i></i><div class="bar2"></div><em>Match vorschlagen</em></div>
+                <div class="r"><i></i><div class="bar2" style="width:70%"></div><em class="ok">Gematcht</em></div>
+                <div class="r"><i></i><div class="bar2" style="width:85%"></div><em>Match vorschlagen</em></div>
+                <div class="r"><i></i><div class="bar2" style="width:60%"></div><em class="ok">Gematcht</em></div>
+              </div>
+              <div class="ph" style="min-height:90px">Platzhalter: Screenshot Admin-Dashboard</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="features">
+        <div class="feature"><span class="n">1</span><div><b>Anfragen und Matching steuern</b><span>Neue Anfragen sehen, passende Peers vorschlagen, Matches freigeben.</span></div></div>
+        <div class="feature"><span class="n">2</span><div><b>Peers und Mitglieder verwalten</b><span>Profile, Rollen und Verfügbarkeiten an einem Ort. <span class="tbd">[Funktion bestätigen]</span></span></div></div>
+        <div class="feature"><span class="n">3</span><div><b>Sicherheit im Blick</b><span>Moderation und Meldungen, damit der Austausch geschützt bleibt. <span class="tbd">[Funktion bestätigen]</span></span></div></div>
+        <div class="feature"><span class="n">4</span><div><b>Wirkung auswerten</b><span>Kennzahlen und Befragungen für deine Berichte und Geldgeber.</span></div></div>
+        <div class="feature"><span class="n">5</span><div><b>In deinem Erscheinungsbild</b><span>Eigenes Logo, eigene Farben, eigene Adresse. <span class="tbd">[Mehrsprachigkeit: DE/FR/IT?]</span></span></div></div>
+      </div>
+    </div>
+
+    <!-- Sicht Nutzerin -->
+    <div class="view" role="tabpanel">
+      <div class="visual phones">
+        <div class="phone"><div class="scr"><img src="../src/public/images/vision-screen-1.png" alt="Startseite der Peer-Plattform von Demenzworld"></div></div>
+        <div class="phone two"><div class="scr">
+          <div class="chat">
+            <div class="top"><i></i><div><b>Anna, Peer</b><small>Mutter, Diagnose vor 4 Jahren</small></div></div>
+            <div class="msgs">
+              <div class="m">Hallo! Schön, dass du dich meldest. Wie geht es dir gerade?</div>
+              <div class="m me">Ehrlich gesagt bin ich ziemlich überfordert mit allem.</div>
+              <div class="m">Das kenne ich gut. Mir hat damals geholfen ...</div>
+            </div>
+            <div class="note">Platzhalter: Screenshot Chat</div>
+          </div>
+        </div></div>
+      </div>
+      <div class="features">
+        <div class="feature"><span class="n">1</span><div><b>Einfach starten</b><span>Registrieren, kurz die eigene Situation beschreiben. Anonym, wenn gewünscht.</span></div></div>
+        <div class="feature"><span class="n">2</span><div><b>Passende Peer-Person</b><span>Eine Fachperson schlägt jemanden mit ähnlicher Erfahrung vor.</span></div></div>
+        <div class="feature"><span class="n">3</span><div><b>Im eigenen Tempo austauschen</b><span>Schreiben, wann es passt. <span class="tbd">[Formate bestätigen: Chat, Video, Gruppen?]</span></span></div></div>
+        <div class="feature"><span class="n">4</span><div><b>Hilfe, wenn es mehr braucht</b><span>Direkter Weg zu den Fachpersonen deiner Organisation. <span class="tbd">[Funktion bestätigen]</span></span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABLAUF -->
+<section id="ablauf">
+  <div class="wrap journey-grid">
+    <div>
+      <p class="kicker">Ablauf</p>
+      <h2>Von der Idee <i>zum laufenden Angebot</i></h2>
+      <p class="lead">Wähle die Situation, die deiner am nächsten kommt.</p>
+      <p style="margin-top:24px;color:var(--ink-soft);font-size:15px">Dauer bis zum Pilot: <span class="tbd">[z.B. 3 Monate]</span></p>
+      <a class="btn btn-dark" style="margin-top:26px" href="#kontakt">Erstgespräch vereinbaren</a>
+    </div>
+    <div>
+      <details open>
+        <summary><span class="no">1</span><div><b>Du startest neu</b><span class="s">Die Idee ist da, das Angebot noch nicht.</span></div><span class="plus">+</span></summary>
+        <div class="d-body"><b>Analyse</b> von Zielgruppe und Ressourcen, <b>Format</b> aus unserem Playbook, <b>Plattform</b> unter deinem Namen, <b>Pilot</b> mit Schulung deiner Koordination.</div>
+      </details>
+      <details>
+        <summary><span class="no">2</span><div><b>Deine Community läuft analog</b><span class="s">Treffen, Gruppen oder Telefonkontakte.</span></div><span class="plus">+</span></summary>
+        <div class="d-body">Wir ergänzen dein Angebot digital. So kommen auch Menschen dazu, die heute nicht teilnehmen können. Bestehende Peers binden wir ein.</div>
+      </details>
+      <details>
+        <summary><span class="no">3</span><div><b>Dein Angebot harzt</b><span class="s">Es besteht, kommt aber nicht in Gang.</span></div><span class="plus">+</span></summary>
+        <div class="d-body">Wir werten Beteiligung, Matching und Abläufe aus und richten das Angebot gezielt neu aus. Deine Koordination wird entlastet.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="testi" aria-label="Stimme einer Partnerorganisation">
+  <div class="wrap">
+    <div class="testi-card">
+      <div class="testi-photo">
+        <img class="p" src="../src/public/images/testimonial-christina-eberle.jpg" alt="Christina Eberle">
+        <div class="logo"><img src="../src/public/images/logo-mucoconnect.png" alt="MucoConnect"></div>
+      </div>
+      <blockquote>
+        <p>Mit restful haben wir einen Partner gefunden, der unsere Vision versteht: Betroffene und Angehörige auf Augenhöhe zu vernetzen. Die Zusammenarbeit bei der Entwicklung der Austauschplattform für Menschen mit Cystischer Fibrose war durchweg professionell und partnerschaftlich. Das Ergebnis überzeugt: ein sicheres und wirkungsvolles Peer-Angebot, das echten Austausch und gegenseitige Unterstützung schafft. Ich kann restful als Entwicklungspartner uneingeschränkt empfehlen.»</p>
+        <footer><b>Christina Eberle</b><span>Geschäftsführerin, Cystische Fibrose Schweiz (CFS)</span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- DIGITALPROJEKTE (sekundäre Zielgruppe) -->
+<section class="projects" id="projekte">
+  <div class="wrap proj-grid">
+    <div>
+      <p class="kicker">Für Spitäler, Kliniken und Institutionen</p>
+      <h2>Patientenpfade <i>digital</i> weiterdenken</h2>
+      <p class="lead">Wir konzipieren und entwickeln digitale und hybride Angebote entlang des Versorgungsverlaufs. Damit Patientinnen und Patienten auch zwischen den Terminen begleitet sind.</p>
+      <div class="services">
+        <div><b>Pfad analysieren</b><span>Wo gehen Patientinnen verloren, wo fehlt Begleitung?</span></div>
+        <div><b>Blended Care gestalten</b><span>Digitale und persönliche Schritte sinnvoll verbinden.</span></div>
+        <div><b>Entwickeln und betreiben</b><span>Design, Technik und Betrieb aus einer Hand.</span></div>
+        <div><b>Sicher im Gesundheitswesen</b><span>Sensible Daten, Mehrsprachigkeit, viele Beteiligte.</span></div>
+      </div>
+      <a class="btn btn-light" style="margin-top:30px" href="#kontakt">Projekt besprechen</a>
+    </div>
+    <div class="case-card">
+      <div class="head"><img src="../src/public/images/logo-inselspital.webp" alt="Inselspital"><div><small style="color:var(--terra);font-weight:600">Fallbeispiel</small><h3>Swiss Sleep Circle</h3></div></div>
+      <dl>
+        <dt>Auftrag</dt><dd>Menschen mit Schlaf-Wach-Erkrankungen digital erreichen, von der Früherkennung bis zur Behandlung (Blended Stepped Care).</dd>
+        <dt>Auftraggeberin</dt><dd>Universitätsklinik für Neurologie, Inselspital Bern</dd>
+        <dt>Förderung</dt><dd>Gesundheitsförderung Schweiz</dd>
+        <dt>restful</dt><dd>Konzeption, Design und komplette technische Realisierung</dd>
+        <dt>Ergebnis</dt><dd><span class="tbd">[Kennzahl oder Ergebnis, sobald freigegeben]</span></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- WISSENSCHAFT -->
+<section id="wissenschaft">
+  <div class="wrap sci-grid">
+    <div>
+      <p class="kicker">Wissenschaft</p>
+      <h2>Fundiert, <i>nicht nur gut gemeint</i></h2>
+      <p class="lead">Peer-Unterstützung ist bei chronischen Erkrankungen und in der psychischen Gesundheit gut untersucht. Sie ersetzt keine Behandlung, sie ergänzt sie.</p>
+      <div class="chips"><a href="#">Digitale Peer-Unterstützung</a><a href="#">Psychische Erkrankungen</a><a href="#">Demenz</a><a href="#">Zystische Fibrose</a><a href="#">Onkologie</a><a href="#">Adipositas</a><a href="#">Familie &amp; Elternschaft</a></div>
+      <a class="btn btn-line" href="#">Zur Studienlage</a>
+    </div>
+    <div class="facts">
+      <div class="fact"><b>Erprobte Formate</b><span>Unsere Formate stützen sich auf Literaturrecherchen zu jedem Themenfeld.</span></div>
+      <div class="fact"><b>Wirkungsmessung im Betrieb</b><span>Daten aus dem laufenden Angebot, gemeinsam mit dir ausgewertet.</span></div>
+      <div class="fact"><b>Begleitforschung</b><span>Prozessforschung mit einer Universität. <span class="tbd">[Ergebnisse nach Publikation]</span></span></div>
+      <div class="fact"><b>Datenschutz</b><span>Nach Schweizer Datenschutzgesetz (revDSG). <span class="tbd">[Hosting-Standort ergänzen]</span></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="padding-top:0">
+  <div class="wrap faq">
+    <div>
+      <p class="kicker">Häufige Fragen</p>
+      <h2>Was Organisationen <i>vorher wissen wollen</i></h2>
+    </div>
+    <div>
+      <details><summary><b>Was kostet ein Peer-Angebot?</b><span class="plus">+</span></summary><div class="d-body"><span class="tbd">[Preismodell: z.B. Aufbaupauschale plus jährliche Lizenz, Hinweis auf Fördermöglichkeiten]</span></div></details>
+      <details><summary><b>Brauchen wir eigenes IT-Know-how?</b><span class="plus">+</span></summary><div class="d-body">Nein. Plattform, Hosting, Wartung und Weiterentwicklung übernimmt restful. Du brauchst eine Person, die das Angebot koordiniert. Wir schulen sie.</div></details>
+      <details><summary><b>Wie viel Aufwand bleibt bei uns?</b><span class="plus">+</span></summary><div class="d-body"><span class="tbd">[Richtwert Koordinationsaufwand, z.B. Stunden pro Woche]</span></div></details>
+      <details><summary><b>Wem gehören die Daten?</b><span class="plus">+</span></summary><div class="d-body"><span class="tbd">[Datenhoheit, Hosting, Auftragsbearbeitung kurz erklären]</span></div></details>
+      <details><summary><b>Können wir das Angebot finanzieren lassen?</b><span class="plus">+</span></summary><div class="d-body"><span class="tbd">[Hinweis auf Stiftungen, Förderprogramme, Unterstützung durch restful beim Fundraising]</span></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+  <div class="wrap">
+    <p class="kicker">Team</p>
+    <h2>Soziale Arbeit, Public Health, Forschung <i>und Technologie</i></h2>
+    <div class="team-grid">
+      <div class="m"><img src="../src/public/images/team-raphael-reber.png" alt=""><b>Raphael Reber</b><span>Strategie &amp; Partnerschaften</span></div>
+      <div class="m"><img src="../src/public/images/team-sulamith-scheurer.png" alt=""><b>Sulamith Scheurer</b><span>Produktmanagement</span></div>
+      <div class="m"><img src="../src/public/images/team-stefan-niederhauser.png" alt=""><b>Stefan Niederhauser</b><span>Technologie</span></div>
+      <div class="m"><img src="../src/public/images/team-chantal-kuske.png" alt=""><b>Chantal Kuske</b><span>Scientific Advisory</span></div>
+      <div class="m"><img src="../src/public/images/team-melanie-spescha.png" alt=""><b>Melanie Spescha</b><span>Projekte &amp; Fundraising</span></div>
+      <div class="m"><img src="../src/public/images/team-lona-gaugler.jpg" alt=""><b>Lona Gaugler</b><span>Industry Lead</span></div>
+      <div class="m"><img src="../src/public/images/team-silvan-jost.jpg" alt=""><b>Silvan Jost</b><span>Technologie</span></div>
+    </div>
+    <h3 style="margin-top:56px;font-size:24px">Advisory Community</h3>
+    <div class="adv-row">
+      <div class="adv"><img src="../src/public/images/advisory-flavia-wasserfallen.png" alt=""><div><b>Flavia Wasserfallen</b><span>Ständerätin SP</span></div></div>
+      <div class="adv"><img src="../src/public/images/advisory-christoph-hamann.png" alt=""><div><b>Dr. med. Christoph Hamann</b><span>INSEL</span></div></div>
+      <div class="adv"><img src="../src/public/images/advisory-felix-muff.png" alt=""><div><b>Felix Muff</b><span>VRP Concordia</span></div></div>
+      <div class="adv"><img src="../src/public/images/advisory-melanie-mettler.png" alt=""><div><b>Melanie Mettler</b><span>Stadt Bern</span></div></div>
+      <div class="adv"><img src="../src/public/images/advisory-felix-wettstein.jpg" alt=""><div><b>Felix Wettstein</b><span>Nationalrat Grüne</span></div></div>
+      <div class="adv"><img src="../src/public/images/advisory-andrea-jansen.jpg" alt=""><div><b>Andrea Jansen</b><span>Investorin</span></div></div>
+      <div class="adv"><img src="../src/public/images/advisory-christian-hirsig.png" alt=""><div><b>Christian Hirsig</b><span>PowerCoders</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <div class="contact-box">
+      <div>
+        <h2>Lass uns <i>sprechen</i></h2>
+        <p>Im unverbindlichen Erstgespräch klären wir:</p>
+        <ul><li>ob ein Peer-Angebot zu deiner Organisation passt</li><li>welches Format sich eignet</li><li>mit welchem Aufwand und Budget du rechnen kannst</li></ul>
+      </div>
+      <form onsubmit="return false">
+        <input placeholder="Name" aria-label="Name">
+        <input placeholder="Organisation" aria-label="Organisation">
+        <input placeholder="E-Mail" type="email" aria-label="E-Mail">
+        <textarea rows="4" placeholder="Worum geht es?" aria-label="Nachricht"></textarea>
+        <button class="btn btn-dark">Nachricht senden</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site"><div class="wrap"><span>restful GmbH, Bern</span><span>Datenschutz · Offene Stellen · LinkedIn</span></div></footer>
+
+<script>
+  const tabs=[...document.querySelectorAll('.switch button')], views=[...document.querySelectorAll('.view')];
+  tabs.forEach(b=>b.addEventListener('click',()=>{
+    tabs.forEach(x=>x.setAttribute('aria-selected','false')); b.setAttribute('aria-selected','true');
+    views.forEach((v,i)=>v.classList.toggle('on',i==b.dataset.v));
+  }));
+</script>
+</body>
+</html>
