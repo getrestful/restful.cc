@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Entwurf 1d · Klar &amp; Reduziert · restful</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+  /* restful Palette
+     Blau:  #05004A Nachtblau · #1400FF restful-Blau · #7066F6 Violett · #CFCCFB Lavendel
+     Erde:  #593530 Kakao · #8E5147 Terrakotta · #BC9C96 Rosenholz · #F1E2DF Blush */
+  :root{
+    --body-font:"Inter Tight",system-ui,sans-serif;
+    --head-font:"Inter Tight",system-ui,sans-serif;
+    --head-weight:500;
+    --hero-weight:500;
+    --em-style:normal;
+    --em-font:inherit;
+    --quote-font:"Inter Tight",system-ui,sans-serif;
+    --quote-weight:500;
+    --chip-bg:#FFFFFF;
+    --shadow:rgba(5,0,74,.35);
+    --bg:#FFFFFF;
+    --ink:#05004A;
+    --ink-soft:#5A5878;
+    --line:#E7E6F0;
+    --accent:#1400FF;
+    --accent-hover:#05004A;
+    --on-accent:#FFFFFF;
+    --eyebrow:#1400FF;
+    --hero-bg:radial-gradient(45% 60% at 80% 40%,#CFCCFB 0%,transparent 70%),radial-gradient(35% 45% at 95% 85%,#F1E2DF 0%,transparent 70%),#FFFFFF;
+    --em-color:#1400FF;
+    --phone:#05004A;
+    --hl:#F1E2DF;
+    --on-hl:#593530;
+    --card:#F1E2DF;
+    --on-card:#593530;
+    --surface:#FAFAFD;
+    --check-2:#CFCCFB;
+    --on-check-2:#05004A;
+    --dark:#FFFFFF;
+    --on-dark:#05004A;
+    --hl-dark:#1400FF;
+    --dark-soft:#5A5878;
+    --tint:color-mix(in srgb,#CFCCFB 35%,#FFFFFF);
+    --quote-bg:#05004A;
+    --on-quote:#FFFFFF;
+    --quote-mark:#7066F6;
+    --quote-soft:#CFCCFB;
+    --case-bg:#1400FF;
+    --on-case:#FFFFFF;
+    --role:#1400FF;
+    --contact:#1400FF;
+    --on-contact:#FFFFFF;
+    --contact-btn:#FFFFFF;
+    --on-contact-btn:#1400FF;
+    --r:28px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body-font);color:var(--ink);background:var(--bg);line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:999px;font-weight:600;text-decoration:none;transition:transform .2s,background .2s;border:0;font-family:inherit;font-size:inherit;cursor:pointer}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-accent{background:var(--accent);color:var(--on-accent)}
+  .btn-accent:hover{background:var(--accent-hover)}
+  .btn-ghost{border:1.5px solid var(--ink);color:var(--ink)}
+  .eyebrow{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--eyebrow);margin-bottom:16px}
+  h1,h2,h3{font-family:var(--head-font);letter-spacing:-.025em;line-height:1.05;font-weight:var(--head-weight)}
+  h2{font-size:clamp(34px,4.6vw,58px)}
+  section{padding:110px 0}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .nav ul{display:flex;gap:34px;list-style:none;font-weight:500}
+  .nav ul a{text-decoration:none}
+  .nav ul a:hover{color:var(--accent)}
+  .nav .btn{padding:11px 20px;font-size:15px}
+  @media(max-width:820px){.nav ul{display:none}}
+
+  /* Hero */
+  .hero{padding:70px 0 0;background:var(--hero-bg);overflow:hidden;position:relative}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:end;position:relative}
+  .hero h1{font-size:clamp(44px,6.6vw,92px);font-weight:var(--hero-weight);margin-bottom:28px}
+  .hero h1 em{font-style:var(--em-style);font-family:var(--em-font);color:var(--em-color)}
+  .hero p.lead{font-size:21px;color:var(--ink-soft);max-width:560px;margin-bottom:36px}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:90px}
+  .hero-visual{position:relative;height:620px}
+  .phone{position:absolute;width:260px;border-radius:36px;background:var(--phone);padding:10px;box-shadow:0 40px 80px -30px var(--shadow)}
+  .phone img{border-radius:28px;height:500px;object-fit:cover;object-position:top}
+  .phone.p1{left:10px;top:90px;transform:rotate(-6deg)}
+  .phone.p2{right:0;top:20px;transform:rotate(5deg)}
+  .chip{position:absolute;background:var(--chip-bg);color:var(--ink);border-radius:18px;padding:14px 18px;box-shadow:0 20px 40px -18px rgba(5,0,74,.3);font-size:14px;font-weight:600;display:flex;gap:10px;align-items:center}
+  .chip .dot{width:34px;height:34px;border-radius:50%;background:var(--hl);color:var(--on-hl);display:grid;place-items:center}
+  .chip.c1{left:-20px;top:40px}
+  .chip.c2{right:30px;bottom:110px}
+  @media(max-width:960px){.hero-grid{grid-template-columns:1fr}.hero-visual{height:520px}.hero-ctas{margin-bottom:20px}}
+
+  /* Logos */
+  .logos{padding:46px 0;border-bottom:1px solid var(--line)}
+  .logos p{text-align:center;font-size:14px;color:var(--ink-soft);margin-bottom:26px}
+  .logo-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:28px 56px}
+  .logo-row img{height:40px;width:auto;filter:grayscale(1);opacity:.7;mix-blend-mode:multiply;transition:.2s}
+  .logo-row img:hover{filter:none;opacity:1}
+
+  /* Zwei Wege */
+  .ways-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:54px;flex-wrap:wrap}
+  .ways-head p{max-width:440px;color:var(--ink-soft);font-size:19px}
+  .ways{display:grid;grid-template-columns:1.25fr 1fr;gap:22px}
+  .way{border-radius:var(--r);padding:48px;display:flex;flex-direction:column;min-height:520px;position:relative;overflow:hidden}
+  .way.primary{background:var(--card);color:var(--on-card)}
+  .way.secondary{background:var(--surface);border:1px solid var(--line)}
+  .way .tag{align-self:flex-start;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px;margin-bottom:28px}
+  .way.primary .tag{background:var(--hl);color:var(--on-hl)}
+  .way.secondary .tag{background:var(--bg);border:1px solid var(--line)}
+  .way h3{font-size:clamp(30px,3.2vw,44px);margin-bottom:18px}
+  .way p{font-size:18px;opacity:.9;max-width:520px}
+  .way ul{list-style:none;margin:28px 0 36px;display:grid;gap:12px}
+  .way li{display:flex;gap:12px;align-items:center;font-weight:500}
+  .way li::before{content:"✓";width:24px;height:24px;flex:none;border-radius:50%;background:var(--hl);color:var(--on-hl);display:grid;place-items:center;font-size:13px;font-weight:800}
+  .way.secondary li::before{background:var(--check-2);color:var(--on-check-2)}
+  .way .btn{margin-top:auto;align-self:flex-start}
+  .way.primary .btn{background:var(--on-card);color:var(--card)}
+  .way.primary::after{content:"";position:absolute;right:-120px;bottom:-120px;width:340px;height:340px;border-radius:50%;border:60px solid color-mix(in srgb,var(--on-card) 8%,transparent)}
+  @media(max-width:900px){.ways{grid-template-columns:1fr}.way{padding:34px;min-height:auto}}
+
+  /* Nutzen */
+  .benefits{background:var(--dark);color:var(--on-dark);border-radius:48px;margin:0 16px}
+  .benefits .eyebrow{color:var(--hl-dark)}
+  .b-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
+  .b-card{background:color-mix(in srgb,var(--on-dark) 6%,transparent);border:1px solid color-mix(in srgb,var(--on-dark) 12%,transparent);border-radius:24px;padding:34px}
+  .b-num{font-family:var(--head-font);font-size:64px;font-weight:var(--hero-weight);color:var(--hl-dark);line-height:1;margin-bottom:22px}
+  .b-card h3{font-size:23px;margin-bottom:12px;line-height:1.2}
+  .b-card p{color:var(--dark-soft)}
+  @media(max-width:900px){.b-grid{grid-template-columns:1fr}.benefits{border-radius:28px}}
+
+  /* Journey Tabs */
+  .tabs{display:flex;gap:10px;flex-wrap:wrap;margin:40px 0 28px}
+  .tab{border:1.5px solid var(--line);background:var(--bg);color:var(--ink);border-radius:999px;padding:12px 22px;font:inherit;font-weight:600;cursor:pointer}
+  .tab[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+  .panel{display:none;grid-template-columns:1fr 1fr;gap:22px}
+  .panel.active{display:grid}
+  .panel-box{border-radius:var(--r);padding:40px;background:var(--surface)}
+  .panel-box.tint{background:var(--tint)}
+  .panel-box h3{font-size:26px;margin-bottom:14px}
+  .steps{list-style:none;display:grid;gap:18px;margin-top:10px}
+  .steps li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+  .steps .n{width:44px;height:44px;border-radius:14px;background:var(--bg);display:grid;place-items:center;font-weight:700;color:var(--accent)}
+  .steps b{display:block}
+  .steps span{color:var(--ink-soft);font-size:15px}
+  @media(max-width:900px){.panel{grid-template-columns:1fr}}
+
+  /* Testimonial */
+  .quote{background:var(--quote-bg);color:var(--on-quote)}
+  .quote-grid{display:grid;grid-template-columns:300px 1fr;gap:70px;align-items:center}
+  .quote-photo{position:relative}
+  .quote-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r)}
+  .quote-photo .badge{position:absolute;left:-18px;bottom:24px;background:#fff;border-radius:16px;padding:10px 14px;box-shadow:0 18px 40px -18px rgba(5,0,74,.35)}
+  .quote-photo .badge img{height:56px;width:auto;aspect-ratio:auto;border-radius:0}
+  .quote blockquote p{font-family:var(--quote-font);font-size:clamp(23px,2.5vw,32px);line-height:1.38;font-weight:var(--quote-weight);letter-spacing:-.01em}
+  .quote blockquote p::before{content:"«";display:block;font-size:90px;line-height:.7;color:var(--quote-mark);margin-bottom:16px;font-family:Georgia,serif}
+  .quote footer{margin-top:30px;display:flex;flex-direction:column;gap:2px}
+  .quote footer b{font-size:18px}
+  .quote footer span{color:var(--quote-soft)}
+  @media(max-width:900px){.quote-grid{grid-template-columns:1fr;gap:36px}.quote-photo{max-width:260px}}
+
+  /* Case */
+  .case{display:grid;grid-template-columns:1fr 1fr;border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+  .case-visual{background:var(--case-bg);padding:50px;display:flex;flex-direction:column;justify-content:space-between;color:var(--on-case);min-height:460px;gap:30px}
+  .path{display:flex;flex-direction:column;gap:12px}
+  .path div{background:color-mix(in srgb,var(--on-case) 12%,transparent);border-radius:16px;padding:16px 20px;display:flex;justify-content:space-between;font-weight:600}
+  .path div:nth-child(2){margin-left:30px}.path div:nth-child(3){margin-left:60px}.path div:nth-child(4){margin-left:90px;background:var(--hl);color:var(--on-hl)}
+  .case-text{padding:50px;background:var(--bg)}
+  .case-text h3{font-size:36px;margin-bottom:18px}
+  .case-text h4{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--eyebrow);margin:24px 0 8px}
+  .case-text p{color:var(--ink-soft)}
+  @media(max-width:900px){.case{grid-template-columns:1fr}.case-visual,.case-text{padding:32px}}
+
+  /* Wissenschaft */
+  .science{background:var(--tint)}
+  .sci-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+  .sci-grid p.big{font-size:22px;color:var(--ink-soft);margin:24px 0 32px}
+  .topics{display:flex;flex-wrap:wrap;gap:10px}
+  .topics span{background:var(--bg);border-radius:999px;padding:12px 20px;font-weight:600;font-size:15px}
+  .trust{display:grid;gap:14px;margin-top:40px}
+  .trust div{background:var(--bg);border-radius:20px;padding:24px 26px}
+  .trust b{display:block;font-size:19px;margin-bottom:4px}
+  .trust span{color:var(--ink-soft);font-size:15px}
+  @media(max-width:900px){.sci-grid{grid-template-columns:1fr}}
+
+  /* Team */
+  .team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:50px}
+  .member img{aspect-ratio:1;object-fit:cover;border-radius:24px;margin-bottom:16px;background:var(--surface)}
+  .member b{display:block;font-size:19px}
+  .member span{color:var(--role);font-weight:600;font-size:15px}
+  .member p{color:var(--ink-soft);font-size:14px;margin-top:6px}
+  .advisory{margin-top:70px;padding:40px;border-radius:var(--r);background:var(--surface)}
+  .advisory h3{font-size:26px;margin-bottom:24px}
+  .adv-row{display:flex;flex-wrap:wrap;gap:20px 30px}
+  .adv{display:flex;gap:12px;align-items:center;max-width:270px}
+  .adv img{width:54px;height:54px;border-radius:50%;object-fit:cover}
+  .adv b{display:block;font-size:15px}
+  .adv span{font-size:13px;color:var(--ink-soft);line-height:1.35;display:block}
+  @media(max-width:900px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+
+  /* Kontakt */
+  .contact{background:var(--contact);color:var(--on-contact);border-radius:48px;margin:0 16px 16px;padding:100px 0}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+  .contact p{font-size:20px;opacity:.85;margin-top:22px}
+  form{display:grid;gap:14px}
+  input,textarea{width:100%;font:inherit;padding:16px 20px;border-radius:16px;border:0;background:color-mix(in srgb,var(--on-contact) 12%,transparent);color:var(--on-contact)}
+  input::placeholder,textarea::placeholder{color:var(--on-contact);opacity:.65}
+  form .btn{justify-self:start;font-weight:700;background:var(--contact-btn);color:var(--on-contact-btn)}
+  footer.site{padding:40px 0;font-size:14px;color:var(--ink-soft)}
+  footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+  footer.site a{text-decoration:none;margin-left:22px}
+  @media(max-width:900px){.contact-grid{grid-template-columns:1fr}.contact{border-radius:28px}}
+
+  /* kaiko-inspiriert: viel Weissraum, Linien statt Flächen */
+  h1,h2{letter-spacing:-.04em}
+  .benefits{border-radius:0;margin:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .b-card{background:none;border:0;border-top:2px solid var(--ink);border-radius:0;padding:28px 0 0}
+  .b-num{font-size:20px;font-weight:600;margin-bottom:40px}
+  .way.primary::after{border-color:color-mix(in srgb,#8E5147 10%,transparent)}
+  .way.secondary{background:#fff}
+  .contact{border-radius:0;margin:0}
+
+  @media(max-width:860px){body *{min-width:0}h1,h2,h3,p{overflow-wrap:break-word;hyphens:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#"><img src="../src/public/images/logo.svg" alt="restful" style="height:38px;width:auto"></a>
+    <ul>
+      <li><a href="#angebot">Angebot</a></li>
+      <li><a href="#fallbeispiel">Digitalprojekte</a></li>
+      <li><a href="#wissenschaft">Wissenschaft</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+    <a class="btn btn-accent" href="#kontakt">Erstgespräch</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Peer-Angebote · Blended Care</span>
+      <h1>Erfahrungs&shy;wissen wirksam machen. <em>Unter deinem Namen.</em></h1>
+      <p class="lead">restful ist Kompetenzzentrum und Umsetzungspartnerin für Peer-Angebote im Schweizer Gesundheits- und Sozialwesen. Wir bauen dein Angebot auf und betreiben es mit dir.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-accent" href="#angebot">Peer-Angebot aufbauen →</a>
+        <a class="btn btn-ghost" href="#fallbeispiel">Patientenpfad digitalisieren</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="phone p1"><img src="../src/public/images/vision-screen-1.png" alt="Peer-Plattform von Demenzworld"></div>
+      <div class="phone p2"><img src="../src/public/images/vision-screen-2.png" alt="Peer-Plattform von Cystische Fibrose Schweiz"></div>
+      <div class="chip c1"><span class="dot">✓</span>Läuft unter deiner Marke</div>
+      <div class="chip c2"><span class="dot">12</span>Organisationen vertrauen uns</div>
+    </div>
+  </div>
+</section>
+
+<div class="logos">
+  <div class="wrap">
+    <p>Mit diesen Organisationen arbeiten wir zusammen</p>
+    <div class="logo-row">
+      <img src="../src/public/images/logo-krebsliga.webp" alt="Krebsliga">
+      <img src="../src/public/images/logo-inselspital.webp" alt="Inselspital">
+      <img src="../src/public/images/logo-procap.png" alt="Procap">
+      <img src="../src/public/images/logo-demenzworld.png" alt="Demenzworld">
+      <img src="../src/public/images/logo-cerebral.webp" alt="Stiftung Cerebral">
+      <img src="../src/public/images/logo-spo.webp" alt="SPO">
+      <img src="../src/public/images/logo-mucoconnect.png" alt="MucoConnect">
+      <img src="../src/public/images/logo-sf-bfk.png" alt="SF BFK">
+    </div>
+  </div>
+</div>
+
+<section id="angebot">
+  <div class="wrap">
+    <div class="ways-head">
+      <div><span class="eyebrow">Unser Angebot</span><h2>Zwei Wege,<br>ein Team.</h2></div>
+      <p>Ob du ein Peer-Angebot aufbauen oder einen ganzen Patientenpfad digital denken willst: Wir begleiten dich von der Idee bis zum Betrieb.</p>
+    </div>
+    <div class="ways">
+      <article class="way primary">
+        <span class="tag">Für Organisationen mit Community</span>
+        <h3>Peer-Angebote aufbauen, entwickeln, skalieren</h3>
+        <p>Wir bauen mit dir ein Angebot auf, in dem Betroffene voneinander lernen, und betreiben es unter dem Namen deiner Organisation.</p>
+        <ul><li>Erprobte Peer-Formate aus unserem Playbook</li><li>Plattform unter deiner Marke</li><li>Matching durch Fachpersonen</li><li>Begleitung bis zum laufenden Betrieb</li></ul>
+        <a class="btn" href="#journey">Wo stehst du? →</a>
+      </article>
+      <article class="way secondary">
+        <span class="tag">Für Spitäler, Kliniken, Institutionen</span>
+        <h3>Digitalisierung von Patientenpfaden</h3>
+        <p>Als Agentur entwickeln wir digitale und hybride Angebote entlang des Versorgungsverlaufs. Blended Care, von der Konzeption bis zur Realisierung.</p>
+        <ul><li>Patientenpfad-Analyse</li><li>Service Design &amp; Blended Care</li><li>Technische Umsetzung &amp; Betrieb</li></ul>
+        <a class="btn btn-accent" href="#fallbeispiel">Fallbeispiel ansehen →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="benefits">
+  <div class="wrap">
+    <span class="eyebrow">Warum Peer-Arbeit</span>
+    <h2>Weil Gleichbetroffene etwas wissen, das in keiner Sprechstunde Platz hat.</h2>
+    <div class="b-grid">
+      <div class="b-card"><div class="b-num">01</div><h3>Du erreichst Menschen, die sonst niemand erreicht</h3><p>Betroffene vertrauen Betroffenen. Ein Peer-Angebot öffnet einen Zugang zu Menschen, die Beratungsstellen selten aufsuchen.</p></div>
+      <div class="b-card"><div class="b-num">02</div><h3>Du ergänzt und entlastest, was schon da ist</h3><p>Peer-Austausch fängt Fragen auf, die zwischen den Terminen entstehen, und entlastet so deine Fachpersonen.</p></div>
+      <div class="b-card"><div class="b-num">03</div><h3>Du machst Erfahrungswissen sichtbar</h3><p>Ein strukturiertes Angebot macht Wissen über Alltag, Hürden und Lösungen auswertbar, auch gegenüber Geldgebern.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="journey">
+  <div class="wrap">
+    <span class="eyebrow">Peer-Angebote</span>
+    <h2>Wo stehst du?</h2>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-t="0">Ich überlege mir ein Peer-Angebot</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="1">Meine Community läuft analog</button>
+      <button class="tab" role="tab" aria-selected="false" data-t="2">Meine Community harzt</button>
+    </div>
+    <div class="panel active">
+      <div class="panel-box tint"><h3>Die Idee ist da, das Angebot noch nicht.</h3><p>Wir klären mit dir, ob und in welcher Form ein Peer-Angebot zu deiner Organisation passt. Wir wählen ein erprobtes Format, stellen die Plattform unter deinem Namen bereit und begleiten den Pilot.</p><br><a class="btn btn-accent" href="#kontakt">Erstgespräch vereinbaren →</a></div>
+      <div class="panel-box"><ol class="steps"><li><span class="n">1</span><div><b>Bedürfnisanalyse</b><span>Gespräche mit dir und mit Betroffenen.</span></div></li><li><span class="n">2</span><div><b>Konzeption</b><span>Format, Rollen und Ablauf des Angebots.</span></div></li><li><span class="n">3</span><div><b>Aufbau</b><span>Plattform einrichten, Koordination schulen, Pilot starten.</span></div></li><li><span class="n">4</span><div><b>Betrieb</b><span>Übergabe, laufender Support und Auswertung.</span></div></li></ol></div>
+    </div>
+    <div class="panel">
+      <div class="panel-box tint"><h3>Es gibt Treffen, Gruppen oder Telefonkontakte.</h3><p>Wir ergänzen dein Angebot digital, damit auch Menschen dazukommen, die heute nicht teilnehmen können. Bestehende Peers und Freiwillige binden wir ein.</p><br><a class="btn btn-accent" href="#kontakt">Erstgespräch vereinbaren →</a></div>
+      <div class="panel-box"><ol class="steps"><li><span class="n">1</span><div><b>Bestandsaufnahme</b><span>Wer nimmt heute teil, wer fehlt?</span></div></li><li><span class="n">2</span><div><b>Konzeption</b><span>Digitale Ergänzung, die zu deinen Gruppen passt.</span></div></li><li><span class="n">3</span><div><b>Aufbau</b><span>Plattform einrichten, Peers einbinden.</span></div></li><li><span class="n">4</span><div><b>Betrieb</b><span>Analog und digital gemeinsam koordinieren.</span></div></li></ol></div>
+    </div>
+    <div class="panel">
+      <div class="panel-box tint"><h3>Das Angebot besteht, kommt aber nicht recht in Gang.</h3><p>Beteiligung tiefer als erhofft, Matches tragen nicht, Koordination überlastet? Wir schauen mit dir genau hin und richten das Angebot neu aus.</p><br><a class="btn btn-accent" href="#kontakt">Erstgespräch vereinbaren →</a></div>
+      <div class="panel-box"><ol class="steps"><li><span class="n">1</span><div><b>Analyse</b><span>Beteiligung, Matching und Abläufe auswerten.</span></div></li><li><span class="n">2</span><div><b>Neuausrichtung</b><span>Format, Matching und Rollen anpassen.</span></div></li><li><span class="n">3</span><div><b>Umstellung</b><span>Angepasste Lösung, Schulung der Koordination.</span></div></li><li><span class="n">4</span><div><b>Wachstum</b><span>Begleitung, Support und Auswertung.</span></div></li></ol></div>
+    </div>
+  </div>
+</section>
+
+<section class="quote" aria-label="Stimme einer Partnerorganisation">
+  <div class="wrap quote-grid">
+    <div class="quote-photo">
+      <img src="../src/public/images/testimonial-christina-eberle.jpg" alt="Christina Eberle">
+      <div class="badge"><img src="../src/public/images/logo-mucoconnect.png" alt="MucoConnect"></div>
+    </div>
+    <blockquote>
+      <p>Mit restful haben wir einen Partner gefunden, der unsere Vision versteht: Betroffene und Angehörige auf Augenhöhe zu vernetzen. Die Zusammenarbeit bei der Entwicklung der Austauschplattform für Menschen mit Cystischer Fibrose war durchweg professionell und partnerschaftlich. Das Ergebnis überzeugt: ein sicheres und wirkungsvolles Peer-Angebot, das echten Austausch und gegenseitige Unterstützung schafft. Ich kann restful als Entwicklungspartner uneingeschränkt empfehlen.»</p>
+      <footer><b>Christina Eberle</b><span>Geschäftsführerin, Cystische Fibrose Schweiz (CFS)</span></footer>
+    </blockquote>
+  </div>
+</section>
+
+<section id="fallbeispiel">
+  <div class="wrap">
+    <span class="eyebrow">Digitalprojekte · Fallbeispiel</span>
+    <h2 style="margin-bottom:46px">Patientenpfade digital denken.</h2>
+    <div class="case">
+      <div class="case-visual">
+        <div style="font-weight:700;opacity:.8">Blended Stepped Care</div>
+        <div class="path"><div>Screening <span>01</span></div><div>Früherkennung <span>02</span></div><div>Digitale Begleitung <span>03</span></div><div>Behandlung <span>04</span></div></div>
+      </div>
+      <div class="case-text">
+        <h3>Swiss Sleep Circle</h3>
+        <p>Inselspital Bern, Universitätsklinik für Neurologie · gefördert von Gesundheitsförderung Schweiz</p>
+        <h4>Ausgangslage</h4>
+        <p>Menschen mit Schlaf-Wach-Erkrankungen digital erreichen, von der Früherkennung bis zur Behandlung.</p>
+        <h4>Rolle von restful</h4>
+        <p>Konzeption, Design und die komplette technische Realisierung der digitalen Plattform.</p>
+        <br><a class="btn btn-ghost" href="#kontakt">Projekt besprechen →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="science" id="wissenschaft">
+  <div class="wrap sci-grid">
+    <div>
+      <span class="eyebrow">Wissenschaft</span>
+      <h2>Wissenschaftlich fundiert. Sicher. Vertraulich.</h2>
+      <p class="big">Peer-Unterstützung ersetzt keine Behandlung. Sie ergänzt professionelle Versorgung dort, wo Alltag, Orientierung und Zugehörigkeit zählen.</p>
+      <a class="btn btn-accent" href="#">Zur Studienlage →</a>
+    </div>
+    <div>
+      <b style="display:block;margin-bottom:14px">Literaturrecherchen nach Themenfeld</b>
+      <div class="topics"><span>Digitale Peer-Unterstützung</span><span>Psychische Erkrankungen</span><span>Demenz</span><span>Zystische Fibrose</span><span>Onkologie</span><span>Adipositas</span><span>Familie &amp; Elternschaft</span></div>
+      <div class="trust">
+        <div><b>Evidenzbasis</b><span>Formate gestützt auf Literaturrecherchen und begleitet von eigener Forschung mit einer Universität.</span></div>
+        <div><b>Datenschutz &amp; Anonymität</b><span>Nach Schweizer Datenschutzgesetz (revDSG). Nutzende können anonym bleiben.</span></div>
+        <div><b>Qualität im Matching</b><span>Fachpersonen begleiten das Matching, statt es einem Algorithmus zu überlassen.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <span class="eyebrow">Team</span>
+    <h2>Soziale Arbeit, Public Health, Forschung und Technologie. An einem Tisch.</h2>
+    <div class="team-grid">
+      <div class="member"><img src="../src/public/images/team-raphael-reber.png" alt="Raphael Reber"><b>Raphael Reber</b><span>Strategie &amp; Partnerschaften</span><p>Forbes 30 under 30, Co-Founder Impact Hub Bern</p></div>
+      <div class="member"><img src="../src/public/images/team-sulamith-scheurer.png" alt="Sulamith Scheurer"><b>Sulamith Scheurer</b><span>Produktmanagement</span><p>Ex. Lead Innovation Consultant INNOArchitects</p></div>
+      <div class="member"><img src="../src/public/images/team-stefan-niederhauser.png" alt="Stefan Niederhauser"><b>Stefan Niederhauser</b><span>Technologie</span><p>Ex. VP Product Data, Analytics &amp; AI, Swisscom</p></div>
+      <div class="member"><img src="../src/public/images/team-chantal-kuske.png" alt="Chantal Kuske"><b>Chantal Kuske</b><span>Scientific Advisory</span><p>Consulting &amp; Research in Health Science</p></div>
+      <div class="member"><img src="../src/public/images/team-melanie-spescha.png" alt="Melanie Spescha"><b>Melanie Spescha</b><span>Projekte &amp; Fundraising</span><p>BA Soziale Arbeit, Inklusion &amp; Fundraising</p></div>
+      <div class="member"><img src="../src/public/images/team-lona-gaugler.jpg" alt="Lona Gaugler"><b>Lona Gaugler</b><span>Industry Lead</span><p>MSc Oncology and Molecular Medicine</p></div>
+      <div class="member"><img src="../src/public/images/team-silvan-jost.jpg" alt="Silvan Jost"><b>Silvan Jost</b><span>Technologie</span></div>
+    </div>
+    <div class="advisory">
+      <h3>Advisory Community</h3>
+      <div class="adv-row">
+        <div class="adv"><img src="../src/public/images/advisory-flavia-wasserfallen.png" alt=""><div><b>Flavia Wasserfallen</b><span>Ständerätin SP, Präsidentin Allianz Gesunde Schweiz</span></div></div>
+        <div class="adv"><img src="../src/public/images/advisory-christoph-hamann.png" alt=""><div><b>Dr. med. Christoph Hamann</b><span>Leiter Kinder- und Jugendpsychosomatik INSEL</span></div></div>
+        <div class="adv"><img src="../src/public/images/advisory-felix-muff.png" alt=""><div><b>Felix Muff</b><span>VRP Concordia Versicherungen</span></div></div>
+        <div class="adv"><img src="../src/public/images/advisory-melanie-mettler.png" alt=""><div><b>Melanie Mettler</b><span>Finanzdirektorin Stadt Bern</span></div></div>
+        <div class="adv"><img src="../src/public/images/advisory-felix-wettstein.jpg" alt=""><div><b>Felix Wettstein</b><span>Nationalrat Grüne, Präsident pro-salute</span></div></div>
+        <div class="adv"><img src="../src/public/images/advisory-andrea-jansen.jpg" alt=""><div><b>Andrea Jansen</b><span>Investorin, Board Member Aepsy</span></div></div>
+        <div class="adv"><img src="../src/public/images/advisory-christian-hirsig.png" alt=""><div><b>Christian Hirsig</b><span>Gründer PowerCoders &amp; high-five.ai</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="kontakt">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Lass uns sprechen.</h2>
+      <p>Erzähl uns kurz, wo du stehst. Wir melden uns innert weniger Arbeitstage für ein unverbindliches Erstgespräch.</p>
+    </div>
+    <form onsubmit="return false">
+      <input placeholder="Name" aria-label="Name">
+      <input placeholder="Organisation (optional)" aria-label="Organisation">
+      <input placeholder="E-Mail" type="email" aria-label="E-Mail">
+      <textarea rows="4" placeholder="Worum geht es?" aria-label="Nachricht"></textarea>
+      <button class="btn">Nachricht senden →</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site"><div class="wrap"><span>© restful GmbH, Bern</span><span><a href="#">Datenschutz</a><a href="#">Offene Stellen</a><a href="#">LinkedIn</a></span></div></footer>
+
+<script>
+  document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
+    document.querySelectorAll('.tab').forEach(x=>x.setAttribute('aria-selected','false'));
+    t.setAttribute('aria-selected','true');
+    document.querySelectorAll('.panel').forEach((p,i)=>p.classList.toggle('active',i==t.dataset.t));
+  }));
+</script>
+</body>
+</html>
