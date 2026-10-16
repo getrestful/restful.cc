@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wissenschaft Varianten · restful</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* restful Palette
+     Blau:  #05004A Nachtblau · #1400FF restful-Blau · #7066F6 Violett · #CFCCFB Lavendel
+     Erde:  #593530 Kakao · #8E5147 Terrakotta · #BC9C96 Rosenholz · #F1E2DF Blush */
+  :root{
+    --serif:Fraunces,Georgia,serif;
+    --sans:Inter,system-ui,sans-serif;
+    --hw:500;
+    --shadow:rgba(5,0,74,.25);
+    --cream:#FAF4F2;
+    --white:#FFFFFF;
+    --sand:#F1E2DF;
+    --rose:#BC9C96;
+    --lav:#CFCCFB;
+    --violet:#7066F6;
+    --navy:#05004A;
+    --terra:#8E5147;
+    --blue:#1400FF;
+    --ink:#05004A;
+    --ink-soft:#5C5677;
+    --line:#E6D6D2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.6;font-size:17px}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,h4{font-family:var(--serif);font-weight:var(--hw);letter-spacing:-.02em;line-height:1.1}
+  h2{font-size:clamp(34px,4.4vw,54px)}
+  h2 i,h1 i{font-style:italic;color:var(--terra)}
+  section{padding:100px 0}
+  .lead{font-size:19px;color:var(--ink-soft);max-width:620px;margin-top:18px}
+  .kicker{font-size:14px;font-weight:600;color:var(--terra);display:flex;align-items:center;gap:10px;margin-bottom:18px}
+  .kicker::before{content:"";width:28px;height:2px;background:var(--rose)}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;text-decoration:none;font-weight:600;transition:.2s;border:0;font-family:inherit;font-size:inherit;cursor:pointer}
+  .btn-dark{background:var(--navy);color:var(--cream)}
+  .btn-dark:hover{background:var(--blue)}
+  .btn-line{border:1.5px solid var(--navy);color:var(--navy)}
+  .btn-line:hover{background:var(--navy);color:var(--cream)}
+  .btn-light{background:var(--sand);color:var(--navy)}
+  .btn-light:hover{background:#fff}
+
+  /* Platzhalter: alles, was noch Inhalt von restful braucht */
+  .tbd{background:#FFF3B0;color:#5A4A00;border-radius:4px;padding:0 4px;font-weight:600;font-size:.92em}
+  .ph{border:2px dashed var(--rose);border-radius:18px;display:grid;place-items:center;text-align:center;color:var(--terra);font-size:14px;font-weight:600;padding:20px;background:repeating-linear-gradient(135deg,transparent 0 12px,rgba(188,156,150,.08) 12px 24px)}
+
+  header{padding:22px 0;position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--cream) 90%,transparent);backdrop-filter:blur(10px)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+  .nav ul{display:flex;gap:28px;list-style:none;font-size:16px}
+  .nav ul a{text-decoration:none}
+  .nav ul a:hover{text-decoration:underline;text-underline-offset:5px}
+  .nav .btn{white-space:nowrap;padding:12px 22px}
+  @media(max-width:900px){.nav ul{display:none}.nav .btn{padding:10px 16px;font-size:14px}}
+
+  /* Hero */
+  .hero{padding:40px 0 70px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+  .hero h1{font-size:clamp(42px,5.6vw,74px);margin-bottom:26px}
+  .hero p.sub{font-size:20px;color:var(--ink-soft);max-width:540px;margin-bottom:32px}
+  .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .proof{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:34px;font-size:15px;color:var(--ink-soft)}
+  .proof span{display:flex;align-items:center;gap:8px}
+  .proof span::before{content:"✓";width:22px;height:22px;border-radius:50%;background:var(--sand);color:var(--terra);display:grid;place-items:center;font-size:12px;font-weight:700}
+  .collage{display:grid;grid-template-columns:1fr 1fr;gap:16px;position:relative}
+  .arch{border-radius:200px 200px 24px 24px;overflow:hidden;aspect-ratio:3/4}
+  .arch img{width:100%;height:100%;object-fit:cover}
+  .collage .arch:nth-child(2){margin-top:70px;border-radius:24px 24px 200px 200px}
+  .bubble{position:absolute;background:var(--white);padding:16px 20px;border-radius:20px 20px 20px 4px;box-shadow:0 18px 40px -20px var(--shadow);font-size:15px;max-width:290px}
+  .bubble.b1{left:-40px;bottom:-10px}
+  @media(max-width:920px){.hero-grid{grid-template-columns:1fr}.bubble.b1{left:0}}
+
+  /* Logo-Leiste */
+  .logos{padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .logos .wrap{display:flex;align-items:center;gap:20px 44px;flex-wrap:wrap;justify-content:center}
+  .logos p{font-size:14px;color:var(--ink-soft);width:100%;text-align:center}
+  .logos img{height:38px;width:auto;filter:grayscale(1);opacity:.75;mix-blend-mode:multiply}
+  .logos img:hover{filter:none;opacity:1}
+
+  /* Wertversprechen */
+  .value-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px}
+  .value{border-radius:32px;padding:44px}
+  .value.org{background:var(--navy);color:var(--cream)}
+  .value.org .tag{background:var(--sand);color:var(--navy)}
+  .value.mem{background:var(--white);border:1px solid var(--line)}
+  .value.mem .tag{background:var(--lav);color:var(--navy)}
+  .value .tag{display:inline-block;font-size:13px;font-weight:600;padding:6px 14px;border-radius:999px;margin-bottom:22px}
+  .value h3{font-size:clamp(26px,2.6vw,34px);margin-bottom:28px}
+  .value ul{list-style:none;display:grid;gap:22px}
+  .value li{display:grid;grid-template-columns:40px 1fr;gap:14px}
+  .value li .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center}
+  .value.org li .ic{background:color-mix(in srgb,var(--cream) 12%,transparent);color:var(--sand)}
+  .value.mem li .ic{background:var(--sand);color:var(--terra)}
+  .value li b{display:block;font-size:17px;margin-bottom:2px}
+  .value li span{font-size:15.5px;opacity:.82}
+  @media(max-width:900px){.value-grid{grid-template-columns:1fr}.value{padding:30px}}
+
+  /* Tool */
+  .tool{background:var(--white);border-radius:40px;margin:0 16px}
+  .tool-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+  .switch{display:inline-flex;background:var(--cream);border:1px solid var(--line);border-radius:999px;padding:5px;gap:4px}
+  .switch button{border:0;background:none;font:inherit;font-weight:600;padding:11px 20px;border-radius:999px;cursor:pointer;color:var(--ink-soft)}
+  .switch button[aria-selected="true"]{background:var(--navy);color:var(--cream)}
+  .view{display:none;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;margin-top:50px}
+  .view.on{display:grid}
+  .features{display:grid;gap:12px}
+  .feature{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:18px 20px;border-radius:20px;background:var(--cream)}
+  .feature .n{width:44px;height:44px;border-radius:14px;background:var(--white);display:grid;place-items:center;font-family:var(--serif);font-size:20px;color:var(--terra)}
+  .feature b{display:block;font-size:17px}
+  .feature span{font-size:15px;color:var(--ink-soft)}
+  /* Browser-Rahmen (Sicht Organisation) */
+  .browser{border-radius:18px;background:var(--navy);padding:10px;box-shadow:0 40px 80px -40px var(--shadow)}
+  .browser .bar{display:flex;gap:6px;align-items:center;padding:4px 6px 10px}
+  .browser .bar i{width:10px;height:10px;border-radius:50%;background:color-mix(in srgb,var(--cream) 30%,transparent)}
+  .browser .bar span{margin-left:10px;font-size:12px;color:var(--lav)}
+  .dash{background:var(--cream);border-radius:10px;display:grid;grid-template-columns:150px 1fr;min-height:400px;overflow:hidden}
+  .dash .side{background:var(--white);padding:16px;display:grid;align-content:start;gap:8px;font-size:13px;border-right:1px solid var(--line)}
+  .dash .side .logo-slot{height:34px;border-radius:8px;margin-bottom:10px;font-size:11px;padding:4px}
+  .dash .side div.it{padding:8px 10px;border-radius:8px;color:var(--ink-soft)}
+  .dash .side div.it.on{background:var(--sand);color:var(--navy);font-weight:600}
+  .dash .main{padding:18px;display:grid;gap:12px;align-content:start}
+  .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .kpi{background:var(--white);border-radius:12px;padding:12px}
+  .kpi small{font-size:11px;color:var(--ink-soft);display:block}
+  .kpi b{font-family:var(--serif);font-size:24px;font-weight:var(--hw)}
+  .rows{background:var(--white);border-radius:12px;padding:12px;display:grid;gap:8px}
+  .rows .r{display:grid;grid-template-columns:26px 1fr auto;gap:10px;align-items:center;font-size:12.5px}
+  .rows .r i{width:26px;height:26px;border-radius:50%;background:var(--lav)}
+  .rows .r:nth-child(odd) i{background:var(--sand)}
+  .rows .r em{font-style:normal;font-size:11px;padding:3px 8px;border-radius:999px;background:var(--lav)}
+  .rows .r em.ok{background:var(--sand);color:var(--terra)}
+  .rows .bar2{height:8px;border-radius:4px;background:var(--line)}
+  /* Telefon-Rahmen (Sicht Nutzerin) */
+  .phones{display:flex;gap:18px;justify-content:center;align-items:flex-start}
+  .phone{width:230px;border-radius:34px;background:var(--navy);padding:9px;box-shadow:0 40px 80px -40px var(--shadow);flex:none}
+  .phone .scr{border-radius:26px;overflow:hidden;height:440px;background:var(--white)}
+  .phone .scr img{width:100%;height:100%;object-fit:cover;object-position:top}
+  .phone.two{margin-top:60px}
+  .chat{height:100%;display:flex;flex-direction:column;background:var(--cream);font-size:12.5px}
+  .chat .top{background:var(--white);padding:14px;display:flex;gap:10px;align-items:center;border-bottom:1px solid var(--line)}
+  .chat .top i{width:30px;height:30px;border-radius:50%;background:var(--sand)}
+  .chat .top b{font-size:13px;display:block}
+  .chat .top small{color:var(--ink-soft);font-size:11px}
+  .chat .msgs{padding:14px;display:grid;gap:8px;align-content:start;flex:1}
+  .chat .m{max-width:80%;padding:9px 12px;border-radius:14px;background:var(--white)}
+  .chat .m.me{justify-self:end;background:var(--navy);color:var(--cream)}
+  .chat .note{margin:auto 10px 12px;font-size:10.5px;color:var(--terra)}
+  @media(max-width:960px){.view{grid-template-columns:1fr}.view .visual{order:-1}.dash{grid-template-columns:1fr}.dash .side{display:none}.phone{width:200px}.phone .scr{height:380px}}
+  @media(max-width:520px){.phone.two{display:none}}
+
+  /* Journey */
+  .journey-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+  details{background:var(--white);border-radius:24px;margin-bottom:14px;overflow:hidden}
+  summary{list-style:none;cursor:pointer;padding:24px 28px;display:flex;align-items:center;gap:20px}
+  summary::-webkit-details-marker{display:none}
+  summary .no{font-family:var(--serif);font-size:30px;color:var(--terra);width:36px}
+  summary b{font-family:var(--serif);font-weight:var(--hw);font-size:22px;display:block}
+  summary span.s{color:var(--ink-soft);font-size:15px}
+  summary .plus{margin-left:auto;width:38px;height:38px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;flex:none;transition:.2s}
+  details[open] summary .plus{transform:rotate(45deg);background:var(--navy);color:var(--cream);border-color:var(--navy)}
+  .d-body{padding:0 28px 26px 84px;color:var(--ink-soft)}
+  .d-body b{color:var(--ink)}
+  @media(max-width:860px){.journey-grid{grid-template-columns:1fr}.d-body{padding:0 24px 24px}}
+
+
+  /* So starten wir gemeinsam */
+  .start-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end}
+  .start-head .note{font-size:15px;color:var(--ink-soft);background:var(--white);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+  .steps{list-style:none;margin-top:56px;position:relative;display:grid;gap:18px}
+  .steps::before{content:"";position:absolute;left:27px;top:28px;bottom:28px;width:2px;background:linear-gradient(var(--navy),var(--rose))}
+  .step{display:grid;grid-template-columns:56px 1fr;gap:24px;position:relative}
+  .step .num{width:56px;height:56px;border-radius:50%;background:var(--navy);color:var(--cream);display:grid;place-items:center;font-family:var(--serif);font-size:24px;position:relative;z-index:1;box-shadow:0 0 0 6px var(--cream)}
+  .step:last-child .num{background:var(--terra)}
+  .step-card{background:var(--white);border:1px solid var(--line);border-radius:28px;padding:30px 32px;display:grid;grid-template-columns:.9fr 2fr;gap:36px}
+  .step-card h3{font-size:26px;margin-bottom:8px}
+  .step-card .dur{display:inline-block;font-size:13px;font-weight:600;color:var(--terra);background:var(--sand);border-radius:999px;padding:4px 12px;margin-bottom:12px}
+  .step-card .what{color:var(--ink-soft);font-size:15.5px}
+  .step-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .step-cols div{border-radius:18px;padding:16px 18px;background:var(--cream);font-size:15px}
+  .step-cols div.out{background:var(--lav)}
+  .step-cols b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--terra);margin-bottom:6px}
+  .step-cols div.out b{color:var(--navy)}
+  .entry-title{margin-top:80px;font-size:clamp(28px,3vw,38px)}
+  .entries{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
+  .entry{border-radius:24px;padding:26px;background:var(--sand)}
+  .entry:nth-child(2){background:var(--white);border:1px solid var(--line)}
+  .entry:nth-child(3){background:var(--lav)}
+  .entry small{display:block;font-size:13px;font-weight:600;color:var(--terra);margin-bottom:8px}
+  .entry h4{font-size:22px;margin-bottom:10px}
+  .entry p{font-size:15.5px;color:var(--ink-soft)}
+  .entry .path{margin-top:14px;font-size:14px;font-weight:600;color:var(--navy)}
+  .start-cta{margin-top:40px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+  .start-cta span{color:var(--ink-soft);font-size:15px}
+  @media(max-width:960px){.start-head{grid-template-columns:1fr;gap:24px}.step-card{grid-template-columns:1fr;gap:20px;padding:24px}.step-cols{grid-template-columns:1fr}.entries{grid-template-columns:1fr}}
+  @media(max-width:600px){.step{grid-template-columns:40px 1fr;gap:14px}.step .num{width:40px;height:40px;font-size:18px}.steps::before{left:19px}}
+
+
+  /* Methode & Evidenz */
+  .ev-head{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end}
+  .pillars{display:grid;gap:10px}
+  .pillar{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+  .pillar .ic{width:44px;height:44px;border-radius:14px;background:var(--sand);color:var(--terra);display:grid;place-items:center}
+  .pillar b{display:block;font-size:16.5px}
+  .pillar span{font-size:14.5px;color:var(--ink-soft)}
+  .ev-link{display:inline-flex;gap:8px;font-weight:600;text-decoration:none;color:var(--navy);border-bottom:1.5px solid var(--rose);padding-bottom:2px}
+  .ev-link:hover{color:var(--blue);border-color:var(--blue)}
+  .src{font-size:12.5px;color:var(--ink-soft);font-style:italic}
+  /* V1 Themenkacheln */
+  .topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:50px}
+  .topic{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:10px;text-decoration:none;transition:transform .2s,border-color .2s}
+  .topic:hover{transform:translateY(-3px);border-color:var(--navy)}
+  .topic h4{font-size:21px}
+  .topic p{font-size:14.5px;color:var(--ink-soft);flex:1}
+  .topic .go{font-size:14px;font-weight:600;color:var(--terra)}
+  .topic.all{background:var(--navy);color:var(--cream);border-color:var(--navy);justify-content:space-between}
+  .topic.all p{color:color-mix(in srgb,var(--cream) 75%,transparent);flex:0}
+  .topic.all .go{color:var(--sand)}
+  /* V2 Drei Säulen + Themenleiste */
+  .cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:50px}
+  .cols3 > div{border-top:2px solid var(--navy);padding-top:22px}
+  .cols3 .k{font-family:var(--serif);font-size:44px;color:var(--terra);line-height:1}
+  .cols3 h4{font-size:24px;margin:14px 0 10px}
+  .cols3 p{color:var(--ink-soft);font-size:15.5px}
+  .topic-bar{margin-top:50px;background:var(--white);border:1px solid var(--line);border-radius:24px;padding:22px 26px;display:flex;gap:14px 22px;align-items:center;flex-wrap:wrap}
+  .topic-bar b{font-size:15px}
+  .topic-bar a{font-size:14.5px;text-decoration:none;padding:7px 14px;border-radius:999px;background:var(--cream)}
+  .topic-bar a:hover{background:var(--navy);color:var(--cream)}
+  .topic-bar .ev-link{margin-left:auto;background:none;border-radius:0;padding:0 0 2px}
+  /* V3 Thema wählen */
+  .explorer{display:grid;grid-template-columns:300px 1fr;gap:0;margin-top:50px;background:var(--white);border:1px solid var(--line);border-radius:28px;overflow:hidden}
+  .explorer .list{border-right:1px solid var(--line);padding:10px;display:grid;align-content:start;gap:2px}
+  .explorer .list button{all:unset;cursor:pointer;padding:13px 16px;border-radius:14px;font-family:var(--serif);font-size:18px}
+  .explorer .list button[aria-selected="true"]{background:var(--sand);color:var(--navy)}
+  .explorer .list button:hover{background:var(--cream)}
+  .explorer .panel{padding:44px;display:none;flex-direction:column;justify-content:center;gap:18px}
+  .explorer .panel.on{display:flex}
+  .explorer .panel small{font-size:13px;font-weight:600;color:var(--terra);letter-spacing:.04em;text-transform:uppercase}
+  .explorer .panel p.big{font-family:var(--serif);font-size:clamp(24px,2.6vw,34px);line-height:1.25}
+  @media(max-width:960px){.ev-head{grid-template-columns:1fr;gap:28px}.topic-grid{grid-template-columns:1fr 1fr}.cols3{grid-template-columns:1fr;gap:28px}.explorer{grid-template-columns:1fr}.explorer .list{border-right:0;border-bottom:1px solid var(--line);grid-auto-flow:column;overflow-x:auto}.explorer .list button{white-space:nowrap;font-size:16px}.explorer .panel{padding:28px}.topic-bar .ev-link{margin-left:0}}
+  @media(max-width:560px){.topic-grid{grid-template-columns:1fr}}
+
+  /* Testimonial */
+  .testi{padding:0 0 100px}
+  .testi-card{background:var(--sand);border-radius:40px;padding:60px;display:grid;grid-template-columns:260px 1fr;gap:60px;align-items:center}
+  .testi-photo{position:relative}
+  .testi-photo img.p{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:160px 160px 24px 24px}
+  .testi-photo .logo{position:absolute;right:-22px;bottom:22px;background:#fff;border-radius:16px;padding:8px 12px;box-shadow:0 18px 40px -20px var(--shadow)}
+  .testi-photo .logo img{height:52px;width:auto}
+  .testi blockquote p{font-family:var(--serif);font-size:clamp(21px,2.2vw,28px);line-height:1.42}
+  .testi blockquote p::before{content:"«";display:block;font-size:90px;line-height:.7;color:var(--rose);margin-bottom:10px}
+  .testi footer{margin-top:26px}
+  .testi footer b{display:block;font-size:18px}
+  .testi footer span{color:var(--ink-soft)}
+  @media(max-width:860px){.testi-card{grid-template-columns:1fr;padding:32px;gap:34px}.testi-photo{max-width:220px}}
+
+  /* Digitalprojekte */
+  .projects{background:var(--navy);color:var(--cream);border-radius:40px;margin:0 16px}
+  .projects h2 i,.projects .kicker{color:var(--sand)}
+  .projects .lead{color:color-mix(in srgb,var(--cream) 80%,transparent)}
+  .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+  .services{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}
+  .services div{border:1px solid color-mix(in srgb,var(--cream) 20%,transparent);border-radius:18px;padding:18px 20px}
+  .services b{display:block;font-family:var(--serif);font-weight:var(--hw);font-size:19px;margin-bottom:4px}
+  .services span{opacity:.75;font-size:14.5px}
+  .case-card{background:var(--cream);color:var(--ink);border-radius:28px;padding:34px}
+  .case-card .head{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+  .case-card .head img{height:46px;width:auto;background:#fff;padding:8px;border-radius:10px}
+  .case-card h3{font-size:28px}
+  .case-card dl{display:grid;grid-template-columns:120px 1fr;gap:10px 16px;font-size:15px}
+  .case-card dt{color:var(--terra);font-weight:600}
+  .case-card dd{color:var(--ink-soft)}
+  @media(max-width:860px){.proj-grid,.services{grid-template-columns:1fr}}
+
+  /* Wissenschaft */
+  .sci-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
+  .facts{display:grid;gap:12px}
+  .fact{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:22px 24px}
+  .fact b{display:block;font-family:var(--serif);font-weight:var(--hw);font-size:20px;margin-bottom:4px}
+  .fact span{color:var(--ink-soft);font-size:15.5px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 30px}
+  .chips a{background:var(--white);border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:14px;text-decoration:none}
+  .chips a:hover{border-color:var(--navy)}
+  @media(max-width:860px){.sci-grid{grid-template-columns:1fr;gap:36px}}
+
+  /* FAQ */
+  .faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
+  .faq details{background:var(--white)}
+  .faq summary b{font-size:20px}
+  .faq .d-body{padding:0 28px 24px 28px}
+  @media(max-width:860px){.faq{grid-template-columns:1fr;gap:30px}}
+
+  /* Team */
+  .team{background:var(--white);border-radius:40px;margin:0 16px}
+  .team-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:18px;margin-top:46px}
+  .m img{aspect-ratio:4/5;object-fit:cover;border-radius:100px 100px 16px 16px;margin-bottom:12px}
+  .m b{font-family:var(--serif);font-weight:var(--hw);font-size:17px;display:block;line-height:1.2}
+  .m span{font-size:13.5px;color:var(--ink-soft)}
+  .adv-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  .adv{display:flex;gap:10px;align-items:center;background:var(--cream);padding:8px 16px 8px 8px;border-radius:999px}
+  .adv img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:none}
+  .adv b{display:block;font-size:14px;line-height:1.2}
+  .adv span{font-size:12.5px;color:var(--ink-soft)}
+  @media(max-width:1000px){.team-grid{grid-template-columns:repeat(4,1fr)}}
+  @media(max-width:600px){.team-grid{grid-template-columns:repeat(2,1fr)}}
+
+  /* Kontakt */
+  .contact-box{background:var(--sand);border-radius:40px;padding:64px;display:grid;grid-template-columns:1fr 1fr;gap:50px}
+  .contact-box p{font-size:19px;margin-top:18px;color:var(--ink-soft)}
+  .contact-box ul{list-style:none;margin-top:26px;display:grid;gap:10px}
+  .contact-box li::before{content:"→ ";color:var(--terra)}
+  form{display:grid;gap:12px}
+  input,textarea{font:inherit;padding:16px 20px;border-radius:16px;border:0;background:var(--white);width:100%}
+  form button{justify-self:start}
+  footer.site{padding:50px 0;font-size:14px;color:var(--ink-soft)}
+  footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  @media(max-width:860px){.contact-box{grid-template-columns:1fr;padding:32px}}
+  @media(max-width:860px){body *{min-width:0}h1,h2,h3,p{overflow-wrap:break-word;hyphens:auto}}
+</style>
+</head>
+<body>
+<div class="wrap" style="padding-top:60px"><div style="background:var(--navy);color:var(--cream);border-radius:16px;padding:14px 20px;display:flex;gap:14px;align-items:baseline;flex-wrap:wrap"><b style="font-family:var(--serif);font-size:22px">Variante 1 · Themenkacheln</b><span style="opacity:.8;font-size:15px">Kurze Einordnung, drei Grundsätze und sieben Themen mit je einem Kernbefund. Jede Kachel führt auf die Unterseite.</span></div></div><section id="v1">
+  <div class="wrap">
+    <div class="ev-head">
+      <div>
+        <p class="kicker">Methode &amp; Evidenz</p>
+        <h2>Fundiert, <i>nicht nur gut gemeint</i></h2>
+        <p class="lead">Austausch unter Betroffenen ist gut erforscht. Wir übersetzen diese Forschung in Angebote, die im Alltag deiner Organisation funktionieren. Unterstützung unter Betroffenen ersetzt keine Behandlung, sie ergänzt sie.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5"/><path d="M4 5.5v15A2.5 2.5 0 0 0 6.5 23H20"/></svg></span><div><b>Auf Forschung gestützt</b><span>Literaturrecherchen zu jedem Themenfeld, in dem wir arbeiten.</span></div></div>
+        <div class="pillar"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 2 10 5-10 5L2 7Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></span><div><b>Erprobte Methodik</b><span>Formate, Rollen und Abläufe aus unserem Playbook, angepasst an deine Organisation.</span></div></div>
+        <div class="pillar"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span><div><b>Wirkung gemessen</b><span>Auswertung im laufenden Betrieb und Begleitforschung mit einer Universität.</span></div></div>
+      </div>
+    </div>
+    <div class="topic-grid">
+      <a class="topic" href="wissenschaft.html#digital"><h4>Digitale Peer-Unterstützung</h4><p>Positive Effekte auf emotionale Unterstützung, soziale Verbundenheit, Coping und Selbstwirksamkeit.</p><span class="src">Yeo et al., 2022; Yuan et al., 2025</span><span class="go">Zur Studienlage →</span></a>
+      <a class="topic" href="wissenschaft.html#psyche"><h4>Psychische Erkrankungen</h4><p>Mehr wahrgenommene Unterstützung, Empowerment und Recovery-orientierte Prozesse.</p><span class="src">Burr Furrer et al., 2022</span><span class="go">Zur Studienlage →</span></a>
+      <a class="topic" href="wissenschaft.html#demenz"><h4>Demenz</h4><p>Entlastet pflegende Angehörige und verringert soziale Isolation.</p><span class="src">Carter et al., 2020</span><span class="go">Zur Studienlage →</span></a>
+      <a class="topic" href="wissenschaft.html#cf"><h4>Zystische Fibrose</h4><p>Digitale Formate sind besonders wertvoll, weil Treffen aus infektiologischen Gründen oft nicht möglich sind.</p><span class="src">Jeffrey et al., 2020</span><span class="go">Zur Studienlage →</span></a>
+      <a class="topic" href="wissenschaft.html#onko"><h4>Onkologie</h4><p>Kleine bis moderate Effekte auf Lebensqualität, Angst und Distress.</p><span class="src">Kiemen et al., 2023</span><span class="go">Zur Studienlage →</span></a>
+      <a class="topic" href="wissenschaft.html#adipositas"><h4>Adipositas</h4><p>Teilnehmende mit Peer-Begleitung erzielen bessere Gewichtsverläufe.</p><span class="src">Chen et al., 2021</span><span class="go">Zur Studienlage →</span></a>
+      <a class="topic" href="wissenschaft.html#familie"><h4>Familie und Elternschaft</h4><p>Stärkt elterliche Selbstwirksamkeit und sorgt für emotionale Entlastung.</p><span class="src">Cupples et al., 2011</span><span class="go">Zur Studienlage →</span></a>
+      <a class="topic all" href="wissenschaft.html"><h4>Alle Themen und Quellen</h4><p>Einordnung, Literatur und unsere eigene Forschung im Detail.</p><span class="go">Zur Wissenschaftsseite →</span></a>
+    </div>
+  </div>
+</section>
+<div class="wrap" style="padding-top:60px"><div style="background:var(--navy);color:var(--cream);border-radius:16px;padding:14px 20px;display:flex;gap:14px;align-items:baseline;flex-wrap:wrap"><b style="font-family:var(--serif);font-size:22px">Variante 2 · Drei Grundsätze + Themenleiste</b><span style="opacity:.8;font-size:15px">Am ruhigsten: Methodik steht im Zentrum, die Themen sind nur noch Links in einer Leiste.</span></div></div><section id="v2">
+  <div class="wrap">
+    <p class="kicker">Methode &amp; Evidenz</p>
+    <h2>Fundiert, <i>nicht nur gut gemeint</i></h2>
+    <p class="lead">Austausch unter Betroffenen ist gut erforscht. Wir übersetzen diese Forschung in Angebote, die im Alltag deiner Organisation funktionieren.</p>
+    <div class="cols3">
+      <div><span class="k">01</span><h4>Wir stützen uns auf Forschung</h4><p>Zu jedem Themenfeld haben wir die Studienlage aufgearbeitet. So wissen wir, was wirkt und wo die Grenzen liegen.</p></div>
+      <div><span class="k">02</span><h4>Wir arbeiten methodisch</h4><p>Erprobte Formate, klare Rollen und Abläufe aus unserem Playbook, angepasst an deine Organisation.</p></div>
+      <div><span class="k">03</span><h4>Wir messen Wirkung</h4><p>Auswertung im laufenden Betrieb und Begleitforschung mit einer Universität.</p></div>
+    </div>
+    <div class="topic-bar"><b>Studienlage nach Thema:</b><a href="wissenschaft.html#digital">Digitale Peer-Unterstützung</a><a href="wissenschaft.html#psyche">Psychische Erkrankungen</a><a href="wissenschaft.html#demenz">Demenz</a><a href="wissenschaft.html#cf">Zystische Fibrose</a><a href="wissenschaft.html#onko">Onkologie</a><a href="wissenschaft.html#adipositas">Adipositas</a><a href="wissenschaft.html#familie">Familie und Elternschaft</a><a class="ev-link" href="wissenschaft.html">Zur Wissenschaftsseite →</a></div>
+  </div>
+</section>
+<div class="wrap" style="padding-top:60px"><div style="background:var(--navy);color:var(--cream);border-radius:16px;padding:14px 20px;display:flex;gap:14px;align-items:baseline;flex-wrap:wrap"><b style="font-family:var(--serif);font-size:22px">Variante 3 · Thema wählen</b><span style="opacity:.8;font-size:15px">Am kompaktesten: Ein Themenfeld anklicken, Kernbefund mit Quelle erscheint. Braucht ein bisschen JavaScript.</span></div></div><section id="v3">
+  <div class="wrap">
+    <div class="ev-head">
+      <div>
+        <p class="kicker">Methode &amp; Evidenz</p>
+        <h2>Fundiert, <i>nicht nur gut gemeint</i></h2>
+        <p class="lead">Austausch unter Betroffenen ist gut erforscht. Wir übersetzen diese Forschung in Angebote, die im Alltag deiner Organisation funktionieren. Unterstützung unter Betroffenen ersetzt keine Behandlung, sie ergänzt sie.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5"/><path d="M4 5.5v15A2.5 2.5 0 0 0 6.5 23H20"/></svg></span><div><b>Auf Forschung gestützt</b><span>Literaturrecherchen zu jedem Themenfeld, in dem wir arbeiten.</span></div></div>
+        <div class="pillar"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 2 10 5-10 5L2 7Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></span><div><b>Erprobte Methodik</b><span>Formate, Rollen und Abläufe aus unserem Playbook, angepasst an deine Organisation.</span></div></div>
+        <div class="pillar"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span><div><b>Wirkung gemessen</b><span>Auswertung im laufenden Betrieb und Begleitforschung mit einer Universität.</span></div></div>
+      </div>
+    </div>
+    <div class="explorer" data-explorer>
+      <div class="list" role="tablist" aria-label="Themenfeld wählen"><button role="tab" aria-selected="true" data-x="0">Digitale Peer-Unterstützung</button><button role="tab" aria-selected="false" data-x="1">Psychische Erkrankungen</button><button role="tab" aria-selected="false" data-x="2">Demenz</button><button role="tab" aria-selected="false" data-x="3">Zystische Fibrose</button><button role="tab" aria-selected="false" data-x="4">Onkologie</button><button role="tab" aria-selected="false" data-x="5">Adipositas</button><button role="tab" aria-selected="false" data-x="6">Familie und Elternschaft</button></div>
+      <div class="panel on" role="tabpanel"><small>Digitale Peer-Unterstützung</small><p class="big">Positive Effekte auf emotionale Unterstützung, soziale Verbundenheit, Coping und Selbstwirksamkeit.</p><span class="src">Yeo et al., 2022; Yuan et al., 2025</span><a class="ev-link" href="wissenschaft.html#digital">Studienlage zu Digitale Peer-Unterstützung →</a></div><div class="panel" role="tabpanel"><small>Psychische Erkrankungen</small><p class="big">Mehr wahrgenommene Unterstützung, Empowerment und Recovery-orientierte Prozesse.</p><span class="src">Burr Furrer et al., 2022</span><a class="ev-link" href="wissenschaft.html#psyche">Studienlage zu Psychische Erkrankungen →</a></div><div class="panel" role="tabpanel"><small>Demenz</small><p class="big">Entlastet pflegende Angehörige und verringert soziale Isolation.</p><span class="src">Carter et al., 2020</span><a class="ev-link" href="wissenschaft.html#demenz">Studienlage zu Demenz →</a></div><div class="panel" role="tabpanel"><small>Zystische Fibrose</small><p class="big">Digitale Formate sind besonders wertvoll, weil Treffen aus infektiologischen Gründen oft nicht möglich sind.</p><span class="src">Jeffrey et al., 2020</span><a class="ev-link" href="wissenschaft.html#cf">Studienlage zu Zystische Fibrose →</a></div><div class="panel" role="tabpanel"><small>Onkologie</small><p class="big">Kleine bis moderate Effekte auf Lebensqualität, Angst und Distress.</p><span class="src">Kiemen et al., 2023</span><a class="ev-link" href="wissenschaft.html#onko">Studienlage zu Onkologie →</a></div><div class="panel" role="tabpanel"><small>Adipositas</small><p class="big">Teilnehmende mit Peer-Begleitung erzielen bessere Gewichtsverläufe.</p><span class="src">Chen et al., 2021</span><a class="ev-link" href="wissenschaft.html#adipositas">Studienlage zu Adipositas →</a></div><div class="panel" role="tabpanel"><small>Familie und Elternschaft</small><p class="big">Stärkt elterliche Selbstwirksamkeit und sorgt für emotionale Entlastung.</p><span class="src">Cupples et al., 2011</span><a class="ev-link" href="wissenschaft.html#familie">Studienlage zu Familie und Elternschaft →</a></div>
+    </div>
+    <p style="margin-top:24px"><a class="ev-link" href="wissenschaft.html">Alle Themen, Einordnung und Quellen →</a></p>
+  </div>
+</section>
+<script>
+  document.querySelectorAll('[data-explorer]').forEach(ex=>{
+    const bs=[...ex.querySelectorAll('.list button')], ps=[...ex.querySelectorAll('.panel')];
+    bs.forEach(b=>b.addEventListener('click',()=>{bs.forEach(x=>x.setAttribute('aria-selected','false'));b.setAttribute('aria-selected','true');ps.forEach((p,i)=>p.classList.toggle('on',i==b.dataset.x));}));
+  });
+</script>
+</body>
+</html>
