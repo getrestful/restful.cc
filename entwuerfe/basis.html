@@ -172,81 +172,44 @@
   @media(max-width:860px){.journey-grid{grid-template-columns:1fr}.d-body{padding:0 24px 24px}}
 
 
-  /* So starten wir gemeinsam */
-  .start-head{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end}
-  .start-head .note{font-size:15px;color:var(--ink-soft);background:var(--white);border:1px solid var(--line);border-radius:18px;padding:18px 20px}
-  .steps{list-style:none;margin-top:56px;position:relative;display:grid;gap:18px}
-  .steps::before{content:"";position:absolute;left:27px;top:28px;bottom:28px;width:2px;background:linear-gradient(var(--navy),var(--rose))}
-  .step{display:grid;grid-template-columns:56px 1fr;gap:24px;position:relative}
-  .step .num{width:56px;height:56px;border-radius:50%;background:var(--navy);color:var(--cream);display:grid;place-items:center;font-family:var(--serif);font-size:24px;position:relative;z-index:1;box-shadow:0 0 0 6px var(--cream)}
-  .step:last-child .num{background:var(--terra)}
-  .step-card{background:var(--white);border:1px solid var(--line);border-radius:28px;padding:30px 32px;display:grid;grid-template-columns:.9fr 2fr;gap:36px}
-  .step-card h3{font-size:26px;margin-bottom:8px}
-  .step-card .dur{display:inline-block;font-size:13px;font-weight:600;color:var(--terra);background:var(--sand);border-radius:999px;padding:4px 12px;margin-bottom:12px}
-  .step-card .what{color:var(--ink-soft);font-size:15.5px}
-  .step-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-  .step-cols div{border-radius:18px;padding:16px 18px;background:var(--cream);font-size:15px}
-  .step-cols div.out{background:var(--lav)}
-  .step-cols b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--terra);margin-bottom:6px}
-  .step-cols div.out b{color:var(--navy)}
-  .entry-title{margin-top:80px;font-size:clamp(28px,3vw,38px)}
-  .entries{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}
-  .entry{border-radius:24px;padding:26px;background:var(--sand)}
-  .entry:nth-child(2){background:var(--white);border:1px solid var(--line)}
-  .entry:nth-child(3){background:var(--lav)}
-  .entry small{display:block;font-size:13px;font-weight:600;color:var(--terra);margin-bottom:8px}
-  .entry h4{font-size:22px;margin-bottom:10px}
-  .entry p{font-size:15.5px;color:var(--ink-soft)}
-  .entry .path{margin-top:14px;font-size:14px;font-weight:600;color:var(--navy)}
-  .start-cta{margin-top:40px;display:flex;gap:20px;align-items:center;flex-wrap:wrap}
-  .start-cta span{color:var(--ink-soft);font-size:15px}
-  @media(max-width:960px){.start-head{grid-template-columns:1fr;gap:24px}.step-card{grid-template-columns:1fr;gap:20px;padding:24px}.step-cols{grid-template-columns:1fr}.entries{grid-template-columns:1fr}}
-  @media(max-width:600px){.step{grid-template-columns:40px 1fr;gap:14px}.step .num{width:40px;height:40px;font-size:18px}.steps::before{left:19px}}
+  /* So starten wir gemeinsam: Wegweiser */
+  .bg-sand{background:var(--sand)} .bg-white{background:var(--white);border:1px solid var(--line)} .bg-lav{background:var(--lav)}
+  .dolist{list-style:none;display:grid;gap:10px}
+  .dolist li{display:grid;grid-template-columns:24px 1fr;gap:10px;align-items:start;font-size:15.5px}
+  .dolist li span.c{width:24px;height:24px;border-radius:50%;background:var(--navy);color:var(--cream);display:grid;place-items:center;margin-top:1px}
+  .result{border-radius:18px;padding:16px 18px;background:var(--navy);color:var(--cream);font-size:15.5px}
+  .result b{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--sand);margin-bottom:4px}
+  .guide{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px;margin-top:44px;align-items:start}
+  .guide .q{background:var(--white);border:1px solid var(--line);border-radius:28px;padding:30px}
+  .guide .q h3{font-size:24px;margin-bottom:18px}
+  .guide .q label{display:grid;grid-template-columns:26px 1fr;gap:12px;align-items:start;padding:16px;border-radius:18px;border:1.5px solid var(--line);margin-bottom:10px;cursor:pointer;font-size:16px}
+  .guide .q label:has(input:checked){border-color:var(--navy);background:var(--cream)}
+  .guide .q input{appearance:none;width:22px;height:22px;padding:0;border-radius:50%;border:2px solid var(--rose);background:var(--white);margin:2px 0 0}
+  .guide .q input:checked{border-color:var(--navy);background:radial-gradient(var(--navy) 45%,transparent 50%)}
+  .guide .ans{display:none;border-radius:28px;padding:34px;flex-direction:column;gap:18px}
+  .guide .ans.on{display:flex}
+  .guide .ans small{font-size:13px;font-weight:600;color:var(--terra)}
+  .guide .ans h3{font-size:30px}
+  .guide .ans .first b{color:var(--terra)}
+  @media(max-width:960px){.guide{grid-template-columns:1fr}}
 
-
-  /* Methode & Evidenz */
-  .ev-head{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:end}
-  .pillars{display:grid;gap:10px}
-  .pillar{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start;background:var(--white);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
-  .pillar .ic{width:44px;height:44px;border-radius:14px;background:var(--sand);color:var(--terra);display:grid;place-items:center}
-  .pillar b{display:block;font-size:16.5px}
-  .pillar span{font-size:14.5px;color:var(--ink-soft)}
+  /* Methode & Evidenz (reduziert) */
+  .ev-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+  .papers{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:44px}
+  .paper{border-radius:28px;padding:34px;display:flex;flex-direction:column;gap:16px}
+  .paper .type{align-self:flex-start;font-size:12.5px;font-weight:600;letter-spacing:.04em;padding:5px 12px;border-radius:999px;background:var(--white);color:var(--terra)}
+  .paper p.find{font-family:var(--serif);font-size:clamp(22px,2.3vw,28px);line-height:1.3}
+  .paper .cite{margin-top:auto;padding-top:16px;border-top:1px solid color-mix(in srgb,var(--navy) 15%,transparent);font-size:14.5px}
+  .paper .cite b{display:block}
+  .paper .cite span{color:var(--ink-soft)}
+  .ev-more{margin-top:18px;background:var(--white);border:1px solid var(--line);border-radius:24px;padding:22px 26px;display:flex;gap:12px 18px;align-items:center;flex-wrap:wrap}
+  .ev-more b{font-size:15px;margin-right:4px}
+  .ev-more a.t{font-size:14.5px;text-decoration:none;padding:7px 14px;border-radius:999px;background:var(--cream)}
+  .ev-more a.t:hover{background:var(--navy);color:var(--cream)}
   .ev-link{display:inline-flex;gap:8px;font-weight:600;text-decoration:none;color:var(--navy);border-bottom:1.5px solid var(--rose);padding-bottom:2px}
   .ev-link:hover{color:var(--blue);border-color:var(--blue)}
-  .src{font-size:12.5px;color:var(--ink-soft);font-style:italic}
-  /* V1 Themenkacheln */
-  .topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:50px}
-  .topic{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:10px;text-decoration:none;transition:transform .2s,border-color .2s}
-  .topic:hover{transform:translateY(-3px);border-color:var(--navy)}
-  .topic h4{font-size:21px}
-  .topic p{font-size:14.5px;color:var(--ink-soft);flex:1}
-  .topic .go{font-size:14px;font-weight:600;color:var(--terra)}
-  .topic.all{background:var(--navy);color:var(--cream);border-color:var(--navy);justify-content:space-between}
-  .topic.all p{color:color-mix(in srgb,var(--cream) 75%,transparent);flex:0}
-  .topic.all .go{color:var(--sand)}
-  /* V2 Drei Säulen + Themenleiste */
-  .cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:50px}
-  .cols3 > div{border-top:2px solid var(--navy);padding-top:22px}
-  .cols3 .k{font-family:var(--serif);font-size:44px;color:var(--terra);line-height:1}
-  .cols3 h4{font-size:24px;margin:14px 0 10px}
-  .cols3 p{color:var(--ink-soft);font-size:15.5px}
-  .topic-bar{margin-top:50px;background:var(--white);border:1px solid var(--line);border-radius:24px;padding:22px 26px;display:flex;gap:14px 22px;align-items:center;flex-wrap:wrap}
-  .topic-bar b{font-size:15px}
-  .topic-bar a{font-size:14.5px;text-decoration:none;padding:7px 14px;border-radius:999px;background:var(--cream)}
-  .topic-bar a:hover{background:var(--navy);color:var(--cream)}
-  .topic-bar .ev-link{margin-left:auto;background:none;border-radius:0;padding:0 0 2px}
-  /* V3 Thema wählen */
-  .explorer{display:grid;grid-template-columns:300px 1fr;gap:0;margin-top:50px;background:var(--white);border:1px solid var(--line);border-radius:28px;overflow:hidden}
-  .explorer .list{border-right:1px solid var(--line);padding:10px;display:grid;align-content:start;gap:2px}
-  .explorer .list button{all:unset;cursor:pointer;padding:13px 16px;border-radius:14px;font-family:var(--serif);font-size:18px}
-  .explorer .list button[aria-selected="true"]{background:var(--sand);color:var(--navy)}
-  .explorer .list button:hover{background:var(--cream)}
-  .explorer .panel{padding:44px;display:none;flex-direction:column;justify-content:center;gap:18px}
-  .explorer .panel.on{display:flex}
-  .explorer .panel small{font-size:13px;font-weight:600;color:var(--terra);letter-spacing:.04em;text-transform:uppercase}
-  .explorer .panel p.big{font-family:var(--serif);font-size:clamp(24px,2.6vw,34px);line-height:1.25}
-  @media(max-width:960px){.ev-head{grid-template-columns:1fr;gap:28px}.topic-grid{grid-template-columns:1fr 1fr}.cols3{grid-template-columns:1fr;gap:28px}.explorer{grid-template-columns:1fr}.explorer .list{border-right:0;border-bottom:1px solid var(--line);grid-auto-flow:column;overflow-x:auto}.explorer .list button{white-space:nowrap;font-size:16px}.explorer .panel{padding:28px}.topic-bar .ev-link{margin-left:0}}
-  @media(max-width:560px){.topic-grid{grid-template-columns:1fr}}
+  .ev-more .ev-link{margin-left:auto}
+  @media(max-width:860px){.papers{grid-template-columns:1fr}.paper{padding:26px}.ev-more .ev-link{margin-left:0}}
 
   /* Testimonial */
   .testi{padding:0 0 100px}
@@ -279,17 +242,6 @@
   .case-card dt{color:var(--terra);font-weight:600}
   .case-card dd{color:var(--ink-soft)}
   @media(max-width:860px){.proj-grid,.services{grid-template-columns:1fr}}
-
-  /* Wissenschaft */
-  .sci-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:start}
-  .facts{display:grid;gap:12px}
-  .fact{background:var(--white);border:1px solid var(--line);border-radius:20px;padding:22px 24px}
-  .fact b{display:block;font-family:var(--serif);font-weight:var(--hw);font-size:20px;margin-bottom:4px}
-  .fact span{color:var(--ink-soft);font-size:15.5px}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 30px}
-  .chips a{background:var(--white);border:1px solid var(--line);padding:8px 14px;border-radius:999px;font-size:14px;text-decoration:none}
-  .chips a:hover{border-color:var(--navy)}
-  @media(max-width:860px){.sci-grid{grid-template-columns:1fr;gap:36px}}
 
   /* FAQ */
   .faq{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px}
@@ -408,134 +360,65 @@
   </div>
 </section>
 
-<!-- METHODE & EVIDENZ (Variante 1: Themenkacheln) -->
+<!-- METHODE & EVIDENZ -->
 <section id="wissenschaft">
   <div class="wrap">
     <div class="ev-head">
       <div>
         <p class="kicker">Methode &amp; Evidenz</p>
         <h2>Fundiert, <i>nicht nur gut gemeint</i></h2>
-        <p class="lead">Austausch unter Betroffenen ist gut erforscht. Wir übersetzen diese Forschung in Angebote, die im Alltag deiner Organisation funktionieren. Unterstützung unter Betroffenen ersetzt keine Behandlung, sie ergänzt sie.</p>
-      </div>
-      <div class="pillars">
-        <div class="pillar"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5"/><path d="M4 5.5v15A2.5 2.5 0 0 0 6.5 23H20"/></svg></span><div><b>Auf Forschung gestützt</b><span>Literaturrecherchen zu jedem Themenfeld, in dem wir arbeiten.</span></div></div>
-        <div class="pillar"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m12 2 10 5-10 5L2 7Z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></svg></span><div><b>Erprobte Methodik</b><span>Formate, Rollen und Abläufe aus unserem Playbook, angepasst an deine Organisation.</span></div></div>
-        <div class="pillar"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V10M12 20V4M20 20v-7"/></svg></span><div><b>Wirkung gemessen</b><span>Auswertung im laufenden Betrieb und Begleitforschung mit einer Universität.</span></div></div>
+        <p class="lead">Wir stützen unsere Arbeit auf Forschung und messen Wirkung im laufenden Betrieb. Zwei Übersichtsarbeiten zeigen, was Austausch unter Betroffenen leisten kann.</p>
       </div>
     </div>
-    <div class="topic-grid">
-      <a class="topic" href="wissenschaft.html#digital"><h4>Digitale Peer-Unterstützung</h4><p>Positive Effekte auf emotionale Unterstützung, soziale Verbundenheit, Coping und Selbstwirksamkeit.</p><span class="src">Yeo et al., 2022; Yuan et al., 2025</span><span class="go">Zur Studienlage →</span></a>
-      <a class="topic" href="wissenschaft.html#psyche"><h4>Psychische Erkrankungen</h4><p>Mehr wahrgenommene Unterstützung, Empowerment und Recovery-orientierte Prozesse.</p><span class="src">Burr Furrer et al., 2022</span><span class="go">Zur Studienlage →</span></a>
-      <a class="topic" href="wissenschaft.html#demenz"><h4>Demenz</h4><p>Entlastet pflegende Angehörige und verringert soziale Isolation.</p><span class="src">Carter et al., 2020</span><span class="go">Zur Studienlage →</span></a>
-      <a class="topic" href="wissenschaft.html#cf"><h4>Zystische Fibrose</h4><p>Digitale Formate sind besonders wertvoll, weil Treffen aus infektiologischen Gründen oft nicht möglich sind.</p><span class="src">Jeffrey et al., 2020</span><span class="go">Zur Studienlage →</span></a>
-      <a class="topic" href="wissenschaft.html#onko"><h4>Onkologie</h4><p>Kleine bis moderate Effekte auf Lebensqualität, Angst und Distress.</p><span class="src">Kiemen et al., 2023</span><span class="go">Zur Studienlage →</span></a>
-      <a class="topic" href="wissenschaft.html#adipositas"><h4>Adipositas</h4><p>Teilnehmende mit Peer-Begleitung erzielen bessere Gewichtsverläufe.</p><span class="src">Chen et al., 2021</span><span class="go">Zur Studienlage →</span></a>
-      <a class="topic" href="wissenschaft.html#familie"><h4>Familie und Elternschaft</h4><p>Stärkt elterliche Selbstwirksamkeit und sorgt für emotionale Entlastung.</p><span class="src">Cupples et al., 2011</span><span class="go">Zur Studienlage →</span></a>
-      <a class="topic all" href="wissenschaft.html"><h4>Alle Themen und Quellen</h4><p>Einordnung, Literatur und unsere eigene Forschung im Detail.</p><span class="go">Zur Wissenschaftsseite →</span></a>
+    <div class="papers">
+      <article class="paper bg-sand">
+        <span class="type">Systematische Reviews und Metaanalysen</span>
+        <p class="find">Digitale Unterstützung unter Betroffenen stärkt emotionale Unterstützung, soziale Verbundenheit, Coping und Selbstwirksamkeit.</p>
+        <div class="cite"><b>Yeo et al., 2022, 2025; Yuan et al., 2025</b><span><span class="tbd">[Titel, Journal und Link ergänzen]</span></span></div>
+      </article>
+      <article class="paper bg-lav">
+        <span class="type">Systematische Übersicht randomisierter Studien</span>
+        <p class="find">In der Onkologie zeigt Austausch unter Betroffenen kleine bis moderate Effekte auf das psychosoziale Befinden. Die Forschung dazu reicht Jahrzehnte zurück.</p>
+        <div class="cite"><b>Kiemen et al., 2023</b><span><span class="tbd">[Titel, Journal und Link ergänzen]</span></span></div>
+      </article>
     </div>
+    <div class="ev-more"><b>Evidenz nach Thema:</b><a class="t" href="wissenschaft.html#digital">Digitale Unterstützung</a><a class="t" href="wissenschaft.html#psyche">Psychische Erkrankungen</a><a class="t" href="wissenschaft.html#demenz">Demenz</a><a class="t" href="wissenschaft.html#cf">Zystische Fibrose</a><a class="t" href="wissenschaft.html#onko">Onkologie</a><a class="t" href="wissenschaft.html#adipositas">Adipositas</a><a class="t" href="wissenschaft.html#familie">Familie &amp; Elternschaft</a><a class="ev-link" href="wissenschaft.html">Zur Wissenschaftsseite →</a></div>
   </div>
 </section>
 
-<!-- SO STARTEN WIR GEMEINSAM -->
+<!-- SO STARTEN WIR GEMEINSAM: Wegweiser -->
 <section id="start">
   <div class="wrap">
-    <div class="start-head">
-      <div>
-        <p class="kicker">So starten wir gemeinsam</p>
-        <h2>In vier Schritten <i>zu deinem Peer-Angebot</i></h2>
-        <p class="lead">Ein Peer-Angebot entsteht nicht im Alleingang. Bei jedem Schritt weisst du, was passiert, was wir übernehmen und was es von dir braucht.</p>
-      </div>
-      <p class="note">Vom Erstgespräch bis zum laufenden Pilot rechnen wir mit <span class="tbd">[z.B. 3 bis 4 Monaten]</span>. Wie schnell es geht, hängt von deinem Ausgangspunkt ab.</p>
-    </div>
-
-    <ol class="steps">
-      <li class="step">
-        <span class="num">1</span>
-        <div class="step-card">
-          <div>
-            <span class="dur">Kennenlernen · <span class="tbd">[ca. 1 Stunde]</span></span>
-            <h3>Erstgespräch</h3>
-            <p class="what">Wir hören zu: Wen möchtest du erreichen? Was gibt es in deiner Organisation schon? Welche Ressourcen stehen zur Verfügung?</p>
-          </div>
-          <div class="step-cols">
-            <div><b>Wir übernehmen</b>Eine ehrliche erste Einschätzung, ob und in welcher Form ein Peer-Angebot zu euch passt.</div>
-            <div><b>Von dir</b>Eine Ansprechperson und ein paar Eckdaten zu deiner Organisation und Zielgruppe.</div>
-            <div class="out"><b>Ergebnis</b>Klarheit, ob es passt, und ein Vorschlag für das weitere Vorgehen. Unverbindlich.</div>
-          </div>
-        </div>
-      </li>
-      <li class="step">
-        <span class="num">2</span>
-        <div class="step-card">
-          <div>
-            <span class="dur">Bedürfnisse &amp; Konzept · <span class="tbd">[Dauer]</span></span>
-            <h3>Gemeinsam planen</h3>
-            <p class="what">Wir sprechen mit dir, deinem Team und mit Betroffenen. Daraus wählen wir gemeinsam ein erprobtes Format aus unserem Playbook.</p>
-          </div>
-          <div class="step-cols">
-            <div><b>Wir übernehmen</b>Bedürfnisanalyse, Wahl des Formats, Rollen, Abläufe und Kriterien fürs Matching.</div>
-            <div><b>Von dir</b>Zugang zu Betroffenen für Gespräche und Entscheide zu Zielgruppe und Rahmen.</div>
-            <div class="out"><b>Ergebnis</b>Ein Konzept, das zu deiner Organisation passt, mit Zeitplan und Budget.</div>
-          </div>
-        </div>
-      </li>
-      <li class="step">
-        <span class="num">3</span>
-        <div class="step-card">
-          <div>
-            <span class="dur">Aufbau &amp; Pilot · <span class="tbd">[Dauer]</span></span>
-            <h3>Starten und erproben</h3>
-            <p class="what">Die Plattform läuft in deinem Erscheinungsbild, deine Koordination ist geschult, erste Peers sind vorbereitet. Dann starten wir mit einer ersten Gruppe.</p>
-          </div>
-          <div class="step-cols">
-            <div><b>Wir übernehmen</b>Plattform einrichten, Koordination schulen, Unterlagen für Peers, Begleitung durch den Pilot.</div>
-            <div><b>Von dir</b>Logo und Farben, eine Person für die Koordination und die Ankündigung bei deinen Mitgliedern.</div>
-            <div class="out"><b>Ergebnis</b>Ein laufendes Angebot mit ersten Matches und ersten Rückmeldungen.</div>
-          </div>
-        </div>
-      </li>
-      <li class="step">
-        <span class="num">4</span>
-        <div class="step-card">
-          <div>
-            <span class="dur">Betrieb &amp; Weiterentwicklung · laufend</span>
-            <h3>Wachsen lassen</h3>
-            <p class="what">Deine Koordination führt das Angebot, restful bleibt im Hintergrund. Wir werten regelmässig aus und passen an, wo es nötig ist.</p>
-          </div>
-          <div class="step-cols">
-            <div><b>Wir übernehmen</b>Technik, Support, Weiterentwicklung und Wirkungsmessung.</div>
-            <div><b>Von dir</b>Die Koordination im Alltag, etwa <span class="tbd">[Stunden pro Woche]</span>.</div>
-            <div class="out"><b>Ergebnis</b>Ein Angebot, das wächst, und Zahlen für Vorstand, Berichte und Geldgeber.</div>
-          </div>
-        </div>
-      </li>
-    </ol>
-
-    <h3 class="entry-title">Wo steigst du ein?</h3>
-    <div class="entries">
-      <div class="entry">
-        <small>Ausgangslage 1</small>
-        <h4>Du startest neu</h4>
-        <p>Die Idee ist da, ein Angebot gibt es noch nicht. Wir gehen alle vier Schritte gemeinsam.</p>
-        <p class="path">Einstieg bei Schritt 1 →</p>
-      </div>
-      <div class="entry">
-        <small>Ausgangslage 2</small>
-        <h4>Deine Community läuft analog</h4>
-        <p>Es gibt Treffen, Gruppen oder Telefonkontakte. Wir schauen, wer heute teilnimmt und wer fehlt, und ergänzen digital. Bestehende Peers nehmen wir mit.</p>
-        <p class="path">Einstieg bei Schritt 1, Fokus auf Schritt 2 →</p>
-      </div>
-      <div class="entry">
-        <small>Ausgangslage 3</small>
-        <h4>Dein Angebot harzt</h4>
-        <p>Es besteht, kommt aber nicht in Gang. Wir werten Beteiligung, Matching und Abläufe aus und richten das Angebot gezielt neu aus.</p>
-        <p class="path">Einstieg mit einer Analyse, dann Schritt 3 →</p>
-      </div>
-    </div>
-
-    <div class="start-cta">
-      <a class="btn btn-dark" href="#kontakt">Erstgespräch vereinbaren</a>
-      <span>Unverbindlich. Du entscheidest danach, ob es weitergeht.</span>
+    <p class="kicker">So starten wir gemeinsam</p>
+    <h2>Wo stehst <i>du</i> gerade?</h2>
+    <p class="lead">Beantworte eine Frage, und wir zeigen dir, wie wir gemeinsam starten würden.</p>
+    <div class="guide" data-guide>
+      <div class="q"><h3>Was trifft am ehesten auf deine Organisation zu?</h3><label><input type="radio" name="lage" value="0" checked><span>Wir haben noch kein Angebot, in dem sich Betroffene untereinander austauschen.</span></label><label><input type="radio" name="lage" value="1"><span>Es gibt Treffen, Gruppen oder Telefonkontakte, aber nicht alle können teilnehmen.</span></label><label><input type="radio" name="lage" value="2"><span>Wir haben ein Angebot, aber es wird zu wenig genutzt oder bindet zu viele Ressourcen.</span></label></div>
+      <div><div class="ans bg-sand on">
+        <small>Deine Ausgangslage</small>
+        <h3>Du startest neu</h3>
+        <p>Wir klären mit dir, ob und in welcher Form ein Angebot zu deiner Organisation passt, und bauen es Schritt für Schritt mit dir auf.</p>
+        <ul class="dolist"><li><span class="c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>Zielgruppe, Ziele und Ressourcen klären</li><li><span class="c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>Ein erprobtes Format aus unserem Playbook wählen</li><li><span class="c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>Plattform in deinem Erscheinungsbild einrichten</li><li><span class="c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>Koordination schulen und den Pilot begleiten</li></ul>
+        <p class="first"><b>Erster Schritt:</b> Wir starten mit einer Bedürfnisanalyse mit dir und mit Betroffenen.</p>
+        <div class="result"><b>Ergebnis</b>Ein neues Angebot, das zu deiner Organisation passt, mit ersten Matches im Pilot.</div>
+        <div><a class="btn btn-dark" href="#kontakt">Erstgespräch vereinbaren</a></div>
+      </div><div class="ans bg-white">
+        <small>Deine Ausgangslage</small>
+        <h3>Deine Community läuft analog</h3>
+        <p>Wir ergänzen dein bestehendes Angebot digital, damit auch Menschen dazukommen, die heute nicht teilnehmen können.</p>
+        <ul class="dolist"><li><span class="c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>Analysieren, wer heute teilnimmt und wer fehlt</li><li><span class="c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>Ein digitales Format ergänzen, das zu deinen Gruppen passt</li><li><span class="c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>Bestehende Freiwillige und Betroffene einbinden</li><li><span class="c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>Analog und digital zusammenspielen lassen</li></ul>
+        <p class="first"><b>Erster Schritt:</b> Wir starten mit einer Bestandsaufnahme deines heutigen Angebots.</p>
+        <div class="result"><b>Ergebnis</b>Mehr Menschen erreichen, ohne das Bewährte aufzugeben.</div>
+        <div><a class="btn btn-dark" href="#kontakt">Erstgespräch vereinbaren</a></div>
+      </div><div class="ans bg-lav">
+        <small>Deine Ausgangslage</small>
+        <h3>Dein Angebot harzt</h3>
+        <p>Wir schauen mit dir genau hin, wo es hängt, und richten das Angebot gezielt neu aus.</p>
+        <ul class="dolist"><li><span class="c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>Beteiligung, Matching und Abläufe auswerten</li><li><span class="c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>Gemeinsam benennen, wo es hängt, und priorisieren</li><li><span class="c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>Format und Plattform gezielt anpassen</li><li><span class="c"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg></span>Die Koordination mit klaren Prozessen entlasten</li></ul>
+        <p class="first"><b>Erster Schritt:</b> Wir starten mit einer Auswertung deines bestehenden Angebots.</p>
+        <div class="result"><b>Ergebnis</b>Ein Angebot, das genutzt wird, und eine entlastete Koordination.</div>
+        <div><a class="btn btn-dark" href="#kontakt">Erstgespräch vereinbaren</a></div>
+      </div></div>
     </div>
   </div>
 </section>
@@ -732,6 +615,10 @@
     tabs.forEach(x=>x.setAttribute('aria-selected','false')); b.setAttribute('aria-selected','true');
     views.forEach((v,i)=>v.classList.toggle('on',i==b.dataset.v));
   }));
+  document.querySelectorAll('[data-guide]').forEach(g=>{
+    const as=[...g.querySelectorAll('.ans')];
+    g.querySelectorAll('input').forEach(r=>r.addEventListener('change',()=>as.forEach((a,i)=>a.classList.toggle('on',i==r.value))));
+  });
 </script>
 </body>
 </html>
