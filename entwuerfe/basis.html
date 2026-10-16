@@ -228,6 +228,24 @@
   @media(max-width:1000px){.partner-grid{grid-template-columns:repeat(3,1fr)}}
   @media(max-width:700px){.partner-grid{grid-template-columns:repeat(2,1fr);gap:12px}.partner{padding:18px}}
 
+  /* Commelia im Abschnitt Digitalprojekte */
+  .cm{margin-top:56px;background:var(--cream);color:var(--ink);border-radius:32px;display:grid;grid-template-columns:1.05fr .95fr;gap:0;overflow:hidden}
+  .cm-txt{padding:clamp(30px,4vw,52px)}
+  .cm-badge{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;background:var(--lav);color:var(--navy);border-radius:999px;padding:6px 14px;margin-bottom:18px}
+  .cm-txt h3{font-size:clamp(28px,3vw,40px);margin-bottom:12px}
+  .cm-txt h3 i{color:var(--violet)}
+  .cm-txt p.in{color:var(--ink-soft);font-size:17px;margin-bottom:22px}
+  .cm-list{list-style:none;display:grid;gap:12px;margin-bottom:28px}
+  .cm-list li{display:grid;grid-template-columns:24px 1fr;gap:12px;font-size:15.5px}
+  .cm-list li span.c{width:24px;height:24px;border-radius:50%;background:var(--violet);color:#fff;display:grid;place-items:center;margin-top:1px}
+  .cm-ctas{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .cm-ctas .btn-violet{background:var(--violet);color:#fff}
+  .cm-ctas .btn-violet:hover{background:var(--blue)}
+  .cm-ctas small{color:var(--ink-soft);font-size:13.5px;width:100%;margin-top:4px}
+  .cm-vis{background:linear-gradient(150deg,var(--lav) 0%,var(--sand) 100%);display:grid;place-items:center;padding:clamp(24px,3vw,40px)}
+  .cm-vis img{width:100%;max-width:470px;height:auto;border-radius:18px;box-shadow:0 30px 60px -30px var(--shadow)}
+  @media(max-width:900px){.cm{grid-template-columns:1fr}.cm-vis{order:-1}}
+
   /* Testimonial */
   .testi{padding:0 0 100px}
   .testi-card{background:var(--sand);border-radius:40px;padding:60px;display:grid;grid-template-columns:260px 1fr;gap:60px;align-items:center}
@@ -531,6 +549,22 @@
         <dt>Ergebnis</dt><dd><span class="tbd">[Kennzahl oder Ergebnis, sobald freigegeben]</span></dd>
       </dl>
     </div>
+  </div>
+  <div class="wrap">
+    <article class="cm" aria-labelledby="cm-titel">
+      <div class="cm-txt">
+        <span class="cm-badge">Neu von restful</span>
+        <h3 id="cm-titel">Commelia: <i>Support von Mensch zu Mensch</i></h3>
+        <p class="in">Der Chat für Sozial- und Gesundheitsorganisationen. Für Beratungsstellen, Patientengruppen und Communities, die ihre Mitglieder schnell und persönlich erreichen wollen.</p>
+        <ul class="cm-list"><li><span class="c"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span>Web-Chat, E-Mail und WhatsApp in einem ruhigen Posteingang</li><li><span class="c"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span>Fachpersonen und Peers antworten gemeinsam, ein KI-Assistent übernimmt Routinefragen</li><li><span class="c"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span>Bei sensiblen Themen oder Krisensignalen übergibt die KI sofort an einen Menschen</li><li><span class="c"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M20 6 9 17l-5-5"/></svg></span>Gehostet in der Schweiz oder auf dem eigenen Server</li></ul>
+        <div class="cm-ctas">
+          <a class="btn btn-violet" href="https://commelia.de/de" target="_blank" rel="noopener">30 Tage kostenlos testen</a>
+          <a class="btn btn-line" href="https://commelia.de/de" target="_blank" rel="noopener">Mehr zu Commelia</a>
+          <small>Keine Kreditkarte nötig. Rabatte für gemeinnützige Organisationen.</small>
+        </div>
+      </div>
+      <div class="cm-vis"><img src="../src/public/images/commelia-chat.png" alt="Beispiel einer Unterhaltung in Commelia: Die KI beantwortet eine Elternfrage und übergibt an eine Beraterin"></div>
+    </article>
   </div>
 </section>
 
