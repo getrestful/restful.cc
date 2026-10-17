@@ -3,5 +3,6 @@
   "legalName": "restful GmbH",
   "city": "Bern",
   "email": "hallo@getrestful.ch",
-  "noindex": true
+  "noindex": true,
+  "jobsUrl": "https://join.com/companies/getrestfulch"
 }

@@ -129,7 +129,17 @@ description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordn
       <li><span>{{ q.ref }} <a href="{{ q.url }}" target="_blank" rel="noopener">{{ q.url | replace("https://", "") }}</a></span></li>
       {%- endfor %}
     </ol>
-    <p class="refs-note">Die vollständigen Literaturangaben zu allen Themenfeldern schicken wir dir gerne auf Anfrage.</p>
+    <details class="refs-all">
+      <summary><b>Ganzes Literaturverzeichnis ({{ literatur | length }} Quellen)</b><span class="plus" aria-hidden="true">+</span></summary>
+      <div class="d-body">
+        <p>Alle Arbeiten, die in den Literaturrecherchen und in der Einordnung zitiert werden, alphabetisch.</p>
+        <ol class="refs refs-sm" id="literatur">
+          {%- for q in literatur %}
+          <li><span>{{ q.ref | safe }}{% if q.url %} <a href="{{ q.url }}" target="_blank" rel="noopener">{{ q.url | replace("https://", "") }}</a>{% endif %}</span></li>
+          {%- endfor %}
+        </ol>
+      </div>
+    </details>
   </div>
 </section>
 

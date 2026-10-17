@@ -120,3 +120,13 @@ document.querySelectorAll('[data-contact]').forEach(form => {
     form.querySelector('.form-status').textContent = 'Dein E-Mail-Programm sollte sich jetzt mit der Nachricht öffnen. Falls nicht, schreib uns direkt an ' + form.dataset.to + '.';
   });
 });
+
+// Sprungziele in zugeklappten Bereichen öffnen, z.B. /wissenschaft/#literatur
+const openTarget = () => {
+  const id = decodeURIComponent(location.hash.slice(1));
+  const el = id && document.getElementById(id);
+  const d = el && el.parentElement && el.parentElement.closest('details');
+  if (d && !d.open) { d.open = true; el.scrollIntoView(); }
+};
+openTarget();
+window.addEventListener('hashchange', openTarget);

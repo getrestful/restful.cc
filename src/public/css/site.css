@@ -362,8 +362,12 @@ footer.site a:hover{text-decoration:underline}
 .refs{list-style:none;margin-top:40px;display:grid;gap:12px;counter-reset:r}
 .refs li{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:16px 20px;font-size:15px;color:var(--ink-soft);display:grid;grid-template-columns:28px 1fr;gap:10px}
 .refs li::before{counter-increment:r;content:counter(r);font-family:var(--serif);color:var(--terra)}
-.refs a{color:var(--navy);font-weight:600;word-break:break-all}
-.refs-note{margin-top:18px;font-size:15px;color:var(--ink-soft)}
+.refs a{color:var(--navy);font-weight:600;overflow-wrap:anywhere}
+.refs-all{margin-top:24px;border:1px solid var(--line)}
+.refs-all .d-body > p{margin-bottom:4px}
+.refs-sm{margin-top:12px;gap:8px}
+.refs-sm li{background:var(--cream);border:0;font-size:14px;padding:12px 16px}
+.refs em{font-style:italic}
 .research{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:56px}
 .research > div{border-radius:28px;padding:32px}
 .research h3{font-size:26px;margin-bottom:10px}
