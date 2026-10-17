@@ -506,6 +506,7 @@ footer.site a:hover{text-decoration:underline}
 /* Weiterleitungsseiten */
 .redirect{min-height:50vh;display:grid;place-items:center;text-align:center}
 .redirect p{margin-top:12px;color:var(--ink-soft)}
+.jump-center{justify-content:center}
 
 @media(max-width:860px){body *{min-width:0}h1,h2,h3,p{overflow-wrap:break-word;hyphens:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
