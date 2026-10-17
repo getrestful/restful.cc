@@ -1,0 +1,73 @@
+{% from "icon.njk" import icon %}<!doctype html>
+<html lang="de-CH" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title or "restful · Gegenseitige Unterstützung, die nachweislich wirkt" }}</title>
+  {%- if description %}
+  <meta name="description" content="{{ description }}">
+  {%- endif %}
+  {%- if site.noindex or noindex %}
+  <meta name="robots" content="noindex, nofollow">
+  {%- endif %}
+  {%- if redirectTo %}
+  <meta http-equiv="refresh" content="0; url={{ redirectTo }}">
+  {%- endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_CH">
+  <meta property="og:site_name" content="restful">
+  <meta property="og:title" content="{{ title or 'restful' }}">
+  {%- if description %}
+  <meta property="og:description" content="{{ description }}">
+  {%- endif %}
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/site.css">
+  <script>document.documentElement.classList.replace('no-js','js')</script>
+  <script src="/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+
+<header class="site" data-header>
+  <div class="wrap nav">
+    <a class="logo" href="/"><img src="/images/logo.svg" alt="restful, zur Startseite" width="129" height="38"></a>
+    <nav aria-label="Hauptnavigation">
+      <ul id="hauptmenue">
+        <li class="dd">
+          <button type="button" aria-expanded="false" aria-controls="fuer-wen">Für wen <span aria-hidden="true">▾</span></button>
+          <div class="dd-menu" id="fuer-wen">
+            <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Patientenorganisationen und Ligen</a>
+            {%- for zg in zielgruppen %}
+            <a href="/fuer/{{ zg.slug }}/"{% if page.url == "/fuer/" + zg.slug + "/" %} aria-current="page"{% endif %}>{{ zg.menu }}</a>
+            {%- endfor %}
+          </div>
+        </li>
+        <li><a href="/#nutzen">Nutzen</a></li>
+        <li><a href="/#einstieg">Einstieg</a></li>
+        <li><a href="/#team">Team</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-dark" href="{{ '/#kontakt' if noContact else '#kontakt' }}">Erstgespräch</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="hauptmenue" data-menu-btn>{{ icon("menu", 22, 2) | safe }}<span class="sr-only">Menü</span></button>
+  </div>
+</header>
+
+<main id="inhalt">
+{{ content | safe }}
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>{{ site.legalName }}, {{ site.city }}</span>
+    <nav aria-label="Fusszeile">
+      <a href="/plattform/">Plattform</a>
+      <a href="/wissenschaft/">Methode &amp; Evidenz</a>
+      <a href="/datenschutzerklaerung/">Datenschutz</a>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

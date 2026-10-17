@@ -1,20 +1,22 @@
-[
-  {
-    "titel": "Du erreichst Menschen, die sonst niemand erreicht",
-    "text": "Betroffene vertrauen Betroffenen. Ein Peer-Angebot öffnet einen Zugang zu Menschen, die Beratungsstellen und Fachpersonen nur selten aufsuchen.",
-    "icon": "users",
-    "entwurf": true
+{
+  "org": {
+    "tag": "Für deine Organisation",
+    "title": "Ein neues Angebot, das wirkt und sich belegen lässt",
+    "items": [
+      { "icon": "users", "title": "Mehr Menschen erreichen", "text": "Auch jene, die keine Beratungsstelle aufsuchen. Betroffene vertrauen Betroffenen." },
+      { "icon": "layers", "title": "Fachpersonen entlasten", "text": "Peers fangen Alltagsfragen zwischen den Terminen auf. Deine Beratung bleibt für das, was nur sie leisten kann." },
+      { "icon": "chart", "title": "Wirkung belegen", "text": "Auswertungen aus dem laufenden Betrieb, für Vorstand, Stiftungen und Förderberichte." },
+      { "icon": "monitor", "title": "Absehbarer Aufwand", "text": "Klare Schritte, klare Rollen und ein Budget, das du kennst. Technik, Hosting und Wartung übernehmen wir." }
+    ]
   },
-  {
-    "titel": "Du ergänzt und entlastest, was schon da ist",
-    "text": "Peer-Austausch ersetzt keine Beratung und keine Behandlung. Er fängt Fragen auf, die zwischen den Terminen entstehen, und entlastet so deine Fachpersonen.",
-    "icon": "layers",
-    "entwurf": true
-  },
-  {
-    "titel": "Du machst Erfahrungswissen sichtbar",
-    "text": "Jede Begegnung zwischen Gleichbetroffenen erzeugt Wissen über Alltag, Hürden und Lösungen. Mit einem strukturierten Angebot wird dieses Wissen auswertbar, für deine Arbeit und gegenüber Geldgebern.",
-    "icon": "chart",
-    "entwurf": true
+  "mitglieder": {
+    "tag": "Für deine Mitglieder",
+    "title": "Jemanden finden, der versteht, wie es ist",
+    "items": [
+      { "icon": "check", "title": "Passend vermittelt", "text": "Fachpersonen schlagen eine Person mit ähnlicher Erfahrung vor. Kein Zufall, kein Algorithmus allein." },
+      { "icon": "shield", "title": "Geschützt und auf Wunsch anonym", "text": "Mitglieder entscheiden selbst, was sie von sich zeigen." },
+      { "icon": "clock", "title": "Wann und wo es passt", "text": "Digital, ortsunabhängig, auch zwischen Terminen und neben Pflege, Arbeit oder Familie." },
+      { "icon": "home", "title": "Von einem vertrauten Absender", "text": "Das Angebot kommt von deiner Organisation, nicht von einer fremden App." }
+    ]
   }
-]
+}

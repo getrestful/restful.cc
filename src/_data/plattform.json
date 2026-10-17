@@ -1,0 +1,21 @@
+{
+  "organisation": [
+    { "title": "Anfragen prüfen und vermitteln", "text": "Neue Anfragen sehen, passende Austauschpersonen vorschlagen und Matches freigeben." },
+    { "title": "Überblick über Peers und Mitglieder", "text": "Wer ist aktiv, wer wartet auf ein Match? Alles an einem Ort." },
+    { "title": "Vertraulicher Austausch", "text": "Nachrichten erreichen nur das eigene Match. Mitglieder können ein Pseudonym verwenden." },
+    { "title": "Wirkung auswerten", "text": "Kennzahlen und Befragungen für deine Berichte und Geldgeber." },
+    { "title": "In deinem Erscheinungsbild", "text": "Eigenes Logo, eigene Farben, eigene Adresse. Für nationale Angebote auch mehrsprachig." }
+  ],
+  "nutzerin": [
+    { "title": "Einfach starten", "text": "Registrieren und in einem kurzen Fragebogen die eigene Situation beschreiben. Anonym oder mit Pseudonym." },
+    { "title": "Passende Austauschperson", "text": "Eine Fachperson der Organisation prüft die Anfrage und vermittelt jemanden mit ähnlicher Erfahrung." },
+    { "title": "Im eigenen Tempo austauschen", "text": "Vertraulich im Chat auf der Plattform, mit Benachrichtigung per E-Mail. Später auf Wunsch auch per Telefon, Video oder persönlich." },
+    { "title": "Hilfe, wenn es mehr braucht", "text": "Bei komplexen Anliegen führt der Weg zur Fachberatung deiner Organisation." }
+  ],
+  "aufgaben": [
+    { "icon": "server", "title": "Betrieb und Hosting", "text": "Wir betreiben die Plattform und sorgen dafür, dass sie zuverlässig läuft." },
+    { "icon": "refresh", "title": "Wartung und Weiterentwicklung", "text": "Updates, Sicherheit und neue Funktionen kommen laufend von uns, ohne Aufwand für dich." },
+    { "icon": "shield", "title": "Datenschutz", "text": "Nach Schweizer Datenschutzgesetz (revDSG). Mitglieder entscheiden selbst, was sie zeigen, und können anonym bleiben." },
+    { "icon": "palette", "title": "Dein Erscheinungsbild", "text": "Dein Logo, deine Farben, deine Adresse. Für nationale Angebote setzen wir die Plattform mehrsprachig um." }
+  ]
+}

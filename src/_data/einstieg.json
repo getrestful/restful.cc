@@ -1,0 +1,44 @@
+[
+  {
+    "test": "Wir haben noch kein Angebot, in dem sich Betroffene untereinander austauschen.",
+    "title": "Du startest neu",
+    "intro": "Wir klären mit dir, ob und in welcher Form ein Angebot zu deiner Organisation passt, und bauen es Schritt für Schritt mit dir auf.",
+    "do": [
+      "Zielgruppe, Ziele und Ressourcen klären",
+      "Ein erprobtes Format aus unserem Playbook wählen",
+      "Plattform in deinem Erscheinungsbild einrichten",
+      "Koordination schulen und den Pilot begleiten"
+    ],
+    "first": "einer Bedürfnisanalyse mit dir und mit Betroffenen",
+    "result": "Ein neues Angebot, das zu deiner Organisation passt, mit ersten Matches im Pilot.",
+    "tone": "sand"
+  },
+  {
+    "test": "Es gibt Treffen, Gruppen oder Telefonkontakte, aber nicht alle können teilnehmen.",
+    "title": "Deine Community läuft analog",
+    "intro": "Wir ergänzen dein bestehendes Angebot digital, damit auch Menschen dazukommen, die heute nicht teilnehmen können.",
+    "do": [
+      "Analysieren, wer heute teilnimmt und wer fehlt",
+      "Ein digitales Format ergänzen, das zu deinen Gruppen passt",
+      "Bestehende Freiwillige und Betroffene einbinden",
+      "Analog und digital zusammenspielen lassen"
+    ],
+    "first": "einer Bestandsaufnahme deines heutigen Angebots",
+    "result": "Mehr Menschen erreichen, ohne das Bewährte aufzugeben.",
+    "tone": "white"
+  },
+  {
+    "test": "Wir haben ein Angebot, aber es wird zu wenig genutzt oder bindet zu viele Ressourcen.",
+    "title": "Dein Angebot harzt",
+    "intro": "Wir schauen mit dir genau hin, wo es hängt, und richten das Angebot gezielt neu aus.",
+    "do": [
+      "Beteiligung, Matching und Abläufe auswerten",
+      "Gemeinsam benennen, wo es hängt, und priorisieren",
+      "Format und Plattform gezielt anpassen",
+      "Die Koordination mit klaren Prozessen entlasten"
+    ],
+    "first": "einer Auswertung deines bestehenden Angebots",
+    "result": "Ein Angebot, das genutzt wird, und eine entlastete Koordination.",
+    "tone": "lav"
+  }
+]

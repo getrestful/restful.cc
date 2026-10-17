@@ -1,0 +1,165 @@
+---
+layout: layout.njk
+pagination:
+  data: zielgruppen
+  size: 1
+  alias: zg
+permalink: "/fuer/{{ zg.slug }}/"
+eleventyComputed:
+  title: "{{ zg.title }}"
+  description: "{{ zg.description }}"
+---
+{% from "icon.njk" import icon %}
+{% from "macros.njk" import art, contactForm, stepVisual, faqList %}
+
+<section class="zg-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="/">Startseite</a> · {{ zg.menu }}</p>
+    <div class="grid">
+      <div>
+        <span class="zg-label">{{ zg.label }}</span>
+        <h1>{{ zg.h1 | safe }}</h1>
+        <p class="sub">{{ zg.sub }}</p>
+        <div class="ctas"><a class="btn btn-dark" href="#kontakt">Gespräch vereinbaren</a><a class="btn btn-line" href="#ablauf">So funktioniert es</a></div>
+      </div>
+      {{ art(zg.art, "blob") }}
+    </div>
+  </div>
+</section>
+
+<section class="pt0">
+  <div class="wrap reasons">
+    <div class="txt">
+      <h2>{{ zg.reasonsTitle | safe }}</h2>
+      <p>{{ zg.reasonsIntro }}</p>
+      <a class="btn btn-dark" href="#kontakt">Gespräch vereinbaren</a>
+    </div>
+    <div>
+      {%- for r in zg.reasons %}
+      <details{% if loop.first %} open{% endif %}><summary><span class="c">{{ icon("check", 20, 2) | safe }}</span><b>{{ r.title }}</b><span class="plus" aria-hidden="true">+</span></summary><div class="d-body"><p>{{ r.text }}</p></div></details>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="pt0">
+  <div class="wrap">
+    <p class="kicker">Zahlen und Fakten</p>
+    <h2>Warum es <i>sich lohnt</i></h2>
+    <div class="stats">
+      {%- for s in zg.stats %}
+      <div class="stat"><span class="v">{{ s.value }}</span><p>{{ s.text }}</p>
+        {%- if s.source %}<small>Quelle: {% if s.url %}<a href="{{ s.url }}"{% if s.url.startsWith("http") %} target="_blank" rel="noopener"{% endif %}>{{ s.source }}</a>{% else %}{{ s.source }}{% endif %}</small>{% endif -%}
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="ablauf" class="pt0">
+  <div class="wrap">
+    <p class="kicker">So funktioniert es</p>
+    <h2>So einfach <i>startet die Begleitung</i></h2>
+    <div class="zz">
+      {%- for s in zg.steps %}
+      <div class="zz-row">
+        {{ stepVisual(s.visual) }}
+        <div class="zz-txt"><span class="n">{{ loop.index }}</span><h3>{{ s.title }}</h3><p>{{ s.text }}</p></div>
+      </div>
+      {%- endfor %}
+    </div>
+    <p class="mt56"><a class="ev-link" href="/plattform/">So sieht die Plattform aus →</a></p>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <h2>restful arbeitet <i>evidenzbasiert und methodisch fundiert</i></h2>
+    <div class="trust-row">
+      <div><span class="c">{{ icon("book") | safe }}</span><span>Gestützt auf Literaturrecherchen</span></div>
+      <div><span class="c">{{ icon("uni") | safe }}</span><span>Begleitforschung mit einer Universität</span></div>
+      <div><span class="c">{{ icon("shield") | safe }}</span><span>Schweizer Datenschutz (revDSG)</span></div>
+      <div><span class="c">{{ icon("users") | safe }}</span><span>{{ initiatives | length }} Partnerorganisationen</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    {%- if zg.quote.type == "statement" %}
+    <figure class="quote2">
+      <small class="label">{{ zg.quote.label }}</small>
+      <blockquote><p>{{ zg.quote.text }}</p></blockquote>
+    </figure>
+    {%- else %}
+    <figure class="quote2">
+      <small class="label">Stimme einer Partnerorganisation</small>
+      <blockquote><p>«{{ testimonial.excerpt }}»</p></blockquote>
+      <figcaption><b>{{ testimonial.name }}</b>, {{ testimonial.role }}</figcaption>
+    </figure>
+    {%- endif %}
+  </div>
+</section>
+
+<section class="pt0">
+  <div class="wrap">
+    <p class="kicker">Wissenschaftlicher Nachweis</p>
+    <h2>Fundiert, <i>nicht nur gut gemeint</i></h2>
+    <div class="evref">
+      {%- for e in zg.evidence %}
+      <div class="evc {{ 'bg-sand' if loop.first else 'bg-lav' }}">
+        <small>Evidenz · {{ e.label }}</small>
+        <p class="find">{{ e.finding }}</p>
+        <span class="cite"><a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.cite }} ↗</a></span>
+        <a href="/wissenschaft/#{{ e.topic }}">Studienlage zu {{ e.label }} →</a>
+      </div>
+      {%- endfor %}
+      {%- if zg.reference %}
+      <div class="evc refc">
+        <small>{{ zg.reference.title }}</small>
+        <p class="ref-txt">{{ zg.reference.text | safe }}</p>
+        {%- if zg.reference.logos.length %}
+        <div class="logos2">{% for l in zg.reference.logos %}<img src="/images/{{ l.file }}" alt="{{ l.alt }}" loading="lazy">{% endfor %}</div>
+        {%- endif %}
+      </div>
+      {%- endif %}
+      {%- if (zg.evidence.length + (1 if zg.reference else 0)) % 2 == 1 %}
+      <div class="evc refc">
+        <small>Alle Themen</small>
+        <p class="find">Studienlage zu {{ themenfelder | length }} Themenfeldern, von Demenz bis Onkologie.</p>
+        <a href="/wissenschaft/">Zu Methode &amp; Evidenz →</a>
+      </div>
+      {%- endif %}
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="faq-titel">
+  <div class="wrap faq">
+    <div><p class="kicker">Häufige Fragen</p><h2 id="faq-titel">Was du <i>vorher wissen</i> willst</h2></div>
+    <div>{{ faqList(zg.faq) }}</div>
+  </div>
+</section>
+
+<section id="kontakt" class="pt0">
+  <div class="wrap">
+    <div class="contact-box">
+      <div>
+        <h2>Lass uns <i>sprechen</i></h2>
+        <p>Wir zeigen dir in einem unverbindlichen Gespräch, wie ein Angebot in deinem Setting aussehen könnte.</p>
+        {%- if zg.contact %}
+        <p class="mail">Deine Ansprechperson: <b>{{ zg.contact.name }}</b>, {{ zg.contact.role }}</p>
+        {%- endif %}
+        <p class="mail">Lieber direkt? <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+      {{ contactForm(site.email) }}
+    </div>
+    <p class="kicker mt60">Für andere Bereiche</p>
+    <nav class="others" aria-label="Für andere Bereiche">
+      <a href="/">Patientenorganisationen und Ligen<span aria-hidden="true">→</span></a>
+      {%- for o in zielgruppen %}{% if o.slug != zg.slug %}
+      <a href="/fuer/{{ o.slug }}/">{{ o.menu }}<span aria-hidden="true">→</span></a>
+      {%- endif %}{% endfor %}
+    </nav>
+  </div>
+</section>

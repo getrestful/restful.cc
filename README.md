@@ -1,18 +1,25 @@
 # restful.cc
 
-Eleventy + Tailwind CSS v4 rebuild of the restful.cc marketing site.
+Website von restful, gebaut mit Eleventy (Nunjucks-Vorlagen, ein Stylesheet, kein Build-Schritt für CSS).
 
-## Develop
+## Entwickeln
 
 ```
 npm install
 npm run dev
 ```
 
-## Build
+## Bauen
 
 ```
 npm run build
 ```
 
-Outputs to `_site/`.
+Das Ergebnis landet in `_site/`. Ein Push auf `main` veröffentlicht die Seite über GitHub Pages.
+
+## Aufbau
+
+- `src/_data/`: Inhalte als JSON (Texte, Team, Partner, Studien, Zielgruppenseiten)
+- `src/_includes/`: Layout und Bausteine (`layout.njk`, `macros.njk`, `icon.njk`)
+- `src/*.njk`: Seiten, `src/zielgruppe.njk` erzeugt die Seiten unter `/fuer/…`
+- `src/public/`: Bilder, Schriften, `css/site.css`, `js/site.js`

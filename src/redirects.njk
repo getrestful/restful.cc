@@ -1,0 +1,19 @@
+---
+layout: layout.njk
+pagination:
+  data: redirects
+  size: 1
+  alias: r
+permalink: "{{ r.from }}"
+noindex: true
+noContact: true
+eleventyComputed:
+  title: "{{ r.title }} · restful"
+  redirectTo: "{{ r.to }}"
+---
+<section class="redirect">
+  <div class="wrap">
+    <h1 class="h-sm">Diese Seite ist umgezogen</h1>
+    <p>Du wirst gleich weitergeleitet. Falls nicht: <a href="{{ r.to }}">hier weiter</a>.</p>
+  </div>
+</section>

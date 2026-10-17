@@ -1,0 +1,111 @@
+---
+layout: layout.njk
+permalink: /plattform/
+title: "Plattform · restful"
+description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Organisation, betrieben von restful. So erleben sie Koordination und Mitglieder."
+---
+{% from "icon.njk" import icon %}
+{% from "macros.njk" import chatMock %}
+
+<section class="sub-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="/">Startseite</a> · Plattform</p>
+    <p class="kicker">Plattform</p>
+    <h1>Die Technik <i>im Hintergrund</i></h1>
+    <p class="lead">Hinter jedem Peer-Angebot steht eine Plattform, die wir für dich betreiben. Sie läuft unter deinem Namen, damit deine Organisation die Ansprechpartnerin bleibt. Im Zentrum stehen Methode und Begleitung, die Technik macht sie möglich.</p>
+  </div>
+</section>
+
+<section class="tool" id="tool">
+  <div class="wrap">
+    <div class="tool-head">
+      <div>
+        <p class="kicker">Zwei Perspektiven</p>
+        <h2>So erleben es <i>Koordination und Mitglieder</i></h2>
+        <p class="lead">Schalte zwischen der Sicht deiner Koordination und der Sicht deiner Mitglieder um.</p>
+      </div>
+      <div class="switch" role="tablist" aria-label="Perspektive wählen">
+        <button type="button" role="tab" id="tab-org" aria-controls="ansicht-org" aria-selected="true">Sicht Organisation</button>
+        <button type="button" role="tab" id="tab-mitglied" aria-controls="ansicht-mitglied" aria-selected="false" tabindex="-1">Sicht Nutzerin</button>
+      </div>
+    </div>
+
+    <div class="view on" id="ansicht-org" role="tabpanel" aria-labelledby="tab-org">
+      <figure class="visual">
+        <div class="browser">
+          <div class="bar"><i></i><i></i><i></i><span>deine-organisation.getrestful.ch/admin</span></div>
+          <div class="dash">
+            <div class="side">
+              <div class="logo-slot">Dein Logo</div>
+              <div class="it on">Übersicht</div><div class="it">Matching</div><div class="it">Peers</div><div class="it">Mitglieder</div><div class="it">Auswertung</div><div class="it">Einstellungen</div>
+            </div>
+            <div class="main">
+              <div class="kpis">
+                <div class="kpi"><small>Aktive Mitglieder</small><b>148</b></div>
+                <div class="kpi"><small>Offene Anfragen</small><b>5</b></div>
+                <div class="kpi"><small>Matches im Monat</small><b>12</b></div>
+              </div>
+              <div class="rows">
+                <b class="rows-title">Neue Anfragen</b>
+                <div class="r"><i></i><div class="bar2"></div><em>Match vorschlagen</em></div>
+                <div class="r"><i></i><div class="bar2 w70"></div><em class="ok">Gematcht</em></div>
+                <div class="r"><i></i><div class="bar2 w85"></div><em>Match vorschlagen</em></div>
+                <div class="r"><i></i><div class="bar2 w60"></div><em class="ok">Gematcht</em></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figcaption>Beispielansicht mit fiktiven Werten</figcaption>
+      </figure>
+      <div class="features">
+        {%- for f in plattform.organisation %}
+        <div class="feature"><span class="n">{{ loop.index }}</span><div><b>{{ f.title }}</b><span>{{ f.text }}</span></div></div>
+        {%- endfor %}
+      </div>
+    </div>
+
+    <div class="view" id="ansicht-mitglied" role="tabpanel" aria-labelledby="tab-mitglied">
+      <figure class="visual">
+        <div class="phones">
+          <div class="phone"><div class="scr"><img src="/images/vision-screen-2.jpg" width="640" height="1161" loading="lazy" alt="Einstieg ins Angebot von Cystische Fibrose Schweiz mit der Frage: Was ist deine Situation?"></div></div>
+          <div class="phone two"><div class="scr">{{ chatMock() }}</div></div>
+        </div>
+        <figcaption>Links ein Partnerangebot (Cystische Fibrose Schweiz), rechts eine Beispielansicht</figcaption>
+      </figure>
+      <div class="features">
+        {%- for f in plattform.nutzerin %}
+        <div class="feature"><span class="n">{{ loop.index }}</span><div><b>{{ f.title }}</b><span>{{ f.text }}</span></div></div>
+        {%- endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="kicker">Was wir übernehmen</p>
+    <h2>Du führst das Angebot, <i>wir kümmern uns um die Technik</i></h2>
+    <div class="tasks">
+      {%- for a in plattform.aufgaben %}
+      <div class="task"><span class="c">{{ icon(a.icon) | safe }}</span><h3>{{ a.title }}</h3><p>{{ a.text }}</p></div>
+      {%- endfor %}
+    </div>
+    <div class="why">
+      <p>Eine Plattform allein macht noch kein wirksames Angebot. Entscheidend sind Format, Matching und Begleitung.</p>
+      <div><a class="btn btn-dark" href="/wissenschaft/">Zu Methode &amp; Evidenz</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="pt0">
+  <div class="wrap">
+    <div class="contact-box compact">
+      <div>
+        <h2>Lieber <i>live sehen?</i></h2>
+        <p>Wir zeigen dir die Plattform gerne in einem unverbindlichen Gespräch.</p>
+        <p class="mail">Direkt per E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+      <a class="btn btn-dark" href="/#kontakt">Gespräch vereinbaren</a>
+    </div>
+  </div>
+</section>

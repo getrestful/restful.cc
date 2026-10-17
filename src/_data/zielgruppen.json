@@ -1,0 +1,451 @@
+[
+  {
+    "slug": "spitaeler-und-arztpraxen",
+    "menu": "Spitäler und Arztpraxen",
+    "art": 2,
+    "title": "Peers im Spital und in der Arztpraxis · restful",
+    "description": "Peers begleiten Patientinnen und Patienten vor, während und nach einer Behandlung und ergänzen die medizinische Versorgung. Für Spitäler, Kliniken und Arztpraxen.",
+    "label": "Für Spitäler und Arztpraxen",
+    "h1": "Begleitung, die <i>nach der Sprechstunde</i> weitergeht.",
+    "sub": "Peers sind Menschen, die eine ähnliche Diagnose oder Behandlung selbst erlebt haben. Sie begleiten Patientinnen und Patienten vor, während und nach einer Behandlung und ergänzen die medizinische Versorgung.",
+    "reasonsTitle": "Es gibt viele gute Gründe für Peers <i>im Behandlungspfad</i>",
+    "reasonsIntro": "Viele Fragen tauchen erst nach dem Termin auf, und in der Sprechstunde fehlt die Zeit für Alltagsfragen. Peers begleiten Patientinnen und Patienten dort, wo die Behandlung endet.",
+    "reasons": [
+      {
+        "title": "Empfehlung aus der Sprechstunde",
+        "text": "Ärztinnen und Pflege können den Peer-Kontakt einfach empfehlen, ohne zusätzlichen Aufwand."
+      },
+      {
+        "title": "Begleitung zwischen den Terminen",
+        "text": "Patientinnen tauschen sich mit jemandem aus, der die Situation kennt, digital und ortsunabhängig."
+      },
+      {
+        "title": "Entlastung des Teams",
+        "text": "Alltagsfragen werden aufgefangen, Fachpersonen konzentrieren sich auf die Behandlung."
+      },
+      {
+        "title": "Passt in Blended Care",
+        "text": "Lässt sich mit digitalen Angeboten entlang des Patientenpfads verbinden. Darin haben wir Projekterfahrung, etwa mit dem Inselspital Bern."
+      }
+    ],
+    "stats": [
+      {
+        "value": "2,7 Mio.",
+        "text": "Menschen ab 15 Jahren leben mit mindestens einer der fünf häufigsten nichtübertragbaren Krankheiten, 37 % der Bevölkerung.",
+        "source": "BAG, Zahlen und Fakten (Daten 2022)",
+        "url": "https://www.bag.admin.ch/de/zahlen-und-fakten-zu-nichtuebertragbaren-krankheiten"
+      },
+      {
+        "value": "72 %",
+        "text": "der Gesundheitskosten entfallen auf nichtübertragbare Krankheiten wie Krebs, Herz-Kreislauf- oder psychische Erkrankungen.",
+        "source": "BAG, Kostenstudie 2025 (Daten 2022)",
+        "url": "https://www.bag.admin.ch/de/studie-zu-den-kosten-nicht-uebertragbarer-krankheiten"
+      },
+      {
+        "value": "17 Studien",
+        "text": "zeigen bei Krebs: Peer-Unterstützung verbessert Lebensqualität und Selbstwirksamkeit und lindert Depression und Angst.",
+        "source": "Zhang et al., 2022, Metaanalyse",
+        "url": "https://doi.org/10.1016/j.pec.2022.07.008"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Einbettung",
+        "text": "Wir klären mit dir, an welcher Stelle im Patientenpfad das Angebot ansetzt.",
+        "visual": "screen-1"
+      },
+      {
+        "title": "Empfehlung",
+        "text": "Fachpersonen weisen auf das Angebot hin, etwa mit Flyer, QR-Code oder im Austrittsgespräch.",
+        "visual": "screen-2"
+      },
+      {
+        "title": "Matching",
+        "text": "Eine Fachperson vermittelt einen Peer mit ähnlicher Diagnose oder Behandlung.",
+        "visual": "screen-3"
+      },
+      {
+        "title": "Begleitung und Auswertung",
+        "text": "Austausch im eigenen Tempo, dazu regelmässige Auswertung für dein Team.",
+        "visual": "chat"
+      }
+    ],
+    "evidence": [
+      {
+        "topic": "onko",
+        "label": "Onkologie",
+        "finding": "Peer-Unterstützung verbessert die Lebensqualität und Selbstwirksamkeit von Krebsbetroffenen und lindert Depression und Angst.",
+        "cite": "Zhang et al., 2022, Metaanalyse von 17 Studien",
+        "url": "https://doi.org/10.1016/j.pec.2022.07.008"
+      },
+      {
+        "topic": "cf",
+        "label": "Zystische Fibrose",
+        "finding": "Digitale Formate sind besonders wertvoll, weil Treffen aus infektiologischen Gründen oft nicht möglich sind.",
+        "cite": "Jeffrey et al., 2020",
+        "url": "https://doi.org/10.1177/2374373520974322"
+      }
+    ],
+    "reference": {
+      "title": "Referenzen aus der Versorgung",
+      "text": "<b>Swiss Sleep Circle</b> mit dem Inselspital Bern: Blended Stepped Care von der Früherkennung bis zur Behandlung, Konzeption und Realisierung durch restful. <b>CoPEER</b> mit der Spitex Kriens: Austausch für Klientinnen, Klienten und Angehörige.",
+      "logos": [
+        {
+          "file": "logo-inselspital.webp",
+          "alt": "Inselspital"
+        },
+        {
+          "file": "logo-spitex-kriens.png",
+          "alt": "Spitex Kriens"
+        }
+      ]
+    },
+    "quote": {
+      "type": "testimonial"
+    },
+    "faq": [
+      {
+        "q": "Wie grenzt sich der Austausch von der Behandlung ab?",
+        "a": "Peers geben keine medizinischen Ratschläge, sondern teilen ihre Erfahrung. Das ist in den Regeln des Angebots festgehalten und Teil der Vorbereitung der Peers. Medizinische Fragen bleiben bei deinem Behandlungsteam."
+      },
+      {
+        "q": "Lässt sich das Angebot in unsere Abläufe einbinden?",
+        "a": "Am einfachsten über einen Link oder QR-Code, etwa auf Flyern, im Austrittsgespräch oder im Patientenportal. Weitergehende Anbindungen prüfen wir projektbezogen."
+      },
+      {
+        "q": "Gibt es das Angebot mehrsprachig?",
+        "a": "Ja. Für Angebote, die mehrere Sprachregionen erreichen sollen, setzen wir die Plattform mehrsprachig um."
+      },
+      {
+        "q": "Was kostet ein Pilot?",
+        "a": "Das hängt von Umfang, Laufzeit und Begleitung ab. Nach einem ersten Gespräch erhältst du ein konkretes Angebot. Für Projekte in der Gesundheitsversorgung gibt es Fördermöglichkeiten, etwa bei Gesundheitsförderung Schweiz."
+      }
+    ]
+  },
+  {
+    "slug": "industrie",
+    "menu": "Industrie und Patient Advocacy",
+    "art": 3,
+    "title": "Patient Advocacy: Peer-Angebote mit der Industrie · restful",
+    "description": "Für Patient-Advocacy-Abteilungen baut restful medikamentenagnostische Patientengemeinschaften auf, unabhängig von einem Produkt und mit klarer Rollentrennung.",
+    "label": "Für Industrie und Patient Advocacy",
+    "h1": "Patientengemeinschaften aufbauen, <i>unabhängig von einem Produkt.</i>",
+    "sub": "Für deine Patient-Advocacy-Arbeit bauen wir medikamentenagnostische Gemeinschaften auf: rund um ein Themenfeld oder Krankheitsbild, nicht um ein einzelnes Präparat. Mit klarer Rollentrennung.",
+    "reasonsTitle": "Es gibt viele gute Gründe für <i>unabhängige</i> Patientengemeinschaften",
+    "reasonsIntro": "Betroffene erwarten, dass Angebote unabhängig sind, und die regulatorischen Anforderungen sind hoch. Wir bauen Gemeinschaften auf, die Betroffenen gehören, mit klarer Rollentrennung.",
+    "reasons": [
+      {
+        "title": "Aufbau der Gemeinschaft",
+        "text": "Eine Community in einem Themenfeld oder Krankheitsbild, die über die Zeit wächst und Bestand hat."
+      },
+      {
+        "title": "Unabhängigkeit",
+        "text": "Medikamentenagnostisch, mit klarer Trennung zwischen deiner Advocacy-Funktion und dem Angebot."
+      },
+      {
+        "title": "Plattform und Moderation",
+        "text": "Die gleiche Infrastruktur wie bei Patientenorganisationen, inklusive fachlicher Moderation."
+      },
+      {
+        "title": "Wirkungsmessung",
+        "text": "Daten und Evidenz aus dem laufenden Betrieb, für interne Steuerung und Berichterstattung."
+      }
+    ],
+    "stats": [
+      {
+        "value": "12",
+        "text": "Partnerorganisationen im Schweizer Gesundheits- und Sozialwesen arbeiten mit restful zusammen.",
+        "source": "",
+        "url": ""
+      },
+      {
+        "value": "7",
+        "text": "Themenfelder mit aufgearbeiteter Studienlage, von Demenz bis Onkologie.",
+        "source": "Literaturrecherchen von restful",
+        "url": "/wissenschaft/"
+      },
+      {
+        "value": "1",
+        "text": "durchgehende Ansprechperson, von der ersten Klärung bis zum Betrieb.",
+        "source": "",
+        "url": ""
+      }
+    ],
+    "steps": [
+      {
+        "title": "Klärung",
+        "text": "Gemeinsame Definition von Themenfeld, Zielgruppe und Rollen, inklusive Governance.",
+        "visual": "screen-1"
+      },
+      {
+        "title": "Partnerschaft",
+        "text": "Wo sinnvoll, mit einer Patientenorganisation als Trägerin des Angebots.",
+        "visual": "screen-2"
+      },
+      {
+        "title": "Aufbau",
+        "text": "Plattform, Moderation und Peers, mehrsprachig für nationale Rollouts.",
+        "visual": "screen-3"
+      },
+      {
+        "title": "Betrieb und Reporting",
+        "text": "Eine durchgehende Ansprechperson und regelmässige, anonymisierte Auswertungen.",
+        "visual": "report"
+      }
+    ],
+    "evidence": [
+      {
+        "topic": "digital",
+        "label": "Digitale Unterstützung",
+        "finding": "Digitale Peer-Unterstützung verbessert die psychische Gesundheit deutlich und die körperliche Gesundheit moderat, auch präventiv.",
+        "cite": "Yeo et al., 2025, Metaanalyse",
+        "url": "https://doi.org/10.1017/S2045796024000854"
+      }
+    ],
+    "reference": {
+      "title": "Woher unsere Erfahrung kommt",
+      "text": "Wir arbeiten mit 12 Patientenorganisationen, Ligen und Fachverbänden im Schweizer Gesundheits- und Sozialwesen zusammen. Aus dieser Arbeit bringen wir Erfahrung mit, ohne hier einzelne Organisationen zu nennen.",
+      "logos": []
+    },
+    "quote": {
+      "type": "statement",
+      "label": "Unser Grundsatz",
+      "text": "Unabhängigkeit ist für uns nicht verhandelbar. Das Angebot gehört den Betroffenen, nicht einem Produkt."
+    },
+    "faq": [
+      {
+        "q": "Wie wird die Unabhängigkeit sichergestellt?",
+        "a": "Das Angebot ist medikamentenagnostisch. Dein Unternehmen hat keinen Einfluss auf die Inhalte im Austausch und keinen Zugriff auf personenbezogene Daten. Rollen und Zuständigkeiten legen wir zu Beginn gemeinsam schriftlich fest."
+      },
+      {
+        "q": "Sieht unser Unternehmen personenbezogene Daten?",
+        "a": "Nein. Du erhältst ausschliesslich anonymisierte Auswertungen."
+      },
+      {
+        "q": "Ist unser Unternehmen im Angebot sichtbar?",
+        "a": "Das legen wir gemeinsam fest. Wichtig ist uns, dass die Rolle deines Unternehmens für die Teilnehmenden transparent ist und das Angebot nicht werblich wirkt."
+      },
+      {
+        "q": "Wer ist unsere Ansprechperson?",
+        "a": "Lona Gaugler, Industry Lead bei restful, begleitet Projekte mit der Industrie von der ersten Klärung bis zum Betrieb."
+      }
+    ],
+    "contact": {
+      "name": "Lona Gaugler",
+      "role": "Industry Lead"
+    }
+  },
+  {
+    "slug": "versicherer",
+    "menu": "Versicherer",
+    "art": 4,
+    "title": "Peer-Angebote für Versicherer · restful",
+    "description": "Austausch unter Betroffenen als niederschwellige, skalierbare und messbare Gesundheitsintervention für Kranken- und Zusatzversicherer.",
+    "label": "Für Versicherer",
+    "h1": "Wirksame Unterstützung, <i>die Ressourcen schont.</i>",
+    "sub": "Peers sind Menschen, die eine ähnliche gesundheitliche Situation selbst erlebt haben. Ihr Austausch ist eine niederschwellige, gut skalierbare Gesundheitsintervention, die professionelle Versorgung ergänzt.",
+    "reasonsTitle": "Es gibt viele gute Gründe, Peer-Angebote <i>in dein Gesundheitsprogramm</i> aufzunehmen",
+    "reasonsIntro": "Chronische Erkrankungen nehmen zu, professionelle psychosoziale Begleitung ist knapp und teuer. Austausch unter Betroffenen ergänzt die Versorgung niederschwellig und skalierbar.",
+    "reasons": [
+      {
+        "title": "Ressourceneffizient",
+        "text": "Peers ergänzen professionelle Leistungen, statt sie zu ersetzen. So erreichst du viele Versicherte mit überschaubarem Betreuungsaufwand."
+      },
+      {
+        "title": "Gut skalierbar",
+        "text": "Digitale Formate erreichen Versicherte ortsunabhängig und, wo nötig, in mehreren Sprachen."
+      },
+      {
+        "title": "Evidenzbasiert",
+        "text": "Gestützt auf Studien zu chronischen Erkrankungen, psychischer Gesundheit und Prävention."
+      },
+      {
+        "title": "Messbar",
+        "text": "Auswertungen zu Nutzung, Zufriedenheit und psychosozialen Effekten."
+      }
+    ],
+    "stats": [
+      {
+        "value": "109 Mrd. Fr.",
+        "text": "kosten nichtübertragbare Krankheiten die Schweiz pro Jahr, Gesundheitskosten und Produktionsverluste zusammen.",
+        "source": "BAG, Kostenstudie 2025",
+        "url": "https://www.bag.admin.ch/de/studie-zu-den-kosten-nicht-uebertragbarer-krankheiten"
+      },
+      {
+        "value": "72 %",
+        "text": "der Gesundheitskosten entfallen auf nichtübertragbare Krankheiten.",
+        "source": "BAG, Kostenstudie 2025 (Daten 2022)",
+        "url": "https://www.bag.admin.ch/de/studie-zu-den-kosten-nicht-uebertragbarer-krankheiten"
+      },
+      {
+        "value": "73 Studien",
+        "text": "zeigen: Digitale Peer-Unterstützung verbessert die psychische Gesundheit deutlich, auch präventiv.",
+        "source": "Yeo et al., 2025, Metaanalyse",
+        "url": "https://doi.org/10.1017/S2045796024000854"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Zielgruppe wählen",
+        "text": "Gemeinsam bestimmen wir, für welche Versichertengruppe das Angebot den grössten Nutzen hat.",
+        "visual": "screen-1"
+      },
+      {
+        "title": "Programm gestalten",
+        "text": "Format, Laufzeit und Messgrössen, abgestimmt auf dein Gesundheitsprogramm.",
+        "visual": "screen-3"
+      },
+      {
+        "title": "Zugang schaffen",
+        "text": "Einbindung in bestehende Kanäle, etwa Kunden-App, Gesundheitsportal oder Beratung.",
+        "visual": "screen-2"
+      },
+      {
+        "title": "Wirkung auswerten",
+        "text": "Regelmässiges Reporting, auf Wunsch mit wissenschaftlicher Begleitung.",
+        "visual": "report"
+      }
+    ],
+    "evidence": [
+      {
+        "topic": "digital",
+        "label": "Digitale Unterstützung",
+        "finding": "Digitale Peer-Unterstützung verbessert die psychische Gesundheit deutlich und die körperliche Gesundheit moderat, auch präventiv.",
+        "cite": "Yeo et al., 2025, Metaanalyse",
+        "url": "https://doi.org/10.1017/S2045796024000854"
+      },
+      {
+        "topic": "psyche",
+        "label": "Psychische Erkrankungen",
+        "finding": "Peer-Unterstützung lindert depressive Symptome deutlich besser als die übliche Versorgung.",
+        "cite": "Pfeiffer et al., 2011, Metaanalyse randomisierter Studien",
+        "url": "https://doi.org/10.1016/j.genhosppsych.2010.10.002"
+      }
+    ],
+    "reference": null,
+    "quote": {
+      "type": "testimonial"
+    },
+    "faq": [
+      {
+        "q": "Ersetzt das Angebot ärztliche Leistungen?",
+        "a": "Nein. Peer-Begleitung ergänzt die Versorgung, sie ersetzt keine Behandlung."
+      },
+      {
+        "q": "Sehen wir, wer das Angebot nutzt?",
+        "a": "Nein. Ausgewertet werden nur anonymisierte Kennzahlen."
+      },
+      {
+        "q": "Gibt es Daten zur Kosteneffektivität?",
+        "a": "Die Wirksamkeit von Peer-Unterstützung ist gut belegt, etwa durch eine Metaanalyse von 73 Studien zu digitaler Peer-Unterstützung (Yeo et al., 2025). Zur Kosteneffektivität ist die Datenlage noch dünn. Deshalb messen wir die Wirkung in jedem Angebot und werten sie gemeinsam mit dir aus."
+      },
+      {
+        "q": "Wie schnell lässt sich ein Pilot starten?",
+        "a": "Das hängt von Zielgruppe und Zugang ab. Im ersten Gespräch erstellen wir gemeinsam einen konkreten Zeitplan."
+      }
+    ]
+  },
+  {
+    "slug": "iv-stellen",
+    "menu": "IV-Stellen",
+    "art": 1,
+    "title": "Peers im IV-Setting · restful",
+    "description": "Peers begleiten Versicherte durch Abklärung, Massnahmen und Wiedereinstieg und ergänzen die Arbeit der Eingliederungsfachpersonen. Für IV-Stellen.",
+    "label": "Für IV-Stellen",
+    "h1": "Wer es selbst erlebt hat, <i>macht Mut für den nächsten Schritt.</i>",
+    "sub": "Peers sind Menschen, die eine ähnliche Situation selbst durchlebt haben. Im IV-Setting begleiten sie Versicherte durch Abklärung, Massnahmen und Wiedereinstieg und ergänzen so die Arbeit der Eingliederungsfachpersonen.",
+    "reasonsTitle": "Es gibt viele gute Gründe für Peers <i>im IV-Setting</i>",
+    "reasonsIntro": "Abklärungen und Massnahmen dauern, viele Versicherte fühlen sich dabei allein und verlieren Motivation. Peers geben Orientierung und Hoffnung und entlasten deine Eingliederungsfachpersonen.",
+    "reasons": [
+      {
+        "title": "Orientierung",
+        "text": "Peers erklären aus eigener Erfahrung, wie Abklärung und Massnahmen ablaufen, und nehmen Ängste."
+      },
+      {
+        "title": "Motivation und Hoffnung",
+        "text": "Wer den Wiedereinstieg geschafft hat, zeigt, dass es möglich ist."
+      },
+      {
+        "title": "Entlastung",
+        "text": "Alltagsfragen landen bei den Peers. Fachpersonen gewinnen Zeit für das, was nur sie leisten können."
+      },
+      {
+        "title": "Klare Rollen",
+        "text": "Peers beraten nicht in Versicherungsfragen. Entscheide bleiben bei der IV-Stelle."
+      }
+    ],
+    "stats": [
+      {
+        "value": "55 %",
+        "text": "der Personen in beruflichen Eingliederungsmassnahmen der IV haben eine psychische Erkrankung, bei jungen Menschen sind es 64 %.",
+        "source": "BSV, Zahlen 2025",
+        "url": "https://www.swissinfo.ch/ger/zahl-der-iv-eingliederungsmassnahmen-steigt-weiter-an/91804196"
+      },
+      {
+        "value": "61'000",
+        "text": "Menschen nahmen 2025 an beruflichen Eingliederungsmassnahmen teil, mehr als dreimal so viele wie 2008.",
+        "source": "BSV, Zahlen 2025",
+        "url": "https://www.swissinfo.ch/ger/zahl-der-iv-eingliederungsmassnahmen-steigt-weiter-an/91804196"
+      },
+      {
+        "value": "180",
+        "text": "IV-Neurenten aufgrund einer psychischen Erkrankung pro 100'000 Einwohnerinnen und Einwohner (2024). 2014 waren es 110.",
+        "source": "BSV, Hintergrunddokument 2026",
+        "url": "https://www.bsv.admin.ch/dam/de/sd-web/eKErKnviU85w/20260212_BSV%20Hintergrunddokument%20Anstieg%20Renten%20IV%20bf.pdf"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Zuweisung",
+        "text": "Die Eingliederungsfachperson empfiehlt das Angebot, die versicherte Person meldet sich freiwillig an.",
+        "visual": "screen-2"
+      },
+      {
+        "title": "Matching",
+        "text": "Eine Fachperson vermittelt einen Peer mit ähnlicher Erfahrung, etwa gleiche Branche oder ähnliche Diagnose.",
+        "visual": "screen-3"
+      },
+      {
+        "title": "Begleitung",
+        "text": "Austausch während Abklärung, Massnahme und Wiedereinstieg, digital und im eigenen Tempo.",
+        "visual": "chat"
+      },
+      {
+        "title": "Auswertung",
+        "text": "Die IV-Stelle erhält anonymisierte Kennzahlen zu Nutzung und Zufriedenheit.",
+        "visual": "report"
+      }
+    ],
+    "evidence": [
+      {
+        "topic": "psyche",
+        "label": "Psychische Erkrankungen",
+        "finding": "Peer-Unterstützung lindert depressive Symptome deutlich besser als die übliche Versorgung.",
+        "cite": "Pfeiffer et al., 2011, Metaanalyse randomisierter Studien",
+        "url": "https://doi.org/10.1016/j.genhosppsych.2010.10.002"
+      }
+    ],
+    "reference": null,
+    "quote": {
+      "type": "testimonial"
+    },
+    "faq": [
+      {
+        "q": "Ist die Teilnahme freiwillig?",
+        "a": "Ja. Versicherte entscheiden selbst, ob und wie lange sie das Angebot nutzen."
+      },
+      {
+        "q": "Erfährt die IV-Stelle, was im Austausch besprochen wird?",
+        "a": "Nein. Der Austausch ist vertraulich. Die IV-Stelle erhält nur anonymisierte Kennzahlen zu Nutzung und Zufriedenheit."
+      },
+      {
+        "q": "Woher kommen die Peers?",
+        "a": "Peers sind Menschen, die selbst eine Eingliederung oder eine ähnliche Situation erlebt haben. Gemeinsam mit dir gewinnen wir sie, bereiten sie auf ihre Rolle vor und begleiten sie im Austausch."
+      },
+      {
+        "q": "Wie wird das Angebot finanziert?",
+        "a": "Das klären wir gemeinsam, zum Beispiel über einen zeitlich begrenzten Pilot. Im ersten Gespräch zeigen wir dir, welche Varianten für deine IV-Stelle in Frage kommen."
+      }
+    ]
+  }
+]

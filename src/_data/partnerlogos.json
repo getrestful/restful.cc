@@ -1,7 +1,11 @@
 [
   { "name": "Krebsliga", "logo": "logo-krebsliga.webp" },
+  { "name": "Demenzworld", "logo": "logo-demenzworld.png" },
+  { "name": "MucoConnect", "logo": "logo-mucoconnect.png" },
   { "name": "Procap", "logo": "logo-procap.png" },
-  { "name": "Cerebral", "logo": "logo-cerebral.webp" },
-  { "name": "SPO", "logo": "logo-spo.webp" },
-  { "name": "Inselspital", "logo": "logo-inselspital.webp" }
+  { "name": "Inselspital", "logo": "logo-inselspital.webp" },
+  { "name": "Stiftung Cerebral", "logo": "logo-cerebral.webp" },
+  { "name": "SVAMV", "logo": "logo-svamv.svg" },
+  { "name": "Spitex Kriens", "logo": "logo-spitex-kriens.png" },
+  { "name": "SF BFK", "logo": "logo-sf-bfk.png" }
 ]

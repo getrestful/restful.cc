@@ -1,0 +1,31 @@
+{
+  "services": [
+    { "title": "Pfad analysieren", "text": "Wo gehen Patientinnen verloren, wo fehlt Begleitung?" },
+    { "title": "Blended Care gestalten", "text": "Digitale und persönliche Schritte sinnvoll verbinden." },
+    { "title": "Entwickeln und betreiben", "text": "Design, Technik und Betrieb aus einer Hand." },
+    { "title": "Sicher im Gesundheitswesen", "text": "Sensible Daten, Mehrsprachigkeit, viele Beteiligte." }
+  ],
+  "case": {
+    "title": "Swiss Sleep Circle",
+    "logo": "logo-inselspital.webp",
+    "logoAlt": "Inselspital",
+    "url": "https://gesundheitsfoerderung.ch/praevention-in-der-gesundheitsversorgung-pgv/projektfoerderung/gefoerderte-projekte/swiss-sleep",
+    "rows": [
+      { "term": "Auftrag", "text": "Menschen mit Schlaf-Wach-Erkrankungen digital erreichen, von der Früherkennung bis zur Behandlung (Blended Stepped Care)." },
+      { "term": "Auftraggeberin", "text": "Swiss Sleep House Bern, Universitätsklinik für Neurologie, Inselspital Bern" },
+      { "term": "Förderung", "text": "Gesundheitsförderung Schweiz, Projektförderung «Prävention in der Gesundheitsversorgung»" },
+      { "term": "restful", "text": "Konzeption, Design und komplette technische Realisierung der digitalen Plattform" }
+    ]
+  },
+  "commelia": {
+    "url": "https://commelia.de/de",
+    "image": "commelia-chat.png",
+    "imageAlt": "Beispiel einer Unterhaltung in Commelia: Die KI beantwortet eine Elternfrage und übergibt an eine Beraterin",
+    "items": [
+      "Web-Chat, E-Mail und WhatsApp in einem ruhigen Posteingang",
+      "Fachpersonen und Peers antworten gemeinsam, ein KI-Assistent übernimmt Routinefragen",
+      "Bei sensiblen Themen oder Krisensignalen übergibt die KI sofort an einen Menschen",
+      "Gehostet in der Schweiz oder auf dem eigenen Server"
+    ]
+  }
+}

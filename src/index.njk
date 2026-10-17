@@ -1,77 +1,248 @@
 ---
-layout: base.njk
-title: restful | Peer-Angebote für Organisationen im Gesundheits- und Sozialwesen
-description: restful ist Kompetenzzentrum und Umsetzungspartnerin für Peer-Angebote im Schweizer Gesundheits- und Sozialwesen. Wir bauen Angebote unter dem Namen deiner Organisation auf und betreiben sie mit dir.
+layout: layout.njk
+title: "restful · Gegenseitige Unterstützung, die nachweislich wirkt"
+description: "restful baut mit Organisationen im Gesundheits- und Sozialwesen Angebote auf, in denen sich Betroffene und Angehörige gegenseitig unterstützen: wissenschaftlich fundiert, methodisch erprobt, mit eigener Plattform."
 ---
 {% from "icon.njk" import icon %}
+{% from "macros.njk" import art, contactForm, faqList %}
 
-<section aria-labelledby="hero-titel" class="border-b border-line">
-  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
-    <h1 id="hero-titel" class="max-w-3xl break-words text-h1 font-semibold tracking-tight text-balance md:text-display">Erfahrungswissen wirksam machen. Unter deinem Namen.</h1>
-    <p class="mt-6 max-w-prose text-lead text-ink-soft">restful ist Kompetenzzentrum und Umsetzungspartnerin für Peer-Angebote im Schweizer Gesundheits- und Sozialwesen. Wir bauen mit dir Angebote auf, in denen Betroffene voneinander lernen, und betreiben sie mit dir weiter.</p>
-    <p class="mt-4 max-w-prose text-ink-soft">Weil Gleichbetroffene etwas wissen, das in keiner Sprechstunde Platz hat.</p>
-    <div class="mt-10 flex flex-wrap items-center gap-x-8 gap-y-4">
-      <a href="/angebot/" class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-medium text-paper hover:bg-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Angebot ansehen {{ icon("arrow", "size-5") }}</a>
-      <a href="#kontakt" class="font-medium text-accent underline underline-offset-4 hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Kontakt aufnehmen</a>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Gegenseitige Unterstützung, <i>die nachweislich wirkt.</i></h1>
+      <p class="sub">Mit erprobter Methodik und auf wissenschaftlicher Grundlage bringen wir Betroffene und Angehörige in deiner Organisation zusammen. So erreichst du mehr Menschen, wirksamer und mit den Ressourcen, die du hast.</p>
+      <div class="ctas">
+        <a class="btn btn-dark" href="#kontakt">Erstgespräch vereinbaren</a>
+        <a class="btn btn-line" href="#wissenschaft">Methode &amp; Evidenz</a>
+      </div>
+    </div>
+    <div class="collage">
+      {{ art(0, "arch") }}
+      <p class="bubble b1">«{{ testimonial.excerpt }}»<small>{{ testimonial.name }}, {{ testimonial.org }}</small></p>
     </div>
   </div>
 </section>
 
-<section aria-labelledby="nutzen-titel">
-  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
-    <h2 id="nutzen-titel" class="max-w-2xl text-h2 font-semibold tracking-tight">Warum sich ein Peer-Angebot für deine Organisation lohnt</h2>
-    <ul class="mt-12 grid gap-10 md:grid-cols-3 md:gap-8">
-      {% for item in nutzen %}
-      <li>
-        <span class="inline-flex size-12 items-center justify-center rounded-full bg-accent-soft text-accent">{{ icon(item.icon) }}</span>
-        <h3 class="mt-5 text-h3 font-semibold">{{ item.titel }}</h3>
-        <p class="mt-3 max-w-prose text-ink-soft">{{ item.text }}</p>
-      </li>
-      {% endfor %}
-    </ul>
+<div class="logos">
+  <div class="wrap">
+    <p>Organisationen, die mit restful arbeiten</p>
+    {%- for l in partnerlogos %}
+    <img src="/images/{{ l.logo }}" alt="{{ l.name }}" height="38">
+    {%- endfor %}
+  </div>
+</div>
+
+<section id="nutzen">
+  <div class="wrap">
+    <p class="kicker">Was du bekommst</p>
+    <h2>Mehrwert für deine Organisation <i>und deine Mitglieder</i></h2>
+    <div class="value-grid">
+      {%- for v in [{ d: nutzen.org, cls: "org" }, { d: nutzen.mitglieder, cls: "mem" }] %}
+      <div class="value {{ v.cls }}">
+        <span class="tag">{{ v.d.tag }}</span>
+        <h3>{{ v.d.title }}</h3>
+        <ul>
+          {%- for it in v.d.items %}
+          <li><span class="ic">{{ icon(it.icon) | safe }}</span><div><b>{{ it.title }}</b><span>{{ it.text }}</span></div></li>
+          {%- endfor %}
+        </ul>
+      </div>
+      {%- endfor %}
+    </div>
+    <div class="platform-hint">
+      <div class="mini-phone"><img src="/images/vision-screen-1.jpg" width="640" height="1170" loading="lazy" alt="Startseite des Peer-Angebots von Demenzworld"></div>
+      <div><b>Läuft unter deinem Namen, restful bleibt im Hintergrund.</b><p>Die Plattform betreiben wir für dich: Hosting, Wartung und Weiterentwicklung inklusive. Deine Mitglieder sehen dein Logo, deine Farben, deine Adresse.</p></div>
+      <a href="/plattform/">So sieht die Plattform aus →</a>
+    </div>
   </div>
 </section>
 
-<section aria-labelledby="partner-banner-titel" class="border-y border-line bg-surface">
-  <div class="mx-auto max-w-content px-5 py-10 sm:px-8">
-    <p id="partner-banner-titel" class="text-center text-sm font-medium uppercase tracking-wide text-ink-soft">Mit diesen Organisationen arbeiten wir zusammen</p>
-    <ul class="mt-8 flex flex-wrap items-center justify-center gap-x-12 gap-y-6">
-      {% for p in partnerlogos %}
-      <li>
-        <img src="/images/{{ p.logo }}" alt="{{ p.name }}" class="h-[68px] w-auto max-w-[238px] object-contain" loading="lazy">
-      </li>
-      {% endfor %}
-    </ul>
+<section id="wissenschaft">
+  <div class="wrap">
+    <p class="kicker">Methode &amp; Evidenz</p>
+    <h2>Fundiert, <i>nicht nur gut gemeint</i></h2>
+    <p class="lead">Wir stützen unsere Arbeit auf Forschung und messen Wirkung im laufenden Betrieb. Zwei Metaanalysen zeigen, was gegenseitige Unterstützung leisten kann: in der Prävention und bei einer Erkrankung.</p>
+    <div class="papers">
+      {%- for p in evidenz.papers %}
+      <article class="paper bg-{{ p.tone }}">
+        <span class="type">{{ p.type }}</span>
+        <p class="find">{{ p.finding }}</p>
+        <p class="detail">{{ p.detail }}</p>
+        <div class="cite"><b>{{ p.cite }}</b><span>{{ p.title }}. <i>{{ p.journal }}</i></span><a href="{{ p.url }}" target="_blank" rel="noopener">Studie öffnen ↗</a></div>
+      </article>
+      {%- endfor %}
+    </div>
+    <div class="ev-more">
+      <b>Evidenz nach Thema:</b>
+      {%- for t in themenfelder %}
+      <a class="t" href="/wissenschaft/#{{ t.key }}">{{ t.label }}</a>
+      {%- endfor %}
+      <a class="ev-link" href="/wissenschaft/">Alle Themen und Quellen →</a>
+    </div>
   </div>
 </section>
 
-<section aria-labelledby="vertrauen-titel">
-  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
-    <h2 id="vertrauen-titel" class="max-w-2xl text-h2 font-semibold tracking-tight">Wissenschaftlich fundiert, sicher und vertraulich</h2>
-    <ul class="mt-12 grid gap-10 md:grid-cols-3 md:gap-8">
-      {% for item in vertrauen %}
-      <li>
-        <span class="inline-flex size-12 items-center justify-center rounded-full bg-accent-soft text-accent">{{ icon(item.icon) }}</span>
-        <h3 class="mt-5 text-h3 font-semibold">{{ item.titel }}</h3>
-        <p class="mt-3 max-w-prose text-ink-soft">{{ item.text }}</p>
-      </li>
-      {% endfor %}
-    </ul>
-    <a href="/wissenschaft/" class="mt-10 inline-flex items-center gap-2 font-medium text-accent underline underline-offset-4 hover:text-accent-strong focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">Mehr zu Evidenz und Forschung {{ icon("arrow", "size-4") }}</a>
+<section id="einstieg">
+  <div class="wrap">
+    <p class="kicker">Dein Einstieg</p>
+    <h2>Wo stehst <i>du</i> gerade?</h2>
+    <p class="lead">Beantworte eine Frage, und wir zeigen dir, wie wir gemeinsam starten würden.</p>
+    <div class="guide" data-guide>
+      <div class="q" role="radiogroup" aria-labelledby="lage-frage">
+        <h3 id="lage-frage">Was trifft am ehesten auf deine Organisation zu?</h3>
+        {%- for e in einstieg %}
+        <label><input type="radio" name="lage" value="{{ loop.index0 }}"{% if loop.first %} checked{% endif %}><span>{{ e.test }}</span></label>
+        {%- endfor %}
+      </div>
+      <div aria-live="polite">
+        {%- for e in einstieg %}
+        <div class="ans bg-{{ e.tone }}{% if loop.first %} on{% endif %}">
+          <small>Deine Ausgangslage</small>
+          <h3>{{ e.title }}</h3>
+          <p>{{ e.intro }}</p>
+          <ul class="dolist">
+            {%- for d in e.do %}
+            <li><span class="c">{{ icon("check", 16, 2.4) | safe }}</span>{{ d }}</li>
+            {%- endfor %}
+          </ul>
+          <p class="first"><b>Erster Schritt:</b> Wir starten mit {{ e.first }}.</p>
+          <div class="result"><b>Ergebnis</b>{{ e.result }}</div>
+          <div><a class="btn btn-dark" href="#kontakt">Erstgespräch vereinbaren</a></div>
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
   </div>
 </section>
 
-<section aria-labelledby="communities-titel" id="communities" class="scroll-mt-8 border-t border-line">
-  <div class="mx-auto max-w-content px-5 py-section-sm sm:px-8 md:py-section">
-    <h2 id="communities-titel" class="text-h2 font-semibold tracking-tight">Diese Organisationen arbeiten mit uns</h2>
-    <ul class="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-      {% for i in initiatives %}
-      <li class="flex h-28 items-center justify-center rounded-xl border border-line bg-paper p-5">
-        <a href="{{ i.href }}" class="flex size-full items-center justify-center rounded focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent">
-          <img src="/images/{{ i.logo }}" alt="{{ i.name }}" class="max-h-14 w-auto max-w-full object-contain" loading="lazy">
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
+<section class="testi" aria-label="Stimme einer Partnerorganisation">
+  <div class="wrap">
+    <div class="testi-card">
+      <div class="testi-photo">
+        <img class="p" src="/images/{{ testimonial.photo }}" width="255" height="320" loading="lazy" alt="{{ testimonial.name }}">
+        <div class="logo"><img src="/images/{{ testimonial.logo }}" loading="lazy" alt="{{ testimonial.logoAlt }}"></div>
+      </div>
+      <blockquote>
+        <p>{{ testimonial.text }}»</p>
+        <footer><b>{{ testimonial.name }}</b><span>{{ testimonial.role }}</span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="partners" aria-labelledby="partner-titel">
+  <div class="wrap">
+    <p class="kicker">Partnerschaften</p>
+    <h2 id="partner-titel">Mit diesen Organisationen <i>arbeiten wir zusammen</i></h2>
+    <div class="partner-grid">
+      {%- for i in initiatives %}
+      {%- if i.href and i.href != "#" %}
+      <a class="partner" href="{{ i.href }}" target="_blank" rel="noopener"><div class="lg"><img src="/images/{{ i.logo }}" alt="" loading="lazy"></div><div><b>{{ i.name }}</b><span>{{ i.desc }}</span></div></a>
+      {%- else %}
+      <div class="partner"><div class="lg"><img src="/images/{{ i.logo }}" alt="" loading="lazy"></div><div><b>{{ i.name }}</b><span>{{ i.desc }}</span></div></div>
+      {%- endif %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projekte">
+  <div class="wrap proj-grid">
+    <div>
+      <p class="kicker">Für Spitäler, Kliniken und Institutionen</p>
+      <h2>Patientenpfade <i>digital</i> weiterdenken</h2>
+      <p class="lead">Wir konzipieren und entwickeln digitale und hybride Angebote entlang des Versorgungsverlaufs. Damit Patientinnen und Patienten auch zwischen den Terminen begleitet sind.</p>
+      <div class="services">
+        {%- for s in digitalprojekte.services %}
+        <div><b>{{ s.title }}</b><span>{{ s.text }}</span></div>
+        {%- endfor %}
+      </div>
+      <a class="btn btn-light mt30" href="#kontakt">Projekt besprechen</a>
+    </div>
+    {%- set c = digitalprojekte.case %}
+    <div class="case-card">
+      <div class="head"><img src="/images/{{ c.logo }}" alt="{{ c.logoAlt }}" loading="lazy"><div><small>Fallbeispiel</small><h3>{{ c.title }}</h3></div></div>
+      <dl>
+        {%- for r in c.rows %}
+        <dt>{{ r.term }}</dt><dd>{{ r.text }}</dd>
+        {%- endfor %}
+      </dl>
+      <a class="ev-link" href="{{ c.url }}" target="_blank" rel="noopener">Zum Projekt bei Gesundheitsförderung Schweiz ↗</a>
+    </div>
+  </div>
+  {%- set cm = digitalprojekte.commelia %}
+  <div class="wrap">
+    <article class="cm" aria-labelledby="cm-titel">
+      <div class="cm-txt">
+        <span class="cm-badge">Neu von restful</span>
+        <h3 id="cm-titel">Commelia: <i>Support von Mensch zu Mensch</i></h3>
+        <p class="in">Der Chat für Sozial- und Gesundheitsorganisationen. Für Beratungsstellen, Patientengruppen und Communities, die ihre Mitglieder schnell und persönlich erreichen wollen.</p>
+        <ul class="cm-list">
+          {%- for it in cm.items %}
+          <li><span class="c">{{ icon("check", 14, 2.6) | safe }}</span>{{ it }}</li>
+          {%- endfor %}
+        </ul>
+        <div class="cm-ctas">
+          <a class="btn btn-violet" href="{{ cm.url }}" target="_blank" rel="noopener">30 Tage kostenlos testen</a>
+          <a class="btn btn-line" href="{{ cm.url }}" target="_blank" rel="noopener">Mehr zu Commelia</a>
+          <small>Keine Kreditkarte nötig. Rabatte für gemeinnützige Organisationen.</small>
+        </div>
+      </div>
+      <div class="cm-vis"><img src="/images/{{ cm.image }}" width="1020" height="880" loading="lazy" alt="{{ cm.imageAlt }}"></div>
+    </article>
+  </div>
+</section>
+
+<section aria-labelledby="faq-titel">
+  <div class="wrap faq">
+    <div>
+      <p class="kicker">Häufige Fragen</p>
+      <h2 id="faq-titel">Was Organisationen <i>vorher wissen wollen</i></h2>
+    </div>
+    <div>{{ faqList(faq) }}</div>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="wrap">
+    <p class="kicker">Team</p>
+    <h2>Soziale Arbeit, Public Health, Forschung <i>und Technologie</i></h2>
+    <figure class="group"><img src="/images/team-gruppe.jpg" width="1800" height="1201" loading="lazy" alt="Das Team von restful"></figure>
+    <div class="pp-grid">
+      {%- for p in team %}
+      <div class="pp"><img src="/images/{{ p.img }}" width="800" height="800" loading="lazy" alt="{{ p.name }}"><b>{{ p.name }}</b><span>{{ p.role }}</span>{% if p.bio %}<small>{{ p.bio }}</small>{% endif %}</div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="network" id="netzwerk">
+  <div class="wrap">
+    <p class="kicker">Unser Netzwerk</p>
+    <h2 class="h-sm">Menschen, die <i>restful unterstützen</i></h2>
+    <p class="lead">Sie begleiten uns mit ihrer Erfahrung aus Politik, Medizin, Wirtschaft und Zivilgesellschaft.</p>
+    <div class="pp-grid sm">
+      {%- for p in advisory %}
+      <div class="pp sm"><img src="/images/{{ p.img }}" loading="lazy" alt="{{ p.name }}"><b>{{ p.name }}</b><span>{{ p.role }}</span></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <div class="contact-box">
+      <div>
+        <h2>Lass uns <i>sprechen</i></h2>
+        <p>Im unverbindlichen Erstgespräch klären wir:</p>
+        <ul>
+          <li>ob ein Peer-Angebot zu deiner Organisation passt</li>
+          <li>welches Format sich eignet</li>
+          <li>mit welchem Aufwand und Budget du rechnen kannst</li>
+        </ul>
+        <p class="mail">Lieber direkt? <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+      {{ contactForm(site.email) }}
+    </div>
   </div>
 </section>

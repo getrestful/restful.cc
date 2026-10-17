@@ -1,0 +1,120 @@
+{% from "icon.njk" import icon %}
+
+{# Markenbild statt Fotos: zwei sich überlagernde Formen stehen für zwei Menschen im Austausch.
+   v: 0 Startseite, 1 IV-Stellen, 2 Spitäler, 3 Industrie, 4 Versicherer · shape: arch oder blob #}
+{% macro art(v, shape="blob") %}
+<div class="art art-{{ shape }}" aria-hidden="true">
+{%- if shape == "arch" %}
+  <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+    <circle cx="168" cy="222" r="118" fill="#7066F6" opacity=".9" style="mix-blend-mode:multiply"/>
+    <circle cx="248" cy="318" r="118" fill="#BC9C96" style="mix-blend-mode:multiply"/>
+    <circle cx="300" cy="120" r="16" fill="#05004A"/>
+    <circle cx="96" cy="410" r="9" fill="#8E5147"/>
+  </svg>
+{%- else %}
+  <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+  {%- if v == 1 %}
+    <circle cx="150" cy="248" r="100" fill="#7066F6" opacity=".9" style="mix-blend-mode:multiply"/>
+    <circle cx="240" cy="170" r="76" fill="#BC9C96" style="mix-blend-mode:multiply"/>
+    <circle cx="302" cy="104" r="20" fill="#05004A"/>
+    <circle cx="96" cy="128" r="8" fill="#8E5147"/>
+  {%- elif v == 2 %}
+    <path d="M96 420V242a104 104 0 0 1 208 0v178Z" fill="#7066F6" opacity=".9" style="mix-blend-mode:multiply"/>
+    <circle cx="276" cy="160" r="78" fill="#BC9C96" style="mix-blend-mode:multiply"/>
+    <circle cx="120" cy="116" r="14" fill="#05004A"/>
+  {%- elif v == 3 %}
+    <circle cx="160" cy="170" r="90" fill="#7066F6" opacity=".88" style="mix-blend-mode:multiply"/>
+    <circle cx="244" cy="170" r="90" fill="#BC9C96" style="mix-blend-mode:multiply"/>
+    <circle cx="202" cy="246" r="90" fill="none" stroke="#05004A" stroke-width="2" opacity=".55"/>
+    <circle cx="318" cy="318" r="12" fill="#05004A"/>
+  {%- else %}
+    <circle cx="200" cy="200" r="152" fill="none" stroke="#05004A" stroke-width="1.5" opacity=".3"/>
+    <circle cx="200" cy="204" r="112" fill="#BC9C96" style="mix-blend-mode:multiply"/>
+    <circle cx="238" cy="166" r="68" fill="#7066F6" opacity=".9" style="mix-blend-mode:multiply"/>
+    <circle cx="318" cy="300" r="12" fill="#05004A"/>
+  {%- endif %}
+  </svg>
+{%- endif %}
+</div>
+{% endmacro %}
+
+{# Kontaktformular: öffnet das E-Mail-Programm mit einer vorbereiteten Nachricht (siehe site.js). #}
+{% macro contactForm(email, id="k") %}
+<form class="kform" action="mailto:{{ email }}" method="post" enctype="text/plain" data-contact data-to="{{ email }}">
+  <label class="sr-only" for="{{ id }}-name">Name</label>
+  <input id="{{ id }}-name" name="Name" autocomplete="name" placeholder="Name" required>
+  <label class="sr-only" for="{{ id }}-org">Organisation</label>
+  <input id="{{ id }}-org" name="Organisation" autocomplete="organization" placeholder="Organisation">
+  <label class="sr-only" for="{{ id }}-mail">E-Mail</label>
+  <input id="{{ id }}-mail" name="E-Mail" type="email" autocomplete="email" placeholder="E-Mail" required>
+  <label class="sr-only" for="{{ id }}-msg">Nachricht</label>
+  <textarea id="{{ id }}-msg" name="Nachricht" rows="4" placeholder="Worum geht es?" required></textarea>
+  <p class="form-note">Beim Senden öffnet sich dein E-Mail-Programm mit der fertigen Nachricht an <a href="mailto:{{ email }}">{{ email }}</a>. Mehr dazu in der <a href="/datenschutzerklaerung/">Datenschutzerklärung</a>.</p>
+  <button class="btn btn-dark" type="submit">Per E-Mail senden</button>
+  <p class="form-status" role="status" aria-live="polite"></p>
+</form>
+{% endmacro %}
+
+{# Chat-Ausschnitt als Beispielansicht #}
+{% macro chatMock() %}
+<div class="chat">
+  <div class="top"><i></i><div><b>Anna, Peer</b><small>Ähnliche Erfahrung</small></div></div>
+  <div class="msgs">
+    <div class="m">Hallo! Schön, dass du dich meldest. Wie geht es dir gerade?</div>
+    <div class="m me">Ehrlich gesagt bin ich ziemlich überfordert mit allem.</div>
+    <div class="m">Das kenne ich gut. Mir hat damals geholfen, eins nach dem anderen anzugehen.</div>
+    <div class="m me">Wie hast du das gemacht?</div>
+  </div>
+</div>
+{% endmacro %}
+
+{# Auswertung als Beispielansicht mit fiktiven Werten #}
+{% macro reportMock() %}
+<div class="browser">
+  <div class="bar"><i></i><i></i><i></i><span>Auswertung</span></div>
+  <div class="dash">
+    <div class="main">
+      <div class="kpis">
+        <div class="kpi"><small>Aktive Mitglieder</small><b>148</b></div>
+        <div class="kpi"><small>Matches</small><b>36</b></div>
+        <div class="kpi"><small>Zufriedenheit</small><b>4,6</b></div>
+      </div>
+      <div class="rows">
+        <b class="rows-title">Fühle mich besser unterstützt</b>
+        <div class="r"><i></i><div class="bar2 w85"></div><em class="ok">trifft zu</em></div>
+        <div class="r"><i></i><div class="bar2 w60"></div><em>eher</em></div>
+        <div class="r"><i></i><div class="bar2 w20"></div><em>kaum</em></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+{# Bild zu einem Ablaufschritt auf den Zielgruppenseiten #}
+{% macro stepVisual(v) %}
+<figure class="zz-vis">
+{%- if v == "screen-1" %}
+  <div class="phone"><div class="scr"><img src="/images/vision-screen-1.jpg" width="640" height="1170" loading="lazy" alt="Startseite des Peer-Angebots von Demenzworld auf dem Smartphone"></div></div>
+  <figcaption>Beispiel aus einem Partnerangebot (Demenzworld)</figcaption>
+{%- elif v == "screen-2" %}
+  <div class="phone"><div class="scr"><img src="/images/vision-screen-2.jpg" width="640" height="1161" loading="lazy" alt="Einstieg ins Angebot von Cystische Fibrose Schweiz mit der Frage: Was ist deine Situation?"></div></div>
+  <figcaption>Beispiel aus einem Partnerangebot (Cystische Fibrose Schweiz)</figcaption>
+{%- elif v == "screen-3" %}
+  <div class="phone"><div class="scr"><img src="/images/vision-screen-3.jpg" width="640" height="1110" loading="lazy" alt="Erklärung, wie MucoConnect in drei Schritten funktioniert, beginnend mit einem anonymen Fragebogen"></div></div>
+  <figcaption>Beispiel aus einem Partnerangebot (MucoConnect)</figcaption>
+{%- elif v == "chat" %}
+  <div class="phone"><div class="scr">{{ chatMock() }}</div></div>
+  <figcaption>Beispielansicht</figcaption>
+{%- else %}
+  {{ reportMock() }}
+  <figcaption>Beispielansicht mit fiktiven Werten</figcaption>
+{%- endif %}
+</figure>
+{% endmacro %}
+
+{# Aufklappbare Fragen und Antworten #}
+{% macro faqList(items) %}
+{%- for f in items %}
+<details><summary><b>{{ f.q }}</b><span class="plus" aria-hidden="true">+</span></summary><div class="d-body"><p>{{ f.a }}</p></div></details>
+{%- endfor %}
+{% endmacro %}

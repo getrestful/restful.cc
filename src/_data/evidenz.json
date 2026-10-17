@@ -1,0 +1,122 @@
+{
+  "papers": [
+    {
+      "type": "Metaanalyse · 2025",
+      "finding": "Digitale Peer-Unterstützung verbessert die psychische Gesundheit deutlich und die körperliche Gesundheit moderat, auch präventiv.",
+      "detail": "Ausgewertet wurden 73 Studien zur psychischen und 47 Studien zur körperlichen Gesundheit. Die Autorinnen und Autoren sehen darin eine skalierbare, präventive Intervention.",
+      "cite": "Yeo, Fortuna, Lansford & Rudolph (2025)",
+      "title": "The effects of digital peer support interventions on physical and mental health: a review and meta-analysis",
+      "journal": "Epidemiology and Psychiatric Sciences, 34, e9",
+      "url": "https://doi.org/10.1017/S2045796024000854",
+      "tone": "sand"
+    },
+    {
+      "type": "Metaanalyse randomisierter Studien",
+      "finding": "Peer-Unterstützung lindert depressive Symptome deutlich besser als die übliche Versorgung.",
+      "detail": "7 randomisierte Studien mit 869 Teilnehmenden. Im Vergleich mit kognitiver Verhaltenstherapie in der Gruppe zeigte sich kein signifikanter Unterschied.",
+      "cite": "Pfeiffer, Heisler, Piette, Rogers & Valenstein (2011)",
+      "title": "Efficacy of peer support interventions for depression: a meta-analysis",
+      "journal": "General Hospital Psychiatry, 33, 29-36",
+      "url": "https://doi.org/10.1016/j.genhosppsych.2010.10.002",
+      "tone": "lav"
+    }
+  ],
+  "einordnung": [
+    {
+      "title": "Geteiltes Erfahrungswissen",
+      "text": "Menschen mit ähnlicher Erfahrung unterstützen sich auf Augenhöhe, getragen von Empathie und gegenseitiger Hilfe (Penney, 2018a)."
+    },
+    {
+      "title": "Ergänzung, kein Ersatz",
+      "text": "Gegenseitige Unterstützung ersetzt keine medizinische, therapeutische oder psychologische Behandlung. Sie ergänzt sie."
+    },
+    {
+      "title": "Biopsychosozial gedacht",
+      "text": "Gesundheit als Zusammenspiel biologischer, psychologischer und sozialer Faktoren (Engel, 1977). Gerade bei der sozialen Einbettung fehlen oft niederschwellige Angebote."
+    }
+  ],
+  "einordnungText": [
+    "Peer-Unterstützung bezeichnet einen Prozess, bei dem Menschen mit gemeinsamen Erfahrungen oder ähnlichen gesundheitlichen bzw. sozialen Herausforderungen als Gleichbetroffene zusammenkommen, um sich gegenseitig zu unterstützen (Penney, 2018a). Ein Peer ist dabei eine gleichgestellte Person mit ähnlicher Lebensrealität, sozialem Hintergrund oder (Krankheits-)Erfahrung. Unterstützung („support“) beschreibt eine Beziehung, die von Empathie, Ermutigung und gegenseitiger Hilfe getragen ist (Penney, 2018a).",
+    "Der Begriff Peer ist in der Schweiz bislang kein geschützter oder einheitlich definierter Begriff. Entsprechend wird Peer-Unterstützung in Praxis und Forschung unterschiedlich verstanden und umgesetzt. In der Literatur finden sich verschiedene Peer-Ansätze, darunter Peer Support, Peer Education, Peer Coaching oder Peer Counseling, die sich hinsichtlich Zielsetzung, Rollenverständnis, Nähe zu professionellen Angeboten sowie Grad der Strukturierung unterscheiden (Dennis, 2003; Solomon, 2004).",
+    "Zentral für alle Peer-Ansätze ist das geteilte Erfahrungswissen. Peer-Unterstützung basiert nicht auf diagnostischen Modellen oder fachlichen Rollen, sondern auf empathischem Verstehen durch gemeinsam erlebte Belastungen und Herausforderungen (Mead et al., 2001). Der Austausch findet auf Augenhöhe statt und unterscheidet sich bewusst von klassischen therapeutischen Angeboten.",
+    "Peer-Unterstützung ersetzt keine medizinische, therapeutische oder psychologische Behandlung. Sie wird, auch im Verständnis von restful, als ergänzendes Unterstützungsangebot verstanden, das professionelle Versorgung sinnvoll ergänzt.",
+    "Historisch hat der Peer-Ansatz seinen Ursprung nicht in der klassischen Medizin, sondern in Selbsthilfe-, Bürgerrechts- und Recovery-Bewegungen. Bereits ab den 1930er-Jahren entstanden erste organisierte Formen gegenseitiger Unterstützung, etwa in Selbsthilfegruppen wie den Anonymen Alkoholikern. Zentrale Annahme war dabei, dass geteilte Erfahrung eine eigenständige Wissensform darstellt und nicht allein als Defizit verstanden werden sollte (Borkman, 1976; Penney, 2018b). Ab den 1980er- und 1990er-Jahren wurde Peer-Unterstützung zunehmend wissenschaftlich beschrieben und theoretisch fundiert, als wechselseitiger Unterstützungsprozess, der auf Gleichwertigkeit und Empowerment beruht (Penney, 2018b; Solomon, 2004).",
+    "Wir bei restful orientieren uns am biopsychosozialen Modell (Engel, 1977), das Gesundheit als Zusammenspiel biologischer, psychologischer und sozialer Faktoren versteht. Die Schweiz verfügt über eine hochwertige medizinische und therapeutische Versorgung. Gleichzeitig zeigen Forschung und Versorgungspraxis, dass insbesondere im Bereich der kontinuierlichen psychosozialen Begleitung, der Alltagsbewältigung und der sozialen Einbettung ergänzende, niederschwellige Angebote fehlen. Digitale Peer-Unterstützung verstehen wir deshalb als präventive Ergänzung bestehender Versorgungsangebote."
+  ],
+  "methode": [
+    {
+      "title": "Studienlage aufarbeiten",
+      "text": "Für jedes Themenfeld recherchieren wir, was wirkt und wo die Grenzen liegen."
+    },
+    {
+      "title": "Erprobte Formate",
+      "text": "Formate, Rollen und Abläufe aus unserem Playbook, angepasst an deine Organisation."
+    },
+    {
+      "title": "Sorgfältiges Matching",
+      "text": "Fachpersonen begleiten die Vermittlung, statt sie einem Algorithmus zu überlassen."
+    },
+    {
+      "title": "Wirkung messen",
+      "text": "Daten aus dem laufenden Betrieb, gemeinsam mit dir ausgewertet."
+    }
+  ],
+  "forschung": [
+    {
+      "title": "Wirkungsmessung",
+      "text": "Wir erheben Daten aus dem laufenden Betrieb der Angebote und werten sie gemeinsam mit unseren Partnerorganisationen aus. So lässt sich nachvollziehen, ob und wie ein Angebot bei den Teilnehmenden wirkt.",
+      "tone": "sand"
+    },
+    {
+      "title": "Begleitforschung",
+      "text": "Gemeinsam mit einer Universität läuft eine wissenschaftliche Begleitforschung zu unserer Arbeit (Prozessforschung). Die Ergebnisse veröffentlichen wir, sobald die Studie abgeschlossen ist.",
+      "tone": "lav"
+    }
+  ],
+  "quellen": [
+    {
+      "ref": "Carter, G., Monaghan, C., & Santin, O. (2020). What is known from the existing literature about peer support interventions for carers of individuals living with dementia: A scoping review. Health & Social Care in the Community, 28, 1134-1151.",
+      "url": "https://doi.org/10.1111/hsc.12944"
+    },
+    {
+      "ref": "Chen, Y., Li, Z., Yang, Q., Yang, S., Dou, C., Zhang, T., & Guan, B. (2021). The effect of peer support on individuals with overweight and obesity: A meta-analysis. Iranian Journal of Public Health, 50, 2439-2450.",
+      "url": "https://doi.org/10.18502/ijph.v50i12.7926"
+    },
+    {
+      "ref": "Fortuna, K. L., Naslund, J. A., LaCroix, J. M., Bianco, C. L., Brooks, J. M., Zisman-Ilani, Y., Muralidharan, A., & Deegan, P. (2020). Digital peer support mental health interventions for people with a lived experience of a serious mental illness: Systematic review. JMIR Mental Health, 7, e16460.",
+      "url": "https://doi.org/10.2196/16460"
+    },
+    {
+      "ref": "Jeffrey, A., Andracchio, L., Dvorak, M., Lomas, P., Smith, B., & Borowitz, D. (2020). Virtual peer support for people with cystic fibrosis and their family members: A program evaluation. Journal of Patient Experience, 7, 1748-1754.",
+      "url": "https://doi.org/10.1177/2374373520974322"
+    },
+    {
+      "ref": "Kiemen, A., Czornik, M., & Weis, J. (2023). How effective is peer-to-peer support in cancer patients and survivors? A systematic review. Journal of Cancer Research and Clinical Oncology, 149, 9461-9485.",
+      "url": "https://doi.org/10.1007/s00432-023-04753-8"
+    },
+    {
+      "ref": "Pfeiffer, P. N., Heisler, M., Piette, J. D., Rogers, M. A., & Valenstein, M. (2011). Efficacy of peer support interventions for depression: A meta-analysis. General Hospital Psychiatry, 33, 29-36.",
+      "url": "https://doi.org/10.1016/j.genhosppsych.2010.10.002"
+    },
+    {
+      "ref": "Yeo, G., Fortuna, K. L., Lansford, J. E., & Rudolph, K. D. (2025). The effects of digital peer support interventions on physical and mental health: A review and meta-analysis. Epidemiology and Psychiatric Sciences, 34, e9.",
+      "url": "https://doi.org/10.1017/S2045796024000854"
+    },
+    {
+      "ref": "Zhang, S., Li, J., & Hu, X. (2022). Peer support interventions on quality of life, depression, anxiety, and self-efficacy among patients with cancer: A systematic review and meta-analysis. Patient Education and Counseling, 105, 3213-3224.",
+      "url": "https://doi.org/10.1016/j.pec.2022.07.008"
+    }
+  ],
+  "filter": {
+    "groups": [
+      "Betroffene",
+      "Angehörige",
+      "Eltern",
+      "Jugendliche"
+    ],
+    "formats": [
+      "Digital",
+      "Präsenz"
+    ]
+  }
+}
