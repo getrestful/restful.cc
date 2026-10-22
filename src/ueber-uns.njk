@@ -1,0 +1,76 @@
+---
+layout: layout.njk
+permalink: /ueber-uns/
+title: "Über uns · restful"
+description: "Das Team von restful und das Netzwerk, das uns begleitet: Soziale Arbeit, Public Health, Forschung und Technologie aus Bern."
+---
+<section class="sub-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="/">Startseite</a> · Über uns</p>
+    <p class="kicker">Über uns</p>
+    <h1>Die Menschen <i>hinter restful</i></h1>
+    <p class="lead">Bei restful arbeiten Fachleute aus Sozialer Arbeit, Public Health, Forschung und Technologie zusammen. Wir verbinden Erfahrungswissen von Betroffenen mit wissenschaftlicher Methodik und bauen mit Organisationen Angebote auf, die nachweislich wirken. Begleitet werden wir von einem Netzwerk aus Politik, Medizin, Wirtschaft und Zivilgesellschaft.</p>
+    <nav class="jump" aria-label="Auf dieser Seite">
+      <a href="#team">Team</a>
+      <a href="#netzwerk">Netzwerk</a>
+      <a href="#stellen">Offene Stellen</a>
+    </nav>
+  </div>
+</section>
+
+<section class="team" id="team">
+  <div class="wrap">
+    <p class="kicker">Team</p>
+    <h2>Soziale Arbeit, Public Health, Forschung <i>und Technologie</i></h2>
+    <figure class="group"><img src="/images/team-gruppe.jpg" width="1800" height="1201" alt="Das Team von restful"></figure>
+    <div class="pp-grid">
+      {%- for p in team %}
+      <div class="pp"><img src="/images/{{ p.img }}" width="800" height="800" loading="lazy" alt="{{ p.name }}"><b>{{ p.name }}</b><span>{{ p.role }}</span>{% if p.bio %}<small>{{ p.bio }}</small>{% endif %}</div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="network" id="netzwerk">
+  <div class="wrap">
+    <p class="kicker">Unser Netzwerk</p>
+    <h2 class="h-sm">Menschen, die <i>restful unterstützen</i></h2>
+    <p class="lead">Sie begleiten uns mit ihrer Erfahrung aus Politik, Medizin, Wirtschaft und Zivilgesellschaft.</p>
+    <div class="pp-grid sm">
+      {%- for p in advisory %}
+      <div class="pp sm"><img src="/images/{{ p.img }}" loading="lazy" alt="{{ p.name }}"><b>{{ p.name }}</b><span>{{ p.role }}</span></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section id="stellen" class="pt0">
+  <div class="wrap">
+    <p class="kicker">Offene Stellen</p>
+    <h2 class="h-sm">Mit uns <i>arbeiten</i></h2>
+    {%- if stellen.length %}
+    <div class="jobs">
+      {%- for j in stellen %}
+      <a class="job" href="{{ j.url }}" target="_blank" rel="noopener"><b>{{ j.title }}</b><span>{{ j.text }}</span></a>
+      {%- endfor %}
+    </div>
+    {%- else %}
+    <div class="jobs-empty">
+      <p>Aktuell sind keine Stellen offen. Neue Stellen veröffentlichen wir auf <a href="{{ site.jobsUrl }}" target="_blank" rel="noopener">join.com</a>.</p>
+      <p>Du möchtest trotzdem mit uns arbeiten? Schreib uns an <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+    </div>
+    {%- endif %}
+  </div>
+</section>
+
+<section id="kontakt" class="pt0">
+  <div class="wrap">
+    <div class="contact-box compact">
+      <div>
+        <h2>Lass uns <i>sprechen</i></h2>
+        <p>Im unverbindlichen Erstgespräch klären wir, ob ein Peer-Angebot zu deiner Organisation passt.</p>
+      </div>
+      <a class="btn btn-dark" href="/#kontakt">Erstgespräch vereinbaren</a>
+    </div>
+  </div>
+</section>

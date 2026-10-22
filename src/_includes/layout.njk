@@ -46,7 +46,7 @@
         </li>
         <li><a href="/#nutzen">Nutzen</a></li>
         <li><a href="/#einstieg">Einstieg</a></li>
-        <li><a href="/#team">Team</a></li>
+        <li><a href="/ueber-uns/"{% if page.url == "/ueber-uns/" %} aria-current="page"{% endif %}>Über uns</a></li>
       </ul>
     </nav>
     <a class="btn btn-dark" href="{{ '/#kontakt' if noContact else '#kontakt' }}">Erstgespräch</a>

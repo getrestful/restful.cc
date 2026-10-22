@@ -514,3 +514,15 @@ footer.site a:hover{text-decoration:underline}
 
 @media(max-width:860px){body *{min-width:0}h1,h2,h3,p{overflow-wrap:break-word;hyphens:auto}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Über uns: Offene Stellen */
+.jobs{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:40px}
+.job{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:24px;text-decoration:none}
+.job:hover{border-color:var(--navy)}
+.job b{display:block;font-family:var(--serif);font-weight:var(--hw);font-size:21px}
+.job span{display:block;margin-top:6px;color:var(--ink-soft);font-size:15px}
+.jobs-empty{margin-top:32px;background:var(--white);border:1px dashed var(--rose);border-radius:24px;padding:28px 30px;max-width:780px}
+.jobs-empty p{color:var(--ink-soft)}
+.jobs-empty p + p{margin-top:8px}
+.jobs-empty a{color:var(--navy);font-weight:600}
+@media(max-width:700px){.jobs{grid-template-columns:1fr}}

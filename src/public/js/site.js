@@ -130,3 +130,6 @@ const openTarget = () => {
 };
 openTarget();
 window.addEventListener('hashchange', openTarget);
+
+// Alte Sprungmarken der Startseite zeigen auf die Seite «Über uns»
+if (location.pathname === '/' && /^#(team|netzwerk)$/.test(location.hash)) location.replace('/ueber-uns/' + location.hash);

@@ -203,32 +203,6 @@ description: "restful baut mit Organisationen im Gesundheits- und Sozialwesen An
   </div>
 </section>
 
-<section class="team" id="team">
-  <div class="wrap">
-    <p class="kicker">Team</p>
-    <h2>Soziale Arbeit, Public Health, Forschung <i>und Technologie</i></h2>
-    <figure class="group"><img src="/images/team-gruppe.jpg" width="1800" height="1201" loading="lazy" alt="Das Team von restful"></figure>
-    <div class="pp-grid">
-      {%- for p in team %}
-      <div class="pp"><img src="/images/{{ p.img }}" width="800" height="800" loading="lazy" alt="{{ p.name }}"><b>{{ p.name }}</b><span>{{ p.role }}</span>{% if p.bio %}<small>{{ p.bio }}</small>{% endif %}</div>
-      {%- endfor %}
-    </div>
-  </div>
-</section>
-
-<section class="network" id="netzwerk">
-  <div class="wrap">
-    <p class="kicker">Unser Netzwerk</p>
-    <h2 class="h-sm">Menschen, die <i>restful unterstützen</i></h2>
-    <p class="lead">Sie begleiten uns mit ihrer Erfahrung aus Politik, Medizin, Wirtschaft und Zivilgesellschaft.</p>
-    <div class="pp-grid sm">
-      {%- for p in advisory %}
-      <div class="pp sm"><img src="/images/{{ p.img }}" loading="lazy" alt="{{ p.name }}"><b>{{ p.name }}</b><span>{{ p.role }}</span></div>
-      {%- endfor %}
-    </div>
-  </div>
-</section>
-
 <section id="kontakt">
   <div class="wrap">
     <div class="contact-box">
