@@ -57,6 +57,16 @@ description: "restful baut mit Organisationen im Gesundheits- und Sozialwesen An
   </div>
 </section>
 
+<aside class="wrap" aria-label="Unser Team">
+  <a class="team-teaser" href="/ueber-uns/">
+    <span class="avatars" aria-hidden="true">
+      {%- for p in team %}<img src="/images/{{ p.img }}" width="800" height="800" loading="lazy" alt="">{% endfor -%}
+    </span>
+    <span class="tt-txt"><b>Wer hinter restful steht</b><span>{{ team | length }} Menschen aus Sozialer Arbeit, Public Health, Forschung und Technologie, begleitet von einem Netzwerk aus Politik, Medizin und Wirtschaft.</span></span>
+    <span class="tt-link">Team kennenlernen →</span>
+  </a>
+</aside>
+
 <section id="wissenschaft">
   <div class="wrap">
     <p class="kicker">Methode &amp; Evidenz</p>

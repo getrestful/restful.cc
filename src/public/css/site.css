@@ -526,3 +526,15 @@ footer.site a:hover{text-decoration:underline}
 .jobs-empty p + p{margin-top:8px}
 .jobs-empty a{color:var(--navy);font-weight:600}
 @media(max-width:700px){.jobs{grid-template-columns:1fr}}
+
+/* Startseite: Teaser zum Team */
+.team-teaser{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;background:var(--sand);border-radius:28px;padding:22px 32px 22px 22px;text-decoration:none;transition:transform .2s}
+.team-teaser:hover{transform:translateY(-2px)}
+.team-teaser .avatars{display:flex}
+.team-teaser .avatars img{width:52px;height:52px;border-radius:50%;object-fit:cover;border:3px solid var(--sand)}
+.team-teaser .avatars img + img{margin-left:-14px}
+.tt-txt b{display:block;font-family:var(--serif);font-weight:var(--hw);font-size:22px;margin-bottom:2px}
+.tt-txt span{color:var(--ink-soft);font-size:15.5px}
+.tt-link{font-weight:600;color:var(--navy);border-bottom:1.5px solid var(--rose);white-space:nowrap}
+.team-teaser:hover .tt-link{color:var(--blue);border-color:var(--blue)}
+@media(max-width:860px){.team-teaser{grid-template-columns:1fr;gap:16px;padding:26px}.tt-link{justify-self:start}}
