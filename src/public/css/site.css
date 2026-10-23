@@ -122,9 +122,9 @@ header.site{padding:22px 0;position:sticky;top:0;z-index:30;background:color-mix
 
 /* Logo-Leiste */
 .logos{padding:34px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.logos .wrap{display:flex;align-items:center;gap:20px 32px;flex-wrap:wrap;justify-content:center}
+.logos .wrap{display:flex;align-items:center;gap:20px 28px;flex-wrap:wrap;justify-content:center}
 .logos p{font-size:14px;color:var(--ink-soft);width:100%;text-align:center}
-.logos img{height:38px;width:auto;filter:grayscale(1);opacity:.75;mix-blend-mode:multiply}
+.logos img{height:33px;width:auto;filter:grayscale(1);opacity:.75;mix-blend-mode:multiply}
 .logos img:hover{filter:none;opacity:1}
 
 /* Nutzen */
