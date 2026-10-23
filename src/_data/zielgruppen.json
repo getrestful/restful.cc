@@ -7,25 +7,29 @@
     "description": "Peers begleiten Patientinnen und Patienten vor, während und nach einer Behandlung und ergänzen die medizinische Versorgung. Für Spitäler, Kliniken und Arztpraxen.",
     "label": "Für Spitäler und Arztpraxen",
     "h1": "Begleitung, die <i>nach der Sprechstunde</i> weitergeht.",
-    "sub": "Peers sind Menschen, die eine ähnliche Diagnose oder Behandlung selbst erlebt haben. Sie begleiten Patientinnen und Patienten vor, während und nach einer Behandlung und ergänzen die medizinische Versorgung.",
-    "reasonsTitle": "Es gibt viele gute Gründe für Peers <i>im Behandlungspfad</i>",
-    "reasonsIntro": "Viele Fragen tauchen erst nach dem Termin auf, und in der Sprechstunde fehlt die Zeit für Alltagsfragen. Peers begleiten Patientinnen und Patienten dort, wo die Behandlung endet.",
+    "sub": "Die meisten Fragen tauchen erst zu Hause auf: nach der Diagnose, vor dem Eingriff, beim Austritt. Menschen, die dieselbe Behandlung selbst erlebt haben, begleiten deine Patientinnen und Patienten genau dann. Ohne zusätzliche Sprechstundenzeit und ohne IT-Projekt.",
+    "reasonsTitle": "Was Peers <i>im Behandlungspfad</i> bewirken",
+    "reasonsIntro": "In der Sprechstunde geht es um Befunde und Therapie. Wie es Patientinnen und Patienten mit der Behandlung geht, zeigt sich aber oft erst im Alltag: bei Ängsten, Nebenwirkungen, Fragen zu Arbeit und Familie. Genau hier helfen Menschen, die es selbst erlebt haben.",
     "reasons": [
       {
-        "title": "Empfehlung aus der Sprechstunde",
-        "text": "Ärztinnen und Pflege können den Peer-Kontakt einfach empfehlen, ohne zusätzlichen Aufwand."
+        "title": "Kein Aufwand in der Sprechstunde",
+        "text": "Ein Hinweis im Gespräch und ein QR-Code auf dem Flyer genügen. Anmeldung, Vermittlung und Begleitung laufen über die Plattform und eine Fachperson, nicht über dein Behandlungsteam."
       },
       {
-        "title": "Begleitung zwischen den Terminen",
-        "text": "Patientinnen tauschen sich mit jemandem aus, der die Situation kennt, digital und ortsunabhängig."
+        "title": "Begleitet zwischen den Terminen",
+        "text": "Angst vor dem Eingriff, Nebenwirkungen, der erste Arbeitstag nach der Therapie: Peers kennen diese Momente aus eigener Erfahrung und sind digital erreichbar, auch ausserhalb der Sprechzeiten."
       },
       {
-        "title": "Entlastung des Teams",
-        "text": "Alltagsfragen werden aufgefangen, Fachpersonen konzentrieren sich auf die Behandlung."
+        "title": "Sicher und klar abgegrenzt",
+        "text": "Peers geben keine medizinischen Ratschläge. Sie werden auf ihre Rolle vorbereitet, und bei Anzeichen einer Krise wird jederzeit eine Fachperson einbezogen."
       },
       {
-        "title": "Passt in Blended Care",
-        "text": "Lässt sich mit digitalen Angeboten entlang des Patientenpfads verbinden. Darin haben wir Projekterfahrung, etwa mit dem Inselspital Bern."
+        "title": "Peers müssen nicht von dir kommen",
+        "text": "Wo es passt, arbeiten wir mit Patientenorganisationen zusammen, die bereits erfahrene Peers haben. So startest du schneller und stärkst die Zusammenarbeit mit der Selbsthilfe."
+      },
+      {
+        "title": "Teil eines digitalen Patientenpfads",
+        "text": "Der Austausch lässt sich mit weiteren digitalen Schritten verbinden, von der Vorbereitung bis zur Nachsorge. Mit dem Inselspital Bern haben wir so den Swiss Sleep Circle umgesetzt."
       }
     ],
     "stats": [
@@ -51,22 +55,22 @@
     "steps": [
       {
         "title": "Einbettung",
-        "text": "Wir klären mit dir, an welcher Stelle im Patientenpfad das Angebot ansetzt.",
+        "text": "Gemeinsam bestimmen wir, wo im Patientenpfad das Angebot ansetzt, etwa nach der Diagnose, vor einem Eingriff oder beim Austritt.",
         "visual": "screen-1"
       },
       {
         "title": "Empfehlung",
-        "text": "Fachpersonen weisen auf das Angebot hin, etwa mit Flyer, QR-Code oder im Austrittsgespräch.",
+        "text": "Ärztinnen, Pflege oder Sozialdienst weisen auf das Angebot hin, mit Flyer, QR-Code oder im Austrittsgespräch. Mehr braucht es nicht.",
         "visual": "screen-2"
       },
       {
         "title": "Matching",
-        "text": "Eine Fachperson vermittelt einen Peer mit ähnlicher Diagnose oder Behandlung.",
+        "text": "Eine Fachperson schlägt anhand eines kurzen Fragebogens einen Peer mit ähnlicher Diagnose oder Behandlung vor.",
         "visual": "screen-3"
       },
       {
         "title": "Begleitung und Auswertung",
-        "text": "Austausch im eigenen Tempo, dazu regelmässige Auswertung für dein Team.",
+        "text": "Austausch im eigenen Tempo. Dein Team erhält anonymisierte Auswertungen und auf Wunsch die Ergebnisse kurzer Befragungen, etwa zur Zeit nach dem Austritt.",
         "visual": "chat"
       }
     ],
@@ -109,8 +113,12 @@
         "a": "Peers geben keine medizinischen Ratschläge, sondern teilen ihre Erfahrung. Das ist in den Regeln des Angebots festgehalten und Teil der Vorbereitung der Peers. Medizinische Fragen bleiben bei deinem Behandlungsteam."
       },
       {
-        "q": "Lässt sich das Angebot in unsere Abläufe einbinden?",
-        "a": "Am einfachsten über einen Link oder QR-Code, etwa auf Flyern, im Austrittsgespräch oder im Patientenportal. Weitergehende Anbindungen prüfen wir projektbezogen."
+        "q": "Was passiert, wenn es einer Patientin schlecht geht?",
+        "a": "Peers sind darauf vorbereitet, ihre Grenzen zu erkennen. Bei Anzeichen einer Krise wird jederzeit eine Fachperson einbezogen, und die Patientin wird an die richtige Stelle verwiesen."
+      },
+      {
+        "q": "Braucht es eine Anbindung an unser Klinikinformationssystem?",
+        "a": "Nein. Für den Start genügen ein Link oder ein QR-Code, etwa auf Flyern, im Austrittsgespräch oder im Patientenportal. Weitergehende Anbindungen prüfen wir projektbezogen."
       },
       {
         "q": "Gibt es das Angebot mehrsprachig?",
@@ -120,7 +128,17 @@
         "q": "Was kostet ein Pilot?",
         "a": "Das hängt von Umfang, Laufzeit und Begleitung ab. Nach einem ersten Gespräch erhältst du ein konkretes Angebot. Für Projekte in der Gesundheitsversorgung gibt es Fördermöglichkeiten, etwa bei Gesundheitsförderung Schweiz."
       }
-    ]
+    ],
+    "commelia": {
+      "title": "Fragen zwischen den Terminen <i>an einem Ort</i>",
+      "text": "Mit Commelia beantwortet dein Team Patientenfragen per Web-Chat, E-Mail oder WhatsApp aus einem gemeinsamen Posteingang. Ein KI-Assistent übernimmt Routinefragen zu Abläufen, medizinische Anliegen gehen direkt an eure Fachpersonen.",
+      "items": [
+        "Pflege, Ärzteschaft und Peers antworten gemeinsam, mit klarer Zuteilung",
+        "Übergabe an einen Menschen bei sensiblen Themen oder Krisensignalen",
+        "Automatische Übersetzung für Patientinnen und Patienten in anderen Sprachen",
+        "Gehostet in der Schweiz oder auf dem eigenen Server"
+      ]
+    }
   },
   {
     "slug": "industrie",
@@ -130,25 +148,29 @@
     "description": "Für Patient-Advocacy-Abteilungen baut restful medikamentenagnostische Patientengemeinschaften auf, unabhängig von einem Produkt und mit klarer Rollentrennung.",
     "label": "Für Industrie und Patient Advocacy",
     "h1": "Patientengemeinschaften aufbauen, <i>unabhängig von einem Produkt.</i>",
-    "sub": "Für deine Patient-Advocacy-Arbeit bauen wir medikamentenagnostische Gemeinschaften auf: rund um ein Themenfeld oder Krankheitsbild, nicht um ein einzelnes Präparat. Mit klarer Rollentrennung.",
-    "reasonsTitle": "Es gibt viele gute Gründe für <i>unabhängige</i> Patientengemeinschaften",
-    "reasonsIntro": "Betroffene erwarten, dass Angebote unabhängig sind, und die regulatorischen Anforderungen sind hoch. Wir bauen Gemeinschaften auf, die Betroffenen gehören, mit klarer Rollentrennung.",
+    "sub": "Für Patient Advocacy und Medical Affairs bauen wir Gemeinschaften rund um ein Krankheitsbild auf, nicht um ein Präparat. Betroffene finden Austausch und Halt, du gewinnst ein tieferes Verständnis ihres Alltags. Mit klarer Rollentrennung und ohne Zugriff auf Personendaten.",
+    "reasonsTitle": "Was eine unabhängige Gemeinschaft <i>dir bringt</i>",
+    "reasonsIntro": "Patientinnen und Patienten wollen Austausch, keine Werbung. Wenn eine Gemeinschaft unabhängig ist und den Betroffenen gehört, entsteht Vertrauen und damit ein ehrlicher Blick auf den Alltag mit der Krankheit.",
     "reasons": [
       {
-        "title": "Aufbau der Gemeinschaft",
-        "text": "Eine Community in einem Themenfeld oder Krankheitsbild, die über die Zeit wächst und Bestand hat."
+        "title": "Verstehen, wie es Betroffenen wirklich geht",
+        "text": "Freiwillige, anonyme Befragungen in der Gemeinschaft zeigen Belastungen und Bedürfnisse im Alltag, über klinische Endpunkte hinaus. Wiederholt durchgeführt, machen sie Veränderungen über die Zeit sichtbar."
       },
       {
-        "title": "Unabhängigkeit",
-        "text": "Medikamentenagnostisch, mit klarer Trennung zwischen deiner Advocacy-Funktion und dem Angebot."
+        "title": "Glaubwürdig dank Unabhängigkeit",
+        "text": "Medikamentenagnostisch, ohne Einfluss auf die Inhalte im Austausch. Rollen, Finanzierung und Sichtbarkeit legen wir schriftlich und transparent fest. Das schützt die Betroffenen und deinen Ruf."
       },
       {
-        "title": "Plattform und Moderation",
-        "text": "Die gleiche Infrastruktur wie bei Patientenorganisationen, inklusive fachlicher Moderation."
+        "title": "Gemeinsam mit Patientenorganisationen",
+        "text": "Wo es passt, trägt eine Patientenorganisation das Angebot. Wir bringen Erfahrung aus der Zusammenarbeit mit 12 Organisationen im Schweizer Gesundheits- und Sozialwesen mit."
       },
       {
-        "title": "Wirkungsmessung",
-        "text": "Daten und Evidenz aus dem laufenden Betrieb, für interne Steuerung und Berichterstattung."
+        "title": "Patient Education, die ankommt",
+        "text": "Wissen zur Erkrankung, verbunden mit dem Erfahrungswissen von Peers: Betroffene lernen von Menschen, die vor den gleichen Fragen standen. Das stärkt die Selbstwirksamkeit."
+      },
+      {
+        "title": "National und mehrsprachig",
+        "text": "Plattform, Moderation und Peers aus einer Hand, mehrsprachig für nationale Rollouts und mit einer durchgehenden Ansprechperson."
       }
     ],
     "stats": [
@@ -174,12 +196,12 @@
     "steps": [
       {
         "title": "Klärung",
-        "text": "Gemeinsame Definition von Themenfeld, Zielgruppe und Rollen, inklusive Governance.",
+        "text": "Themenfeld, Zielgruppe, Rollen und Governance legen wir gemeinsam und schriftlich fest.",
         "visual": "screen-1"
       },
       {
         "title": "Partnerschaft",
-        "text": "Wo sinnvoll, mit einer Patientenorganisation als Trägerin des Angebots.",
+        "text": "Wo sinnvoll, trägt eine Patientenorganisation das Angebot. Wir begleiten die Zusammenarbeit von Beginn an.",
         "visual": "screen-2"
       },
       {
@@ -188,8 +210,8 @@
         "visual": "screen-3"
       },
       {
-        "title": "Betrieb und Reporting",
-        "text": "Eine durchgehende Ansprechperson und regelmässige, anonymisierte Auswertungen.",
+        "title": "Insights und Reporting",
+        "text": "Regelmässige, anonymisierte Auswertungen und, wenn vereinbart, Befragungen zu Alltag und Bedürfnissen der Betroffenen.",
         "visual": "report"
       }
     ],
@@ -219,7 +241,11 @@
       },
       {
         "q": "Sieht unser Unternehmen personenbezogene Daten?",
-        "a": "Nein. Du erhältst ausschliesslich anonymisierte Auswertungen."
+        "a": "Nein. Du erhältst ausschliesslich anonymisierte, zusammengefasste Auswertungen. Befragungen sind freiwillig und anonym."
+      },
+      {
+        "q": "Welche Erkenntnisse erhalten wir aus der Gemeinschaft?",
+        "a": "Zusammengefasste Kennzahlen zu Nutzung und Wohlbefinden und, wenn vereinbart, die Ergebnisse freiwilliger Befragungen. Was ausgewertet wird, legen wir gemeinsam mit der Patientenorganisation fest. Gespräche im Austausch bleiben vertraulich."
       },
       {
         "q": "Ist unser Unternehmen im Angebot sichtbar?",
@@ -227,13 +253,14 @@
       },
       {
         "q": "Wer ist unsere Ansprechperson?",
-        "a": "Lona Gaugler, Industry Lead bei restful, begleitet Projekte mit der Industrie von der ersten Klärung bis zum Betrieb."
+        "a": "Lona Gaugler, Industry Lead bei restful, mit Hintergrund in Onkologie und molekularer Medizin. Sie begleitet Projekte mit der Industrie von der ersten Klärung bis zum Betrieb."
       }
     ],
     "contact": {
       "name": "Lona Gaugler",
       "role": "Industry Lead"
-    }
+    },
+    "commelia": null
   },
   {
     "slug": "versicherer",
@@ -243,25 +270,29 @@
     "description": "Austausch unter Betroffenen als niederschwellige, skalierbare und messbare Gesundheitsintervention für Kranken- und Zusatzversicherer.",
     "label": "Für Versicherer",
     "h1": "Wirksame Unterstützung, <i>die Ressourcen schont.</i>",
-    "sub": "Peers sind Menschen, die eine ähnliche gesundheitliche Situation selbst erlebt haben. Ihr Austausch ist eine niederschwellige, gut skalierbare Gesundheitsintervention, die professionelle Versorgung ergänzt.",
-    "reasonsTitle": "Es gibt viele gute Gründe, Peer-Angebote <i>in dein Gesundheitsprogramm</i> aufzunehmen",
-    "reasonsIntro": "Chronische Erkrankungen nehmen zu, professionelle psychosoziale Begleitung ist knapp und teuer. Austausch unter Betroffenen ergänzt die Versorgung niederschwellig und skalierbar.",
+    "sub": "Wer mit einer chronischen Krankheit, einer Krebsdiagnose oder psychischer Belastung lebt, profitiert von Menschen, die das selbst kennen. Als Leistung in deinem Gesundheitsprogramm erreicht Peer-Unterstützung viele Versicherte: digital, wirksam und mit überschaubarem Aufwand.",
+    "reasonsTitle": "Warum sich Peer-Unterstützung <i>für Versicherer</i> lohnt",
+    "reasonsIntro": "Professionelle psychosoziale Begleitung ist knapp und teuer. Peer-Unterstützung ergänzt sie dort, wo sie fehlt: im Alltag, zwischen den Terminen und niederschwellig.",
     "reasons": [
       {
-        "title": "Ressourceneffizient",
-        "text": "Peers ergänzen professionelle Leistungen, statt sie zu ersetzen. So erreichst du viele Versicherte mit überschaubarem Betreuungsaufwand."
+        "title": "Ein Mehrwert, den Versicherte spüren",
+        "text": "Menschen statt Ratgebertexte: Versicherte erleben deine Versicherung als Partnerin in einer schwierigen Lebensphase. Das stärkt die Bindung, gerade in der Zusatzversicherung."
       },
       {
-        "title": "Gut skalierbar",
-        "text": "Digitale Formate erreichen Versicherte ortsunabhängig und, wo nötig, in mehreren Sprachen."
+        "title": "Wirksam, auch präventiv",
+        "text": "Eine Metaanalyse von 73 Studien zeigt deutliche Effekte digitaler Peer-Unterstützung auf die psychische Gesundheit, auch bei Menschen ohne Diagnose."
       },
       {
-        "title": "Evidenzbasiert",
-        "text": "Gestützt auf Studien zu chronischen Erkrankungen, psychischer Gesundheit und Prävention."
+        "title": "Ressourceneffizient und skalierbar",
+        "text": "Peers ergänzen Fachleute, statt sie zu ersetzen. Digital und mehrsprachig erreichst du viele Versicherte mit überschaubarem Betreuungsaufwand."
+      },
+      {
+        "title": "Vertrauen durch Datenschutz",
+        "text": "Du siehst nicht, wer das Angebot nutzt. Gerade das senkt die Hemmschwelle, auch über persönliche Themen zu sprechen."
       },
       {
         "title": "Messbar",
-        "text": "Auswertungen zu Nutzung, Zufriedenheit und psychosozialen Effekten."
+        "text": "Anonymisierte Kennzahlen zu Nutzung, Zufriedenheit und empfundener Unterstützung, auf Wunsch mit wissenschaftlicher Begleitung."
       }
     ],
     "stats": [
@@ -287,7 +318,7 @@
     "steps": [
       {
         "title": "Zielgruppe wählen",
-        "text": "Gemeinsam bestimmen wir, für welche Versichertengruppe das Angebot den grössten Nutzen hat.",
+        "text": "Gemeinsam bestimmen wir, welche Versichertengruppe am meisten profitiert, zum Beispiel Menschen mit einer chronischen Erkrankung oder pflegende Angehörige.",
         "visual": "screen-1"
       },
       {
@@ -297,7 +328,7 @@
       },
       {
         "title": "Zugang schaffen",
-        "text": "Einbindung in bestehende Kanäle, etwa Kunden-App, Gesundheitsportal oder Beratung.",
+        "text": "Einbindung in bestehende Kanäle wie Kunden-App, Gesundheitsportal, Newsletter oder Care Management.",
         "visual": "screen-2"
       },
       {
@@ -328,12 +359,16 @@
     },
     "faq": [
       {
+        "q": "Für welche Versicherten eignet sich das Angebot?",
+        "a": "Zum Beispiel für Menschen mit einer chronischen Erkrankung, nach einer Krebsdiagnose oder mit psychischer Belastung, für pflegende Angehörige und für Versicherte, die nach längerer Krankheit an den Arbeitsplatz zurückkehren."
+      },
+      {
         "q": "Ersetzt das Angebot ärztliche Leistungen?",
         "a": "Nein. Peer-Begleitung ergänzt die Versorgung, sie ersetzt keine Behandlung."
       },
       {
         "q": "Sehen wir, wer das Angebot nutzt?",
-        "a": "Nein. Ausgewertet werden nur anonymisierte Kennzahlen."
+        "a": "Nein. Ausgewertet werden nur anonymisierte Kennzahlen. Das ist bewusst so: Vertraulichkeit ist die Voraussetzung dafür, dass Versicherte das Angebot nutzen."
       },
       {
         "q": "Gibt es Daten zur Kosteneffektivität?",
@@ -343,7 +378,17 @@
         "q": "Wie schnell lässt sich ein Pilot starten?",
         "a": "Das hängt von Zielgruppe und Zugang ab. Im ersten Gespräch erstellen wir gemeinsam einen konkreten Zeitplan."
       }
-    ]
+    ],
+    "commelia": {
+      "title": "Gesundheitsberatung per Chat, <i>mit Mensch und KI</i>",
+      "text": "Mit Commelia beantworten Gesundheitscoaches und Peers die Fragen deiner Versicherten aus einem gemeinsamen Posteingang, per Web-Chat, E-Mail oder WhatsApp. Ein KI-Assistent übernimmt Routinefragen und übergibt, sobald ein Mensch gefragt ist.",
+      "items": [
+        "Regeln leiten jede Anfrage an die passende Gruppe, etwa nach Sprache oder Thema",
+        "Automatische Übersetzung und Antworten in einfacher Sprache",
+        "Auswertungen zu Antwortzeiten und Rückmeldungen, ohne Nachrichtentexte",
+        "Gehostet in der Schweiz oder auf dem eigenen Server"
+      ]
+    }
   },
   {
     "slug": "iv-stellen",
@@ -353,25 +398,29 @@
     "description": "Peers begleiten Versicherte durch Abklärung, Massnahmen und Wiedereinstieg und ergänzen die Arbeit der Eingliederungsfachpersonen. Für IV-Stellen.",
     "label": "Für IV-Stellen",
     "h1": "Wer es selbst erlebt hat, <i>macht Mut für den nächsten Schritt.</i>",
-    "sub": "Peers sind Menschen, die eine ähnliche Situation selbst durchlebt haben. Im IV-Setting begleiten sie Versicherte durch Abklärung, Massnahmen und Wiedereinstieg und ergänzen so die Arbeit der Eingliederungsfachpersonen.",
-    "reasonsTitle": "Es gibt viele gute Gründe für Peers <i>im IV-Setting</i>",
-    "reasonsIntro": "Abklärungen und Massnahmen dauern, viele Versicherte fühlen sich dabei allein und verlieren Motivation. Peers geben Orientierung und Hoffnung und entlasten deine Eingliederungsfachpersonen.",
+    "sub": "Peers haben selbst eine Eingliederung oder eine ähnliche Krise erlebt. Sie begleiten Versicherte durch Abklärung, Massnahmen und Wiedereinstieg, auf Augenhöhe und ausserhalb der Behörde. Das ergänzt die Arbeit deiner Eingliederungsfachpersonen.",
+    "reasonsTitle": "Was Peers <i>im IV-Verfahren</i> bewirken",
+    "reasonsIntro": "Eingliederung gelingt, wenn Versicherte dranbleiben. Doch Abklärungen dauern, Massnahmen fordern, und viele erleben die IV vor allem als Behörde. Peers schaffen Vertrauen, weil sie den Weg selbst gegangen sind.",
     "reasons": [
       {
-        "title": "Orientierung",
-        "text": "Peers erklären aus eigener Erfahrung, wie Abklärung und Massnahmen ablaufen, und nehmen Ängste."
+        "title": "Vertrauen von aussen",
+        "text": "Peers sind keine Mitarbeitenden der IV. Versicherte sprechen offener über Ängste und Zweifel, und was sie erzählen, bleibt vertraulich."
       },
       {
-        "title": "Motivation und Hoffnung",
-        "text": "Wer den Wiedereinstieg geschafft hat, zeigt, dass es möglich ist."
+        "title": "Dranbleiben, wenn es schwierig wird",
+        "text": "Wer den Wiedereinstieg geschafft hat, macht Mut, gerade bei Rückschlägen während einer Massnahme."
       },
       {
-        "title": "Entlastung",
-        "text": "Alltagsfragen landen bei den Peers. Fachpersonen gewinnen Zeit für das, was nur sie leisten können."
+        "title": "Orientierung im Verfahren",
+        "text": "Peers erklären aus eigener Erfahrung, wie Abklärung, Massnahmen und Gespräche ablaufen, und nehmen so viel Unsicherheit."
       },
       {
-        "title": "Klare Rollen",
-        "text": "Peers beraten nicht in Versicherungsfragen. Entscheide bleiben bei der IV-Stelle."
+        "title": "Passend für junge und psychisch belastete Versicherte",
+        "text": "Digital, niederschwellig und im eigenen Tempo. So erreicht das Angebot gerade jene Gruppen, auf die die Weiterentwicklung der IV besonders setzt."
+      },
+      {
+        "title": "Klare Rollen, entlastete Fachpersonen",
+        "text": "Peers beraten nicht in Versicherungsfragen, Entscheide bleiben bei der IV-Stelle. Alltagsfragen und Sorgen landen bei den Peers, deine Fachpersonen gewinnen Zeit."
       }
     ],
     "stats": [
@@ -402,7 +451,7 @@
       },
       {
         "title": "Matching",
-        "text": "Eine Fachperson vermittelt einen Peer mit ähnlicher Erfahrung, etwa gleiche Branche oder ähnliche Diagnose.",
+        "text": "Eine Fachperson vermittelt einen Peer mit ähnlicher Erfahrung, etwa aus der gleichen Branche, mit ähnlicher Diagnose oder in einer ähnlichen Lebensphase.",
         "visual": "screen-3"
       },
       {
@@ -435,17 +484,31 @@
         "a": "Ja. Versicherte entscheiden selbst, ob und wie lange sie das Angebot nutzen."
       },
       {
-        "q": "Erfährt die IV-Stelle, was im Austausch besprochen wird?",
-        "a": "Nein. Der Austausch ist vertraulich. Die IV-Stelle erhält nur anonymisierte Kennzahlen zu Nutzung und Zufriedenheit."
+        "q": "Für welche Versicherten eignet sich das Angebot?",
+        "a": "Für Versicherte in Frühintervention, Integrationsmassnahmen oder beruflichen Massnahmen, besonders bei psychischer Belastung und bei jungen Erwachsenen."
       },
       {
-        "q": "Woher kommen die Peers?",
-        "a": "Peers sind Menschen, die selbst eine Eingliederung oder eine ähnliche Situation erlebt haben. Gemeinsam mit dir gewinnen wir sie, bereiten sie auf ihre Rolle vor und begleiten sie im Austausch."
+        "q": "Sind die Peers Mitarbeitende der IV?",
+        "a": "Nein. Peers sind Menschen, die selbst eine Eingliederung oder eine ähnliche Situation erlebt haben. Gemeinsam mit dir gewinnen wir sie, bereiten sie auf ihre Rolle vor und begleiten sie. Dass sie ausserhalb des Verfahrens stehen, schafft Vertrauen."
+      },
+      {
+        "q": "Erfährt die IV-Stelle, was im Austausch besprochen wird?",
+        "a": "Nein. Der Austausch ist vertraulich. Die IV-Stelle erhält nur anonymisierte Kennzahlen zu Nutzung und Zufriedenheit."
       },
       {
         "q": "Wie wird das Angebot finanziert?",
         "a": "Das klären wir gemeinsam, zum Beispiel über einen zeitlich begrenzten Pilot. Im ersten Gespräch zeigen wir dir, welche Varianten für deine IV-Stelle in Frage kommen."
       }
-    ]
+    ],
+    "commelia": {
+      "title": "Fragen zum Verfahren, <i>verständlich beantwortet</i>",
+      "text": "Mit Commelia beantwortet deine IV-Stelle Fragen von Versicherten per Web-Chat, E-Mail oder WhatsApp aus einem gemeinsamen Posteingang. Ein KI-Assistent erklärt Abläufe anhand eures geprüften Wissens und übergibt, sobald es um den eigenen Fall geht.",
+      "items": [
+        "Antworten in einfacher Sprache oder automatisch übersetzt",
+        "Fachpersonen und Peers antworten gemeinsam, mit klaren Regeln, wer was übernimmt",
+        "Übergabe an einen Menschen bei sensiblen Themen oder Krisensignalen",
+        "Gehostet in der Schweiz oder auf dem eigenen Server"
+      ]
+    }
   }
 ]

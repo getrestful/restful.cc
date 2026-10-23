@@ -538,3 +538,6 @@ footer.site a:hover{text-decoration:underline}
 .tt-link{font-weight:600;color:var(--navy);border-bottom:1.5px solid var(--rose);white-space:nowrap}
 .team-teaser:hover .tt-link{color:var(--blue);border-color:var(--blue)}
 @media(max-width:860px){.team-teaser{grid-template-columns:1fr;gap:16px;padding:26px}.tt-link{justify-self:start}}
+
+/* Zielgruppenseiten: Teaser für Commelia */
+.cm.cm-teaser{margin-top:0;background:var(--white);border:1px solid var(--line)}

@@ -134,7 +134,32 @@ eleventyComputed:
   </div>
 </section>
 
-<section aria-labelledby="faq-titel">
+{%- if zg.commelia %}
+{%- set cm = digitalprojekte.commelia %}
+<section class="pt0" aria-labelledby="cm-titel">
+  <div class="wrap">
+    <article class="cm cm-teaser">
+      <div class="cm-txt">
+        <span class="cm-badge">Auch von restful: Commelia</span>
+        <h3 id="cm-titel">{{ zg.commelia.title | safe }}</h3>
+        <p class="in">{{ zg.commelia.text }}</p>
+        <ul class="cm-list">
+          {%- for it in zg.commelia.items %}
+          <li><span class="c">{{ icon("check", 14, 2.6) | safe }}</span>{{ it }}</li>
+          {%- endfor %}
+        </ul>
+        <div class="cm-ctas">
+          <a class="btn btn-violet" href="{{ cm.url }}" target="_blank" rel="noopener">Commelia kennenlernen</a>
+          <small>30 Tage kostenlos testen, keine Kreditkarte nötig.</small>
+        </div>
+      </div>
+      <div class="cm-vis"><img src="/images/{{ cm.image }}" width="1020" height="880" loading="lazy" alt="{{ cm.imageAlt }}"></div>
+    </article>
+  </div>
+</section>
+{%- endif %}
+
+<section class="pt0" aria-labelledby="faq-titel">
   <div class="wrap faq">
     <div><p class="kicker">Häufige Fragen</p><h2 id="faq-titel">Was du <i>vorher wissen</i> willst</h2></div>
     <div>{{ faqList(zg.faq) }}</div>
