@@ -30,6 +30,14 @@
 <body>
 <a class="skip" href="#inhalt">Zum Inhalt springen</a>
 
+{%- if minimalHeader %}
+<header class="site">
+  <div class="wrap nav">
+    <a class="logo" href="/"><img src="/images/logo.svg" alt="restful, zur Startseite" width="129" height="38"></a>
+    <span class="nav-label">{{ minimalHeader }}</span>
+  </div>
+</header>
+{%- else %}
 <header class="site" data-header>
   <div class="wrap nav">
     <a class="logo" href="/"><img src="/images/logo.svg" alt="restful, zur Startseite" width="129" height="38"></a>
@@ -53,6 +61,7 @@
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="hauptmenue" data-menu-btn>{{ icon("menu", 22, 2) | safe }}<span class="sr-only">Menü</span></button>
   </div>
 </header>
+{%- endif %}
 
 <main id="inhalt">
 {{ content | safe }}

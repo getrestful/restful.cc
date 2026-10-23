@@ -1,0 +1,83 @@
+---
+layout: layout.njk
+permalink: /navigator/
+title: "Navigator: Unterstützung finden · restful"
+description: "In zwei Schritten zu Anlaufstellen in der Schweiz: Austausch mit Menschen mit ähnlicher Erfahrung, Beratung, Informationen und Entlastung im Alltag."
+noindex: true
+noContact: true
+minimalHeader: "Navigator"
+---
+{% from "icon.njk" import icon %}
+
+<section class="wn-hero">
+  <div class="wrap">
+    <p class="kicker">Navigator</p>
+    <h1>Finde die Unterstützung, <i>die zu dir passt</i></h1>
+    <p class="lead">Zwei Fragen, dann zeigen wir dir passende Anlaufstellen in der Schweiz: Menschen mit ähnlicher Erfahrung, persönliche Beratung, verlässliche Informationen und Hilfe im Alltag.</p>
+    <p class="wn-notice">{{ icon("shield", 18) | safe }}<span>Der Navigator ersetzt keine medizinische Beratung. Im Notfall: <a href="tel:144">144</a>. Wenn du nicht mehr weiterweisst, ist die Dargebotene Hand rund um die Uhr da: <a href="tel:143">143</a>.</span></p>
+  </div>
+</section>
+
+<section class="wn pt0" data-navigator>
+  <div class="wrap">
+    <div class="wn-progress" aria-hidden="true"><span data-bar></span></div>
+
+    <div class="wn-step on" data-step="1">
+      <p class="wn-count">Frage 1 von 2</p>
+      <h2 class="h-sm" tabindex="-1">Worum <i>geht es?</i></h2>
+      <fieldset class="wn-roles">
+        <legend>Ich suche Unterstützung</legend>
+        {%- for r in navigator.roles %}
+        <label><input type="radio" name="fuer" value="{{ r.key }}"{% if loop.first %} checked{% endif %}><span>{{ r.label }}</span></label>
+        {%- endfor %}
+      </fieldset>
+      <div class="wn-topics" role="group" aria-label="Thema wählen">
+        {%- for t in navigator.topics %}
+        <button type="button" class="wn-topic" data-topic="{{ t.key }}" aria-pressed="false"><b>{{ t.label }}</b><span>{{ t.hint }}</span></button>
+        {%- endfor %}
+      </div>
+    </div>
+
+    <div class="wn-step" data-step="2">
+      <p class="wn-count">Frage 2 von 2 <span class="wn-picked" data-picked></span></p>
+      <h2 class="h-sm" tabindex="-1">Was würde dir <i>jetzt</i> helfen?</h2>
+      <div class="wn-needs" role="group" aria-label="Was würde dir helfen?">
+        {%- for n in navigator.needs %}
+        <button type="button" class="wn-need{% if n.key == 'krise' %} wn-need-krise{% endif %}" data-need="{{ n.key }}" aria-pressed="false"><span class="ic">{{ icon(n.icon, 22) | safe }}</span><b>{{ n.label }}</b><span>{{ n.hint }}</span></button>
+        {%- endfor %}
+      </div>
+      <p class="wn-back"><button type="button" class="link-btn" data-goto="1">← Thema ändern</button></p>
+    </div>
+
+    <div class="wn-step wn-result" data-step="3">
+      <p class="wn-count" data-summary></p>
+      <h2 class="h-sm" tabindex="-1" data-result-title></h2>
+      <p class="wn-sub" data-result-sub></p>
+      <div class="wn-cards" data-primary></div>
+      <div data-more-wrap>
+        <h3 class="wn-more-title">Weitere Anlaufstellen</h3>
+        <div class="wn-list" data-more></div>
+      </div>
+      <aside class="wn-crisis" aria-label="Sofortige Hilfe" data-crisis>
+        <b>Wenn es dir gerade nicht gut geht</b>
+        <ul>
+          {%- for c in navigator.crisis %}
+          <li><a href="tel:{{ c.phone }}">{{ c.phone }}</a><span>{{ c.name }}: {{ c.desc }}</span></li>
+          {%- endfor %}
+        </ul>
+      </aside>
+      <div class="wn-actions">
+        <button type="button" class="btn btn-line" data-goto="2">Andere Unterstützung wählen</button>
+        <button type="button" class="link-btn" data-restart>Neu starten</button>
+      </div>
+      <p class="wn-missing">Fehlt eine Anlaufstelle, die dir geholfen hat? Schreib uns an <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+    </div>
+
+    <noscript>
+      <p class="wn-noscript">Der Navigator braucht JavaScript. Eine gute erste Anlaufstelle ist die <a href="https://www.selbsthilfeschweiz.ch/shch/de/selbsthilfeangebote/suche.html">Suche nach Selbsthilfegruppen</a> von Selbsthilfe Schweiz. In einer Krise ist die Dargebotene Hand rund um die Uhr erreichbar: <a href="tel:143">143</a>.</p>
+    </noscript>
+  </div>
+</section>
+
+<script type="application/json" id="wn-data">{{ navigator | dump | safe }}</script>
+<script src="/js/navigator.js" defer></script>

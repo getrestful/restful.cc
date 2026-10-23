@@ -1,0 +1,1865 @@
+{
+ "topics": [
+  {
+   "key": "krebs",
+   "label": "Krebs",
+   "hint": "alle Krebsarten, auch nach der Therapie"
+  },
+  {
+   "key": "herz",
+   "label": "Herz, Kreislauf & Hirnschlag",
+   "hint": "Herzkrankheit, Bluthochdruck, Hirnschlag"
+  },
+  {
+   "key": "lunge",
+   "label": "Lunge & Atemwege",
+   "hint": "Asthma, COPD, Schlafapnoe"
+  },
+  {
+   "key": "diabetes",
+   "label": "Diabetes & Übergewicht",
+   "hint": "Diabetes Typ 1 und 2, Adipositas"
+  },
+  {
+   "key": "rheuma",
+   "label": "Rheuma, Rücken & Gelenke",
+   "hint": "Arthrose, Arthritis, Morbus Bechterew"
+  },
+  {
+   "key": "neuro",
+   "label": "Neurologie",
+   "hint": "MS, Parkinson, Epilepsie, Hirnverletzung"
+  },
+  {
+   "key": "demenz",
+   "label": "Demenz & Vergesslichkeit",
+   "hint": "Alzheimer und andere Demenzformen"
+  },
+  {
+   "key": "psyche",
+   "label": "Psychische Gesundheit",
+   "hint": "Depression, Angst, Erschöpfung"
+  },
+  {
+   "key": "sucht",
+   "label": "Sucht & Abhängigkeit",
+   "hint": "Alkohol, Medikamente, andere Substanzen"
+  },
+  {
+   "key": "selten",
+   "label": "Seltene Krankheit",
+   "hint": "zum Beispiel Cystische Fibrose"
+  },
+  {
+   "key": "verdauung",
+   "label": "Darm, Niere & Verdauung",
+   "hint": "Crohn, Colitis, Zöliakie, Nierenkrankheit"
+  },
+  {
+   "key": "haut",
+   "label": "Haut & Allergien",
+   "hint": "Psoriasis, Neurodermitis, Allergien"
+  },
+  {
+   "key": "behinderung",
+   "label": "Behinderung",
+   "hint": "körperlich, kognitiv oder cerebral"
+  },
+  {
+   "key": "familie",
+   "label": "Kind & Familie",
+   "hint": "krankes Kind, Frühgeburt, Verlust, alleinerziehend"
+  },
+  {
+   "key": "longcovid",
+   "label": "Long Covid",
+   "hint": "anhaltende Beschwerden nach Covid"
+  },
+  {
+   "key": "andere",
+   "label": "Etwas anderes",
+   "hint": "andere Krankheit oder noch unklar"
+  }
+ ],
+ "roles": [
+  {
+   "key": "selbst",
+   "label": "für mich"
+  },
+  {
+   "key": "angehoerige",
+   "label": "für eine nahestehende Person"
+  }
+ ],
+ "needs": [
+  {
+   "key": "austausch",
+   "icon": "chat",
+   "label": "Mit jemandem reden, der es kennt",
+   "hint": "Menschen mit ähnlicher Erfahrung",
+   "title": "Menschen, die <i>verstehen</i>, wie es ist"
+  },
+  {
+   "key": "info",
+   "icon": "book",
+   "label": "Verstehen, was auf mich zukommt",
+   "hint": "Verlässliche Informationen",
+   "title": "Verlässlich <i>informiert</i>"
+  },
+  {
+   "key": "beratung",
+   "icon": "users",
+   "label": "Persönliche Beratung",
+   "hint": "Eine Fachperson, die zuhört und weiterhilft",
+   "title": "Persönliche <i>Beratung</i>"
+  },
+  {
+   "key": "geld",
+   "icon": "coins",
+   "label": "Geld, Arbeit & Versicherung",
+   "hint": "IV, Krankenkasse, Arbeitsplatz, finanzielle Hilfe",
+   "title": "Geld, Arbeit <i>und Versicherung</i>"
+  },
+  {
+   "key": "alltag",
+   "icon": "home",
+   "label": "Entlastung im Alltag",
+   "hint": "Pflege, Hilfe zu Hause, Zeit für mich",
+   "title": "Entlastung <i>im Alltag</i>"
+  },
+  {
+   "key": "aktiv",
+   "icon": "activity",
+   "label": "Selbst aktiv werden",
+   "hint": "Kurse, Bewegung, gut mit der Krankheit leben",
+   "title": "Selbst <i>aktiv</i> werden"
+  },
+  {
+   "key": "krise",
+   "icon": "lifebuoy",
+   "label": "Es geht mir gerade gar nicht gut",
+   "hint": "Sofort mit jemandem sprechen",
+   "title": "Hilfe, <i>sofort</i>"
+  }
+ ],
+ "types": {
+  "peer": "Austausch mit Peers",
+  "gruppe": "Selbsthilfe & Gruppen",
+  "beratung": "Beratung",
+  "info": "Information",
+  "kurs": "Kurs & Training",
+  "alltag": "Entlastung",
+  "recht": "Recht & Finanzen"
+ },
+ "offers": [
+  {
+   "id": "selbsthilfe",
+   "name": "Selbsthilfegruppe in deiner Nähe",
+   "org": "Selbsthilfe Schweiz",
+   "desc": "In Selbsthilfegruppen treffen sich Menschen mit ähnlichen Erfahrungen, vor Ort oder online. Die Suche zeigt Gruppen zu fast jedem Thema in deiner Region.",
+   "url": "https://www.selbsthilfeschweiz.ch/shch/de/selbsthilfeangebote/suche.html",
+   "topics": [
+    "alle"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "gruppe",
+   "formats": [
+    "vor Ort",
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "action": "Gruppe suchen"
+  },
+  {
+   "id": "spo",
+   "name": "Unabhängige Patientenberatung",
+   "org": "SPO Schweizerische Patientenorganisation",
+   "desc": "Wenn du bei deiner Behandlung mitentscheiden willst oder Fragen zu Rechten, Rechnungen oder einem Behandlungsfehler hast. Die telefonische Erstberatung ist kostenlos.",
+   "url": "https://www.spo.ch/angebot/beratung",
+   "topics": [
+    "alle"
+   ],
+   "needs": [
+    "beratung",
+    "geld"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon",
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "action": "Beratung buchen"
+  },
+  {
+   "id": "proinfirmis",
+   "name": "Sozialberatung",
+   "org": "Pro Infirmis",
+   "desc": "Beratung für Menschen mit Behinderung oder chronischer Krankheit und ihre Angehörigen: zu Finanzen, Sozialversicherungen, Wohnen und Arbeit, in jedem Kanton.",
+   "url": "https://www.proinfirmis.ch/",
+   "topics": [
+    "alle",
+    "behinderung"
+   ],
+   "needs": [
+    "geld",
+    "beratung",
+    "alltag"
+   ],
+   "type": "beratung",
+   "formats": [
+    "vor Ort",
+    "Telefon"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "prosenectute",
+   "name": "Beratung ab 60",
+   "org": "Pro Senectute",
+   "desc": "Für Menschen ab 60 und ihre Angehörigen: Beratung zu Finanzen, Gesundheit, Wohnen und Vorsorge in deiner Region.",
+   "url": "https://www.prosenectute.ch/de/dienstleistungen/beratung.html",
+   "topics": [
+    "alle"
+   ],
+   "needs": [
+    "beratung",
+    "geld",
+    "alltag"
+   ],
+   "type": "beratung",
+   "formats": [
+    "vor Ort",
+    "Telefon"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.3
+  },
+  {
+   "id": "iv",
+   "name": "Im Job bleiben: Unterstützung der IV",
+   "org": "Invalidenversicherung (IV)",
+   "desc": "Die IV hilft nicht nur mit Renten, sondern vor allem dabei, im Arbeitsleben zu bleiben oder zurückzukehren. Je früher du dich meldest, desto mehr ist möglich.",
+   "url": "https://www.ahv-iv.ch/de/Sozialversicherungen/Invalidenversicherung-IV/Eingliederungsmassnahmen",
+   "topics": [
+    "alle"
+   ],
+   "needs": [
+    "geld"
+   ],
+   "type": "recht",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst"
+   ],
+   "action": "Mehr zur IV"
+  },
+  {
+   "id": "praemien",
+   "name": "Prämienverbilligung beantragen",
+   "org": "Kantonale Stellen",
+   "desc": "Wenn die Krankenkassenprämie schwer zu tragen ist: Je nach Einkommen hast du Anspruch auf eine Verbilligung. Hier findest du die zuständige Stelle in deinem Kanton.",
+   "url": "https://www.ahv-iv.ch/de/Kontakte/Kantonale-Stellen-zur-Pr%C3%A4mienverbilligung",
+   "topics": [
+    "alle"
+   ],
+   "needs": [
+    "geld"
+   ],
+   "type": "recht",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "action": "Stelle finden"
+  },
+  {
+   "id": "inclusion",
+   "name": "Rechtsberatung bei Behinderung",
+   "org": "Inclusion Handicap",
+   "desc": "Rechtsberatung zu Sozialversicherungen und Gleichstellung für Menschen mit Behinderung, etwa bei Fragen zur IV.",
+   "url": "https://www.inclusion-handicap.ch/de/beratung/rechtsberatung",
+   "topics": [
+    "alle",
+    "behinderung"
+   ],
+   "needs": [
+    "geld"
+   ],
+   "type": "recht",
+   "formats": [
+    "Telefon",
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.2
+  },
+  {
+   "id": "evivo",
+   "name": "Evivo-Training: aktiv mit chronischer Krankheit",
+   "org": "Evivo Netzwerk",
+   "desc": "In einer kleinen Gruppe lernst du mit anderen Betroffenen, wie du mit Beschwerden, Erschöpfung und Gefühlen umgehst und dir erreichbare Ziele setzt.",
+   "url": "https://evivo.ch/trainings.php?hl=de",
+   "topics": [
+    "alle"
+   ],
+   "needs": [
+    "aktiv",
+    "austausch"
+   ],
+   "type": "kurs",
+   "formats": [
+    "vor Ort",
+    "online"
+   ],
+   "roles": [
+    "selbst"
+   ],
+   "action": "Trainings ansehen"
+  },
+  {
+   "id": "spitex",
+   "name": "Pflege und Hilfe zu Hause",
+   "org": "Spitex Schweiz",
+   "desc": "Pflege und Unterstützung zu Hause. Auf ärztliche Verordnung übernimmt die Krankenkasse einen Teil der Kosten. Über Spitex Schweiz findest du die Spitex in deiner Gemeinde.",
+   "url": "https://www.spitex.ch/de",
+   "topics": [
+    "alle"
+   ],
+   "needs": [
+    "alltag"
+   ],
+   "type": "alltag",
+   "formats": [
+    "zu Hause"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "entlastungsdienst",
+   "name": "Eine Pause für pflegende Angehörige",
+   "org": "Entlastungsdienst Schweiz",
+   "desc": "Betreuungspersonen kommen nach Hause, damit du als pflegende:r Angehörige:r Zeit für dich hast. Für Kinder, Erwachsene und Senior:innen.",
+   "url": "https://www.entlastungsdienst.ch/angebot",
+   "topics": [
+    "alle"
+   ],
+   "needs": [
+    "alltag"
+   ],
+   "type": "alltag",
+   "formats": [
+    "zu Hause"
+   ],
+   "roles": [
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "geliko",
+   "name": "Gesundheitsligen im Überblick",
+   "org": "GELIKO",
+   "desc": "Für viele chronische Krankheiten gibt es eine Liga oder Patientenorganisation mit Beratung, Kursen und Informationen. Hier findest du sie.",
+   "url": "https://www.geliko.ch/",
+   "topics": [
+    "alle"
+   ],
+   "needs": [
+    "info",
+    "beratung"
+   ],
+   "type": "info",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.4,
+   "action": "Ligen ansehen"
+  },
+  {
+   "id": "palliative",
+   "name": "Wenn eine Krankheit nicht mehr heilbar ist",
+   "org": "palliative.ch",
+   "desc": "Informationen und Adressen zur Palliative Care: wie Schmerzen gelindert werden, wer begleitet und welche Angebote es in deiner Region gibt.",
+   "url": "https://www.palliative.ch/de/",
+   "topics": [
+    "alle"
+   ],
+   "needs": [
+    "info",
+    "beratung"
+   ],
+   "type": "info",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.6
+  },
+  {
+   "id": "krebs-peer",
+   "name": "Peer-Plattform der Krebsliga",
+   "org": "Krebsliga Schweiz",
+   "desc": "Tausch dich mit Menschen aus, die selbst Krebs hatten oder eine nahestehende Person begleitet haben. Du wirst mit jemandem mit ähnlicher Erfahrung verbunden.",
+   "url": "https://peerplattform.krebsliga.ch/",
+   "topics": [
+    "krebs"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "peer",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "partner": true,
+   "action": "Zur Peer-Plattform"
+  },
+  {
+   "id": "krebsinfo",
+   "name": "KrebsInfo: Fragen zu Krebs",
+   "org": "Krebsliga Schweiz",
+   "desc": "Fachpersonen beantworten deine Fragen zu Krebs, Behandlung und Alltag, per Telefon, E-Mail, Chat oder WhatsApp, von 10 bis 18 Uhr.",
+   "url": "https://www.krebsliga.ch/beratung-unterstuetzung/krebsinfo/",
+   "topics": [
+    "krebs"
+   ],
+   "needs": [
+    "info",
+    "beratung"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon",
+    "Chat"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "phone": "0800 11 88 11"
+  },
+  {
+   "id": "krebsliga-regional",
+   "name": "Beratung bei deiner kantonalen Krebsliga",
+   "org": "Regionale Krebsligen",
+   "desc": "Persönliche Beratung in deiner Region, auch zu Finanzen, Arbeit und Versicherungen, für Betroffene und Angehörige.",
+   "url": "https://www.krebsliga.ch/beratung-unterstuetzung/regionale-krebsligen/",
+   "topics": [
+    "krebs"
+   ],
+   "needs": [
+    "beratung",
+    "geld",
+    "alltag"
+   ],
+   "type": "beratung",
+   "formats": [
+    "vor Ort",
+    "Telefon"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "psychoonko",
+   "name": "Psychoonkologische Unterstützung",
+   "org": "Krebsliga Schweiz",
+   "desc": "Wenn die Krankheit seelisch belastet: Fachpersonen der Psychoonkologie begleiten dich und deine Angehörigen.",
+   "url": "https://www.krebsliga.ch/beratung-unterstuetzung/psychoonkologische-unterstuetzung/",
+   "topics": [
+    "krebs"
+   ],
+   "needs": [
+    "beratung"
+   ],
+   "type": "beratung",
+   "formats": [
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "krebsforum",
+   "name": "Krebsforum",
+   "org": "Krebsliga Schweiz",
+   "desc": "Online-Forum der Krebsliga: Fragen stellen, Erfahrungen lesen und teilen, wann es dir passt.",
+   "url": "https://www.krebsforum.ch/",
+   "topics": [
+    "krebs"
+   ],
+   "needs": [
+    "austausch",
+    "info"
+   ],
+   "type": "peer",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.3
+  },
+  {
+   "id": "krebs-angehoerige",
+   "name": "Für Angehörige von Menschen mit Krebs",
+   "org": "Krebsliga Schweiz",
+   "desc": "Informationen und Unterstützung, wenn ein Mensch in deinem Umfeld an Krebs erkrankt ist, auch dazu, wie du Kinder einbeziehst.",
+   "url": "https://www.krebsliga.ch/beratung-unterstuetzung/fuer-angehoerige/",
+   "topics": [
+    "krebs"
+   ],
+   "needs": [
+    "info",
+    "alltag"
+   ],
+   "type": "info",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "kinderkrebs",
+   "name": "Kinderkrebs Schweiz",
+   "org": "Kinderkrebs Schweiz",
+   "desc": "Informationen und Unterstützung für Familien mit einem krebskranken Kind.",
+   "url": "https://www.kinderkrebs-schweiz.ch/de",
+   "topics": [
+    "krebs",
+    "familie"
+   ],
+   "needs": [
+    "info",
+    "beratung"
+   ],
+   "type": "info",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "angehoerige"
+   ],
+   "prio": -0.2
+  },
+  {
+   "id": "herz-peer",
+   "name": "Peer-Plattform der Herzstiftung",
+   "org": "Schweizerische Herzstiftung",
+   "desc": "Menschen, die mit einer Herzkrankheit leben oder einen Hirnschlag hatten, teilen ihre Geschichte und stehen für den Austausch bereit.",
+   "url": "https://peer.swissheart.ch/",
+   "topics": [
+    "herz"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "peer",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "action": "Peer finden"
+  },
+  {
+   "id": "herzgruppen",
+   "name": "Herzgruppen: gemeinsam aktiv",
+   "org": "Schweizerische Herzstiftung",
+   "desc": "Regelmässige Bewegung in der Gruppe für Menschen mit einer Herzkrankheit, in vielen Orten der Schweiz.",
+   "url": "https://swissheart.ch/wissen-support/unser-herzgruppen-angebot",
+   "topics": [
+    "herz"
+   ],
+   "needs": [
+    "aktiv",
+    "austausch"
+   ],
+   "type": "kurs",
+   "formats": [
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "herzstiftung",
+   "name": "Wissen zu Herz und Hirnschlag",
+   "org": "Schweizerische Herzstiftung",
+   "desc": "Verständliche Informationen zu Herz-Kreislauf-Krankheiten und Hirnschlag, zu Behandlung, Vorbeugung und Alltag.",
+   "url": "https://swissheart.ch/",
+   "topics": [
+    "herz"
+   ],
+   "needs": [
+    "info"
+   ],
+   "type": "info",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "fragile-helpline",
+   "name": "Helpline bei Hirnverletzung",
+   "org": "FRAGILE Suisse",
+   "desc": "Beratung für Menschen mit einer Hirnverletzung, etwa nach einem Hirnschlag oder Unfall, und für ihre Angehörigen.",
+   "url": "https://www.fragile.ch/hilfe/helpline/",
+   "topics": [
+    "herz",
+    "neuro"
+   ],
+   "needs": [
+    "beratung",
+    "info"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "phone": "0800 256 256"
+  },
+  {
+   "id": "fragile-peer",
+   "name": "Peer-Beratung bei Hirnverletzung",
+   "org": "FRAGILE Suisse",
+   "desc": "Menschen, die selbst eine Hirnverletzung erlebt haben, beraten andere Betroffene.",
+   "url": "https://www.fragile.ch/hilfe/peer-beratung/",
+   "topics": [
+    "herz",
+    "neuro"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "peer",
+   "formats": [
+    "Telefon",
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "lungenliga",
+   "name": "Beratung bei Lungenkrankheiten",
+   "org": "Lungenliga",
+   "desc": "Beratung, Kurse und Hilfe im Alltag bei Asthma, COPD, Schlafapnoe und anderen Lungenkrankheiten, in deiner Region.",
+   "url": "https://www.lungenliga.ch/",
+   "topics": [
+    "lunge"
+   ],
+   "needs": [
+    "beratung",
+    "aktiv",
+    "info",
+    "alltag"
+   ],
+   "type": "beratung",
+   "formats": [
+    "vor Ort",
+    "Telefon"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "diabetes-beratung",
+   "name": "Persönliche Diabetesberatung",
+   "org": "diabetesschweiz",
+   "desc": "Fachpersonen beraten dich zu Ernährung, Bewegung und dem Alltag mit Diabetes, in deiner Region.",
+   "url": "https://www.diabetesschweiz.ch/betroffene-und-angehoerige/persoenliche-beratung",
+   "topics": [
+    "diabetes"
+   ],
+   "needs": [
+    "beratung",
+    "info",
+    "aktiv"
+   ],
+   "type": "beratung",
+   "formats": [
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "adipositas",
+   "name": "Allianz Adipositas Schweiz",
+   "org": "Allianz Adipositas Schweiz",
+   "desc": "Informationen und Kontakt für Menschen mit Adipositas und ihre Angehörigen.",
+   "url": "https://www.allianzadipositasschweiz.ch/",
+   "topics": [
+    "diabetes"
+   ],
+   "needs": [
+    "info",
+    "austausch"
+   ],
+   "type": "info",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.3
+  },
+  {
+   "id": "rheuma-beratung",
+   "name": "Beratung der Rheumaliga",
+   "org": "Rheumaliga Schweiz",
+   "desc": "Beratung zu Rheuma, Schmerzen, Hilfsmitteln und Sozialversicherungen, für Betroffene und Angehörige.",
+   "url": "https://www.rheumaliga.ch/beratung-unterstuetzung/beratung.html",
+   "topics": [
+    "rheuma"
+   ],
+   "needs": [
+    "beratung",
+    "geld",
+    "info"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon",
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "rheuma-peer",
+   "name": "Von Betroffenen für Betroffene",
+   "org": "Rheumaliga Schweiz",
+   "desc": "Selbsthilfegruppen und Angebote, in denen sich Menschen mit Rheuma austauschen.",
+   "url": "https://www.rheumaliga.ch/beratung-unterstuetzung/betroffene-fuer-betroffene.html",
+   "topics": [
+    "rheuma"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "gruppe",
+   "formats": [
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "rheuma-kurse",
+   "name": "Bewegungskurse in deiner Nähe",
+   "org": "Rheumaliga Schweiz",
+   "desc": "Kurse und Workshops, die dir helfen, beweglich zu bleiben und mit Schmerzen umzugehen.",
+   "url": "https://portal.rheumaliga.ch/Kurse-Events/Kurse-Workshops/",
+   "topics": [
+    "rheuma"
+   ],
+   "needs": [
+    "aktiv"
+   ],
+   "type": "kurs",
+   "formats": [
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst"
+   ]
+  },
+  {
+   "id": "svmb",
+   "name": "Morbus Bechterew: Therapiegruppen und Beratung",
+   "org": "Schweizerische Vereinigung Morbus Bechterew (SVMB)",
+   "desc": "Bewegung in Therapiegruppen in der ganzen Schweiz, Beratung und Austausch mit anderen Betroffenen.",
+   "url": "https://www.bechterew.ch/",
+   "topics": [
+    "rheuma"
+   ],
+   "needs": [
+    "aktiv",
+    "austausch",
+    "beratung"
+   ],
+   "type": "gruppe",
+   "formats": [
+    "vor Ort",
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "partner": true,
+   "prio": -0.2
+  },
+  {
+   "id": "rheumafit",
+   "name": "rheumaFIT: die App bei Morbus Bechterew",
+   "org": "Schweizerische Vereinigung Morbus Bechterew (SVMB)",
+   "desc": "Training, Journal, Wissen und Coaching in einer App, damit Bewegung im Alltag leichter fällt.",
+   "url": "https://rheumafit.ch/",
+   "topics": [
+    "rheuma"
+   ],
+   "needs": [
+    "aktiv",
+    "info"
+   ],
+   "type": "kurs",
+   "formats": [
+    "App"
+   ],
+   "roles": [
+    "selbst"
+   ],
+   "prio": -0.3,
+   "action": "Zur App"
+  },
+  {
+   "id": "ms-infoline",
+   "name": "MS-Infoline",
+   "org": "Schweizerische MS-Gesellschaft",
+   "desc": "Fachpersonen beraten kompetent, neutral und kostenlos, gerade nach einer neuen Diagnose Multiple Sklerose.",
+   "url": "https://www.multiplesklerose.ch/de/unsere-angebote/ms-infoline/",
+   "topics": [
+    "neuro"
+   ],
+   "needs": [
+    "beratung",
+    "info"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "phone": "0844 674 636"
+  },
+  {
+   "id": "ms-peer",
+   "name": "Peer Support bei MS",
+   "org": "Schweizerische MS-Gesellschaft",
+   "desc": "Menschen mit MS teilen ihre Erfahrungen mit anderen Betroffenen.",
+   "url": "https://www.multiplesklerose.ch/de/unsere-angebote/peer-support/",
+   "topics": [
+    "neuro"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "peer",
+   "formats": [
+    "Telefon",
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "parkinfon",
+   "name": "Parkinfon: Fragen an Neurolog:innen",
+   "org": "Parkinson Schweiz",
+   "desc": "Erfahrene Neurologinnen und Neurologen beantworten deine Fragen zu Parkinson, kostenlos, jeden Mittwoch von 17 bis 19 Uhr.",
+   "url": "https://www.parkinson.ch/rat-holen/parkinfon",
+   "topics": [
+    "neuro"
+   ],
+   "needs": [
+    "info"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "phone": "0800 80 30 20"
+  },
+  {
+   "id": "parkinson-beratung",
+   "name": "Persönliche Beratung bei Parkinson",
+   "org": "Parkinson Schweiz",
+   "desc": "Beratung zum Leben mit Parkinson, zu Arbeit und Versicherungen, für Betroffene und Angehörige.",
+   "url": "https://www.parkinson.ch/rat-holen/persoenliche-beratung",
+   "topics": [
+    "neuro"
+   ],
+   "needs": [
+    "beratung",
+    "geld",
+    "alltag"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon",
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.1
+  },
+  {
+   "id": "epi",
+   "name": "Beratung bei Epilepsie",
+   "org": "Epi-Suisse",
+   "desc": "Beratung und Informationen rund um Epilepsie, für Betroffene und Angehörige.",
+   "url": "https://epi-suisse.ch/de/",
+   "topics": [
+    "neuro"
+   ],
+   "needs": [
+    "beratung",
+    "info"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.2
+  },
+  {
+   "id": "demenzmiteinander",
+   "name": "demenz:miteinander",
+   "org": "Demenzworld",
+   "desc": "Austausch unter Angehörigen von Menschen mit Demenz: Du wirst mit jemandem verbunden, der eine ähnliche Situation kennt.",
+   "url": "https://demenzworld.com/demenzmiteinander/",
+   "topics": [
+    "demenz"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "peer",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "angehoerige"
+   ],
+   "partner": true,
+   "action": "Jetzt austauschen"
+  },
+  {
+   "id": "alzheimer-telefon",
+   "name": "Alzheimer-Telefon",
+   "org": "Alzheimer Schweiz",
+   "desc": "Fachpersonen beraten Menschen mit Demenz und ihre Angehörigen am Telefon, zu Diagnose, Alltag und Entlastung.",
+   "url": "https://www.alzheimer-schweiz.ch/de/startseite",
+   "topics": [
+    "demenz"
+   ],
+   "needs": [
+    "beratung",
+    "info",
+    "alltag"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "phone": "058 058 80 00"
+  },
+  {
+   "id": "pms",
+   "name": "Beratungstelefon Pro Mente Sana",
+   "org": "Pro Mente Sana",
+   "desc": "Psychosoziale und rechtliche Beratung bei psychischer Belastung, für Betroffene und Nahestehende.",
+   "url": "https://promentesana.ch/angebote/beratung/beratung-fuer-betroffene-nahestehende",
+   "topics": [
+    "psyche"
+   ],
+   "needs": [
+    "beratung",
+    "info",
+    "geld"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon",
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "phone": "0848 800 858"
+  },
+  {
+   "id": "fsp",
+   "name": "Psychologin oder Psychotherapeuten finden",
+   "org": "FSP Föderation der Schweizer Psychologinnen und Psychologen",
+   "desc": "Beim Berufsverband findest du Fachpersonen für Psychotherapie in deiner Nähe.",
+   "url": "https://www.psychologie.ch/de",
+   "topics": [
+    "psyche"
+   ],
+   "needs": [
+    "beratung"
+   ],
+   "type": "beratung",
+   "formats": [
+    "vor Ort",
+    "online"
+   ],
+   "roles": [
+    "selbst"
+   ],
+   "prio": -0.2
+  },
+  {
+   "id": "vask",
+   "name": "Vereinigung der Angehörigen psychisch Kranker",
+   "org": "VASK Schweiz",
+   "desc": "Austausch, Beratung und Kurse für Angehörige von Menschen mit einer psychischen Erkrankung, in deiner Region.",
+   "url": "https://www.vask.ch/de/",
+   "topics": [
+    "psyche"
+   ],
+   "needs": [
+    "austausch",
+    "beratung"
+   ],
+   "type": "gruppe",
+   "formats": [
+    "vor Ort"
+   ],
+   "roles": [
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "standbyyou",
+   "name": "Stand by You",
+   "org": "Stand by You Schweiz",
+   "desc": "Netzwerk und Informationen für Angehörige und Nahestehende von Menschen mit psychischer Erkrankung.",
+   "url": "https://stand-by-you.ch/",
+   "topics": [
+    "psyche"
+   ],
+   "needs": [
+    "info",
+    "austausch"
+   ],
+   "type": "info",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "angehoerige"
+   ],
+   "prio": -0.2
+  },
+  {
+   "id": "ensa",
+   "name": "ensa: Erste Hilfe für die Psyche",
+   "org": "ensa",
+   "desc": "In einem Kurs lernst du, wie du einen Menschen mit psychischen Problemen ansprichst und unterstützt.",
+   "url": "https://ensa.swiss/de/",
+   "topics": [
+    "psyche",
+    "sucht"
+   ],
+   "needs": [
+    "aktiv",
+    "info"
+   ],
+   "type": "kurs",
+   "formats": [
+    "vor Ort",
+    "online"
+   ],
+   "roles": [
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "wiegehts",
+   "name": "Wie geht’s dir?",
+   "org": "Kampagne «Wie geht’s dir?»",
+   "desc": "Informationen und Tipps, wie du über psychische Gesundheit sprechen kannst, mit dir selbst und mit anderen.",
+   "url": "https://www.wie-gehts-dir.ch/",
+   "topics": [
+    "psyche"
+   ],
+   "needs": [
+    "info"
+   ],
+   "type": "info",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.2
+  },
+  {
+   "id": "safezone",
+   "name": "Online-Suchtberatung",
+   "org": "SafeZone.ch",
+   "desc": "Fachpersonen beraten dich anonym und kostenlos online, ob du selbst betroffen bist oder dir Sorgen um jemanden machst.",
+   "url": "https://www.safezone.ch/de/",
+   "topics": [
+    "sucht"
+   ],
+   "needs": [
+    "beratung",
+    "info"
+   ],
+   "type": "beratung",
+   "formats": [
+    "online",
+    "Chat"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "suchtschweiz",
+   "name": "Hilfe bei Sucht finden",
+   "org": "Sucht Schweiz",
+   "desc": "Informationen zu Alkohol, Medikamenten und anderen Abhängigkeiten und Adressen von Beratungsstellen.",
+   "url": "https://www.suchtschweiz.ch/hilfe/",
+   "topics": [
+    "sucht"
+   ],
+   "needs": [
+    "info",
+    "beratung"
+   ],
+   "type": "info",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "aa",
+   "name": "Anonyme Alkoholiker",
+   "org": "Anonyme Alkoholiker Schweiz",
+   "desc": "Menschen teilen ihre Erfahrungen, um nüchtern zu werden und zu bleiben. Meetings in der ganzen Schweiz und online.",
+   "url": "https://www.anonyme-alkoholiker.ch/",
+   "topics": [
+    "sucht"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "gruppe",
+   "formats": [
+    "vor Ort",
+    "online"
+   ],
+   "roles": [
+    "selbst"
+   ]
+  },
+  {
+   "id": "mucoconnect",
+   "name": "MucoConnect bei Cystischer Fibrose",
+   "org": "Cystische Fibrose Schweiz",
+   "desc": "Für Menschen mit Cystischer Fibrose und ihre Angehörigen: Austausch eins zu eins mit jemandem, der die Situation kennt, vermittelt von Cystische Fibrose Schweiz.",
+   "url": "https://cf.getrestful.ch/",
+   "topics": [
+    "selten"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "peer",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "partner": true,
+   "action": "Zu MucoConnect"
+  },
+  {
+   "id": "cfs",
+   "name": "Sozialberatung bei Cystischer Fibrose",
+   "org": "Cystische Fibrose Schweiz",
+   "desc": "Persönliche Sozialberatung für Betroffene und Angehörige, auch zu Finanzen und Versicherungen.",
+   "url": "https://cystischefibroseschweiz.ch/unterstuetzung-und-angebote/sozialberatung/",
+   "topics": [
+    "selten"
+   ],
+   "needs": [
+    "beratung",
+    "geld"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon",
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.2
+  },
+  {
+   "id": "proraris",
+   "name": "ProRaris: Allianz Seltener Krankheiten",
+   "org": "ProRaris",
+   "desc": "Informationen, Kontakt zu Patientenorganisationen und Beratung, wenn die Situation bei einer seltenen Krankheit komplex ist.",
+   "url": "https://www.proraris.ch/de/hilfe-suchen/beratung-fuer-komplexe-einzelfaelle-261/",
+   "topics": [
+    "selten"
+   ],
+   "needs": [
+    "beratung",
+    "info",
+    "austausch"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon",
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "cc-coaching",
+   "name": "Telefonisches Coaching bei Crohn und Colitis",
+   "org": "Crohn Colitis Schweiz",
+   "desc": "Beratung am Telefon zum Alltag mit einer chronisch entzündlichen Darmerkrankung.",
+   "url": "https://crohn-colitis.ch/beratung/telefonisches-coaching/",
+   "topics": [
+    "verdauung"
+   ],
+   "needs": [
+    "beratung",
+    "info"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "cc-gruppen",
+   "name": "Regionalgruppen Crohn Colitis",
+   "org": "Crohn Colitis Schweiz",
+   "desc": "Treffen mit anderen Betroffenen in deiner Region.",
+   "url": "https://crohn-colitis.ch/ueber-uns/gruppen/",
+   "topics": [
+    "verdauung"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "gruppe",
+   "formats": [
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "cc-recht",
+   "name": "Rechts- und Sozialversicherungsberatung",
+   "org": "Crohn Colitis Schweiz",
+   "desc": "Beratung zu Arbeit, Versicherungen und Rechten bei Morbus Crohn und Colitis ulcerosa.",
+   "url": "https://crohn-colitis.ch/beratung/rechts-und-sozialversicherungsberatung/",
+   "topics": [
+    "verdauung"
+   ],
+   "needs": [
+    "geld"
+   ],
+   "type": "recht",
+   "formats": [
+    "Telefon"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "zoeliakie",
+   "name": "IG Zöliakie",
+   "org": "IG Zöliakie der deutschen Schweiz",
+   "desc": "Informationen und Tipps rund um Zöliakie und glutenfreie Ernährung.",
+   "url": "https://www.zoeliakie.ch/de/startseite.html",
+   "topics": [
+    "verdauung"
+   ],
+   "needs": [
+    "info",
+    "aktiv"
+   ],
+   "type": "info",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.3
+  },
+  {
+   "id": "vnps",
+   "name": "Verband Nierenpatienten Schweiz",
+   "org": "VNPS",
+   "desc": "Austausch und Informationen für Menschen mit einer Nierenkrankheit, an der Dialyse oder nach einer Transplantation.",
+   "url": "https://nierenpatienten.ch/vnps/",
+   "topics": [
+    "verdauung"
+   ],
+   "needs": [
+    "austausch",
+    "info"
+   ],
+   "type": "gruppe",
+   "formats": [
+    "vor Ort",
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.1
+  },
+  {
+   "id": "spvg",
+   "name": "Psoriasis und Vitiligo Schweiz",
+   "org": "Schweizerische Psoriasis- und Vitiligo-Gesellschaft",
+   "desc": "Informationen und Austausch für Menschen mit Psoriasis oder Vitiligo.",
+   "url": "https://www.spvg.ch/de/",
+   "topics": [
+    "haut"
+   ],
+   "needs": [
+    "info",
+    "austausch"
+   ],
+   "type": "info",
+   "formats": [
+    "online",
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "aha",
+   "name": "aha! Allergiezentrum Schweiz",
+   "org": "aha! Allergiezentrum Schweiz",
+   "desc": "Beratung und Informationen zu Allergien, Neurodermitis und Asthma.",
+   "url": "https://www.aha.ch/allergiezentrum-schweiz/home",
+   "topics": [
+    "haut",
+    "lunge"
+   ],
+   "needs": [
+    "info",
+    "beratung"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon",
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.1
+  },
+  {
+   "id": "procap",
+   "name": "Rechtsberatung von Procap",
+   "org": "Procap",
+   "desc": "Beratung zu Sozialversicherungen wie IV und Ergänzungsleistungen für Menschen mit Behinderung und ihre Angehörigen.",
+   "url": "https://www.procap.ch/angebote/beratung-information/rechtsberatung/",
+   "topics": [
+    "behinderung"
+   ],
+   "needs": [
+    "geld",
+    "beratung"
+   ],
+   "type": "recht",
+   "formats": [
+    "Telefon",
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "cerebral",
+   "name": "Stiftung Cerebral",
+   "org": "Stiftung Cerebral",
+   "desc": "Unterstützung für Menschen mit einer cerebralen Bewegungsbeeinträchtigung und ihre Familien.",
+   "url": "https://www.cerebral.ch/de/",
+   "topics": [
+    "behinderung",
+    "familie"
+   ],
+   "needs": [
+    "alltag",
+    "beratung",
+    "austausch"
+   ],
+   "type": "beratung",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "partner": true,
+   "prio": -0.1
+  },
+  {
+   "id": "insieme",
+   "name": "insieme",
+   "org": "insieme Schweiz",
+   "desc": "Für Menschen mit geistiger Behinderung und ihre Familien: Beratung, Freizeit und Austausch.",
+   "url": "https://insieme.ch/",
+   "topics": [
+    "behinderung"
+   ],
+   "needs": [
+    "austausch",
+    "alltag",
+    "beratung"
+   ],
+   "type": "gruppe",
+   "formats": [
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "prio": -0.2
+  },
+  {
+   "id": "restful-families",
+   "name": "restful families",
+   "org": "restful families",
+   "desc": "Austausch mit Eltern, die genau wissen, wie sich das anfühlt: online und wann es dir passt.",
+   "url": "https://www.getrestful.ch/",
+   "topics": [
+    "familie"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "peer",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "partner": true,
+   "action": "Jetzt austauschen"
+  },
+  {
+   "id": "fruehchen",
+   "name": "Peer-Begleitung für Frühchen-Eltern",
+   "org": "Frühchen & Neokinder Schweiz",
+   "desc": "Eltern, die selbst ein früh oder krank geborenes Kind hatten, begleiten andere Familien, im Spital oder online.",
+   "url": "https://www.fruehchenschweiz.ch/",
+   "topics": [
+    "familie"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "peer",
+   "formats": [
+    "vor Ort",
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "partner": true
+  },
+  {
+   "id": "sgve",
+   "name": "Bei Kindsverlust und schwerer Krankheit",
+   "org": "Schweizerische Gemeinschaft verwaister Eltern (SGVE)",
+   "desc": "Erfahrungswissen von Eltern, die ein Kind verloren haben oder um ihr Kind bangen, und Peer-Support im Aufbau.",
+   "url": "https://sgve.ch/",
+   "topics": [
+    "familie"
+   ],
+   "needs": [
+    "austausch",
+    "info"
+   ],
+   "type": "peer",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "angehoerige"
+   ],
+   "partner": true
+  },
+  {
+   "id": "svamv",
+   "name": "SVAMV Peer für Alleinerziehende",
+   "org": "Schweizerischer Verband alleinerziehender Mütter und Väter",
+   "desc": "Alleinerziehende Mütter und Väter unterstützen sich gegenseitig.",
+   "url": "https://svamv.ch/thema/svamvpeer/",
+   "topics": [
+    "familie"
+   ],
+   "needs": [
+    "austausch"
+   ],
+   "type": "peer",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ],
+   "partner": true,
+   "prio": -0.2
+  },
+  {
+   "id": "elternnotruf",
+   "name": "Elternnotruf",
+   "org": "Elternnotruf",
+   "desc": "Rund um die Uhr für Eltern und Bezugspersonen, wenn es in der Familie schwierig wird: per Telefon, Chat oder Mail.",
+   "url": "https://www.elternnotruf.ch/",
+   "topics": [
+    "familie"
+   ],
+   "needs": [
+    "beratung",
+    "krise"
+   ],
+   "type": "beratung",
+   "formats": [
+    "Telefon",
+    "Chat"
+   ],
+   "roles": [
+    "angehoerige"
+   ],
+   "phone": "0848 35 45 55"
+  },
+  {
+   "id": "mvb",
+   "name": "Mütter- und Väterberatung",
+   "org": "SF BFK",
+   "desc": "Beratung zu Entwicklung, Ernährung und Schlaf für Eltern von Kindern bis 5 Jahre, in deiner Gemeinde. Über die Postleitzahl findest du die Stelle in deiner Nähe.",
+   "url": "https://www.sf-bfk.ch/de/infos-fuer-eltern/",
+   "topics": [
+    "familie"
+   ],
+   "needs": [
+    "beratung",
+    "info"
+   ],
+   "type": "beratung",
+   "formats": [
+    "vor Ort",
+    "Telefon"
+   ],
+   "roles": [
+    "angehoerige"
+   ],
+   "partner": true,
+   "prio": -0.1
+  },
+  {
+   "id": "longcovid",
+   "name": "Long Covid Schweiz",
+   "org": "Long Covid Schweiz",
+   "desc": "Verein von Betroffenen: Informationen, Vernetzung und Austausch zu Long Covid.",
+   "url": "https://www.long-covid-info.ch/",
+   "topics": [
+    "longcovid"
+   ],
+   "needs": [
+    "info",
+    "austausch"
+   ],
+   "type": "info",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "altea",
+   "name": "Altea: Long-Covid-Netzwerk",
+   "org": "Altea",
+   "desc": "Forum für den Austausch unter Betroffenen, ein Verzeichnis von Fachpersonen und ein Ratgeber, auch zu Sozialversicherungen.",
+   "url": "https://altea-network.com/de/",
+   "topics": [
+    "longcovid"
+   ],
+   "needs": [
+    "austausch",
+    "info",
+    "geld"
+   ],
+   "type": "peer",
+   "formats": [
+    "online"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "ps-bewegung",
+   "name": "Bewegung und Sport ab 60",
+   "org": "Pro Senectute",
+   "desc": "Kurse und Gruppen für Menschen ab 60, die in Bewegung bleiben wollen, in deiner Region.",
+   "url": "https://www.prosenectute.ch/de/dienstleistungen/freizeit/bewegung-und-sport.html",
+   "topics": [
+    "alle"
+   ],
+   "needs": [
+    "aktiv"
+   ],
+   "type": "kurs",
+   "formats": [
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst"
+   ],
+   "prio": -0.3
+  },
+  {
+   "id": "alz-angehoerige",
+   "name": "Angehörigen-Gruppen bei Demenz",
+   "org": "Alzheimer Schweiz",
+   "desc": "In allen Kantonen treffen sich Angehörige regelmässig, um Informationen und Erfahrungen aus dem Leben mit Demenz auszutauschen.",
+   "url": "https://www.alzheimer-schweiz.ch/de/angebote/beitrag/angehoerigen-gruppen-hilfe-zur-selbsthilfe",
+   "topics": [
+    "demenz"
+   ],
+   "needs": [
+    "austausch",
+    "aktiv"
+   ],
+   "type": "gruppe",
+   "formats": [
+    "vor Ort"
+   ],
+   "roles": [
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "alz-aktiv",
+   "name": "Gruppenaktivitäten für Menschen mit Demenz",
+   "org": "Alzheimer Schweiz",
+   "desc": "Vom Gedächtnistraining über Yoga bis zu Wanderungen: gemeinsam aktiv bleiben.",
+   "url": "https://www.alzheimer-schweiz.ch/de/angebote/beitrag/gruppenaktivitaeten-fuer-menschen-mit-demenz",
+   "topics": [
+    "demenz"
+   ],
+   "needs": [
+    "aktiv",
+    "austausch"
+   ],
+   "type": "kurs",
+   "formats": [
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  },
+  {
+   "id": "alz-angebote",
+   "name": "Entlastung und Angebote bei Demenz",
+   "org": "Alzheimer Schweiz",
+   "desc": "Entlastung, Ferien mit Begleitung und Angebote in deiner Nähe, für Menschen mit Demenz und ihre Angehörigen.",
+   "url": "https://www.alzheimer-schweiz.ch/de/angebote",
+   "topics": [
+    "demenz"
+   ],
+   "needs": [
+    "alltag",
+    "info"
+   ],
+   "type": "alltag",
+   "formats": [
+    "vor Ort"
+   ],
+   "roles": [
+    "selbst",
+    "angehoerige"
+   ]
+  }
+ ],
+ "crisis": [
+  {
+   "id": "144",
+   "name": "Notruf 144",
+   "desc": "Bei einem medizinischen Notfall.",
+   "phone": "144",
+   "url": "tel:144"
+  },
+  {
+   "id": "143",
+   "name": "Die Dargebotene Hand 143",
+   "desc": "Rund um die Uhr ein offenes Ohr, anonym, per Telefon, Chat oder Mail.",
+   "phone": "143",
+   "url": "https://www.143.ch/"
+  },
+  {
+   "id": "147",
+   "name": "Pro Juventute 147",
+   "desc": "Für Kinder und Jugendliche: Beratung per Telefon, Chat oder Mail, rund um die Uhr.",
+   "phone": "147",
+   "url": "https://www.147.ch/"
+  }
+ ],
+ "related": {
+  "aktiv": [
+   "austausch",
+   "info"
+  ],
+  "alltag": [
+   "beratung"
+  ],
+  "geld": [
+   "beratung"
+  ],
+  "austausch": [
+   "beratung"
+  ],
+  "info": [
+   "beratung"
+  ],
+  "beratung": [
+   "info"
+  ]
+ }
+}
