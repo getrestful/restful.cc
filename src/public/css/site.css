@@ -618,3 +618,27 @@ footer.site a:hover{text-decoration:underline}
 @media(max-width:1000px){.wn-topics{grid-template-columns:repeat(3,1fr)}.wn-cards{grid-template-columns:1fr 1fr}}
 @media(max-width:760px){.wn-choices{grid-template-columns:1fr}.wn-topics,.wn-needs{grid-template-columns:1fr 1fr}.wn-cards{grid-template-columns:1fr}.wn-topic{padding:14px}.wn-topic b{font-size:17px}}
 @media(max-width:420px){.wn-needs{grid-template-columns:1fr}}
+
+/* Lösungen: Karten, Menü und Unterseiten */
+.sol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.sol-grid.sol-grid-2{grid-template-columns:repeat(2,1fr);max-width:860px}
+.sol{border-radius:28px;padding:30px;display:flex;flex-direction:column;gap:12px;text-decoration:none;border:1px solid transparent;transition:transform .2s,border-color .2s}
+.sol.bg-white{border-color:var(--line)}
+.sol:hover{transform:translateY(-2px);border-color:var(--navy)}
+.sol .ic{width:46px;height:46px;border-radius:14px;background:var(--white);color:var(--terra);display:grid;place-items:center}
+.sol.bg-white .ic{background:var(--sand)}
+.sol h3{font-size:26px}
+.sol p{color:var(--ink-soft);font-size:16px}
+.sol .go{margin-top:auto;padding-top:8px;font-weight:600;color:var(--navy);align-self:flex-start;border-bottom:1.5px solid var(--rose)}
+.dd-link:focus-within .dd-menu{display:grid}
+.m-grid.m-grid-3{grid-template-columns:repeat(3,1fr)}
+.tasks.tasks-3{grid-template-columns:repeat(3,1fr)}
+.uc-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:48px}
+.uc{background:var(--white);border:1px solid var(--line);border-radius:24px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.uc h3{font-size:23px}
+.uc p{color:var(--ink-soft)}
+.uc .ev-link{align-self:flex-start;margin-top:auto}
+.cm-vis.cm-hero{border-radius:32px}
+@media(max-width:960px){.sol-grid,.sol-grid.sol-grid-2,.m-grid.m-grid-3{grid-template-columns:1fr}.tasks.tasks-3{grid-template-columns:1fr 1fr}.uc-grid{grid-template-columns:1fr}}
+@media(max-width:900px){.dd-link > a span{display:none}}
+@media(max-width:560px){.tasks.tasks-3{grid-template-columns:1fr}}

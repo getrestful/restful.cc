@@ -1,0 +1,59 @@
+---
+layout: layout.njk
+permalink: /loesungen/
+title: "Lösungen · restful"
+description: "Peer-Plattform, Chat-Beratung mit Commelia und digitale Patientenpfade: digitale Begleitung, die zu eurer Methode passt."
+---
+{% from "icon.njk" import icon %}
+
+<section class="sub-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="/">Startseite</a> · Lösungen</p>
+    <p class="kicker">Lösungen</p>
+    <h1>Digitale Begleitung, <i>die zu eurer Methode passt</i></h1>
+    <p class="lead">Ihr wählt, was eure Mitglieder oder Patientinnen und Patienten brauchen. Wir bauen es mit euch auf, betreiben es und messen, was es bewirkt.</p>
+  </div>
+</section>
+
+<section class="pt0" aria-labelledby="drei-titel">
+  <div class="wrap">
+    <h2 class="sr-only" id="drei-titel">Unsere drei Lösungen</h2>
+    {% include "loesungen-karten.njk" %}
+  </div>
+</section>
+
+<section class="method" aria-labelledby="zusammen-titel">
+  <div class="wrap">
+    <p class="kicker">So spielen sie zusammen</p>
+    <h2 id="zusammen-titel">Von der ersten Frage <i>zur Begleitung</i></h2>
+    <p class="lead">Viele Menschen melden sich zuerst mit einer konkreten Frage. Manche brauchen danach mehr: jemanden, der die Situation aus eigener Erfahrung kennt.</p>
+    <div class="m-grid m-grid-3">
+      <div class="m-card"><span class="k">01</span><h3>Eine Frage kommt an</h3><p>Über Commelia schreiben Ratsuchende per Chat, E-Mail oder WhatsApp. Routinefragen beantwortet der Assistent, alles andere euer Team.</p></div>
+      <div class="m-card"><span class="k">02</span><h3>Begleitung durch Peers</h3><p>Wer längerfristig Austausch sucht, wird auf der Peer-Plattform mit einem Menschen mit ähnlicher Erfahrung verbunden.</p></div>
+      <div class="m-card"><span class="k">03</span><h3>Wirkung sichtbar machen</h3><p>Auswertungen zeigen, wen ihr erreicht und was es bewirkt, für eure Steuerung und eure Geldgeber.</p></div>
+    </div>
+    <p class="mt30">In digitalen Patientenpfaden setzen wir beides als Bausteine ein, verbunden mit den Schritten eurer Versorgung.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="why">
+      <p>Eine Plattform allein macht noch kein wirksames Angebot. Entscheidend sind Format, Matching und Begleitung.</p>
+      <div><a class="btn btn-dark" href="/wissenschaft/">Zu Methode &amp; Evidenz</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt" class="pt0">
+  <div class="wrap">
+    <div class="contact-box compact">
+      <div>
+        <h2>Welche Lösung <i>passt zu euch?</i></h2>
+        <p>Wir klären es gemeinsam in einem unverbindlichen Erstgespräch.</p>
+        <p class="mail">Direkt per E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+      <a class="btn btn-dark" href="/#kontakt">Erstgespräch vereinbaren</a>
+    </div>
+  </div>
+</section>

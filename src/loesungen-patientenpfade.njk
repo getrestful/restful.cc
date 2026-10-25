@@ -1,0 +1,61 @@
+---
+layout: layout.njk
+permalink: /loesungen/patientenpfade/
+title: "Digitale Patientenpfade · restful"
+description: "restful konzipiert und entwickelt digitale und hybride Angebote entlang des Versorgungsverlaufs, zum Beispiel den Swiss Sleep Circle mit dem Inselspital Bern."
+---
+<section class="sub-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="/">Startseite</a> · <a href="/loesungen/">Lösungen</a> · Digitale Patientenpfade</p>
+    <p class="kicker">Für Spitäler, Kliniken und Institutionen</p>
+    <h1>Patientenpfade <i>digital</i> weiterdenken</h1>
+    <p class="lead">Wir konzipieren und entwickeln digitale und hybride Angebote entlang des Versorgungsverlaufs. Damit Patientinnen und Patienten auch zwischen den Terminen begleitet sind.</p>
+  </div>
+</section>
+
+<section class="projects" id="projekte">
+  <div class="wrap proj-grid">
+    <div>
+      <p class="kicker">Was wir übernehmen</p>
+      <h2>Von der Analyse <i>bis zum Betrieb</i></h2>
+      <div class="services">
+        {%- for s in digitalprojekte.services %}
+        <div><b>{{ s.title }}</b><span>{{ s.text }}</span></div>
+        {%- endfor %}
+      </div>
+      <a class="btn btn-light mt30" href="#kontakt">Projekt besprechen</a>
+    </div>
+    {%- set c = digitalprojekte.case %}
+    <div class="case-card">
+      <div class="head"><img src="/images/{{ c.logo }}" alt="{{ c.logoAlt }}" loading="lazy"><div><small>Fallbeispiel</small><h3>{{ c.title }}</h3></div></div>
+      <dl>
+        {%- for r in c.rows %}
+        <dt>{{ r.term }}</dt><dd>{{ r.text }}</dd>
+        {%- endfor %}
+      </dl>
+      <a class="ev-link" href="{{ c.url }}" target="_blank" rel="noopener">Zum Projekt bei Gesundheitsförderung Schweiz ↗</a>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="weitere-titel">
+  <div class="wrap">
+    <p class="kicker">Bausteine</p>
+    <h2 class="h-sm" id="weitere-titel">Was wir <i>in Patientenpfade einbauen</i></h2>
+    {%- set exclude = "patientenpfade" %}
+    {% include "loesungen-karten.njk" %}
+  </div>
+</section>
+
+<section id="kontakt" class="pt0">
+  <div class="wrap">
+    <div class="contact-box compact">
+      <div>
+        <h2>Projekt <i>besprechen</i></h2>
+        <p>Erzähl uns, wo in eurem Versorgungsverlauf es hakt. Wir zeigen dir, wie ein digitaler Pfad aussehen könnte.</p>
+        <p class="mail">Direkt per E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+      <a class="btn btn-dark" href="/#kontakt">Erstgespräch vereinbaren</a>
+    </div>
+  </div>
+</section>

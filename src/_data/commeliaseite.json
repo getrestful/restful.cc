@@ -1,0 +1,16 @@
+{
+  "features": [
+    { "icon": "chat", "title": "Ein Posteingang für alle Kanäle", "text": "Web-Chat, E-Mail und WhatsApp landen am selben Ort. Alle sehen, wer gerade antwortet, so geht nichts verloren." },
+    { "icon": "users", "title": "Die richtige Person antwortet", "text": "Fachpersonen und Peers arbeiten in Gruppen. Regeln nach Kanal, Sprache oder Einstiegsfragen bringen jede Anfrage zur passenden Gruppe." },
+    { "icon": "lifebuoy", "title": "So viel KI wie nötig", "text": "Der Assistent beantwortet Routinefragen aus eurem Wissen. Bei sensiblen Themen, Krisensignalen oder auf Wunsch übergibt er an einen Menschen." },
+    { "icon": "shield", "title": "Datenschutz eingebaut", "text": "Gehostet in der Schweiz oder auf eurem eigenen Server. KI-Anfragen gehen nur an Anbieter, die Daten weder speichern noch zum Training nutzen." },
+    { "icon": "book", "title": "In der Sprache der Ratsuchenden", "text": "Automatische Übersetzung und Antwortvorschläge in einfacher Sprache." },
+    { "icon": "chart", "title": "Auswertungen", "text": "Antwortzeiten und Rückmeldungen auf einen Blick, Exporte ohne Nachrichtentexte." }
+  ],
+  "einsatz": [
+    { "title": "Beratungsstellen und Elternberatung", "text": "Häufige Fragen schnell beantworten und besorgte Menschen rasch mit einer Fachperson verbinden.", "url": "", "link": "" },
+    { "title": "Patientenorganisationen und Peer-Angebote", "text": "Erfahrene Betroffene und Fachpersonen antworten Seite an Seite, mit klarer Zuteilung für medizinische Fragen.", "url": "/loesungen/peer-plattform/", "link": "Zur Peer-Plattform" },
+    { "title": "Spitäler und Arztpraxen", "text": "Fragen zwischen den Terminen an einem Ort bündeln. Medizinische Anliegen gehen direkt an euer Team.", "url": "/fuer/spitaeler-und-arztpraxen/", "link": "Für Spitäler und Arztpraxen" },
+    { "title": "IV-Stellen und soziale Dienste", "text": "Abläufe verständlich erklären, in einfacher Sprache oder übersetzt, und übergeben, sobald es um den eigenen Fall geht.", "url": "/fuer/iv-stellen/", "link": "Für IV-Stellen" }
+  ]
+}

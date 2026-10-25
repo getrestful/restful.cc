@@ -1,0 +1,92 @@
+---
+layout: layout.njk
+permalink: /loesungen/commelia/
+title: "Commelia: Chat-Beratung · restful"
+description: "Commelia ist der Chat für Sozial- und Gesundheitsorganisationen: Web-Chat, E-Mail und WhatsApp in einem Posteingang, Fachpersonen und Peers antworten gemeinsam, ein KI-Assistent übernimmt Routinefragen."
+---
+{% from "icon.njk" import icon %}
+{%- set cm = digitalprojekte.commelia %}
+
+<section class="zg-hero">
+  <div class="wrap">
+    <p class="crumb"><a href="/">Startseite</a> · <a href="/loesungen/">Lösungen</a> · Commelia</p>
+    <div class="grid">
+      <div>
+        <span class="zg-label">Commelia: Chat-Beratung</span>
+        <h1>Support von Mensch zu Mensch, <i>mit einer Prise KI</i></h1>
+        <p class="sub">Commelia vereint Web-Chat, E-Mail und WhatsApp in einem ruhigen Posteingang. Euer Team aus Fachpersonen und Peers antwortet gemeinsam, ein KI-Assistent übernimmt Routinefragen und weiss, wann ein Mensch übernehmen soll.</p>
+        <div class="ctas"><a class="btn btn-violet" href="{{ cm.url }}" target="_blank" rel="noopener">30 Tage kostenlos testen</a><a class="btn btn-line" href="#kontakt">Gespräch vereinbaren</a></div>
+      </div>
+      <div class="cm-vis cm-hero"><img src="/images/{{ cm.image }}" width="1020" height="880" alt="{{ cm.imageAlt }}"></div>
+    </div>
+  </div>
+</section>
+
+<section class="pt0" aria-labelledby="kann-titel">
+  <div class="wrap">
+    <p class="kicker">Was Commelia kann</p>
+    <h2 id="kann-titel">Einfach genug für Freiwillige, <i>stark genug für Fachteams</i></h2>
+    <div class="tasks tasks-3">
+      {%- for f in commeliaseite.features %}
+      <div class="task"><span class="c">{{ icon(f.icon) | safe }}</span><h3>{{ f.title }}</h3><p>{{ f.text }}</p></div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="pt0" aria-labelledby="wo-titel">
+  <div class="wrap">
+    <p class="kicker">Wo Commelia hilft</p>
+    <h2 id="wo-titel">Für Menschen, <i>die Menschen helfen</i></h2>
+    <div class="uc-grid">
+      {%- for u in commeliaseite.einsatz %}
+      <div class="uc">
+        <h3>{{ u.title }}</h3>
+        <p>{{ u.text }}</p>
+        {%- if u.url %}<a class="ev-link" href="{{ u.url }}">{{ u.link }} →</a>{% endif %}
+      </div>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="pt0" aria-labelledby="wie-titel">
+  <div class="wrap">
+    <p class="kicker">Mit oder ohne restful</p>
+    <h2 id="wie-titel">So startet <i>ihr mit Commelia</i></h2>
+    <div class="research">
+      <div class="bg-lav">
+        <h3>Direkt loslegen</h3>
+        <p>Commelia selbst einrichten und 30 Tage kostenlos testen. Keine Kreditkarte nötig, Rabatte für gemeinnützige Organisationen.</p>
+        <p class="mt30"><a class="btn btn-violet" href="{{ cm.url }}" target="_blank" rel="noopener">Zu commelia.de ↗</a></p>
+      </div>
+      <div class="bg-sand">
+        <h3>Gemeinsam mit restful</h3>
+        <p>Wir richten Commelia mit euch ein, verbinden es mit eurem Peer-Angebot und begleiten Einführung, Rollen und Auswertung.</p>
+        <p class="mt30"><a class="btn btn-dark" href="#kontakt">Gespräch vereinbaren</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pt0" aria-labelledby="weitere-titel">
+  <div class="wrap">
+    <p class="kicker">Weitere Lösungen</p>
+    <h2 class="h-sm" id="weitere-titel">Was sich <i>damit verbinden lässt</i></h2>
+    {%- set exclude = "commelia" %}
+    {% include "loesungen-karten.njk" %}
+  </div>
+</section>
+
+<section id="kontakt" class="pt0">
+  <div class="wrap">
+    <div class="contact-box compact">
+      <div>
+        <h2>Lieber <i>live sehen?</i></h2>
+        <p>Wir zeigen dir Commelia gerne in einem unverbindlichen Gespräch.</p>
+        <p class="mail">Direkt per E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+      <a class="btn btn-dark" href="/#kontakt">Gespräch vereinbaren</a>
+    </div>
+  </div>
+</section>

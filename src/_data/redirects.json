@@ -1,10 +1,11 @@
 [
   { "from": "/angebot/", "to": "/#nutzen", "title": "Angebot" },
   { "from": "/peer-angebote/", "to": "/#einstieg", "title": "Peer-Angebote" },
-  { "from": "/projekte/", "to": "/#projekte", "title": "Individuelle Projekte" },
+  { "from": "/projekte/", "to": "/loesungen/patientenpfade/", "title": "Individuelle Projekte" },
   { "from": "/patient-advocacy/", "to": "/fuer/industrie/", "title": "Patient Advocacy" },
   { "from": "/ueber-restful/", "to": "/ueber-uns/", "title": "Über restful" },
   { "from": "/industry/", "to": "/fuer/industrie/", "title": "Industry" },
   { "from": "/fachpersonen/", "to": "/fuer/spitaeler-und-arztpraxen/", "title": "Fachpersonen" },
-  { "from": "/literaturverzeichnis/", "to": "/wissenschaft/#literatur", "title": "Literaturverzeichnis" }
+  { "from": "/literaturverzeichnis/", "to": "/wissenschaft/#literatur", "title": "Literaturverzeichnis" },
+  { "from": "/plattform/", "to": "/loesungen/peer-plattform/", "title": "Plattform" }
 ]

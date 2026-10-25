@@ -16,7 +16,7 @@ if (header && menuBtn) {
 }
 
 // Aufklappmenü «Für wen»
-document.querySelectorAll('.dd').forEach(dd => {
+document.querySelectorAll('.dd:not(.dd-link)').forEach(dd => {
   const btn = dd.querySelector('button');
   const setOpen = open => { dd.classList.toggle('open', open); btn.setAttribute('aria-expanded', open); };
   btn.addEventListener('click', () => setOpen(!dd.classList.contains('open')));
@@ -133,3 +133,4 @@ window.addEventListener('hashchange', openTarget);
 
 // Alte Sprungmarken der Startseite zeigen auf die Seite «Über uns»
 if (location.pathname === '/' && /^#(team|netzwerk)$/.test(location.hash)) location.replace('/ueber-uns/' + location.hash);
+if (location.pathname === '/' && location.hash === '#projekte') location.replace('/loesungen/patientenpfade/');

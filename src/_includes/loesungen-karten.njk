@@ -1,0 +1,12 @@
+{#- Karten der Lösungen. Optional: exclude = key der aktuellen Seite #}
+{%- from "icon.njk" import icon %}
+<div class="sol-grid{% if exclude %} sol-grid-2{% endif %}">
+  {%- for l in loesungen %}{% if l.key != exclude %}
+  <a class="sol bg-{{ l.tone }}" href="{{ l.url }}">
+    <span class="ic">{{ icon(l.icon, 22) | safe }}</span>
+    <h3>{{ l.title }}</h3>
+    <p>{{ l.text }}</p>
+    <span class="go">Mehr erfahren →</span>
+  </a>
+  {%- endif %}{% endfor %}
+</div>

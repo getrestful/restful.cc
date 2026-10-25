@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
-permalink: /plattform/
-title: "Plattform · restful"
+permalink: /loesungen/peer-plattform/
+title: "Peer-Plattform · restful"
 description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Organisation, betrieben von restful. So erleben sie Koordination und Mitglieder."
 ---
 {% from "icon.njk" import icon %}
@@ -9,8 +9,8 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
 
 <section class="sub-hero">
   <div class="wrap">
-    <p class="crumb"><a href="/">Startseite</a> · Plattform</p>
-    <p class="kicker">Plattform</p>
+    <p class="crumb"><a href="/">Startseite</a> · <a href="/loesungen/">Lösungen</a> · Peer-Plattform</p>
+    <p class="kicker">Peer-Plattform</p>
     <h1>Die Technik <i>im Hintergrund</i></h1>
     <p class="lead">Hinter jedem Peer-Angebot steht eine Plattform, die wir für dich betreiben. Sie läuft unter deinem Namen, damit deine Organisation die Ansprechpartnerin bleibt. Im Zentrum stehen Methode und Begleitung, die Technik macht sie möglich.</p>
   </div>
@@ -94,6 +94,27 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
       <p>Eine Plattform allein macht noch kein wirksames Angebot. Entscheidend sind Format, Matching und Begleitung.</p>
       <div><a class="btn btn-dark" href="/wissenschaft/">Zu Methode &amp; Evidenz</a></div>
     </div>
+  </div>
+</section>
+
+<section class="pt0" aria-labelledby="ref-titel">
+  <div class="wrap">
+    <p class="kicker">Im Einsatz</p>
+    <h2 class="h-sm" id="ref-titel">Auf der Plattform laufen <i>bereits diese Angebote</i></h2>
+    <div class="partner-grid">
+      {%- for i in initiatives %}{% if i.logo in loesungsseite.peerReferenzen %}
+      <a class="partner" href="{{ i.href }}" target="_blank" rel="noopener"><div class="lg"><img src="/images/{{ i.logo }}" alt="" loading="lazy"></div><div><b>{{ i.name }}</b><span>{{ i.desc }}</span></div></a>
+      {%- endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="pt0" aria-labelledby="weitere-titel">
+  <div class="wrap">
+    <p class="kicker">Weitere Lösungen</p>
+    <h2 class="h-sm" id="weitere-titel">Was sich <i>damit verbinden lässt</i></h2>
+    {%- set exclude = "peer-plattform" %}
+    {% include "loesungen-karten.njk" %}
   </div>
 </section>
 

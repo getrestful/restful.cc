@@ -52,7 +52,7 @@ description: "restful baut mit Organisationen im Gesundheits- und Sozialwesen An
     <div class="platform-hint">
       <div class="mini-phone"><img src="/images/vision-screen-1.jpg" width="640" height="1170" loading="lazy" alt="Startseite des Peer-Angebots von Demenzworld"></div>
       <div><b>Läuft unter deinem Namen, restful bleibt im Hintergrund.</b><p>Die Plattform betreiben wir für dich: Hosting, Wartung und Weiterentwicklung inklusive. Deine Mitglieder sehen dein Logo, deine Farben, deine Adresse.</p></div>
-      <a href="/plattform/">So sieht die Plattform aus →</a>
+      <a href="/loesungen/peer-plattform/">So sieht die Plattform aus →</a>
     </div>
   </div>
 </section>
@@ -156,50 +156,12 @@ description: "restful baut mit Organisationen im Gesundheits- und Sozialwesen An
   </div>
 </section>
 
-<section class="projects" id="projekte">
-  <div class="wrap proj-grid">
-    <div>
-      <p class="kicker">Für Spitäler, Kliniken und Institutionen</p>
-      <h2>Patientenpfade <i>digital</i> weiterdenken</h2>
-      <p class="lead">Wir konzipieren und entwickeln digitale und hybride Angebote entlang des Versorgungsverlaufs. Damit Patientinnen und Patienten auch zwischen den Terminen begleitet sind.</p>
-      <div class="services">
-        {%- for s in digitalprojekte.services %}
-        <div><b>{{ s.title }}</b><span>{{ s.text }}</span></div>
-        {%- endfor %}
-      </div>
-      <a class="btn btn-light mt30" href="#kontakt">Projekt besprechen</a>
-    </div>
-    {%- set c = digitalprojekte.case %}
-    <div class="case-card">
-      <div class="head"><img src="/images/{{ c.logo }}" alt="{{ c.logoAlt }}" loading="lazy"><div><small>Fallbeispiel</small><h3>{{ c.title }}</h3></div></div>
-      <dl>
-        {%- for r in c.rows %}
-        <dt>{{ r.term }}</dt><dd>{{ r.text }}</dd>
-        {%- endfor %}
-      </dl>
-      <a class="ev-link" href="{{ c.url }}" target="_blank" rel="noopener">Zum Projekt bei Gesundheitsförderung Schweiz ↗</a>
-    </div>
-  </div>
-  {%- set cm = digitalprojekte.commelia %}
+<section id="loesungen" aria-labelledby="loesungen-titel">
   <div class="wrap">
-    <article class="cm" aria-labelledby="cm-titel">
-      <div class="cm-txt">
-        <span class="cm-badge">Neu von restful</span>
-        <h3 id="cm-titel">Commelia: <i>Support von Mensch zu Mensch</i></h3>
-        <p class="in">Der Chat für Sozial- und Gesundheitsorganisationen. Für Beratungsstellen, Patientengruppen und Communities, die ihre Mitglieder schnell und persönlich erreichen wollen.</p>
-        <ul class="cm-list">
-          {%- for it in cm.items %}
-          <li><span class="c">{{ icon("check", 14, 2.6) | safe }}</span>{{ it }}</li>
-          {%- endfor %}
-        </ul>
-        <div class="cm-ctas">
-          <a class="btn btn-violet" href="{{ cm.url }}" target="_blank" rel="noopener">30 Tage kostenlos testen</a>
-          <a class="btn btn-line" href="{{ cm.url }}" target="_blank" rel="noopener">Mehr zu Commelia</a>
-          <small>Keine Kreditkarte nötig. Rabatte für gemeinnützige Organisationen.</small>
-        </div>
-      </div>
-      <div class="cm-vis"><img src="/images/{{ cm.image }}" width="1020" height="880" loading="lazy" alt="{{ cm.imageAlt }}"></div>
-    </article>
+    <p class="kicker">Unsere Lösungen</p>
+    <h2 id="loesungen-titel">Digitale Begleitung, <i>die zu eurer Methode passt</i></h2>
+    {% include "loesungen-karten.njk" %}
+    <p class="mt30"><a class="ev-link" href="/loesungen/">Alle Lösungen ansehen →</a></p>
   </div>
 </section>
 

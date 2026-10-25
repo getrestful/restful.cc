@@ -1,0 +1,26 @@
+[
+  {
+    "key": "peer-plattform",
+    "title": "Peer-Plattform",
+    "text": "Menschen mit ähnlicher Erfahrung zusammenbringen: unter deinem Namen, sorgfältig vermittelt und mit Wirkungsmessung.",
+    "url": "/loesungen/peer-plattform/",
+    "icon": "users",
+    "tone": "sand"
+  },
+  {
+    "key": "commelia",
+    "title": "Commelia: Chat-Beratung",
+    "text": "Fragen schnell und persönlich beantworten: Web-Chat, E-Mail und WhatsApp in einem Posteingang, mit KI-Unterstützung.",
+    "url": "/loesungen/commelia/",
+    "icon": "chat",
+    "tone": "lav"
+  },
+  {
+    "key": "patientenpfade",
+    "title": "Digitale Patientenpfade",
+    "text": "Individuelle Projekte für Spitäler und Institutionen, zum Beispiel der Swiss Sleep Circle mit dem Inselspital Bern.",
+    "url": "/loesungen/patientenpfade/",
+    "icon": "layers",
+    "tone": "white"
+  }
+]

@@ -53,6 +53,14 @@
           </div>
         </li>
         <li><a href="/#nutzen">Nutzen</a></li>
+        <li class="dd dd-link">
+          <a href="/loesungen/"{% if page.url.startsWith("/loesungen/") %} aria-current="page"{% endif %}>Lösungen <span aria-hidden="true">▾</span></a>
+          <div class="dd-menu">
+            {%- for l in loesungen %}
+            <a href="{{ l.url }}"{% if page.url == l.url %} aria-current="page"{% endif %}>{{ l.title }}</a>
+            {%- endfor %}
+          </div>
+        </li>
         <li><a href="/#einstieg">Einstieg</a></li>
         <li><a href="/ueber-uns/"{% if page.url == "/ueber-uns/" %} aria-current="page"{% endif %}>Über uns</a></li>
       </ul>
@@ -71,7 +79,7 @@
   <div class="wrap">
     <span>{{ site.legalName }}, {{ site.city }}</span>
     <nav aria-label="Fusszeile">
-      <a href="/plattform/">Plattform</a>
+      <a href="/loesungen/">Lösungen</a>
       <a href="/wissenschaft/">Methode &amp; Evidenz</a>
       <a href="/datenschutzerklaerung/">Datenschutz</a>
       <a href="{{ site.jobsUrl }}" target="_blank" rel="noopener">Offene Stellen</a>
