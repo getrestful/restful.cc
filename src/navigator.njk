@@ -13,7 +13,7 @@ minimalHeader: "Navigator"
   <div class="wrap">
     <p class="kicker">Navigator</p>
     <h1>Finde die Unterstützung, <i>die zu dir passt</i></h1>
-    <p class="lead">Zwei Fragen, dann zeigen wir dir passende Anlaufstellen in der Schweiz: Menschen mit ähnlicher Erfahrung, persönliche Beratung, verlässliche Informationen und Hilfe im Alltag.</p>
+    <p class="lead">Vier kurze Fragen, dann zeigen wir dir passende Anlaufstellen in der Schweiz.</p>
     <p class="wn-notice">{{ icon("shield", 18) | safe }}<span>Der Navigator ersetzt keine medizinische Beratung. Im Notfall: <a href="tel:144">144</a>. Wenn du nicht mehr weiterweisst, ist die Dargebotene Hand rund um die Uhr da: <a href="tel:143">143</a>.</span></p>
   </div>
 </section>
@@ -23,33 +23,46 @@ minimalHeader: "Navigator"
     <div class="wn-progress" aria-hidden="true"><span data-bar></span></div>
 
     <div class="wn-step on" data-step="1">
-      <p class="wn-count">Frage 1 von 2</p>
-      <h2 class="h-sm" tabindex="-1">Worum <i>geht es?</i></h2>
-      <fieldset class="wn-roles">
-        <legend>Ich suche Unterstützung</legend>
+      <p class="wn-count">Frage 1 von 4</p>
+      <h2 class="h-sm" tabindex="-1">Für wen <i>suchst du Unterstützung?</i></h2>
+      <div class="wn-choices wn-two" role="group" aria-label="Für wen suchst du Unterstützung?">
         {%- for r in navigator.roles %}
-        <label><input type="radio" name="fuer" value="{{ r.key }}"{% if loop.first %} checked{% endif %}><span>{{ r.label }}</span></label>
-        {%- endfor %}
-      </fieldset>
-      <div class="wn-topics" role="group" aria-label="Thema wählen">
-        {%- for t in navigator.topics %}
-        <button type="button" class="wn-topic" data-topic="{{ t.key }}" aria-pressed="false"><b>{{ t.label }}</b><span>{{ t.hint }}</span></button>
+        <button type="button" class="wn-choice" data-fuer="{{ r.key }}" aria-pressed="false"><b>{{ r.label }}</b><span>{{ r.hint }}</span></button>
         {%- endfor %}
       </div>
     </div>
 
     <div class="wn-step" data-step="2">
-      <p class="wn-count">Frage 2 von 2 <span class="wn-picked" data-picked></span></p>
-      <h2 class="h-sm" tabindex="-1">Was würde dir <i>jetzt</i> helfen?</h2>
-      <div class="wn-needs" role="group" aria-label="Was würde dir helfen?">
-        {%- for n in navigator.needs %}
-        <button type="button" class="wn-need{% if n.key == 'krise' %} wn-need-krise{% endif %}" data-need="{{ n.key }}" aria-pressed="false"><span class="ic">{{ icon(n.icon, 22) | safe }}</span><b>{{ n.label }}</b><span>{{ n.hint }}</span></button>
+      <p class="wn-count">Frage 2 von 4</p>
+      <h2 class="h-sm" tabindex="-1">In welchem <i>Bereich?</i></h2>
+      <div class="wn-choices" role="group" aria-label="Bereich wählen">
+        {%- for g in navigator.groups %}
+        <button type="button" class="wn-choice" data-group="{{ g.key }}" aria-pressed="false"><b>{{ g.label }}</b><span>{{ g.hint }}</span></button>
         {%- endfor %}
       </div>
-      <p class="wn-back"><button type="button" class="link-btn" data-goto="1">← Thema ändern</button></p>
+      <p class="wn-back"><button type="button" class="link-btn" data-goto="1">← Zurück</button></p>
     </div>
 
-    <div class="wn-step wn-result" data-step="3">
+    <div class="wn-step" data-step="3">
+      <p class="wn-count">Frage 3 von 4</p>
+      <h2 class="h-sm" tabindex="-1">Was trifft <i>am ehesten zu?</i></h2>
+      <div class="wn-choices" role="group" aria-label="Thema wählen" data-topics></div>
+      <p class="wn-back"><button type="button" class="link-btn" data-goto="2">← Zurück</button></p>
+    </div>
+
+    <div class="wn-step" data-step="4">
+      <p class="wn-count">Frage 4 von 4</p>
+      <h2 class="h-sm" tabindex="-1">Was würde dir <i>jetzt</i> helfen?</h2>
+      <div class="wn-choices" role="group" aria-label="Was würde dir helfen?">
+        {%- for n in navigator.needs %}
+        <button type="button" class="wn-choice wn-need" data-need="{{ n.key }}" aria-pressed="false"><span class="ic">{{ icon(n.icon, 22) | safe }}</span><b>{{ n.label }}</b><span>{{ n.hint }}</span></button>
+        {%- endfor %}
+      </div>
+      <p class="wn-krise-link"><button type="button" class="link-btn" data-need="krise">{{ icon("lifebuoy", 18) | safe }} {{ navigator.crisisNeed.label }}: sofort Hilfe finden</button></p>
+      <p class="wn-back"><button type="button" class="link-btn" data-goto="3">← Zurück</button></p>
+    </div>
+
+    <div class="wn-step wn-result" data-step="5">
       <p class="wn-count" data-summary></p>
       <h2 class="h-sm" tabindex="-1" data-result-title></h2>
       <p class="wn-sub" data-result-sub></p>
@@ -67,7 +80,7 @@ minimalHeader: "Navigator"
         </ul>
       </aside>
       <div class="wn-actions">
-        <button type="button" class="btn btn-line" data-goto="2">Andere Unterstützung wählen</button>
+        <button type="button" class="btn btn-line" data-goto="4">Andere Unterstützung wählen</button>
         <button type="button" class="link-btn" data-restart>Neu starten</button>
       </div>
       <p class="wn-missing">Fehlt eine Anlaufstelle, die dir geholfen hat? Schreib uns an <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>

@@ -77,18 +77,20 @@
   },
   {
    "key": "andere",
-   "label": "Etwas anderes",
-   "hint": "andere Krankheit oder noch unklar"
+   "label": "Ich weiss es noch nicht",
+   "hint": "oder eine andere Krankheit"
   }
  ],
  "roles": [
   {
    "key": "selbst",
-   "label": "für mich"
+   "label": "Für mich",
+   "hint": "Ich bin selbst betroffen"
   },
   {
    "key": "angehoerige",
-   "label": "für eine nahestehende Person"
+   "label": "Für eine nahestehende Person",
+   "hint": "Ich begleite oder pflege jemanden"
   }
  ],
  "needs": [
@@ -97,49 +99,42 @@
    "icon": "chat",
    "label": "Mit jemandem reden, der es kennt",
    "hint": "Menschen mit ähnlicher Erfahrung",
+   "match": [
+    "austausch"
+   ],
    "title": "Menschen, die <i>verstehen</i>, wie es ist"
-  },
-  {
-   "key": "info",
-   "icon": "book",
-   "label": "Verstehen, was auf mich zukommt",
-   "hint": "Verlässliche Informationen",
-   "title": "Verlässlich <i>informiert</i>"
   },
   {
    "key": "beratung",
    "icon": "users",
-   "label": "Persönliche Beratung",
-   "hint": "Eine Fachperson, die zuhört und weiterhilft",
-   "title": "Persönliche <i>Beratung</i>"
+   "label": "Rat und Informationen",
+   "hint": "Fachleute, die zuhören und weiterhelfen",
+   "match": [
+    "beratung",
+    "info"
+   ],
+   "title": "Rat <i>und Informationen</i>"
   },
   {
    "key": "geld",
    "icon": "coins",
-   "label": "Geld, Arbeit & Versicherung",
-   "hint": "IV, Krankenkasse, Arbeitsplatz, finanzielle Hilfe",
+   "label": "Geld, Arbeit und Versicherung",
+   "hint": "IV, Krankenkasse, Arbeitsplatz",
+   "match": [
+    "geld"
+   ],
    "title": "Geld, Arbeit <i>und Versicherung</i>"
   },
   {
    "key": "alltag",
    "icon": "home",
-   "label": "Entlastung im Alltag",
-   "hint": "Pflege, Hilfe zu Hause, Zeit für mich",
-   "title": "Entlastung <i>im Alltag</i>"
-  },
-  {
-   "key": "aktiv",
-   "icon": "activity",
-   "label": "Selbst aktiv werden",
-   "hint": "Kurse, Bewegung, gut mit der Krankheit leben",
-   "title": "Selbst <i>aktiv</i> werden"
-  },
-  {
-   "key": "krise",
-   "icon": "lifebuoy",
-   "label": "Es geht mir gerade gar nicht gut",
-   "hint": "Sofort mit jemandem sprechen",
-   "title": "Hilfe, <i>sofort</i>"
+   "label": "Mehr Kraft im Alltag",
+   "hint": "Entlastung, Hilfe zu Hause, Kurse",
+   "match": [
+    "alltag",
+    "aktiv"
+   ],
+   "title": "Mehr Kraft <i>im Alltag</i>"
   }
  ],
  "types": {
@@ -1842,24 +1837,73 @@
   }
  ],
  "related": {
-  "aktiv": [
-   "austausch",
-   "info"
-  ],
-  "alltag": [
+  "austausch": [
    "beratung"
+  ],
+  "beratung": [
+   "austausch"
   ],
   "geld": [
    "beratung"
   ],
-  "austausch": [
-   "beratung"
-  ],
-  "info": [
-   "beratung"
-  ],
-  "beratung": [
-   "info"
+  "alltag": [
+   "beratung",
+   "austausch"
   ]
+ },
+ "groups": [
+  {
+   "key": "koerper",
+   "label": "Eine körperliche Krankheit",
+   "hint": "Krebs, Herz, Lunge, Diabetes, Rheuma",
+   "topics": [
+    "krebs",
+    "herz",
+    "lunge",
+    "diabetes",
+    "rheuma"
+   ]
+  },
+  {
+   "key": "kopf",
+   "label": "Nerven, Gedächtnis oder Psyche",
+   "hint": "Neurologie, Demenz, psychische Gesundheit, Sucht",
+   "topics": [
+    "neuro",
+    "demenz",
+    "psyche",
+    "sucht"
+   ]
+  },
+  {
+   "key": "familie",
+   "label": "Kind, Familie oder Behinderung",
+   "hint": "krankes Kind, Frühgeburt, Verlust, Behinderung",
+   "topics": [
+    "familie",
+    "behinderung"
+   ]
+  },
+  {
+   "key": "weitere",
+   "label": "Etwas anderes",
+   "hint": "weitere Krankheiten oder noch unklar",
+   "topics": [
+    "verdauung",
+    "haut",
+    "selten",
+    "longcovid",
+    "andere"
+   ]
+  }
+ ],
+ "crisisNeed": {
+  "key": "krise",
+  "title": "Hilfe, <i>sofort</i>",
+  "label": "Es geht mir gerade gar nicht gut"
+ },
+ "aliases": {
+  "info": "beratung",
+  "aktiv": "alltag"
  }
 }
