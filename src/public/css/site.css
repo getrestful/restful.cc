@@ -128,8 +128,8 @@ header.site{padding:22px 0;position:sticky;top:0;z-index:30;background:color-mix
 .logos img:hover{filter:none;opacity:1}
 
 /* Nutzen */
-.value-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:56px}
-.value{border-radius:32px;padding:44px}
+.value-grid{display:grid;gap:24px;margin-top:56px}
+.value{border-radius:32px;padding:44px;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px 56px;align-items:start}
 .value.org{background:var(--navy);color:var(--cream)}
 .value.org .tag{background:var(--sand);color:var(--navy)}
 .value.mem{background:var(--white);border:1px solid var(--line)}
@@ -149,7 +149,7 @@ header.site{padding:22px 0;position:sticky;top:0;z-index:30;background:color-mix
 .platform-hint b{display:block;font-family:var(--serif);font-weight:var(--hw);font-size:22px;margin-bottom:4px}
 .platform-hint p{color:var(--ink-soft);font-size:15.5px}
 .platform-hint a{font-weight:600;text-decoration:none;color:var(--navy);border-bottom:1.5px solid var(--rose);white-space:nowrap}
-@media(max-width:900px){.value-grid{grid-template-columns:1fr}.value{padding:30px}}
+@media(max-width:900px){.value{grid-template-columns:1fr;padding:30px}}
 @media(max-width:760px){.platform-hint{grid-template-columns:1fr;padding:26px}.platform-hint .mini-phone{display:none}}
 
 /* Methode und Evidenz (Startseite) */

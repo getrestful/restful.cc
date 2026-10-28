@@ -39,8 +39,7 @@ description: "restful baut mit Organisationen im Gesundheits- und Sozialwesen An
     <div class="value-grid">
       {%- for v in [{ d: nutzen.org, cls: "org" }, { d: nutzen.mitglieder, cls: "mem" }] %}
       <div class="value {{ v.cls }}">
-        <span class="tag">{{ v.d.tag }}</span>
-        <h3>{{ v.d.title }}</h3>
+        <div class="value-head"><span class="tag">{{ v.d.tag }}</span><h3>{{ v.d.title }}</h3></div>
         <ul>
           {%- for it in v.d.items %}
           <li><span class="ic">{{ icon(it.icon) | safe }}</span><div><b>{{ it.title }}</b><span>{{ it.text }}</span></div></li>
