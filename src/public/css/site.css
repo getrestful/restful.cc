@@ -313,6 +313,7 @@ details[open] summary .plus{transform:rotate(45deg);background:var(--navy);color
 /* Fusszeile */
 footer.site{padding:50px 0;font-size:14px;color:var(--ink-soft)}
 footer.site .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer.site address{font-style:normal}
 footer.site nav{display:flex;flex-wrap:wrap;gap:6px 18px}
 footer.site a{text-decoration:none}
 footer.site a:hover{text-decoration:underline}

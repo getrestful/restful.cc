@@ -1,6 +1,8 @@
 {
   "name": "restful",
   "legalName": "restful GmbH",
+  "street": "Engehaldenstrasse 20",
+  "zip": "3012",
   "city": "Bern",
   "email": "hallo@getrestful.ch",
   "noindex": true,
