@@ -20,7 +20,7 @@ eleventyComputed:
         <span class="zg-label">{{ zg.label }}</span>
         <h1>{{ zg.h1 | safe }}</h1>
         <p class="sub">{{ zg.sub }}</p>
-        <div class="ctas"><a class="btn btn-dark" href="#kontakt">Gespräch vereinbaren</a><a class="btn btn-line" href="#ablauf">So funktioniert es</a></div>
+        <div class="ctas"><a class="btn btn-dark" href="#kontakt">Infotermin vereinbaren</a><a class="btn btn-line" href="#ablauf">So funktioniert es</a></div>
       </div>
       {{ art(zg.art, "blob") }}
     </div>
@@ -32,7 +32,7 @@ eleventyComputed:
     <div class="txt">
       <h2>{{ zg.reasonsTitle | safe }}</h2>
       <p>{{ zg.reasonsIntro }}</p>
-      <a class="btn btn-dark" href="#kontakt">Gespräch vereinbaren</a>
+      <a class="btn btn-dark" href="#kontakt">Infotermin vereinbaren</a>
     </div>
     <div>
       {%- for r in zg.reasons %}
