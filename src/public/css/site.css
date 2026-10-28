@@ -647,8 +647,18 @@ footer.site a:hover{text-decoration:underline}
 .sol{border-radius:28px;padding:30px;display:flex;flex-direction:column;gap:12px;text-decoration:none;border:1px solid transparent;transition:transform .2s,border-color .2s}
 .sol.bg-white{border-color:var(--line)}
 .sol:hover{transform:translateY(-2px);border-color:var(--navy)}
-.sol .ic{width:46px;height:46px;border-radius:14px;background:var(--white);color:var(--terra);display:grid;place-items:center}
-.sol.bg-white .ic{background:var(--sand)}
+.sol-vis{position:relative;aspect-ratio:4/3;margin:-12px -12px 10px;border-radius:20px;overflow:hidden;background:color-mix(in srgb,var(--white) 55%,transparent)}
+.sol.bg-white .sol-vis{background:var(--sand)}
+.mk-browser{position:absolute;left:8%;top:12%;width:100%;border-radius:12px;overflow:hidden;background:var(--white);box-shadow:0 10px 30px rgba(5,0,74,.12),0 0 0 1px rgba(5,0,74,.06)}
+.sol-vis:not(.has-front) .mk-browser{left:9%;right:9%;width:auto;top:12%}
+.mk-bar{display:flex;gap:5px;padding:8px 10px;background:#F3F1F7;border-bottom:1px solid rgba(5,0,74,.06)}
+.mk-bar i{width:7px;height:7px;border-radius:50%;background:#D9D4E4}
+.mk-browser img,.mk-phone img,.mk-card img{display:block;width:100%;height:auto}
+.mk-phone{position:absolute;right:7%;bottom:-18%;width:28%;padding:5px;border-radius:20px;background:var(--navy);box-shadow:0 14px 30px rgba(5,0,74,.25)}
+.mk-phone img{border-radius:15px}
+.mk-card{position:absolute;right:5%;bottom:7%;width:52%;border-radius:14px;overflow:hidden;background:var(--white);box-shadow:0 14px 34px rgba(5,0,74,.2),0 0 0 1px rgba(5,0,74,.06)}
+.sol:hover .mk-phone,.sol:hover .mk-card{transform:translateY(-4px)}
+.mk-phone,.mk-card{transition:transform .25s}
 .sol h3{font-size:26px}
 .sol p{color:var(--ink-soft);font-size:16px}
 .sol .go{margin-top:auto;padding-top:8px;font-weight:600;color:var(--navy);align-self:flex-start;border-bottom:1.5px solid var(--rose)}

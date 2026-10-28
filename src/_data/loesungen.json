@@ -4,23 +4,58 @@
     "title": "Peer-Plattform",
     "text": "Menschen mit ähnlicher Erfahrung zusammenbringen: unter deinem Namen, sorgfältig vermittelt und mit Wirkungsmessung.",
     "url": "/loesungen/peer-plattform/",
-    "icon": "users",
-    "tone": "sand"
+    "tone": "sand",
+    "mock": {
+      "back": {
+        "img": "mock-peer-admin.webp",
+        "w": 1000,
+        "h": 722,
+        "alt": "Verwaltung einer Peer-Community mit Umfragen und Matching"
+      },
+      "front": {
+        "type": "phone",
+        "img": "vision-screen-1.jpg",
+        "w": 640,
+        "h": 1170,
+        "alt": "Startseite eines Peer-Angebots auf dem Smartphone"
+      }
+    }
   },
   {
     "key": "commelia",
     "title": "Commelia: Chat-Beratung",
     "text": "Fragen schnell und persönlich beantworten: Web-Chat, E-Mail und WhatsApp in einem Posteingang, mit KI-Unterstützung.",
     "url": "/loesungen/commelia/",
-    "icon": "chat",
-    "tone": "lav"
+    "tone": "lav",
+    "mock": {
+      "back": {
+        "img": "mock-commelia-reports.webp",
+        "w": 1000,
+        "h": 722,
+        "alt": "Auswertungen in Commelia nach Gruppe, Kanal und Thema"
+      },
+      "front": {
+        "type": "card",
+        "img": "mock-commelia-chat.webp",
+        "w": 640,
+        "h": 529,
+        "alt": "Chat in Commelia: Die KI beantwortet eine Elternfrage und übergibt an die Beratung"
+      }
+    }
   },
   {
     "key": "patientenpfade",
     "title": "Digitale Patientenpfade",
     "text": "Individuelle Projekte für Spitäler und Institutionen, zum Beispiel der Swiss Sleep Circle mit dem Inselspital Bern.",
     "url": "/loesungen/patientenpfade/",
-    "icon": "layers",
-    "tone": "white"
+    "tone": "white",
+    "mock": {
+      "back": {
+        "img": "mock-mysleep.webp",
+        "w": 1000,
+        "h": 748,
+        "alt": "Übersicht von mySleep mit nächstem Gruppentermin"
+      }
+    }
   }
 ]
