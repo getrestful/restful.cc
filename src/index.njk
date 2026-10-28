@@ -148,9 +148,9 @@ description: "restful baut mit Organisationen im Gesundheits- und Sozialwesen An
 <section class="partners" aria-labelledby="partner-titel">
   <div class="wrap">
     <p class="kicker">Partnerschaften</p>
-    <h2 id="partner-titel">Mit diesen Organisationen <i>arbeiten wir zusammen</i></h2>
+    <h2 id="partner-titel">Eine Auswahl von Organisationen, <i>mit denen wir zusammenarbeiten</i></h2>
     <div class="partner-grid">
-      {%- for i in initiatives %}
+      {%- for i in initiatives | selectattr("startseite") | sort(attribute="startseite") %}
       {%- if i.href and i.href != "#" %}
       <a class="partner" href="{{ i.href }}" target="_blank" rel="noopener"><div class="lg"><img src="/images/{{ i.logo }}" alt="" loading="lazy"></div><div><b>{{ i.name }}</b><span>{{ i.desc }}</span></div></a>
       {%- else %}
