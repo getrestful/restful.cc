@@ -108,22 +108,18 @@ description: "restful baut mit Organisationen im Gesundheits- und Sozialwesen An
       {%- for e in einstieg %}
       <div class="ans bg-{{ e.tone }}" data-ans>
         <button type="button" class="back" data-back>← Andere Ausgangslage wählen</button>
-        <small>{{ e.test }}</small>
         <h3 tabindex="-1">{{ e.title }}</h3>
         <p>{{ e.intro }}</p>
-        <div class="ans-row">
-          <p class="first"><b>Erster Schritt</b>Wir starten mit {{ e.first }}.</p>
-          <div class="result"><b>Ergebnis</b>{{ e.result }}</div>
-        </div>
-        <details class="ans-do">
-          <summary>So gehen wir vor <span class="plus" aria-hidden="true">+</span></summary>
-          <ul class="dolist">
+        <div class="ans-box">
+          <p class="lbl">So gehen wir vor</p>
+          <ol class="numlist">
             {%- for d in e.do %}
-            <li><span class="c">{{ icon("check", 16, 2.4) | safe }}</span>{{ d }}</li>
+            <li><span class="n" aria-hidden="true">{{ loop.index }}</span><span>{{ d }}</span></li>
             {%- endfor %}
-          </ul>
-        </details>
-        <div><a class="btn btn-dark" href="#kontakt">Infotermin vereinbaren</a></div>
+          </ol>
+          <p class="ans-res"><b>Erster Schritt:</b> Wir starten mit {{ e.first }}.<br><b>Ergebnis:</b> {{ e.result }}</p>
+          <div><a class="btn btn-dark" href="#kontakt">Infotermin vereinbaren</a></div>
+        </div>
       </div>
       {%- endfor %}
     </div>
