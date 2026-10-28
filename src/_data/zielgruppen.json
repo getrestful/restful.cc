@@ -148,7 +148,7 @@
     "description": "Für Patient-Advocacy-Abteilungen baut restful medikamentenagnostische Patientengemeinschaften auf, unabhängig von einem Produkt und mit klarer Rollentrennung.",
     "label": "Für Industrie und Patient Advocacy",
     "h1": "Patientengemeinschaften aufbauen, <i>unabhängig von einem Produkt.</i>",
-    "sub": "Für Patient Advocacy und Medical Affairs bauen wir Gemeinschaften rund um ein Krankheitsbild auf, nicht um ein Präparat. Betroffene finden Austausch und Halt, du gewinnst ein tieferes Verständnis ihres Alltags. Mit klarer Rollentrennung und ohne Zugriff auf Personendaten.",
+    "sub": "Für Patient Advocacy und Medical Affairs bauen wir Gemeinschaften rund um ein Krankheitsbild auf, nicht um ein Präparat. Betroffene finden Austausch und Halt, du gewinnst ein tieferes Verständnis ihres Alltags. Im Zentrum steht das Erfahrungswissen der Betroffenen: Medizinische Fragen und mögliche Nebenwirkungen werden nicht hier, sondern ausschliesslich mit dem zuständigen medizinischen Fachpersonal besprochen.",
     "reasonsTitle": "Was eine unabhängige Gemeinschaft <i>dir bringt</i>",
     "reasonsIntro": "Patientinnen und Patienten wollen Austausch, keine Werbung. Wenn eine Gemeinschaft unabhängig ist und den Betroffenen gehört, entsteht Vertrauen und damit ein ehrlicher Blick auf den Alltag mit der Krankheit.",
     "reasons": [
@@ -158,7 +158,7 @@
       },
       {
         "title": "Glaubwürdig dank Unabhängigkeit",
-        "text": "Medikamentenagnostisch, ohne Einfluss auf die Inhalte im Austausch. Rollen, Finanzierung und Sichtbarkeit legen wir schriftlich und transparent fest. Das schützt die Betroffenen und deinen Ruf."
+        "text": "Medikamentenagnostisch, ohne Einfluss auf die Inhalte im Austausch. Rollen, Finanzierung durch Multisponsoring und Sichtbarkeit legen wir schriftlich und transparent fest. Das schützt die Betroffenen und deinen Ruf."
       },
       {
         "title": "Gemeinsam mit Patientenorganisationen",
@@ -398,17 +398,17 @@
     "description": "Peers begleiten Versicherte durch Abklärung, Massnahmen und Wiedereinstieg und ergänzen die Arbeit der Eingliederungsfachpersonen. Für IV-Stellen.",
     "label": "Für IV-Stellen",
     "h1": "Wer es selbst erlebt hat, <i>macht Mut für den nächsten Schritt.</i>",
-    "sub": "Peers haben selbst eine Eingliederung oder eine ähnliche Krise erlebt. Sie begleiten Versicherte durch Abklärung, Massnahmen und Wiedereinstieg, auf Augenhöhe und ausserhalb der Behörde. Das ergänzt die Arbeit deiner Eingliederungsfachpersonen.",
+    "sub": "Peers haben selbst eine Eingliederung oder eine ähnliche Krise erlebt. Sie begleiten Versicherte durch Anmeldung, Abklärung, Massnahmen und Wiedereinstieg, auf Augenhöhe und ausserhalb der Behörde, und helfen dabei, Ängste und Scham gegenüber der Institution abzubauen.",
     "reasonsTitle": "Was Peers <i>im IV-Verfahren</i> bewirken",
-    "reasonsIntro": "Eingliederung gelingt, wenn Versicherte dranbleiben. Doch Abklärungen dauern, Massnahmen fordern, und viele erleben die IV vor allem als Behörde. Peers schaffen Vertrauen, weil sie den Weg selbst gegangen sind.",
+    "reasonsIntro": "Eingliederung gelingt, wenn Versicherte dranbleiben. Doch Abklärungen dauern, Massnahmen fordern, und viele erleben die IV vor allem als Behörde und manchmal auch als unpersönliche Kontrollinstanz. Peers schaffen Vertrauen, weil sie den Weg selbst gegangen sind.",
     "reasons": [
       {
         "title": "Vertrauen von aussen",
-        "text": "Peers sind keine Mitarbeitenden der IV. Versicherte sprechen offener über Ängste und Zweifel, und was sie erzählen, bleibt vertraulich."
+        "text": "Versicherte können mit den Peers ihre Ängste und Zweifel besprechen. Was sie erzählen, wird vertraulich behandelt."
       },
       {
         "title": "Dranbleiben, wenn es schwierig wird",
-        "text": "Wer den Wiedereinstieg geschafft hat, macht Mut, gerade bei Rückschlägen während einer Massnahme."
+        "text": "Wer den Wiedereinstieg geschafft hat, macht Mut, gerade bei Rückschlägen oder wenn es sich einmal besonders schwierig anfühlt."
       },
       {
         "title": "Orientierung im Verfahren",
@@ -416,11 +416,11 @@
       },
       {
         "title": "Passend für junge und psychisch belastete Versicherte",
-        "text": "Digital, niederschwellig und im eigenen Tempo. So erreicht das Angebot gerade jene Gruppen, auf die die Weiterentwicklung der IV besonders setzt."
+        "text": "Digital, niederschwellig und im eigenen Tempo: So erreicht das Angebot genau jene Gruppen, auf die die IV derzeit einen besonderen Fokus legt."
       },
       {
         "title": "Klare Rollen, entlastete Fachpersonen",
-        "text": "Peers beraten nicht in Versicherungsfragen, Entscheide bleiben bei der IV-Stelle. Alltagsfragen und Sorgen landen bei den Peers, deine Fachpersonen gewinnen Zeit."
+        "text": "Peers beraten nicht in Versicherungsfragen, Entscheide bleiben bei der IV-Stelle. Alltagsfragen und Sorgen landen bei den Peers, damit Fachpersonen wieder mehr Zeit für ihre Kernaufgaben haben."
       }
     ],
     "stats": [
@@ -476,7 +476,9 @@
     ],
     "reference": null,
     "quote": {
-      "type": "testimonial"
+      "type": "statement",
+      "label": "Warum Peers wirken",
+      "text": "Ein Peer ist der lebende Beweis dafür, dass Erholung, gesellschaftliche Teilhabe und ein aktives Leben nach schweren Krisen oder Erkrankungen wieder möglich sind."
     },
     "faq": [
       {
