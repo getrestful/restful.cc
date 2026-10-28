@@ -22,6 +22,12 @@
     <path d="M96 420V242a104 104 0 0 1 208 0v178Z" fill="#7066F6" opacity=".9" style="mix-blend-mode:multiply"/>
     <circle cx="276" cy="160" r="78" fill="#BC9C96" style="mix-blend-mode:multiply"/>
     <circle cx="120" cy="116" r="14" fill="#05004A"/>
+  {%- elif v == 5 %}
+    <circle cx="214" cy="214" r="150" fill="none" stroke="#05004A" stroke-width="1.5" stroke-dasharray="2 7" stroke-linecap="round" opacity=".45"/>
+    <circle cx="150" cy="262" r="78" fill="#7066F6" opacity=".9" style="mix-blend-mode:multiply"/>
+    <circle cx="236" cy="196" r="96" fill="#BC9C96" style="mix-blend-mode:multiply"/>
+    <circle cx="318" cy="104" r="18" fill="#05004A"/>
+    <circle cx="88" cy="132" r="8" fill="#8E5147"/>
   {%- elif v == 3 %}
     <circle cx="160" cy="170" r="90" fill="#7066F6" opacity=".88" style="mix-blend-mode:multiply"/>
     <circle cx="244" cy="170" r="90" fill="#BC9C96" style="mix-blend-mode:multiply"/>
@@ -36,6 +42,27 @@
   </svg>
 {%- endif %}
 </div>
+{% endmacro %}
+
+{# Kleine Bildmarke im Stil der Hero-Visualisierung, z.B. für Einordnung und Methode #}
+{% macro mini(v) %}
+<span class="mini" aria-hidden="true"><svg viewBox="0 0 64 64">
+{%- if v == "paar" %}
+  <circle cx="25" cy="34" r="16" fill="#7066F6" opacity=".9" style="mix-blend-mode:multiply"/><circle cx="40" cy="30" r="16" fill="#BC9C96" style="mix-blend-mode:multiply"/>
+{%- elif v == "ergaenzung" %}
+  <circle cx="28" cy="34" r="20" fill="#BC9C96"/><circle cx="50" cy="20" r="9" fill="#7066F6" opacity=".9"/>
+{%- elif v == "drei" %}
+  <circle cx="24" cy="26" r="14" fill="#7066F6" opacity=".88" style="mix-blend-mode:multiply"/><circle cx="40" cy="26" r="14" fill="#BC9C96" style="mix-blend-mode:multiply"/><circle cx="32" cy="40" r="14" fill="none" stroke="#05004A" stroke-width="1.5" opacity=".6"/>
+{%- elif v == "suche" %}
+  <circle cx="28" cy="28" r="17" fill="#BC9C96"/><circle cx="28" cy="28" r="9" fill="#7066F6" opacity=".9"/><path d="M41 41l12 12" stroke="#05004A" stroke-width="3" stroke-linecap="round"/>
+{%- elif v == "bogen" %}
+  <path d="M14 56V34a18 18 0 0 1 36 0v22Z" fill="#7066F6" opacity=".9" style="mix-blend-mode:multiply"/><circle cx="46" cy="20" r="11" fill="#BC9C96" style="mix-blend-mode:multiply"/>
+{%- elif v == "match" %}
+  <circle cx="16" cy="32" r="10" fill="#7066F6" opacity=".9"/><circle cx="48" cy="32" r="10" fill="#BC9C96"/><path d="M27 32h10" stroke="#05004A" stroke-width="2" stroke-dasharray="2 3" stroke-linecap="round"/><circle cx="32" cy="14" r="4" fill="#05004A"/>
+{%- else %}
+  <rect x="10" y="36" width="10" height="18" rx="5" fill="#BC9C96"/><rect x="27" y="24" width="10" height="30" rx="5" fill="#7066F6" opacity=".9"/><rect x="44" y="12" width="10" height="42" rx="5" fill="#05004A"/>
+{%- endif %}
+</svg></span>
 {% endmacro %}
 
 {# Kontaktformular: öffnet das E-Mail-Programm mit einer vorbereiteten Nachricht (siehe site.js). #}

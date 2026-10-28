@@ -59,7 +59,8 @@ const filter = document.querySelector('[data-filter]');
 if (filter) {
   const F = { topic: 'all', group: 'all', format: 'all' };
   const cards = [...document.querySelectorAll('.ev-card')];
-  const chips = [...filter.querySelectorAll('.chip')];
+  const selects = [...filter.querySelectorAll('select[data-f]')];
+  const reset = filter.querySelector('[data-reset]');
   const count = filter.querySelector('[data-count]');
   const empty = document.querySelector('[data-empty]');
   const apply = () => {
@@ -77,13 +78,13 @@ if (filter) {
     if (visible.length > 1 && visible.length % 2 === 1) visible[visible.length - 1].classList.add('wide');
     count.textContent = n === 1 ? '1 Themenfeld' : n + ' Themenfelder';
     empty.style.display = n ? 'none' : 'block';
-    chips.forEach(ch => {
-      const on = F[ch.dataset.f] === ch.dataset.v;
-      ch.classList.toggle('on', on);
-      ch.setAttribute('aria-pressed', on);
+    selects.forEach(sel => {
+      sel.value = F[sel.dataset.f];
+      sel.classList.toggle('on', sel.value !== 'all');
     });
+    reset.hidden = F.topic === 'all' && F.group === 'all' && F.format === 'all';
   };
-  chips.forEach(ch => ch.addEventListener('click', () => { F[ch.dataset.f] = ch.dataset.v; apply(); }));
+  selects.forEach(sel => sel.addEventListener('change', () => { F[sel.dataset.f] = sel.value; apply(); }));
   document.querySelectorAll('[data-reset]').forEach(b => b.addEventListener('click', () => {
     F.topic = F.group = F.format = 'all';
     apply();

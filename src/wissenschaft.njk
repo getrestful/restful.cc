@@ -4,9 +4,14 @@ permalink: /wissenschaft/
 title: "Methode & Evidenz · restful"
 description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordnung, Studienlage nach Themenfeld, unsere Methode und ausgewählte Quellen."
 ---
+{% from "macros.njk" import art, mini %}
+{% set einoArt = ["paar", "ergaenzung", "drei"] %}
+{% set methArt = ["suche", "bogen", "match", "balken"] %}
 <section class="sub-hero">
   <div class="wrap">
     <p class="crumb"><a href="/">Startseite</a> · Methode &amp; Evidenz</p>
+    <div class="sub-hero-grid">
+    <div>
     <p class="kicker">Methode &amp; Evidenz</p>
     <h1>Was die Forschung über <i>gegenseitige Unterstützung</i> weiss</h1>
     <p class="lead">Wissenschaftliche Grundlagen, Studienlage nach Themenfeld und unser eigenes Vorgehen. Für Fachpersonen, Stiftungen und alle, die genauer hinsehen wollen.</p>
@@ -17,6 +22,9 @@ description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordn
       <a href="#forschung">Eigene Forschung</a>
       <a href="#quellen">Quellen</a>
     </nav>
+    </div>
+    {{ art(5, "blob") }}
+    </div>
   </div>
 </section>
 
@@ -29,7 +37,7 @@ description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordn
     <div>
       <div class="points">
         {%- for p in evidenz.einordnung %}
-        <div class="pt"><b>{{ p.title }}</b><span>{{ p.text }}</span></div>
+        <div class="pt">{{ mini(einoArt[loop.index0]) }}<div><b>{{ p.title }}</b><span>{{ p.text }}</span></div></div>
         {%- endfor %}
       </div>
       <details>
@@ -50,7 +58,7 @@ description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordn
     <h2>Von der Studienlage <i>zum Angebot im Alltag</i></h2>
     <div class="m-grid">
       {%- for m in evidenz.methode %}
-      <div class="m-card"><span class="k">0{{ loop.index }}</span><h3>{{ m.title }}</h3><p>{{ m.text }}</p></div>
+      <div class="m-card"><div class="m-top"><span class="k">0{{ loop.index }}</span>{{ mini(methArt[loop.index0]) }}</div><h3>{{ m.title }}</h3><p>{{ m.text }}</p></div>
       {%- endfor %}
     </div>
   </div>
@@ -62,25 +70,25 @@ description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordn
     <h2>Literaturrecherchen <i>nach Themenfeld</i></h2>
     <p class="lead">Filtere nach Thema, Zielgruppe oder Format. Jede Karte fasst den Kernbefund zusammen, die ganze Recherche mit Quellen lässt sich aufklappen.</p>
     <div class="filter" data-filter>
-      <div class="frow"><b id="f-thema">Thema</b><div class="chips2" role="group" aria-labelledby="f-thema">
-        <button type="button" class="chip on" aria-pressed="true" data-f="topic" data-v="all">Alle Themen</button>
+      <div class="fsel"><label for="f-thema">Thema</label><select id="f-thema" data-f="topic">
+        <option value="all">Alle Themen</option>
         {%- for t in themenfelder %}
-        <button type="button" class="chip" aria-pressed="false" data-f="topic" data-v="{{ t.key }}">{{ t.label }}</button>
+        <option value="{{ t.key }}">{{ t.label }}</option>
         {%- endfor %}
-      </div></div>
-      <div class="frow"><b id="f-gruppe">Zielgruppe</b><div class="chips2" role="group" aria-labelledby="f-gruppe">
-        <button type="button" class="chip on" aria-pressed="true" data-f="group" data-v="all">Alle</button>
+      </select></div>
+      <div class="fsel"><label for="f-gruppe">Zielgruppe</label><select id="f-gruppe" data-f="group">
+        <option value="all">Alle</option>
         {%- for g in evidenz.filter.groups %}
-        <button type="button" class="chip" aria-pressed="false" data-f="group" data-v="{{ g }}">{{ g }}</button>
+        <option value="{{ g }}">{{ g }}</option>
         {%- endfor %}
-      </div></div>
-      <div class="frow"><b id="f-format">Format</b><div class="chips2" role="group" aria-labelledby="f-format">
-        <button type="button" class="chip on" aria-pressed="true" data-f="format" data-v="all">Alle</button>
+      </select></div>
+      <div class="fsel"><label for="f-format">Format</label><select id="f-format" data-f="format">
+        <option value="all">Alle</option>
         {%- for f in evidenz.filter.formats %}
-        <button type="button" class="chip" aria-pressed="false" data-f="format" data-v="{{ f }}">{{ f }}</button>
+        <option value="{{ f }}">{{ f }}</option>
         {%- endfor %}
-      </div></div>
-      <div class="fstate"><span data-count aria-live="polite">{{ themenfelder | length }} Themenfelder</span><button type="button" data-reset>Filter zurücksetzen</button></div>
+      </select></div>
+      <div class="fstate"><span data-count aria-live="polite">{{ themenfelder | length }} Themenfelder</span><button type="button" data-reset>Zurücksetzen</button></div>
     </div>
     <div class="ev-grid">
       {%- for t in themenfelder %}
