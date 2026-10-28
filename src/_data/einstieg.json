@@ -40,5 +40,19 @@
     "first": "einer Auswertung deines bestehenden Angebots",
     "result": "Ein Angebot, das genutzt wird, und eine entlastete Koordination.",
     "tone": "lav"
+  },
+  {
+    "test": "Unser Angebot läuft, wir möchten aber mehr über seine Wirkung erfahren.",
+    "title": "Du willst Wirkung zeigen",
+    "intro": "Wir machen sichtbar, was dein Angebot bewirkt: mit einem etablierten Wirkungsmessungstool, das spezifisch für Peer-Arbeit entwickelt wurde und auf gängigen Standards wie der Lebensqualität (QoL) aufbaut.",
+    "do": [
+      "Wirkungsziele und passende Indikatoren festlegen",
+      "Das Messtool in dein bestehendes Angebot einbinden",
+      "Daten aus dem laufenden Betrieb auswerten und einordnen",
+      "Auf Wunsch: Studiendesign und Publikation als Auftrag"
+    ],
+    "first": "einer Klärung deiner Wirkungsziele",
+    "result": "Belastbare Aussagen zur Wirkung, für Vorstand, Stiftungen und Förderberichte.",
+    "tone": "sand"
   }
 ]

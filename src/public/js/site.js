@@ -25,12 +25,19 @@ document.querySelectorAll('.dd:not(.dd-link)').forEach(dd => {
   document.addEventListener('click', e => { if (!dd.contains(e.target)) setOpen(false); });
 });
 
-// Wegweiser «Wo stehst du gerade?»
+// Wegweiser «Wo stehst du gerade?»: erst die Frage, dann das passende Ergebnis
 document.querySelectorAll('[data-guide]').forEach(g => {
-  const answers = [...g.querySelectorAll('.ans')];
-  g.querySelectorAll('input[type=radio]').forEach(r => r.addEventListener('change', () => {
-    answers.forEach((a, i) => a.classList.toggle('on', String(i) === r.value));
-  }));
+  const q = g.querySelector('[data-guide-q]');
+  const answers = [...g.querySelectorAll('[data-ans]')];
+  const show = i => {
+    q.hidden = i !== null;
+    answers.forEach((a, j) => { a.hidden = i !== j; });
+    (i === null ? q : answers[i]).querySelector('h3').focus({ preventScroll: true });
+    if (g.getBoundingClientRect().top < 80) g.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  answers.forEach(a => { a.hidden = true; });
+  g.querySelectorAll('[data-pick]').forEach(b => b.addEventListener('click', () => show(+b.dataset.pick)));
+  g.querySelectorAll('[data-back]').forEach(b => b.addEventListener('click', () => show(null)));
 });
 
 // Umschalter Sicht Organisation / Sicht Nutzerin
@@ -134,4 +141,5 @@ window.addEventListener('hashchange', openTarget);
 
 // Alte Sprungmarken der Startseite zeigen auf die Seite «Über uns»
 if (location.pathname === '/' && /^#(team|netzwerk)$/.test(location.hash)) location.replace('/ueber-uns/' + location.hash);
+if (location.pathname === '/' && location.hash === '#einstieg') location.replace('#ausgangslage');
 if (location.pathname === '/' && location.hash === '#projekte') location.replace('/loesungen/patientenpfade/');

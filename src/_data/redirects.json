@@ -1,6 +1,6 @@
 [
   { "from": "/angebot/", "to": "/#nutzen", "title": "Angebot" },
-  { "from": "/peer-angebote/", "to": "/#einstieg", "title": "Peer-Angebote" },
+  { "from": "/peer-angebote/", "to": "/#ausgangslage", "title": "Peer-Angebote" },
   { "from": "/projekte/", "to": "/loesungen/patientenpfade/", "title": "Individuelle Projekte" },
   { "from": "/patient-advocacy/", "to": "/fuer/industrie/", "title": "Patient Advocacy" },
   { "from": "/ueber-restful/", "to": "/ueber-uns/", "title": "Über restful" },

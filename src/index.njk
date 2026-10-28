@@ -91,35 +91,41 @@ description: "restful baut mit Organisationen im Gesundheits- und Sozialwesen An
   </div>
 </section>
 
-<section id="einstieg">
+<section id="ausgangslage">
   <div class="wrap">
-    <p class="kicker">Dein Einstieg</p>
+    <p class="kicker">Deine Ausgangslage</p>
     <h2>Wo stehst <i>du</i> gerade?</h2>
-    <p class="lead">Beantworte eine Frage, und wir zeigen dir, wie wir gemeinsam starten würden.</p>
+    <p class="lead">Wähle, was am ehesten zutrifft, und wir zeigen dir, wie wir gemeinsam starten würden.</p>
     <div class="guide" data-guide>
-      <div class="q" role="radiogroup" aria-labelledby="lage-frage">
-        <h3 id="lage-frage">Was trifft am ehesten auf deine Organisation zu?</h3>
-        {%- for e in einstieg %}
-        <label><input type="radio" name="lage" value="{{ loop.index0 }}"{% if loop.first %} checked{% endif %}><span>{{ e.test }}</span></label>
-        {%- endfor %}
+      <div class="q" data-guide-q>
+        <h3 id="lage-frage" tabindex="-1">Was trifft am ehesten auf deine Organisation zu?</h3>
+        <div class="opts" role="group" aria-labelledby="lage-frage">
+          {%- for e in einstieg %}
+          <button type="button" class="opt" data-pick="{{ loop.index0 }}"><span>{{ e.test }}</span><span class="go" aria-hidden="true">→</span></button>
+          {%- endfor %}
+        </div>
       </div>
-      <div aria-live="polite">
-        {%- for e in einstieg %}
-        <div class="ans bg-{{ e.tone }}{% if loop.first %} on{% endif %}">
-          <small>Deine Ausgangslage</small>
-          <h3>{{ e.title }}</h3>
-          <p>{{ e.intro }}</p>
+      {%- for e in einstieg %}
+      <div class="ans bg-{{ e.tone }}" data-ans>
+        <button type="button" class="back" data-back>← Andere Ausgangslage wählen</button>
+        <small>{{ e.test }}</small>
+        <h3 tabindex="-1">{{ e.title }}</h3>
+        <p>{{ e.intro }}</p>
+        <div class="ans-row">
+          <p class="first"><b>Erster Schritt</b>Wir starten mit {{ e.first }}.</p>
+          <div class="result"><b>Ergebnis</b>{{ e.result }}</div>
+        </div>
+        <details class="ans-do">
+          <summary>So gehen wir vor <span class="plus" aria-hidden="true">+</span></summary>
           <ul class="dolist">
             {%- for d in e.do %}
             <li><span class="c">{{ icon("check", 16, 2.4) | safe }}</span>{{ d }}</li>
             {%- endfor %}
           </ul>
-          <p class="first"><b>Erster Schritt:</b> Wir starten mit {{ e.first }}.</p>
-          <div class="result"><b>Ergebnis</b>{{ e.result }}</div>
-          <div><a class="btn btn-dark" href="#kontakt">Infotermin vereinbaren</a></div>
-        </div>
-        {%- endfor %}
+        </details>
+        <div><a class="btn btn-dark" href="#kontakt">Infotermin vereinbaren</a></div>
       </div>
+      {%- endfor %}
     </div>
   </div>
 </section>
