@@ -142,6 +142,6 @@
 {# Aufklappbare Fragen und Antworten #}
 {% macro faqList(items) %}
 {%- for f in items %}
-<details><summary><b>{{ f.q }}</b><span class="plus" aria-hidden="true">+</span></summary><div class="d-body"><p>{{ f.a }}</p></div></details>
+<details><summary><b>{{ f.q }}</b><span class="plus" aria-hidden="true">+</span></summary><div class="d-body"><p>{{ f.a | safe }}</p></div></details>
 {%- endfor %}
 {% endmacro %}
