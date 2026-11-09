@@ -65,21 +65,21 @@
 </svg></span>
 {% endmacro %}
 
-{# Kontaktformular: öffnet das E-Mail-Programm mit einer vorbereiteten Nachricht (siehe site.js). #}
-{% macro contactForm(email, id="k") %}
-<form class="kform" action="mailto:{{ email }}" method="post" enctype="text/plain" data-contact data-to="{{ email }}">
-  <label class="sr-only" for="{{ id }}-name">Name</label>
-  <input id="{{ id }}-name" name="Name" autocomplete="name" placeholder="Name" required>
-  <label class="sr-only" for="{{ id }}-org">Organisation</label>
-  <input id="{{ id }}-org" name="Organisation" autocomplete="organization" placeholder="Organisation">
-  <label class="sr-only" for="{{ id }}-mail">E-Mail</label>
-  <input id="{{ id }}-mail" name="E-Mail" type="email" autocomplete="email" placeholder="E-Mail" required>
-  <label class="sr-only" for="{{ id }}-msg">Nachricht</label>
-  <textarea id="{{ id }}-msg" name="Nachricht" rows="4" placeholder="Worum geht es?" required></textarea>
-  <p class="form-note">Beim Senden öffnet sich dein E-Mail-Programm mit der fertigen Nachricht an <a href="mailto:{{ email }}">{{ email }}</a>. Mehr dazu in der <a href="/datenschutzerklaerung/">Datenschutzerklärung</a>.</p>
-  <button class="btn btn-dark" type="submit">Per E-Mail senden</button>
-  <p class="form-status" role="status" aria-live="polite"></p>
-</form>
+{# Kontaktabschnitt mit Raphael und direkter Terminbuchung. Optional: note = zusätzliche Zeile, z.B. eine weitere Ansprechperson #}
+{% macro talk(note="") %}
+<div class="talk">
+  <figure class="talk-img"><img src="/images/team-raphael-reber.jpg" width="800" height="800" loading="lazy" alt="Raphael Reber"></figure>
+  <div class="talk-txt">
+    <h2>Lass uns <i>sprechen!</i></h2>
+    <p class="talk-who"><b>Raphael Reber</b><span>Strategie &amp; Partnerschaften</span><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+    <h3>Reden wir über dein Projekt</h3>
+    <p>Ob bei einem Kaffee in Bern oder im Video-Call: Gerne nehmen wir uns Zeit für deine Anforderungen und Fragen. Buche direkt einen unverbindlichen Infotermin mit Raphael.</p>
+    {%- if note %}
+    <p class="talk-note">{{ note | safe }}</p>
+    {%- endif %}
+    <a class="btn btn-line btn-dot" href="{{ site.calendly }}" target="_blank" rel="noopener"><span class="dot" aria-hidden="true"></span>Infotermin buchen<span class="sr-only"> (öffnet in neuem Fenster)</span></a>
+  </div>
+</div>
 {% endmacro %}
 
 {# Chat-Ausschnitt als Beispielansicht #}

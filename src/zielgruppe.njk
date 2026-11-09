@@ -11,7 +11,8 @@ eleventyComputed:
   description: "{{ zg.description }}"
 ---
 {% from "icon.njk" import icon %}
-{% from "macros.njk" import art, contactForm, stepVisual, faqList %}
+{% from "macros.njk" import art, stepVisual, faqList %}
+{% from "macros.njk" import talk with context %}
 
 <section class="zg-hero">
   <div class="wrap">
@@ -173,17 +174,7 @@ eleventyComputed:
 
 <section id="kontakt" class="pt0">
   <div class="wrap">
-    <div class="contact-box">
-      <div>
-        <h2>Lass uns <i>sprechen</i></h2>
-        <p>Wir zeigen dir in einem unverbindlichen Infotermin, wie ein Angebot in deinem Setting aussehen könnte.</p>
-        {%- if zg.contact %}
-        <p class="mail">Deine Ansprechperson: <b>{{ zg.contact.name }}</b>, {{ zg.contact.role }}</p>
-        {%- endif %}
-        <p class="mail">Lieber direkt? <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-      </div>
-      {{ contactForm(site.email) }}
-    </div>
+    {{ talk("Für Industrie-Partnerschaften ist " + zg.contact.name + " deine Ansprechperson (" + zg.contact.role + ").") if zg.contact else talk() }}
     <p class="kicker mt60">restful in anderen Settings</p>
     <nav class="others" aria-label="restful in anderen Settings">
       <a href="/">Patientenorganisationen und Ligen<span aria-hidden="true">→</span></a>

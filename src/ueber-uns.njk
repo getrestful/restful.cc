@@ -4,6 +4,7 @@ permalink: /ueber-uns/
 title: "Über uns: Team und Netzwerk · restful"
 description: "Das Team von restful und das Netzwerk, das uns begleitet: Soziale Arbeit, Public Health, Forschung und Technologie aus Bern."
 ---
+{% from "macros.njk" import talk with context %}
 <section class="sub-hero">
   <div class="wrap">
     <p class="crumb"><a href="/">Startseite</a> · Über uns</p>
@@ -65,12 +66,6 @@ description: "Das Team von restful und das Netzwerk, das uns begleitet: Soziale 
 
 <section id="kontakt" class="pt0">
   <div class="wrap">
-    <div class="contact-box compact">
-      <div>
-        <h2>Lass uns <i>sprechen</i></h2>
-        <p>Im unverbindlichen Infotermin klären wir, ob ein Peer-Angebot zu deiner Organisation passt.</p>
-      </div>
-      <a class="btn btn-dark" href="/#kontakt">Infotermin vereinbaren</a>
-    </div>
+    {{ talk() }}
   </div>
 </section>

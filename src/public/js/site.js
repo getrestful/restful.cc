@@ -110,25 +110,6 @@ if (filter) {
   window.addEventListener('hashchange', fromHash);
 }
 
-// Kontaktformular: bereitet eine E-Mail an restful vor
-document.querySelectorAll('[data-contact]').forEach(form => {
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    if (!form.reportValidity()) return;
-    const v = name => form.elements[name].value.trim();
-    const subject = 'Anfrage über restful.cc' + (v('Organisation') ? ': ' + v('Organisation') : '');
-    const body = [
-      v('Nachricht'),
-      '',
-      'Name: ' + v('Name'),
-      'Organisation: ' + (v('Organisation') || '-'),
-      'E-Mail: ' + v('E-Mail'),
-    ].join('\n');
-    location.href = 'mailto:' + form.dataset.to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    form.querySelector('.form-status').textContent = 'Dein E-Mail-Programm sollte sich jetzt mit der Nachricht öffnen. Falls nicht, schreib uns direkt an ' + form.dataset.to + '.';
-  });
-});
-
 // Sprungziele in zugeklappten Bereichen öffnen, z.B. /wissenschaft/#literatur
 const openTarget = () => {
   const id = decodeURIComponent(location.hash.slice(1));

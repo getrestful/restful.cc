@@ -4,7 +4,8 @@ title: "Peer-Support, der nachweislich wirkt · restful"
 description: "restful baut mit Patientenorganisationen und Gesundheitsinstitutionen Peer-Angebote auf: wissenschaftlich fundiert, methodisch erprobt, mit eigener Plattform."
 ---
 {% from "icon.njk" import icon %}
-{% from "macros.njk" import art, contactForm, faqList %}
+{% from "macros.njk" import art, faqList %}
+{% from "macros.njk" import talk with context %}
 
 <section class="hero">
   <div class="wrap hero-grid">
@@ -177,19 +178,6 @@ description: "restful baut mit Patientenorganisationen und Gesundheitsinstitutio
 
 <section id="kontakt">
   <div class="wrap">
-    <div class="contact-box">
-      <div>
-        <h2>Lass uns <i>sprechen</i></h2>
-        <p>Im unverbindlichen Infotermin klären wir:</p>
-        <ul>
-          <li>ob ein Peer-Angebot zu deiner Organisation passt</li>
-          <li>welches Format sich eignet</li>
-          <li>mit welchem Aufwand und Budget du rechnen kannst</li>
-          <li>wie wir gemeinsam die Finanzierung deines Angebots sicherstellen</li>
-        </ul>
-        <p class="mail">Lieber direkt? <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-      </div>
-      {{ contactForm(site.email) }}
-    </div>
+    {{ talk() }}
   </div>
 </section>
