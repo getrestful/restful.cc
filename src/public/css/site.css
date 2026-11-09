@@ -208,7 +208,6 @@ header.site{padding:22px 0;position:sticky;top:0;z-index:30;background:color-mix
 .testi-photo .logo{position:absolute;right:-22px;bottom:22px;background:#fff;border-radius:16px;padding:8px 12px;box-shadow:0 18px 40px -20px var(--shadow)}
 .testi-photo .logo img{height:52px;width:auto}
 .testi blockquote p{font-family:var(--serif);font-size:clamp(21px,2.2vw,28px);line-height:1.42}
-.testi blockquote p::before{content:"«";display:block;font-size:90px;line-height:.7;color:var(--rose);margin-bottom:10px}
 .testi blockquote footer{margin-top:26px}
 .testi blockquote footer b{display:block;font-size:18px}
 .testi blockquote footer span{color:var(--ink-soft)}

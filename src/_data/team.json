@@ -20,21 +20,24 @@
     "role": "Technologie",
     "bio": "Ex-VP of Product Management for Data, Analytics & AI, Swisscom",
     "img": "team-stefan-niederhauser.jpg",
-    "linkedin": "https://www.linkedin.com/in/sniederhauser/"
+    "linkedin": "https://www.linkedin.com/in/sniederhauser/",
+    "email": "stefan@getrestful.ch"
   },
   {
     "name": "Chantal Kuske",
     "role": "Scientific Advisory",
     "bio": "Consulting & Research in Health Science",
     "img": "team-chantal-kuske.jpg",
-    "linkedin": "https://www.linkedin.com/in/chantalkuske/"
+    "linkedin": "https://www.linkedin.com/in/chantalkuske/",
+    "email": "chantal@getrestful.ch"
   },
   {
     "name": "Melanie Spescha",
     "role": "Projekte & Fundraising",
     "bio": "BA Soziale Arbeit, Inklusions- und Fundraising-Expertin",
     "img": "team-melanie-spescha.jpg",
-    "linkedin": "https://www.linkedin.com/in/melanie-spescha-965831145/"
+    "linkedin": "https://www.linkedin.com/in/melanie-spescha-965831145/",
+    "email": "melanie@getrestful.ch"
   },
   {
     "name": "Lona Gaugler",
@@ -49,6 +52,7 @@
     "role": "Technologie",
     "bio": "",
     "img": "team-silvan-jost.jpg",
-    "linkedin": "https://www.linkedin.com/in/silvan-jost-dev/"
+    "linkedin": "https://www.linkedin.com/in/silvan-jost-dev/",
+    "email": "silvan@getrestful.ch"
   }
 ]
