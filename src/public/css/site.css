@@ -423,7 +423,7 @@ footer.site a:hover{text-decoration:underline}
 .dash .main{padding:18px;display:grid;gap:12px;align-content:start}
 .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .kpi{background:var(--white);border-radius:12px;padding:12px}
-.kpi small{font-size:11px;color:var(--ink-soft);display:block;hyphens:auto;overflow-wrap:break-word}
+.kpi small{font-size:11px;color:var(--ink-soft);display:block;hyphens:auto}
 .kpi b{font-family:var(--serif);font-size:24px;font-weight:var(--hw)}
 .rows{background:var(--white);border-radius:12px;padding:12px;display:grid;gap:8px}
 .rows .r{display:grid;grid-template-columns:26px 1fr auto;gap:10px;align-items:center;font-size:12.5px}
@@ -439,7 +439,7 @@ footer.site a:hover{text-decoration:underline}
 .rows .bar2.w85{width:85%}
 .lp{background:var(--white);border-radius:10px;padding:18px;display:grid;gap:14px;text-align:left}
 .lp-brand{display:flex;align-items:center;gap:10px}
-.lp-brand .logo-slot{height:28px;padding:0 10px;border-radius:8px;font-size:11px;font-weight:600;border:1.5px dashed var(--rose);color:var(--terra);display:grid;place-items:center}
+.lp-brand .logo-slot{white-space:nowrap;height:28px;padding:0 10px;border-radius:8px;font-size:11px;font-weight:600;border:1.5px dashed var(--rose);color:var(--terra);display:grid;place-items:center}
 .lp-brand .x{color:var(--ink-soft);font-size:14px}
 .lp-h{font-family:var(--serif);font-weight:var(--hw);font-size:19px;line-height:1.2}
 .lp-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
@@ -693,3 +693,4 @@ footer.site a:hover{text-decoration:underline}
 @media(max-width:960px){.sol-grid,.sol-grid.sol-grid-2,.m-grid.m-grid-3{grid-template-columns:1fr}.tasks.tasks-3{grid-template-columns:1fr 1fr}.uc-grid{grid-template-columns:1fr}}
 @media(max-width:900px){.dd-link > a span{display:none}}
 @media(max-width:560px){.tasks.tasks-3{grid-template-columns:1fr}}
+@media(max-width:560px){.zz-vis{padding:20px 14px}.zz-vis .kpis{gap:6px}.zz-vis .kpi{padding:9px 7px}.zz-vis .kpi small{font-size:9.5px}.zz-vis .kpi b{font-size:20px}.lp-brand .logo-slot{font-size:10px;padding:0 7px}}

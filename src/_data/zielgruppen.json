@@ -261,7 +261,7 @@
         "text": "Menschen statt Ratgebertexte: Versicherte erleben deine Versicherung als Partnerin in einer schwierigen Lebensphase. Das stärkt die Bindung, gerade in der Zusatzversicherung."
       },
       {
-        "title": "Wirksam, auch präventiv",
+        "title": "Nachgewiesene Wirkung",
         "text": "Eine Metaanalyse von 73 Studien zeigt deutliche Effekte digitaler Peer-Unterstützung auf die psychische Gesundheit, auch bei Menschen ohne Diagnose."
       },
       {
@@ -269,12 +269,8 @@
         "text": "Peers ergänzen Fachleute, statt sie zu ersetzen. Digital und mehrsprachig erreichst du viele Versicherte mit überschaubarem Betreuungsaufwand."
       },
       {
-        "title": "Vertrauen durch Datenschutz",
-        "text": "Du siehst nicht, wer das Angebot nutzt. Gerade das senkt die Hemmschwelle, auch über persönliche Themen zu sprechen."
-      },
-      {
-        "title": "Messbar",
-        "text": "Anonymisierte Kennzahlen zu Nutzung, Zufriedenheit und empfundener Unterstützung, auf Wunsch mit wissenschaftlicher Begleitung."
+        "title": "Messbar, im Sinne von Value-Based Healthcare",
+        "text": "Wir messen, was für Versicherte zählt: anonymisierte Kennzahlen zu Nutzung, Zufriedenheit und empfundener Unterstützung, ergänzt um patientenberichtete Ergebnisse wie die Lebensqualität (PROMs). So lässt sich der gesundheitliche Nutzen dem Aufwand gegenüberstellen, ganz im Sinne von Value-Based Healthcare. Auf Wunsch mit wissenschaftlicher Begleitung."
       }
     ],
     "stats": [
@@ -299,24 +295,19 @@
     ],
     "steps": [
       {
-        "title": "Zielgruppe wählen",
-        "text": "Gemeinsam bestimmen wir, welche Versichertengruppe am meisten profitiert, zum Beispiel Menschen mit einer chronischen Erkrankung oder pflegende Angehörige.",
-        "visual": "screen-1"
+        "title": "Triage und Zuweisung",
+        "text": "Versicherte finden auf zwei Wegen zum Angebot: über eine co-gebrandete Landing-Page, die du in Kunden-App, Gesundheitsportal oder Newsletter verlinkst, oder direkt über dein Case Management, das passende Versicherte gezielt auf das Angebot hinweist. Gemeinsam legen wir fest, welche Versichertengruppen angesprochen werden.",
+        "visual": "landing-versicherer"
       },
       {
-        "title": "Programm gestalten",
-        "text": "Format, Laufzeit und Messgrössen, abgestimmt auf dein Gesundheitsprogramm.",
-        "visual": "screen-3"
+        "title": "Registrierung und Matching",
+        "text": "Versicherte registrieren sich freiwillig und kostenlos. Eine Fachperson vermittelt ihnen einen Peer mit ähnlicher Erfahrung. Dabei gilt: voller Datenschutz für die Versicherten und eine klare Einwilligung nach Aufklärung (Informed Consent).",
+        "visual": "match"
       },
       {
-        "title": "Zugang schaffen",
-        "text": "Einbindung in bestehende Kanäle wie Kunden-App, Gesundheitsportal, Newsletter oder Care Management.",
-        "visual": "screen-2"
-      },
-      {
-        "title": "Wirkung auswerten",
-        "text": "Regelmässiges Reporting, auf Wunsch mit wissenschaftlicher Begleitung.",
-        "visual": "report"
+        "title": "Austausch, Qualität und Wirkung",
+        "text": "Versicherte tauschen sich im eigenen Tempo mit ihrem Peer aus. Fachpersonen sichern die Qualität und sind bei Rückfragen jederzeit im Hintergrund erreichbar. Laufend messen wir die Wirkung, auf Wunsch mit anonymisiertem Reporting an deine Versicherung.",
+        "visual": "dashboard-versicherer"
       }
     ],
     "evidence": [
@@ -361,16 +352,11 @@
         "a": "Das hängt von Zielgruppe und Zugang ab. Im Infotermin erstellen wir gemeinsam einen konkreten Zeitplan."
       }
     ],
-    "commelia": {
-      "title": "Gesundheitsberatung per Chat, <i>mit Mensch und KI</i>",
-      "text": "Mit Commelia beantworten Gesundheitscoaches und Peers die Fragen deiner Versicherten aus einem gemeinsamen Posteingang, per Web-Chat, E-Mail oder WhatsApp. Ein KI-Assistent übernimmt Routinefragen und übergibt, sobald ein Mensch gefragt ist.",
-      "items": [
-        "Regeln leiten jede Anfrage an die passende Gruppe, etwa nach Sprache oder Thema",
-        "Automatische Übersetzung und Antworten in einfacher Sprache",
-        "Auswertungen zu Antwortzeiten und Rückmeldungen, ohne Nachrichtentexte",
-        "Gehostet in der Schweiz oder auf dem eigenen Server"
-      ]
-    }
+    "commelia": null,
+    "hide": [
+      "trust",
+      "quote"
+    ]
   },
   {
     "slug": "iv-stellen",
