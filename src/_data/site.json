@@ -6,5 +6,7 @@
   "city": "Bern",
   "email": "hallo@getrestful.ch",
   "noindex": true,
-  "jobsUrl": "https://join.com/companies/getrestfulch"
+  "jobsUrl": "https://join.com/companies/getrestfulch",
+  "url": "https://www.restful.cc",
+  "ogImage": "/images/og-restful.png"
 }

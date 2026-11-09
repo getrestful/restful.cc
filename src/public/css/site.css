@@ -224,6 +224,7 @@ a.partner:hover{border-color:var(--navy);transform:translateY(-2px)}
 .partner .lg img[src*="logo-svamv"]{transform:scale(1.7);transform-origin:left center} /* Grafik hat viel Leerraum in der Datei */
 .partner b{display:block;font-size:15px;font-weight:600;line-height:1.35}
 .partner span{display:block;font-size:13.5px;color:var(--ink-soft);line-height:1.45;margin-top:4px}
+.partner b,.partner span{hyphens:auto;overflow-wrap:break-word}
 @media(max-width:1000px){.partner-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:700px){.partner-grid{grid-template-columns:repeat(2,1fr);gap:12px}.partner{padding:18px}}
 

@@ -141,7 +141,10 @@
 
 {# Aufklappbare Fragen und Antworten #}
 {% macro faqList(items) %}
+{%- set entities = [] %}
 {%- for f in items %}
 <details><summary><b>{{ f.q }}</b><span class="plus" aria-hidden="true">+</span></summary><div class="d-body"><p>{{ f.a | safe }}</p></div></details>
+{%- set entities = (entities.push({ "@type": "Question", "name": f.q, "acceptedAnswer": { "@type": "Answer", "text": f.a | striptags } }), entities) %}
 {%- endfor %}
+<script type="application/ld+json">{{ { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": entities } | dump | safe }}</script>
 {% endmacro %}

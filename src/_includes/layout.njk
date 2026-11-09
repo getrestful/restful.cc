@@ -13,12 +13,31 @@
   {%- if redirectTo %}
   <meta http-equiv="refresh" content="0; url={{ redirectTo }}">
   {%- endif %}
+  {%- set canonical = site.url + (redirectTo or page.url) %}
+  {%- if page.url != "/404.html" %}
+  <link rel="canonical" href="{{ canonical }}">
+  {%- endif %}
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_CH">
   <meta property="og:site_name" content="restful">
+  <meta property="og:url" content="{{ canonical }}">
   <meta property="og:title" content="{{ title or 'restful' }}">
   {%- if description %}
   <meta property="og:description" content="{{ description }}">
+  {%- endif %}
+  <meta property="og:image" content="{{ site.url }}{{ site.ogImage }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  {%- if page.url == "/" %}
+  <script type="application/ld+json">{{ {
+    "@context": "https://schema.org",
+    "@graph": [
+      { "@type": "Organization", "@id": site.url + "/#org", "name": site.name, "legalName": site.legalName, "url": site.url + "/", "logo": site.url + "/images/logo.svg", "email": site.email,
+        "address": { "@type": "PostalAddress", "streetAddress": site.street, "postalCode": site.zip, "addressLocality": site.city, "addressCountry": "CH" } },
+      { "@type": "WebSite", "@id": site.url + "/#website", "url": site.url + "/", "name": site.name, "inLanguage": "de-CH", "publisher": { "@id": site.url + "/#org" } }
+    ]
+  } | dump | safe }}</script>
   {%- endif %}
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
