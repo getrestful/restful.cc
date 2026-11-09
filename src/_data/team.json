@@ -1,9 +1,51 @@
 [
-  { "name": "Raphael Reber", "role": "Strategie & Partnerschaften", "bio": "Forbes 30 under 30 Alumnus, Co-Founder Impact Hub Bern und Zeilenwerk", "img": "team-raphael-reber.jpg" },
-  { "name": "Sulamith Scheurer", "role": "Produktmanagement", "bio": "Ex-Lead Innovation Consultant INNOArchitects AG", "img": "team-sulamith-scheurer.jpg" },
-  { "name": "Stefan Niederhauser", "role": "Technologie", "bio": "Ex-VP of Product Management for Data, Analytics & AI, Swisscom", "img": "team-stefan-niederhauser.jpg" },
-  { "name": "Chantal Kuske", "role": "Scientific Advisory", "bio": "Consulting & Research in Health Science", "img": "team-chantal-kuske.jpg" },
-  { "name": "Melanie Spescha", "role": "Projekte & Fundraising", "bio": "BA Soziale Arbeit, Inklusions- und Fundraising-Expertin", "img": "team-melanie-spescha.jpg" },
-  { "name": "Lona Gaugler", "role": "Industry Lead", "bio": "MSc Oncology and Molecular Medicine, MSc Advanced Oncology", "img": "team-lona-gaugler.jpg" },
-  { "name": "Silvan Jost", "role": "Technologie", "bio": "", "img": "team-silvan-jost.jpg" }
+  {
+    "name": "Raphael Reber",
+    "role": "Strategie & Partnerschaften",
+    "bio": "Forbes 30 under 30 Alumnus, Co-Founder Impact Hub Bern und Zeilenwerk",
+    "img": "team-raphael-reber.jpg",
+    "linkedin": "https://www.linkedin.com/in/raphael-reber/"
+  },
+  {
+    "name": "Sulamith Scheurer",
+    "role": "Produktmanagement",
+    "bio": "Ex-Lead Innovation Consultant INNOArchitects AG",
+    "img": "team-sulamith-scheurer.jpg",
+    "linkedin": "https://www.linkedin.com/in/sulamith-scheurer-486258111/"
+  },
+  {
+    "name": "Stefan Niederhauser",
+    "role": "Technologie",
+    "bio": "Ex-VP of Product Management for Data, Analytics & AI, Swisscom",
+    "img": "team-stefan-niederhauser.jpg",
+    "linkedin": "https://www.linkedin.com/in/sniederhauser/"
+  },
+  {
+    "name": "Chantal Kuske",
+    "role": "Scientific Advisory",
+    "bio": "Consulting & Research in Health Science",
+    "img": "team-chantal-kuske.jpg",
+    "linkedin": "https://www.linkedin.com/in/chantalkuske/"
+  },
+  {
+    "name": "Melanie Spescha",
+    "role": "Projekte & Fundraising",
+    "bio": "BA Soziale Arbeit, Inklusions- und Fundraising-Expertin",
+    "img": "team-melanie-spescha.jpg",
+    "linkedin": "https://www.linkedin.com/in/melanie-spescha-965831145/"
+  },
+  {
+    "name": "Lona Gaugler",
+    "role": "Industry Lead",
+    "bio": "MSc Oncology and Molecular Medicine, MSc Advanced Oncology",
+    "img": "team-lona-gaugler.jpg",
+    "linkedin": "https://www.linkedin.com/in/lona-gaugler-471231a/"
+  },
+  {
+    "name": "Silvan Jost",
+    "role": "Technologie",
+    "bio": "",
+    "img": "team-silvan-jost.jpg",
+    "linkedin": "https://www.linkedin.com/in/silvan-jost-dev/"
+  }
 ]

@@ -285,6 +285,9 @@ details[open] summary .plus{transform:rotate(45deg);background:var(--navy);color
 .pp span{display:block;font-size:14.5px;color:var(--terra);margin-top:6px}
 .pp small{display:block;font-size:14px;line-height:1.5;color:var(--ink-soft);margin-top:8px}
 .network{padding:clamp(80px,8vw,120px) 0}
+.pp-li{display:inline-grid;place-items:center;width:34px;height:34px;margin-top:12px;border-radius:9px;background:var(--sand);color:var(--navy);transition:background .2s,color .2s}
+.pp-li:hover{background:var(--navy);color:var(--cream)}
+.pp-li:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 .pp-grid.sm{grid-template-columns:repeat(4,1fr);gap:36px 28px;margin-top:48px;max-width:880px}
 .pp.sm img{aspect-ratio:1;border-radius:12px;margin-bottom:16px}
 .pp.sm b{font-size:18px}
