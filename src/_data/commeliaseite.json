@@ -3,7 +3,7 @@
     { "icon": "chat", "title": "Ein Posteingang für alle Kanäle", "text": "Web-Chat, E-Mail und WhatsApp landen am selben Ort. Alle sehen, wer gerade antwortet, so geht nichts verloren." },
     { "icon": "users", "title": "Die richtige Person antwortet", "text": "Fachpersonen und Peers arbeiten in Gruppen. Regeln nach Kanal, Sprache oder Einstiegsfragen bringen jede Anfrage zur passenden Gruppe." },
     { "icon": "lifebuoy", "title": "So viel KI wie nötig", "text": "Der Assistent beantwortet Routinefragen aus eurem Wissen. Bei sensiblen Themen, Krisensignalen oder auf Wunsch übergibt er an einen Menschen." },
-    { "icon": "shield", "title": "Datenschutz eingebaut", "text": "Gehostet in der Schweiz oder auf eurem eigenen Server. KI-Anfragen gehen nur an Anbieter, die Daten weder speichern noch zum Training nutzen." },
+    { "icon": "shield", "title": "Datenschutz jederzeit sichergestellt", "text": "Gehostet in der Schweiz oder auf eurem eigenen Server. KI-Anfragen gehen nur an Anbieter, die Daten weder speichern noch zum Training nutzen." },
     { "icon": "book", "title": "In der Sprache der Ratsuchenden", "text": "Automatische Übersetzung und Antwortvorschläge in einfacher Sprache." },
     { "icon": "chart", "title": "Auswertungen", "text": "Antwortzeiten und Rückmeldungen auf einen Blick, Exporte ohne Nachrichtentexte." }
   ],
