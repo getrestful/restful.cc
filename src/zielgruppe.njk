@@ -22,7 +22,7 @@ eleventyComputed:
         <span class="zg-label">{{ zg.label }}</span>
         <h1>{{ zg.h1 | safe }}</h1>
         <p class="sub">{{ zg.sub }}</p>
-        <div class="ctas"><a class="btn btn-dark" href="#kontakt">Infotermin vereinbaren</a><a class="btn btn-line" href="#ablauf">So funktioniert es</a></div>
+        <div class="ctas"><a class="btn btn-dark" href="#kontakt">Infotermin vereinbaren</a><a class="btn btn-line" href="#ablauf">{{ zg.cta2 or "So funktioniert es" }}</a></div>
       </div>
       {{ art(zg.art, "blob") }}
     </div>
@@ -50,7 +50,7 @@ eleventyComputed:
     <h2>Warum es <i>sich lohnt</i></h2>
     <div class="stats">
       {%- for s in zg.stats %}
-      <div class="stat"><span class="v">{{ s.value }}</span><p>{{ s.text }}</p>
+      <div class="stat">{% if s.title %}<h3 class="stat-t">{{ s.title }}</h3>{% else %}<span class="v">{{ s.value }}</span>{% endif %}<p>{{ s.text }}</p>
         {%- if s.source %}<small>Quelle: {% if s.url %}<a href="{{ s.url }}"{% if s.url.startsWith("http") %} target="_blank" rel="noopener"{% endif %}>{{ s.source }}</a>{% else %}{{ s.source }}{% endif %}</small>{% endif -%}
       </div>
       {%- endfor %}
@@ -58,6 +58,19 @@ eleventyComputed:
   </div>
 </section>
 
+{%- if zg.cases %}
+<section id="ablauf" class="pt0">
+  <div class="wrap">
+    <p class="kicker">Beispiele aus der Praxis</p>
+    <h2>Gemeinschaften, <i>die bereits laufen</i></h2>
+    <div class="partner-grid">
+      {%- for c in zg.cases %}
+      <a class="partner" href="{{ c.href }}" target="_blank" rel="noopener"><div class="lg"><img src="/images/{{ c.logo }}" alt="" loading="lazy"></div><div><b>{{ c.name }}</b><span>{{ c.text }}</span></div><span class="sr-only"> (öffnet in neuem Fenster)</span></a>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+{%- else %}
 <section id="ablauf" class="pt0">
   <div class="wrap">
     <p class="kicker">So funktioniert es</p>
@@ -73,6 +86,7 @@ eleventyComputed:
     <p class="mt56"><a class="ev-link" href="/loesungen/peer-plattform/">So sieht die Plattform aus →</a></p>
   </div>
 </section>
+{%- endif %}
 
 {%- if "trust" not in (zg.hide or []) %}
 <section class="trust">
@@ -174,7 +188,7 @@ eleventyComputed:
 
 <section id="kontakt" class="pt0">
   <div class="wrap">
-    {{ talk("Für Industrie-Partnerschaften ist " + zg.contact.name + " deine Ansprechperson (" + zg.contact.role + ").") if zg.contact else talk() }}
+    {{ talk(person=zg.contactPerson) }}
     <p class="kicker mt60">restful in anderen Settings</p>
     <nav class="others" aria-label="restful in anderen Settings">
       <a href="/">Patientenorganisationen und Ligen<span aria-hidden="true">→</span></a>

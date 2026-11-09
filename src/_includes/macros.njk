@@ -65,19 +65,21 @@
 </svg></span>
 {% endmacro %}
 
-{# Kontaktabschnitt mit Raphael und direkter Terminbuchung. Optional: note = zusätzliche Zeile, z.B. eine weitere Ansprechperson #}
-{% macro talk(note="") %}
+{# Kontaktabschnitt mit direkter Terminbuchung. Standard: Raphael; person = andere Ansprechperson (name, role, img, first, email) #}
+{% macro talk(note="", person=null) %}
+{%- set p = person or { name: "Raphael Reber", first: "Raphael", role: "Strategie & Partnerschaften", img: "team-raphael-reber.jpg", email: "raphael@restful.cc" } %}
+{%- set mail = p.email or site.email %}
 <div class="talk">
-  <figure class="talk-img"><img src="/images/team-raphael-reber.jpg" width="800" height="800" loading="lazy" alt="Raphael Reber"></figure>
+  <figure class="talk-img"><img src="/images/{{ p.img }}" width="800" height="800" loading="lazy" alt="{{ p.name }}"></figure>
   <div class="talk-txt">
     <h2>Lass uns <i>sprechen!</i></h2>
-    <p class="talk-who"><b>Raphael Reber</b><span>Strategie &amp; Partnerschaften</span><a href="mailto:raphael@restful.cc">raphael@restful.cc</a></p>
+    <p class="talk-who"><b>{{ p.name }}</b><span>{{ p.role }}</span><a href="mailto:{{ mail }}">{{ mail }}</a></p>
     <h3>Reden wir über dein Projekt</h3>
-    <p>Ob bei einem Kaffee in Bern oder im Video-Call: Gerne nehmen wir uns Zeit für deine Anforderungen und Fragen. Buche direkt einen unverbindlichen Infotermin mit Raphael.</p>
+    <p>Ob bei einem Kaffee in Bern oder im Video-Call: Gerne nehmen wir uns Zeit für deine Anforderungen und Fragen. Buche direkt einen unverbindlichen Infotermin mit {{ p.first }}.</p>
     {%- if note %}
     <p class="talk-note">{{ note | safe }}</p>
     {%- endif %}
-    <a class="btn btn-line btn-dot" href="{{ site.calendly }}" target="_blank" rel="noopener"><span class="dot" aria-hidden="true"></span>Infotermin buchen<span class="sr-only"> (öffnet in neuem Fenster)</span></a>
+    <a class="btn btn-line btn-dot" href="{{ p.calendly or site.calendly }}" target="_blank" rel="noopener"><span class="dot" aria-hidden="true"></span>Infotermin buchen<span class="sr-only"> (öffnet in neuem Fenster)</span></a>
   </div>
 </div>
 {% endmacro %}

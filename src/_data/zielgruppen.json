@@ -130,7 +130,7 @@
     "description": "Für Patient-Advocacy-Abteilungen baut restful medikamentenagnostische Patientengemeinschaften auf, unabhängig von einem Produkt und mit klarer Rollentrennung.",
     "label": "Für Industrie und Patient Advocacy",
     "h1": "Patientengemeinschaften aufbauen, <i>unabhängig von einem Produkt.</i>",
-    "sub": "Für Patient Advocacy bauen wir Gemeinschaften rund um ein Krankheitsbild auf, nicht um ein Präparat. Betroffene finden Austausch und Halt, du gewinnst ein tieferes Verständnis ihres Alltags. Im Zentrum steht das Erfahrungswissen der Betroffenen: Medizinische Fragen und mögliche Nebenwirkungen werden nicht hier, sondern ausschliesslich mit dem zuständigen medizinischen Fachpersonal besprochen.",
+    "sub": "Für Patient Advocacy bauen wir Gemeinschaften rund um ein Krankheitsbild auf, nicht um ein Präparat. Betroffene finden Austausch und Halt, du gewinnst ein tieferes Verständnis ihres Alltags.",
     "reasonsTitle": "Was eine unabhängige Gemeinschaft <i>dir bringt</i>",
     "reasonsIntro": "Patientinnen und Patienten wollen Austausch, keine Werbung. Wenn eine Gemeinschaft unabhängig ist und den Betroffenen gehört, entsteht Vertrauen und damit ein ehrlicher Blick auf den Alltag mit der Krankheit.",
     "reasons": [
@@ -143,34 +143,34 @@
         "text": "Medikamentenagnostisch, ohne Einfluss auf die Inhalte im Austausch. Rollen, Finanzierung durch Multisponsoring und Sichtbarkeit legen wir schriftlich und transparent fest. Das schützt die Betroffenen und deinen Ruf."
       },
       {
-        "title": "Gemeinsam mit Patientenorganisationen",
-        "text": "Wo es passt, trägt eine Patientenorganisation das Angebot. Wir bringen Erfahrung aus der Zusammenarbeit mit 13 Organisationen im Schweizer Gesundheits- und Sozialwesen mit."
+        "title": "Zugang zu Patientenorganisationen",
+        "text": "Wir öffnen dir den Zugang zu Patientenorganisationen, die das Angebot mittragen. Dafür bringen wir Erfahrung aus der Zusammenarbeit mit 13 Organisationen im Schweizer Gesundheits- und Sozialwesen mit."
       },
       {
         "title": "Patient Education, die ankommt",
         "text": "Wissen zur Erkrankung, verbunden mit dem Erfahrungswissen von Peers: Betroffene lernen von Menschen, die vor den gleichen Fragen standen. Das stärkt die Selbstwirksamkeit."
       },
       {
-        "title": "National und mehrsprachig",
-        "text": "Plattform, Moderation und Peers aus einer Hand, mehrsprachig für nationale Rollouts und mit einer durchgehenden Ansprechperson."
+        "title": "International skalierbar",
+        "text": "Plattform, Moderation und Peers aus einer Hand: mehrsprachig, für nationale Rollouts und international skalierbar, mit einer durchgehenden Ansprechperson."
       }
     ],
     "stats": [
       {
-        "value": "13",
-        "text": "Partnerorganisationen im Schweizer Gesundheits- und Sozialwesen arbeiten mit restful zusammen.",
+        "title": "Zugang zu Organisationen",
+        "text": "restful arbeitet mit 13 Organisationen im Schweizer Gesundheits- und Sozialwesen zusammen und öffnet dir den Weg zu Patientenorganisationen und Betroffenen.",
         "source": "",
         "url": ""
       },
       {
-        "value": "7",
-        "text": "Themenfelder mit aufgearbeiteter Studienlage, von Demenz bis Onkologie.",
-        "source": "Literaturrecherchen von restful",
-        "url": "/wissenschaft/"
+        "title": "Wissenschaftliche Begleitung und aktives Wirkungsreporting",
+        "text": "Aufgearbeitete Studienlage zu 7 Themenfeldern, Begleitforschung mit einer Universität und regelmässiges Reporting zur Wirkung des Angebots.",
+        "source": "",
+        "url": ""
       },
       {
-        "value": "1",
-        "text": "durchgehende Ansprechperson, von der ersten Klärung bis zum Betrieb.",
+        "title": "Professionelles Projektsetup mit einem etablierten Partner",
+        "text": "Klare Rollen, erprobte Abläufe und eine durchgehende Ansprechperson, von der ersten Klärung bis zum Betrieb.",
         "source": "",
         "url": ""
       }
@@ -238,11 +238,44 @@
         "a": "Lona Gaugler, Industry Lead bei restful, mit Hintergrund in Onkologie und molekularer Medizin. Sie begleitet Projekte mit der Industrie von der ersten Klärung bis zum Betrieb."
       }
     ],
-    "contact": {
+    "commelia": null,
+    "cta2": "Beispiele ansehen",
+    "cases": [
+      {
+        "name": "MucoConnect",
+        "org": "Cystische Fibrose Schweiz",
+        "logo": "logo-mucoconnect.png",
+        "text": "Peer-Austausch für Menschen mit Cystischer Fibrose und ihre Angehörigen.",
+        "href": "https://cystischefibroseschweiz.ch/unterstuetzung-und-angebote/mucoconnect/"
+      },
+      {
+        "name": "Peer-Plattform der Krebsliga",
+        "org": "Krebsliga Schweiz",
+        "logo": "logo-krebsliga.webp",
+        "text": "Austausch für Betroffene von Krebs und ihre Angehörigen.",
+        "href": "https://peerplattform.krebsliga.ch/"
+      },
+      {
+        "name": "Morbus Bechterew",
+        "org": "Schweizerische Vereinigung Morbus Bechterew",
+        "logo": "logo-svmb.png",
+        "text": "Gemeinsames Projekt für mehr Bewegung im Alltag von Menschen mit Morbus Bechterew.",
+        "href": "https://www.bechterew.ch/"
+      },
+      {
+        "name": "Europa Uomo Schweiz",
+        "org": "Europa Uomo Schweiz",
+        "logo": "logo-europa-uomo.jpg",
+        "text": "Austausch für Männer mit Prostatakrebs und ihre Angehörigen.",
+        "href": "https://www.europa-uomo.ch/"
+      }
+    ],
+    "contactPerson": {
       "name": "Lona Gaugler",
-      "role": "Industry Lead"
-    },
-    "commelia": null
+      "role": "Industry Lead",
+      "img": "team-lona-gaugler.jpg",
+      "first": "Lona"
+    }
   },
   {
     "slug": "versicherer",
