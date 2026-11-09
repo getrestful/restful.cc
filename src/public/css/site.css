@@ -43,8 +43,7 @@ h2{font-size:clamp(34px,4.4vw,54px)}
 h2 i,h1 i{font-style:italic;color:var(--terra)}
 section{padding:clamp(90px,9vw,130px) 0}
 .lead{font-size:19px;color:var(--ink-soft);max-width:620px;margin-top:22px}
-.kicker{font-size:14px;font-weight:600;color:var(--terra);display:flex;align-items:center;gap:10px;margin-bottom:18px}
-.kicker::before{content:"";width:28px;height:2px;background:var(--rose)}
+.kicker{font-size:14px;font-weight:600;color:var(--terra);margin-bottom:18px}
 .h-sm{font-size:clamp(28px,3.2vw,40px)}
 .pt0{padding-top:0}
 .pt20{padding-top:20px}
