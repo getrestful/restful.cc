@@ -4,14 +4,16 @@
     "role": "Strategie & Partnerschaften",
     "bio": "Forbes 30 under 30 Alumnus, Co-Founder Impact Hub Bern und Zeilenwerk",
     "img": "team-raphael-reber.jpg",
-    "linkedin": "https://www.linkedin.com/in/raphael-reber/"
+    "linkedin": "https://www.linkedin.com/in/raphael-reber/",
+    "email": "raphael@restful.cc"
   },
   {
     "name": "Sulamith Scheurer",
     "role": "Produktmanagement",
     "bio": "Ex-Lead Innovation Consultant INNOArchitects AG",
     "img": "team-sulamith-scheurer.jpg",
-    "linkedin": "https://www.linkedin.com/in/sulamith-scheurer-486258111/"
+    "linkedin": "https://www.linkedin.com/in/sulamith-scheurer-486258111/",
+    "email": "sulamith@getrestful.ch"
   },
   {
     "name": "Stefan Niederhauser",
@@ -39,7 +41,8 @@
     "role": "Industry Lead",
     "bio": "MSc Oncology and Molecular Medicine, MSc Advanced Oncology",
     "img": "team-lona-gaugler.jpg",
-    "linkedin": "https://www.linkedin.com/in/lona-gaugler-471231a/"
+    "linkedin": "https://www.linkedin.com/in/lona-gaugler-471231a/",
+    "email": "lona@getrestful.ch"
   },
   {
     "name": "Silvan Jost",
