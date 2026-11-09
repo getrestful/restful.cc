@@ -29,7 +29,7 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
     <div class="tool-head">
       <div>
         <p class="kicker">Zwei Perspektiven</p>
-        <h2>So erleben es <i>Koordination und Mitglieder</i></h2>
+        <h2>restful <i>auf einen Blick</i></h2>
         <p class="lead">Schalte zwischen der Sicht deiner Koordination und der Sicht deiner Mitglieder um.</p>
       </div>
       <div class="switch" role="tablist" aria-label="Perspektive wählen">
@@ -41,29 +41,10 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
     <div class="view on" id="ansicht-org" role="tabpanel" aria-labelledby="tab-org">
       <figure class="visual">
         <div class="browser">
-          <div class="bar"><i></i><i></i><i></i><span>deine-organisation.getrestful.ch/admin</span></div>
-          <div class="dash">
-            <div class="side">
-              <div class="logo-slot">Dein Logo</div>
-              <div class="it on">Übersicht</div><div class="it">Matching</div><div class="it">Peers</div><div class="it">Mitglieder</div><div class="it">Auswertung</div><div class="it">Einstellungen</div>
-            </div>
-            <div class="main">
-              <div class="kpis">
-                <div class="kpi"><small>Aktive Mitglieder</small><b>148</b></div>
-                <div class="kpi"><small>Offene Anfragen</small><b>5</b></div>
-                <div class="kpi"><small>Matches im Monat</small><b>12</b></div>
-              </div>
-              <div class="rows">
-                <b class="rows-title">Neue Anfragen</b>
-                <div class="r"><i></i><div class="bar2"></div><em>Match vorschlagen</em></div>
-                <div class="r"><i></i><div class="bar2 w70"></div><em class="ok">Gematcht</em></div>
-                <div class="r"><i></i><div class="bar2 w85"></div><em>Match vorschlagen</em></div>
-                <div class="r"><i></i><div class="bar2 w60"></div><em class="ok">Gematcht</em></div>
-              </div>
-            </div>
-          </div>
+          <div class="bar"><i></i><i></i><i></i><span>Dashboard deiner Community</span></div>
+          <img class="shot" src="/images/peer-admin-dashboard.webp" width="1000" height="982" alt="Dashboard der Koordination mit neuen Mitgliedern pro Woche, Status der Mitglieder, Anzahl Nachrichten und Total der Matches">
         </div>
-        <figcaption>Beispielansicht mit fiktiven Werten</figcaption>
+        <figcaption>Ansicht für deine Koordination</figcaption>
       </figure>
       <div class="features">
         {%- for f in plattform.organisation %}
@@ -92,14 +73,15 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
 <section>
   <div class="wrap">
     <p class="kicker">Was wir übernehmen</p>
-    <h2>Du führst das Angebot, <i>wir kümmern uns um die Technik</i></h2>
+    <h2>Du bist Absenderin des Angebots, <i>restful sorgt für die Technik</i></h2>
+    <p class="lead">Du kommunizierst das Angebot gegenüber deinen Mitgliedern, restful stellt die stabile Technik im Hintergrund sicher.</p>
     <div class="tasks">
       {%- for a in plattform.aufgaben %}
       <div class="task"><span class="c">{{ icon(a.icon) | safe }}</span><h3>{{ a.title }}</h3><p>{{ a.text }}</p></div>
       {%- endfor %}
     </div>
     <div class="why">
-      <p>Eine Plattform allein macht noch kein wirksames Angebot. Entscheidend sind Format, Matching und Begleitung.</p>
+      <p>Mehr zur Wirksamkeit von Peer-Austauschen</p>
       <div><a class="btn btn-dark" href="/wissenschaft/">Zu Methode &amp; Evidenz</a></div>
     </div>
   </div>
@@ -108,7 +90,7 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
 <section class="pt0" aria-labelledby="ref-titel">
   <div class="wrap">
     <p class="kicker">Im Einsatz</p>
-    <h2 class="h-sm" id="ref-titel">Auf der Plattform laufen <i>bereits diese Angebote</i></h2>
+    <h2 class="h-sm" id="ref-titel">Diese Kunden setzen bereits heute <i>auf die restful-Plattform</i></h2>
     <div class="partner-grid">
       {%- for i in initiatives %}{% if i.logo in loesungsseite.peerReferenzen %}
       <a class="partner" href="{{ i.href }}" target="_blank" rel="noopener"><div class="lg"><img src="/images/{{ i.logo }}" alt="" loading="lazy"></div><div><b>{{ i.name }}</b><span>{{ i.desc }}</span></div></a>
@@ -130,7 +112,7 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
   <div class="wrap">
     <div class="contact-box compact">
       <div>
-        <h2>Lieber <i>live sehen?</i></h2>
+        <h2>Mehr <i>erfahren</i></h2>
         <p>Wir zeigen dir die Plattform gerne in einem unverbindlichen Infotermin.</p>
         <p class="mail">Direkt per E-Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
       </div>

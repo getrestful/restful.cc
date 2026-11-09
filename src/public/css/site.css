@@ -414,6 +414,7 @@ footer.site a:hover{text-decoration:underline}
 .browser{border-radius:18px;background:var(--navy);padding:10px;box-shadow:0 40px 80px -40px var(--shadow)}
 .browser .bar{display:flex;gap:6px;align-items:center;padding:4px 6px 10px}
 .browser .bar i{width:10px;height:10px;border-radius:50%;background:color-mix(in srgb,var(--cream) 30%,transparent)}
+.browser img.shot{display:block;width:100%;height:auto;border-radius:10px;background:var(--white)}
 .browser .bar span{margin-left:10px;font-size:12px;color:var(--lav)}
 .dash{background:var(--cream);border-radius:10px;display:grid;grid-template-columns:150px 1fr;min-height:360px;overflow:hidden}
 .dash .side{background:var(--white);padding:16px;display:grid;align-content:start;gap:8px;font-size:13px;border-right:1px solid var(--line)}
