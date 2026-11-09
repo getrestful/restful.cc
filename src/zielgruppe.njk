@@ -73,6 +73,7 @@ eleventyComputed:
   </div>
 </section>
 
+{%- if "trust" not in (zg.hide or []) %}
 <section class="trust">
   <div class="wrap">
     <h2>restful arbeitet <i>evidenzbasiert und methodisch fundiert</i></h2>
@@ -84,7 +85,9 @@ eleventyComputed:
     </div>
   </div>
 </section>
+{%- endif %}
 
+{%- if "quote" not in (zg.hide or []) %}
 <section>
   <div class="wrap">
     {%- if zg.quote.type == "statement" %}
@@ -101,6 +104,7 @@ eleventyComputed:
     {%- endif %}
   </div>
 </section>
+{%- endif %}
 
 <section class="pt0">
   <div class="wrap">
@@ -162,7 +166,7 @@ eleventyComputed:
 
 <section class="pt0" aria-labelledby="faq-titel">
   <div class="wrap faq">
-    <div><p class="kicker">Häufige Fragen</p><h2 id="faq-titel">Was du <i>vorher wissen</i> willst</h2></div>
+    <div><p class="kicker">FAQ</p><h2 id="faq-titel">Häufige <i>Fragen</i></h2></div>
     <div>{{ faqList(zg.faq) }}</div>
   </div>
 </section>
@@ -180,8 +184,8 @@ eleventyComputed:
       </div>
       {{ contactForm(site.email) }}
     </div>
-    <p class="kicker mt60">Für andere Bereiche</p>
-    <nav class="others" aria-label="Für andere Bereiche">
+    <p class="kicker mt60">restful in anderen Settings</p>
+    <nav class="others" aria-label="restful in anderen Settings">
       <a href="/">Patientenorganisationen und Ligen<span aria-hidden="true">→</span></a>
       {%- for o in zielgruppen %}{% if o.slug != zg.slug %}
       <a href="/fuer/{{ o.slug }}/">{{ o.menu }}<span aria-hidden="true">→</span></a>

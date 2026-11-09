@@ -12,24 +12,16 @@
     "reasonsIntro": "In der Sprechstunde geht es um Befunde und Therapie. Wie es Patientinnen und Patienten mit der Behandlung geht, zeigt sich aber oft erst im Alltag: bei Ängsten, Nebenwirkungen, Fragen zu Arbeit und Familie. Genau hier helfen Menschen, die es selbst erlebt haben.",
     "reasons": [
       {
-        "title": "Kein Aufwand in der Sprechstunde",
+        "title": "Kein Mehraufwand für dich",
         "text": "Ein Hinweis im Gespräch und ein QR-Code auf dem Flyer genügen. Anmeldung, Vermittlung und Begleitung laufen über die Plattform und eine Fachperson, nicht über dein Behandlungsteam."
-      },
-      {
-        "title": "Begleitet zwischen den Terminen",
-        "text": "Angst vor dem Eingriff, Nebenwirkungen, der erste Arbeitstag nach der Therapie: Peers kennen diese Momente aus eigener Erfahrung und sind digital erreichbar, auch ausserhalb der Sprechzeiten."
       },
       {
         "title": "Sicher und klar abgegrenzt",
         "text": "Peers geben keine medizinischen Ratschläge. Sie werden auf ihre Rolle vorbereitet, und bei Anzeichen einer Krise wird jederzeit eine Fachperson einbezogen."
       },
       {
-        "title": "Peers müssen nicht von dir kommen",
-        "text": "Wo es passt, arbeiten wir mit Patientenorganisationen zusammen, die bereits erfahrene Peers haben. So startest du schneller und stärkst die Zusammenarbeit mit der Selbsthilfe."
-      },
-      {
-        "title": "Teil eines digitalen Patientenpfads",
-        "text": "Der Austausch lässt sich mit weiteren digitalen Schritten verbinden, von der Vorbereitung bis zur Nachsorge. Mit dem Inselspital Bern haben wir so den Swiss Sleep Circle umgesetzt."
+        "title": "Nicht allein, auch ausserhalb der Sprechstunde",
+        "text": "Viele Fragen tauchen erst zwischen zwei Terminen auf. Peers sind digital erreichbar, wenn es darauf ankommt, sodass deine Patientinnen und Patienten auch ausserhalb der Sprechstunde nicht allein gelassen sind. Mit dem Inselspital Bern haben wir so den Swiss Sleep Circle umgesetzt."
       }
     ],
     "stats": [
@@ -55,23 +47,18 @@
     "steps": [
       {
         "title": "Einbettung",
-        "text": "Gemeinsam bestimmen wir, wo im Patientenpfad das Angebot ansetzt, etwa nach der Diagnose, vor einem Eingriff oder beim Austritt.",
-        "visual": "screen-1"
+        "text": "Gemeinsam mit deiner Praxis oder deinem Spital legen wir fest, wo im Patientenpfad das Angebot ansetzt, etwa nach der Diagnose, vor einem Eingriff oder beim Austritt. Und wir entscheiden zusammen, wie Patientinnen und Patienten den Weg dorthin finden: mit einem Hinweis auf bestehende Peer-Angebote oder mit einem eigenen, co-gebrandeten Startpunkt als Informationshub, inklusive QR-Codes für Flyer, Wartezimmer und Austrittsgespräch.",
+        "visual": "landing"
       },
       {
-        "title": "Empfehlung",
-        "text": "Ärztinnen, Pflege oder Sozialdienst weisen auf das Angebot hin, mit Flyer, QR-Code oder im Austrittsgespräch. Mehr braucht es nicht.",
-        "visual": "screen-2"
+        "title": "Registrierung und Matching",
+        "text": "Patientinnen und Patienten registrieren sich kostenlos. Eine Fachperson vermittelt ihnen eine Person mit ähnlicher Diagnose oder Behandlung. Dabei gilt: voller Datenschutz und Sicherheit für die Betroffenen, eine klare Einwilligung nach Aufklärung (Informed Consent) und eine klare Abgrenzung zur Behandlung in Praxis oder Spital.",
+        "visual": "match"
       },
       {
-        "title": "Matching",
-        "text": "Eine Fachperson schlägt anhand eines kurzen Fragebogens einen Peer mit ähnlicher Diagnose oder Behandlung vor.",
-        "visual": "screen-3"
-      },
-      {
-        "title": "Begleitung und Auswertung",
-        "text": "Austausch im eigenen Tempo. Dein Team erhält anonymisierte Auswertungen und auf Wunsch die Ergebnisse kurzer Befragungen, etwa zur Zeit nach dem Austritt.",
-        "visual": "chat"
+        "title": "Auswertung und Wirkung",
+        "text": "Patientinnen und Patienten bestimmen Häufigkeit und Tempo des Austauschs selbst. Fachpersonen behalten den Überblick und sind für Rückfragen oder bei einer Eskalation jederzeit im Hintergrund erreichbar. Laufend messen wir die Wirkung und sichern die Qualität des Angebots.",
+        "visual": "dashboard"
       }
     ],
     "evidence": [
@@ -129,16 +116,11 @@
         "a": "Das hängt von Umfang, Laufzeit und Begleitung ab. Nach einem Infotermin erhältst du ein konkretes Angebot. Für Projekte in der Gesundheitsversorgung gibt es Fördermöglichkeiten, etwa bei Gesundheitsförderung Schweiz."
       }
     ],
-    "commelia": {
-      "title": "Fragen zwischen den Terminen <i>an einem Ort</i>",
-      "text": "Mit Commelia beantwortet dein Team Patientenfragen per Web-Chat, E-Mail oder WhatsApp aus einem gemeinsamen Posteingang. Ein KI-Assistent übernimmt Routinefragen zu Abläufen, medizinische Anliegen gehen direkt an eure Fachpersonen.",
-      "items": [
-        "Pflege, Ärzteschaft und Peers antworten gemeinsam, mit klarer Zuteilung",
-        "Übergabe an einen Menschen bei sensiblen Themen oder Krisensignalen",
-        "Automatische Übersetzung für Patientinnen und Patienten in anderen Sprachen",
-        "Gehostet in der Schweiz oder auf dem eigenen Server"
-      ]
-    }
+    "commelia": null,
+    "hide": [
+      "trust",
+      "quote"
+    ]
   },
   {
     "slug": "industrie",

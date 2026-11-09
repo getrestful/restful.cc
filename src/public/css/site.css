@@ -423,7 +423,7 @@ footer.site a:hover{text-decoration:underline}
 .dash .main{padding:18px;display:grid;gap:12px;align-content:start}
 .kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
 .kpi{background:var(--white);border-radius:12px;padding:12px}
-.kpi small{font-size:11px;color:var(--ink-soft);display:block}
+.kpi small{font-size:11px;color:var(--ink-soft);display:block;hyphens:auto;overflow-wrap:break-word}
 .kpi b{font-family:var(--serif);font-size:24px;font-weight:var(--hw)}
 .rows{background:var(--white);border-radius:12px;padding:12px;display:grid;gap:8px}
 .rows .r{display:grid;grid-template-columns:26px 1fr auto;gap:10px;align-items:center;font-size:12.5px}
@@ -437,6 +437,25 @@ footer.site a:hover{text-decoration:underline}
 .rows .bar2.w60{width:60%}
 .rows .bar2.w70{width:70%}
 .rows .bar2.w85{width:85%}
+.lp{background:var(--white);border-radius:10px;padding:18px;display:grid;gap:14px;text-align:left}
+.lp-brand{display:flex;align-items:center;gap:10px}
+.lp-brand .logo-slot{height:28px;padding:0 10px;border-radius:8px;font-size:11px;font-weight:600;border:1.5px dashed var(--rose);color:var(--terra);display:grid;place-items:center}
+.lp-brand .x{color:var(--ink-soft);font-size:14px}
+.lp-h{font-family:var(--serif);font-weight:var(--hw);font-size:19px;line-height:1.2}
+.lp-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.lp-t{background:var(--cream);border-radius:10px;padding:10px;display:grid;gap:8px;justify-items:center;font-size:11.5px;text-align:center;line-height:1.3}
+.lp-t .qr{width:100%;max-width:74px;height:auto;background:var(--white);padding:5px;border-radius:6px}
+.match{height:100%;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:14px 12px;background:var(--cream);text-align:center;font-size:12.5px}
+.match .ok{width:38px;height:38px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:var(--cream)}
+.match .t{font-family:var(--serif);font-weight:var(--hw);font-size:15px;line-height:1.2}
+.match .peer{width:100%;box-sizing:border-box;display:flex;gap:8px;align-items:center;background:var(--white);border-radius:12px;padding:8px;text-align:left}
+.match .peer i{width:28px;height:28px;border-radius:50%;background:var(--lav);flex:none}
+.match .peer b{display:block;font-size:13px}
+.match .peer small{color:var(--ink-soft);font-size:10.5px;line-height:1.3;display:block}
+.match .cta{width:100%;box-sizing:border-box;padding:8px;font-size:12px;border-radius:999px;background:var(--navy);color:var(--cream);font-weight:600}
+.match .safe{color:var(--ink-soft);font-size:10.5px}
+.dash .alert{display:flex;gap:8px;align-items:center;background:var(--white);border-radius:12px;padding:10px 12px;font-size:12.5px}
+.dash .alert span{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--sand);color:var(--terra);font-weight:700;font-size:12px;flex:none}
 .phones{display:flex;gap:18px;justify-content:center;align-items:flex-start}
 .phone{width:230px;border-radius:34px;background:var(--navy);padding:9px;box-shadow:0 40px 80px -40px var(--shadow);flex:none}
 .phone .scr{border-radius:26px;overflow:hidden;height:440px;background:var(--white)}
