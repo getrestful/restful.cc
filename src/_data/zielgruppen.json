@@ -459,7 +459,7 @@
       },
       {
         "q": "Sind die Peers Mitarbeitende der IV?",
-        "a": "Nein. Peers sind Menschen, die selbst eine Eingliederung oder eine ähnliche Situation erlebt haben. Gemeinsam mit dir gewinnen wir sie, bereiten sie auf ihre Rolle vor und begleiten sie. Dass sie ausserhalb des Verfahrens stehen, schafft Vertrauen."
+        "a": "Das hängt vom Modell ab, das zu deiner IV-Stelle passt. Im einfachsten Fall stellt restful einen Pool erfahrener Peers zur Verfügung. Sie stehen ausserhalb des Verfahrens, und gerade das schafft Vertrauen bei den Versicherten. Möchtest du Peer-Arbeit fest in deiner IV-Stelle verankern, helfen wir dir, passende Mitarbeitende mit eigener Erfahrung zu gewinnen und deinen eigenen Pool aufzubauen. Dazwischen sind auch Mischformen möglich. In jedem Fall bereiten wir die Peers auf ihre Rolle vor und begleiten sie."
       },
       {
         "q": "Erfährt die IV-Stelle, was im Austausch besprochen wird?",
@@ -470,15 +470,9 @@
         "a": "Das klären wir gemeinsam, zum Beispiel über einen zeitlich begrenzten Pilot. Im Infotermin zeigen wir dir, welche Varianten für deine IV-Stelle in Frage kommen."
       }
     ],
-    "commelia": {
-      "title": "Fragen zum Verfahren, <i>verständlich beantwortet</i>",
-      "text": "Mit Commelia beantwortet deine IV-Stelle Fragen von Versicherten per Web-Chat, E-Mail oder WhatsApp aus einem gemeinsamen Posteingang. Ein KI-Assistent erklärt Abläufe anhand eures geprüften Wissens und übergibt, sobald es um den eigenen Fall geht.",
-      "items": [
-        "Antworten in einfacher Sprache oder automatisch übersetzt",
-        "Fachpersonen und Peers antworten gemeinsam, mit klaren Regeln, wer was übernimmt",
-        "Übergabe an einen Menschen bei sensiblen Themen oder Krisensignalen",
-        "Gehostet in der Schweiz oder auf dem eigenen Server"
-      ]
-    }
+    "commelia": null,
+    "hide": [
+      "trust"
+    ]
   }
 ]
