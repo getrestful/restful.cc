@@ -9,5 +9,9 @@
   "jobsUrl": "https://join.com/companies/getrestfulch",
   "url": "https://www.restful.cc",
   "ogImage": "/images/og-restful.png",
-  "calendly": "https://calendly.com/raphaelreber/get-to-know-restful"
+  "calendly": "https://calendly.com/raphaelreber/get-to-know-restful",
+  "matomo": {
+    "url": "https://stats.getrestful.ch/",
+    "siteId": "8"
+  }
 }

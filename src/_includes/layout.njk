@@ -63,6 +63,23 @@
   <link rel="stylesheet" href="/css/site.css">
   <script>document.documentElement.classList.replace('no-js','js')</script>
   <script src="/js/site.js" defer></script>
+  {%- if site.matomo %}
+  <!-- Matomo -->
+  <script>
+    var _paq = window._paq = window._paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="{{ site.matomo.url }}";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '{{ site.matomo.siteId }}']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <!-- End Matomo Code -->
+  {%- endif %}
 </head>
 <body>
 <a class="skip" href="#inhalt">{{ "Zum Inhalt springen" | t }}</a>
