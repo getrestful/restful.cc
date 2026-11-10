@@ -1,28 +1,29 @@
 ---
 layout: layout.njk
 pagination:
-  data: zielgruppen
+  data: zgPages
   size: 1
-  alias: zg
+  alias: zgp
   addAllPagesToCollections: true
-permalink: "/fuer/{{ zg.slug }}/"
+permalink: "{{ ('/fuer/' + zgp.zg.key + '/') | l(zgp.lang) }}"
+titleLocalized: true
 eleventyComputed:
-  title: "{{ zg.title }}"
-  description: "{{ zg.description }}"
+  dePath: "/fuer/{{ zgp.zg.key }}/"
+  title: "{{ zgp.zg.title }}"
+  description: "{{ zgp.zg.description }}"
 ---
 {% from "icon.njk" import icon %}
-{% from "macros.njk" import art, stepVisual, faqList %}
-{% from "macros.njk" import talk with context %}
+{% from "macros.njk" import art, stepVisual, faqList, talk with context %}
 
 <section class="zg-hero">
   <div class="wrap">
-    <p class="crumb"><a href="/">Startseite</a> · {{ zg.menu }}</p>
+    <p class="crumb"><a href="{{ '/' | l }}">{{ "Startseite" | t }}</a> · {{ zg.menu }}</p>
     <div class="grid">
       <div>
         <span class="zg-label">{{ zg.label }}</span>
         <h1>{{ zg.h1 | safe }}</h1>
         <p class="sub">{{ zg.sub }}</p>
-        <div class="ctas"><a class="btn btn-dark" href="#kontakt">Infotermin vereinbaren</a><a class="btn btn-line" href="#ablauf">{{ zg.cta2 or "So funktioniert es" }}</a></div>
+        <div class="ctas"><a class="btn btn-dark" href="#kontakt">{{ "Infotermin vereinbaren" | t }}</a><a class="btn btn-line" href="#ablauf">{{ zg.cta2 or ("So funktioniert es" | t) }}</a></div>
       </div>
       {{ art(zg.art, "blob") }}
     </div>
@@ -34,7 +35,7 @@ eleventyComputed:
     <div class="txt">
       <h2>{{ zg.reasonsTitle | safe }}</h2>
       <p>{{ zg.reasonsIntro }}</p>
-      <a class="btn btn-dark" href="#kontakt">Infotermin vereinbaren</a>
+      <a class="btn btn-dark" href="#kontakt">{{ "Infotermin vereinbaren" | t }}</a>
     </div>
     <div>
       {%- for r in zg.reasons %}
@@ -46,12 +47,12 @@ eleventyComputed:
 
 <section class="pt0">
   <div class="wrap">
-    <p class="kicker">Zahlen und Fakten</p>
-    <h2>Warum es <i>sich lohnt</i></h2>
+    <p class="kicker">{{ "Zahlen und Fakten" | t }}</p>
+    <h2>{{ "Warum es <i>sich lohnt</i>" | t | safe }}</h2>
     <div class="stats">
       {%- for s in zg.stats %}
       <div class="stat">{% if s.title %}<h3 class="stat-t">{{ s.title }}</h3>{% else %}<span class="v">{{ s.value }}</span>{% endif %}<p>{{ s.text }}</p>
-        {%- if s.source %}<small>Quelle: {% if s.url %}<a href="{{ s.url }}"{% if s.url.startsWith("http") %} target="_blank" rel="noopener"{% endif %}>{{ s.source }}</a>{% else %}{{ s.source }}{% endif %}</small>{% endif -%}
+        {%- if s.source %}<small>{{ "Quelle:" | t }} {% if s.url %}<a href="{{ s.url | l }}"{% if s.url.startsWith("http") %} target="_blank" rel="noopener"{% endif %}>{{ s.source }}</a>{% else %}{{ s.source }}{% endif %}</small>{% endif -%}
       </div>
       {%- endfor %}
     </div>
@@ -61,11 +62,11 @@ eleventyComputed:
 {%- if zg.cases %}
 <section id="ablauf" class="pt0">
   <div class="wrap">
-    <p class="kicker">Beispiele aus der Praxis</p>
-    <h2>Gemeinschaften, <i>die bereits laufen</i></h2>
+    <p class="kicker">{{ "Beispiele aus der Praxis" | t }}</p>
+    <h2>{{ "Gemeinschaften, <i>die bereits laufen</i>" | t | safe }}</h2>
     <div class="partner-grid">
       {%- for c in zg.cases %}
-      <a class="partner" href="{{ c.href }}" target="_blank" rel="noopener"><div class="lg"><img src="/images/{{ c.logo }}" alt="" loading="lazy"></div><div><b>{{ c.name }}</b><span>{{ c.text }}</span></div><span class="sr-only"> (öffnet in neuem Fenster)</span></a>
+      <a class="partner" href="{{ c.href }}" target="_blank" rel="noopener"><div class="lg"><img src="/images/{{ c.logo }}" alt="" loading="lazy"></div><div><b>{{ c.name }}</b><span>{{ c.text }}</span></div><span class="sr-only"> {{ "(öffnet in neuem Fenster)" | t }}</span></a>
       {%- endfor %}
     </div>
   </div>
@@ -73,8 +74,8 @@ eleventyComputed:
 {%- else %}
 <section id="ablauf" class="pt0">
   <div class="wrap">
-    <p class="kicker">So funktioniert es</p>
-    <h2>So einfach <i>startet die Begleitung</i></h2>
+    <p class="kicker">{{ "So funktioniert es" | t }}</p>
+    <h2>{{ "So einfach <i>startet die Begleitung</i>" | t | safe }}</h2>
     <div class="zz">
       {%- for s in zg.steps %}
       <div class="zz-row">
@@ -83,7 +84,7 @@ eleventyComputed:
       </div>
       {%- endfor %}
     </div>
-    <p class="mt56"><a class="ev-link" href="/loesungen/peer-plattform/">So sieht die Plattform aus →</a></p>
+    <p class="mt56"><a class="ev-link" href="{{ '/loesungen/peer-plattform/' | l }}">{{ "So sieht die Plattform aus →" | t }}</a></p>
   </div>
 </section>
 {%- endif %}
@@ -91,12 +92,12 @@ eleventyComputed:
 {%- if "trust" not in (zg.hide or []) %}
 <section class="trust">
   <div class="wrap">
-    <h2>restful arbeitet <i>evidenzbasiert und methodisch fundiert</i></h2>
+    <h2>{{ "restful arbeitet <i>evidenzbasiert und methodisch fundiert</i>" | t | safe }}</h2>
     <div class="trust-row">
-      <div><span class="c">{{ icon("book") | safe }}</span><span>Gestützt auf Literaturrecherchen</span></div>
-      <div><span class="c">{{ icon("uni") | safe }}</span><span>Begleitforschung mit einer Universität</span></div>
-      <div><span class="c">{{ icon("shield") | safe }}</span><span>Schweizer Datenschutz (revDSG)</span></div>
-      <div><span class="c">{{ icon("users") | safe }}</span><span>{{ initiatives | length }} Partnerorganisationen</span></div>
+      <div><span class="c">{{ icon("book") | safe }}</span><span>{{ "Gestützt auf Literaturrecherchen" | t }}</span></div>
+      <div><span class="c">{{ icon("uni") | safe }}</span><span>{{ "Begleitforschung mit einer Universität" | t }}</span></div>
+      <div><span class="c">{{ icon("shield") | safe }}</span><span>{{ "Schweizer Datenschutz (revDSG)" | t }}</span></div>
+      <div><span class="c">{{ icon("users") | safe }}</span><span>{{ "{n} Partnerorganisationen" | t({ n: initiatives | length }) }}</span></div>
     </div>
   </div>
 </section>
@@ -112,8 +113,8 @@ eleventyComputed:
     </figure>
     {%- else %}
     <figure class="quote2">
-      <small class="label">Stimme einer Partnerorganisation</small>
-      <blockquote><p>«{{ testimonial.excerpt }}»</p></blockquote>
+      <small class="label">{{ "Stimme einer Partnerorganisation" | t }}</small>
+      <blockquote><p>{{ "«{q}»" | t({ q: testimonial.excerpt }) }}</p></blockquote>
       <figcaption><b>{{ testimonial.name }}</b>, {{ testimonial.role }}</figcaption>
     </figure>
     {%- endif %}
@@ -123,15 +124,15 @@ eleventyComputed:
 
 <section class="pt0">
   <div class="wrap">
-    <p class="kicker">Wissenschaftlicher Nachweis</p>
-    <h2>Fundiert, <i>nicht nur gut gemeint</i></h2>
+    <p class="kicker">{{ "Wissenschaftlicher Nachweis" | t }}</p>
+    <h2>{{ "Fundiert, <i>nicht nur gut gemeint</i>" | t | safe }}</h2>
     <div class="evref">
       {%- for e in zg.evidence %}
       <div class="evc {{ 'bg-sand' if loop.first else 'bg-lav' }}">
-        <small>Evidenz · {{ e.label }}</small>
+        <small>{{ "Evidenz" | t }} · {{ e.label }}</small>
         <p class="find">{{ e.finding }}</p>
         <span class="cite"><a href="{{ e.url }}" target="_blank" rel="noopener">{{ e.cite }} ↗</a></span>
-        <a href="/wissenschaft/#{{ e.topic }}">Studienlage zu {{ e.label }} →</a>
+        <a href="{{ ('/wissenschaft/#' + e.topic) | l }}">{{ "Studienlage zu {x} →" | t({ x: e.label }) }}</a>
       </div>
       {%- endfor %}
       {%- if zg.reference %}
@@ -139,15 +140,15 @@ eleventyComputed:
         <small>{{ zg.reference.title }}</small>
         <p class="ref-txt">{{ zg.reference.text | safe }}</p>
         {%- if zg.reference.logos.length %}
-        <div class="logos2">{% for l in zg.reference.logos %}<img src="/images/{{ l.file }}" alt="{{ l.alt }}" loading="lazy">{% endfor %}</div>
+        <div class="logos2">{% for lg in zg.reference.logos %}<img src="/images/{{ lg.file }}" alt="{{ lg.alt }}" loading="lazy">{% endfor %}</div>
         {%- endif %}
       </div>
       {%- endif %}
       {%- if (zg.evidence.length + (1 if zg.reference else 0)) % 2 == 1 %}
       <div class="evc refc">
-        <small>Alle Themen</small>
-        <p class="find">Studienlage zu {{ themenfelder | length }} Themenfeldern, von Demenz bis Onkologie.</p>
-        <a href="/wissenschaft/">Zu Methode &amp; Evidenz →</a>
+        <small>{{ "Alle Themen" | t }}</small>
+        <p class="find">{{ "Studienlage zu {n} Themenfeldern, von Demenz bis Onkologie." | t({ n: themenfelder | length }) }}</p>
+        <a href="{{ '/wissenschaft/' | l }}">{{ "Zu Methode & Evidenz →" | t }}</a>
       </div>
       {%- endif %}
     </div>
@@ -160,7 +161,7 @@ eleventyComputed:
   <div class="wrap">
     <article class="cm cm-teaser">
       <div class="cm-txt">
-        <span class="cm-badge">Auch von restful: Commelia</span>
+        <span class="cm-badge">{{ "Auch von restful: Commelia" | t }}</span>
         <h3 id="cm-titel">{{ zg.commelia.title | safe }}</h3>
         <p class="in">{{ zg.commelia.text }}</p>
         <ul class="cm-list">
@@ -169,8 +170,8 @@ eleventyComputed:
           {%- endfor %}
         </ul>
         <div class="cm-ctas">
-          <a class="btn btn-violet" href="/loesungen/commelia/">Commelia kennenlernen</a>
-          <small>30 Tage kostenlos testen, keine Kreditkarte nötig.</small>
+          <a class="btn btn-violet" href="{{ '/loesungen/commelia/' | l }}">{{ "Commelia kennenlernen" | t }}</a>
+          <small>{{ "30 Tage kostenlos testen, keine Kreditkarte nötig." | t }}</small>
         </div>
       </div>
       <div class="cm-vis"><img src="/images/{{ cm.image }}" width="1020" height="880" loading="lazy" alt="{{ cm.imageAlt }}"></div>
@@ -181,7 +182,7 @@ eleventyComputed:
 
 <section class="pt0" aria-labelledby="faq-titel">
   <div class="wrap faq">
-    <div><p class="kicker">FAQ</p><h2 id="faq-titel">Häufige <i>Fragen</i></h2></div>
+    <div><p class="kicker">FAQ</p><h2 id="faq-titel">{{ "Häufige <i>Fragen</i>" | t | safe }}</h2></div>
     <div>{{ faqList(zg.faq) }}</div>
   </div>
 </section>
@@ -189,11 +190,11 @@ eleventyComputed:
 <section id="kontakt" class="pt0">
   <div class="wrap">
     {{ talk(person=zg.contactPerson) }}
-    <p class="kicker mt60">restful in anderen Settings</p>
-    <nav class="others" aria-label="restful in anderen Settings">
-      <a href="/">Patientenorganisationen und Ligen<span aria-hidden="true">→</span></a>
-      {%- for o in zielgruppen %}{% if o.slug != zg.slug %}
-      <a href="/fuer/{{ o.slug }}/">{{ o.menu }}<span aria-hidden="true">→</span></a>
+    <p class="kicker mt60">{{ "restful in anderen Settings" | t }}</p>
+    <nav class="others" aria-label="{{ 'restful in anderen Settings' | t }}">
+      <a href="{{ '/' | l }}">{{ "Patientenorganisationen und Ligen" | t }}<span aria-hidden="true">→</span></a>
+      {%- for o in zielgruppen %}{% if o.key != zg.key %}
+      <a href="{{ ('/fuer/' + o.key + '/') | l }}">{{ o.menu }}<span aria-hidden="true">→</span></a>
       {%- endif %}{% endfor %}
     </nav>
   </div>

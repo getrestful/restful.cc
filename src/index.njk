@@ -1,42 +1,44 @@
 ---
 layout: layout.njk
+pagination: { data: langs, size: 1, alias: lang, addAllPagesToCollections: true }
+permalink: "{{ '/' | l(lang) }}"
+dePath: /
 title: "Peer-Support, der nachweislich wirkt · restful"
 description: "restful baut mit Patientenorganisationen und Gesundheitsinstitutionen Peer-Angebote auf: wissenschaftlich fundiert, methodisch erprobt, mit eigener Plattform."
 ---
 {% from "icon.njk" import icon %}
-{% from "macros.njk" import art, faqList %}
-{% from "macros.njk" import talk with context %}
+{% from "macros.njk" import art, faqList, talk with context %}
 
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <h1>Gegenseitige Unterstützung, <i>die nachweislich wirkt.</i></h1>
-      <p class="sub">Wir sind Expertinnen für Peer-Austausche. Mit erprobter Methodik und auf wissenschaftlicher Grundlage bringen wir Betroffene und Angehörige in deiner Organisation zusammen. So erreichst du mehr Menschen, wirksamer und mit den Ressourcen, die du hast.</p>
+      <h1>{{ "Gegenseitige Unterstützung, <i>die nachweislich wirkt.</i>" | t | safe }}</h1>
+      <p class="sub">{{ "Wir sind Expertinnen für Peer-Austausche. Mit erprobter Methodik und auf wissenschaftlicher Grundlage bringen wir Betroffene und Angehörige in deiner Organisation zusammen. So erreichst du mehr Menschen, wirksamer und mit den Ressourcen, die du hast." | t }}</p>
       <div class="ctas">
-        <a class="btn btn-dark" href="#kontakt">Infotermin vereinbaren</a>
-        <a class="btn btn-line" href="#wissenschaft">Methode &amp; Evidenz</a>
+        <a class="btn btn-dark" href="#kontakt">{{ "Infotermin vereinbaren" | t }}</a>
+        <a class="btn btn-line" href="#wissenschaft">{{ "Methode & Evidenz" | t }}</a>
       </div>
     </div>
     <div class="collage">
       {{ art(0, "arch") }}
-      <p class="bubble b1">«{{ testimonial.excerpt }}»<small>{{ testimonial.name }}, {{ testimonial.org }}</small></p>
+      <p class="bubble b1">{{ "«{q}»" | t({ q: testimonial.excerpt }) }}<small>{{ testimonial.name }}, {{ testimonial.org }}</small></p>
     </div>
   </div>
 </section>
 
 <div class="logos">
   <div class="wrap">
-    <p>Organisationen, die mit restful arbeiten</p>
-    {%- for l in partnerlogos %}
-    <img src="/images/{{ l.logo }}" alt="{{ l.name }}" height="33">
+    <p>{{ "Organisationen, die mit restful arbeiten" | t }}</p>
+    {%- for lg in partnerlogos %}
+    <img src="/images/{{ lg.logo }}" alt="{{ lg.name }}" height="33">
     {%- endfor %}
   </div>
 </div>
 
 <section id="nutzen">
   <div class="wrap">
-    <p class="kicker">Was du bekommst</p>
-    <h2>Mehrwert für deine Organisation <i>und deine Mitglieder</i></h2>
+    <p class="kicker">{{ "Was du bekommst" | t }}</p>
+    <h2>{{ "Mehrwert für deine Organisation <i>und deine Mitglieder</i>" | t | safe }}</h2>
     <div class="value-grid">
       {%- for v in [{ d: nutzen.org, cls: "org" }, { d: nutzen.mitglieder, cls: "mem" }] %}
       <div class="value {{ v.cls }}">
@@ -50,56 +52,56 @@ description: "restful baut mit Patientenorganisationen und Gesundheitsinstitutio
       {%- endfor %}
     </div>
     <div class="platform-hint">
-      <div class="mini-phone"><img src="/images/vision-screen-1.jpg" width="640" height="1170" loading="lazy" alt="Startseite des Peer-Angebots von Demenzworld"></div>
-      <div><b>Läuft unter deinem Namen, restful bleibt im Hintergrund.</b><p>Die Plattform betreiben wir für dich: Hosting, Wartung und Weiterentwicklung inklusive. Deine Mitglieder sehen dein Logo, deine Farben, deine Adresse.</p></div>
-      <a href="/loesungen/peer-plattform/">So sieht die Plattform aus →</a>
+      <div class="mini-phone"><img src="/images/vision-screen-1.jpg" width="640" height="1170" loading="lazy" alt="{{ 'Startseite des Peer-Angebots von Demenzworld' | t }}"></div>
+      <div><b>{{ "Läuft unter deinem Namen, restful bleibt im Hintergrund." | t }}</b><p>{{ "Die Plattform betreiben wir für dich: Hosting, Wartung und Weiterentwicklung inklusive. Deine Mitglieder sehen dein Logo, deine Farben, deine Adresse." | t }}</p></div>
+      <a href="{{ '/loesungen/peer-plattform/' | l }}">{{ "So sieht die Plattform aus →" | t }}</a>
     </div>
   </div>
 </section>
 
-<aside class="wrap" aria-label="Unser Team">
-  <a class="team-teaser" href="/ueber-uns/">
+<aside class="wrap" aria-label="{{ 'Unser Team' | t }}">
+  <a class="team-teaser" href="{{ '/ueber-uns/' | l }}">
     <span class="avatars" aria-hidden="true">
       {%- for p in team %}<img src="/images/{{ p.img }}" width="800" height="800" loading="lazy" alt="">{% endfor -%}
     </span>
-    <span class="tt-txt"><b>Wer hinter restful steht</b><span>{{ team | length }} Menschen aus Sozialer Arbeit, Public Health, Forschung und Technologie, begleitet von einem Netzwerk aus Politik, Medizin und Wirtschaft.</span></span>
-    <span class="tt-link">Team kennenlernen →</span>
+    <span class="tt-txt"><b>{{ "Wer hinter restful steht" | t }}</b><span>{{ "{n} Menschen aus Sozialer Arbeit, Public Health, Forschung und Technologie, begleitet von einem Netzwerk aus Politik, Medizin und Wirtschaft." | t({ n: team | length }) }}</span></span>
+    <span class="tt-link">{{ "Team kennenlernen →" | t }}</span>
   </a>
 </aside>
 
 <section id="wissenschaft">
   <div class="wrap">
-    <p class="kicker">Methode &amp; Evidenz</p>
-    <h2>Fundiert, <i>nicht nur gut gemeint</i></h2>
-    <p class="lead">Wir stützen unsere Arbeit auf Forschung und messen Wirkung im laufenden Betrieb. Zwei Metaanalysen zeigen, was gegenseitige Unterstützung leisten kann: in der Prävention und bei einer Erkrankung.</p>
+    <p class="kicker">{{ "Methode & Evidenz" | t }}</p>
+    <h2>{{ "Fundiert, <i>nicht nur gut gemeint</i>" | t | safe }}</h2>
+    <p class="lead">{{ "Wir stützen unsere Arbeit auf Forschung und messen Wirkung im laufenden Betrieb. Zwei Metaanalysen zeigen, was gegenseitige Unterstützung leisten kann: in der Prävention und bei einer Erkrankung." | t }}</p>
     <div class="papers">
       {%- for p in evidenz.papers %}
       <article class="paper bg-{{ p.tone }}">
         <span class="type">{{ p.type }}</span>
         <p class="find">{{ p.finding }}</p>
         <p class="detail">{{ p.detail }}</p>
-        <div class="cite"><b>{{ p.cite }}</b><span>{{ p.title }}. <i>{{ p.journal }}</i></span><a href="{{ p.url }}" target="_blank" rel="noopener">Studie öffnen ↗</a></div>
+        <div class="cite"><b>{{ p.cite }}</b><span>{{ p.title }}. <i>{{ p.journal }}</i></span><a href="{{ p.url }}" target="_blank" rel="noopener">{{ "Studie öffnen ↗" | t }}</a></div>
       </article>
       {%- endfor %}
     </div>
     <div class="ev-more">
-      <b>Evidenz nach Thema:</b>
-      {%- for t in themenfelder %}
-      <a class="t" href="/wissenschaft/#{{ t.key }}">{{ t.label }}</a>
+      <b>{{ "Evidenz nach Thema:" | t }}</b>
+      {%- for tf in themenfelder %}
+      <a class="t" href="{{ ('/wissenschaft/#' + tf.key) | l }}">{{ tf.label }}</a>
       {%- endfor %}
-      <a class="ev-link" href="/wissenschaft/">Alle Themen und Quellen →</a>
+      <a class="ev-link" href="{{ '/wissenschaft/' | l }}">{{ "Alle Themen und Quellen →" | t }}</a>
     </div>
   </div>
 </section>
 
 <section id="ausgangslage">
   <div class="wrap">
-    <p class="kicker">Deine Ausgangslage</p>
-    <h2>Wo stehst <i>du</i> gerade?</h2>
-    <p class="lead">Wähle, was am ehesten zutrifft, und wir zeigen dir, wie wir gemeinsam starten würden.</p>
+    <p class="kicker">{{ "Deine Ausgangslage" | t }}</p>
+    <h2>{{ "Wo stehst <i>du</i> gerade?" | t | safe }}</h2>
+    <p class="lead">{{ "Wähle, was am ehesten zutrifft, und wir zeigen dir, wie wir gemeinsam starten würden." | t }}</p>
     <div class="guide" data-guide>
       <div class="q" data-guide-q>
-        <h3 id="lage-frage" tabindex="-1">Was trifft am ehesten auf deine Organisation zu?</h3>
+        <h3 id="lage-frage" tabindex="-1">{{ "Was trifft am ehesten auf deine Organisation zu?" | t }}</h3>
         <div class="opts" role="group" aria-labelledby="lage-frage">
           {%- for e in einstieg %}
           <button type="button" class="opt" data-pick="{{ loop.index0 }}"><span>{{ e.test }}</span><span class="go" aria-hidden="true">→</span></button>
@@ -108,18 +110,18 @@ description: "restful baut mit Patientenorganisationen und Gesundheitsinstitutio
       </div>
       {%- for e in einstieg %}
       <div class="ans bg-{{ e.tone }}" data-ans>
-        <button type="button" class="back" data-back>← Andere Ausgangslage wählen</button>
+        <button type="button" class="back" data-back>{{ "← Andere Ausgangslage wählen" | t }}</button>
         <h3 tabindex="-1">{{ e.title }}</h3>
         <p>{{ e.intro }}</p>
         <div class="ans-box">
-          <p class="lbl">So gehen wir vor</p>
+          <p class="lbl">{{ "So gehen wir vor" | t }}</p>
           <ol class="numlist">
             {%- for d in e.do %}
             <li><span class="n" aria-hidden="true">{{ loop.index }}</span><span>{{ d }}</span></li>
             {%- endfor %}
           </ol>
-          <p class="ans-res"><b>Erster Schritt:</b> Wir starten mit {{ e.first }}.<br><b>Ergebnis:</b> {{ e.result }}</p>
-          <div><a class="btn btn-dark" href="#kontakt">Infotermin vereinbaren</a></div>
+          <p class="ans-res"><b>{{ "Erster Schritt:" | t }}</b> {{ "Wir starten mit {x}." | t({ x: e.first }) }}<br><b>{{ "Ergebnis:" | t }}</b> {{ e.result }}</p>
+          <div><a class="btn btn-dark" href="#kontakt">{{ "Infotermin vereinbaren" | t }}</a></div>
         </div>
       </div>
       {%- endfor %}
@@ -127,7 +129,7 @@ description: "restful baut mit Patientenorganisationen und Gesundheitsinstitutio
   </div>
 </section>
 
-<section class="testi" aria-label="Stimme einer Partnerorganisation">
+<section class="testi" aria-label="{{ 'Stimme einer Partnerorganisation' | t }}">
   <div class="wrap">
     <div class="testi-card">
       <div class="testi-photo">
@@ -135,7 +137,7 @@ description: "restful baut mit Patientenorganisationen und Gesundheitsinstitutio
         <div class="logo"><img src="/images/{{ testimonial.logo }}" loading="lazy" alt="{{ testimonial.logoAlt }}"></div>
       </div>
       <blockquote>
-        <p>«{{ testimonial.text }}»</p>
+        <p>{{ "«{q}»" | t({ q: testimonial.text }) }}</p>
         <footer><b>{{ testimonial.name }}</b><span>{{ testimonial.role }}</span></footer>
       </blockquote>
     </div>
@@ -144,8 +146,8 @@ description: "restful baut mit Patientenorganisationen und Gesundheitsinstitutio
 
 <section class="partners" aria-labelledby="partner-titel">
   <div class="wrap">
-    <p class="kicker">Partnerschaften</p>
-    <h2 id="partner-titel">Eine Auswahl von Organisationen, <i>mit denen wir zusammenarbeiten</i></h2>
+    <p class="kicker">{{ "Partnerschaften" | t }}</p>
+    <h2 id="partner-titel">{{ "Eine Auswahl von Organisationen, <i>mit denen wir zusammenarbeiten</i>" | t | safe }}</h2>
     <div class="partner-grid">
       {%- for i in initiatives | selectattr("startseite") | sort(attribute="startseite") %}
       {%- if i.href and i.href != "#" %}
@@ -160,8 +162,8 @@ description: "restful baut mit Patientenorganisationen und Gesundheitsinstitutio
 
 <section id="loesungen" aria-labelledby="loesungen-titel">
   <div class="wrap">
-    <p class="kicker">Unsere Lösungen</p>
-    <h2 id="loesungen-titel">Digitale Begleitung, <i>die zu eurer Methode passt</i></h2>
+    <p class="kicker">{{ "Unsere Lösungen" | t }}</p>
+    <h2 id="loesungen-titel">{{ "Digitale Begleitung, <i>die zu eurer Methode passt</i>" | t | safe }}</h2>
     {% include "loesungen-karten.njk" %}
   </div>
 </section>
@@ -169,8 +171,8 @@ description: "restful baut mit Patientenorganisationen und Gesundheitsinstitutio
 <section aria-labelledby="faq-titel">
   <div class="wrap faq">
     <div>
-      <p class="kicker">Häufige Fragen</p>
-      <h2 id="faq-titel">Was Organisationen <i>vorher wissen wollen</i></h2>
+      <p class="kicker">{{ "Häufige Fragen" | t }}</p>
+      <h2 id="faq-titel">{{ "Was Organisationen <i>vorher wissen wollen</i>" | t | safe }}</h2>
     </div>
     <div>{{ faqList(faq) }}</div>
   </div>

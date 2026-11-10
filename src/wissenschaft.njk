@@ -1,26 +1,28 @@
 ---
 layout: layout.njk
-permalink: /wissenschaft/
+pagination: { data: langs, size: 1, alias: lang, addAllPagesToCollections: true }
+permalink: "{{ '/wissenschaft/' | l(lang) }}"
+dePath: /wissenschaft/
 title: "Peer-Support: Methode und Evidenz · restful"
 description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordnung, Studienlage nach Themenfeld, unsere Methode und ausgewählte Quellen."
 ---
-{% from "macros.njk" import art, mini %}
+{% from "macros.njk" import art, mini with context %}
 {% set einoArt = ["paar", "ergaenzung", "drei"] %}
 {% set methArt = ["suche", "bogen", "match", "balken"] %}
 <section class="sub-hero">
   <div class="wrap">
-    <p class="crumb"><a href="/">Startseite</a> · Methode &amp; Evidenz</p>
+    <p class="crumb"><a href="{{ '/' | l }}">{{ "Startseite" | t }}</a> · {{ "Methode & Evidenz" | t }}</p>
     <div class="sub-hero-grid">
     <div>
-    <p class="kicker">Methode &amp; Evidenz</p>
-    <h1>Was die Forschung über <i>gegenseitige Unterstützung</i> weiss</h1>
-    <p class="lead">Wissenschaftliche Grundlagen, Studienlage nach Themenfeld und unser eigenes Vorgehen. Für Fachpersonen, Stiftungen und alle, die genauer hinsehen wollen.</p>
-    <nav class="jump" aria-label="Auf dieser Seite">
-      <a href="#einordnung">Einordnung</a>
-      <a href="#methode">Methode</a>
-      <a href="#themen">Literatur</a>
-      <a href="#forschung">Eigene Forschung</a>
-      <a href="#quellen">Quellen</a>
+    <p class="kicker">{{ "Methode & Evidenz" | t }}</p>
+    <h1>{{ "Was die Forschung über <i>gegenseitige Unterstützung</i> weiss" | t | safe }}</h1>
+    <p class="lead">{{ "Wissenschaftliche Grundlagen, Studienlage nach Themenfeld und unser eigenes Vorgehen. Für Fachpersonen, Stiftungen und alle, die genauer hinsehen wollen." | t }}</p>
+    <nav class="jump" aria-label="{{ 'Auf dieser Seite' | t }}">
+      <a href="#einordnung">{{ "Einordnung" | t }}</a>
+      <a href="#methode">{{ "Methode" | t }}</a>
+      <a href="#themen">{{ "Literatur" | t }}</a>
+      <a href="#forschung">{{ "Eigene Forschung" | t }}</a>
+      <a href="#quellen">{{ "Quellen" | t }}</a>
     </nav>
     </div>
     {{ art(5, "blob") }}
@@ -31,8 +33,8 @@ description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordn
 <section id="einordnung" class="pt20">
   <div class="wrap eino">
     <div>
-      <p class="kicker">Einordnung</p>
-      <h2>Was gegenseitige Unterstützung leistet, <i>und was nicht</i></h2>
+      <p class="kicker">{{ "Einordnung" | t }}</p>
+      <h2>{{ "Was gegenseitige Unterstützung leistet, <i>und was nicht</i>" | t | safe }}</h2>
     </div>
     <div>
       <div class="points">
@@ -41,7 +43,7 @@ description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordn
         {%- endfor %}
       </div>
       <details>
-        <summary><b>Ganze Einordnung lesen</b><span class="plus" aria-hidden="true">+</span></summary>
+        <summary><b>{{ "Ganze Einordnung lesen" | t }}</b><span class="plus" aria-hidden="true">+</span></summary>
         <div class="d-body longtext">
           {%- for t in evidenz.einordnungText %}
           <p>{{ t }}</p>
@@ -54,8 +56,8 @@ description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordn
 
 <section class="method" id="methode">
   <div class="wrap">
-    <p class="kicker">Unsere Methode</p>
-    <h2>Von der Studienlage <i>zum Angebot im Alltag</i></h2>
+    <p class="kicker">{{ "Unsere Methode" | t }}</p>
+    <h2>{{ "Von der Studienlage <i>zum Angebot im Alltag</i>" | t | safe }}</h2>
     <div class="m-grid">
       {%- for m in evidenz.methode %}
       <div class="m-card"><div class="m-top"><span class="k">0{{ loop.index }}</span>{{ mini(methArt[loop.index0]) }}</div><h3>{{ m.title }}</h3><p>{{ m.text }}</p></div>
@@ -66,60 +68,60 @@ description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordn
 
 <section id="themen">
   <div class="wrap">
-    <p class="kicker">Evidenz nach Thema</p>
-    <h2>Literaturrecherchen <i>nach Themenfeld</i></h2>
-    <p class="lead">Filtere nach Thema, Zielgruppe oder Format. Jede Karte fasst den Kernbefund zusammen, die ganze Recherche mit Quellen lässt sich aufklappen.</p>
+    <p class="kicker">{{ "Evidenz nach Thema" | t }}</p>
+    <h2>{{ "Literaturrecherchen <i>nach Themenfeld</i>" | t | safe }}</h2>
+    <p class="lead">{{ "Filtere nach Thema, Zielgruppe oder Format. Jede Karte fasst den Kernbefund zusammen, die ganze Recherche mit Quellen lässt sich aufklappen." | t }}</p>
     <div class="filter" data-filter>
-      <div class="fsel"><label for="f-thema">Thema</label><select id="f-thema" data-f="topic">
-        <option value="all">Alle Themen</option>
+      <div class="fsel"><label for="f-thema">{{ "Thema" | t }}</label><select id="f-thema" data-f="topic">
+        <option value="all">{{ "Alle Themen" | t }}</option>
         {%- for t in themenfelder %}
         <option value="{{ t.key }}">{{ t.label }}</option>
         {%- endfor %}
       </select></div>
-      <div class="fsel"><label for="f-gruppe">Zielgruppe</label><select id="f-gruppe" data-f="group">
-        <option value="all">Alle</option>
+      <div class="fsel"><label for="f-gruppe">{{ "Zielgruppe" | t }}</label><select id="f-gruppe" data-f="group">
+        <option value="all">{{ "Alle" | t }}</option>
         {%- for g in evidenz.filter.groups %}
-        <option value="{{ g }}">{{ g }}</option>
+        <option value="{{ g }}">{{ g | t }}</option>
         {%- endfor %}
       </select></div>
-      <div class="fsel"><label for="f-format">Format</label><select id="f-format" data-f="format">
-        <option value="all">Alle</option>
+      <div class="fsel"><label for="f-format">{{ "Format" | t }}</label><select id="f-format" data-f="format">
+        <option value="all">{{ "Alle" | t }}</option>
         {%- for f in evidenz.filter.formats %}
-        <option value="{{ f }}">{{ f }}</option>
+        <option value="{{ f }}">{{ f | t }}</option>
         {%- endfor %}
       </select></div>
-      <div class="fstate"><span data-count aria-live="polite">{{ themenfelder | length }} Themenfelder</span><button type="button" data-reset>Zurücksetzen</button></div>
+      <div class="fstate"><span data-count data-one="{{ '1 Themenfeld' | t }}" data-many="{{ '{n} Themenfelder' | t }}" aria-live="polite">{{ "{n} Themenfelder" | t({ n: themenfelder | length }) }}</span><button type="button" data-reset>{{ "Zurücksetzen" | t }}</button></div>
     </div>
     <div class="ev-grid">
       {%- for t in themenfelder %}
       <article class="ev-card" id="{{ t.key }}" data-topic="{{ t.key }}" data-groups="{{ t.groups | join(' ') }}" data-formats="{{ t.formats | join(' ') }}">
         <div class="tags">
-          {%- for g in t.groups %}<span class="tag g">{{ g }}</span>{% endfor -%}
-          {%- for f in t.formats %}<span class="tag f">{{ f }}</span>{% endfor -%}
+          {%- for g in t.groups %}<span class="tag g">{{ g | t }}</span>{% endfor -%}
+          {%- for f in t.formats %}<span class="tag f">{{ f | t }}</span>{% endfor -%}
         </div>
         <h3>{{ t.title }}</h3>
         <p class="find">{{ t.finding }}</p>
-        <p class="meta">{{ t.findingCite }} · {{ t.sources | length }} zitierte Quellen</p>
+        <p class="meta">{{ t.findingCite }} · {{ "{n} zitierte Quellen" | t({ n: t.sources | length }) }}</p>
         <details>
-          <summary>Ganze Literaturrecherche lesen <span class="plus" aria-hidden="true">+</span></summary>
+          <summary>{{ "Ganze Literaturrecherche lesen" | t }} <span class="plus" aria-hidden="true">+</span></summary>
           <div class="full">
             {%- for p in t.paragraphs %}
             <p>{{ p }}</p>
             {%- endfor %}
-            <div class="src"><b>Zitierte Quellen</b>{% for s in t.sources %}<span>{{ s }}</span>{% endfor %}</div>
+            <div class="src"><b>{{ "Zitierte Quellen" | t }}</b>{% for s in t.sources %}<span>{{ s }}</span>{% endfor %}</div>
           </div>
         </details>
       </article>
       {%- endfor %}
     </div>
-    <div class="empty" data-empty>Zu dieser Kombination gibt es noch keine Recherche. <button type="button" class="link-btn" data-reset>Filter zurücksetzen</button></div>
+    <div class="empty" data-empty>{{ "Zu dieser Kombination gibt es noch keine Recherche." | t }} <button type="button" class="link-btn" data-reset>{{ "Filter zurücksetzen" | t }}</button></div>
   </div>
 </section>
 
 <section id="forschung" class="pt0">
   <div class="wrap">
-    <p class="kicker">Eigene Forschung</p>
-    <h2>Wir messen, <i>was wir tun</i></h2>
+    <p class="kicker">{{ "Eigene Forschung" | t }}</p>
+    <h2>{{ "Wir messen, <i>was wir tun</i>" | t | safe }}</h2>
     <div class="research">
       {%- for r in evidenz.forschung %}
       <div class="bg-{{ r.tone }}"><h3>{{ r.title }}</h3><p>{{ r.text }}</p></div>
@@ -130,17 +132,17 @@ description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordn
 
 <section id="quellen" class="pt0">
   <div class="wrap">
-    <p class="kicker">Quellen</p>
-    <h2 class="h-sm">Studien, auf die wir uns <i>auf dieser Website</i> beziehen</h2>
+    <p class="kicker">{{ "Quellen" | t }}</p>
+    <h2 class="h-sm">{{ "Studien, auf die wir uns <i>auf dieser Website</i> beziehen" | t | safe }}</h2>
     <ol class="refs">
       {%- for q in evidenz.quellen %}
       <li><span>{{ q.ref }} <a href="{{ q.url }}" target="_blank" rel="noopener">{{ q.url | replace("https://", "") }}</a></span></li>
       {%- endfor %}
     </ol>
     <details class="refs-all">
-      <summary><b>Ganzes Literaturverzeichnis ({{ literatur | length }} Quellen)</b><span class="plus" aria-hidden="true">+</span></summary>
+      <summary><b>{{ "Ganzes Literaturverzeichnis ({n} Quellen)" | t({ n: literatur | length }) }}</b><span class="plus" aria-hidden="true">+</span></summary>
       <div class="d-body">
-        <p>Alle Arbeiten, die in den Literaturrecherchen und in der Einordnung zitiert werden, alphabetisch.</p>
+        <p>{{ "Alle Arbeiten, die in den Literaturrecherchen und in der Einordnung zitiert werden, alphabetisch." | t }}</p>
         <ol class="refs refs-sm" id="literatur">
           {%- for q in literatur %}
           <li><span>{{ q.ref | safe }}{% if q.url %} <a href="{{ q.url }}" target="_blank" rel="noopener">{{ q.url | replace("https://", "") }}</a>{% endif %}</span></li>
@@ -155,11 +157,11 @@ description: "Was die Forschung über gegenseitige Unterstützung weiss: Einordn
   <div class="wrap">
     <div class="contact-box compact">
       <div>
-        <h2>Fragen zur <i>Studienlage?</i></h2>
-        <p>Melde dich bei uns, wir ordnen die Studienlage gerne für dein Vorhaben ein.</p>
-        <p class="mail">Direkt per <a href="mailto:{{ site.email }}">E-Mail</a></p>
+        <h2>{{ "Fragen zur <i>Studienlage?</i>" | t | safe }}</h2>
+        <p>{{ "Melde dich bei uns, wir ordnen die Studienlage gerne für dein Vorhaben ein." | t }}</p>
+        <p class="mail">{{ "Direkt per" | t }} <a href="mailto:{{ site.email }}">{{ "E-Mail" | t }}</a></p>
       </div>
-      <a class="btn btn-dark" href="/#kontakt">Infotermin vereinbaren</a>
+      <a class="btn btn-dark" href="{{ '/#kontakt' | l }}">{{ "Infotermin vereinbaren" | t }}</a>
     </div>
   </div>
 </section>

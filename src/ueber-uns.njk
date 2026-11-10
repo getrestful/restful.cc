@@ -1,6 +1,8 @@
 ---
 layout: layout.njk
-permalink: /ueber-uns/
+pagination: { data: langs, size: 1, alias: lang, addAllPagesToCollections: true }
+permalink: "{{ '/ueber-uns/' | l(lang) }}"
+dePath: /ueber-uns/
 title: "Über uns: Team und Netzwerk · restful"
 description: "Das Team von restful und das Netzwerk, das uns begleitet: Soziale Arbeit, Public Health, Forschung und Technologie aus Bern."
 ---
@@ -8,29 +10,29 @@ description: "Das Team von restful und das Netzwerk, das uns begleitet: Soziale 
 {% from "icon.njk" import icon %}
 <section class="sub-hero">
   <div class="wrap">
-    <p class="crumb"><a href="/">Startseite</a> · Über uns</p>
-    <p class="kicker">Über uns</p>
-    <h1>Die Menschen <i>hinter restful</i></h1>
-    <p class="lead">Bei restful arbeiten Fachleute aus Sozialer Arbeit, Public Health, Forschung und Technologie zusammen. Wir verbinden Erfahrungswissen von Betroffenen mit wissenschaftlicher Methodik und bauen mit Organisationen Angebote auf, die nachweislich wirken. Begleitet werden wir von einem Netzwerk aus Politik, Medizin, Wirtschaft und Zivilgesellschaft.</p>
-    <nav class="jump" aria-label="Auf dieser Seite">
-      <a href="#team">Team</a>
-      <a href="#netzwerk">Netzwerk</a>
-      <a href="#stellen">Offene Stellen</a>
+    <p class="crumb"><a href="{{ '/' | l }}">{{ "Startseite" | t }}</a> · {{ "Über uns" | t }}</p>
+    <p class="kicker">{{ "Über uns" | t }}</p>
+    <h1>{{ "Die Menschen <i>hinter restful</i>" | t | safe }}</h1>
+    <p class="lead">{{ "Bei restful arbeiten Fachleute aus Sozialer Arbeit, Public Health, Forschung und Technologie zusammen. Wir verbinden Erfahrungswissen von Betroffenen mit wissenschaftlicher Methodik und bauen mit Organisationen Angebote auf, die nachweislich wirken. Begleitet werden wir von einem Netzwerk aus Politik, Medizin, Wirtschaft und Zivilgesellschaft." | t }}</p>
+    <nav class="jump" aria-label="{{ 'Auf dieser Seite' | t }}">
+      <a href="#team">{{ "Team" | t }}</a>
+      <a href="#netzwerk">{{ "Netzwerk" | t }}</a>
+      <a href="#stellen">{{ "Offene Stellen" | t }}</a>
     </nav>
   </div>
 </section>
 
 <section class="team" id="team">
   <div class="wrap">
-    <p class="kicker">Team</p>
-    <h2>Ein diverses Team <i>mit einer Mission</i></h2>
-    <figure class="group"><img src="/images/team-gruppe.jpg" width="1400" height="934" alt="Das Team von restful"></figure>
+    <p class="kicker">{{ "Team" | t }}</p>
+    <h2>{{ "Ein diverses Team <i>mit einer Mission</i>" | t | safe }}</h2>
+    <figure class="group"><img src="/images/team-gruppe.jpg" width="1400" height="934" alt="{{ 'Das Team von restful' | t }}"></figure>
     <div class="pp-grid">
       {%- for p in team %}
       <div class="pp"><img src="/images/{{ p.img }}" width="800" height="800" loading="lazy" alt="{{ p.name }}"><b>{{ p.name }}</b><span>{{ p.role }}</span>{% if p.bio %}<small>{{ p.bio }}</small>{% endif %}
         {%- if p.linkedin or p.email %}<div class="pp-links">{% endif %}
-        {%- if p.email %}<a class="pp-li" href="mailto:{{ p.email }}" aria-label="E-Mail an {{ p.name }}">{{ icon("mail", 18, 2) | safe }}</a>{% endif %}
-        {%- if p.linkedin %}<a class="pp-li" href="{{ p.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn-Profil von {{ p.name }} (öffnet in neuem Fenster)"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg></a>{% endif %}
+        {%- if p.email %}<a class="pp-li" href="mailto:{{ p.email }}" aria-label="{{ 'E-Mail an {name}' | t({ name: p.name }) }}">{{ icon("mail", 18, 2) | safe }}</a>{% endif %}
+        {%- if p.linkedin %}<a class="pp-li" href="{{ p.linkedin }}" target="_blank" rel="noopener" aria-label="{{ 'LinkedIn-Profil von {name} (öffnet in neuem Fenster)' | t({ name: p.name }) }}"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg></a>{% endif %}
         {%- if p.linkedin or p.email %}</div>{% endif %}</div>
       {%- endfor %}
     </div>
@@ -39,9 +41,9 @@ description: "Das Team von restful und das Netzwerk, das uns begleitet: Soziale 
 
 <section class="network" id="netzwerk">
   <div class="wrap">
-    <p class="kicker">Unser Netzwerk</p>
-    <h2 class="h-sm">Menschen, die <i>restful unterstützen</i></h2>
-    <p class="lead">Sie begleiten uns mit ihrer Erfahrung aus Politik, Medizin, Wirtschaft und Zivilgesellschaft.</p>
+    <p class="kicker">{{ "Unser Netzwerk" | t }}</p>
+    <h2 class="h-sm">{{ "Menschen, die <i>restful unterstützen</i>" | t | safe }}</h2>
+    <p class="lead">{{ "Sie begleiten uns mit ihrer Erfahrung aus Politik, Medizin, Wirtschaft und Zivilgesellschaft." | t }}</p>
     <div class="pp-grid sm">
       {%- for p in advisory %}
       <div class="pp sm"><img src="/images/{{ p.img }}" loading="lazy" alt="{{ p.name }}"><b>{{ p.name }}</b><span>{{ p.role }}</span></div>
@@ -52,8 +54,8 @@ description: "Das Team von restful und das Netzwerk, das uns begleitet: Soziale 
 
 <section id="stellen" class="pt0">
   <div class="wrap">
-    <p class="kicker">Offene Stellen</p>
-    <h2 class="h-sm">Mit uns <i>arbeiten</i></h2>
+    <p class="kicker">{{ "Offene Stellen" | t }}</p>
+    <h2 class="h-sm">{{ "Mit uns <i>arbeiten</i>" | t | safe }}</h2>
     {%- if stellen.length %}
     <div class="jobs">
       {%- for j in stellen %}
@@ -62,8 +64,8 @@ description: "Das Team von restful und das Netzwerk, das uns begleitet: Soziale 
     </div>
     {%- else %}
     <div class="jobs-empty">
-      <p>Aktuell sind keine Stellen offen. Neue Stellen veröffentlichen wir auf <a href="{{ site.jobsUrl }}" target="_blank" rel="noopener">join.com</a>.</p>
-      <p>Du möchtest trotzdem mit uns arbeiten? Schreib uns eine <a href="mailto:{{ site.email }}">E-Mail</a>.</p>
+      <p>{{ "Aktuell sind keine Stellen offen. Neue Stellen veröffentlichen wir auf {link}." | t({ link: '<a href="' + site.jobsUrl + '" target="_blank" rel="noopener">join.com</a>' }) | safe }}</p>
+      <p>{{ "Du möchtest trotzdem mit uns arbeiten? Schreib uns eine {link}." | t({ link: '<a href="mailto:' + site.email + '">' + ("E-Mail" | t) + '</a>' }) | safe }}</p>
     </div>
     {%- endif %}
   </div>

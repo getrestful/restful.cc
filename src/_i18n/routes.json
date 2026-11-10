@@ -1,0 +1,11 @@
+{
+  "/": { "fr": "/fr/", "en": "/en/" },
+  "/ueber-uns/": { "fr": "/fr/a-propos/", "en": "/en/about/" },
+  "/wissenschaft/": { "fr": "/fr/methode-et-evidence/", "en": "/en/method-and-evidence/" },
+  "/loesungen/": { "fr": "/fr/solutions/", "en": "/en/solutions/" },
+  "/loesungen/peer-plattform/": { "fr": "/fr/solutions/plateforme-de-pairs/", "en": "/en/solutions/peer-platform/" },
+  "/loesungen/commelia/": { "fr": "/fr/solutions/commelia/", "en": "/en/solutions/commelia/" },
+  "/loesungen/patientenpfade/": { "fr": "/fr/solutions/parcours-patients/", "en": "/en/solutions/patient-pathways/" },
+  "/datenschutzerklaerung/": { "fr": "/fr/protection-des-donnees/", "en": "/en/privacy-policy/" },
+  "/fuer/": { "fr": "/fr/pour/", "en": "/en/for/" }
+}

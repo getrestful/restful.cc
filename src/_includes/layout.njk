@@ -1,11 +1,16 @@
-{% from "icon.njk" import icon %}<!doctype html>
-<html lang="de-CH" class="no-js">
+{% from "icon.njk" import icon %}
+{%- set htmlLang = { de: "de-CH", fr: "fr-CH", en: "en" } -%}
+{%- set ogLocale = { de: "de_CH", fr: "fr_CH", en: "en_GB" } -%}
+{%- set pageTitle = title if titleLocalized else ((title or "restful · Gegenseitige Unterstützung, die nachweislich wirkt") | t) -%}
+{%- set pageDesc = (description if titleLocalized else (description | t)) if description else "" -%}
+<!doctype html>
+<html lang="{{ htmlLang[locale] }}" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title or "restful · Gegenseitige Unterstützung, die nachweislich wirkt" }}</title>
-  {%- if description %}
-  <meta name="description" content="{{ description }}">
+  <title>{{ pageTitle }}</title>
+  {%- if pageDesc %}
+  <meta name="description" content="{{ pageDesc }}">
   {%- endif %}
   {%- if site.noindex or noindex %}
   <meta name="robots" content="noindex, nofollow">
@@ -17,32 +22,38 @@
   {%- if page.url != "/404.html" %}
   <link rel="canonical" href="{{ canonical }}">
   {%- endif %}
+  {%- if dePath %}
+  {%- for lng in langs %}
+  <link rel="alternate" hreflang="{{ htmlLang[lng] }}" href="{{ site.url }}{{ dePath | l(lng) }}">
+  {%- endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ dePath }}">
+  {%- endif %}
   <meta property="og:type" content="website">
-  <meta property="og:locale" content="de_CH">
+  <meta property="og:locale" content="{{ ogLocale[locale] }}">
   <meta property="og:site_name" content="restful">
   <meta property="og:url" content="{{ deploy.url }}{{ redirectTo or page.url }}">
-  <meta property="og:title" content="{{ title or 'restful' }}">
-  {%- if description %}
-  <meta property="og:description" content="{{ description }}">
+  <meta property="og:title" content="{{ pageTitle }}">
+  {%- if pageDesc %}
+  <meta property="og:description" content="{{ pageDesc }}">
   {%- endif %}
   <meta property="og:image" content="{{ deploy.url }}{{ site.ogImage }}">
   <meta property="og:image:type" content="image/png">
-  <meta property="og:image:alt" content="restful: Peer-Support, der nachweislich wirkt">
+  <meta property="og:image:alt" content="{{ 'restful: Peer-Support, der nachweislich wirkt' | t }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ title or 'restful' }}">
-  {%- if description %}
-  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:title" content="{{ pageTitle }}">
+  {%- if pageDesc %}
+  <meta name="twitter:description" content="{{ pageDesc }}">
   {%- endif %}
   <meta name="twitter:image" content="{{ deploy.url }}{{ site.ogImage }}">
-  {%- if page.url == "/" %}
+  {%- if dePath == "/" %}
   <script type="application/ld+json">{{ {
     "@context": "https://schema.org",
     "@graph": [
       { "@type": "Organization", "@id": site.url + "/#org", "name": site.name, "legalName": site.legalName, "url": site.url + "/", "logo": site.url + "/images/logo.svg", "email": site.email,
         "address": { "@type": "PostalAddress", "streetAddress": site.street, "postalCode": site.zip, "addressLocality": site.city, "addressCountry": "CH" } },
-      { "@type": "WebSite", "@id": site.url + "/#website", "url": site.url + "/", "name": site.name, "inLanguage": "de-CH", "publisher": { "@id": site.url + "/#org" } }
+      { "@type": "WebSite", "@id": site.url + "/#website", "url": site.url + ("/" | l), "name": site.name, "inLanguage": htmlLang[locale], "publisher": { "@id": site.url + "/#org" } }
     ]
   } | dump | safe }}</script>
   {%- endif %}
@@ -54,44 +65,56 @@
   <script src="/js/site.js" defer></script>
 </head>
 <body>
-<a class="skip" href="#inhalt">Zum Inhalt springen</a>
+<a class="skip" href="#inhalt">{{ "Zum Inhalt springen" | t }}</a>
+
+{%- set langNames = { de: "Deutsch", fr: "Français", en: "English" } %}
+{%- macro langSwitch(cls) %}
+<nav class="lang {{ cls }}" aria-label="{{ 'Sprache' | t }}">
+  {%- for lng in langs %}
+  <a href="{{ (dePath or '/') | l(lng) }}" hreflang="{{ htmlLang[lng] }}" lang="{{ htmlLang[lng] }}"{% if lng == locale %} aria-current="true"{% endif %}><span aria-hidden="true">{{ lng | upper }}</span><span class="sr-only">{{ langNames[lng] }}</span></a>
+  {%- endfor %}
+</nav>
+{%- endmacro %}
 
 {%- if minimalHeader %}
 <header class="site">
   <div class="wrap nav">
-    <a class="logo" href="/"><img src="/images/logo.svg" alt="restful, zur Startseite" width="129" height="38"></a>
-    <span class="nav-label">{{ minimalHeader }}</span>
+    <a class="logo" href="{{ '/' | l }}"><img src="/images/logo.svg" alt="{{ 'restful, zur Startseite' | t }}" width="129" height="38"></a>
+    <span class="nav-label">{{ minimalHeader | t }}</span>
   </div>
 </header>
 {%- else %}
 <header class="site" data-header>
   <div class="wrap nav">
-    <a class="logo" href="/"><img src="/images/logo.svg" alt="restful, zur Startseite" width="129" height="38"></a>
-    <nav aria-label="Hauptnavigation">
+    <a class="logo" href="{{ '/' | l }}"><img src="/images/logo.svg" alt="{{ 'restful, zur Startseite' | t }}" width="129" height="38"></a>
+    <nav aria-label="{{ 'Hauptnavigation' | t }}">
       <ul id="hauptmenue">
         <li class="dd">
-          <button type="button" aria-expanded="false" aria-controls="fuer-wen">Für wen <span aria-hidden="true">▾</span></button>
+          <button type="button" aria-expanded="false" aria-controls="fuer-wen">{{ "Für wen" | t }} <span aria-hidden="true">▾</span></button>
           <div class="dd-menu" id="fuer-wen">
-            <a href="/"{% if page.url == "/" %} aria-current="page"{% endif %}>Patientenorganisationen und Ligen</a>
-            {%- for zg in zielgruppen %}
-            <a href="/fuer/{{ zg.slug }}/"{% if page.url == "/fuer/" + zg.slug + "/" %} aria-current="page"{% endif %}>{{ zg.menu }}</a>
+            <a href="{{ '/' | l }}"{% if dePath == "/" %} aria-current="page"{% endif %}>{{ "Patientenorganisationen und Ligen" | t }}</a>
+            {%- for z in zielgruppen %}
+            {%- set zPath = "/fuer/" + z.key + "/" %}
+            <a href="{{ zPath | l }}"{% if dePath == zPath %} aria-current="page"{% endif %}>{{ z.menu }}</a>
             {%- endfor %}
           </div>
         </li>
-        <li><a href="/#nutzen">Nutzen</a></li>
+        <li><a href="{{ '/#nutzen' | l }}">{{ "Nutzen" | t }}</a></li>
         <li class="dd dd-link">
-          <a href="/loesungen/"{% if page.url.startsWith("/loesungen/") %} aria-current="page"{% endif %}>Lösungen <span aria-hidden="true">▾</span></a>
+          <a href="{{ '/loesungen/' | l }}"{% if dePath and dePath.startsWith("/loesungen/") %} aria-current="page"{% endif %}>{{ "Lösungen" | t }} <span aria-hidden="true">▾</span></a>
           <div class="dd-menu">
-            {%- for l in loesungen %}
-            <a href="{{ l.url }}"{% if page.url == l.url %} aria-current="page"{% endif %}>{{ l.title }}</a>
+            {%- for s in loesungen %}
+            <a href="{{ s.url | l }}"{% if dePath == s.url %} aria-current="page"{% endif %}>{{ s.title }}</a>
             {%- endfor %}
           </div>
         </li>
-        <li><a href="/ueber-uns/"{% if page.url == "/ueber-uns/" %} aria-current="page"{% endif %}>Über uns</a></li>
+        <li><a href="{{ '/ueber-uns/' | l }}"{% if dePath == "/ueber-uns/" %} aria-current="page"{% endif %}>{{ "Über uns" | t }}</a></li>
+        <li class="lang-item">{{ langSwitch("lang-menu") }}</li>
       </ul>
     </nav>
-    <a class="btn btn-dark" href="{{ '/#kontakt' if noContact else '#kontakt' }}">Infotermin</a>
-    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="hauptmenue" data-menu-btn>{{ icon("menu", 22, 2) | safe }}<span class="sr-only">Menü</span></button>
+    {{ langSwitch("lang-bar") }}
+    <a class="btn btn-dark" href="{{ ('/#kontakt' | l) if noContact else '#kontakt' }}">{{ "Infotermin" | t }}</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="hauptmenue" data-menu-btn>{{ icon("menu", 22, 2) | safe }}<span class="sr-only">{{ "Menü" | t }}</span></button>
   </div>
 </header>
 {%- endif %}
@@ -103,12 +126,12 @@
 <footer class="site">
   <div class="wrap">
     <address>{{ site.legalName }}, {{ site.street }}, {{ site.zip }} {{ site.city }}</address>
-    <nav aria-label="Fusszeile">
-      <a href="/loesungen/">Lösungen</a>
-      <a href="/wissenschaft/">Methode &amp; Evidenz</a>
-      <a href="/datenschutzerklaerung/">Datenschutz</a>
-      <a href="{{ site.jobsUrl }}" target="_blank" rel="noopener">Offene Stellen</a>
-      <a href="mailto:{{ site.email }}">E-Mail</a>
+    <nav aria-label="{{ 'Fusszeile' | t }}">
+      <a href="{{ '/loesungen/' | l }}">{{ "Lösungen" | t }}</a>
+      <a href="{{ '/wissenschaft/' | l }}">{{ "Methode & Evidenz" | t }}</a>
+      <a href="{{ '/datenschutzerklaerung/' | l }}">{{ "Datenschutz" | t }}</a>
+      <a href="{{ site.jobsUrl }}" target="_blank" rel="noopener">{{ "Offene Stellen" | t }}</a>
+      <a href="mailto:{{ site.email }}">{{ "E-Mail" | t }}</a>
     </nav>
   </div>
 </footer>

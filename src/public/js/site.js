@@ -83,7 +83,7 @@ if (filter) {
     const visible = cards.filter(c => !c.hidden);
     if (visible.length === 1) { visible[0].classList.add('wide'); visible[0].querySelector('details').open = true; }
     if (visible.length > 1 && visible.length % 2 === 1) visible[visible.length - 1].classList.add('wide');
-    count.textContent = n === 1 ? '1 Themenfeld' : n + ' Themenfelder';
+    count.textContent = n === 1 ? count.dataset.one : count.dataset.many.replace('{n}', n);
     empty.style.display = n ? 'none' : 'block';
     selects.forEach(sel => {
       sel.value = F[sel.dataset.f];

@@ -1,24 +1,26 @@
 ---
 layout: layout.njk
-permalink: /loesungen/peer-plattform/
+pagination: { data: langs, size: 1, alias: lang, addAllPagesToCollections: true }
+permalink: "{{ '/loesungen/peer-plattform/' | l(lang) }}"
+dePath: /loesungen/peer-plattform/
 title: "Peer-Plattform für Organisationen · restful"
 description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Organisation, betrieben von restful. So erleben sie Koordination und Mitglieder."
 ---
 {% from "icon.njk" import icon %}
-{% from "macros.njk" import chatMock %}
+{% from "macros.njk" import chatMock with context %}
 
 <section class="sub-hero">
   <div class="wrap">
-    <p class="crumb"><a href="/">Startseite</a> · <a href="/loesungen/">Lösungen</a> · Peer-Plattform</p>
+    <p class="crumb"><a href="{{ '/' | l }}">{{ "Startseite" | t }}</a> · <a href="{{ '/loesungen/' | l }}">{{ "Lösungen" | t }}</a> · {{ "Peer-Plattform" | t }}</p>
     <div class="sub-hero-grid">
       <div>
-        <p class="kicker">Peer-Plattform</p>
-        <h1>Die sichere restful-Plattform <i>mit deiner Marke</i></h1>
-        <p class="lead">Hinter jedem Peer-Angebot steht eine Plattform, die wir für dich betreiben. Sie läuft unter deinem Namen, damit deine Organisation die Ansprechpartnerin bleibt. Im Zentrum stehen Methode und Begleitung, die Technik macht sie möglich.</p>
+        <p class="kicker">{{ "Peer-Plattform" | t }}</p>
+        <h1>{{ "Die sichere restful-Plattform <i>mit deiner Marke</i>" | t | safe }}</h1>
+        <p class="lead">{{ "Hinter jedem Peer-Angebot steht eine Plattform, die wir für dich betreiben. Sie läuft unter deinem Namen, damit deine Organisation die Ansprechpartnerin bleibt. Im Zentrum stehen Methode und Begleitung, die Technik macht sie möglich." | t }}</p>
       </div>
       <div class="hero-mock has-front">
-        <div class="mk-browser"><span class="mk-bar" aria-hidden="true"><i></i><i></i><i></i></span><img src="/images/mock-peer-admin.webp" width="1000" height="722" alt="Verwaltung einer Peer-Community mit Umfragen und Matching"></div>
-        <div class="mk-phone"><img src="/images/vision-screen-1.jpg" width="640" height="1170" alt="Startseite eines Peer-Angebots auf dem Smartphone"></div>
+        <div class="mk-browser"><span class="mk-bar" aria-hidden="true"><i></i><i></i><i></i></span><img src="/images/mock-peer-admin.webp" width="1000" height="722" alt="{{ 'Verwaltung einer Peer-Community mit Umfragen und Matching' | t }}"></div>
+        <div class="mk-phone"><img src="/images/vision-screen-1.jpg" width="640" height="1170" alt="{{ 'Startseite eines Peer-Angebots auf dem Smartphone' | t }}"></div>
       </div>
     </div>
   </div>
@@ -28,23 +30,23 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
   <div class="wrap">
     <div class="tool-head">
       <div>
-        <p class="kicker">Zwei Perspektiven</p>
-        <h2>restful <i>auf einen Blick</i></h2>
-        <p class="lead">Schalte zwischen der Sicht deiner Koordination und der Sicht deiner Mitglieder um.</p>
+        <p class="kicker">{{ "Zwei Perspektiven" | t }}</p>
+        <h2>{{ "restful <i>auf einen Blick</i>" | t | safe }}</h2>
+        <p class="lead">{{ "Schalte zwischen der Sicht deiner Koordination und der Sicht deiner Mitglieder um." | t }}</p>
       </div>
-      <div class="switch" role="tablist" aria-label="Perspektive wählen">
-        <button type="button" role="tab" id="tab-org" aria-controls="ansicht-org" aria-selected="true">Sicht Organisation</button>
-        <button type="button" role="tab" id="tab-mitglied" aria-controls="ansicht-mitglied" aria-selected="false" tabindex="-1">Sicht Nutzerin</button>
+      <div class="switch" role="tablist" aria-label="{{ 'Perspektive wählen' | t }}">
+        <button type="button" role="tab" id="tab-org" aria-controls="ansicht-org" aria-selected="true">{{ "Sicht Organisation" | t }}</button>
+        <button type="button" role="tab" id="tab-mitglied" aria-controls="ansicht-mitglied" aria-selected="false" tabindex="-1">{{ "Sicht Nutzerin" | t }}</button>
       </div>
     </div>
 
     <div class="view on" id="ansicht-org" role="tabpanel" aria-labelledby="tab-org">
       <figure class="visual">
         <div class="browser">
-          <div class="bar"><i></i><i></i><i></i><span>Dashboard deiner Community</span></div>
-          <img class="shot" src="/images/peer-admin-dashboard.webp" width="1000" height="982" alt="Dashboard der Koordination mit neuen Mitgliedern pro Woche, Status der Mitglieder, Anzahl Nachrichten und Total der Matches">
+          <div class="bar"><i></i><i></i><i></i><span>{{ "Dashboard deiner Community" | t }}</span></div>
+          <img class="shot" src="/images/peer-admin-dashboard.webp" width="1000" height="982" alt="{{ 'Dashboard der Koordination mit neuen Mitgliedern pro Woche, Status der Mitglieder, Anzahl Nachrichten und Total der Matches' | t }}">
         </div>
-        <figcaption>Ansicht für deine Koordination</figcaption>
+        <figcaption>{{ "Ansicht für deine Koordination" | t }}</figcaption>
       </figure>
       <div class="features">
         {%- for f in plattform.organisation %}
@@ -56,10 +58,10 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
     <div class="view" id="ansicht-mitglied" role="tabpanel" aria-labelledby="tab-mitglied">
       <figure class="visual">
         <div class="phones">
-          <div class="phone"><div class="scr"><img src="/images/vision-screen-2.jpg" width="640" height="1161" loading="lazy" alt="Einstieg ins Angebot von Cystische Fibrose Schweiz mit der Frage: Was ist deine Situation?"></div></div>
+          <div class="phone"><div class="scr"><img src="/images/vision-screen-2.jpg" width="640" height="1161" loading="lazy" alt="{{ 'Einstieg ins Angebot von Cystische Fibrose Schweiz mit der Frage: Was ist deine Situation?' | t }}"></div></div>
           <div class="phone two"><div class="scr">{{ chatMock() }}</div></div>
         </div>
-        <figcaption>Links ein Partnerangebot (Cystische Fibrose Schweiz), rechts eine Beispielansicht</figcaption>
+        <figcaption>{{ "Links ein Partnerangebot (Cystische Fibrose Schweiz), rechts eine Beispielansicht" | t }}</figcaption>
       </figure>
       <div class="features">
         {%- for f in plattform.nutzerin %}
@@ -72,25 +74,25 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
 
 <section>
   <div class="wrap">
-    <p class="kicker">Was wir übernehmen</p>
-    <h2>Du bist Absenderin des Angebots, <i>restful sorgt für die Technik</i></h2>
-    <p class="lead">Du kommunizierst das Angebot gegenüber deinen Mitgliedern, restful stellt die stabile Technik im Hintergrund sicher.</p>
+    <p class="kicker">{{ "Was wir übernehmen" | t }}</p>
+    <h2>{{ "Du bist Absenderin des Angebots, <i>restful sorgt für die Technik</i>" | t | safe }}</h2>
+    <p class="lead">{{ "Du kommunizierst das Angebot gegenüber deinen Mitgliedern, restful stellt die stabile Technik im Hintergrund sicher." | t }}</p>
     <div class="tasks">
       {%- for a in plattform.aufgaben %}
       <div class="task"><span class="c">{{ icon(a.icon) | safe }}</span><h3>{{ a.title }}</h3><p>{{ a.text }}</p></div>
       {%- endfor %}
     </div>
     <div class="why">
-      <p>Mehr zur Wirksamkeit von Peer-Austauschen</p>
-      <div><a class="btn btn-dark" href="/wissenschaft/">Zu Methode &amp; Evidenz</a></div>
+      <p>{{ "Mehr zur Wirksamkeit von Peer-Austauschen" | t }}</p>
+      <div><a class="btn btn-dark" href="{{ '/wissenschaft/' | l }}">{{ "Zu Methode & Evidenz" | t }}</a></div>
     </div>
   </div>
 </section>
 
 <section class="pt0" aria-labelledby="ref-titel">
   <div class="wrap">
-    <p class="kicker">Im Einsatz</p>
-    <h2 class="h-sm" id="ref-titel">Diese Kunden setzen bereits heute <i>auf die restful-Plattform</i></h2>
+    <p class="kicker">{{ "Im Einsatz" | t }}</p>
+    <h2 class="h-sm" id="ref-titel">{{ "Diese Kunden setzen bereits heute <i>auf die restful-Plattform</i>" | t | safe }}</h2>
     <div class="partner-grid">
       {%- for i in initiatives %}{% if i.logo in loesungsseite.peerReferenzen %}
       <a class="partner" href="{{ i.href }}" target="_blank" rel="noopener"><div class="lg"><img src="/images/{{ i.logo }}" alt="" loading="lazy"></div><div><b>{{ i.name }}</b><span>{{ i.desc }}</span></div></a>
@@ -101,8 +103,8 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
 
 <section class="pt0" aria-labelledby="weitere-titel">
   <div class="wrap">
-    <p class="kicker">Weitere Lösungen</p>
-    <h2 class="h-sm" id="weitere-titel">Was sich <i>damit verbinden lässt</i></h2>
+    <p class="kicker">{{ "Weitere Lösungen" | t }}</p>
+    <h2 class="h-sm" id="weitere-titel">{{ "Was sich <i>damit verbinden lässt</i>" | t | safe }}</h2>
     {%- set exclude = "peer-plattform" %}
     {% include "loesungen-karten.njk" %}
   </div>
@@ -112,11 +114,11 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
   <div class="wrap">
     <div class="contact-box compact">
       <div>
-        <h2>Mehr <i>erfahren</i></h2>
-        <p>Wir zeigen dir die Plattform gerne in einem unverbindlichen Infotermin.</p>
-        <p class="mail">Direkt per <a href="mailto:{{ site.email }}">E-Mail</a></p>
+        <h2>{{ "Mehr <i>erfahren</i>" | t | safe }}</h2>
+        <p>{{ "Wir zeigen dir die Plattform gerne in einem unverbindlichen Infotermin." | t }}</p>
+        <p class="mail">{{ "Direkt per" | t }} <a href="mailto:{{ site.email }}">{{ "E-Mail" | t }}</a></p>
       </div>
-      <a class="btn btn-dark" href="/#kontakt">Infotermin vereinbaren</a>
+      <a class="btn btn-dark" href="{{ '/#kontakt' | l }}">{{ "Infotermin vereinbaren" | t }}</a>
     </div>
   </div>
 </section>

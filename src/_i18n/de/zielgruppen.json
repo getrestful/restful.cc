@@ -1,5 +1,6 @@
 [
   {
+    "key": "spitaeler-und-arztpraxen",
     "slug": "spitaeler-und-arztpraxen",
     "menu": "Spitäler und Arztpraxen",
     "art": 2,
@@ -123,6 +124,7 @@
     ]
   },
   {
+    "key": "industrie",
     "slug": "industrie",
     "menu": "Industrie und Patient Advocacy",
     "art": 3,
@@ -279,6 +281,7 @@
     }
   },
   {
+    "key": "versicherer",
     "slug": "versicherer",
     "menu": "Versicherer",
     "art": 4,
@@ -393,6 +396,7 @@
     ]
   },
   {
+    "key": "iv-stellen",
     "slug": "iv-stellen",
     "menu": "IV-Stellen",
     "art": 1,
