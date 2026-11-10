@@ -90,7 +90,19 @@ header.site{padding:22px 0;position:sticky;top:0;z-index:30;background:color-mix
 .dd:hover .dd-menu,.dd.open .dd-menu,.no-js .dd:focus-within .dd-menu{display:grid}
 .dd-menu a{padding:10px 14px;border-radius:12px;text-decoration:none;font-size:15px;white-space:nowrap}
 .dd-menu a:hover,.dd-menu a[aria-current="page"]{background:var(--sand);text-decoration:none}
+/* Sprachwahl: im Kopf neben dem Button, auf dem Handy im Menü */
+.lang{display:flex;gap:2px;font-size:13px;font-weight:600;letter-spacing:.04em}
+.lang a{display:inline-grid;place-items:center;min-width:34px;height:32px;padding:0 6px;border-radius:9px;text-decoration:none;color:var(--ink-soft)}
+.lang a:hover{color:var(--navy);background:var(--white)}
+.lang a[aria-current]{color:var(--navy);background:var(--sand)}
+.nav-end{display:flex;align-items:center;gap:14px}
+.nav ul a,.nav ul button{white-space:nowrap}
+.nav ul > li.lang-item{display:none}
 @media(max-width:900px){
+  .nav .lang-bar{display:none}
+  .nav-end{margin-left:auto}
+  .nav ul > li.lang-item{display:block;border-top:1px solid var(--line);margin-top:6px;padding:10px 8px 2px}
+  .nav ul > li.lang-item .lang a{height:38px;min-width:44px;font-size:14px}
   .menu-btn{display:inline-flex}
   .nav .btn{padding:10px 16px;font-size:14px;margin-left:auto}
   .nav ul{display:none;position:absolute;top:calc(100% + 14px);left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;background:var(--white);border:1px solid var(--line);border-radius:22px;padding:12px;box-shadow:0 24px 50px -24px var(--shadow)}
@@ -708,3 +720,11 @@ footer.site a:hover{text-decoration:underline}
 @media(max-width:900px){.dd-link > a span{display:none}}
 @media(max-width:560px){.tasks.tasks-3{grid-template-columns:1fr}}
 @media(max-width:560px){.zz-vis{padding:20px 14px}.zz-vis .kpis{gap:6px}.zz-vis .kpi{padding:9px 7px}.zz-vis .kpi small{font-size:9.5px}.zz-vis .kpi b{font-size:20px}.lp-brand .logo-slot{font-size:10px;padding:0 7px}}
+
+/* Umbrüche: ausgewogene Titel, keine einzelnen Wörter am Absatzende, lange Wörter trennen statt überlaufen */
+h1,h2,h3,.kicker,.zg-label,.btn{text-wrap:balance}
+p,li,dd,summary b,figcaption,.sub,.lead{text-wrap:pretty}
+h1,h2,h3,.btn,.tag,.stat-t,dd{overflow-wrap:break-word}
+.value .tag{border-radius:14px}
+dd,.kpi small{hyphens:auto}
+@media(max-width:560px){h1,h2,h3,.stat-t,.lp-h,.match .t{hyphens:auto}}

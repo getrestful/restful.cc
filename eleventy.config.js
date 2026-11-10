@@ -94,7 +94,7 @@ export default function (eleventyConfig) {
     return html.replace(keep, (m, block, _tag, tag, text) => {
       if (block || tag) return m;
       return text
-        .replace(/[  ]*([;:!?])(?=\s|$|<|&|\)|»)/g, `${nb}$1`)
+        .replace(/(?<!&#?[a-zA-Z0-9]+)[  ]*([;:!?])(?=\s|$|<|&|\)|»)/g, `${nb}$1`)
         .replace(/«[  ]*/g, `«${nb}`)
         .replace(/[  ]*»/g, `${nb}»`);
     });

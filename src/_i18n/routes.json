@@ -1,7 +1,7 @@
 {
   "/": { "fr": "/fr/", "en": "/en/" },
   "/ueber-uns/": { "fr": "/fr/a-propos/", "en": "/en/about/" },
-  "/wissenschaft/": { "fr": "/fr/methode-et-evidence/", "en": "/en/method-and-evidence/" },
+  "/wissenschaft/": { "fr": "/fr/methode-et-preuves/", "en": "/en/method-and-evidence/" },
   "/loesungen/": { "fr": "/fr/solutions/", "en": "/en/solutions/" },
   "/loesungen/peer-plattform/": { "fr": "/fr/solutions/plateforme-de-pairs/", "en": "/en/solutions/peer-platform/" },
   "/loesungen/commelia/": { "fr": "/fr/solutions/commelia/", "en": "/en/solutions/commelia/" },
