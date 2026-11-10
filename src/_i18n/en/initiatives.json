@@ -1,0 +1,88 @@
+[
+  {
+    "name": "MucoConnect by Cystic Fibrosis Switzerland",
+    "desc": "For people with cystic fibrosis and their families.",
+    "href": "https://cystischefibroseschweiz.ch/unterstuetzung-und-angebote/mucoconnect/",
+    "logo": "logo-mucoconnect.png",
+    "startseite": 2
+  },
+  {
+    "name": "demenz:miteinander by Demenzworld",
+    "desc": "For relatives of people with dementia",
+    "href": "https://demenzworld.com/demenzmiteinander/",
+    "logo": "logo-demenzworld.png"
+  },
+  {
+    "name": "Peer programme of the Swiss Cancer League",
+    "desc": "Impact measurement of the peer platform for people affected by cancer and their families",
+    "href": "https://peerplattform.krebsliga.ch/",
+    "logo": "logo-krebsliga.webp",
+    "startseite": 1
+  },
+  {
+    "name": "Inselspital, Bern University Hospital",
+    "desc": "Swiss Sleep Circle: digital prevention, early detection and blended stepped-care treatment for people with sleep-wake disorders",
+    "href": "https://gesundheitsfoerderung.ch/praevention-in-der-gesundheitsversorgung-pgv/projektfoerderung/gefoerderte-projekte/swiss-sleep",
+    "logo": "logo-inselspital.webp",
+    "startseite": 3
+  },
+  {
+    "name": "CerebralConnect by the Cerebral Foundation",
+    "desc": "For relatives of people with cerebral movement disorders",
+    "href": "#",
+    "logo": "logo-cerebral.webp",
+    "startseite": 4
+  },
+  {
+    "name": "Swiss PPIE platform (SPO)",
+    "desc": "Platform promoting the involvement of patients, relatives and the public",
+    "href": "#",
+    "logo": "logo-spo.webp",
+    "startseite": 6
+  },
+  {
+    "name": "SVAMV Peer by the Swiss Association of Single Mothers and Fathers",
+    "desc": "For single parents",
+    "href": "https://svamv.ch/thema/svamvpeer/",
+    "logo": "logo-svamv.svg"
+  },
+  {
+    "name": "Procap",
+    "desc": "For people with disabilities and their families",
+    "href": "#",
+    "logo": "logo-procap.png",
+    "startseite": 5
+  },
+  {
+    "name": "Schweizerische Gemeinschaft verwaister Eltern (SGVE)",
+    "desc": "For parents who have lost a child",
+    "href": "#",
+    "logo": "logo-sgve.jpg"
+  },
+  {
+    "name": "Peer pool of Frühchen & Neokinder Schweiz",
+    "desc": "For parents and relatives of sick newborns and premature babies",
+    "href": "#",
+    "logo": "logo-fruehchen-neokinder.png"
+  },
+  {
+    "name": "CoPEER by Spitex Kriens",
+    "desc": "For clients and relatives of Spitex Kriens",
+    "href": "#",
+    "logo": "logo-spitex-kriens.png",
+    "startseite": 8
+  },
+  {
+    "name": "Schweizerischer Fachverband Beratung Frühe Kindheit (SF BFK)",
+    "desc": "National chat counselling for parents of children aged 0 to 5",
+    "href": "#",
+    "logo": "logo-sf-bfk.png"
+  },
+  {
+    "name": "Swiss Ankylosing Spondylitis Association (SVMB)",
+    "desc": "Joint project for more physical activity in everyday life for people with ankylosing spondylitis, funded by the lab7x1 innovation lab of the Federal Office of Sport",
+    "href": "https://www.bechterew.ch/",
+    "logo": "logo-svmb.png",
+    "startseite": 7
+  }
+]

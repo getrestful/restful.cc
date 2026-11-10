@@ -1,0 +1,60 @@
+{
+  "features": [
+    {
+      "icon": "chat",
+      "title": "One inbox for every channel",
+      "text": "Web chat, email and WhatsApp arrive in the same place. Everyone can see who is replying, so nothing gets lost."
+    },
+    {
+      "icon": "users",
+      "title": "The right person answers",
+      "text": "Professionals and peers work in groups. Rules based on channel, language or entry questions route each request to the right group."
+    },
+    {
+      "icon": "lifebuoy",
+      "title": "As much AI as needed",
+      "text": "The assistant answers routine questions from your own knowledge base. For sensitive topics, signs of crisis or on request, it hands over to a human."
+    },
+    {
+      "icon": "shield",
+      "title": "Data protection, guaranteed at all times",
+      "text": "Hosted in Switzerland or on your own server. AI requests only go to providers that neither store data nor use it for training."
+    },
+    {
+      "icon": "book",
+      "title": "In the language of the person asking",
+      "text": "Automatic translation and suggested replies in plain language."
+    },
+    {
+      "icon": "chart",
+      "title": "Reporting",
+      "text": "Response times and feedback at a glance, exports without message content."
+    }
+  ],
+  "einsatz": [
+    {
+      "title": "Counselling services and parent advice",
+      "text": "Answer frequent questions quickly and connect worried people with a professional fast.",
+      "url": "",
+      "link": ""
+    },
+    {
+      "title": "Patient organisations and peer programmes",
+      "text": "Experienced peers and professionals answer side by side, with clear routing for medical questions.",
+      "url": "/loesungen/peer-plattform/",
+      "link": "To the peer platform"
+    },
+    {
+      "title": "Hospitals and medical practices",
+      "text": "Bring questions that come up between appointments together in one place. Medical concerns go straight to your team.",
+      "url": "/fuer/spitaeler-und-arztpraxen/",
+      "link": "For hospitals and medical practices"
+    },
+    {
+      "title": "Disability insurance (IV) offices and social services",
+      "text": "Explain procedures clearly, in plain language or translated, and hand over as soon as it concerns someone’s own case.",
+      "url": "/fuer/iv-stellen/",
+      "link": "For disability insurance (IV) offices"
+    }
+  ]
+}

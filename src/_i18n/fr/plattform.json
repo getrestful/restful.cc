@@ -1,0 +1,64 @@
+{
+  "organisation": [
+    {
+      "title": "Examiner les demandes et mettre en relation",
+      "text": "Voir les nouvelles demandes, proposer des pairs adaptés et valider les mises en relation."
+    },
+    {
+      "title": "Vue d’ensemble des pairs et des membres",
+      "text": "Qui est actif, qui attend une mise en relation? Tout au même endroit."
+    },
+    {
+      "title": "Échange confidentiel",
+      "text": "Les messages ne parviennent qu’au binôme concerné. Les membres peuvent utiliser un pseudonyme."
+    },
+    {
+      "title": "Évaluer l’impact",
+      "text": "Indicateurs et sondages pour vos rapports et vos bailleurs de fonds."
+    },
+    {
+      "title": "À votre image",
+      "text": "Votre logo, vos couleurs, votre adresse. Multilingue pour les offres nationales."
+    }
+  ],
+  "nutzerin": [
+    {
+      "title": "Démarrer simplement",
+      "text": "S’inscrire et décrire sa situation dans un court questionnaire. Anonymement ou sous pseudonyme."
+    },
+    {
+      "title": "Le bon pair",
+      "text": "Un professionnel de l’organisation examine la demande et propose une personne ayant vécu une expérience similaire."
+    },
+    {
+      "title": "Échanger à son rythme",
+      "text": "En toute confidentialité dans le chat de la plateforme, avec notification par e-mail. Plus tard, si souhaité, aussi par téléphone, en vidéo ou en personne."
+    },
+    {
+      "title": "De l’aide quand il en faut plus",
+      "text": "Pour les situations complexes, le chemin mène au conseil professionnel de votre organisation."
+    }
+  ],
+  "aufgaben": [
+    {
+      "icon": "server",
+      "title": "Exploitation et hébergement",
+      "text": "Nous hébergeons la plateforme chez un fournisseur certifié ISO 27001 en Suisse et veillons à son bon fonctionnement. Les données ne quittent jamais la Suisse et l’UE."
+    },
+    {
+      "icon": "refresh",
+      "title": "Maintenance et développement",
+      "text": "Mises à jour, sécurité et nouvelles fonctions vous parviennent en continu, sans effort de votre part."
+    },
+    {
+      "icon": "shield",
+      "title": "Protection des données",
+      "text": "Selon la loi suisse sur la protection des données (nLPD). Les membres décident eux-mêmes de ce qu’ils montrent et peuvent rester anonymes."
+    },
+    {
+      "icon": "palette",
+      "title": "Votre image",
+      "text": "Votre logo, vos couleurs, votre adresse. Pour les offres nationales, nous déclinons la plateforme en plusieurs langues."
+    }
+  ]
+}

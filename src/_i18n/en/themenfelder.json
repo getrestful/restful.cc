@@ -1,0 +1,185 @@
+[
+  {
+    "key": "digital",
+    "label": "Digital support",
+    "finding": "Digital peer support clearly improves mental health and moderately improves physical health.",
+    "findingCite": "Yeo et al., 2025",
+    "groups": [
+      "Betroffene",
+      "Angehörige"
+    ],
+    "formats": [
+      "Digital"
+    ],
+    "title": "Digital peer support",
+    "paragraphs": [
+      "Digital peer support refers to peer interventions in which lived experience is shared not in person but through digital communication. In terms of content, digital peer interventions do not differ fundamentally from in-person peer approaches, but they vary in structure, reach, intensity and accessibility. The literature describes various forms of digital peer intervention, which differ in the degree of relationship-building and structure (Ali et al., 2015; Fortuna et al., 2020; Yuan et al., 2025).",
+      "The most frequently studied digital peer interventions include, first, direct peer-to-peer formats in which two people with similar health or social experiences enter into a one-to-one exchange. These one-to-one interventions are often text-based, sometimes anonymous and partly moderated. They primarily aim at empathic understanding, emotional support and the validation of individual experiences, and are used especially by people who do not want to expose themselves in group settings.",
+      "Second, the literature describes digital peer group interventions in which several peers interact in moderated or semi-structured online settings. The focus here is on social connectedness, mutual normalisation and collectively coping with difficulties. In how they work, these formats resemble traditional self-help groups, but stand out for their flexible timing and location-independent access.",
+      "Third, there are structured digital peer support programmes in which peer support is deliberately embedded in time-limited interventions, for example as part of self-management or support programmes. In these formats, roles, goals and processes are clearly defined, and peers sometimes take on trained or formalised functions within a care context.",
+      "Across all formats, systematic reviews and meta-analyses show that digital peer interventions are associated above all with positive effects on psychosocial outcomes such as emotional support, social connectedness, coping, self-efficacy and empowerment. Effects on clinical or physical endpoints are studied less often and are inconsistent overall (Yeo et al., 2022, 2025; Yuan et al., 2025).",
+      "The literature consistently classifies digital peer support as a complementary form of support that does not replace professional medical or therapeutic care but meaningfully adds to it. The added value of digital peer interventions lies in particular in their low threshold, flexibility and the opportunity to make lived experience accessible to people who are only partly reached by existing care structures (Bravata et al., 2024; Fortuna et al., 2020)."
+    ],
+    "sources": [
+      "Ali et al., 2015",
+      "Fortuna et al., 2020",
+      "Yuan et al., 2025",
+      "Yeo et al., 2022, 2025",
+      "Bravata et al., 2024"
+    ]
+  },
+  {
+    "key": "psyche",
+    "label": "Mental illness",
+    "finding": "Peer support relieves depressive symptoms and strengthens empowerment and recovery.",
+    "findingCite": "Pfeiffer et al., 2011; Burr Furrer et al., 2022",
+    "groups": [
+      "Betroffene",
+      "Angehörige"
+    ],
+    "formats": [
+      "Digital",
+      "Präsenz"
+    ],
+    "title": "Mental illness",
+    "paragraphs": [
+      "In mental health, reviews and empirical studies show that peer support is associated above all with subjective and psychosocial benefits. Across different settings (from community-based services and formally integrated peer support programmes to digital peer interventions), participants report improved perceived social support, a normalisation of mental distress, as well as empowerment, self-efficacy and recovery-oriented processes (Bracke et al., 2008; Burr, 2020; Burr Furrer et al., 2022; Pfeiffer et al., 2011).",
+      "Peer interventions are used in many formats, including peer support workers in care facilities, structured group programmes, peer respite programmes, dialogical and intentional peer approaches and digital peer support services. The roles of peers range from informal support and moderated accompaniment to clearly defined professional functions within the care system (Burr, 2020; Fortuna et al., 2020; Hegedüs et al., 2021). Reported outcomes mainly concern subjective dimensions such as wellbeing, hope, coping, self-esteem and a sense of belonging. There are indications of effects on the use of health services or on clinical endpoints, but they are not consistent and remain limited so far, particularly with regard to long-term effects (Pfeiffer et al., 2011). Family members also benefit from certain peer formats, especially through emotional relief, sharing information and normalising their own situation, although these effects are studied systematically less often (Acri et al., 2017)."
+    ],
+    "sources": [
+      "Bracke et al., 2008",
+      "Burr, 2020",
+      "Burr Furrer et al., 2022",
+      "Pfeiffer et al., 2011",
+      "Fortuna et al., 2020",
+      "Hegedüs et al., 2021",
+      "Acri et al., 2017"
+    ]
+  },
+  {
+    "key": "demenz",
+    "label": "Dementia",
+    "finding": "Relieves family carers and reduces social isolation.",
+    "findingCite": "Carter et al., 2020",
+    "groups": [
+      "Angehörige"
+    ],
+    "formats": [
+      "Digital",
+      "Präsenz"
+    ],
+    "title": "Dementia",
+    "paragraphs": [
+      "Research on peer support in the context of dementia focuses mainly on family carers. Above all, it describes peer-led exchange groups, digital peer communities and structured peer support programmes that enable people in comparable care situations to share experiences (Carter et al., 2020; Cui et al., 2025; Greenwood et al., 2013). These interventions focus on emotional support, mutual understanding and sharing practical everyday coping strategies.",
+      "Studies show that these peer programmes help in particular to reduce perceived social isolation, to put one’s own experiences into context and to relieve psychosocial strain. Digital formats are described as especially suitable because they are low-threshold, flexible in timing, usable from anywhere and compatible with a heavy everyday and caregiving load.",
+      "By contrast, the direct participation of people with dementia in peer formats is limited, especially in advanced stages of the disease, due to cognitive and communication impairments. Accordingly, most peer interventions are aimed primarily at family members. Barriers described also include the varying quality and structure of programmes, digital access hurdles and, at times, emotional overload from sharing distressing experiences. While short-term psychosocial effects are well documented, there are so far few robust findings on longer-term effects (Carter et al., 2020; Pillemer & Suitor, 2002)."
+    ],
+    "sources": [
+      "Carter et al., 2020",
+      "Cui et al., 2025",
+      "Greenwood et al., 2013",
+      "Pillemer & Suitor, 2002"
+    ]
+  },
+  {
+    "key": "cf",
+    "label": "Cystic fibrosis",
+    "finding": "Digital formats are especially valuable because in-person meetings are often not possible for reasons of infection control.",
+    "findingCite": "Jeffrey et al., 2020",
+    "groups": [
+      "Betroffene",
+      "Eltern"
+    ],
+    "formats": [
+      "Digital"
+    ],
+    "title": "Cystic fibrosis",
+    "paragraphs": [
+      "For people with cystic fibrosis and their families, digital peer formats are particularly relevant, as in-person meetings are often not possible for reasons of infection control. A qualitative study and a programme evaluation show that affected children and young people as well as adults and parents use digital peer services, especially one-to-one peer formats and online opportunities for exchange (Jeffrey et al., 2020; Kirk & Milnes, 2016).",
+      "The benefits described are above all social and emotional support, a sense of belonging and the sharing of everyday experiences in dealing with the condition. The ways of using these services differ by role and age: while parents use peer support mainly to cope with everyday care and for emotional relief, children and young people with cystic fibrosis use peer services especially for social orientation and to normalise their own situation. The studies explicitly classify peer support as a complementary form of care; robust evidence of clinical or long-term effects is so far limited."
+    ],
+    "sources": [
+      "Jeffrey et al., 2020",
+      "Kirk & Milnes, 2016"
+    ]
+  },
+  {
+    "key": "onko",
+    "label": "Oncology",
+    "finding": "Positive effects on quality of life, self-efficacy, depression and anxiety, mostly small to moderate.",
+    "findingCite": "Zhang et al., 2022; Kiemen et al., 2023",
+    "groups": [
+      "Betroffene"
+    ],
+    "formats": [
+      "Digital",
+      "Präsenz"
+    ],
+    "title": "Oncology",
+    "paragraphs": [
+      "In oncology, peer-based interventions have been studied for several decades as complementary psychosocial support alongside professional care. Early studies on self-help and peer groups for women with breast cancer, as well as further randomised and non-randomised studies, laid the foundations for a steadily growing research tradition. Recent systematic reviews summarise a large number of randomised controlled trials and show that research focuses mainly on psychosocial outcomes, in particular quality of life, depressive symptoms, anxiety, distress, coping and perceived social support (Kiemen et al., 2023; Ziegler et al., 2022). Clinical endpoints such as survival, tumour progression or somatic parameters, by contrast, are rarely studied and are not the primary endpoint in most studies (Kiemen et al., 2023).",
+      "The intervention formats used are heterogeneous. They range from traditional peer self-help groups and telephone and internet-based programmes to structured one-to-one mentoring and coaching programmes (Kiemen et al., 2023). Implementation and evaluation studies of structured peer programmes report high acceptance among patients and perceived added value from experience-based exchange (Salm et al., 2023; Valjanow & Weis, 2024). At the same time, these studies emphasise the importance of clearly defined roles, standardised training and professional embedding.",
+      "In addition to randomised studies, there are also observational studies. A non-randomised study of women with breast cancer found a positive association between peer counselling and reported quality of life, although the study design does not allow causal conclusions (Giese-Davis et al., 2006). Overall, systematic reviews report small to moderate effects on psychosocial outcomes, but no consistent effects across all outcomes studied (Kiemen et al., 2023; Zhang et al., 2022)."
+    ],
+    "sources": [
+      "Kiemen et al., 2023",
+      "Ziegler et al., 2022",
+      "Salm et al., 2023",
+      "Valjanow & Weis, 2024",
+      "Giese-Davis et al., 2006",
+      "Zhang et al., 2022"
+    ]
+  },
+  {
+    "key": "adipositas",
+    "label": "Obesity",
+    "finding": "Participants with peer support achieve slightly better weight trajectories.",
+    "findingCite": "Chen et al., 2021",
+    "groups": [
+      "Betroffene",
+      "Jugendliche"
+    ],
+    "formats": [
+      "Präsenz"
+    ],
+    "title": "Obesity",
+    "paragraphs": [
+      "In the context of obesity, peer-based interventions are used mainly to support behaviour change and to promote self-management and motivation. A meta-analysis of randomised controlled trials shows that peer support for people with overweight and obesity is associated with significantly better weight trajectories. Compared with control groups, participants in peer interventions achieved greater weight loss and a slightly greater reduction in body mass index, indicating a supportive effect of peer accompaniment on health-related behaviour (Chen et al., 2021).",
+      "Positive effects are also seen in young people with obesity. In a study in which peers were integrated into a multidisciplinary weight management programme, young people with peer support achieved a greater reduction in BMI and body fat percentage than participants receiving standard treatment. Physical activity also increased significantly, and psychosocial factors such as self-efficacy and quality of life improved markedly (Fonseca et al., 2014)."
+    ],
+    "sources": [
+      "Chen et al., 2021",
+      "Fonseca et al., 2014"
+    ]
+  },
+  {
+    "key": "familie",
+    "label": "Family and parenting",
+    "finding": "Strengthens parental self-efficacy and provides emotional relief.",
+    "findingCite": "Cupples et al., 2011",
+    "groups": [
+      "Eltern"
+    ],
+    "formats": [
+      "Digital",
+      "Präsenz"
+    ],
+    "title": "Family and parenting",
+    "paragraphs": [
+      "Peer-based interventions in the family sector are aimed mainly at parents in difficult circumstances, including first-time parents, single parents and families with increased support needs. The formats studied include one-to-one peer mentoring, peer-led parenting programmes, telephone-based peer support as well as digital peer groups and online mentoring services.",
+      "The studies mostly report positive effects on parental self-efficacy, emotional relief, social support and coping with the everyday demands of parenting (Cupples et al., 2011; Day et al., 2012; Friedman et al., 2018; January & Hurley, 2016; Saxena et al., 2020). Randomised and evaluative studies show that peer mentoring can help strengthen parenting skills, particularly among first-time parents and in community-based programmes (Cupples et al., 2011; January & Hurley, 2016). Digital and telephone-based formats are described as low-threshold and easy to combine with family commitments, and they also reach fathers and hard-to-reach groups (Andersson et al., 2024; Daynes-Kearney & Gallagher, 2023).",
+      "At the same time, reviews and qualitative studies point to a high degree of heterogeneity in the interventions and the outcomes measured. The evidence relates primarily to subjective psychosocial effects, while robust statements on long-term effects or child-related outcomes remain limited so far (Chakraborti et al., 2021; Postma et al., 2024)."
+    ],
+    "sources": [
+      "Cupples et al., 2011",
+      "Day et al., 2012",
+      "Friedman et al., 2018",
+      "January & Hurley, 2016",
+      "Saxena et al., 2020",
+      "Andersson et al., 2024",
+      "Daynes-Kearney & Gallagher, 2023",
+      "Chakraborti et al., 2021",
+      "Postma et al., 2024"
+    ]
+  }
+]

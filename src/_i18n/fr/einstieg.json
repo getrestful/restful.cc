@@ -1,0 +1,58 @@
+[
+  {
+    "test": "Nous n’avons pas encore d’offre où les personnes concernées échangent entre elles.",
+    "title": "Vous partez de zéro",
+    "intro": "Nous examinons avec vous si et sous quelle forme une offre convient à votre organisation, puis la construisons pas à pas avec vous.",
+    "do": [
+      "Clarifier le public cible, les objectifs et les ressources",
+      "Choisir un format éprouvé de notre playbook",
+      "Mettre en place la plateforme à votre image",
+      "Former la coordination et accompagner le pilote"
+    ],
+    "first": "une analyse des besoins avec vous et avec les personnes concernées",
+    "result": "Une nouvelle offre adaptée à votre organisation, avec de premières mises en relation dans le pilote.",
+    "tone": "sand"
+  },
+  {
+    "test": "Il existe des rencontres, des groupes ou des contacts téléphoniques, mais tout le monde ne peut pas y participer.",
+    "title": "Votre communauté fonctionne hors ligne",
+    "intro": "Nous complétons votre offre existante par un volet numérique, afin que des personnes qui ne peuvent pas participer aujourd’hui puissent aussi la rejoindre.",
+    "do": [
+      "Analyser qui participe aujourd’hui et qui manque",
+      "Ajouter un format numérique adapté à vos groupes",
+      "Impliquer les bénévoles et les personnes concernées déjà actifs",
+      "Faire dialoguer le présentiel et le numérique"
+    ],
+    "first": "un état des lieux de votre offre actuelle",
+    "result": "Atteindre plus de personnes, sans renoncer à ce qui a fait ses preuves.",
+    "tone": "white"
+  },
+  {
+    "test": "Nous avons une offre, mais elle est trop peu utilisée ou mobilise trop de ressources.",
+    "title": "Votre offre peine à décoller",
+    "intro": "Nous regardons avec vous où cela coince et réorientons l’offre de manière ciblée.",
+    "do": [
+      "Évaluer la participation, la mise en relation et les processus",
+      "Identifier ensemble les points de blocage et fixer les priorités",
+      "Adapter le format et la plateforme de manière ciblée",
+      "Alléger la coordination grâce à des processus clairs"
+    ],
+    "first": "une évaluation de votre offre existante",
+    "result": "Une offre utilisée et une coordination allégée.",
+    "tone": "lav"
+  },
+  {
+    "test": "Notre offre fonctionne, mais nous aimerions en savoir plus sur son impact.",
+    "title": "Vous voulez démontrer l’impact",
+    "intro": "Nous rendons visible l’effet de votre offre: avec un outil de mesure d’impact établi, développé spécifiquement pour le travail entre pairs et fondé sur des standards reconnus comme la qualité de vie (QoL).",
+    "do": [
+      "Définir les objectifs d’impact et les indicateurs adaptés",
+      "Intégrer l’outil de mesure dans votre offre existante",
+      "Évaluer et interpréter les données de l’exploitation courante",
+      "Sur demande: conception d’étude et publication sur mandat"
+    ],
+    "first": "une clarification de vos objectifs d’impact",
+    "result": "Des résultats solides sur l’impact, pour le comité, les fondations et les rapports aux bailleurs de fonds.",
+    "tone": "sand"
+  }
+]

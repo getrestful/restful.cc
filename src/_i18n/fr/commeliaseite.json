@@ -1,0 +1,60 @@
+{
+  "features": [
+    {
+      "icon": "chat",
+      "title": "Une boîte de réception pour tous les canaux",
+      "text": "Chat web, e-mail et WhatsApp arrivent au même endroit. Chacun voit qui est en train de répondre, rien ne se perd."
+    },
+    {
+      "icon": "users",
+      "title": "La bonne personne répond",
+      "text": "Professionnels et pairs travaillent en groupes. Des règles par canal, par langue ou selon les questions d’entrée orientent chaque demande vers le bon groupe."
+    },
+    {
+      "icon": "lifebuoy",
+      "title": "Autant d’IA que nécessaire",
+      "text": "L’assistant répond aux questions courantes à partir de votre savoir. Pour les sujets sensibles, en cas de signaux de crise ou sur demande, il passe le relais à un humain."
+    },
+    {
+      "icon": "shield",
+      "title": "Protection des données garantie en tout temps",
+      "text": "Hébergé en Suisse ou sur votre propre serveur. Les requêtes à l’IA ne vont qu’à des fournisseurs qui ne stockent pas les données et ne les utilisent pas pour l’entraînement."
+    },
+    {
+      "icon": "book",
+      "title": "Dans la langue des personnes en quête de conseil",
+      "text": "Traduction automatique et propositions de réponse en langage simple."
+    },
+    {
+      "icon": "chart",
+      "title": "Évaluations",
+      "text": "Temps de réponse et retours en un coup d’œil, exports sans le contenu des messages."
+    }
+  ],
+  "einsatz": [
+    {
+      "title": "Services de conseil et conseil aux parents",
+      "text": "Répondre rapidement aux questions fréquentes et mettre vite en relation les personnes inquiètes avec un professionnel.",
+      "url": "",
+      "link": ""
+    },
+    {
+      "title": "Organisations de patients et offres de pairs",
+      "text": "Personnes concernées expérimentées et professionnels répondent côte à côte, avec une attribution claire des questions médicales.",
+      "url": "/loesungen/peer-plattform/",
+      "link": "Vers la plateforme de pairs"
+    },
+    {
+      "title": "Hôpitaux et cabinets médicaux",
+      "text": "Rassembler en un seul endroit les questions qui surgissent entre deux rendez-vous. Les demandes médicales vont directement à votre équipe.",
+      "url": "/fuer/spitaeler-und-arztpraxen/",
+      "link": "Pour les hôpitaux et cabinets médicaux"
+    },
+    {
+      "title": "Offices AI et services sociaux",
+      "text": "Expliquer les démarches de manière compréhensible, en langage simple ou traduites, et passer le relais dès qu’il s’agit du dossier personnel.",
+      "url": "/fuer/iv-stellen/",
+      "link": "Pour les offices AI"
+    }
+  ]
+}

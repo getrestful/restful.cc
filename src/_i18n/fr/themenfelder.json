@@ -1,0 +1,185 @@
+[
+  {
+    "key": "digital",
+    "label": "Soutien numérique",
+    "finding": "Le soutien numérique entre pairs améliore nettement la santé psychique et modérément la santé physique.",
+    "findingCite": "Yeo et al., 2025",
+    "groups": [
+      "Betroffene",
+      "Angehörige"
+    ],
+    "formats": [
+      "Digital"
+    ],
+    "title": "Soutien numérique entre pairs",
+    "paragraphs": [
+      "Le soutien numérique entre pairs désigne des interventions dans lesquelles l’échange de savoir expérientiel ne se fait pas en présentiel, mais par des moyens de communication numériques. Sur le fond, les interventions numériques ne diffèrent pas fondamentalement des approches entre pairs en présentiel, mais elles varient en termes de structure, de portée, d’intensité et d’accessibilité. La littérature décrit différentes formes d’interventions numériques entre pairs, qui se distinguent selon le degré de relation et de structuration (Ali et al., 2015; Fortuna et al., 2020; Yuan et al., 2025).",
+      "Parmi les interventions numériques les plus étudiées figurent d’abord les formats directs de pair à pair, dans lesquels deux personnes ayant une expérience sanitaire ou sociale similaire entrent dans un échange en binôme. Ces interventions individuelles sont souvent écrites, parfois anonymes et en partie modérées. Elles visent avant tout la compréhension empathique, le soutien émotionnel et la validation des expériences individuelles, et sont surtout utilisées par des personnes qui ne souhaitent pas s’exposer dans un groupe.",
+      "Ensuite, la littérature décrit des interventions numériques en groupe, dans lesquelles plusieurs pairs interagissent dans des cadres en ligne modérés ou semi-structurés. L’accent est mis sur le lien social, la normalisation mutuelle et la gestion collective des difficultés. Dans leur logique d’action, ces formats ressemblent aux groupes d’entraide classiques, mais se distinguent par leur flexibilité temporelle et un accès indépendant du lieu.",
+      "Enfin, il existe des programmes numériques structurés de soutien entre pairs, dans lesquels le soutien par les pairs est intégré de manière ciblée à des interventions limitées dans le temps, par exemple dans le cadre de l’autogestion ou de programmes d’accompagnement. Dans ces formats, les rôles, les objectifs et les processus sont clairement définis, et les pairs assument parfois des fonctions formées ou formalisées au sein d’un contexte de soins.",
+      "Tous formats confondus, des revues systématiques et des méta-analyses montrent que les interventions numériques entre pairs sont surtout associées à des effets positifs sur des critères psychosociaux comme le soutien émotionnel, le lien social, les stratégies d’adaptation, l’auto-efficacité et l’empowerment. Les effets sur des critères cliniques ou physiques sont moins souvent étudiés et globalement hétérogènes (Yeo et al., 2022, 2025; Yuan et al., 2025).",
+      "De manière constante, la littérature considère le soutien numérique entre pairs comme une offre complémentaire qui ne remplace pas la prise en charge médicale ou thérapeutique professionnelle, mais la complète utilement. La valeur ajoutée des interventions numériques entre pairs réside notamment dans leur accès à bas seuil, leur flexibilité et la possibilité de rendre le savoir expérientiel accessible aussi aux personnes que les structures de soins existantes n’atteignent que partiellement (Bravata et al., 2024; Fortuna et al., 2020)."
+    ],
+    "sources": [
+      "Ali et al., 2015",
+      "Fortuna et al., 2020",
+      "Yuan et al., 2025",
+      "Yeo et al., 2022, 2025",
+      "Bravata et al., 2024"
+    ]
+  },
+  {
+    "key": "psyche",
+    "label": "Troubles psychiques",
+    "finding": "Le soutien entre pairs atténue les symptômes dépressifs et renforce l’empowerment et le rétablissement.",
+    "findingCite": "Pfeiffer et al., 2011; Burr Furrer et al., 2022",
+    "groups": [
+      "Betroffene",
+      "Angehörige"
+    ],
+    "formats": [
+      "Digital",
+      "Präsenz"
+    ],
+    "title": "Troubles psychiques",
+    "paragraphs": [
+      "Dans le domaine de la santé mentale, des revues et des études empiriques montrent que le soutien entre pairs est surtout associé à des bénéfices subjectifs et psychosociaux. Dans différents contextes (des offres communautaires aux programmes de soutien entre pairs formellement intégrés, jusqu’aux interventions numériques), les participants font état d’un meilleur soutien social perçu, d’une normalisation des difficultés psychiques ainsi que d’empowerment, d’auto-efficacité et de processus orientés vers le rétablissement (Bracke et al., 2008; Burr, 2020; Burr Furrer et al., 2022; Pfeiffer et al., 2011).",
+      "Les interventions entre pairs prennent des formes variées, dont des pairs aidants employés dans des institutions de soins, des offres de groupe structurées, des programmes de répit entre pairs, des approches dialogiques et intentionnelles ainsi que des offres numériques de soutien entre pairs. Les rôles des pairs vont du soutien informel à l’accompagnement modéré, jusqu’à des fonctions professionnelles clairement définies au sein du système de soins (Burr, 2020; Fortuna et al., 2020; Hegedüs et al., 2021). Les résultats rapportés concernent surtout des dimensions subjectives comme le bien-être, l’espoir, les stratégies d’adaptation, l’estime de soi et le sentiment d’appartenance. Des indices d’effets sur le recours aux soins ou sur des critères cliniques existent, mais ils ne sont pas constants et restent limités, en particulier pour les effets à long terme (Pfeiffer et al., 2011). Les proches bénéficient aussi de certains formats entre pairs, notamment grâce au soulagement émotionnel, à l’échange d’informations et à la normalisation de leur propre situation, même si ces effets sont plus rarement étudiés de manière systématique (Acri et al., 2017)."
+    ],
+    "sources": [
+      "Bracke et al., 2008",
+      "Burr, 2020",
+      "Burr Furrer et al., 2022",
+      "Pfeiffer et al., 2011",
+      "Fortuna et al., 2020",
+      "Hegedüs et al., 2021",
+      "Acri et al., 2017"
+    ]
+  },
+  {
+    "key": "demenz",
+    "label": "Démence",
+    "finding": "Soulage les proches aidants et réduit l’isolement social.",
+    "findingCite": "Carter et al., 2020",
+    "groups": [
+      "Angehörige"
+    ],
+    "formats": [
+      "Digital",
+      "Präsenz"
+    ],
+    "title": "Démence",
+    "paragraphs": [
+      "La recherche sur le soutien entre pairs dans le contexte de la démence s’adresse principalement aux proches aidants. Sont décrits surtout des groupes d’échange animés par des pairs, des communautés numériques de pairs et des programmes structurés de soutien entre pairs, qui permettent l’échange d’expériences entre personnes vivant des situations de soins comparables (Carter et al., 2020; Cui et al., 2025; Greenwood et al., 2013). Ces interventions mettent l’accent sur le soutien émotionnel, la compréhension mutuelle et l’échange de stratégies concrètes pour le quotidien.",
+      "Les études montrent que ces offres entre pairs contribuent en particulier à réduire l’isolement social perçu, à mettre ses propres expériences en perspective et à alléger la charge psychosociale. Les formats numériques sont décrits comme particulièrement adaptés, car ils sont à bas seuil, flexibles dans le temps, utilisables partout et compatibles avec une forte charge quotidienne et de soins.",
+      "La participation directe des personnes atteintes de démence à des formats entre pairs reste en revanche limitée, en particulier aux stades avancés de la maladie, en raison de troubles cognitifs et de communication. La plupart des interventions entre pairs s’adressent donc en premier lieu aux proches. Parmi les obstacles décrits figurent aussi la qualité et la structure inégales des offres, les difficultés d’accès au numérique ainsi qu’une surcharge émotionnelle parfois liée à l’échange d’expériences éprouvantes. Si les effets psychosociaux à court terme sont bien documentés, les connaissances solides sur les effets à long terme restent rares (Carter et al., 2020; Pillemer & Suitor, 2002)."
+    ],
+    "sources": [
+      "Carter et al., 2020",
+      "Cui et al., 2025",
+      "Greenwood et al., 2013",
+      "Pillemer & Suitor, 2002"
+    ]
+  },
+  {
+    "key": "cf",
+    "label": "Mucoviscidose",
+    "finding": "Les formats numériques sont particulièrement précieux, car les rencontres sont souvent impossibles pour des raisons infectiologiques.",
+    "findingCite": "Jeffrey et al., 2020",
+    "groups": [
+      "Betroffene",
+      "Eltern"
+    ],
+    "formats": [
+      "Digital"
+    ],
+    "title": "Mucoviscidose",
+    "paragraphs": [
+      "Pour les personnes atteintes de mucoviscidose et leurs proches, les formats numériques entre pairs sont particulièrement pertinents, car les rencontres en personne sont souvent impossibles pour des raisons infectiologiques. Une étude qualitative et une évaluation de programme montrent que les enfants et adolescents concernés, comme les adultes atteints et les parents, utilisent des offres numériques entre pairs, en particulier des formats individuels et des possibilités d’échange en ligne (Jeffrey et al., 2020; Kirk & Milnes, 2016).",
+      "Parmi les bénéfices décrits figurent surtout le soutien social et émotionnel, le sentiment d’appartenance et l’échange d’expériences concrètes dans la gestion de la maladie. Les usages diffèrent selon le rôle et l’âge: les parents recourent au soutien entre pairs surtout pour gérer le quotidien des soins et se soulager émotionnellement, tandis que les enfants et adolescents atteints de mucoviscidose l’utilisent avant tout pour s’orienter socialement et normaliser leur propre situation. Les études présentent explicitement le soutien entre pairs comme une forme de soins complémentaire; les preuves solides d’effets cliniques ou à long terme restent limitées."
+    ],
+    "sources": [
+      "Jeffrey et al., 2020",
+      "Kirk & Milnes, 2016"
+    ]
+  },
+  {
+    "key": "onko",
+    "label": "Oncologie",
+    "finding": "Effets positifs sur la qualité de vie, l’auto-efficacité, la dépression et l’anxiété, généralement faibles à modérés.",
+    "findingCite": "Zhang et al., 2022; Kiemen et al., 2023",
+    "groups": [
+      "Betroffene"
+    ],
+    "formats": [
+      "Digital",
+      "Präsenz"
+    ],
+    "title": "Oncologie",
+    "paragraphs": [
+      "En oncologie, les interventions entre pairs sont étudiées depuis plusieurs décennies comme soutien psychosocial complémentaire à la prise en charge professionnelle. Les premières études sur les groupes d’entraide et de pairs chez des patientes atteintes d’un cancer du sein, ainsi que d’autres études randomisées et non randomisées, ont posé les bases d’une tradition de recherche qui n’a cessé de croître. Des revues systématiques récentes réunissent de nombreux essais contrôlés randomisés et montrent que la recherche porte principalement sur des résultats psychosociaux, en particulier la qualité de vie, la dépressivité, l’anxiété, la détresse, les stratégies d’adaptation et le soutien social perçu (Kiemen et al., 2023; Ziegler et al., 2022). Les critères cliniques comme la survie, la progression tumorale ou les paramètres somatiques sont en revanche rarement étudiés et ne constituent pas le critère principal dans la plupart des études (Kiemen et al., 2023).",
+      "Les formats d’intervention sont hétérogènes. Ils vont des groupes d’entraide classiques aux programmes par téléphone ou sur internet, jusqu’à des programmes structurés de mentorat et de coaching individuels (Kiemen et al., 2023). Les études de mise en œuvre et d’évaluation de programmes structurés font état d’une forte acceptation par les patients et d’une valeur ajoutée perçue grâce à l’échange fondé sur l’expérience (Salm et al., 2023; Valjanow & Weis, 2024). Ces études soulignent en même temps l’importance de rôles clairement définis, de formations standardisées et d’un ancrage professionnel.",
+      "Outre les études randomisées, il existe aussi des travaux observationnels. Une étude non randomisée chez des patientes atteintes d’un cancer du sein a mis en évidence un lien positif entre le conseil par les pairs et la qualité de vie rapportée, sans que le design de l’étude permette de conclusions causales (Giese-Davis et al., 2006). Dans l’ensemble, les revues systématiques font état d’effets faibles à modérés sur les critères psychosociaux, mais pas d’effets constants sur l’ensemble des résultats étudiés (Kiemen et al., 2023; Zhang et al., 2022)."
+    ],
+    "sources": [
+      "Kiemen et al., 2023",
+      "Ziegler et al., 2022",
+      "Salm et al., 2023",
+      "Valjanow & Weis, 2024",
+      "Giese-Davis et al., 2006",
+      "Zhang et al., 2022"
+    ]
+  },
+  {
+    "key": "adipositas",
+    "label": "Obésité",
+    "finding": "Les participants accompagnés par des pairs obtiennent une évolution du poids légèrement meilleure.",
+    "findingCite": "Chen et al., 2021",
+    "groups": [
+      "Betroffene",
+      "Jugendliche"
+    ],
+    "formats": [
+      "Präsenz"
+    ],
+    "title": "Obésité",
+    "paragraphs": [
+      "Dans le contexte de l’obésité, les interventions entre pairs sont surtout utilisées pour soutenir les changements de comportement et favoriser l’autogestion et la motivation. Une méta-analyse d’essais contrôlés randomisés montre que le soutien entre pairs chez les personnes en surpoids ou obèses est associé à une évolution du poids significativement meilleure. Comparés aux groupes témoins, les participants aux interventions entre pairs ont obtenu une perte de poids plus importante et une baisse légèrement plus marquée de l’indice de masse corporelle, ce qui indique un effet favorable de l’accompagnement par les pairs sur les comportements de santé (Chen et al., 2021).",
+      "Des effets positifs apparaissent aussi chez les adolescents obèses. Dans une étude où des pairs étaient intégrés à un programme multidisciplinaire de gestion du poids, les adolescents accompagnés par des pairs ont obtenu une réduction plus importante de l’IMC et du taux de masse grasse que les participants au traitement standard. L’activité physique a en outre augmenté significativement, et des facteurs psychosociaux comme l’auto-efficacité et la qualité de vie se sont nettement améliorés (Fonseca et al., 2014)."
+    ],
+    "sources": [
+      "Chen et al., 2021",
+      "Fonseca et al., 2014"
+    ]
+  },
+  {
+    "key": "familie",
+    "label": "Famille et parentalité",
+    "finding": "Renforce l’auto-efficacité parentale et apporte un soulagement émotionnel.",
+    "findingCite": "Cupples et al., 2011",
+    "groups": [
+      "Eltern"
+    ],
+    "formats": [
+      "Digital",
+      "Präsenz"
+    ],
+    "title": "Famille et parentalité",
+    "paragraphs": [
+      "Dans le domaine familial, les interventions entre pairs s’adressent surtout aux parents en situation difficile, dont les primo-parents, les familles monoparentales et les familles ayant un besoin de soutien accru. Les formats étudiés comprennent le mentorat individuel par des pairs, des programmes parentaux animés par des pairs, le soutien téléphonique entre pairs ainsi que des groupes numériques et des offres de mentorat en ligne.",
+      "Les études font état d’effets majoritairement positifs sur l’auto-efficacité parentale, le soulagement émotionnel, le soutien social et la gestion des exigences éducatives du quotidien (Cupples et al., 2011; Day et al., 2012; Friedman et al., 2018; January & Hurley, 2016; Saxena et al., 2020). Des études randomisées et évaluatives montrent que le mentorat par des pairs peut contribuer à renforcer les compétences parentales, en particulier chez les primo-parents et dans les programmes communautaires (Cupples et al., 2011; January & Hurley, 2016). Les formats numériques et téléphoniques sont décrits comme accessibles et faciles à concilier avec les obligations familiales, et atteignent aussi les pères ainsi que des publics difficiles à joindre (Andersson et al., 2024; Daynes-Kearney & Gallagher, 2023).",
+      "Parallèlement, des revues et des travaux qualitatifs soulignent une forte hétérogénéité des interventions et des résultats mesurés. Les preuves portent principalement sur des effets psychosociaux subjectifs, tandis que les conclusions solides sur les effets à long terme ou sur les résultats chez l’enfant restent limitées à ce jour (Chakraborti et al., 2021; Postma et al., 2024)."
+    ],
+    "sources": [
+      "Cupples et al., 2011",
+      "Day et al., 2012",
+      "Friedman et al., 2018",
+      "January & Hurley, 2016",
+      "Saxena et al., 2020",
+      "Andersson et al., 2024",
+      "Daynes-Kearney & Gallagher, 2023",
+      "Chakraborti et al., 2021",
+      "Postma et al., 2024"
+    ]
+  }
+]

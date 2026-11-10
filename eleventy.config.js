@@ -60,7 +60,8 @@ export default function (eleventyConfig) {
   // Übersetzt einen deutschen Text in die Sprache der Seite. Platzhalter {name} werden ersetzt.
   eleventyConfig.addFilter("t", function (text, vars) {
     const lang = currentLang(this.ctx);
-    let out = text;
+    // Ein Zusatz "|Kontext" unterscheidet gleiche deutsche Texte, die anders übersetzt werden
+    let out = typeof text === "string" ? text.replace(/\|[^|]*$/, "") : text;
     if (lang !== "de" && typeof text === "string" && text) {
       if (text in strings[lang]) out = strings[lang][text];
       else missing.add(`${lang}: ${text}`);
@@ -88,7 +89,9 @@ export default function (eleventyConfig) {
   eleventyConfig.addTransform("fr-typo", function (html) {
     if (!this.page.outputPath?.endsWith(".html") || !this.page.url?.startsWith("/fr/")) return html;
     const nb = " ";
-    return html.replace(/(<(script|style)[\s\S]*?<\/\2>)|(<[^>]+>)|([^<]+)/g, (m, block, _tag, tag, text) => {
+    // Literaturangaben (meist englische Titel) bleiben unverändert
+    const keep = /(<(script|style)[\s\S]*?<\/\2>|<ol class="refs[\s\S]*?<\/ol>|<div class="(?:src|cite)">[\s\S]*?<\/div>|<span class="cite">[\s\S]*?<\/span>)|(<[^>]+>)|([^<]+)/g;
+    return html.replace(keep, (m, block, _tag, tag, text) => {
       if (block || tag) return m;
       return text
         .replace(/[  ]*([;:!?])(?=\s|$|<|&|\)|»)/g, `${nb}$1`)

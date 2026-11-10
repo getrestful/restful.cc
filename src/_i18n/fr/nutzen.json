@@ -1,0 +1,44 @@
+{
+  "org": {
+    "tag": "Pour votre organisation de personnes concernées ou de patients",
+    "title": "Une nouvelle offre efficace, dont l’impact se démontre",
+    "items": [
+      {
+        "icon": "users",
+        "title": "Atteindre plus de personnes",
+        "text": "Une offre moderne et professionnelle, à votre nom et à votre image, qui atteint vos membres là où ils se trouvent. Sur une infrastructure sûre et évolutive en Suisse, qui grandit avec votre communauté de pairs."
+      },
+      {
+        "icon": "chart",
+        "title": "Démontrer l’impact",
+        "text": "Des évaluations issues de l’exploitation courante, pour le comité, les fondations et les rapports aux bailleurs de fonds."
+      },
+      {
+        "icon": "monitor",
+        "title": "Un effort prévisible",
+        "text": "Des étapes claires, des rôles clairs et un budget connu d’avance. Nous nous chargeons de la technique, de l’hébergement et de la maintenance."
+      }
+    ]
+  },
+  "mitglieder": {
+    "tag": "Pour vos membres et publics cibles",
+    "title": "Trouver quelqu’un qui comprend ce que l’on vit",
+    "items": [
+      {
+        "icon": "check",
+        "title": "Une mise en relation adaptée",
+        "text": "Des professionnels proposent une personne ayant vécu une expérience similaire. Pas de hasard, pas d’algorithme seul."
+      },
+      {
+        "icon": "shield",
+        "title": "Protégé et anonyme si souhaité",
+        "text": "Les membres décident eux-mêmes de ce qu’ils dévoilent."
+      },
+      {
+        "icon": "clock",
+        "title": "Quand et où cela convient",
+        "text": "En ligne, partout, y compris entre deux rendez-vous et à côté des soins, du travail ou de la famille."
+      }
+    ]
+  }
+}

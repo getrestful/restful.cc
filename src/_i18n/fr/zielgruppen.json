@@ -1,0 +1,516 @@
+[
+  {
+    "key": "spitaeler-und-arztpraxen",
+    "slug": "hopitaux-et-cabinets-medicaux",
+    "menu": "Hôpitaux et cabinets médicaux",
+    "art": 2,
+    "title": "Soutien entre pairs à l’hôpital et au cabinet médical · restful",
+    "description": "Des pairs accompagnent les patients avant, pendant et après un traitement et complètent la prise en charge médicale. Pour les hôpitaux, cliniques et cabinets médicaux.",
+    "label": "Pour les hôpitaux et cabinets médicaux",
+    "h1": "Un accompagnement qui se poursuit <i>après la consultation.</i>",
+    "sub": "La plupart des questions surgissent à la maison: après le diagnostic, avant l’intervention, à la sortie. Des personnes qui ont vécu le même traitement accompagnent vos patients précisément à ces moments-là. Sans temps de consultation supplémentaire et sans projet informatique.",
+    "reasonsTitle": "Ce que les pairs apportent <i>au parcours de soins</i>",
+    "reasonsIntro": "En consultation, il est question de résultats et de traitement. Mais la façon dont les patients vivent leur traitement se révèle souvent au quotidien: face aux peurs, aux effets secondaires, aux questions liées au travail et à la famille. C’est précisément là que des personnes qui l’ont vécu peuvent aider.",
+    "reasons": [
+      {
+        "title": "Aucun effort supplémentaire pour vous",
+        "text": "Une mention lors de l’entretien et un code QR sur un flyer suffisent. L’inscription, la mise en relation et l’accompagnement passent par la plateforme et un professionnel, pas par votre équipe soignante."
+      },
+      {
+        "title": "Sûr et clairement délimité",
+        "text": "Les pairs ne donnent pas de conseils médicaux. Ils sont préparés à leur rôle et, au moindre signe de crise, un professionnel est impliqué à tout moment."
+      },
+      {
+        "title": "Pas seul, même en dehors des consultations",
+        "text": "Beaucoup de questions surgissent entre deux rendez-vous. Les pairs sont joignables en ligne quand cela compte, afin que vos patients ne soient pas laissés seuls en dehors des consultations. C’est ainsi que nous avons réalisé le Swiss Sleep Circle avec l’Hôpital de l’Île à Berne."
+      }
+    ],
+    "stats": [
+      {
+        "value": "2,7 mio",
+        "text": "de personnes de 15 ans et plus vivent avec au moins une des cinq maladies non transmissibles les plus fréquentes, soit 37 % de la population.",
+        "source": "OFSP, chiffres et faits (données 2022)",
+        "url": "https://www.bag.admin.ch/de/zahlen-und-fakten-zu-nichtuebertragbaren-krankheiten"
+      },
+      {
+        "value": "72 %",
+        "text": "des coûts de la santé sont dus aux maladies non transmissibles comme le cancer, les maladies cardiovasculaires ou les troubles psychiques.",
+        "source": "OFSP, étude sur les coûts 2025 (données 2022)",
+        "url": "https://www.bag.admin.ch/de/studie-zu-den-kosten-nicht-uebertragbarer-krankheiten"
+      },
+      {
+        "value": "17 études",
+        "text": "le montrent pour le cancer: le soutien entre pairs améliore la qualité de vie et l’auto-efficacité et atténue la dépression et l’anxiété.",
+        "source": "Zhang et al., 2022, méta-analyse",
+        "url": "https://doi.org/10.1016/j.pec.2022.07.008"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Intégration",
+        "text": "Avec votre cabinet ou votre hôpital, nous définissons à quel moment du parcours de soins l’offre intervient, par exemple après le diagnostic, avant une intervention ou à la sortie. Et nous décidons ensemble comment les patients y accèdent: par un renvoi vers des offres de pairs existantes ou par un point d’entrée propre et co-brandé servant de centre d’information, avec des codes QR pour les flyers, la salle d’attente et l’entretien de sortie.",
+        "visual": "landing"
+      },
+      {
+        "title": "Inscription et mise en relation",
+        "text": "Les patients s’inscrivent gratuitement. Un professionnel les met en relation avec une personne ayant un diagnostic ou un traitement similaire. Avec à la clé: une protection des données et une sécurité totales pour les personnes concernées, un consentement éclairé clair (informed consent) et une délimitation nette par rapport au traitement au cabinet ou à l’hôpital.",
+        "visual": "match"
+      },
+      {
+        "title": "Évaluation et impact",
+        "text": "Les patients déterminent eux-mêmes la fréquence et le rythme des échanges. Des professionnels gardent une vue d’ensemble et restent joignables en tout temps en arrière-plan pour les questions ou en cas d’escalade. En continu, nous mesurons l’impact et assurons la qualité de l’offre.",
+        "visual": "dashboard"
+      }
+    ],
+    "evidence": [
+      {
+        "topic": "onko",
+        "label": "Oncologie",
+        "finding": "Le soutien entre pairs améliore la qualité de vie et l’auto-efficacité des personnes atteintes d’un cancer et atténue la dépression et l’anxiété.",
+        "cite": "Zhang et al., 2022, méta-analyse de 17 études",
+        "url": "https://doi.org/10.1016/j.pec.2022.07.008"
+      },
+      {
+        "topic": "cf",
+        "label": "Mucoviscidose",
+        "finding": "Les formats numériques sont particulièrement précieux, car les rencontres sont souvent impossibles pour des raisons infectiologiques.",
+        "cite": "Jeffrey et al., 2020",
+        "url": "https://doi.org/10.1177/2374373520974322"
+      }
+    ],
+    "reference": {
+      "title": "Références dans les soins",
+      "text": "<b>Swiss Sleep Circle</b> avec l’Hôpital de l’Île à Berne: blended stepped care de la détection précoce au traitement, conception et réalisation par restful. <b>CoPEER</b> avec Spitex Kriens: échanges pour les client·e·s et leurs proches.",
+      "logos": [
+        {
+          "file": "logo-inselspital.webp",
+          "alt": "Hôpital de l’Île"
+        },
+        {
+          "file": "logo-spitex-kriens.png",
+          "alt": "Spitex Kriens"
+        }
+      ]
+    },
+    "quote": {
+      "type": "testimonial"
+    },
+    "faq": [
+      {
+        "q": "Comment l’échange se distingue-t-il du traitement?",
+        "a": "Les pairs ne donnent pas de conseils médicaux, ils partagent leur expérience. C’est inscrit dans les règles de l’offre et fait partie de la préparation des pairs. Les questions médicales restent du ressort de votre équipe soignante."
+      },
+      {
+        "q": "Que se passe-t-il si une patiente va mal?",
+        "a": "Les pairs sont préparés à reconnaître leurs limites. Au moindre signe de crise, un professionnel est impliqué à tout moment et la patiente est orientée vers le bon interlocuteur."
+      },
+      {
+        "q": "Faut-il une connexion à notre système d’information clinique?",
+        "a": "Non. Pour démarrer, un lien ou un code QR suffit, par exemple sur des flyers, lors de l’entretien de sortie ou dans le portail patients. Nous examinons d’éventuelles connexions plus poussées au cas par cas."
+      },
+      {
+        "q": "L’offre existe-t-elle en plusieurs langues?",
+        "a": "Oui. Pour les offres destinées à plusieurs régions linguistiques, nous déclinons la plateforme en plusieurs langues."
+      },
+      {
+        "q": "Combien coûte un projet pilote?",
+        "a": "Cela dépend de l’ampleur, de la durée et de l’accompagnement. Après un rendez-vous, vous recevez une offre concrète. Pour les projets dans le domaine des soins, il existe des possibilités de financement, par exemple auprès de Promotion Santé Suisse."
+      }
+    ],
+    "commelia": null,
+    "hide": [
+      "trust",
+      "quote"
+    ]
+  },
+  {
+    "key": "industrie",
+    "slug": "industrie",
+    "menu": "Industrie et patient advocacy",
+    "art": 3,
+    "title": "Patient advocacy: offres de pairs avec l’industrie · restful",
+    "description": "Pour les départements de patient advocacy, restful développe des communautés de patients indépendantes de tout médicament et de tout produit, avec une séparation claire des rôles.",
+    "label": "Pour l’industrie et la patient advocacy",
+    "h1": "Construire des communautés de patients, <i>indépendantes de tout produit.</i>",
+    "sub": "Pour la patient advocacy, nous construisons des communautés autour d’une maladie, pas d’un médicament. Les personnes concernées y trouvent échanges et soutien, vous gagnez une compréhension plus profonde de leur quotidien.",
+    "reasonsTitle": "Ce qu’une communauté indépendante <i>vous apporte</i>",
+    "reasonsIntro": "Les patients veulent des échanges, pas de la publicité. Lorsqu’une communauté est indépendante et appartient aux personnes concernées, la confiance s’installe, et avec elle un regard honnête sur le quotidien avec la maladie.",
+    "reasons": [
+      {
+        "title": "Comprendre comment vont vraiment les personnes concernées",
+        "text": "Des sondages volontaires et anonymes au sein de la communauté révèlent les difficultés et les besoins du quotidien, au-delà des critères cliniques. Répétés, ils rendent visibles les évolutions dans le temps."
+      },
+      {
+        "title": "Crédible grâce à l’indépendance",
+        "text": "Indépendant de tout médicament, sans influence sur le contenu des échanges. Les rôles, le financement par multisponsoring et la visibilité sont fixés par écrit et en toute transparence. Cela protège les personnes concernées et votre réputation."
+      },
+      {
+        "title": "Accès aux organisations de patients",
+        "text": "Nous vous ouvrons l’accès à des organisations de patients qui portent l’offre avec vous. Nous apportons pour cela l’expérience de notre collaboration avec 13 organisations du système suisse de santé et du social."
+      },
+      {
+        "title": "Une éducation thérapeutique qui porte ses fruits",
+        "text": "Des connaissances sur la maladie, combinées au savoir expérientiel des pairs: les personnes concernées apprennent de celles qui se sont posé les mêmes questions. Cela renforce l’auto-efficacité."
+      },
+      {
+        "title": "Déployable à l’international",
+        "text": "Plateforme, modération et pairs d’un seul tenant: multilingue, pour des déploiements nationaux et extensible à l’international, avec un interlocuteur unique."
+      }
+    ],
+    "stats": [
+      {
+        "title": "Accès aux organisations",
+        "text": "restful collabore avec 13 organisations du système suisse de santé et du social et vous ouvre la voie vers les organisations de patients et les personnes concernées.",
+        "source": "",
+        "url": ""
+      },
+      {
+        "title": "Accompagnement scientifique et reporting actif de l’impact",
+        "text": "État de la recherche analysé pour 7 thématiques, recherche d’accompagnement avec une université et reporting régulier sur l’impact de l’offre.",
+        "source": "",
+        "url": ""
+      },
+      {
+        "title": "Un cadre de projet professionnel avec un partenaire établi",
+        "text": "Des rôles clairs, des processus éprouvés et un interlocuteur unique, de la première clarification à l’exploitation.",
+        "source": "",
+        "url": ""
+      }
+    ],
+    "steps": [
+      {
+        "title": "Clarification",
+        "text": "Nous définissons ensemble et par écrit la thématique, le public cible, les rôles et la gouvernance.",
+        "visual": "screen-1"
+      },
+      {
+        "title": "Partenariat",
+        "text": "Lorsque c’est pertinent, une organisation de patients porte l’offre. Nous accompagnons la collaboration dès le départ.",
+        "visual": "screen-2"
+      },
+      {
+        "title": "Mise en place",
+        "text": "Plateforme, modération et pairs, en plusieurs langues pour des déploiements nationaux.",
+        "visual": "screen-3"
+      },
+      {
+        "title": "Insights et reporting",
+        "text": "Des évaluations régulières et anonymisées et, si convenu, des sondages sur le quotidien et les besoins des personnes concernées.",
+        "visual": "report"
+      }
+    ],
+    "evidence": [
+      {
+        "topic": "digital",
+        "label": "Soutien numérique",
+        "finding": "Le soutien numérique entre pairs améliore nettement la santé psychique et modérément la santé physique, y compris à titre préventif.",
+        "cite": "Yeo et al., 2025, méta-analyse",
+        "url": "https://doi.org/10.1017/S2045796024000854"
+      }
+    ],
+    "reference": {
+      "title": "D’où vient notre expérience",
+      "text": "Nous collaborons avec 13 organisations du système suisse de santé et du social, des organisations de patients et ligues aux associations professionnelles, jusqu’à l’hôpital et l’aide et les soins à domicile. Nous en tirons notre expérience, sans citer ici d’organisations en particulier.",
+      "logos": []
+    },
+    "quote": {
+      "type": "statement",
+      "label": "Notre principe",
+      "text": "L’indépendance n’est pas négociable pour nous. L’offre appartient aux personnes concernées, pas à un produit."
+    },
+    "faq": [
+      {
+        "q": "Comment l’indépendance est-elle garantie?",
+        "a": "L’offre est indépendante de tout médicament. Votre entreprise n’a aucune influence sur le contenu des échanges et aucun accès aux données personnelles. Nous fixons ensemble et par écrit les rôles et les responsabilités dès le départ."
+      },
+      {
+        "q": "Notre entreprise voit-elle des données personnelles?",
+        "a": "Non. Vous recevez exclusivement des évaluations anonymisées et agrégées. Les sondages sont volontaires et anonymes."
+      },
+      {
+        "q": "Quels enseignements tirons-nous de la communauté?",
+        "a": "Des indicateurs agrégés sur l’utilisation et le bien-être et, si convenu, les résultats de sondages volontaires. Ce qui est évalué est défini avec l’organisation de patients. Les échanges restent confidentiels."
+      },
+      {
+        "q": "Notre entreprise est-elle visible dans l’offre?",
+        "a": "Nous le définissons ensemble. Il nous importe que le rôle de votre entreprise soit transparent pour les participants et que l’offre ne paraisse pas publicitaire."
+      },
+      {
+        "q": "Qui est notre interlocutrice?",
+        "a": "Lona Gaugler, Industry Lead chez restful, avec une formation en oncologie et en médecine moléculaire. Elle accompagne les projets avec l’industrie de la première clarification à l’exploitation."
+      }
+    ],
+    "commelia": null,
+    "cta2": "Voir les exemples",
+    "cases": [
+      {
+        "name": "MucoConnect",
+        "org": "Mucoviscidose Suisse",
+        "logo": "logo-mucoconnect.png",
+        "text": "Échanges entre pairs pour les personnes atteintes de mucoviscidose et leurs proches.",
+        "href": "https://cystischefibroseschweiz.ch/unterstuetzung-und-angebote/mucoconnect/"
+      },
+      {
+        "name": "Plateforme de pairs de la Ligue contre le cancer",
+        "org": "Ligue suisse contre le cancer",
+        "logo": "logo-krebsliga.webp",
+        "text": "Échanges pour les personnes touchées par le cancer et leurs proches.",
+        "href": "https://peerplattform.krebsliga.ch/"
+      },
+      {
+        "name": "Morbus Bechterew",
+        "org": "Société suisse de la spondylarthrite ankylosante",
+        "logo": "logo-svmb.png",
+        "text": "Projet commun pour davantage de mouvement au quotidien chez les personnes atteintes de spondylarthrite ankylosante.",
+        "href": "https://www.bechterew.ch/"
+      },
+      {
+        "name": "Europa Uomo Schweiz",
+        "org": "Europa Uomo Suisse",
+        "logo": "logo-europa-uomo.jpg",
+        "text": "Échanges pour les hommes atteints d’un cancer de la prostate et leurs proches.",
+        "href": "https://www.europa-uomo.ch/"
+      }
+    ],
+    "contactPerson": {
+      "name": "Lona Gaugler",
+      "role": "Industry Lead",
+      "img": "team-lona-gaugler.jpg",
+      "first": "Lona",
+      "email": "lona@getrestful.ch"
+    }
+  },
+  {
+    "key": "versicherer",
+    "slug": "assureurs",
+    "menu": "Assureurs",
+    "art": 4,
+    "title": "Soutien entre pairs pour les assureurs · restful",
+    "description": "L’échange entre personnes concernées comme intervention de santé à bas seuil, évolutive et mesurable pour les assureurs maladie et complémentaires.",
+    "label": "Pour les assureurs",
+    "h1": "Un soutien efficace <i>qui ménage les ressources.</i>",
+    "sub": "Les personnes vivant avec une maladie chronique, un diagnostic de cancer ou une charge psychique bénéficient de l’aide de celles qui connaissent cette situation. Comme prestation de votre programme de santé, le soutien entre pairs atteint de nombreux assurés: en ligne, efficace et avec un effort raisonnable.",
+    "reasonsTitle": "Pourquoi le soutien entre pairs <i>vaut la peine pour les assureurs</i>",
+    "reasonsIntro": "L’accompagnement psychosocial professionnel est rare et coûteux. Le soutien entre pairs le complète là où il fait défaut: au quotidien, entre deux rendez-vous et à bas seuil.",
+    "reasons": [
+      {
+        "title": "Une valeur ajoutée que les assurés ressentent",
+        "text": "Des personnes plutôt que des guides: les assurés perçoivent votre assurance comme une partenaire dans une phase de vie difficile. Cela renforce la fidélité, en particulier dans l’assurance complémentaire."
+      },
+      {
+        "title": "Efficacité démontrée",
+        "text": "Une méta-analyse de 73 études montre des effets nets du soutien numérique entre pairs sur la santé psychique, y compris chez des personnes sans diagnostic."
+      },
+      {
+        "title": "Efficient et évolutif",
+        "text": "Les pairs complètent les professionnels au lieu de les remplacer. En ligne et en plusieurs langues, vous atteignez de nombreux assurés avec un effort d’encadrement raisonnable."
+      },
+      {
+        "title": "Mesurable, dans l’esprit de la value-based healthcare",
+        "text": "Nous mesurons ce qui compte pour les assurés: des indicateurs anonymisés sur l’utilisation, la satisfaction et le soutien ressenti, complétés par des résultats rapportés par les patients comme la qualité de vie (PROMs). Le bénéfice pour la santé peut ainsi être mis en regard de l’effort, dans l’esprit de la value-based healthcare. Sur demande avec un accompagnement scientifique."
+      }
+    ],
+    "stats": [
+      {
+        "value": "109 mrd fr.",
+        "text": "c’est ce que coûtent chaque année à la Suisse les maladies non transmissibles, coûts de santé et pertes de production confondus.",
+        "source": "OFSP, étude sur les coûts 2025",
+        "url": "https://www.bag.admin.ch/de/studie-zu-den-kosten-nicht-uebertragbarer-krankheiten"
+      },
+      {
+        "value": "72 %",
+        "text": "des coûts de la santé sont dus aux maladies non transmissibles.",
+        "source": "OFSP, étude sur les coûts 2025 (données 2022)",
+        "url": "https://www.bag.admin.ch/de/studie-zu-den-kosten-nicht-uebertragbarer-krankheiten"
+      },
+      {
+        "value": "73 études",
+        "text": "le montrent: le soutien numérique entre pairs améliore nettement la santé psychique, y compris à titre préventif.",
+        "source": "Yeo et al., 2025, méta-analyse",
+        "url": "https://doi.org/10.1017/S2045796024000854"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Triage et orientation",
+        "text": "Les assurés accèdent à l’offre de deux manières: par une page d’accueil co-brandée que vous reliez à votre application client, à votre portail santé ou à votre newsletter, ou directement par votre case management, qui oriente de manière ciblée les assurés concernés vers l’offre. Nous définissons ensemble les groupes d’assurés visés.",
+        "visual": "landing-versicherer"
+      },
+      {
+        "title": "Inscription et mise en relation",
+        "text": "Les assurés s’inscrivent volontairement et gratuitement. Un professionnel les met en relation avec un pair ayant vécu une expérience similaire. Avec à la clé: une protection totale des données des assurés et un consentement éclairé clair (informed consent).",
+        "visual": "match"
+      },
+      {
+        "title": "Échanges, qualité et impact",
+        "text": "Les assurés échangent avec leur pair à leur propre rythme. Des professionnels assurent la qualité et restent joignables en tout temps en arrière-plan pour les questions. En continu, nous mesurons l’impact, avec sur demande un reporting anonymisé à votre assurance.",
+        "visual": "dashboard-versicherer"
+      }
+    ],
+    "evidence": [
+      {
+        "topic": "digital",
+        "label": "Soutien numérique",
+        "finding": "Le soutien numérique entre pairs améliore nettement la santé psychique et modérément la santé physique, y compris à titre préventif.",
+        "cite": "Yeo et al., 2025, méta-analyse",
+        "url": "https://doi.org/10.1017/S2045796024000854"
+      },
+      {
+        "topic": "psyche",
+        "label": "Troubles psychiques",
+        "finding": "Le soutien entre pairs atténue les symptômes dépressifs nettement mieux que la prise en charge habituelle.",
+        "cite": "Pfeiffer et al., 2011, méta-analyse d’études randomisées",
+        "url": "https://doi.org/10.1016/j.genhosppsych.2010.10.002"
+      }
+    ],
+    "reference": null,
+    "quote": {
+      "type": "testimonial"
+    },
+    "faq": [
+      {
+        "q": "Pour quelles maladies et quels thèmes l’offre est-elle adaptée?",
+        "a": "Le soutien entre pairs convient particulièrement aux maladies chroniques, comme le diabète, les maladies cardiovasculaires ou respiratoires, les rhumatismes, le cancer ou les troubles psychiques. La maladie accompagne alors le quotidien sur une longue période, et l’échange avec des personnes qui vivent avec elle renforce l’autogestion. L’offre s’intègre donc bien comme brique dans un programme existant de chronic disease management ou de disease management. Elle convient aussi aux proches aidants et aux assurés qui reprennent le travail après une longue maladie."
+      },
+      {
+        "q": "L’offre remplace-t-elle des prestations médicales?",
+        "a": "Non. L’accompagnement par les pairs complète les soins, il ne remplace aucun traitement."
+      },
+      {
+        "q": "Voyons-nous qui utilise l’offre?",
+        "a": "Non. Seuls des indicateurs anonymisés sont évalués. C’est voulu: la confidentialité est la condition pour que les assurés utilisent l’offre."
+      },
+      {
+        "q": "Existe-t-il des données sur le rapport coût-efficacité?",
+        "a": "L’efficacité du soutien entre pairs est bien établie, par exemple par une méta-analyse de 73 études sur le soutien numérique entre pairs (Yeo et al., 2025). Les données sur le rapport coût-efficacité restent encore minces. C’est pourquoi nous mesurons l’impact dans chaque offre et l’évaluons avec vous."
+      },
+      {
+        "q": "À quelle vitesse un pilote peut-il démarrer?",
+        "a": "Cela dépend du public cible et de l’accès. Lors d’un rendez-vous, nous établissons ensemble un calendrier concret."
+      }
+    ],
+    "commelia": null,
+    "hide": [
+      "trust",
+      "quote"
+    ]
+  },
+  {
+    "key": "iv-stellen",
+    "slug": "offices-ai",
+    "menu": "Offices AI",
+    "art": 1,
+    "title": "Accompagnement par les pairs pour les offices AI · restful",
+    "description": "Des pairs accompagnent les assurés pendant l’instruction, les mesures et la réinsertion et complètent le travail des spécialistes de la réadaptation. Pour les offices AI.",
+    "label": "Pour les offices AI",
+    "h1": "Qui l’a vécu <i>donne du courage pour l’étape suivante.</i>",
+    "sub": "Les pairs ont eux-mêmes vécu une réadaptation ou une crise similaire. Ils accompagnent les assurés de l’inscription à l’instruction, aux mesures et à la réinsertion, d’égal à égal et en dehors de l’administration, et les aident à surmonter peurs et honte face à l’institution.",
+    "reasonsTitle": "Ce que les pairs apportent <i>dans la procédure AI</i>",
+    "reasonsIntro": "La réadaptation réussit quand les assurés tiennent bon. Mais les instructions prennent du temps, les mesures sont exigeantes, et beaucoup vivent l’AI surtout comme une administration, parfois même comme une instance de contrôle impersonnelle. Les pairs créent la confiance, parce qu’ils ont eux-mêmes parcouru ce chemin.",
+    "reasons": [
+      {
+        "title": "Une confiance venue de l’extérieur",
+        "text": "Les assurés peuvent parler de leurs peurs et de leurs doutes avec les pairs. Ce qu’ils racontent est traité de manière confidentielle."
+      },
+      {
+        "title": "Tenir bon quand c’est difficile",
+        "text": "Qui a réussi sa réinsertion donne du courage, en particulier lors de revers ou quand les choses semblent particulièrement difficiles."
+      },
+      {
+        "title": "S’orienter dans la procédure",
+        "text": "Les pairs expliquent par expérience comment se déroulent l’instruction, les mesures et les entretiens, et dissipent ainsi beaucoup d’incertitudes."
+      },
+      {
+        "title": "Adapté aux jeunes et aux assurés en difficulté psychique",
+        "text": "En ligne, à bas seuil et à son propre rythme: l’offre atteint ainsi précisément les groupes sur lesquels l’AI met actuellement l’accent."
+      },
+      {
+        "title": "Des rôles clairs, des spécialistes soulagés",
+        "text": "Les pairs ne conseillent pas sur les questions d’assurance, les décisions restent du ressort de l’office AI. Les questions du quotidien et les soucis sont confiés aux pairs, afin que les spécialistes retrouvent du temps pour leurs tâches principales."
+      }
+    ],
+    "stats": [
+      {
+        "value": "55 %",
+        "text": "des personnes en mesures de réadaptation professionnelle de l’AI souffrent d’un trouble psychique, et 64 % chez les jeunes.",
+        "source": "OFAS, chiffres 2025",
+        "url": "https://www.swissinfo.ch/ger/zahl-der-iv-eingliederungsmassnahmen-steigt-weiter-an/91804196"
+      },
+      {
+        "value": "61'000",
+        "text": "personnes ont participé en 2025 à des mesures de réadaptation professionnelle, plus de trois fois plus qu’en 2008.",
+        "source": "OFAS, chiffres 2025",
+        "url": "https://www.swissinfo.ch/ger/zahl-der-iv-eingliederungsmassnahmen-steigt-weiter-an/91804196"
+      },
+      {
+        "value": "180",
+        "text": "nouvelles rentes AI pour cause de trouble psychique pour 100’000 habitantes et habitants (2024). En 2014, elles étaient 110.",
+        "source": "OFAS, document de référence 2026",
+        "url": "https://www.bsv.admin.ch/dam/de/sd-web/eKErKnviU85w/20260212_BSV%20Hintergrunddokument%20Anstieg%20Renten%20IV%20bf.pdf"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Orientation",
+        "text": "Le ou la spécialiste de la réadaptation recommande l’offre, la personne assurée s’inscrit volontairement.",
+        "visual": "screen-2"
+      },
+      {
+        "title": "Mise en relation",
+        "text": "Un professionnel met en relation avec un pair ayant vécu une expérience similaire, par exemple du même secteur, avec un diagnostic similaire ou dans une phase de vie comparable.",
+        "visual": "screen-3"
+      },
+      {
+        "title": "Accompagnement",
+        "text": "Des échanges pendant l’instruction, la mesure et la réinsertion, en ligne et à son propre rythme.",
+        "visual": "chat"
+      },
+      {
+        "title": "Évaluation",
+        "text": "L’office AI reçoit des indicateurs anonymisés sur l’utilisation et la satisfaction.",
+        "visual": "report"
+      }
+    ],
+    "evidence": [
+      {
+        "topic": "psyche",
+        "label": "Troubles psychiques",
+        "finding": "Le soutien entre pairs atténue les symptômes dépressifs nettement mieux que la prise en charge habituelle.",
+        "cite": "Pfeiffer et al., 2011, méta-analyse d’études randomisées",
+        "url": "https://doi.org/10.1016/j.genhosppsych.2010.10.002"
+      }
+    ],
+    "reference": null,
+    "quote": {
+      "type": "statement",
+      "label": "Pourquoi les pairs agissent",
+      "text": "Un pair est la preuve vivante que le rétablissement, la participation à la société et une vie active sont à nouveau possibles après des crises ou des maladies graves."
+    },
+    "faq": [
+      {
+        "q": "La participation est-elle volontaire?",
+        "a": "Oui. Les assurés décident eux-mêmes s’ils utilisent l’offre et pendant combien de temps."
+      },
+      {
+        "q": "Pour quels assurés l’offre est-elle adaptée?",
+        "a": "Pour les assurés en intervention précoce, en mesures de réinsertion ou en mesures professionnelles, en particulier en cas de charge psychique et chez les jeunes adultes."
+      },
+      {
+        "q": "Les pairs sont-ils des collaborateurs de l’AI?",
+        "a": "Cela dépend du modèle qui convient à votre office AI. Dans le cas le plus simple, restful met à disposition un pool de pairs expérimentés. Ils se situent en dehors de la procédure, et c’est précisément ce qui crée la confiance chez les assurés. Si vous souhaitez ancrer durablement le travail entre pairs dans votre office AI, nous vous aidons à recruter des collaborateurs ayant une expérience vécue et à constituer votre propre pool. Des formes mixtes sont aussi possibles. Dans tous les cas, nous préparons les pairs à leur rôle et les accompagnons."
+      },
+      {
+        "q": "L’office AI apprend-il ce qui est dit lors des échanges?",
+        "a": "Non. Les échanges sont confidentiels. L’office AI ne reçoit que des indicateurs anonymisés sur l’utilisation et la satisfaction."
+      },
+      {
+        "q": "Comment l’offre est-elle financée?",
+        "a": "Nous le clarifions ensemble, par exemple au moyen d’un pilote limité dans le temps. Lors d’un rendez-vous, nous vous montrons quelles variantes entrent en ligne de compte pour votre office AI."
+      }
+    ],
+    "commelia": null,
+    "hide": [
+      "trust"
+    ]
+  }
+]

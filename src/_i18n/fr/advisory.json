@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Felix Muff",
+    "role": "Président du conseil d’administration de Concordia Assurances",
+    "img": "advisory-felix-muff.png"
+  },
+  {
+    "name": "Dr. med. Christoph Hamann",
+    "role": "Responsable de la psychosomatique de l’enfant et de l’adolescent, Hôpital de l’Île",
+    "img": "advisory-christoph-hamann.png"
+  },
+  {
+    "name": "Flavia Wasserfallen",
+    "role": "Conseillère aux États PS (Berne), présidente de l’Alliance Santé Suisse, présidente de la GELIKO",
+    "img": "advisory-flavia-wasserfallen.png"
+  },
+  {
+    "name": "Melanie Mettler",
+    "role": "Directrice des finances de la Ville de Berne, comité de patronage d’Info-Entraide Suisse",
+    "img": "advisory-melanie-mettler.png"
+  },
+  {
+    "name": "Felix Wettstein",
+    "role": "Conseiller national Verts (Soleure), président de pro-salute, conseil d’experts de Santé publique Suisse",
+    "img": "advisory-felix-wettstein.jpg"
+  },
+  {
+    "name": "Andrea Jansen",
+    "role": "Investisseuse, membre du conseil d’Aepsy, mal ehrlich",
+    "img": "advisory-andrea-jansen.jpg"
+  },
+  {
+    "name": "Christian Hirsig",
+    "role": "Entrepreneur, fondateur de PowerCoders & high-five.ai",
+    "img": "advisory-christian-hirsig.png"
+  }
+]

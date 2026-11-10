@@ -1,0 +1,88 @@
+[
+  {
+    "name": "MucoConnect de Mucoviscidose Suisse",
+    "desc": "Pour les personnes atteintes de mucoviscidose et leurs proches.",
+    "href": "https://cystischefibroseschweiz.ch/unterstuetzung-und-angebote/mucoconnect/",
+    "logo": "logo-mucoconnect.png",
+    "startseite": 2
+  },
+  {
+    "name": "demenz:miteinander de Demenzworld",
+    "desc": "Pour les proches de personnes atteintes de démence",
+    "href": "https://demenzworld.com/demenzmiteinander/",
+    "logo": "logo-demenzworld.png"
+  },
+  {
+    "name": "Offre de pairs de la Ligue suisse contre le cancer",
+    "desc": "Mesure de l’impact de la plateforme de pairs pour les personnes touchées par le cancer et leurs proches",
+    "href": "https://peerplattform.krebsliga.ch/",
+    "logo": "logo-krebsliga.webp",
+    "startseite": 1
+  },
+  {
+    "name": "Hôpital de l’Île, Berne",
+    "desc": "Swiss Sleep Circle: prévention numérique, détection précoce et traitement blended stepped care des troubles du sommeil et de l’éveil",
+    "href": "https://gesundheitsfoerderung.ch/praevention-in-der-gesundheitsversorgung-pgv/projektfoerderung/gefoerderte-projekte/swiss-sleep",
+    "logo": "logo-inselspital.webp",
+    "startseite": 3
+  },
+  {
+    "name": "CerebralConnect de la Fondation Cerebral",
+    "desc": "Pour les proches de personnes atteintes d’un handicap moteur cérébral",
+    "href": "#",
+    "logo": "logo-cerebral.webp",
+    "startseite": 4
+  },
+  {
+    "name": "Plateforme suisse PPIE (OSP)",
+    "desc": "Plateforme pour promouvoir l’implication des personnes concernées, des proches et de la population",
+    "href": "#",
+    "logo": "logo-spo.webp",
+    "startseite": 6
+  },
+  {
+    "name": "SVAMV Peer de la Fédération suisse des familles monoparentales",
+    "desc": "Pour les parents élevant seuls leurs enfants",
+    "href": "https://svamv.ch/thema/svamvpeer/",
+    "logo": "logo-svamv.svg"
+  },
+  {
+    "name": "Procap",
+    "desc": "Pour les personnes en situation de handicap et leurs proches",
+    "href": "#",
+    "logo": "logo-procap.png",
+    "startseite": 5
+  },
+  {
+    "name": "Schweizerische Gemeinschaft verwaister Eltern (SGVE)",
+    "desc": "Pour les parents après la perte d’un enfant",
+    "href": "#",
+    "logo": "logo-sgve.jpg"
+  },
+  {
+    "name": "Peer-Pool de Frühchen & Neokinder Schweiz",
+    "desc": "Pour les parents et proches de nouveau-nés malades et de prématurés",
+    "href": "#",
+    "logo": "logo-fruehchen-neokinder.png"
+  },
+  {
+    "name": "CoPEER de Spitex Kriens",
+    "desc": "Pour les client·e·s et proches de Spitex Kriens",
+    "href": "#",
+    "logo": "logo-spitex-kriens.png",
+    "startseite": 8
+  },
+  {
+    "name": "Schweizerischer Fachverband Beratung Frühe Kindheit (SF BFK)",
+    "desc": "Conseil national par chat pour les parents d’enfants de 0 à 5 ans",
+    "href": "#",
+    "logo": "logo-sf-bfk.png"
+  },
+  {
+    "name": "Société suisse de la spondylarthrite ankylosante (SSSA)",
+    "desc": "Projet commun pour davantage de mouvement au quotidien chez les personnes atteintes de spondylarthrite ankylosante, soutenu par le laboratoire d’innovation lab7x1 de l’Office fédéral du sport",
+    "href": "https://www.bechterew.ch/",
+    "logo": "logo-svmb.png",
+    "startseite": 7
+  }
+]

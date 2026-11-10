@@ -1,0 +1,64 @@
+{
+  "organisation": [
+    {
+      "title": "Review requests and match",
+      "text": "See new requests, suggest suitable peers and approve matches."
+    },
+    {
+      "title": "Overview of peers and members",
+      "text": "Who is active, who is waiting for a match? All in one place."
+    },
+    {
+      "title": "Confidential exchange",
+      "text": "Messages only reach your own match. Members can use a pseudonym."
+    },
+    {
+      "title": "Measure impact",
+      "text": "Key figures and surveys for your reports and funders."
+    },
+    {
+      "title": "In your branding",
+      "text": "Your own logo, colours and address. Multilingual for national programmes."
+    }
+  ],
+  "nutzerin": [
+    {
+      "title": "Easy to get started",
+      "text": "Register and describe your situation in a short questionnaire. Anonymously or under a pseudonym."
+    },
+    {
+      "title": "The right peer",
+      "text": "A professional from the organisation reviews the request and connects you with someone who has had a similar experience."
+    },
+    {
+      "title": "Exchange at your own pace",
+      "text": "Confidentially in the platform chat, with email notifications. Later, if you like, also by phone, video or in person."
+    },
+    {
+      "title": "Help when more is needed",
+      "text": "For complex issues, the path leads to your organisation’s professional counselling."
+    }
+  ],
+  "aufgaben": [
+    {
+      "icon": "server",
+      "title": "Operation and hosting",
+      "text": "We host the platform with an ISO 27001-certified provider in Switzerland and make sure it runs reliably. The data never leaves Switzerland and the EU."
+    },
+    {
+      "icon": "refresh",
+      "title": "Maintenance and development",
+      "text": "Updates, security and new features come from us continuously, with no effort on your part."
+    },
+    {
+      "icon": "shield",
+      "title": "Data protection",
+      "text": "In line with the Swiss Federal Act on Data Protection (FADP). Members decide for themselves what they share and can remain anonymous."
+    },
+    {
+      "icon": "palette",
+      "title": "Your branding",
+      "text": "Your logo, your colours, your address. For national programmes, we implement the platform in several languages."
+    }
+  ]
+}

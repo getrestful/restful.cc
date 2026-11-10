@@ -1,0 +1,122 @@
+{
+  "papers": [
+    {
+      "type": "Meta-analysis · 2025",
+      "finding": "Digital peer support clearly improves mental health and moderately improves physical health, including as prevention.",
+      "detail": "73 studies on mental health and 47 studies on physical health were analysed. The authors see it as a scalable, preventive intervention.",
+      "cite": "Yeo, Fortuna, Lansford & Rudolph (2025)",
+      "title": "The effects of digital peer support interventions on physical and mental health: a review and meta-analysis",
+      "journal": "Epidemiology and Psychiatric Sciences, 34, e9",
+      "url": "https://doi.org/10.1017/S2045796024000854",
+      "tone": "sand"
+    },
+    {
+      "type": "Meta-analysis of randomised trials",
+      "finding": "Peer support relieves depressive symptoms significantly better than usual care.",
+      "detail": "7 randomised trials with 869 participants. Compared with group cognitive behavioural therapy, there was no significant difference.",
+      "cite": "Pfeiffer, Heisler, Piette, Rogers & Valenstein (2011)",
+      "title": "Efficacy of peer support interventions for depression: a meta-analysis",
+      "journal": "General Hospital Psychiatry, 33, 29-36",
+      "url": "https://doi.org/10.1016/j.genhosppsych.2010.10.002",
+      "tone": "lav"
+    }
+  ],
+  "einordnung": [
+    {
+      "title": "Shared lived experience",
+      "text": "People with similar experiences support each other as equals, based on empathy and mutual help (Penney, 2018a)."
+    },
+    {
+      "title": "A complement, not a replacement",
+      "text": "Peer support does not replace medical, therapeutic or psychological treatment. It complements it."
+    },
+    {
+      "title": "A biopsychosocial view",
+      "text": "Health as the interplay of biological, psychological and social factors (Engel, 1977). Low-threshold services are often missing, especially when it comes to social integration."
+    }
+  ],
+  "einordnungText": [
+    "Peer support refers to a process in which people with shared experiences or similar health or social challenges come together as equals to support one another (Penney, 2018a). A peer is a person on an equal footing with a similar life situation, social background or experience (of illness). Support describes a relationship based on empathy, encouragement and mutual help (Penney, 2018a).",
+    "In Switzerland, the term peer is not yet protected or uniformly defined. Accordingly, peer support is understood and implemented differently in practice and research. The literature describes various peer approaches, including peer support, peer education, peer coaching and peer counselling, which differ in their objectives, understanding of roles, proximity to professional services and degree of structure (Dennis, 2003; Solomon, 2004).",
+    "Shared lived experience is central to all peer approaches. Peer support is not based on diagnostic models or professional roles, but on empathic understanding through shared burdens and challenges (Mead et al., 2001). The exchange takes place on an equal footing and deliberately differs from traditional therapeutic services.",
+    "Peer support does not replace medical, therapeutic or psychological treatment. At restful too, it is understood as a complementary form of support that meaningfully adds to professional care.",
+    "Historically, the peer approach did not originate in conventional medicine but in the self-help, civil rights and recovery movements. From the 1930s onwards, the first organised forms of mutual support emerged, for example in self-help groups such as Alcoholics Anonymous. The core idea was that shared experience is a form of knowledge in its own right and should not be seen merely as a deficit (Borkman, 1976; Penney, 2018b). From the 1980s and 1990s, peer support was increasingly described scientifically and grounded in theory as a reciprocal support process based on equality and empowerment (Penney, 2018b; Solomon, 2004).",
+    "At restful, we follow the biopsychosocial model (Engel, 1977), which sees health as the interplay of biological, psychological and social factors. Switzerland has high-quality medical and therapeutic care. At the same time, research and practice show that complementary, low-threshold services are lacking, particularly in continuous psychosocial support, coping with everyday life and social integration. We therefore see digital peer support as a preventive complement to existing care."
+  ],
+  "methode": [
+    {
+      "title": "Review the evidence",
+      "text": "For each topic, we research what works and where the limits are."
+    },
+    {
+      "title": "Proven formats",
+      "text": "Formats, roles and processes from our playbook, adapted to your organisation."
+    },
+    {
+      "title": "Careful matching",
+      "text": "Professionals guide the matching instead of leaving it to an algorithm."
+    },
+    {
+      "title": "Measure impact",
+      "text": "Data from day-to-day operation, analysed together with you."
+    }
+  ],
+  "forschung": [
+    {
+      "title": "Impact measurement",
+      "text": "We collect data from the day-to-day operation of the programmes and analyse it together with our partner organisations. This makes it possible to see whether and how a programme works for participants.",
+      "tone": "sand"
+    },
+    {
+      "title": "Accompanying research",
+      "text": "Together with a university, we are conducting accompanying scientific research on our work (process research). We will publish the results once the study is complete.",
+      "tone": "lav"
+    }
+  ],
+  "quellen": [
+    {
+      "ref": "Carter, G., Monaghan, C., & Santin, O. (2020). What is known from the existing literature about peer support interventions for carers of individuals living with dementia: A scoping review. Health & Social Care in the Community, 28, 1134-1151.",
+      "url": "https://doi.org/10.1111/hsc.12944"
+    },
+    {
+      "ref": "Chen, Y., Li, Z., Yang, Q., Yang, S., Dou, C., Zhang, T., & Guan, B. (2021). The effect of peer support on individuals with overweight and obesity: A meta-analysis. Iranian Journal of Public Health, 50, 2439-2450.",
+      "url": "https://doi.org/10.18502/ijph.v50i12.7926"
+    },
+    {
+      "ref": "Fortuna, K. L., Naslund, J. A., LaCroix, J. M., Bianco, C. L., Brooks, J. M., Zisman-Ilani, Y., Muralidharan, A., & Deegan, P. (2020). Digital peer support mental health interventions for people with a lived experience of a serious mental illness: Systematic review. JMIR Mental Health, 7, e16460.",
+      "url": "https://doi.org/10.2196/16460"
+    },
+    {
+      "ref": "Jeffrey, A., Andracchio, L., Dvorak, M., Lomas, P., Smith, B., & Borowitz, D. (2020). Virtual peer support for people with cystic fibrosis and their family members: A program evaluation. Journal of Patient Experience, 7, 1748-1754.",
+      "url": "https://doi.org/10.1177/2374373520974322"
+    },
+    {
+      "ref": "Kiemen, A., Czornik, M., & Weis, J. (2023). How effective is peer-to-peer support in cancer patients and survivors? A systematic review. Journal of Cancer Research and Clinical Oncology, 149, 9461-9485.",
+      "url": "https://doi.org/10.1007/s00432-023-04753-8"
+    },
+    {
+      "ref": "Pfeiffer, P. N., Heisler, M., Piette, J. D., Rogers, M. A., & Valenstein, M. (2011). Efficacy of peer support interventions for depression: A meta-analysis. General Hospital Psychiatry, 33, 29-36.",
+      "url": "https://doi.org/10.1016/j.genhosppsych.2010.10.002"
+    },
+    {
+      "ref": "Yeo, G., Fortuna, K. L., Lansford, J. E., & Rudolph, K. D. (2025). The effects of digital peer support interventions on physical and mental health: A review and meta-analysis. Epidemiology and Psychiatric Sciences, 34, e9.",
+      "url": "https://doi.org/10.1017/S2045796024000854"
+    },
+    {
+      "ref": "Zhang, S., Li, J., & Hu, X. (2022). Peer support interventions on quality of life, depression, anxiety, and self-efficacy among patients with cancer: A systematic review and meta-analysis. Patient Education and Counseling, 105, 3213-3224.",
+      "url": "https://doi.org/10.1016/j.pec.2022.07.008"
+    }
+  ],
+  "filter": {
+    "groups": [
+      "Betroffene",
+      "Angehörige",
+      "Eltern",
+      "Jugendliche"
+    ],
+    "formats": [
+      "Digital",
+      "Präsenz"
+    ]
+  }
+}

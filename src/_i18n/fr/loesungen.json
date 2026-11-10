@@ -1,0 +1,61 @@
+[
+  {
+    "key": "peer-plattform",
+    "title": "Plateforme de pairs",
+    "text": "Réunir des personnes ayant vécu une expérience similaire: à votre nom, avec une mise en relation soignée et une mesure de l’impact.",
+    "url": "/loesungen/peer-plattform/",
+    "tone": "sand",
+    "mock": {
+      "back": {
+        "img": "mock-peer-admin.webp",
+        "w": 1000,
+        "h": 722,
+        "alt": "Gestion d’une communauté de pairs avec sondages et mise en relation"
+      },
+      "front": {
+        "type": "phone",
+        "img": "vision-screen-1.jpg",
+        "w": 640,
+        "h": 1170,
+        "alt": "Page d’accueil d’une offre de pairs sur smartphone"
+      }
+    }
+  },
+  {
+    "key": "commelia",
+    "title": "Commelia: conseil par chat",
+    "text": "Répondre aux questions rapidement et personnellement: chat web, e-mail et WhatsApp dans une seule boîte de réception, avec l’aide de l’IA.",
+    "url": "/loesungen/commelia/",
+    "tone": "lav",
+    "mock": {
+      "back": {
+        "img": "mock-commelia-reports.webp",
+        "w": 1000,
+        "h": 722,
+        "alt": "Évaluations dans Commelia par groupe, canal et thème"
+      },
+      "front": {
+        "type": "card",
+        "img": "mock-commelia-chat.webp",
+        "w": 640,
+        "h": 529,
+        "alt": "Chat dans Commelia: l’IA répond à une question de parents et passe le relais au service de conseil"
+      }
+    }
+  },
+  {
+    "key": "patientenpfade",
+    "title": "Parcours patients numériques",
+    "text": "Des projets sur mesure pour les hôpitaux et institutions, par exemple le Swiss Sleep Circle avec l’Hôpital de l’Île à Berne.",
+    "url": "/loesungen/patientenpfade/",
+    "tone": "white",
+    "mock": {
+      "back": {
+        "img": "mock-mysleep.webp",
+        "w": 1000,
+        "h": 748,
+        "alt": "Vue d’ensemble de mySleep avec la prochaine séance de groupe"
+      }
+    }
+  }
+]

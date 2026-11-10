@@ -65,7 +65,7 @@ description: "Das Team von restful und das Netzwerk, das uns begleitet: Soziale 
     {%- else %}
     <div class="jobs-empty">
       <p>{{ "Aktuell sind keine Stellen offen. Neue Stellen veröffentlichen wir auf {link}." | t({ link: '<a href="' + site.jobsUrl + '" target="_blank" rel="noopener">join.com</a>' }) | safe }}</p>
-      <p>{{ "Du möchtest trotzdem mit uns arbeiten? Schreib uns eine {link}." | t({ link: '<a href="mailto:' + site.email + '">' + ("E-Mail" | t) + '</a>' }) | safe }}</p>
+      <p>{{ "Du möchtest trotzdem mit uns arbeiten? Schreib uns eine {link}." | t({ link: '<a href="mailto:' + site.email + '">' + ("E-Mail|im Satz" | t) + '</a>' }) | safe }}</p>
     </div>
     {%- endif %}
   </div>

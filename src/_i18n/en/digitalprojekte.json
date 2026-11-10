@@ -1,0 +1,55 @@
+{
+  "services": [
+    {
+      "title": "Analyse the pathway",
+      "text": "Where do patients drop out, where is support missing?"
+    },
+    {
+      "title": "Design blended care",
+      "text": "Combine digital and personal steps in a meaningful way."
+    },
+    {
+      "title": "Develop and operate",
+      "text": "Design, technology and operation from a single source."
+    },
+    {
+      "title": "Secure in healthcare",
+      "text": "Sensitive data, multiple languages, many stakeholders."
+    }
+  ],
+  "case": {
+    "title": "Swiss Sleep Circle",
+    "logo": "logo-inselspital.webp",
+    "logoAlt": "Inselspital",
+    "url": "https://gesundheitsfoerderung.ch/praevention-in-der-gesundheitsversorgung-pgv/projektfoerderung/gefoerderte-projekte/swiss-sleep",
+    "rows": [
+      {
+        "term": "Brief",
+        "text": "Reach people with sleep-wake disorders digitally, from early detection to treatment (blended stepped care)."
+      },
+      {
+        "term": "Client",
+        "text": "Swiss Sleep House Bern, Department of Neurology, Inselspital, Bern University Hospital"
+      },
+      {
+        "term": "Funding",
+        "text": "Health Promotion Switzerland, “Prevention in Healthcare” project funding"
+      },
+      {
+        "term": "restful",
+        "text": "Concept, design and complete technical implementation of the digital platform"
+      }
+    ]
+  },
+  "commelia": {
+    "url": "https://commelia.ch/de",
+    "image": "commelia-chat.png",
+    "imageAlt": "Example of a conversation in Commelia: the AI answers a parent’s question and hands over to a counsellor",
+    "items": [
+      "Web chat, email and WhatsApp in one calm inbox",
+      "Professionals and peers answer together, an AI assistant handles routine questions",
+      "For sensitive topics or signs of crisis, the AI immediately hands over to a human",
+      "Hosted in Switzerland or on your own server"
+    ]
+  }
+}

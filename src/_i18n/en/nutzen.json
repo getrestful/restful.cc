@@ -1,0 +1,44 @@
+{
+  "org": {
+    "tag": "For your patient or self-help organisation",
+    "title": "A new programme that works and proves its impact",
+    "items": [
+      {
+        "icon": "users",
+        "title": "Reach more people",
+        "text": "A modern, professional programme under your name and brand that reaches members where they are. On secure, scalable infrastructure in Switzerland that grows with your peer community."
+      },
+      {
+        "icon": "chart",
+        "title": "Prove your impact",
+        "text": "Reports from day-to-day operation, for your board, foundations and funding reports."
+      },
+      {
+        "icon": "monitor",
+        "title": "Predictable effort",
+        "text": "Clear steps, clear roles and a budget you know in advance. We take care of the technology, hosting and maintenance."
+      }
+    ]
+  },
+  "mitglieder": {
+    "tag": "For your members and target groups",
+    "title": "Finding someone who understands what it’s like",
+    "items": [
+      {
+        "icon": "check",
+        "title": "Thoughtfully matched",
+        "text": "Professionals suggest a person with a similar experience. Not chance, not an algorithm alone."
+      },
+      {
+        "icon": "shield",
+        "title": "Protected and anonymous if preferred",
+        "text": "Members decide for themselves what they share."
+      },
+      {
+        "icon": "clock",
+        "title": "Whenever and wherever it suits",
+        "text": "Online and from anywhere, including between appointments and alongside care, work or family."
+      }
+    ]
+  }
+}

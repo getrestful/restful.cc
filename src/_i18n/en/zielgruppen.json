@@ -1,0 +1,516 @@
+[
+  {
+    "key": "spitaeler-und-arztpraxen",
+    "slug": "hospitals-and-medical-practices",
+    "menu": "Hospitals and medical practices",
+    "art": 2,
+    "title": "Peer support in hospitals and medical practices · restful",
+    "description": "Peers support patients before, during and after treatment and complement medical care. For hospitals, clinics and medical practices.",
+    "label": "For hospitals and medical practices",
+    "h1": "Support that continues <i>after the consultation.</i>",
+    "sub": "Most questions only come up at home: after the diagnosis, before surgery, at discharge. People who have been through the same treatment support your patients at exactly these moments. Without extra consultation time and without an IT project.",
+    "reasonsTitle": "What peers achieve <i>in the care pathway</i>",
+    "reasonsIntro": "Consultations are about findings and therapy. But how patients are coping with treatment often only becomes clear in everyday life: with fears, side effects, questions about work and family. This is exactly where people who have been through it can help.",
+    "reasons": [
+      {
+        "title": "No extra work for you",
+        "text": "A mention in conversation and a QR code on a flyer are all it takes. Registration, matching and support run through the platform and a professional, not through your care team."
+      },
+      {
+        "title": "Safe and clearly defined",
+        "text": "Peers do not give medical advice. They are prepared for their role, and at any sign of crisis a professional is brought in at any time."
+      },
+      {
+        "title": "Not alone, even outside consultation hours",
+        "text": "Many questions only come up between two appointments. Peers can be reached online when it matters, so your patients are not left alone outside consultation hours either. This is how we built the Swiss Sleep Circle with Bern University Hospital (Inselspital)."
+      }
+    ],
+    "stats": [
+      {
+        "value": "2.7 million",
+        "text": "people aged 15 and over live with at least one of the five most common non-communicable diseases, 37% of the population.",
+        "source": "FOPH, facts and figures (2022 data)",
+        "url": "https://www.bag.admin.ch/de/zahlen-und-fakten-zu-nichtuebertragbaren-krankheiten"
+      },
+      {
+        "value": "72 %",
+        "text": "of healthcare costs are due to non-communicable diseases such as cancer, cardiovascular disease or mental illness.",
+        "source": "FOPH, cost study 2025 (2022 data)",
+        "url": "https://www.bag.admin.ch/de/studie-zu-den-kosten-nicht-uebertragbarer-krankheiten"
+      },
+      {
+        "value": "17 studies",
+        "text": "show for cancer: peer support improves quality of life and self-efficacy and relieves depression and anxiety.",
+        "source": "Zhang et al., 2022, meta-analysis",
+        "url": "https://doi.org/10.1016/j.pec.2022.07.008"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Integration",
+        "text": "Together with your practice or hospital, we define where in the care pathway the programme comes in, for example after diagnosis, before surgery or at discharge. And we decide together how patients find their way to it: through a referral to existing peer programmes or through a dedicated, co-branded entry point serving as an information hub, including QR codes for flyers, waiting rooms and discharge conversations.",
+        "visual": "landing"
+      },
+      {
+        "title": "Registration and matching",
+        "text": "Patients register free of charge. A professional connects them with someone who has had a similar diagnosis or treatment. The ground rules: full data protection and safety for the people affected, clear informed consent and a clear boundary between the exchange and treatment at the practice or hospital.",
+        "visual": "match"
+      },
+      {
+        "title": "Reporting and impact",
+        "text": "Patients decide for themselves how often and at what pace they exchange. Professionals keep an overview and can be reached in the background at any time for questions or escalation. We continuously measure impact and assure the quality of the programme.",
+        "visual": "dashboard"
+      }
+    ],
+    "evidence": [
+      {
+        "topic": "onko",
+        "label": "Oncology",
+        "finding": "Peer support improves the quality of life and self-efficacy of people with cancer and relieves depression and anxiety.",
+        "cite": "Zhang et al., 2022, meta-analysis of 17 studies",
+        "url": "https://doi.org/10.1016/j.pec.2022.07.008"
+      },
+      {
+        "topic": "cf",
+        "label": "Cystic fibrosis",
+        "finding": "Digital formats are especially valuable because in-person meetings are often not possible for reasons of infection control.",
+        "cite": "Jeffrey et al., 2020",
+        "url": "https://doi.org/10.1177/2374373520974322"
+      }
+    ],
+    "reference": {
+      "title": "References in care",
+      "text": "<b>Swiss Sleep Circle</b> with Bern University Hospital (Inselspital): blended stepped care from early detection to treatment, designed and built by restful. <b>CoPEER</b> with Spitex Kriens: exchange for home care clients and their families.",
+      "logos": [
+        {
+          "file": "logo-inselspital.webp",
+          "alt": "Inselspital"
+        },
+        {
+          "file": "logo-spitex-kriens.png",
+          "alt": "Spitex Kriens"
+        }
+      ]
+    },
+    "quote": {
+      "type": "testimonial"
+    },
+    "faq": [
+      {
+        "q": "How is the exchange kept separate from treatment?",
+        "a": "Peers do not give medical advice; they share their experience. This is set out in the programme rules and is part of how peers are prepared. Medical questions stay with your care team."
+      },
+      {
+        "q": "What happens if a patient is not doing well?",
+        "a": "Peers are prepared to recognise their limits. At any sign of crisis, a professional is brought in at any time and the patient is referred to the right place."
+      },
+      {
+        "q": "Does it need to connect to our clinical information system?",
+        "a": "No. To get started, a link or QR code is enough, for example on flyers, in the discharge conversation or in the patient portal. We assess further integrations on a project basis."
+      },
+      {
+        "q": "Is the programme available in several languages?",
+        "a": "Yes. For programmes that need to reach several language regions, we implement the platform in multiple languages."
+      },
+      {
+        "q": "How much does a pilot cost?",
+        "a": "That depends on scope, duration and support. After an intro call, you will receive a concrete quote. For healthcare projects, funding options are available, for example from Health Promotion Switzerland."
+      }
+    ],
+    "commelia": null,
+    "hide": [
+      "trust",
+      "quote"
+    ]
+  },
+  {
+    "key": "industrie",
+    "slug": "industry",
+    "menu": "Industry and patient advocacy",
+    "art": 3,
+    "title": "Patient advocacy: peer programmes with industry · restful",
+    "description": "For patient advocacy departments, restful builds drug-agnostic patient communities that are independent of any product and have a clear separation of roles.",
+    "label": "For industry and patient advocacy",
+    "h1": "Building patient communities, <i>independent of any product.</i>",
+    "sub": "For patient advocacy, we build communities around a condition, not a product. People affected find exchange and support, and you gain a deeper understanding of their everyday lives.",
+    "reasonsTitle": "What an independent community <i>gives you</i>",
+    "reasonsIntro": "Patients want exchange, not advertising. When a community is independent and belongs to the people affected, trust grows, and with it an honest view of everyday life with the condition.",
+    "reasons": [
+      {
+        "title": "Understanding how people affected are really doing",
+        "text": "Voluntary, anonymous surveys in the community reveal everyday burdens and needs beyond clinical endpoints. Repeated over time, they make changes visible."
+      },
+      {
+        "title": "Credible through independence",
+        "text": "Drug-agnostic, with no influence on what is discussed. Roles, multi-sponsor funding and visibility are agreed in writing and transparently. This protects the people affected and your reputation."
+      },
+      {
+        "title": "Access to patient organisations",
+        "text": "We open up access to patient organisations that co-own the programme. We bring experience from working with 13 organisations in the Swiss health and social sector."
+      },
+      {
+        "title": "Patient education that lands",
+        "text": "Knowledge about the condition, combined with the lived experience of peers: people affected learn from others who faced the same questions. This strengthens self-efficacy."
+      },
+      {
+        "title": "Internationally scalable",
+        "text": "Platform, moderation and peers from a single source: multilingual, for national rollouts and scalable internationally, with one consistent point of contact."
+      }
+    ],
+    "stats": [
+      {
+        "title": "Access to organisations",
+        "text": "restful works with 13 organisations in the Swiss health and social sector and opens the way to patient organisations and the people affected.",
+        "source": "",
+        "url": ""
+      },
+      {
+        "title": "Scientific support and active impact reporting",
+        "text": "Reviewed evidence on 7 topics, accompanying research with a university and regular reporting on the programme’s impact.",
+        "source": "",
+        "url": ""
+      },
+      {
+        "title": "Professional project setup with an established partner",
+        "text": "Clear roles, proven processes and one consistent point of contact, from the first conversation to operation.",
+        "source": "",
+        "url": ""
+      }
+    ],
+    "steps": [
+      {
+        "title": "Clarification",
+        "text": "We agree on the topic, target group, roles and governance together and in writing.",
+        "visual": "screen-1"
+      },
+      {
+        "title": "Partnership",
+        "text": "Where it makes sense, a patient organisation owns the programme. We support the collaboration from the start.",
+        "visual": "screen-2"
+      },
+      {
+        "title": "Setup",
+        "text": "Platform, moderation and peers, multilingual for national rollouts.",
+        "visual": "screen-3"
+      },
+      {
+        "title": "Insights and reporting",
+        "text": "Regular, anonymised reports and, if agreed, surveys on the everyday lives and needs of the people affected.",
+        "visual": "report"
+      }
+    ],
+    "evidence": [
+      {
+        "topic": "digital",
+        "label": "Digital support",
+        "finding": "Digital peer support clearly improves mental health and moderately improves physical health, including as prevention.",
+        "cite": "Yeo et al., 2025, meta-analysis",
+        "url": "https://doi.org/10.1017/S2045796024000854"
+      }
+    ],
+    "reference": {
+      "title": "Where our experience comes from",
+      "text": "We work with 13 organisations in the Swiss health and social sector, from patient organisations and leagues to professional associations, hospitals and home care. We bring experience from this work without naming individual organisations here.",
+      "logos": []
+    },
+    "quote": {
+      "type": "statement",
+      "label": "Our principle",
+      "text": "Independence is non-negotiable for us. The programme belongs to the people affected, not to a product."
+    },
+    "faq": [
+      {
+        "q": "How is independence ensured?",
+        "a": "The programme is drug-agnostic. Your company has no influence on what is discussed and no access to personal data. We agree on roles and responsibilities together in writing at the outset."
+      },
+      {
+        "q": "Does our company see personal data?",
+        "a": "No. You only receive anonymised, aggregated reports. Surveys are voluntary and anonymous."
+      },
+      {
+        "q": "What insights do we get from the community?",
+        "a": "Aggregated figures on use and wellbeing and, if agreed, the results of voluntary surveys. What is analysed is decided together with the patient organisation. Conversations remain confidential."
+      },
+      {
+        "q": "Is our company visible in the programme?",
+        "a": "We decide that together. What matters to us is that your company’s role is transparent to participants and that the programme does not come across as promotional."
+      },
+      {
+        "q": "Who is our contact person?",
+        "a": "Lona Gaugler, Industry Lead at restful, with a background in oncology and molecular medicine. She supports projects with industry from the first conversation to operation."
+      }
+    ],
+    "commelia": null,
+    "cta2": "See examples",
+    "cases": [
+      {
+        "name": "MucoConnect",
+        "org": "Cystic Fibrosis Switzerland",
+        "logo": "logo-mucoconnect.png",
+        "text": "Peer exchange for people with cystic fibrosis and their families.",
+        "href": "https://cystischefibroseschweiz.ch/unterstuetzung-und-angebote/mucoconnect/"
+      },
+      {
+        "name": "Swiss Cancer League peer platform",
+        "org": "Swiss Cancer League",
+        "logo": "logo-krebsliga.webp",
+        "text": "Exchange for people affected by cancer and their families.",
+        "href": "https://peerplattform.krebsliga.ch/"
+      },
+      {
+        "name": "Morbus Bechterew",
+        "org": "Swiss Ankylosing Spondylitis Association",
+        "logo": "logo-svmb.png",
+        "text": "Joint project for more physical activity in everyday life for people with ankylosing spondylitis.",
+        "href": "https://www.bechterew.ch/"
+      },
+      {
+        "name": "Europa Uomo Schweiz",
+        "org": "Europa Uomo Switzerland",
+        "logo": "logo-europa-uomo.jpg",
+        "text": "Exchange for men with prostate cancer and their families.",
+        "href": "https://www.europa-uomo.ch/"
+      }
+    ],
+    "contactPerson": {
+      "name": "Lona Gaugler",
+      "role": "Industry Lead",
+      "img": "team-lona-gaugler.jpg",
+      "first": "Lona",
+      "email": "lona@getrestful.ch"
+    }
+  },
+  {
+    "key": "versicherer",
+    "slug": "insurers",
+    "menu": "Insurers",
+    "art": 4,
+    "title": "Peer support for insurers · restful",
+    "description": "Exchange between people affected as a low-threshold, scalable and measurable health intervention for health and supplementary insurers.",
+    "label": "For insurers",
+    "h1": "Effective support <i>that saves resources.</i>",
+    "sub": "People living with a chronic illness, a cancer diagnosis or mental strain benefit from others who know what it is like. As a service in your health programme, peer support reaches many policyholders: online, effective and with manageable effort.",
+    "reasonsTitle": "Why peer support <i>pays off for insurers</i>",
+    "reasonsIntro": "Professional psychosocial support is scarce and expensive. Peer support complements it where it is missing: in everyday life, between appointments and at a low threshold.",
+    "reasons": [
+      {
+        "title": "Added value that policyholders feel",
+        "text": "People instead of advice leaflets: policyholders experience your insurance as a partner in a difficult phase of life. This strengthens loyalty, especially in supplementary insurance."
+      },
+      {
+        "title": "Proven impact",
+        "text": "A meta-analysis of 73 studies shows clear effects of digital peer support on mental health, including in people without a diagnosis."
+      },
+      {
+        "title": "Resource-efficient and scalable",
+        "text": "Peers complement professionals rather than replacing them. Online and in several languages, you reach many policyholders with manageable support effort."
+      },
+      {
+        "title": "Measurable, in the spirit of value-based healthcare",
+        "text": "We measure what matters to policyholders: anonymised figures on use, satisfaction and perceived support, complemented by patient-reported outcomes such as quality of life (PROMs). This allows the health benefit to be weighed against the effort, in the spirit of value-based healthcare. On request with scientific support."
+      }
+    ],
+    "stats": [
+      {
+        "value": "CHF 109 bn",
+        "text": "is what non-communicable diseases cost Switzerland every year, healthcare costs and lost productivity combined.",
+        "source": "FOPH, cost study 2025",
+        "url": "https://www.bag.admin.ch/de/studie-zu-den-kosten-nicht-uebertragbarer-krankheiten"
+      },
+      {
+        "value": "72 %",
+        "text": "of healthcare costs are due to non-communicable diseases.",
+        "source": "FOPH, cost study 2025 (2022 data)",
+        "url": "https://www.bag.admin.ch/de/studie-zu-den-kosten-nicht-uebertragbarer-krankheiten"
+      },
+      {
+        "value": "73 studies",
+        "text": "show: digital peer support clearly improves mental health, including as prevention.",
+        "source": "Yeo et al., 2025, meta-analysis",
+        "url": "https://doi.org/10.1017/S2045796024000854"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Triage and referral",
+        "text": "Policyholders reach the programme in two ways: through a co-branded landing page that you link from your customer app, health portal or newsletter, or directly through your case management, which points suitable policyholders to the programme. Together we decide which groups of policyholders to address.",
+        "visual": "landing-versicherer"
+      },
+      {
+        "title": "Registration and matching",
+        "text": "Policyholders register voluntarily and free of charge. A professional connects them with a peer who has had a similar experience. The ground rules: full data protection for policyholders and clear informed consent.",
+        "visual": "match"
+      },
+      {
+        "title": "Exchange, quality and impact",
+        "text": "Policyholders exchange with their peer at their own pace. Professionals assure quality and can be reached in the background at any time for questions. We continuously measure impact, with anonymised reporting to your insurance company on request.",
+        "visual": "dashboard-versicherer"
+      }
+    ],
+    "evidence": [
+      {
+        "topic": "digital",
+        "label": "Digital support",
+        "finding": "Digital peer support clearly improves mental health and moderately improves physical health, including as prevention.",
+        "cite": "Yeo et al., 2025, meta-analysis",
+        "url": "https://doi.org/10.1017/S2045796024000854"
+      },
+      {
+        "topic": "psyche",
+        "label": "Mental illness",
+        "finding": "Peer support relieves depressive symptoms significantly better than usual care.",
+        "cite": "Pfeiffer et al., 2011, meta-analysis of randomised trials",
+        "url": "https://doi.org/10.1016/j.genhosppsych.2010.10.002"
+      }
+    ],
+    "reference": null,
+    "quote": {
+      "type": "testimonial"
+    },
+    "faq": [
+      {
+        "q": "For which conditions and topics is the programme suitable?",
+        "a": "Peer support is particularly well suited to chronic conditions such as diabetes, cardiovascular or respiratory diseases, rheumatic diseases, cancer or mental illness. Here the condition shapes everyday life over a long time, and exchange with people who live with it strengthens self-management. That is why the programme fits well as a building block in an existing chronic disease management or disease management programme. It is also suitable for family carers and for policyholders returning to work after a long illness."
+      },
+      {
+        "q": "Does the programme replace medical services?",
+        "a": "No. Peer support complements care; it does not replace any treatment."
+      },
+      {
+        "q": "Do we see who uses the programme?",
+        "a": "No. Only anonymised figures are analysed. This is deliberate: confidentiality is the precondition for policyholders using the programme."
+      },
+      {
+        "q": "Is there data on cost-effectiveness?",
+        "a": "The effectiveness of peer support is well documented, for example by a meta-analysis of 73 studies on digital peer support (Yeo et al., 2025). Data on cost-effectiveness is still thin. That is why we measure impact in every programme and analyse it together with you."
+      },
+      {
+        "q": "How quickly can a pilot start?",
+        "a": "That depends on the target group and access. In an intro call, we will draw up a concrete timeline together."
+      }
+    ],
+    "commelia": null,
+    "hide": [
+      "trust",
+      "quote"
+    ]
+  },
+  {
+    "key": "iv-stellen",
+    "slug": "disability-insurance",
+    "menu": "Disability insurance (IV)",
+    "art": 1,
+    "title": "Peer support for disability insurance (IV) offices · restful",
+    "description": "Peers support policyholders through assessment, measures and return to work, complementing the work of integration specialists. For disability insurance (IV) offices.",
+    "label": "For disability insurance (IV) offices",
+    "h1": "People who have been there <i>give courage for the next step.</i>",
+    "sub": "Peers have been through vocational integration or a similar crisis themselves. They support policyholders through registration, assessment, measures and return to work, as equals and outside the authority, and help reduce fear and shame towards the institution.",
+    "reasonsTitle": "What peers achieve <i>in the IV process</i>",
+    "reasonsIntro": "Integration succeeds when policyholders stay on track. But assessments take time, measures are demanding, and many experience the IV mainly as an authority and sometimes as an impersonal control body. Peers build trust because they have walked the path themselves.",
+    "reasons": [
+      {
+        "title": "Trust from outside",
+        "text": "Policyholders can talk through their fears and doubts with peers. What they share is treated confidentially."
+      },
+      {
+        "title": "Staying on track when it gets hard",
+        "text": "Someone who has made it back to work gives courage, especially after setbacks or when things feel particularly difficult."
+      },
+      {
+        "title": "Finding your way through the process",
+        "text": "Peers explain from their own experience how assessments, measures and meetings work, and so take away a lot of uncertainty."
+      },
+      {
+        "title": "Suited to young people and policyholders with mental strain",
+        "text": "Online, low-threshold and at your own pace: this is how the programme reaches exactly the groups the IV is currently focusing on."
+      },
+      {
+        "title": "Clear roles, relieved professionals",
+        "text": "Peers do not advise on insurance matters; decisions remain with the IV office. Everyday questions and worries go to the peers, so that professionals have more time for their core tasks again."
+      }
+    ],
+    "stats": [
+      {
+        "value": "55 %",
+        "text": "of people in IV vocational integration measures have a mental illness, and 64% among young people.",
+        "source": "FSIO, 2025 figures",
+        "url": "https://www.swissinfo.ch/ger/zahl-der-iv-eingliederungsmassnahmen-steigt-weiter-an/91804196"
+      },
+      {
+        "value": "61'000",
+        "text": "people took part in vocational integration measures in 2025, more than three times as many as in 2008.",
+        "source": "FSIO, 2025 figures",
+        "url": "https://www.swissinfo.ch/ger/zahl-der-iv-eingliederungsmassnahmen-steigt-weiter-an/91804196"
+      },
+      {
+        "value": "180",
+        "text": "new IV pensions due to mental illness per 100,000 inhabitants (2024). In 2014, the figure was 110.",
+        "source": "FSIO, background document 2026",
+        "url": "https://www.bsv.admin.ch/dam/de/sd-web/eKErKnviU85w/20260212_BSV%20Hintergrunddokument%20Anstieg%20Renten%20IV%20bf.pdf"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Referral",
+        "text": "The integration specialist recommends the programme, and the policyholder signs up voluntarily.",
+        "visual": "screen-2"
+      },
+      {
+        "title": "Matching",
+        "text": "A professional connects them with a peer who has had a similar experience, for example from the same industry, with a similar diagnosis or in a similar phase of life.",
+        "visual": "screen-3"
+      },
+      {
+        "title": "Support",
+        "text": "Exchange during assessment, measures and return to work, online and at your own pace.",
+        "visual": "chat"
+      },
+      {
+        "title": "Reporting",
+        "text": "The IV office receives anonymised figures on use and satisfaction.",
+        "visual": "report"
+      }
+    ],
+    "evidence": [
+      {
+        "topic": "psyche",
+        "label": "Mental illness",
+        "finding": "Peer support relieves depressive symptoms significantly better than usual care.",
+        "cite": "Pfeiffer et al., 2011, meta-analysis of randomised trials",
+        "url": "https://doi.org/10.1016/j.genhosppsych.2010.10.002"
+      }
+    ],
+    "reference": null,
+    "quote": {
+      "type": "statement",
+      "label": "Why peers make a difference",
+      "text": "A peer is living proof that recovery, social participation and an active life are possible again after serious crises or illnesses."
+    },
+    "faq": [
+      {
+        "q": "Is participation voluntary?",
+        "a": "Yes. Policyholders decide for themselves whether and for how long they use the programme."
+      },
+      {
+        "q": "Which policyholders is the programme suitable for?",
+        "a": "For policyholders in early intervention, integration measures or vocational measures, especially with mental strain and among young adults."
+      },
+      {
+        "q": "Are the peers IV employees?",
+        "a": "That depends on the model that suits your IV office. In the simplest case, restful provides a pool of experienced peers. They stand outside the process, and this is precisely what builds trust with policyholders. If you want to firmly embed peer work in your IV office, we help you recruit suitable staff with lived experience and build your own pool. Hybrid models in between are also possible. In every case, we prepare the peers for their role and support them."
+      },
+      {
+        "q": "Does the IV office find out what is discussed?",
+        "a": "No. The exchange is confidential. The IV office only receives anonymised figures on use and satisfaction."
+      },
+      {
+        "q": "How is the programme funded?",
+        "a": "We work that out together, for example through a time-limited pilot. In an intro call, we will show you which options are suitable for your IV office."
+      }
+    ],
+    "commelia": null,
+    "hide": [
+      "trust"
+    ]
+  }
+]

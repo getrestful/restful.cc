@@ -1,0 +1,58 @@
+[
+  {
+    "test": "We don’t yet have a programme where people affected can talk to each other.",
+    "title": "You are starting from scratch",
+    "intro": "We work out with you whether and in what form a programme suits your organisation, and build it with you step by step.",
+    "do": [
+      "Clarify target group, goals and resources",
+      "Choose a proven format from our playbook",
+      "Set up the platform in your branding",
+      "Train coordinators and support the pilot"
+    ],
+    "first": "a needs analysis with you and with the people affected",
+    "result": "A new programme that suits your organisation, with the first matches in the pilot.",
+    "tone": "sand"
+  },
+  {
+    "test": "There are meetings, groups or phone contacts, but not everyone can take part.",
+    "title": "Your community runs offline",
+    "intro": "We add a digital component to your existing programme, so that people who can’t take part today can join too.",
+    "do": [
+      "Analyse who takes part today and who is missing",
+      "Add a digital format that suits your groups",
+      "Involve existing volunteers and people affected",
+      "Let offline and online work together"
+    ],
+    "first": "a review of your current programme",
+    "result": "Reach more people without giving up what works.",
+    "tone": "white"
+  },
+  {
+    "test": "We have a programme, but it’s underused or ties up too many resources.",
+    "title": "Your programme is stalling",
+    "intro": "We take a close look with you at where things get stuck and refocus the programme in a targeted way.",
+    "do": [
+      "Evaluate participation, matching and processes",
+      "Identify the sticking points together and set priorities",
+      "Adapt format and platform in a targeted way",
+      "Ease the load on coordinators with clear processes"
+    ],
+    "first": "an evaluation of your existing programme",
+    "result": "A programme that gets used, and coordinators with more breathing room.",
+    "tone": "lav"
+  },
+  {
+    "test": "Our programme is up and running, but we’d like to know more about its impact.",
+    "title": "You want to show impact",
+    "intro": "We make visible what your programme achieves: with an established impact measurement tool developed specifically for peer work and based on common standards such as quality of life (QoL).",
+    "do": [
+      "Define impact goals and suitable indicators",
+      "Integrate the measurement tool into your existing programme",
+      "Analyse and interpret data from day-to-day operation",
+      "On request: study design and publication as a commissioned service"
+    ],
+    "first": "clarifying your impact goals",
+    "result": "Robust findings on impact, for your board, foundations and funding reports.",
+    "tone": "sand"
+  }
+]

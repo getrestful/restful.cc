@@ -1,0 +1,55 @@
+{
+  "services": [
+    {
+      "title": "Analyser le parcours",
+      "text": "Où perd-on des patients, où manque-t-il un accompagnement?"
+    },
+    {
+      "title": "Concevoir le blended care",
+      "text": "Combiner judicieusement étapes numériques et personnelles."
+    },
+    {
+      "title": "Développer et exploiter",
+      "text": "Design, technique et exploitation d’un seul tenant."
+    },
+    {
+      "title": "Sûr dans le domaine de la santé",
+      "text": "Données sensibles, multilinguisme, nombreux acteurs."
+    }
+  ],
+  "case": {
+    "title": "Swiss Sleep Circle",
+    "logo": "logo-inselspital.webp",
+    "logoAlt": "Hôpital de l’Île",
+    "url": "https://gesundheitsfoerderung.ch/praevention-in-der-gesundheitsversorgung-pgv/projektfoerderung/gefoerderte-projekte/swiss-sleep",
+    "rows": [
+      {
+        "term": "Mandat",
+        "text": "Atteindre en numérique les personnes souffrant de troubles du sommeil et de l’éveil, de la détection précoce au traitement (blended stepped care)."
+      },
+      {
+        "term": "Mandante",
+        "text": "Swiss Sleep House Bern, Clinique universitaire de neurologie, Hôpital de l’Île, Berne"
+      },
+      {
+        "term": "Financement",
+        "text": "Promotion Santé Suisse, soutien de projets «Prévention dans le domaine des soins»"
+      },
+      {
+        "term": "restful",
+        "text": "Conception, design et réalisation technique complète de la plateforme numérique"
+      }
+    ]
+  },
+  "commelia": {
+    "url": "https://commelia.ch/de",
+    "image": "commelia-chat.png",
+    "imageAlt": "Exemple d’une conversation dans Commelia: l’IA répond à une question de parents et passe le relais à une conseillère",
+    "items": [
+      "Chat web, e-mail et WhatsApp dans une boîte de réception sereine",
+      "Professionnels et pairs répondent ensemble, un assistant IA se charge des questions courantes",
+      "En cas de sujets sensibles ou de signaux de crise, l’IA passe immédiatement le relais à un humain",
+      "Hébergé en Suisse ou sur votre propre serveur"
+    ]
+  }
+}

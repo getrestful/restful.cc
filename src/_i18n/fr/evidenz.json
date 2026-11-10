@@ -1,0 +1,122 @@
+{
+  "papers": [
+    {
+      "type": "Méta-analyse · 2025",
+      "finding": "Le soutien numérique entre pairs améliore nettement la santé psychique et modérément la santé physique, y compris à titre préventif.",
+      "detail": "73 études sur la santé psychique et 47 études sur la santé physique ont été analysées. Les auteurs y voient une intervention préventive à grande échelle.",
+      "cite": "Yeo, Fortuna, Lansford & Rudolph (2025)",
+      "title": "The effects of digital peer support interventions on physical and mental health: a review and meta-analysis",
+      "journal": "Epidemiology and Psychiatric Sciences, 34, e9",
+      "url": "https://doi.org/10.1017/S2045796024000854",
+      "tone": "sand"
+    },
+    {
+      "type": "Méta-analyse d’études randomisées",
+      "finding": "Le soutien entre pairs atténue les symptômes dépressifs nettement mieux que la prise en charge habituelle.",
+      "detail": "7 études randomisées avec 869 participants. Comparé à une thérapie cognitivo-comportementale en groupe, aucune différence significative n’a été observée.",
+      "cite": "Pfeiffer, Heisler, Piette, Rogers & Valenstein (2011)",
+      "title": "Efficacy of peer support interventions for depression: a meta-analysis",
+      "journal": "General Hospital Psychiatry, 33, 29-36",
+      "url": "https://doi.org/10.1016/j.genhosppsych.2010.10.002",
+      "tone": "lav"
+    }
+  ],
+  "einordnung": [
+    {
+      "title": "Un savoir expérientiel partagé",
+      "text": "Des personnes ayant vécu des expériences similaires se soutiennent d’égal à égal, avec empathie et entraide (Penney, 2018a)."
+    },
+    {
+      "title": "Un complément, pas un substitut",
+      "text": "Le soutien entre pairs ne remplace pas un traitement médical, thérapeutique ou psychologique. Il le complète."
+    },
+    {
+      "title": "Une approche biopsychosociale",
+      "text": "La santé comme interaction de facteurs biologiques, psychologiques et sociaux (Engel, 1977). C’est justement pour l’intégration sociale que les offres à bas seuil font souvent défaut."
+    }
+  ],
+  "einordnungText": [
+    "Le soutien entre pairs désigne un processus dans lequel des personnes ayant des expériences communes ou des défis de santé ou sociaux similaires se réunissent, en tant que pairs, pour se soutenir mutuellement (Penney, 2018a). Un pair est une personne d’égal à égal, avec une réalité de vie, un contexte social ou une expérience (de la maladie) similaires. Le soutien («support») décrit une relation fondée sur l’empathie, l’encouragement et l’entraide (Penney, 2018a).",
+    "En Suisse, le terme de pair n’est à ce jour ni protégé ni défini de manière uniforme. Le soutien entre pairs est donc compris et mis en œuvre différemment dans la pratique et la recherche. La littérature décrit différentes approches, dont le peer support, la peer education, le peer coaching ou le peer counseling, qui se distinguent par leurs objectifs, leur conception des rôles, leur proximité avec les offres professionnelles et leur degré de structuration (Dennis, 2003; Solomon, 2004).",
+    "Le savoir expérientiel partagé est central dans toutes les approches entre pairs. Le soutien entre pairs ne repose pas sur des modèles diagnostiques ou des rôles professionnels, mais sur une compréhension empathique née de difficultés et de défis vécus en commun (Mead et al., 2001). L’échange se fait d’égal à égal et se distingue délibérément des offres thérapeutiques classiques.",
+    "Le soutien entre pairs ne remplace pas un traitement médical, thérapeutique ou psychologique. Il est compris, y compris par restful, comme une offre de soutien complémentaire qui enrichit utilement la prise en charge professionnelle.",
+    "Historiquement, l’approche par les pairs ne trouve pas son origine dans la médecine classique, mais dans les mouvements d’entraide, des droits civiques et du rétablissement. Dès les années 1930, les premières formes organisées d’entraide apparaissent, par exemple dans des groupes comme les Alcooliques anonymes. L’idée centrale était que l’expérience partagée constitue une forme de savoir à part entière et ne doit pas être vue uniquement comme un déficit (Borkman, 1976; Penney, 2018b). À partir des années 1980 et 1990, le soutien entre pairs a été de plus en plus décrit scientifiquement et fondé théoriquement, comme un processus de soutien réciproque reposant sur l’égalité et l’empowerment (Penney, 2018b; Solomon, 2004).",
+    "Chez restful, nous nous référons au modèle biopsychosocial (Engel, 1977), qui comprend la santé comme l’interaction de facteurs biologiques, psychologiques et sociaux. La Suisse dispose d’une prise en charge médicale et thérapeutique de grande qualité. Parallèlement, la recherche et la pratique montrent qu’il manque des offres complémentaires à bas seuil, en particulier pour l’accompagnement psychosocial continu, la gestion du quotidien et l’intégration sociale. Nous concevons donc le soutien numérique entre pairs comme un complément préventif aux offres de soins existantes."
+  ],
+  "methode": [
+    {
+      "title": "Analyser l’état de la recherche",
+      "text": "Pour chaque thématique, nous recherchons ce qui fonctionne et où se situent les limites."
+    },
+    {
+      "title": "Des formats éprouvés",
+      "text": "Formats, rôles et processus issus de notre playbook, adaptés à votre organisation."
+    },
+    {
+      "title": "Une mise en relation soignée",
+      "text": "Des professionnels accompagnent la mise en relation au lieu de la confier à un algorithme."
+    },
+    {
+      "title": "Mesurer l’impact",
+      "text": "Des données issues de l’exploitation courante, évaluées avec vous."
+    }
+  ],
+  "forschung": [
+    {
+      "title": "Mesure de l’impact",
+      "text": "Nous collectons des données issues de l’exploitation courante des offres et les évaluons avec nos organisations partenaires. Il est ainsi possible de comprendre si et comment une offre agit sur les participants.",
+      "tone": "sand"
+    },
+    {
+      "title": "Recherche d’accompagnement",
+      "text": "Une recherche scientifique d’accompagnement sur notre travail (recherche sur les processus) est menée avec une université. Nous publierons les résultats dès la fin de l’étude.",
+      "tone": "lav"
+    }
+  ],
+  "quellen": [
+    {
+      "ref": "Carter, G., Monaghan, C., & Santin, O. (2020). What is known from the existing literature about peer support interventions for carers of individuals living with dementia: A scoping review. Health & Social Care in the Community, 28, 1134-1151.",
+      "url": "https://doi.org/10.1111/hsc.12944"
+    },
+    {
+      "ref": "Chen, Y., Li, Z., Yang, Q., Yang, S., Dou, C., Zhang, T., & Guan, B. (2021). The effect of peer support on individuals with overweight and obesity: A meta-analysis. Iranian Journal of Public Health, 50, 2439-2450.",
+      "url": "https://doi.org/10.18502/ijph.v50i12.7926"
+    },
+    {
+      "ref": "Fortuna, K. L., Naslund, J. A., LaCroix, J. M., Bianco, C. L., Brooks, J. M., Zisman-Ilani, Y., Muralidharan, A., & Deegan, P. (2020). Digital peer support mental health interventions for people with a lived experience of a serious mental illness: Systematic review. JMIR Mental Health, 7, e16460.",
+      "url": "https://doi.org/10.2196/16460"
+    },
+    {
+      "ref": "Jeffrey, A., Andracchio, L., Dvorak, M., Lomas, P., Smith, B., & Borowitz, D. (2020). Virtual peer support for people with cystic fibrosis and their family members: A program evaluation. Journal of Patient Experience, 7, 1748-1754.",
+      "url": "https://doi.org/10.1177/2374373520974322"
+    },
+    {
+      "ref": "Kiemen, A., Czornik, M., & Weis, J. (2023). How effective is peer-to-peer support in cancer patients and survivors? A systematic review. Journal of Cancer Research and Clinical Oncology, 149, 9461-9485.",
+      "url": "https://doi.org/10.1007/s00432-023-04753-8"
+    },
+    {
+      "ref": "Pfeiffer, P. N., Heisler, M., Piette, J. D., Rogers, M. A., & Valenstein, M. (2011). Efficacy of peer support interventions for depression: A meta-analysis. General Hospital Psychiatry, 33, 29-36.",
+      "url": "https://doi.org/10.1016/j.genhosppsych.2010.10.002"
+    },
+    {
+      "ref": "Yeo, G., Fortuna, K. L., Lansford, J. E., & Rudolph, K. D. (2025). The effects of digital peer support interventions on physical and mental health: A review and meta-analysis. Epidemiology and Psychiatric Sciences, 34, e9.",
+      "url": "https://doi.org/10.1017/S2045796024000854"
+    },
+    {
+      "ref": "Zhang, S., Li, J., & Hu, X. (2022). Peer support interventions on quality of life, depression, anxiety, and self-efficacy among patients with cancer: A systematic review and meta-analysis. Patient Education and Counseling, 105, 3213-3224.",
+      "url": "https://doi.org/10.1016/j.pec.2022.07.008"
+    }
+  ],
+  "filter": {
+    "groups": [
+      "Betroffene",
+      "Angehörige",
+      "Eltern",
+      "Jugendliche"
+    ],
+    "formats": [
+      "Digital",
+      "Präsenz"
+    ]
+  }
+}

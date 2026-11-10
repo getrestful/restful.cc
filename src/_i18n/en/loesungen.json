@@ -1,0 +1,61 @@
+[
+  {
+    "key": "peer-plattform",
+    "title": "Peer platform",
+    "text": "Bringing together people with similar experiences: under your name, carefully matched and with impact measurement.",
+    "url": "/loesungen/peer-plattform/",
+    "tone": "sand",
+    "mock": {
+      "back": {
+        "img": "mock-peer-admin.webp",
+        "w": 1000,
+        "h": 722,
+        "alt": "Managing a peer community with surveys and matching"
+      },
+      "front": {
+        "type": "phone",
+        "img": "vision-screen-1.jpg",
+        "w": 640,
+        "h": 1170,
+        "alt": "Home page of a peer programme on a smartphone"
+      }
+    }
+  },
+  {
+    "key": "commelia",
+    "title": "Commelia: chat counselling",
+    "text": "Answer questions quickly and personally: web chat, email and WhatsApp in one inbox, supported by AI.",
+    "url": "/loesungen/commelia/",
+    "tone": "lav",
+    "mock": {
+      "back": {
+        "img": "mock-commelia-reports.webp",
+        "w": 1000,
+        "h": 722,
+        "alt": "Reports in Commelia by group, channel and topic"
+      },
+      "front": {
+        "type": "card",
+        "img": "mock-commelia-chat.webp",
+        "w": 640,
+        "h": 529,
+        "alt": "Chat in Commelia: the AI answers a parent’s question and hands over to the counselling team"
+      }
+    }
+  },
+  {
+    "key": "patientenpfade",
+    "title": "Digital patient pathways",
+    "text": "Tailored projects for hospitals and institutions, such as the Swiss Sleep Circle with Bern University Hospital (Inselspital).",
+    "url": "/loesungen/patientenpfade/",
+    "tone": "white",
+    "mock": {
+      "back": {
+        "img": "mock-mysleep.webp",
+        "w": 1000,
+        "h": 748,
+        "alt": "mySleep overview with the next group session"
+      }
+    }
+  }
+]

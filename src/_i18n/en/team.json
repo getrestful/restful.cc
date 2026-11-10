@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Raphael Reber",
+    "role": "Strategy & partnerships",
+    "bio": "Forbes 30 under 30 alumnus, co-founder of Impact Hub Bern and Zeilenwerk",
+    "img": "team-raphael-reber.jpg",
+    "linkedin": "https://www.linkedin.com/in/raphael-reber/",
+    "email": "raphael@restful.cc"
+  },
+  {
+    "name": "Sulamith Scheurer",
+    "role": "Product management",
+    "bio": "Ex-Lead Innovation Consultant INNOArchitects AG",
+    "img": "team-sulamith-scheurer.jpg",
+    "linkedin": "https://www.linkedin.com/in/sulamith-scheurer-486258111/",
+    "email": "sulamith@getrestful.ch"
+  },
+  {
+    "name": "Stefan Niederhauser",
+    "role": "Technology",
+    "bio": "Ex-VP of Product Management for Data, Analytics & AI, Swisscom",
+    "img": "team-stefan-niederhauser.jpg",
+    "linkedin": "https://www.linkedin.com/in/sniederhauser/",
+    "email": "stefan@getrestful.ch"
+  },
+  {
+    "name": "Chantal Kuske",
+    "role": "Scientific Advisory",
+    "bio": "Consulting & Research in Health Science",
+    "img": "team-chantal-kuske.jpg",
+    "linkedin": "https://www.linkedin.com/in/chantalkuske/",
+    "email": "chantal@getrestful.ch"
+  },
+  {
+    "name": "Melanie Spescha",
+    "role": "Projects & fundraising",
+    "bio": "BA in Social Work, inclusion and fundraising expert",
+    "img": "team-melanie-spescha.jpg",
+    "linkedin": "https://www.linkedin.com/in/melanie-spescha-965831145/",
+    "email": "melanie@getrestful.ch"
+  },
+  {
+    "name": "Lona Gaugler",
+    "role": "Industry Lead",
+    "bio": "MSc Oncology and Molecular Medicine, MSc Advanced Oncology",
+    "img": "team-lona-gaugler.jpg",
+    "linkedin": "https://www.linkedin.com/in/lona-gaugler-471231a/",
+    "email": "lona@getrestful.ch"
+  },
+  {
+    "name": "Silvan Jost",
+    "role": "Technology",
+    "bio": "",
+    "img": "team-silvan-jost.jpg",
+    "linkedin": "https://www.linkedin.com/in/silvan-jost-dev/",
+    "email": "silvan@getrestful.ch"
+  }
+]
