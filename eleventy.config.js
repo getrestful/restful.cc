@@ -100,6 +100,13 @@ export default function (eleventyConfig) {
     });
   });
 
+  // Weiterleitungen: vercel.json (echte 301 auf www) muss zu src/_data/redirects.json passen
+  const vercel = existsSync("vercel.json") ? readJson("vercel.json") : { redirects: [] };
+  const redirects = readJson("src/_data/redirects.json");
+  const same = redirects.length === vercel.redirects.length &&
+    redirects.every((r) => vercel.redirects.some((v) => v.source === r.from && v.destination === r.to));
+  if (!same) console.warn("[redirects] vercel.json passt nicht zu src/_data/redirects.json");
+
   // Fehlende Übersetzungen nach dem Build melden
   eleventyConfig.on("eleventy.after", () => {
     if (missing.size) console.warn(`[i18n] ${missing.size} fehlende Übersetzungen:\n  ` + [...missing].sort().join("\n  "));

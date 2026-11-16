@@ -37,7 +37,7 @@
   "Betroffene": "Personnes concernées",
   "Chronische Erkrankung": "Maladie chronique",
   "Commelia": "Commelia",
-  "Commelia bündelt Web-Chat, E-Mail und WhatsApp in einem Posteingang. Fachpersonen und Peers antworten gemeinsam, ein KI-Assistent übernimmt Routinefragen.": "Commelia réunit chat web, e-mail et WhatsApp dans une seule boîte de réception. Professionnels et pairs répondent ensemble, un assistant IA se charge des questions courantes.",
+  "Commelia bündelt Web-Chat, E-Mail und WhatsApp in einem Posteingang. Fachpersonen und Peers antworten gemeinsam, ein KI-Assistent übernimmt Routinefragen.": "Commelia réunit chat web, e-mail et WhatsApp dans une boîte de réception. Professionnels et pairs répondent ensemble, l’IA gère les questions courantes.",
   "Commelia kennenlernen": "Découvrir Commelia",
   "Commelia selbst einrichten und 30 Tage kostenlos testen. Keine Kreditkarte nötig, Rabatte für gemeinnützige Organisationen.": "Configurez Commelia vous-même et testez-le gratuitement pendant 30 jours. Sans carte de crédit, avec des rabais pour les organisations d’utilité publique.",
   "Commelia vereint Web-Chat, E-Mail und WhatsApp in einem ruhigen Posteingang. Euer Team aus Fachpersonen und Peers antwortet gemeinsam, ein KI-Assistent übernimmt Routinefragen und weiss, wann ein Mensch übernehmen soll.": "Commelia réunit chat web, e-mail et WhatsApp dans une boîte de réception sereine. Votre équipe de professionnels et de pairs répond ensemble, un assistant IA se charge des questions courantes et sait quand passer la main à un humain.",
@@ -126,7 +126,6 @@
   "Logo Versicherung": "Logo assureur",
   "Läuft unter deinem Namen, restful bleibt im Hintergrund.": "À votre nom, restful reste en arrière-plan.",
   "Lösungen": "Solutions",
-  "Lösungen: Peer-Plattform, Chat-Beratung, Patientenpfade · restful": "Solutions: plateforme de pairs, conseil par chat, parcours patients · restful",
   "Matches": "Mises en relation",
   "Mehr <i>erfahren</i>": "En savoir <i>plus</i>",
   "Mehr erfahren →": "En savoir plus →",
@@ -255,9 +254,9 @@
   "kaum": "à peine",
   "restful <i>auf einen Blick</i>": "restful <i>en un coup d’œil</i>",
   "restful arbeitet <i>evidenzbasiert und methodisch fundiert</i>": "restful travaille <i>de manière fondée sur les preuves et méthodique</i>",
-  "restful baut mit Patientenorganisationen und Gesundheitsinstitutionen Peer-Angebote auf: wissenschaftlich fundiert, methodisch erprobt, mit eigener Plattform.": "restful développe des offres de soutien entre pairs avec des organisations de patients et des institutions de santé: scientifiquement fondées, méthodiquement éprouvées, avec sa propre plateforme.",
+  "restful baut mit Patientenorganisationen und Gesundheitsinstitutionen Peer-Angebote auf: wissenschaftlich fundiert, methodisch erprobt, mit eigener Plattform.": "restful développe des offres de soutien entre pairs avec les organisations de patients et de santé: fondées scientifiquement, avec sa propre plateforme.",
   "restful in anderen Settings": "restful dans d’autres contextes",
-  "restful konzipiert und entwickelt digitale und hybride Angebote entlang des Versorgungsverlaufs, zum Beispiel den Swiss Sleep Circle mit dem Inselspital Bern.": "restful conçoit et développe des offres numériques et hybrides tout au long du parcours de soins, par exemple le Swiss Sleep Circle avec l’Hôpital de l’Île à Berne.",
+  "restful konzipiert und entwickelt digitale und hybride Angebote entlang des Versorgungsverlaufs, zum Beispiel den Swiss Sleep Circle mit dem Inselspital Bern.": "restful conçoit des offres numériques et hybrides le long du parcours de soins, par exemple le Swiss Sleep Circle avec l’Hôpital de l’Île à Berne.",
   "restful, zur Startseite": "restful, vers la page d’accueil",
   "restful: Peer-Support, der nachweislich wirkt": "restful: soutien entre pairs à l’efficacité démontrée",
   "trifft zu": "oui",
@@ -271,5 +270,6 @@
   "Über uns": "À propos",
   "Über uns: Team und Netzwerk · restful": "À propos: équipe et réseau · restful",
   "← Andere Ausgangslage wählen": "← Choisir une autre situation",
-  "E-Mail|im Satz": "e-mail"
+  "E-Mail|im Satz": "e-mail",
+  "Lösungen für Peer-Support und Beratung · restful": "Solutions de soutien entre pairs · restful"
 }

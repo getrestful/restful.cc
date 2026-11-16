@@ -3,8 +3,17 @@ permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- set hl = { de: "de-CH", fr: "fr-CH", en: "en" } %}
 {%- for p in collections.all %}{% if not p.data.noindex and not p.data.redirectTo and p.url and p.url.endsWith("/") %}
-  <url><loc>{{ site.url }}{{ p.url }}</loc></url>
+  <url>
+    <loc>{{ site.url }}{{ p.url }}</loc>
+    {%- if p.data.dePath %}
+    {%- for lng in langs %}
+    <xhtml:link rel="alternate" hreflang="{{ hl[lng] }}" href="{{ site.url }}{{ p.data.dePath | l(lng) }}"/>
+    {%- endfor %}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ p.data.dePath }}"/>
+    {%- endif %}
+  </url>
 {%- endif %}{% endfor %}
 </urlset>

@@ -1,0 +1,50 @@
+{
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/angebot/",
+      "destination": "/#nutzen",
+      "permanent": true
+    },
+    {
+      "source": "/peer-angebote/",
+      "destination": "/#ausgangslage",
+      "permanent": true
+    },
+    {
+      "source": "/projekte/",
+      "destination": "/loesungen/patientenpfade/",
+      "permanent": true
+    },
+    {
+      "source": "/patient-advocacy/",
+      "destination": "/fuer/industrie/",
+      "permanent": true
+    },
+    {
+      "source": "/ueber-restful/",
+      "destination": "/ueber-uns/",
+      "permanent": true
+    },
+    {
+      "source": "/industry/",
+      "destination": "/fuer/industrie/",
+      "permanent": true
+    },
+    {
+      "source": "/fachpersonen/",
+      "destination": "/fuer/spitaeler-und-arztpraxen/",
+      "permanent": true
+    },
+    {
+      "source": "/literaturverzeichnis/",
+      "destination": "/wissenschaft/#literatur",
+      "permanent": true
+    },
+    {
+      "source": "/plattform/",
+      "destination": "/loesungen/peer-plattform/",
+      "permanent": true
+    }
+  ]
+}
