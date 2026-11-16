@@ -12,7 +12,7 @@
   {%- if pageDesc %}
   <meta name="description" content="{{ pageDesc }}">
   {%- endif %}
-  {%- if site.noindex or noindex %}
+  {%- if not deploy.production or noindex %}
   <meta name="robots" content="noindex, nofollow">
   {%- endif %}
   {%- if redirectTo %}
