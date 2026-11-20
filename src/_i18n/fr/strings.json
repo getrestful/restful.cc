@@ -46,8 +46,6 @@
   "Das Team von restful": "L’équipe de restful",
   "Das Team von restful und das Netzwerk, das uns begleitet: Soziale Arbeit, Public Health, Forschung und Technologie aus Bern.": "L’équipe de restful et le réseau qui l’accompagne: travail social, santé publique, recherche et technologie depuis Berne.",
   "Das kenne ich gut. Mir hat damals geholfen, eins nach dem anderen anzugehen.": "Je connais bien ça. À l’époque, ce qui m’a aidé, c’était d’avancer une chose après l’autre.",
-  "Dashboard deiner Community": "Tableau de bord de votre communauté",
-  "Dashboard der Koordination mit neuen Mitgliedern pro Woche, Status der Mitglieder, Anzahl Nachrichten und Total der Matches": "Tableau de bord de la coordination avec les nouveaux membres par semaine, le statut des membres, le nombre de messages et le total des mises en relation",
   "Datenschutz": "Protection des données",
   "Datenschutzerklärung · restful": "Déclaration de protection des données · restful",
   "Deine Angaben bleiben geschützt": "Vos données restent protégées",
@@ -271,5 +269,7 @@
   "Über uns: Team und Netzwerk · restful": "À propos: équipe et réseau · restful",
   "← Andere Ausgangslage wählen": "← Choisir une autre situation",
   "E-Mail|im Satz": "e-mail",
-  "Lösungen für Peer-Support und Beratung · restful": "Solutions de soutien entre pairs · restful"
+  "Lösungen für Peer-Support und Beratung · restful": "Solutions de soutien entre pairs · restful",
+  "Matching-Übersicht": "Vue de mise en relation",
+  "Matching-Übersicht: Für eine anfragende Mutter schlägt die Plattform passende Peers vor, mit KI-Zusammenfassung und Übereinstimmungen bei Rolle, Alter des Kindes, Diagnose und Mutation": "Vue de mise en relation: pour une mère qui fait une demande, la plateforme propose des pairs adaptés, avec un résumé par l’IA et les correspondances de rôle, d’âge de l’enfant, de diagnostic et de mutation"
 }

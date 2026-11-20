@@ -46,8 +46,6 @@
   "Das Team von restful": "The restful team",
   "Das Team von restful und das Netzwerk, das uns begleitet: Soziale Arbeit, Public Health, Forschung und Technologie aus Bern.": "The restful team and the network behind us: social work, public health, research and technology from Bern.",
   "Das kenne ich gut. Mir hat damals geholfen, eins nach dem anderen anzugehen.": "I know that feeling. What helped me back then was taking things one step at a time.",
-  "Dashboard deiner Community": "Your community dashboard",
-  "Dashboard der Koordination mit neuen Mitgliedern pro Woche, Status der Mitglieder, Anzahl Nachrichten und Total der Matches": "Coordinator dashboard showing new members per week, member status, number of messages and total matches",
   "Datenschutz": "Privacy",
   "Datenschutzerklärung · restful": "Privacy policy · restful",
   "Deine Angaben bleiben geschützt": "Your details stay protected",
@@ -271,5 +269,7 @@
   "Über uns: Team und Netzwerk · restful": "About us: team and network · restful",
   "← Andere Ausgangslage wählen": "← Choose a different situation",
   "E-Mail|im Satz": "email",
-  "Lösungen für Peer-Support und Beratung · restful": "Solutions for peer support and counselling · restful"
+  "Lösungen für Peer-Support und Beratung · restful": "Solutions for peer support and counselling · restful",
+  "Matching-Übersicht": "Matching overview",
+  "Matching-Übersicht: Für eine anfragende Mutter schlägt die Plattform passende Peers vor, mit KI-Zusammenfassung und Übereinstimmungen bei Rolle, Alter des Kindes, Diagnose und Mutation": "Matching overview: for a mother making a request, the platform suggests suitable peers, with an AI summary and matches on role, child’s age, diagnosis and mutation"
 }
