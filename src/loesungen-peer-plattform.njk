@@ -7,7 +7,7 @@ title: "Peer-Plattform für Organisationen · restful"
 description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Organisation, betrieben von restful. So erleben sie Koordination und Mitglieder."
 ---
 {% from "icon.njk" import icon %}
-{% from "macros.njk" import chatMock with context %}
+{% from "macros.njk" import cfOnboardingMock, cfChatMock with context %}
 
 <section class="sub-hero">
   <div class="wrap">
@@ -58,10 +58,10 @@ description: "Die Plattform hinter jedem Peer-Angebot: unter dem Namen deiner Or
     <div class="view" id="ansicht-mitglied" role="tabpanel" aria-labelledby="tab-mitglied">
       <figure class="visual">
         <div class="phones">
-          <div class="phone"><div class="scr"><img src="/images/vision-screen-2.jpg" width="640" height="1161" loading="lazy" alt="{{ 'Einstieg ins Angebot von Cystische Fibrose Schweiz mit der Frage: Was ist deine Situation?' | t }}"></div></div>
-          <div class="phone two"><div class="scr">{{ chatMock() }}</div></div>
+          <div class="phone"><div class="scr">{{ cfOnboardingMock() }}</div></div>
+          <div class="phone two"><div class="scr">{{ cfChatMock() }}</div></div>
         </div>
-        <figcaption>{{ "Links ein Partnerangebot (Cystische Fibrose Schweiz), rechts eine Beispielansicht" | t }}</figcaption>
+        <figcaption>{{ "Beispielansichten im Erscheinungsbild von Cystische Fibrose Schweiz, mit fiktiven Inhalten" | t }}</figcaption>
       </figure>
       <div class="features">
         {%- for f in plattform.nutzerin %}

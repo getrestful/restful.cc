@@ -117,7 +117,6 @@
   "Lass uns <i>sprechen!</i>": "Parlons-<i>en!</i>",
   "Lieber <i>live sehen?</i>": "Envie de voir <i>en direct?</i>",
   "LinkedIn-Profil von {name} (öffnet in neuem Fenster)": "Profil LinkedIn de {name} (s’ouvre dans une nouvelle fenêtre)",
-  "Links ein Partnerangebot (Cystische Fibrose Schweiz), rechts eine Beispielansicht": "À gauche, une offre partenaire (Mucoviscidose Suisse), à droite une vue d’exemple",
   "Literatur": "Littérature",
   "Literaturrecherchen <i>nach Themenfeld</i>": "Revues de littérature <i>par thématique</i>",
   "Logo Spital": "Logo hôpital",
@@ -271,5 +270,18 @@
   "E-Mail|im Satz": "e-mail",
   "Lösungen für Peer-Support und Beratung · restful": "Solutions de soutien entre pairs · restful",
   "Matching-Übersicht": "Vue de mise en relation",
-  "Matching-Übersicht: Für eine anfragende Mutter schlägt die Plattform passende Peers vor, mit KI-Zusammenfassung und Übereinstimmungen bei Rolle, Alter des Kindes, Diagnose und Mutation": "Vue de mise en relation: pour une mère qui fait une demande, la plateforme propose des pairs adaptés, avec un résumé par l’IA et les correspondances de rôle, d’âge de l’enfant, de diagnostic et de mutation"
+  "Matching-Übersicht: Für eine anfragende Mutter schlägt die Plattform passende Peers vor, mit KI-Zusammenfassung und Übereinstimmungen bei Rolle, Alter des Kindes, Diagnose und Mutation": "Vue de mise en relation: pour une mère qui fait une demande, la plateforme propose des pairs adaptés, avec un résumé par l’IA et les correspondances de rôle, d’âge de l’enfant, de diagnostic et de mutation",
+  "Zurück": "Retour",
+  "Schön bist du hier!": "Bienvenue, c’est chouette que tu sois là!",
+  "Beantworte ein paar Fragen zu deiner Situation. So finden wir eine passende Austauschperson für dich.": "Réponds à quelques questions sur ta situation. Nous pourrons ainsi te proposer une personne adaptée pour échanger.",
+  "In welcher Rolle bist du hier?": "À quel titre es-tu ici?",
+  "Elternteil eines Kindes mit CF": "Parent d’un enfant atteint de mucoviscidose",
+  "Selbst betroffen": "Personnellement concerné·e",
+  "Partner:in": "Partenaire",
+  "Andere Angehörige": "Autre proche",
+  "Zurück zur Übersicht": "Retour à l’aperçu",
+  "Nachricht von Bettina, heute": "Message de Bettina, aujourd’hui",
+  "Hallo, schön, dass wir verbunden wurden! Bei unserem Sohn kam die Diagnose auch über das Neugeborenen-Screening. Die ersten Monate mit Inhalieren und Physio waren für uns ein richtiger Kraftakt. Geholfen haben uns feste Zeiten und kleine Rituale. Wie geht es euch damit?": "Bonjour, contente que nous ayons été mises en relation! Chez notre fils aussi, le diagnostic est arrivé par le dépistage néonatal. Les premiers mois avec les inhalations et la physio ont été un vrai tour de force pour nous. Ce qui nous a aidés: des horaires fixes et de petits rituels. Comment ça se passe chez vous?",
+  "Hallo Bettina, danke dir! Das Inhalieren klappt langsam besser. Am meisten beschäftigt mich gerade die Angst vor Ansteckungen.": "Bonjour Bettina, merci! Les inhalations se passent peu à peu mieux. Ce qui me préoccupe le plus en ce moment, c’est la peur des infections.",
+  "Beispielansichten im Erscheinungsbild von Cystische Fibrose Schweiz, mit fiktiven Inhalten": "Vues d’exemple aux couleurs de Mucoviscidose Suisse, avec des contenus fictifs"
 }

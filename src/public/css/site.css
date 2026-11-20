@@ -728,3 +728,27 @@ h1,h2,h3,.btn,.tag,.stat-t,dd{overflow-wrap:break-word}
 .value .tag{border-radius:14px}
 dd,.kpi small{hyphens:auto}
 @media(max-width:560px){h1,h2,h3,.stat-t,.lp-h,.match .t{hyphens:auto}}
+
+/* Nutzerinnen-Sicht im Erscheinungsbild von Cystische Fibrose Schweiz */
+.cfm{--cf:#ff3939;--cf-ink:#c81e1e;height:100%;box-sizing:border-box;display:flex;flex-direction:column;background:#fff;color:#1d1d1f;padding:14px 14px 12px;font-size:11.5px;line-height:1.45;text-align:left}
+.cfm-top{display:flex;justify-content:space-between;align-items:center}
+.phone .scr .cfm-top img,.cfm-top img{width:30px;height:30px;border-radius:5px;object-fit:contain}
+.cfm-burger{display:grid;gap:5px}
+.cfm-burger i{display:block;width:20px;height:2px;background:var(--cf-ink)}
+.cfm-nav{font-size:10.5px;color:#333;white-space:nowrap}
+.cfm-back{align-self:flex-end;margin-top:12px;font-size:10.5px;font-weight:600;color:#767676}
+.cfm-body{margin-top:auto;display:grid;gap:9px}
+.cfm-h{font-size:15px;color:var(--cf-ink)}
+.cfm-body p{margin:0}
+.cfm-q{font-weight:600}
+.cfm-opts{display:grid;gap:6px;justify-items:end;margin-top:4px}
+.cfm-opts span{border:1.5px solid var(--cf);color:var(--cf-ink);border-radius:999px;padding:6px 12px;font-weight:600;font-size:10.5px;text-align:center}
+.cfm-opts span.on{background:var(--cf-ink);border-color:var(--cf-ink);color:#fff}
+.cfm-name{display:flex;justify-content:space-between;align-items:center;margin-top:16px;padding-bottom:7px;border-bottom:1.5px solid var(--cf)}
+.cfm-name b{font-size:15px;color:var(--cf-ink)}
+.cfm-icons{display:flex;gap:9px;color:#333}
+.cfm-meta{display:flex;justify-content:space-between;margin-top:9px;font-size:10px;color:#767676}
+.cfm-meta span{color:var(--cf-ink)}
+.cfm-msg{margin:8px 0 0;flex:1;overflow:hidden;-webkit-mask-image:linear-gradient(#000 70%,transparent);mask-image:linear-gradient(#000 70%,transparent)}
+.cfm-input{position:relative;margin-top:8px;border:1.5px solid var(--cf);border-radius:4px;padding:8px 30px 8px 8px;font-size:11px}
+.cfm-input i{position:absolute;right:6px;bottom:6px;width:20px;height:20px;display:grid;place-items:center;background:var(--cf-ink);color:#fff;font-style:normal;font-weight:700;border-radius:3px}

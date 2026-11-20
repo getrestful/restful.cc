@@ -117,7 +117,6 @@
   "Lass uns <i>sprechen!</i>": "Let’s <i>talk!</i>",
   "Lieber <i>live sehen?</i>": "Prefer to <i>see it live?</i>",
   "LinkedIn-Profil von {name} (öffnet in neuem Fenster)": "LinkedIn profile of {name} (opens in a new window)",
-  "Links ein Partnerangebot (Cystische Fibrose Schweiz), rechts eine Beispielansicht": "Left: a partner programme (Cystic Fibrosis Switzerland), right: a sample view",
   "Literatur": "Literature",
   "Literaturrecherchen <i>nach Themenfeld</i>": "Literature reviews <i>by topic</i>",
   "Logo Spital": "Hospital logo",
@@ -271,5 +270,18 @@
   "E-Mail|im Satz": "email",
   "Lösungen für Peer-Support und Beratung · restful": "Solutions for peer support and counselling · restful",
   "Matching-Übersicht": "Matching overview",
-  "Matching-Übersicht: Für eine anfragende Mutter schlägt die Plattform passende Peers vor, mit KI-Zusammenfassung und Übereinstimmungen bei Rolle, Alter des Kindes, Diagnose und Mutation": "Matching overview: for a mother making a request, the platform suggests suitable peers, with an AI summary and matches on role, child’s age, diagnosis and mutation"
+  "Matching-Übersicht: Für eine anfragende Mutter schlägt die Plattform passende Peers vor, mit KI-Zusammenfassung und Übereinstimmungen bei Rolle, Alter des Kindes, Diagnose und Mutation": "Matching overview: for a mother making a request, the platform suggests suitable peers, with an AI summary and matches on role, child’s age, diagnosis and mutation",
+  "Zurück": "Back",
+  "Schön bist du hier!": "Great to have you here!",
+  "Beantworte ein paar Fragen zu deiner Situation. So finden wir eine passende Austauschperson für dich.": "Answer a few questions about your situation. This helps us find the right person for you to talk to.",
+  "In welcher Rolle bist du hier?": "In what role are you here?",
+  "Elternteil eines Kindes mit CF": "Parent of a child with CF",
+  "Selbst betroffen": "Living with CF myself",
+  "Partner:in": "Partner",
+  "Andere Angehörige": "Other family member",
+  "Zurück zur Übersicht": "Back to overview",
+  "Nachricht von Bettina, heute": "Message from Bettina, today",
+  "Hallo, schön, dass wir verbunden wurden! Bei unserem Sohn kam die Diagnose auch über das Neugeborenen-Screening. Die ersten Monate mit Inhalieren und Physio waren für uns ein richtiger Kraftakt. Geholfen haben uns feste Zeiten und kleine Rituale. Wie geht es euch damit?": "Hi, so glad we’ve been matched! Our son’s diagnosis also came through newborn screening. The first months with inhalations and physio were a real struggle for us. What helped was fixed times and little rituals. How are you getting on with it?",
+  "Hallo Bettina, danke dir! Das Inhalieren klappt langsam besser. Am meisten beschäftigt mich gerade die Angst vor Ansteckungen.": "Hi Bettina, thank you! The inhalations are slowly getting easier. What worries me most right now is the fear of infections.",
+  "Beispielansichten im Erscheinungsbild von Cystische Fibrose Schweiz, mit fiktiven Inhalten": "Sample views in the branding of Cystic Fibrosis Switzerland, with fictitious content"
 }

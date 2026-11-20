@@ -97,6 +97,36 @@
 </div>
 {% endmacro %}
 
+{# Nutzerinnen-Sicht im Erscheinungsbild von Cystische Fibrose Schweiz (fiktive Inhalte): Einstieg mit Rollenfrage #}
+{% macro cfOnboardingMock() %}
+<div class="cfm">
+  <div class="cfm-top"><img src="/images/cf-mark.png" width="96" height="96" alt=""><span class="cfm-burger" aria-hidden="true"><i></i><i></i></span></div>
+  <span class="cfm-back">{{ "Zurück" | t }}</span>
+  <div class="cfm-body">
+    <b class="cfm-h">{{ "Schön bist du hier!" | t }}</b>
+    <p>{{ "Beantworte ein paar Fragen zu deiner Situation. So finden wir eine passende Austauschperson für dich." | t }}</p>
+    <p class="cfm-q">{{ "In welcher Rolle bist du hier?" | t }}</p>
+    <div class="cfm-opts">
+      <span class="on">{{ "Elternteil eines Kindes mit CF" | t }}</span>
+      <span>{{ "Selbst betroffen" | t }}</span>
+      <span>{{ "Partner:in" | t }}</span>
+      <span>{{ "Andere Angehörige" | t }}</span>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+{# Nutzerinnen-Sicht im Erscheinungsbild von Cystische Fibrose Schweiz (fiktive Inhalte): Austausch mit Bettina #}
+{% macro cfChatMock() %}
+<div class="cfm">
+  <div class="cfm-top"><img src="/images/cf-mark.png" width="96" height="96" alt=""><span class="cfm-nav">← {{ "Zurück zur Übersicht" | t }}</span></div>
+  <div class="cfm-name"><b>Bettina</b><span class="cfm-icons" aria-hidden="true"><svg viewBox="0 0 24 24" width="15" height="15"><path d="M4 4h16v12H8l-4 4Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 7v4M12 13.5v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><svg viewBox="0 0 24 24" width="15" height="15"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m6 6 12 12" stroke="currentColor" stroke-width="1.8"/></svg></span></div>
+  <div class="cfm-meta">{{ "Nachricht von Bettina, heute" | t }}<span aria-hidden="true">⌃</span></div>
+  <p class="cfm-msg">{{ "Hallo, schön, dass wir verbunden wurden! Bei unserem Sohn kam die Diagnose auch über das Neugeborenen-Screening. Die ersten Monate mit Inhalieren und Physio waren für uns ein richtiger Kraftakt. Geholfen haben uns feste Zeiten und kleine Rituale. Wie geht es euch damit?" | t }}</p>
+  <div class="cfm-input"><span>{{ "Hallo Bettina, danke dir! Das Inhalieren klappt langsam besser. Am meisten beschäftigt mich gerade die Angst vor Ansteckungen." | t }}</span><i aria-hidden="true">↑</i></div>
+</div>
+{% endmacro %}
+
 {# Auswertung als Beispielansicht mit fiktiven Werten #}
 {% macro reportMock() %}
 <div class="browser">
